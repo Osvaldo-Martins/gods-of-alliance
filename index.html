@@ -1,10 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Gods of Alliance</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gods of Alliance | Hero Guides</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #070707;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+
+header {
+    height: 80px;
+    background: rgba(5,5,5,0.97);
+    border-bottom: 1px solid #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #e4a52c;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: 0.25s;
+}
+
+nav a:hover {
+    color: #e4a52c;
+}
+
+/* MAIN */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+        radial-gradient(circle at center, #261306 0%, #0d0d0d 45%, #050505 80%);
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.small-title {
+    color: #e4a52c;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: clamp(48px, 8vw, 100px);
+    line-height: .95;
+    letter-spacing: -3px;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #aaa;
+    font-size: 19px;
+    line-height: 1.7;
+    max-width: 680px;
+    margin: auto;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 17px 35px;
+    background: #e4a52c;
+    color: #080808;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    transition: .25s;
+}
+
+.button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media(max-width: 650px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 11px;
+    }
+
+    h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>Gods of Alliance</h1>
-    <p>Hero Wars Guides, Teams & Strategies</p>
+
+<header>
+
+    <div class="brand">
+        GODS OF <span>ALLIANCE</span>
+    </div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="heroes.html">HERO GUIDES</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="small-title">
+            HERO WARS ALLIANCE
+        </div>
+
+        <h1>
+            GODS OF<br>ALLIANCE
+        </h1>
+
+        <p>
+            Clear, tested and practical Hero Wars guides.
+            Discover how every hero works, how to build them,
+            and how to use them effectively in battle.
+        </p>
+
+        <a class="button" href="heroes.html">
+            EXPLORE HERO GUIDES →
+        </a>
+
+    </div>
+
+</section>
+
 </body>
 </html>
