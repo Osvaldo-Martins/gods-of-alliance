@@ -22,127 +22,99 @@ body {
 /* HEADER */
 
 header {
-    height: 78px;
-    background: rgba(5,5,5,0.98);
-    border-bottom: 1px solid #252525;
+    height: 105px;
+    border-bottom: 1px solid #242424;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 7%;
+    background: #050505;
 }
 
-.brand {
-    font-size: 21px;
+.logo {
+    font-size: 25px;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    color: #ffffff;
 }
 
-.brand span {
-    color: #e9a923;
+.logo span {
+    color: #f5a900;
 }
 
-nav a {
-    color: white;
+.home-link {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1.3px;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: 0.2s;
 }
 
-nav a:hover {
-    color: #e9a923;
+.home-link:hover {
+    color: #f5a900;
 }
 
 /* HERO SECTION */
 
-main {
-    max-width: 1500px;
-    margin: auto;
-    padding: 75px 35px 90px;
-}
-
-.hero-header {
+.hero-intro {
     text-align: center;
-    margin-bottom: 55px;
+    padding: 75px 20px 55px;
 }
 
-.label {
-    color: #e9a923;
-    font-size: 12px;
+.eyebrow {
+    color: #f5a900;
+    font-size: 14px;
+    letter-spacing: 7px;
     font-weight: 900;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
-.hero-header h1 {
-    font-size: clamp(42px, 5vw, 68px);
+h1 {
+    font-size: clamp(42px, 6vw, 70px);
     font-weight: 900;
+    letter-spacing: 2px;
     margin-bottom: 25px;
 }
 
-.hero-header p {
+.description {
+    max-width: 780px;
+    margin: auto;
     color: #b9b9b9;
     font-size: 17px;
     line-height: 1.7;
-    max-width: 800px;
-    margin: auto;
 }
 
-/* SEARCH */
-
-.hero-search {
-    max-width: 600px;
-    margin: 35px auto 0;
-}
-
-.hero-search input {
-    width: 100%;
-    background: #111;
-    border: 1px solid #292929;
-    color: white;
-    padding: 17px 20px;
-    font-size: 15px;
-    border-radius: 4px;
-    outline: none;
-}
-
-.hero-search input:focus {
-    border-color: #e9a923;
-}
-
-.hero-search input::placeholder {
-    color: #777;
-}
-
-/* GRID */
+/* HERO GRID */
 
 .hero-grid {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto 100px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 25px;
+    gap: 26px;
 }
 
 .hero-card {
-    background: #101010;
+    background: #0c0c0c;
     border: 1px solid #292929;
     border-radius: 5px;
     overflow: hidden;
     text-decoration: none;
     color: white;
-    transition: 0.2s;
-    min-width: 0;
+    transition: 0.2s ease;
 }
 
 .hero-card:hover {
-    border-color: #e9a923;
+    border-color: #f5a900;
     transform: translateY(-4px);
 }
 
 .hero-image {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background: #0b0b0b;
-    position: relative;
+    background: #090909;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -156,36 +128,40 @@ main {
     display: block;
 }
 
-.hero-placeholder {
-    position: absolute;
-    inset: 0;
-    display: none;
+.placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #090909;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    color: #555;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-align: center;
+    gap: 16px;
 }
 
-.hero-placeholder span {
-    color: #e9a923;
+.placeholder-icon {
+    color: #f5a900;
     font-size: 25px;
-    margin-bottom: 8px;
+}
+
+.placeholder-text {
+    color: #5d626a;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 3px;
 }
 
 .hero-name {
-    min-height: 60px;
+    min-height: 64px;
+    background: #101010;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 900;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -193,10 +169,11 @@ main {
 
 footer {
     border-top: 1px solid #222;
+    padding: 35px 20px;
     text-align: center;
-    color: #666;
-    padding: 28px;
-    font-size: 12px;
+    color: #777;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 /* RESPONSIVE */
@@ -218,22 +195,23 @@ footer {
         padding: 0 5%;
     }
 
-    .brand {
-        font-size: 15px;
-    }
-
-    main {
-        padding: 50px 16px 70px;
+    .logo {
+        font-size: 18px;
+        letter-spacing: 2px;
     }
 
     .hero-grid {
+        width: 92%;
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 14px;
+    }
+
+    .hero-intro {
+        padding-top: 55px;
     }
 
     .hero-name {
         font-size: 13px;
-        min-height: 52px;
     }
 }
 </style>
@@ -242,42 +220,24 @@ footer {
 <body>
 
 <header>
-    <div class="brand">
-        GODS OF <span>ALLIANCE</span>
-    </div>
-
-    <nav>
-        <a href="index.html">HOME</a>
-    </nav>
+    <div class="logo">GODS OF <span>ALLIANCE</span></div>
+    <a class="home-link" href="index.html">HOME</a>
 </header>
 
+<section class="hero-intro">
+    <div class="eyebrow">GODS OF ALLIANCE DATABASE</div>
+
+    <h1>HERO GUIDES</h1>
+
+    <p class="description">
+        Explore our Hero Wars Alliance hero database. Select a hero to discover
+        skills, builds, glyphs, skins, team synergies, strengths, weaknesses and
+        battle strategies.
+    </p>
+</section>
+
 <main>
-
-    <section class="hero-header">
-
-        <div class="label">GODS OF ALLIANCE DATABASE</div>
-
-        <h1>HERO GUIDES</h1>
-
-        <p>
-            Explore our Hero Wars Alliance hero database. Select a hero to discover
-            skills, builds, glyphs, skins, team synergies, strengths, weaknesses
-            and battle strategies.
-        </p>
-
-        <div class="hero-search">
-            <input
-                type="text"
-                id="heroSearch"
-                placeholder="Search for a hero..."
-                autocomplete="off"
-            >
-        </div>
-
-    </section>
-
-    <section class="hero-grid" id="heroGrid"></section>
-
+<div class="hero-grid" id="heroGrid"></div>
 </main>
 
 <footer>
@@ -287,205 +247,182 @@ footer {
 <script>
 
 /*
-==========================================================
-HERO DATABASE
-==========================================================
+=========================================================
+ALL GODS OF ALLIANCE HEROES
+=========================================================
 
-IMPORTANT:
-The image filename is defined here ONCE.
+image = exact filename inside Images/Heroes
+null  = IMAGE COMING SOON
 
-When an image is uploaded to:
-Images/Heroes/
-
-the website will automatically display it.
-
-Future individual guides can be connected by replacing "#"
-with the guide page.
+Tomorrow we only need to replace null with the filename.
+=========================================================
 */
 
 const heroes = [
 
-    ["Aidan", "aidan.png"],
-    ["Alvanor", "Alvanor.png"],
-    ["Amira", "Amira.png"],
-    ["Andvari", "Andvari.png"],
-    ["Arachne", "arachne.png"],
-    ["Artemis", "artemis.png"],
-    ["Astaroth", "Astaroth.png"],
-    ["Astrid and Lucas", "Astrid.png"],
-    ["Aurora", "Aurora.png"],
+    { name: "Aidan", image: "Aidan.png" },
+    { name: "Alvanor", image: "Alvanor.png" },
+    { name: "Amira", image: "Amira.png" },
+    { name: "Andvari", image: "Andvari.png" },
+    { name: "Arachne", image: "arachne.png" },
+    { name: "Artemis", image: "artemis.png" },
+    { name: "Astaroth", image: "Astaroth.png" },
+    { name: "Astrid and Lucas", image: "Astrid.png" },
+    { name: "Aurora", image: "Aurora.png" },
 
-    ["Byrna", "byrna.png"],
+    { name: "Byrna", image: "byrna.png" },
 
-    ["Cascade", "cascade.png"],
-    ["Celeste", "celeste.png"],
-    ["Chabba", "chabba.png"],
-    ["Cleaver", "cleaver.png"],
-    ["Cornelius", "cornelius.png"],
-    ["Corvus", "corvus.png"],
-    ["Crow", "crow.png"],
+    { name: "Cascade", image: "Cascade.png" },
+    { name: "Celeste", image: null },
+    { name: "Chabba", image: null },
+    { name: "Cleaver", image: "Cleaver.png" },
+    { name: "Cornelius", image: null },
+    { name: "Corvus", image: null },
+    { name: "Crow", image: "Crow.png" },
 
-    ["Dante", "dante.png"],
-    ["Daredevil", "daredevil.png"],
-    ["Dark Star", "dark-star.png"],
-    ["Dorian", "dorian.png"],
-    ["Drayne", "drayne.png"],
+    { name: "Dante", image: null },
+    { name: "Daredevil", image: null },
+    { name: "Dark Star", image: null },
+    { name: "Dorian", image: "Dorian.png" },
+    { name: "Drayne", image: null },
 
-    ["Electra Von Grave", "electra-von-grave.png"],
-    ["Elmir", "elmir.png"],
-    ["Eva", "eva.png"],
+    { name: "Electra Von Grave", image: null },
+    { name: "Elmir", image: null },
+    { name: "Eva", image: "Eva.png" },
 
-    ["Faceless", "faceless.png"],
-    ["Fafnir", "fafnir.png"],
-    ["Folio", "folio.png"],
-    ["Fox", "fox.png"],
+    { name: "Faceless", image: null },
+    { name: "Fafnir", image: null },
+    { name: "Folio", image: null },
+    { name: "Fox", image: null },
 
-    ["Galahad", "galahad.png"],
-    ["Ginger", "ginger.png"],
-    ["Guus", "guus.png"],
+    { name: "Galahad", image: null },
+    { name: "Ginger", image: "Ginger.png" },
+    { name: "Guus", image: "Guus.png" },
 
-    ["Heidi", "heidi.png"],
-    ["Helios", "helios.png"],
+    { name: "Heidi", image: null },
+    { name: "Helios", image: null },
 
-    ["Iris", "iris.png"],
-    ["Isaac", "isaac.png"],
-    ["Ishmael", "ishmael.png"],
+    { name: "Iris", image: null },
+    { name: "Isaac", image: "Isaac.png" },
+    { name: "Ishmael", image: null },
 
-    ["Jet", "jet.png"],
-    ["Jhu", "jhu.png"],
-    ["Jorgen", "jorgen.png"],
-    ["Judge", "judge.png"],
-    ["Julius", "julius.png"],
+    { name: "Jet", image: null },
+    { name: "Jhu", image: null },
+    { name: "Jorgen", image: null },
+    { name: "Judge", image: null },
+    { name: "Julius", image: null },
 
-    ["Kai", "kai.png"],
-    ["K'arkh", "karkh.png"],
-    ["Kayla", "kayla.png"],
-    ["Keira", "keira.png"],
-    ["Kendle", "kendle.png"],
-    ["Krista", "krista.png"],
+    { name: "Kai", image: null },
+    { name: "K'arkh", image: null },
+    { name: "Kayla", image: null },
+    { name: "Keira", image: null },
+    { name: "Kendle", image: "Kendle.png" },
+    { name: "Krista", image: null },
 
-    ["Lara Croft", "lara-croft.png"],
-    ["Lars", "lars.png"],
-    ["Leonel", "leonel.png"],
-    ["Lian", "lian.png"],
-    ["Lilith", "lilith.png"],
-    ["Luther", "luther.png"],
+    { name: "Lara Croft", image: "Lara-Croft.png" },
+    { name: "Lars", image: null },
+    { name: "Leonel", image: null },
+    { name: "Lian", image: "Lian.png" },
+    { name: "Lilith", image: null },
+    { name: "Luther", image: null },
 
-    ["Markus", "markus.png"],
-    ["Martha", "martha.png"],
-    ["Maya", "maya.png"],
-    ["Miu", "miu.png"],
-    ["Mojo", "mojo.png"],
-    ["Morrigan", "morrigan.png"],
-    ["Mushy and Shroom", "mushy-and-shroom.png"],
+    { name: "Markus", image: null },
+    { name: "Martha", image: null },
+    { name: "Maya", image: null },
+    { name: "Miu", image: "Miu.png" },
+    { name: "Mojo", image: null },
+    { name: "Morrigan", image: null },
+    { name: "Mushy and Shroom", image: null },
 
-    ["Nebula", "nebula.png"],
-    ["Ninja Turtles", "ninja-turtles.png"],
+    { name: "Nebula", image: "Nebula.png" },
+    { name: "Ninja Turtles", image: null },
 
-    ["Octavia", "octavia.png"],
-    ["Orion", "orion.png"],
-    ["Oya", "oya.png"],
+    { name: "Octavia", image: null },
+    { name: "Orion", image: null },
+    { name: "Oya", image: null },
 
-    ["Peech", "peech.png"],
-    ["Peppy", "peppy.png"],
-    ["Phobos", "phobos.png"],
-    ["Polaris", "polaris.png"],
+    { name: "Peech", image: "Peech.png" },
+    { name: "Peppy", image: null },
+    { name: "Phobos", image: null },
+    { name: "Polaris", image: "polaris.png" },
 
-    ["Qing Mao", "qing-mao.png"],
+    { name: "Qing Mao", image: null },
 
-    ["Rufus", "rufus.png"],
+    { name: "Rufus", image: null },
 
-    ["Satori", "satori.png"],
-    ["Sebastian", "sebastian.png"],
-    ["Soleil", "soleil.png"],
-    ["Somna", "somna.png"],
+    { name: "Satori", image: "Satori.png" },
+    { name: "Sebastian", image: null },
+    { name: "Soleil", image: null },
+    { name: "Somna", image: "somna.png" },
 
-    ["Tempus", "tempus.png"],
-    ["Thea", "thea.png"],
-    ["Tristan", "tristan.png"],
+    { name: "Tempus", image: null },
+    { name: "Thea", image: null },
+    { name: "Tristan", image: "Tristan.png" },
 
-    ["Xe'Sha", "xesha.png"],
+    { name: "Xe'Sha", image: "Xesha.png" },
 
-    ["Yasmine", "yasmine.png"],
+    { name: "Yasmine", image: null },
 
-    ["Ziri", "ziri.png"]
+    { name: "Ziri", image: null }
 
 ];
 
 
-/* CREATE HERO CARDS */
+/*
+=========================================================
+CREATE HERO CARDS AUTOMATICALLY
+=========================================================
+*/
 
 const heroGrid = document.getElementById("heroGrid");
 
 heroes.forEach(hero => {
 
-    const name = hero[0];
-    const image = hero[1];
-
     const card = document.createElement("a");
 
     card.className = "hero-card";
+
+    /*
+    Later each hero will receive their own guide page.
+    Example:
+    heroes/ginger.html
+    heroes/tristan.html
+    etc.
+    */
+
     card.href = "#";
-    card.dataset.name = name.toLowerCase();
 
-    const imageContainer = document.createElement("div");
-    imageContainer.className = "hero-image";
+    let visual;
 
-    const img = document.createElement("img");
+    if (hero.image) {
 
-    img.src = "Images/Heroes/" + image;
-    img.alt = name;
-    img.loading = "lazy";
+        visual = `
+            <div class="hero-image">
+                <img
+                    src="Images/Heroes/${hero.image}"
+                    alt="${hero.name}"
+                    loading="lazy"
+                >
+            </div>
+        `;
 
-    const placeholder = document.createElement("div");
-    placeholder.className = "hero-placeholder";
+    } else {
 
-    placeholder.innerHTML =
-        "<span>⚔</span>" +
-        "IMAGE COMING SOON";
+        visual = `
+            <div class="placeholder">
+                <div class="placeholder-icon">⚔</div>
+                <div class="placeholder-text">IMAGE COMING SOON</div>
+            </div>
+        `;
 
-    img.onerror = function() {
-        img.style.display = "none";
-        placeholder.style.display = "flex";
-    };
+    }
 
-    imageContainer.appendChild(img);
-    imageContainer.appendChild(placeholder);
-
-    const heroName = document.createElement("div");
-
-    heroName.className = "hero-name";
-    heroName.textContent = name;
-
-    card.appendChild(imageContainer);
-    card.appendChild(heroName);
+    card.innerHTML = `
+        ${visual}
+        <div class="hero-name">${hero.name}</div>
+    `;
 
     heroGrid.appendChild(card);
-
-});
-
-
-/* SEARCH */
-
-const heroSearch = document.getElementById("heroSearch");
-
-heroSearch.addEventListener("input", function() {
-
-    const search = this.value.toLowerCase().trim();
-
-    const cards = document.querySelectorAll(".hero-card");
-
-    cards.forEach(card => {
-
-        const heroName = card.dataset.name;
-
-        if (heroName.includes(search)) {
-            card.style.display = "";
-        } else {
-            card.style.display = "none";
-        }
-
-    });
 
 });
 
