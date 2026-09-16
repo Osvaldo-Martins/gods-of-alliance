@@ -33,6 +33,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 7%;
+    position: relative;
+    z-index: 1000;
 }
 
 .brand {
@@ -47,7 +49,8 @@ header {
 
 nav {
     display: flex;
-    gap: 42px;
+    align-items: center;
+    gap: 32px;
 }
 
 nav a {
@@ -59,6 +62,92 @@ nav a {
 }
 
 nav a:hover {
+    color: #e9a923;
+}
+
+/* SEARCH / GUIDES BUTTON */
+
+.search-button {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    background: #0d0d0d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-button:hover {
+    border-color: #e9a923;
+    color: #e9a923;
+    transform: scale(1.05);
+}
+
+.search-button svg {
+    width: 19px;
+    height: 19px;
+}
+
+/* GUIDES PANEL */
+
+.guides-panel {
+    position: absolute;
+    top: 78px;
+    right: 7%;
+    width: 330px;
+    background: #0c0c0c;
+    border: 1px solid #292929;
+    border-top: 2px solid #e9a923;
+    box-shadow: 0 18px 50px rgba(0,0,0,0.65);
+    padding: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: 0.2s ease;
+}
+
+.guides-panel.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.guides-title {
+    color: #777;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    padding: 10px 14px 12px;
+}
+
+.guide-link {
+    display: block;
+    padding: 16px 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    border-top: 1px solid #1f1f1f;
+    transition: 0.2s;
+}
+
+.guide-link:hover {
+    color: #e9a923;
+    background: #131313;
+    padding-left: 19px;
+}
+
+.guide-link span {
+    float: right;
+    color: #555;
+}
+
+.guide-link:hover span {
     color: #e9a923;
 }
 
@@ -173,11 +262,22 @@ footer {
     }
 
     nav {
-        gap: 18px;
+        gap: 16px;
     }
 
     nav a {
         font-size: 10px;
+    }
+
+    .search-button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .guides-panel {
+        right: 5%;
+        width: 90%;
+        max-width: 330px;
     }
 
     .banner {
@@ -209,22 +309,67 @@ footer {
 
     <nav>
         <a href="index.html">HOME</a>
-        <a href="heroes.html">HERO GUIDES</a>
+
+        <button
+            class="search-button"
+            id="searchButton"
+            aria-label="Open guides"
+            aria-expanded="false"
+            type="button"
+        >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.2" stroke-linecap="round"
+                 stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"></circle>
+                <line x1="20" y1="20" x2="16.5" y2="16.5"></line>
+            </svg>
+        </button>
     </nav>
+
+    <div class="guides-panel" id="guidesPanel">
+
+        <div class="guides-title">
+            EXPLORE GUIDES
+        </div>
+
+        <a class="guide-link" href="heroes.html">
+            HERO GUIDES
+            <span>→</span>
+        </a>
+
+        <a class="guide-link" href="best-teams.html">
+            BEST TEAMS
+            <span>→</span>
+        </a>
+
+        <a class="guide-link" href="tier-lists.html">
+            TIER LISTS
+            <span>→</span>
+        </a>
+
+        <a class="guide-link" href="events.html">
+            EVENTS
+            <span>→</span>
+        </a>
+
+    </div>
 
 </header>
 
 
 <section class="banner">
 
-    <img src="goa-banner.jpg" alt="Gods of Alliance - Hero Wars Alliance">
+    <img src="goa-banner.jpg"
+         alt="Gods of Alliance - Hero Wars Alliance">
 
 </section>
 
 
 <section class="intro">
 
-    <div class="label">WELCOME TO GODS OF ALLIANCE</div>
+    <div class="label">
+        WELCOME TO GODS OF ALLIANCE
+    </div>
 
     <h1>
         MASTER YOUR HEROES.<br>
@@ -261,6 +406,35 @@ footer {
 <footer>
     © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
+
+
+<script>
+const searchButton = document.getElementById("searchButton");
+const guidesPanel = document.getElementById("guidesPanel");
+
+searchButton.addEventListener("click", function(event) {
+    event.stopPropagation();
+
+    const isOpen = guidesPanel.classList.toggle("open");
+    searchButton.setAttribute("aria-expanded", isOpen);
+});
+
+guidesPanel.addEventListener("click", function(event) {
+    event.stopPropagation();
+});
+
+document.addEventListener("click", function() {
+    guidesPanel.classList.remove("open");
+    searchButton.setAttribute("aria-expanded", "false");
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        guidesPanel.classList.remove("open");
+        searchButton.setAttribute("aria-expanded", "false");
+    }
+});
+</script>
 
 </body>
 </html>
