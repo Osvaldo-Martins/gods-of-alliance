@@ -53,81 +53,140 @@ nav a:hover {
     color: #e9a923;
 }
 
-/* PAGE */
+/* HERO SECTION */
 
-.hero-page {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 70px 30px 90px;
+main {
+    max-width: 1500px;
+    margin: auto;
+    padding: 75px 35px 90px;
 }
 
-.page-label {
+.hero-header {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.label {
     color: #e9a923;
     font-size: 12px;
     font-weight: 900;
     letter-spacing: 5px;
-    text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
-h1 {
-    text-align: center;
-    font-size: clamp(40px, 5vw, 64px);
+.hero-header h1 {
+    font-size: clamp(42px, 5vw, 68px);
     font-weight: 900;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 }
 
-.intro {
-    text-align: center;
-    color: #aaa;
-    font-size: 16px;
+.hero-header p {
+    color: #b9b9b9;
+    font-size: 17px;
     line-height: 1.7;
-    max-width: 720px;
-    margin: 0 auto 55px;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* HERO GRID */
+/* SEARCH */
+
+.hero-search {
+    max-width: 600px;
+    margin: 35px auto 0;
+}
+
+.hero-search input {
+    width: 100%;
+    background: #111;
+    border: 1px solid #292929;
+    color: white;
+    padding: 17px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    outline: none;
+}
+
+.hero-search input:focus {
+    border-color: #e9a923;
+}
+
+.hero-search input::placeholder {
+    color: #777;
+}
+
+/* GRID */
 
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
+    gap: 25px;
 }
 
 .hero-card {
     background: #101010;
-    border: 1px solid #242424;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    overflow: hidden;
     text-decoration: none;
     color: white;
-    overflow: hidden;
-    border-radius: 5px;
-    transition: 0.25s;
+    transition: 0.2s;
+    min-width: 0;
 }
 
 .hero-card:hover {
-    transform: translateY(-6px);
     border-color: #e9a923;
-    box-shadow: 0 8px 30px rgba(233,169,35,0.15);
+    transform: translateY(-4px);
 }
 
-.hero-card img {
+.hero-image {
     width: 100%;
     aspect-ratio: 1 / 1;
+    background: #0b0b0b;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.hero-name {
-    padding: 18px 10px;
-    text-align: center;
-    font-size: 14px;
+.hero-placeholder {
+    position: absolute;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #555;
+    font-size: 11px;
     font-weight: 900;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
-.hero-card:hover .hero-name {
+.hero-placeholder span {
     color: #e9a923;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.hero-name {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -140,18 +199,21 @@ footer {
     font-size: 12px;
 }
 
-/* TABLET */
+/* RESPONSIVE */
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+    .hero-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
     .hero-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* MOBILE */
-
 @media (max-width: 600px) {
-
     header {
         padding: 0 5%;
     }
@@ -160,18 +222,18 @@ footer {
         font-size: 15px;
     }
 
-    .hero-page {
-        padding: 50px 18px 70px;
+    main {
+        padding: 50px 16px 70px;
     }
 
     .hero-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
+        gap: 12px;
     }
 
     .hero-name {
-        font-size: 11px;
-        padding: 14px 6px;
+        font-size: 13px;
+        min-height: 52px;
     }
 }
 </style>
@@ -180,7 +242,6 @@ footer {
 <body>
 
 <header>
-
     <div class="brand">
         GODS OF <span>ALLIANCE</span>
     </div>
@@ -188,78 +249,247 @@ footer {
     <nav>
         <a href="index.html">HOME</a>
     </nav>
-
 </header>
 
+<main>
 
-<main class="hero-page">
+    <section class="hero-header">
 
-    <div class="page-label">GODS OF ALLIANCE DATABASE</div>
+        <div class="label">GODS OF ALLIANCE DATABASE</div>
 
-    <h1>HERO GUIDES</h1>
+        <h1>HERO GUIDES</h1>
 
-    <p class="intro">
-        Explore our Hero Wars Alliance hero database.
-        Select a hero to discover skills, builds, glyphs, skins,
-        team synergies, strengths, weaknesses and battle strategies.
-    </p>
+        <p>
+            Explore our Hero Wars Alliance hero database. Select a hero to discover
+            skills, builds, glyphs, skins, team synergies, strengths, weaknesses
+            and battle strategies.
+        </p>
 
+        <div class="hero-search">
+            <input
+                type="text"
+                id="heroSearch"
+                placeholder="Search for a hero..."
+                autocomplete="off"
+            >
+        </div>
 
-    <div class="hero-grid">
+    </section>
 
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/aidan.png" alt="Aidan">
-            <div class="hero-name">Aidan</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Alvanor.png" alt="Alvanor">
-            <div class="hero-name">Alvanor</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Amira.png" alt="Amira">
-            <div class="hero-name">Amira</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Andvari.png" alt="Andvari">
-            <div class="hero-name">Andvari</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/arachne.png" alt="Arachne">
-            <div class="hero-name">Arachne</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/artemis.png" alt="Artemis">
-            <div class="hero-name">Artemis</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Astaroth.png" alt="Astaroth">
-            <div class="hero-name">Astaroth</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Astrid.png" alt="Astrid and Lucas">
-            <div class="hero-name">Astrid and Lucas</div>
-        </a>
-
-        <a class="hero-card" href="#">
-            <img src="Images/Heroes/Aurora.png" alt="Aurora">
-            <div class="hero-name">Aurora</div>
-        </a>
-
-    </div>
+    <section class="hero-grid" id="heroGrid"></section>
 
 </main>
-
 
 <footer>
     © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
+
+<script>
+
+/*
+==========================================================
+HERO DATABASE
+==========================================================
+
+IMPORTANT:
+The image filename is defined here ONCE.
+
+When an image is uploaded to:
+Images/Heroes/
+
+the website will automatically display it.
+
+Future individual guides can be connected by replacing "#"
+with the guide page.
+*/
+
+const heroes = [
+
+    ["Aidan", "aidan.png"],
+    ["Alvanor", "Alvanor.png"],
+    ["Amira", "Amira.png"],
+    ["Andvari", "Andvari.png"],
+    ["Arachne", "arachne.png"],
+    ["Artemis", "artemis.png"],
+    ["Astaroth", "Astaroth.png"],
+    ["Astrid and Lucas", "Astrid.png"],
+    ["Aurora", "Aurora.png"],
+
+    ["Byrna", "byrna.png"],
+
+    ["Cascade", "cascade.png"],
+    ["Celeste", "celeste.png"],
+    ["Chabba", "chabba.png"],
+    ["Cleaver", "cleaver.png"],
+    ["Cornelius", "cornelius.png"],
+    ["Corvus", "corvus.png"],
+    ["Crow", "crow.png"],
+
+    ["Dante", "dante.png"],
+    ["Daredevil", "daredevil.png"],
+    ["Dark Star", "dark-star.png"],
+    ["Dorian", "dorian.png"],
+    ["Drayne", "drayne.png"],
+
+    ["Electra Von Grave", "electra-von-grave.png"],
+    ["Elmir", "elmir.png"],
+    ["Eva", "eva.png"],
+
+    ["Faceless", "faceless.png"],
+    ["Fafnir", "fafnir.png"],
+    ["Folio", "folio.png"],
+    ["Fox", "fox.png"],
+
+    ["Galahad", "galahad.png"],
+    ["Ginger", "ginger.png"],
+    ["Guus", "guus.png"],
+
+    ["Heidi", "heidi.png"],
+    ["Helios", "helios.png"],
+
+    ["Iris", "iris.png"],
+    ["Isaac", "isaac.png"],
+    ["Ishmael", "ishmael.png"],
+
+    ["Jet", "jet.png"],
+    ["Jhu", "jhu.png"],
+    ["Jorgen", "jorgen.png"],
+    ["Judge", "judge.png"],
+    ["Julius", "julius.png"],
+
+    ["Kai", "kai.png"],
+    ["K'arkh", "karkh.png"],
+    ["Kayla", "kayla.png"],
+    ["Keira", "keira.png"],
+    ["Kendle", "kendle.png"],
+    ["Krista", "krista.png"],
+
+    ["Lara Croft", "lara-croft.png"],
+    ["Lars", "lars.png"],
+    ["Leonel", "leonel.png"],
+    ["Lian", "lian.png"],
+    ["Lilith", "lilith.png"],
+    ["Luther", "luther.png"],
+
+    ["Markus", "markus.png"],
+    ["Martha", "martha.png"],
+    ["Maya", "maya.png"],
+    ["Miu", "miu.png"],
+    ["Mojo", "mojo.png"],
+    ["Morrigan", "morrigan.png"],
+    ["Mushy and Shroom", "mushy-and-shroom.png"],
+
+    ["Nebula", "nebula.png"],
+    ["Ninja Turtles", "ninja-turtles.png"],
+
+    ["Octavia", "octavia.png"],
+    ["Orion", "orion.png"],
+    ["Oya", "oya.png"],
+
+    ["Peech", "peech.png"],
+    ["Peppy", "peppy.png"],
+    ["Phobos", "phobos.png"],
+    ["Polaris", "polaris.png"],
+
+    ["Qing Mao", "qing-mao.png"],
+
+    ["Rufus", "rufus.png"],
+
+    ["Satori", "satori.png"],
+    ["Sebastian", "sebastian.png"],
+    ["Soleil", "soleil.png"],
+    ["Somna", "somna.png"],
+
+    ["Tempus", "tempus.png"],
+    ["Thea", "thea.png"],
+    ["Tristan", "tristan.png"],
+
+    ["Xe'Sha", "xesha.png"],
+
+    ["Yasmine", "yasmine.png"],
+
+    ["Ziri", "ziri.png"]
+
+];
+
+
+/* CREATE HERO CARDS */
+
+const heroGrid = document.getElementById("heroGrid");
+
+heroes.forEach(hero => {
+
+    const name = hero[0];
+    const image = hero[1];
+
+    const card = document.createElement("a");
+
+    card.className = "hero-card";
+    card.href = "#";
+    card.dataset.name = name.toLowerCase();
+
+    const imageContainer = document.createElement("div");
+    imageContainer.className = "hero-image";
+
+    const img = document.createElement("img");
+
+    img.src = "Images/Heroes/" + image;
+    img.alt = name;
+    img.loading = "lazy";
+
+    const placeholder = document.createElement("div");
+    placeholder.className = "hero-placeholder";
+
+    placeholder.innerHTML =
+        "<span>⚔</span>" +
+        "IMAGE COMING SOON";
+
+    img.onerror = function() {
+        img.style.display = "none";
+        placeholder.style.display = "flex";
+    };
+
+    imageContainer.appendChild(img);
+    imageContainer.appendChild(placeholder);
+
+    const heroName = document.createElement("div");
+
+    heroName.className = "hero-name";
+    heroName.textContent = name;
+
+    card.appendChild(imageContainer);
+    card.appendChild(heroName);
+
+    heroGrid.appendChild(card);
+
+});
+
+
+/* SEARCH */
+
+const heroSearch = document.getElementById("heroSearch");
+
+heroSearch.addEventListener("input", function() {
+
+    const search = this.value.toLowerCase().trim();
+
+    const cards = document.querySelectorAll(".hero-card");
+
+    cards.forEach(card => {
+
+        const heroName = card.dataset.name;
+
+        if (heroName.includes(search)) {
+            card.style.display = "";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+
+});
+
+</script>
 
 </body>
 </html>
