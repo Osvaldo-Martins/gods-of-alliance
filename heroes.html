@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hero Guides | Gods of Alliance</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #070707;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    height: 78px;
+    background: rgba(5,5,5,0.98);
+    border-bottom: 1px solid #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #e9a923;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+nav a:hover {
+    color: #e9a923;
+}
+
+/* PAGE */
+
+.hero-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 70px 30px 90px;
+}
+
+.page-label {
+    color: #e9a923;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.intro {
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto 55px;
+}
+
+/* HERO GRID */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+}
+
+.hero-card {
+    background: #101010;
+    border: 1px solid #242424;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+
+.hero-card:hover {
+    transform: translateY(-6px);
+    border-color: #e9a923;
+    box-shadow: 0 8px 30px rgba(233,169,35,0.15);
+}
+
+.hero-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-name {
+    padding: 18px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero-card:hover .hero-name {
+    color: #e9a923;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #222;
+    text-align: center;
+    color: #666;
+    padding: 28px;
+    font-size: 12px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .hero-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    .hero-page {
+        padding: 50px 18px 70px;
+    }
+
+    .hero-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .hero-name {
+        font-size: 11px;
+        padding: 14px 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+        GODS OF <span>ALLIANCE</span>
+    </div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+    </nav>
+
+</header>
+
+
+<main class="hero-page">
+
+    <div class="page-label">GODS OF ALLIANCE DATABASE</div>
+
+    <h1>HERO GUIDES</h1>
+
+    <p class="intro">
+        Explore our Hero Wars Alliance hero database.
+        Select a hero to discover skills, builds, glyphs, skins,
+        team synergies, strengths, weaknesses and battle strategies.
+    </p>
+
+
+    <div class="hero-grid">
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/aidan.png" alt="Aidan">
+            <div class="hero-name">Aidan</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Alvanor.png" alt="Alvanor">
+            <div class="hero-name">Alvanor</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Amira.png" alt="Amira">
+            <div class="hero-name">Amira</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Andvari.png" alt="Andvari">
+            <div class="hero-name">Andvari</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/arachne.png" alt="Arachne">
+            <div class="hero-name">Arachne</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/artemis.png" alt="Artemis">
+            <div class="hero-name">Artemis</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Astaroth.png" alt="Astaroth">
+            <div class="hero-name">Astaroth</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Astrid.png" alt="Astrid and Lucas">
+            <div class="hero-name">Astrid and Lucas</div>
+        </a>
+
+        <a class="hero-card" href="#">
+            <img src="Images/Heroes/Aurora.png" alt="Aurora">
+            <div class="hero-name">Aurora</div>
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+</body>
+</html>
