@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Eva Guide | Gods of Alliance</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #070707;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+/* HEADER */
+
+header {
+    height: 78px;
+    background: #050505;
+    border-bottom: 1px solid #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+.brand {
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #e9a923;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+}
+
+nav a:hover {
+    color: #e9a923;
+}
+
+/* PAGE */
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+/* COVER */
+
+.cover {
+    padding: 45px 0 55px;
+}
+
+.cover img {
+    width: 100%;
+    display: block;
+    border-radius: 7px;
+    border: 1px solid #292929;
+    box-shadow: 0 0 45px rgba(233,169,35,0.12);
+}
+
+/* SECTION */
+
+.section {
+    margin-bottom: 65px;
+}
+
+.section-label {
+    color: #e9a923;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+.section h2 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 22px;
+}
+
+.section-intro {
+    color: #a9a9a9;
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+/* TABLE */
+
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid #292929;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0d0d0d;
+}
+
+th {
+    background: #050505;
+    color: #e9a923;
+    text-align: left;
+    padding: 17px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 18px 17px;
+    border-top: 1px solid #292929;
+    color: #d5d5d5;
+    vertical-align: top;
+}
+
+td strong {
+    color: #ffffff;
+}
+
+/* RELICS */
+
+.relic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.relic {
+    background: #0d0d0d;
+    padding: 24px;
+    border-radius: 6px;
+    border: 1px solid #292929;
+}
+
+.relic-level {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.relic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.relic p {
+    color: #b9b9b9;
+    font-size: 14px;
+}
+
+.relic-green {
+    border-top: 4px solid #39d353;
+}
+
+.relic-green .relic-level {
+    color: #39d353;
+}
+
+.relic-blue {
+    border-top: 4px solid #3291ff;
+}
+
+.relic-blue .relic-level {
+    color: #3291ff;
+}
+
+.relic-purple {
+    border-top: 4px solid #a855f7;
+}
+
+.relic-purple .relic-level {
+    color: #a855f7;
+}
+
+.relic-gold {
+    border-top: 4px solid #ff9d00;
+}
+
+.relic-gold .relic-level {
+    color: #ff9d00;
+}
+
+/* BUILD */
+
+.build-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.build-card {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-top: 3px solid #e9a923;
+    border-radius: 6px;
+    padding: 25px;
+}
+
+.build-card h3 {
+    color: #e9a923;
+    font-size: 17px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.priority {
+    margin-bottom: 12px;
+    color: #b9b9b9;
+}
+
+.priority strong {
+    color: #ffffff;
+}
+
+/* COUNTERS */
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.counter {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    padding: 22px;
+    border-radius: 6px;
+}
+
+.counter h3 {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.counter p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* TEAMS */
+
+.team {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-left: 3px solid #e9a923;
+    padding: 22px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+}
+
+.team-number {
+    color: #e9a923;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.team h3 {
+    margin: 5px 0 8px;
+    font-size: 18px;
+}
+
+.team p {
+    color: #aaa;
+}
+
+/* WARNING */
+
+.warning {
+    margin-top: 18px;
+    padding: 20px;
+    border: 1px solid #554016;
+    background: #151107;
+    color: #d6c38d;
+    border-radius: 5px;
+}
+
+.warning strong {
+    color: #e9a923;
+}
+
+/* SUMMARY */
+
+.summary {
+    background: #0d0d0d;
+    border: 1px solid #292929;
+    border-top: 3px solid #e9a923;
+    padding: 32px;
+    border-radius: 6px;
+}
+
+.summary p {
+    color: #c1c1c1;
+    margin-bottom: 17px;
+}
+
+.summary p:last-child {
+    margin-bottom: 0;
+}
+
+/* VIDEO */
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #000;
+    border: 1px solid #292929;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.youtube-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #e9a923;
+    color: #050505;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+.youtube-button:hover {
+    background: #ffffff;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #222;
+    text-align: center;
+    color: #666;
+    padding: 30px;
+    font-size: 12px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+    .relic-grid,
+    .build-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .brand {
+        font-size: 15px;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .cover {
+        padding: 25px 0 40px;
+    }
+
+    .section {
+        margin-bottom: 50px;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    th,
+    td {
+        padding: 14px;
+        min-width: 130px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="brand">
+        GODS OF <span>ALLIANCE</span>
+    </div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="heroes.html">HERO GUIDES</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <!-- EVA COVER -->
+
+    <section class="cover">
+        <img
+            src="Images/Hero-Guides/Eva/eva-guide.png"
+            alt="Eva Hero Guide - Gods of Alliance"
+        >
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+        <div class="section-label">EVA ABILITIES</div>
+        <h2>SKILLS</h2>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Name</th>
+                        <th>What It Does</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>1st Skill</strong></td>
+                        <td><strong>Impossible Shot</strong></td>
+                        <td>
+                            Eva aims for 3 seconds and attacks the nearest enemy,
+                            dealing Physical Damage plus additional Physical Damage
+                            based on 25% of the target's Maximum Health. Especially
+                            dangerous against high-Health frontline heroes.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>2nd Skill</strong></td>
+                        <td><strong>Focusing Scope</strong></td>
+                        <td>
+                            Attacks the farthest enemy and applies Marked for 9 seconds.
+                            The marked target also receives 50% of direct damage dealt
+                            by allied Marksmen to other Heroes. Damage Over Time does
+                            not transfer through this mechanic.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>3rd Skill</strong></td>
+                        <td><strong>Piercing Shot</strong></td>
+                        <td>
+                            Eva aims and fires at all enemies in front of her,
+                            dealing Physical Damage.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>4th Skill</strong></td>
+                        <td><strong>Marksmen Unity</strong></td>
+                        <td>
+                            Increases damage dealt by Eva and allied Marksmen based
+                            on distance to the target, reaching up to 400% of the
+                            original damage. Distance is a major part of Eva's design.
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+    <!-- RELICS -->
+
+    <section class="section">
+
+        <div class="section-label">LEGENDARY PROGRESSION</div>
+        <h2>RELICS</h2>
+
+        <p class="section-intro">
+            Eva's Relics progressively improve four different parts of her kit:
+            protection, burst damage, Energy generation and overall offensive pressure.
+        </p>
+
+        <div class="relic-grid">
+
+            <div class="relic relic-green">
+                <div class="relic-level">LEVEL 1 • GREEN</div>
+                <h3>Antivirus</h3>
+                <p>
+                    Every 8 seconds, Eva removes all control effects currently
+                    affecting her and prevents new control effects for 5 seconds.
+                    This helps protect the windows she needs to aim and attack.
+                </p>
+            </div>
+
+            <div class="relic relic-blue">
+                <div class="relic-level">LEVEL 10 • BLUE</div>
+                <h3>Impossible Shot Upgrade</h3>
+                <p>
+                    The additional Physical Damage based on the target's Maximum
+                    Health increases from 25% to 50%, doubling the Max-Health
+                    component of Eva's defining shot.
+                </p>
+            </div>
+
+            <div class="relic relic-purple">
+                <div class="relic-level">LEVEL 20 • PURPLE</div>
+                <h3>Piercing Shot Upgrade</h3>
+                <p>
+                    Eva restores 30 Energy for every enemy hit by Piercing Shot.
+                    Hitting all five enemies can restore up to 150 Energy,
+                    helping Eva cycle her abilities faster.
+                </p>
+            </div>
+
+            <div class="relic relic-gold">
+                <div class="relic-level">LEVEL 30 • ORANGE / GOLD</div>
+                <h3>Explosive Payload</h3>
+                <p>
+                    Qualifying damage gains additional Physical Damage equal to
+                    10% of the target's Maximum Health. Damage Over Time and
+                    shared damage are excluded.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BUILD -->
+
+    <section class="section">
+
+        <div class="section-label">BUILD PRIORITIES</div>
+        <h2>HOW TO BUILD EVA</h2>
+
+        <div class="build-grid">
+
+            <div class="build-card">
+
+                <h3>GLYPHS</h3>
+
+                <p class="priority">
+                    <strong>First:</strong> Bring all five Glyphs to Level 40.
+                </p>
+
+                <p class="priority">
+                    <strong>1. Health</strong> — Eva's biggest concern is survivability.
+                </p>
+
+                <p class="priority">
+                    <strong>2. Agility</strong> — Her Main Stat, improving Physical
+                    Attack and Armor.
+                </p>
+
+                <p class="priority">
+                    <strong>3. Physical Attack</strong> — Strengthens her already
+                    exceptional damage.
+                </p>
+
+                <p class="priority">
+                    <strong>4. Armor Penetration</strong> — Helps her Physical Damage
+                    overcome enemy Armor.
+                </p>
+
+                <p class="priority">
+                    <strong>5. Critical Hit Chance</strong> — Valuable, but lower
+                    priority while establishing Eva's foundation.
+                </p>
+
+            </div>
+
+
+            <div class="build-card">
+
+                <h3>ARTIFACTS</h3>
+
+                <p class="priority">
+                    <strong>1. Prime Access</strong> — Armor Penetration and Critical
+                    Hit Chance.
+                </p>
+
+                <p class="priority">
+                    <strong>2. Ring of Agility</strong> — Strengthens Eva's Main Stat.
+                </p>
+
+                <p class="priority">
+                    <strong>3. Ruiner</strong> — When Impossible Shot activates the
+                    Artifact Weapon, it can provide Critical Hit Chance to the team
+                    for 9 seconds.
+                </p>
+
+            </div>
+
+
+            <div class="build-card">
+
+                <h3>SPARK OF POWER</h3>
+
+                <p class="priority">
+                    <strong>MAX IT.</strong>
+                </p>
+
+                <p class="priority">
+                    Eva benefits from everything Spark of Power provides.
+                    It improves both her damage and survivability.
+                </p>
+
+            </div>
+
+
+            <div class="build-card">
+
+                <h3>SKINS</h3>
+
+                <p class="priority">
+                    <strong>1. Default Agility Skin — MAX</strong>
+                </p>
+
+                <p class="priority">
+                    <strong>2. Singularity Health Skin — NEXT</strong>
+                </p>
+
+                <p class="priority">
+                    Eva already has tremendous offensive potential. Health helps
+                    her stay alive long enough to use it.
+                </p>
+
+            </div>
+
+
+            <div class="build-card">
+
+                <h3>TALISMAN</h3>
+
+                <p class="priority">
+                    <strong>Talisman of Candidate</strong>
+                </p>
+
+                <p class="priority">
+                    Base Stat: <strong>Agility</strong>
+                </p>
+
+                <p class="priority">
+                    Preferred Rolls:
+                    <strong>Armor Penetration • Armor Penetration • Armor Penetration</strong>
+                </p>
+
+                <p class="priority">
+                    Armor Penetration helps Eva's enormous Physical Damage
+                    overcome heavily armored targets.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="section">
+
+        <div class="section-label">KNOW HER WEAKNESSES</div>
+        <h2>COUNTERS & THREATS</h2>
+
+        <div class="counter-grid">
+
+            <div class="counter">
+                <h3>Cleaver</h3>
+                <p>
+                    Rusty Hook can drag the farthest enemy toward the frontline,
+                    removing Eva's safety and attacking the distance she wants
+                    to exploit.
+                </p>
+            </div>
+
+            <div class="counter">
+                <h3>Jorgen</h3>
+                <p>
+                    Leper can target the back line and redirect Physical Damage
+                    taken by the enemy team toward Eva.
+                </p>
+            </div>
+
+            <div class="counter">
+                <h3>Corvus</h3>
+                <p>
+                    Altar of Souls can retaliate when Eva damages Corvus's allies,
+                    creating dangerous return pressure.
+                </p>
+            </div>
+
+            <div class="counter">
+                <h3>Kayla</h3>
+                <p>
+                    Kayla can jump directly into the enemy formation and bring
+                    pressure to the back line where Eva wants to remain protected.
+                </p>
+            </div>
+
+            <div class="counter">
+                <h3>Control</h3>
+                <p>
+                    Impossible Shot requires 3 seconds of aiming, creating an
+                    opportunity for well-timed control to interfere with Eva.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="warning">
+            <strong>RELIC WARNING:</strong>
+            Antivirus changes the control matchup. At Relic Level 1, Eva periodically
+            removes control and prevents new control effects for 5 seconds. Control
+            should therefore not be treated as a guaranteed permanent counter.
+        </div>
+
+    </section>
+
+
+    <!-- TEAMS -->
+
+    <section class="section">
+
+        <div class="section-label">TESTED OFFENSIVE OPTIONS</div>
+        <h2>BEST EVA TEAMS</h2>
+
+        <div class="team">
+            <div class="team-number">TEAM 01</div>
+            <h3>Satori • Cascade • Byrna • Lian • Eva</h3>
+            <p>
+                Eva can pressure large frontline targets such as Julius,
+                helping create more freedom for Satori to operate.
+            </p>
+        </div>
+
+        <div class="team">
+            <div class="team-number">TEAM 02</div>
+            <h3>Drayne • Dante • Byrna • Eva • Polaris</h3>
+            <p>
+                Eva and Dante create heavy damage pressure, helping Drayne find
+                opportunities to finish weakened targets with Final Verdict.
+            </p>
+        </div>
+
+        <div class="team">
+            <div class="team-number">TEAM 03</div>
+            <h3>Kendle • Cleaver • Crow • Eva • Aidan</h3>
+            <p>
+                A strong example of why Eva does not require another Marksman.
+                Protection, sustain and utility can be more valuable than forcing
+                Marksman synergy.
+            </p>
+        </div>
+
+        <div class="team">
+            <div class="team-number">TEAM 04</div>
+            <h3>Eva • Iris • Julius • Aidan • Guus</h3>
+            <p>
+                Julius, Aidan and Guus help protect and sustain Eva while Iris
+                provides another dangerous source of damage.
+            </p>
+        </div>
+
+        <div class="team">
+            <div class="team-number">TEAM 05</div>
+            <h3>Crow • Eva • Julius • Guus • Aidan</h3>
+            <p>
+                The philosophy is simple: keep Eva alive, give her time and allow
+                her damage to become the main weapon inside a protective shell.
+            </p>
+        </div>
+
+        <div class="warning">
+            <strong>SPECIAL MATCHUP — ELECTRA:</strong>
+            Eva can be particularly useful against Electra compositions.
+            Removing Electra earlier can eliminate a major source of protection
+            for the enemy team.
+        </div>
+
+    </section>
+
+
+    <!-- HYDRA -->
+
+    <section class="section">
+
+        <div class="section-label">BATTLE TESTING</div>
+        <h2>HYDRA PERFORMANCE</h2>
+
+        <p class="section-intro">
+            Primary tested team: Eva • Yasmine • Jhu • Sebastian • Julius
+        </p>
+
+        <div class="table-wrap">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Hydra Head</th>
+                        <th>Eva Damage</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>Fire</strong></td>
+                        <td><strong>139.6M</strong></td>
+                        <td>Victory</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Darkness</strong></td>
+                        <td><strong>134.7M</strong></td>
+                        <td>Victory</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Light</strong></td>
+                        <td><strong>126.2M</strong></td>
+                        <td>Victory</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Earth</strong></td>
+                        <td><strong>120.4M</strong></td>
+                        <td>Victory</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Water</strong></td>
+                        <td><strong>112.9M</strong></td>
+                        <td>Victory</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Wind*</strong></td>
+                        <td><strong>41.2M</strong></td>
+                        <td>Defeat</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="warning">
+            <strong>*WIND TEST:</strong>
+            Andvari was used instead of Julius, so this was not an equivalent
+            team comparison and should not be treated as evidence that Wind
+            directly counters Eva.
+        </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+
+    <section class="section">
+
+        <div class="section-label">GODS OF ALLIANCE ANALYSIS</div>
+        <h2>EVA SUMMARY</h2>
+
+        <div class="summary">
+
+            <p>
+                Eva is a back-line Marksman from the Way of Progress built around
+                extreme Physical Damage, distance and target pressure. Her
+                Max-Health-based damage makes large frontline heroes particularly
+                interesting targets, while Focusing Scope gives her another way
+                to pressure the back of the enemy formation.
+            </p>
+
+            <p>
+                Her greatest limitation is survivability. Eva needs time and
+                distance to operate, making positioning, protection and the heroes
+                surrounding her extremely important.
+            </p>
+
+            <p>
+                Although Eva has natural synergy with Marksmen, she does not need
+                to be locked into Marksman-only teams. Her greatest value is her
+                flexibility as an offensive tool capable of helping solve specific
+                defensive problems.
+            </p>
+
+            <p>
+                Build around her strengths, protect her weaknesses and use Eva
+                where her damage profile gives you a real advantage.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="section">
+
+        <div class="section-label">GODS OF ALLIANCE VIDEO GUIDE</div>
+        <h2>WATCH THE EVA GUIDE</h2>
+
+        <div class="video-wrap">
+
+            <iframe
+                src="https://www.youtube.com/embed/hv32CtbO7y0"
+                title="Gods of Alliance Eva Guide"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <a
+            class="youtube-button"
+            href="https://youtu.be/hv32CtbO7y0"
+            target="_blank"
+            rel="noopener noreferrer">
+            WATCH ON YOUTUBE →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+</body>
+</html>
