@@ -246,16 +246,6 @@ footer {
 
 <script>
 
-/*
-=========================================================
-ALL GODS OF ALLIANCE HEROES
-=========================================================
-
-image = exact filename inside Images/Heroes
-null  = IMAGE COMING SOON
-=========================================================
-*/
-
 const heroes = [
 
     { name: "Aidan", image: "Aidan.png" },
@@ -286,7 +276,9 @@ const heroes = [
 
     { name: "Electra Von Grave", image: "Electra Von Grave.png" },
     { name: "Elmir", image: "Elmir.png" },
-    { name: "Eva", image: "Eva.png" },
+
+    /* EVA — FIRST COMPLETE HERO GUIDE */
+    { name: "Eva", image: "Eva.png", page: "eva.html" },
 
     { name: "Faceless", image: "Faceless.png" },
     { name: "Fafnir", image: "Fafnir.png" },
@@ -365,35 +357,19 @@ const heroes = [
 
 ];
 
-
-/*
-=========================================================
-CREATE HERO CARDS AUTOMATICALLY
-=========================================================
-*/
-
 const heroGrid = document.getElementById("heroGrid");
 
 heroes.forEach(hero => {
 
     const card = document.createElement("a");
-
     card.className = "hero-card";
 
-    /*
-    Later each hero will receive their own guide page.
-    Example:
-    heroes/ginger.html
-    heroes/tristan.html
-    etc.
-    */
-
-    card.href = "#";
+    /* If a hero has a guide page, open it. Otherwise remain on Hero Guides. */
+    card.href = hero.page ? hero.page : "#";
 
     let visual;
 
     if (hero.image) {
-
         visual = `
             <div class="hero-image">
                 <img
@@ -403,16 +379,13 @@ heroes.forEach(hero => {
                 >
             </div>
         `;
-
     } else {
-
         visual = `
             <div class="placeholder">
                 <div class="placeholder-icon">⚔</div>
                 <div class="placeholder-text">IMAGE COMING SOON</div>
             </div>
         `;
-
     }
 
     card.innerHTML = `
@@ -421,10 +394,8 @@ heroes.forEach(hero => {
     `;
 
     heroGrid.appendChild(card);
-
 });
 
 </script>
-
 </body>
 </html>
