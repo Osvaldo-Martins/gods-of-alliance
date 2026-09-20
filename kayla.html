@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kayla Guide | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, #171717 0%, #090909 38%, #000 75%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .back-link {
+      color: #d8ad54;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid #282828;
+      background: #0b0b0b;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 55px auto 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .hero-role {
+      margin-top: 16px;
+      color: #d8ad54;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 780px;
+      margin: 25px auto 0;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .gold-line {
+      width: 70px;
+      height: 3px;
+      background: #d8ad54;
+      margin: 30px auto 0;
+    }
+
+    .section {
+      margin-top: 70px;
+    }
+
+    .section-title {
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-title h2 {
+      margin-top: 7px;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .skills {
+      display: grid;
+      gap: 18px;
+    }
+
+    .skill-card {
+      border: 1px solid #252525;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.055),
+          rgba(255, 255, 255, 0.015)
+        );
+      padding: 30px;
+    }
+
+    .skill-number {
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .skill-card h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .skill-keyword {
+      display: inline-block;
+      margin-bottom: 17px;
+      padding: 6px 10px;
+      border: 1px solid #3b3120;
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .skill-card p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .skill-card p + p {
+      margin-top: 13px;
+    }
+
+    .key-point {
+      margin-top: 20px;
+      border-left: 3px solid #d8ad54;
+      padding: 12px 0 12px 17px;
+      color: #e5e5e5;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .build-grid,
+    .info-grid,
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .build-card,
+    .info-card,
+    .counter-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 30px;
+    }
+
+    .build-card h3,
+    .info-card h3 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .priority-list {
+      list-style: none;
+      counter-reset: priority;
+    }
+
+    .priority-list li {
+      counter-increment: priority;
+      position: relative;
+      padding: 13px 0 13px 43px;
+      border-top: 1px solid #222;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .priority-list li:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .priority-list li::before {
+      content: counter(priority);
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #3b3120;
+      color: #d8ad54;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-list li:first-child::before {
+      top: -2px;
+    }
+
+    .priority-list strong {
+      color: #fff;
+    }
+
+    .build-note {
+      margin-top: 20px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .artifact-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 25px;
+    }
+
+    .artifact-rank {
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .artifact-card h3 {
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+
+    .artifact-card p,
+    .info-card p,
+    .counter-card p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .info-card p + p {
+      margin-top: 12px;
+    }
+
+    .gold {
+      color: #d8ad54;
+      font-weight: 800;
+    }
+
+    .counter-card h3 {
+      color: #d8ad54;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      margin-top: 70px;
+      padding: 40px;
+      border: 1px solid #3b3120;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(0, 0, 0, 0.3)
+        );
+    }
+
+    .summary h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .summary p {
+      color: #b3b3b3;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .video-section {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .video-section > p {
+      color: #999;
+      max-width: 680px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+      background: #000;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 850px) {
+      .build-grid,
+      .info-grid,
+      .counter-grid,
+      .artifact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      .skill-card,
+      .build-card,
+      .info-card,
+      .counter-card,
+      .summary {
+        padding: 24px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      GODS <span>OF ALLIANCE</span>
+    </a>
+
+    <a class="back-link" href="heroes.html">
+      ← HERO GUIDES
+    </a>
+  </div>
+</header>
+
+<main>
+
+  <!-- COVER -->
+
+  <section class="cover">
+    <img
+      src="Images/Hero-Guides/Kayla/kayla-guide.png"
+      alt="Kayla Hero Guide"
+    >
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="eyebrow">HERO GUIDE</div>
+
+    <h1>KAYLA</h1>
+
+    <div class="hero-role">
+      WARRIOR • WAY OF CHAOS • FRONT LINE
+    </div>
+
+    <p>
+      Kayla is an aggressive front-line Warrior built around mobility,
+      burning pressure and explosive physical damage. Her ability to dive
+      into the enemy formation makes her extremely dangerous, but also
+      means that proper development and survivability are essential.
+    </p>
+
+    <div class="gold-line"></div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>ABILITIES</span>
+      <h2>SKILLS</h2>
+    </div>
+
+    <div class="skills">
+
+      <article class="skill-card">
+
+        <div class="skill-number">SKILL 1</div>
+        <h3>Inferno</h3>
+        <div class="skill-keyword">DIVE • DAMAGE • BURN</div>
+
+        <p>
+          Kayla launches herself into the enemy formation, applying
+          intense pressure directly inside the opposing team.
+        </p>
+
+        <p>
+          Her aggressive positioning allows her to threaten vulnerable
+          targets that would normally be protected behind the front line.
+        </p>
+
+        <div class="key-point">
+          Kayla's ability to dive deep into enemy territory is one of her
+          greatest strengths, but it also makes survivability extremely
+          important.
+        </div>
+
+      </article>
+
+
+      <article class="skill-card">
+
+        <div class="skill-number">SKILL 2</div>
+        <h3>Overheat</h3>
+        <div class="skill-keyword">OFFENSIVE PRESSURE</div>
+
+        <p>
+          Kayla increases the pressure on enemies affected by her fiery
+          attacks, reinforcing the aggressive damage pattern that defines
+          her playstyle.
+        </p>
+
+        <div class="key-point">
+          Kayla performs best when she can remain active long enough to
+          maintain continuous offensive pressure.
+        </div>
+
+      </article>
+
+
+      <article class="skill-card">
+
+        <div class="skill-number">SKILL 3</div>
+        <h3>Flaming Heart</h3>
+        <div class="skill-keyword">SURVIVABILITY • DAMAGE</div>
+
+        <p>
+          Kayla's mechanics reward her for staying engaged in combat,
+          allowing her offensive potential to remain threatening while
+          fighting inside the enemy formation.
+        </p>
+
+        <div class="key-point">
+          Building enough survivability is essential because Kayla often
+          fights much deeper inside the opposing team than traditional
+          front-line Heroes.
+        </div>
+
+      </article>
+
+
+      <article class="skill-card">
+
+        <div class="skill-number">SKILL 4</div>
+        <h3>Unquenchable Flame</h3>
+        <div class="skill-keyword">FIRE • SCALING • PRESSURE</div>
+
+        <p>
+          Kayla's final ability reinforces the burning mechanics that
+          define her kit and contributes to the sustained offensive
+          pressure she creates throughout the battle.
+        </p>
+
+        <div class="key-point">
+          Kayla is designed to keep applying pressure rather than simply
+          delivering one isolated attack.
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKINS + GLYPHS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>BUILD PRIORITIES</span>
+      <h2>SKINS & GLYPHS</h2>
+    </div>
+
+    <div class="build-grid">
+
+      <div class="build-card">
+
+        <h3>Skins</h3>
+
+        <ol class="priority-list">
+          <li><strong>Physical Attack</strong></li>
+          <li><strong>Agility</strong></li>
+          <li><strong>Health</strong></li>
+          <li><strong>Armor</strong></li>
+          <li><strong>Magic Defense</strong></li>
+        </ol>
+
+        <p class="build-note">
+          Kayla needs strong offensive development, but survivability
+          should not be ignored because her mechanics regularly place
+          her directly inside the enemy formation.
+        </p>
+
+      </div>
+
+
+      <div class="build-card">
+
+        <h3>Glyphs</h3>
+
+        <ol class="priority-list">
+          <li><strong>Physical Attack</strong></li>
+          <li><strong>Agility</strong></li>
+          <li><strong>Health</strong></li>
+          <li><strong>Armor</strong></li>
+          <li><strong>Magic Defense</strong></li>
+        </ol>
+
+        <p class="build-note">
+          Build her offensive foundation first while ensuring she has
+          enough defensive development to survive after diving into the
+          opposing team.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ARTIFACTS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>BUILD PRIORITY</span>
+      <h2>ARTIFACTS</h2>
+    </div>
+
+    <div class="artifact-grid">
+
+      <div class="artifact-card">
+        <div class="artifact-rank">PRIORITY 1</div>
+        <h3>Book</h3>
+        <p>
+          Develop Kayla's core offensive stats first to maximize the
+          pressure created by her attacks and abilities.
+        </p>
+      </div>
+
+      <div class="artifact-card">
+        <div class="artifact-rank">PRIORITY 2</div>
+        <h3>Ring</h3>
+        <p>
+          Additional Agility improves Kayla's overall physical development
+          and strengthens her primary offensive profile.
+        </p>
+      </div>
+
+      <div class="artifact-card">
+        <div class="artifact-rank">PRIORITY 3</div>
+        <h3>Weapon</h3>
+        <p>
+          Upgrade her Weapon after establishing the personal stats that
+          allow Kayla to survive and produce consistent damage.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- GIFT -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>ADDITIONAL DEVELOPMENT</span>
+      <h2>GIFT OF THE ELEMENTS</h2>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+
+        <h3>Recommendation</h3>
+
+        <p>
+          <span class="gold">MAX IT.</span>
+        </p>
+
+        <p>
+          Kayla benefits greatly from complete development because she
+          combines aggressive positioning with a damage-focused role.
+        </p>
+
+      </div>
+
+      <div class="info-card">
+
+        <h3>Why It Matters</h3>
+
+        <p>
+          Stronger core stats improve both her offensive output and her
+          ability to survive after diving into dangerous positions.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TALISMANS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>BUILD OPTIONS</span>
+      <h2>TALISMANS</h2>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+
+        <h3>Offensive Development</h3>
+
+        <p>
+          Prioritize the Talisman option that strengthens the offensive
+          stats Kayla relies on to maximize her physical damage.
+        </p>
+
+      </div>
+
+      <div class="info-card">
+
+        <h3>Development Matters</h3>
+
+        <p>
+          Kayla is a Hero where offensive power and survivability must
+          remain balanced. Her aggressive positioning means that raw
+          damage alone is not always enough.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COUNTERS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>HOW TO FIGHT HER</span>
+      <h2>KAYLA COUNTERS</h2>
+    </div>
+
+    <div class="counter-grid">
+
+      <div class="counter-card">
+        <h3>Control</h3>
+        <p>
+          Control effects can interrupt Kayla's offensive momentum and
+          prevent her from freely applying pressure after entering the
+          enemy formation.
+        </p>
+      </div>
+
+      <div class="counter-card">
+        <h3>Fast Focus Damage</h3>
+        <p>
+          Because Kayla places herself in dangerous positions, teams that
+          can quickly focus and eliminate her can punish her aggressive
+          playstyle.
+        </p>
+      </div>
+
+      <div class="counter-card">
+        <h3>Defensive Protection</h3>
+        <p>
+          Strong defensive mechanics can reduce the impact of Kayla's
+          initial pressure and give the defending team time to respond.
+        </p>
+      </div>
+
+      <div class="counter-card">
+        <h3>Anti-Resurrection</h3>
+        <p>
+          When Kayla is paired with Aidan, resurrection prevention becomes
+          especially valuable because it can stop Phoenix Ritual from
+          repeatedly bringing her back into the battle.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUMMARY -->
+
+  <section class="summary">
+
+    <div class="eyebrow">QUICK SUMMARY</div>
+
+    <h2>HOW TO BUILD KAYLA</h2>
+
+    <p>
+      Kayla is an aggressive Chaos Warrior who creates pressure by diving
+      directly into the enemy formation. Her build needs to support both
+      sides of that identity: enough offensive development to make her
+      attacks dangerous, and enough survivability to keep her alive while
+      fighting in exposed positions. She becomes particularly threatening
+      when combined with Aidan, whose Phoenix Ritual can bring her back
+      after she falls.
+    </p>
+
+  </section>
+
+
+  <!-- VIDEO -->
+
+  <section class="video-section">
+
+    <div class="eyebrow">GODS OF ALLIANCE VIDEO</div>
+
+    <h2>WATCH THE FULL KAYLA GUIDE</h2>
+
+    <p>
+      Watch the complete Gods of Alliance video for the full explanation
+      of Kayla's skills, development priorities and counters.
+    </p>
+
+    <div class="video-wrapper">
+
+      <iframe
+        src="https://www.youtube.com/embed/NymEw1fDz0Q"
+        title="Gods of Alliance - Kayla Hero Guide"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+</footer>
+
+</body>
+</html>
