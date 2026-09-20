@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aidan Guide | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, #171717 0%, #090909 38%, #000 75%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .back-link {
+      color: #d8ad54;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transition: 0.2s;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid #282828;
+      background: #0b0b0b;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 55px auto 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .hero-role {
+      margin-top: 16px;
+      color: #d8ad54;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 780px;
+      margin: 25px auto 0;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .gold-line {
+      width: 70px;
+      height: 3px;
+      background: #d8ad54;
+      margin: 30px auto 0;
+    }
+
+    .section {
+      margin-top: 70px;
+    }
+
+    .section-title {
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-title h2 {
+      margin-top: 7px;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    /* SKILLS */
+
+    .skills {
+      display: grid;
+      gap: 18px;
+    }
+
+    .skill-card {
+      border: 1px solid #252525;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.055),
+          rgba(255, 255, 255, 0.015)
+        );
+      padding: 30px;
+    }
+
+    .skill-number {
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .skill-card h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .skill-keyword {
+      display: inline-block;
+      margin-bottom: 17px;
+      padding: 6px 10px;
+      border: 1px solid #3b3120;
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .skill-card p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .skill-card p + p {
+      margin-top: 13px;
+    }
+
+    .key-point {
+      margin-top: 20px;
+      border-left: 3px solid #d8ad54;
+      padding: 12px 0 12px 17px;
+      color: #e5e5e5;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* BUILD */
+
+    .build-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .build-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 30px;
+    }
+
+    .build-card h3 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .priority-list {
+      list-style: none;
+      counter-reset: priority;
+    }
+
+    .priority-list li {
+      counter-increment: priority;
+      position: relative;
+      padding: 13px 0 13px 43px;
+      border-top: 1px solid #222;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .priority-list li:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .priority-list li::before {
+      content: counter(priority);
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #3b3120;
+      color: #d8ad54;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-list li:first-child::before {
+      top: -2px;
+    }
+
+    .priority-list strong {
+      color: #fff;
+    }
+
+    .build-note {
+      margin-top: 20px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* ARTIFACTS */
+
+    .artifact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .artifact-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 25px;
+    }
+
+    .artifact-rank {
+      color: #d8ad54;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .artifact-card h3 {
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+
+    .artifact-card p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* SIMPLE CARDS */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .info-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 30px;
+    }
+
+    .info-card h3 {
+      font-size: 23px;
+      margin-bottom: 13px;
+    }
+
+    .info-card p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .info-card p + p {
+      margin-top: 12px;
+    }
+
+    .gold {
+      color: #d8ad54;
+      font-weight: 800;
+    }
+
+    /* SYNERGY */
+
+    .synergy-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .synergy-card {
+      border: 1px solid #3b3120;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(0, 0, 0, 0.25)
+        );
+      padding: 30px;
+    }
+
+    .synergy-card h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .synergy-card p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .counter-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 27px;
+    }
+
+    .counter-card h3 {
+      color: #d8ad54;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .counter-card p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* SUMMARY */
+
+    .summary {
+      margin-top: 70px;
+      padding: 40px;
+      border: 1px solid #3b3120;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(0, 0, 0, 0.3)
+        );
+    }
+
+    .summary h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .summary p {
+      color: #b3b3b3;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .video-section > p {
+      color: #999;
+      max-width: 680px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+      background: #000;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 850px) {
+      .build-grid,
+      .info-grid,
+      .synergy-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .artifact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      .skill-card,
+      .build-card,
+      .info-card,
+      .synergy-card,
+      .counter-card,
+      .summary {
+        padding: 24px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+      <img
+        src="Images/Hero-Guides/Eva/Aidan/aidan-guide.png"
+        alt="Aidan Hero Guide"
+      >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        HERO GUIDE
+      </div>
+
+      <h1>AIDAN</h1>
+
+      <div class="hero-role">
+        HEALER • WAY OF CHAOS • BACK LINE
+      </div>
+
+      <p>
+        Aidan is a powerful back-line support and healer built around
+        sacrifice, permanent Health growth, healing and protective
+        shields. His mechanics become increasingly dangerous as battles
+        continue, especially when combined with Heroes that benefit from
+        friendly Health sacrifice.
+      </p>
+
+      <div class="gold-line"></div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>ABILITIES</span>
+        <h2>SKILLS</h2>
+      </div>
+
+      <div class="skills">
+
+        <article class="skill-card">
+
+          <div class="skill-number">SKILL 1</div>
+          <h3>Phoenix Ritual</h3>
+          <div class="skill-keyword">SACRIFICE • HEALTH SCALING</div>
+
+          <p>
+            Aidan sacrifices 20% of his maximum Health and permanently
+            increases both the maximum and current Health of every allied
+            Hero. The affected allies are set on fire and take damage over
+            nine seconds equal to the Health bonus they received.
+          </p>
+
+          <p>
+            Aidan's abilities cannot kill his own allies. If an ally falls
+            below 25% Health, his abilities stop damaging that Hero.
+          </p>
+
+          <p>
+            If Kayla is on the allied team and has already fallen,
+            Phoenix Ritual immediately resurrects her.
+          </p>
+
+          <div class="key-point">
+            Scales with Aidan's Health. Repeated activations permanently
+            increase the team's maximum Health and also strengthen the
+            shields created by Flame Shield.
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">SKILL 2</div>
+          <h3>Fire Embrace</h3>
+          <div class="skill-keyword">HEALING • MAGIC ATTACK</div>
+
+          <p>
+            Heals the ally with the lowest Health and also restores
+            teammates that have lost Health through friendly skills since
+            the previous activation of Fire Embrace.
+          </p>
+
+          <p>
+            Chaos Heroes receive additional healing, making the skill
+            particularly effective inside Chaos-based compositions.
+          </p>
+
+          <div class="key-point">
+            Scales with Magic Attack. Its ability to target the ally in the
+            most critical condition can save an important Hero at a decisive
+            moment.
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">SKILL 3</div>
+          <h3>Bonds of Fire</h3>
+          <div class="skill-keyword">SACRIFICE • SCALING</div>
+
+          <p>
+            Aidan sacrifices Health from the ally with the highest Health
+            and from teammates currently above 80% Health. He converts the
+            sacrificed Health into additional maximum and current Health
+            for himself while also healing.
+          </p>
+
+          <div class="key-point">
+            Scales with Magic Attack and creates powerful interaction with
+            Heroes that benefit from friendly Health sacrifice.
+          </div>
+
+        </article>
+
+
+        <article class="skill-card">
+
+          <div class="skill-number">SKILL 4</div>
+          <h3>Flame Shield</h3>
+          <div class="skill-keyword">SHIELD • TEAM HEALTH</div>
+
+          <p>
+            Whenever Aidan or an ally that started the battle with him
+            falls below 30% Health, Aidan creates a shield around that Hero
+            for four seconds.
+          </p>
+
+          <p>
+            The shield absorbs both Physical and Magical Damage. Each ally
+            can receive it once every fifteen seconds.
+          </p>
+
+          <div class="key-point">
+            Shield durability equals 24% of the team's combined maximum
+            Health. Because Phoenix Ritual continuously increases team
+            Health, Flame Shield becomes stronger as the battle progresses.
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS + GLYPHS -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>BUILD PRIORITIES</span>
+        <h2>SKINS & GLYPHS</h2>
+      </div>
+
+      <div class="build-grid">
+
+        <div class="build-card">
+
+          <h3>Skins</h3>
+
+          <ol class="priority-list">
+            <li><strong>Health Skin</strong> — first priority</li>
+            <li><strong>Health Skin + Super Skin</strong></li>
+            <li><strong>Magic Attack Skin + Skin+</strong></li>
+            <li><strong>Second Magic Attack Skin</strong></li>
+            <li><strong>Armor Skin</strong></li>
+            <li><strong>Default Intelligence Skin</strong></li>
+          </ol>
+
+          <p class="build-note">
+            Health strengthens both Aidan's survivability and Phoenix Ritual.
+            Magic Attack improves Fire Embrace and Bonds of Fire.
+          </p>
+
+        </div>
+
+
+        <div class="build-card">
+
+          <h3>Glyphs</h3>
+
+          <ol class="priority-list">
+            <li><strong>Health</strong></li>
+            <li><strong>Magic Attack</strong></li>
+            <li><strong>Intelligence</strong></li>
+            <li><strong>Armor</strong></li>
+            <li><strong>Magic Defense</strong></li>
+          </ol>
+
+          <p class="build-note">
+            For most players, bringing all five Glyphs to Level 40 provides
+            a strong foundation unless you are specifically pushing Hero
+            Classes further.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>BUILD PRIORITY</span>
+        <h2>ARTIFACTS</h2>
+      </div>
+
+      <div class="artifact-grid">
+
+        <div class="artifact-card">
+          <div class="artifact-rank">PRIORITY 1</div>
+          <h3>Book</h3>
+          <p>
+            Provides Magic Attack and Health. It strengthens Aidan's
+            abilities while also improving his survivability.
+          </p>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-rank">PRIORITY 2</div>
+          <h3>Ring</h3>
+          <p>
+            Provides Intelligence, improving Magic Attack and adding
+            further Magic Defense.
+          </p>
+        </div>
+
+        <div class="artifact-card">
+          <div class="artifact-rank">PRIORITY 3</div>
+          <h3>Weapon</h3>
+          <p>
+            Grants team-wide Magic Defense when Phoenix Ritual is
+            activated. Useful, but personal stat development provides
+            greater priority.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT + TALISMANS -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>ADDITIONAL DEVELOPMENT</span>
+        <h2>GIFT OF THE ELEMENTS & TALISMANS</h2>
+      </div>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+
+          <h3>Gift of the Elements</h3>
+
+          <p>
+            <span class="gold">MAX IT.</span>
+          </p>
+
+          <p>
+            Health keeps Aidan alive and directly benefits his Health-based
+            mechanics, while Magic Attack strengthens his healing and
+            sacrifice scaling.
+          </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+          <h3>Talismans</h3>
+
+          <p>
+            <span class="gold">Talisman 1:</span>
+            Intelligence + Magic Attack.
+          </p>
+
+          <p>
+            <span class="gold">Talisman 2:</span>
+            Toughness + Health.
+          </p>
+
+          <p>
+            Both are excellent options. Aidan can still perform extremely
+            well without both Talismans if the rest of his build is
+            properly developed.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>IMPORTANT INTERACTIONS</span>
+        <h2>KEY SYNERGIES</h2>
+      </div>
+
+      <div class="synergy-grid">
+
+        <div class="synergy-card">
+
+          <h3>Kayla</h3>
+
+          <p>
+            Phoenix Ritual can immediately resurrect Kayla if she has
+            already fallen. Without a resurrection counter, this interaction
+            can create repeated revival pressure and make the pair extremely
+            difficult to eliminate permanently.
+          </p>
+
+        </div>
+
+
+        <div class="synergy-card">
+
+          <h3>Xe'Sha</h3>
+
+          <p>
+            Health sacrificed by Aidan and his allies contributes to
+            Xe'Sha's Soaring Might, permanently increasing her Magic Attack.
+            Through Spiritual Power, that offensive scaling can then benefit
+            the rest of the team.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="section">
+
+      <div class="section-title">
+        <span>HOW TO FIGHT HIM</span>
+        <h2>AIDAN COUNTERS</h2>
+      </div>
+
+      <div class="counter-grid">
+
+        <div class="counter-card">
+
+          <h3>Morrigan</h3>
+
+          <p>
+            Necromancy blocks Phoenix Ritual from resurrecting Kayla.
+            Failed resurrection attempts can also generate Soul Essence
+            for Morrigan.
+          </p>
+
+        </div>
+
+
+        <div class="counter-card">
+
+          <h3>Kendle</h3>
+
+          <p>
+            Pure Damage can bypass the protection offered by Aidan's large
+            shields, creating a direct way to pressure protected targets.
+          </p>
+
+        </div>
+
+
+        <div class="counter-card">
+
+          <h3>Cornelius</h3>
+
+          <p>
+            Aidan's very high Intelligence makes him vulnerable to
+            Cornelius' ultimate, which can produce devastating damage
+            against high-Intelligence targets.
+          </p>
+
+        </div>
+
+
+        <div class="counter-card">
+
+          <h3>Phobos</h3>
+
+          <p>
+            If Aidan has the highest Magic Attack on his team, Phobos can
+            drain his Energy and control him, limiting access to the
+            abilities that make Aidan difficult to defeat.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+
+    <section class="summary">
+
+      <div class="eyebrow">
+        QUICK SUMMARY
+      </div>
+
+      <h2>WHY AIDAN IS SO POWERFUL</h2>
+
+      <p>
+        Aidan combines permanent team Health growth, healing, friendly
+        sacrifice and powerful shields in a single back-line support.
+        Phoenix Ritual makes the entire team progressively harder to kill,
+        while the same Health growth also increases the durability of Flame
+        Shield. His interactions with Kayla and Xe'Sha add even more value
+        to specific compositions.
+      </p>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section">
+
+      <div class="eyebrow">
+        GODS OF ALLIANCE VIDEO
+      </div>
+
+      <h2>WATCH THE FULL AIDAN GUIDE</h2>
+
+      <p>
+        Watch the complete Gods of Alliance guide for the full explanation
+        of Aidan's mechanics, build priorities, synergies and counters.
+      </p>
+
+      <div class="video-wrapper">
+
+        <iframe
+          src="https://www.youtube.com/embed/AmyFPhMPLqU"
+          title="Gods of Alliance - Aidan Hero Guide"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+</body>
+</html>
