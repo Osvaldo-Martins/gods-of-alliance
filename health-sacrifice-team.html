@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Health Sacrifice Team | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(215, 169, 77, 0.07), transparent 32%),
+        #050505;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid #242424;
+      background: rgba(5, 5, 5, 0.97);
+    }
+
+    .header-inner {
+      max-width: 1250px;
+      margin: auto;
+      padding: 21px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+    }
+
+    .brand span {
+      color: #d7a94d;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+    }
+
+    nav a {
+      color: #a9a9a9;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #d7a94d;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1250px;
+      margin: auto;
+      padding: 55px 28px 100px;
+    }
+
+    .back {
+      display: inline-block;
+      color: #d7a94d;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      margin-bottom: 30px;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border: 1px solid #292929;
+      margin-bottom: 45px;
+    }
+
+    .eyebrow {
+      color: #d7a94d;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 13px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+    }
+
+    .lineup {
+      color: #b5b5b5;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      margin-bottom: 28px;
+    }
+
+    .lead {
+      color: #a7a7a7;
+      max-width: 900px;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      margin-top: 75px;
+    }
+
+    .section-label {
+      color: #d7a94d;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 11px;
+    }
+
+    .section h2 {
+      font-size: clamp(28px, 4vw, 43px);
+      margin-bottom: 28px;
+      letter-spacing: -1px;
+    }
+
+    /* CORE IDEA */
+
+    .core-box {
+      background: #0b0b0b;
+      border: 1px solid #292929;
+      border-left: 4px solid #d7a94d;
+      padding: 30px;
+    }
+
+    .core-box p {
+      color: #b1b1b1;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .core-box strong {
+      color: #ffffff;
+    }
+
+    /* HERO CARDS */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .hero-card {
+      background: #0b0b0b;
+      border: 1px solid #282828;
+      padding: 27px;
+    }
+
+    .hero-card:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .hero-role {
+      color: #d7a94d;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .hero-card h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .hero-card p {
+      color: #999999;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .hero-card strong {
+      color: #dedede;
+    }
+
+    /* TEAM LOOP */
+
+    .loop {
+      border: 1px solid #5a4520;
+      background:
+        linear-gradient(135deg, rgba(215,169,77,0.10), rgba(215,169,77,0.02)),
+        #090909;
+      padding: 38px 28px;
+      text-align: center;
+    }
+
+    .loop-title {
+      color: #d7a94d;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 23px;
+    }
+
+    .loop-flow {
+      font-size: clamp(17px, 2.3vw, 25px);
+      font-weight: 900;
+      line-height: 1.8;
+    }
+
+    .arrow {
+      color: #d7a94d;
+      padding: 0 8px;
+    }
+
+    /* FEATURES */
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .feature {
+      background: #0b0b0b;
+      border: 1px solid #282828;
+      padding: 24px;
+    }
+
+    .feature h3 {
+      color: #ffffff;
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #8f8f8f;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    /* DEVELOPMENT */
+
+    .development {
+      background: #0b0b0b;
+      border: 1px solid #292929;
+      padding: 32px;
+    }
+
+    .development h3 {
+      color: #d7a94d;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .development p {
+      color: #a3a3a3;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .development p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* FINAL */
+
+    .final-box {
+      border-top: 1px solid #333333;
+      border-bottom: 1px solid #333333;
+      padding: 35px 0;
+    }
+
+    .final-box p {
+      color: #aaaaaa;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 950px;
+    }
+
+    .final-box strong {
+      color: #ffffff;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #202020;
+      color: #666666;
+      text-align: center;
+      padding: 28px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+      .hero-grid,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card:last-child {
+        grid-column: auto;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      main {
+        padding: 35px 20px 70px;
+      }
+
+      .section {
+        margin-top: 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="heroes.html">HERO GUIDES</a>
+        <a class="active" href="best-teams.html">BEST TEAMS</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <a class="back" href="best-teams.html">← BACK TO BEST TEAMS</a>
+
+    <img
+      class="cover"
+      src="Images/Best-Teams/health-sacrifice-team.png"
+      alt="Cleaver Byrna Dorian Kendle Aidan Health Sacrifice Team"
+    >
+
+    <div class="eyebrow">BEST TEAM GUIDE</div>
+
+    <h1>HEALTH SACRIFICE</h1>
+
+    <div class="lineup">
+      CLEAVER • BYRNA • DORIAN • KENDLE • AIDAN
+    </div>
+
+    <p class="lead">
+      A sacrifice-based composition built around friendly damage,
+      cleansing, healing, Pure Damage, Maximum Health growth and sustain.
+      The strength of this lineup comes from how each Hero's mechanics
+      feed directly into the next.
+    </p>
+
+
+    <!-- WHY IT WORKS -->
+
+    <section class="section">
+
+      <div class="section-label">TEAM CONCEPT</div>
+      <h2>WHY THIS TEAM WORKS</h2>
+
+      <div class="core-box">
+        <p>
+          This team deliberately creates <strong>self and allied damage</strong>
+          and then turns that sacrifice into an advantage. Cleaver can convert
+          friendly damage into cleansing, Kendle can benefit offensively from it,
+          Dorian and Aidan provide powerful recovery, and Byrna adds another layer
+          of healing, cleansing, Energy generation and Maximum Health growth.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- HERO SYNERGIES -->
+
+    <section class="section">
+
+      <div class="section-label">CORE SYNERGIES</div>
+      <h2>HOW THE FIVE HEROES CONNECT</h2>
+
+      <div class="hero-grid">
+
+        <article class="hero-card">
+          <div class="hero-role">CLEANSE • TANK • HEALING REDUCTION</div>
+          <h3>CLEAVER</h3>
+          <p>
+            With <strong>Heavyweight</strong> upgraded to Legendary, whenever
+            Cleaver or an ally takes damage from their own skill or an allied
+            skill, negative effects are removed from that Hero while Cleaver
+            remains alive. This turns the team's sacrifice mechanics into a
+            defensive cleansing engine. Cleaver can also heavily reduce enemy
+            healing through Miasma and Putrefaction.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <div class="hero-role">PURE DAMAGE • SACRIFICE</div>
+          <h3>KENDLE</h3>
+          <p>
+            <strong>Agony Surge</strong> causes Kendle to damage herself while
+            attacking a ranged enemy with Pure Damage. Friendly damage can also
+            increase her Pure Damage during <strong>Reaping Hour</strong>.
+            Her sacrifice therefore contributes to both the team's defensive
+            interactions and her own offensive pressure.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <div class="hero-role">VAMPIRISM • SUSTAIN • RESURRECTION</div>
+          <h3>DORIAN</h3>
+          <p>
+            <strong>Blood Pact</strong> creates additional allied damage while
+            strengthening Vampirism and healing. Fountain of Blood and Blood Seal
+            provide major sustain, while Vampirism can also create temporary
+            protection against stun and sleep. <strong>Call of Blood</strong>
+            gives the composition another major layer by potentially resurrecting
+            a fallen ally.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <div class="hero-role">SACRIFICE • HEALING • SHIELD</div>
+          <h3>AIDAN</h3>
+          <p>
+            <strong>Phoenix Ritual</strong> and <strong>Bonds of Fire</strong>
+            create more friendly damage, feeding the team's sacrifice mechanics.
+            Fire Embrace can restore Health lost through friendly skills.
+            When an ally becomes critically low, <strong>Flame Shield</strong>
+            absorbs Physical and Magical Damage based on the total Maximum Health
+            of the entire team.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <div class="hero-role">HEALING • CLEANSE • ENERGY • MAX HEALTH</div>
+          <h3>BYRNA</h3>
+          <p>
+            Byrna adds another source of cleansing through Legendary
+            <strong>Bear Cuddle</strong>, while <strong>Gift Spirit</strong>
+            restores Energy. Most importantly, <strong>Living Heart</strong>
+            can turn excess healing on a fully healed ally into additional
+            Maximum Health. With Dorian, Aidan and Byrna generating substantial
+            healing, that interaction can become extremely valuable — and the
+            growing Health pool can also strengthen Aidan's Flame Shield.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEAM LOOP -->
+
+    <section class="section">
+
+      <div class="section-label">THE ENGINE</div>
+      <h2>THE TEAM LOOP</h2>
+
+      <div class="loop">
+
+        <div class="loop-title">HOW THE COMPOSITION FEEDS ITSELF</div>
+
+        <div class="loop-flow">
+          FRIENDLY DAMAGE
+          <span class="arrow">→</span>
+          CLEANSE
+          <span class="arrow">→</span>
+          PURE DAMAGE
+          <span class="arrow">→</span>
+          HEALING
+          <span class="arrow">→</span>
+          MAX HEALTH
+          <span class="arrow">→</span>
+          STRONGER SHIELD
+          <span class="arrow">→</span>
+          SUSTAIN
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY HARD TO COUNTER -->
+
+    <section class="section">
+
+      <div class="section-label">DEFENSIVE STRUCTURE</div>
+      <h2>WHY IT CAN BE DIFFICULT TO BREAK</h2>
+
+      <div class="features">
+
+        <div class="feature">
+          <h3>Multiple Cleanses</h3>
+          <p>
+            Cleaver and Byrna can both contribute to removing negative effects,
+            making control and debuffs less straightforward.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Heavy Sustain</h3>
+          <p>
+            Dorian, Aidan and Byrna combine healing and Vampirism with mechanics
+            specifically designed to recover sacrificed Health.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Maximum Health Growth</h3>
+          <p>
+            Byrna can convert excess healing into Maximum Health, giving the
+            composition another way to become harder to finish.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Emergency Shield</h3>
+          <p>
+            Aidan's Flame Shield can protect critically low allies, with its
+            durability scaling from the team's total Maximum Health.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Resurrection</h3>
+          <p>
+            Even securing a kill may not end the fight because Dorian can
+            potentially return a fallen ally to battle.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Offensive Pressure</h3>
+          <p>
+            Kendle turns the same sacrifice structure that supports the team
+            defensively into additional Pure Damage pressure.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DEVELOPMENT -->
+
+    <section class="section">
+
+      <div class="section-label">IMPORTANT</div>
+      <h2>DEVELOPMENT MATTERS</h2>
+
+      <div class="development">
+
+        <h3>Relics • Class Glyphs • Health Thresholds</h3>
+
+        <p>
+          This composition does not necessarily require every Hero to have fully
+          maxed Relics before important synergies begin to appear. Depending on
+          the Hero, earlier Relic levels can already unlock valuable parts of
+          the team's mechanics.
+        </p>
+
+        <p>
+          However, development can strongly influence consistency. Relic levels,
+          Class Glyphs and Health thresholds can determine whether a Hero survives
+          long enough to reach another heal, shield, cleanse or resurrection
+          opportunity.
+        </p>
+
+        <p>
+          For this reason, total Power alone does not explain how effective the
+          composition will be. The interaction between the five Heroes is the
+          most important part of the team.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+
+    <section class="section">
+
+      <div class="section-label">SUMMARY</div>
+      <h2>HEALTH SACRIFICE TEAM</h2>
+
+      <div class="final-box">
+
+        <p>
+          <strong>Cleaver, Byrna, Dorian, Kendle and Aidan</strong> form a
+          highly interconnected composition where sacrifice is not simply a
+          weakness to overcome — it is part of the engine.
+          Friendly damage can create cleansing and offensive benefits, healing
+          can become additional Maximum Health, that Health can strengthen
+          Aidan's defensive shield, and Dorian adds both major sustain and
+          resurrection potential.
+          <br><br>
+          The team has counters and requires meaningful development, but its
+          strength comes from forcing opponents to deal with several connected
+          mechanics rather than stopping one isolated ability.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES
+  </footer>
+
+</body>
+</html>
