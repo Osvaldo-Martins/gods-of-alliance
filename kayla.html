@@ -147,6 +147,8 @@
       font-weight: 900;
     }
 
+    /* SKILLS */
+
     .skills {
       display: grid;
       gap: 18px;
@@ -206,24 +208,21 @@
       font-weight: 700;
     }
 
-    .build-grid,
-    .info-grid,
-    .counter-grid {
+    /* BUILD */
+
+    .build-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 20px;
     }
 
-    .build-card,
-    .info-card,
-    .counter-card {
+    .build-card {
       border: 1px solid #252525;
       background: #0d0d0d;
       padding: 30px;
     }
 
-    .build-card h3,
-    .info-card h3 {
+    .build-card h3 {
       font-size: 23px;
       margin-bottom: 20px;
     }
@@ -278,6 +277,8 @@
       line-height: 1.7;
     }
 
+    /* ARTIFACTS */
+
     .artifact-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -303,12 +304,35 @@
       margin-bottom: 9px;
     }
 
-    .artifact-card p,
-    .info-card p,
-    .counter-card p {
+    .artifact-card p {
       color: #999;
       font-size: 14px;
-      line-height: 1.75;
+      line-height: 1.7;
+    }
+
+    /* INFO */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .info-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 30px;
+    }
+
+    .info-card h3 {
+      font-size: 23px;
+      margin-bottom: 13px;
+    }
+
+    .info-card p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
     }
 
     .info-card p + p {
@@ -320,11 +344,33 @@
       font-weight: 800;
     }
 
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .counter-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 27px;
+    }
+
     .counter-card h3 {
       color: #d8ad54;
       font-size: 22px;
       margin-bottom: 10px;
     }
+
+    .counter-card p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    /* SUMMARY */
 
     .summary {
       margin-top: 70px;
@@ -348,6 +394,8 @@
       font-size: 15px;
       line-height: 1.8;
     }
+
+    /* VIDEO */
 
     .video-section {
       margin-top: 70px;
@@ -442,6 +490,7 @@
   </div>
 </header>
 
+
 <main>
 
   <!-- COVER -->
@@ -467,10 +516,11 @@
     </div>
 
     <p>
-      Kayla is an aggressive front-line Warrior built around mobility,
-      burning pressure and explosive physical damage. Her ability to dive
-      into the enemy formation makes her extremely dangerous, but also
-      means that proper development and survivability are essential.
+      Kayla is an explosive Chaos Warrior who dives directly into the
+      enemy formation, creates continuous pressure and becomes increasingly
+      difficult to stop when properly developed. Her build combines
+      Physical Attack, Health and offensive penetration with mechanics
+      that reward her for surviving inside the enemy team.
     </p>
 
     <div class="gold-line"></div>
@@ -489,87 +539,140 @@
 
     <div class="skills">
 
+      <!-- PHOENIX'S FURY -->
+
       <article class="skill-card">
 
         <div class="skill-number">SKILL 1</div>
-        <h3>Inferno</h3>
-        <div class="skill-keyword">DIVE • DAMAGE • BURN</div>
+
+        <h3>Phoenix's Fury</h3>
+
+        <div class="skill-keyword">
+          PHYSICAL ATTACK • HEALTH STEAL • RESURRECTION
+        </div>
 
         <p>
-          Kayla launches herself into the enemy formation, applying
-          intense pressure directly inside the opposing team.
+          Kayla throws her chakram through the battlefield, dealing damage
+          to nearby enemies. Every enemy hit loses a portion of maximum
+          Health based on the damage dealt.
         </p>
 
         <p>
-          Her aggressive positioning allows her to threaten vulnerable
-          targets that would normally be protected behind the front line.
+          Kayla steals that value for herself, increasing both her current
+          and maximum Health. This allows her to become progressively harder
+          to eliminate as the battle continues.
+        </p>
+
+        <p>
+          If Aidan has already fallen, Phoenix's Fury immediately resurrects
+          him with the same amount of Health Kayla has just gained.
         </p>
 
         <div class="key-point">
-          Kayla's ability to dive deep into enemy territory is one of her
-          greatest strengths, but it also makes survivability extremely
-          important.
+          Scales with Physical Attack. Increasing Physical Attack strengthens
+          both Kayla's damage and the value she gains from this skill.
         </div>
 
       </article>
 
+
+      <!-- ACROBATICS -->
 
       <article class="skill-card">
 
         <div class="skill-number">SKILL 2</div>
-        <h3>Overheat</h3>
-        <div class="skill-keyword">OFFENSIVE PRESSURE</div>
+
+        <h3>Acrobatics</h3>
+
+        <div class="skill-keyword">
+          DIVE • HEALING • CHAOS SYNERGY
+        </div>
 
         <p>
-          Kayla increases the pressure on enemies affected by her fiery
-          attacks, reinforcing the aggressive damage pattern that defines
-          her playstyle.
+          If Kayla has more than 40% Health, she jumps directly into the
+          middle of the enemy formation, bypassing the frontline and
+          attacking from inside the opposing team.
+        </p>
+
+        <p>
+          When her Health falls below 25%, she begins regenerating Health
+          for several seconds. The healing increases for every allied Chaos
+          Hero fighting beside her.
+        </p>
+
+        <p>
+          Once the opportunity appears, Kayla can return to the fight.
+          However, if she was already below 25% Health when Acrobatics
+          activated, she remains in position and focuses on healing.
         </p>
 
         <div class="key-point">
-          Kayla performs best when she can remain active long enough to
-          maintain continuous offensive pressure.
+          Scales with Health. More Health improves both Kayla's survivability
+          and the value of one of the defining mechanics in her kit.
         </div>
 
       </article>
 
+
+      <!-- RETALIATORY STRIKE -->
 
       <article class="skill-card">
 
         <div class="skill-number">SKILL 3</div>
-        <h3>Flaming Heart</h3>
-        <div class="skill-keyword">SURVIVABILITY • DAMAGE</div>
+
+        <h3>Retaliatory Strike</h3>
+
+        <div class="skill-keyword">
+          PHYSICAL DAMAGE • BLIND • RETALIATION
+        </div>
 
         <p>
-          Kayla's mechanics reward her for staying engaged in combat,
-          allowing her offensive potential to remain threatening while
-          fighting inside the enemy formation.
+          Retaliatory Strike deals Physical Damage to nearby enemies based
+          on the damage Kayla has received since the previous activation.
+        </p>
+
+        <p>
+          Every enemy caught by the attack is also Blinded, reducing their
+          ability to successfully land attacks while Kayla continues
+          applying pressure.
         </p>
 
         <div class="key-point">
-          Building enough survivability is essential because Kayla often
-          fights much deeper inside the opposing team than traditional
-          front-line Heroes.
+          Scales with Physical Attack. The combination of retaliatory damage
+          and Blind can punish enemies for focusing Kayla while she is
+          fighting inside their formation.
         </div>
 
       </article>
 
 
+      <!-- INNER FLAME -->
+
       <article class="skill-card">
 
         <div class="skill-number">SKILL 4</div>
-        <h3>Unquenchable Flame</h3>
-        <div class="skill-keyword">FIRE • SCALING • PRESSURE</div>
+
+        <h3>Inner Flame</h3>
+
+        <div class="skill-keyword">
+          DAMAGE OVER TIME • HEALTH SCALING • SACRIFICE
+        </div>
 
         <p>
-          Kayla's final ability reinforces the burning mechanics that
-          define her kit and contributes to the sustained offensive
-          pressure she creates throughout the battle.
+          After Acrobatics activates, Kayla ignites and continuously burns
+          both herself and every nearby enemy.
+        </p>
+
+        <p>
+          The effect continues until Kayla's Health falls below 25%.
+          This creates constant pressure while she remains inside the enemy
+          formation.
         </p>
 
         <div class="key-point">
-          Kayla is designed to keep applying pressure rather than simply
-          delivering one isolated attack.
+          Scales with Health. Health is therefore not only a defensive stat
+          for Kayla — it also strengthens one of her major offensive
+          mechanics.
         </div>
 
       </article>
@@ -590,43 +693,85 @@
 
     <div class="build-grid">
 
+      <!-- SKINS -->
+
       <div class="build-card">
 
         <h3>Skins</h3>
 
         <ol class="priority-list">
-          <li><strong>Physical Attack</strong></li>
-          <li><strong>Agility</strong></li>
-          <li><strong>Health</strong></li>
-          <li><strong>Armor</strong></li>
-          <li><strong>Magic Defense</strong></li>
+
+          <li>
+            <strong>Physical Attack + Super Skin</strong>
+          </li>
+
+          <li>
+            <strong>Default Agility Skin</strong>
+          </li>
+
+          <li>
+            <strong>Armor Penetration</strong>
+          </li>
+
+          <li>
+            <strong>Crushing</strong>
+          </li>
+
+          <li>
+            <strong>Health</strong>
+          </li>
+
+          <li>
+            <strong>Armor</strong>
+          </li>
+
         </ol>
 
         <p class="build-note">
-          Kayla needs strong offensive development, but survivability
-          should not be ignored because her mechanics regularly place
-          her directly inside the enemy formation.
+          Physical Attack comes first because Phoenix's Fury and
+          Retaliatory Strike scale directly from it. Agility strengthens
+          Kayla's main stat and adds Armor, while Armor Penetration becomes
+          increasingly important against stronger defensive teams.
         </p>
 
       </div>
 
+
+      <!-- GLYPHS -->
 
       <div class="build-card">
 
         <h3>Glyphs</h3>
 
         <ol class="priority-list">
-          <li><strong>Physical Attack</strong></li>
-          <li><strong>Agility</strong></li>
-          <li><strong>Health</strong></li>
-          <li><strong>Armor</strong></li>
-          <li><strong>Magic Defense</strong></li>
+
+          <li>
+            <strong>Health</strong>
+          </li>
+
+          <li>
+            <strong>Physical Attack</strong>
+          </li>
+
+          <li>
+            <strong>Armor</strong>
+          </li>
+
+          <li>
+            <strong>Agility</strong>
+          </li>
+
+          <li>
+            <strong>Magic Defense</strong>
+          </li>
+
         </ol>
 
         <p class="build-note">
-          Build her offensive foundation first while ensuring she has
-          enough defensive development to survive after diving into the
-          opposing team.
+          Health gives Kayla more time to activate her mechanics and also
+          strengthens her Health-scaling abilities. For most players,
+          bringing every Glyph to Level 40 first provides a strong
+          development foundation.
         </p>
 
       </div>
@@ -648,30 +793,52 @@
     <div class="artifact-grid">
 
       <div class="artifact-card">
-        <div class="artifact-rank">PRIORITY 1</div>
+
+        <div class="artifact-rank">
+          PRIORITY 1
+        </div>
+
         <h3>Book</h3>
+
         <p>
-          Develop Kayla's core offensive stats first to maximize the
-          pressure created by her attacks and abilities.
+          Provides Physical Attack and Armor Penetration — two of Kayla's
+          most important offensive stats. It improves both her abilities
+          and her basic attacks.
         </p>
+
       </div>
 
+
       <div class="artifact-card">
-        <div class="artifact-rank">PRIORITY 2</div>
+
+        <div class="artifact-rank">
+          PRIORITY 2
+        </div>
+
         <h3>Ring</h3>
+
         <p>
-          Additional Agility improves Kayla's overall physical development
-          and strengthens her primary offensive profile.
+          Provides Agility, improving Kayla's main stat and strengthening
+          multiple areas of her overall development.
         </p>
+
       </div>
 
+
       <div class="artifact-card">
-        <div class="artifact-rank">PRIORITY 3</div>
+
+        <div class="artifact-rank">
+          PRIORITY 3
+        </div>
+
         <h3>Weapon</h3>
+
         <p>
-          Upgrade her Weapon after establishing the personal stats that
-          allow Kayla to survive and produce consistent damage.
+          Grants Physical Attack to the entire team whenever Kayla activates
+          Phoenix's Fury. Useful, but maximizing Kayla's personal offensive
+          development comes first.
         </p>
+
       </div>
 
     </div>
@@ -679,78 +846,57 @@
   </section>
 
 
-  <!-- GIFT -->
+  <!-- GIFT + TALISMANS -->
 
   <section class="section">
 
     <div class="section-title">
       <span>ADDITIONAL DEVELOPMENT</span>
-      <h2>GIFT OF THE ELEMENTS</h2>
+      <h2>GIFT OF THE ELEMENTS & TALISMANS</h2>
     </div>
 
     <div class="info-grid">
 
       <div class="info-card">
 
-        <h3>Recommendation</h3>
+        <h3>Gift of the Elements</h3>
 
         <p>
           <span class="gold">MAX IT.</span>
         </p>
 
         <p>
-          Kayla benefits greatly from complete development because she
-          combines aggressive positioning with a damage-focused role.
+          Kayla fights directly inside the enemy formation. More Health
+          gives her additional survivability, while Physical Attack
+          strengthens her damage and ability scaling.
         </p>
 
       </div>
 
+
       <div class="info-card">
 
-        <h3>Why It Matters</h3>
+        <h3>Talismans</h3>
 
         <p>
-          Stronger core stats improve both her offensive output and her
-          ability to survive after diving into dangerous positions.
+          <span class="gold">Talisman 1:</span>
+          Agility + Physical Attack.
         </p>
 
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TALISMANS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>BUILD OPTIONS</span>
-      <h2>TALISMANS</h2>
-    </div>
-
-    <div class="info-grid">
-
-      <div class="info-card">
-
-        <h3>Offensive Development</h3>
-
         <p>
-          Prioritize the Talisman option that strengthens the offensive
-          stats Kayla relies on to maximize her physical damage.
+          This is the preferred option in most situations because it
+          strengthens multiple parts of Kayla's kit and provides excellent
+          overall consistency.
         </p>
 
-      </div>
-
-      <div class="info-card">
-
-        <h3>Development Matters</h3>
+        <p>
+          <span class="gold">Talisman 2:</span>
+          Armor Penetration + Critical Hit Chance.
+        </p>
 
         <p>
-          Kayla is a Hero where offensive power and survivability must
-          remain balanced. Her aggressive positioning means that raw
-          damage alone is not always enough.
+          A strong offensive alternative, particularly against more
+          defensive teams, although it is considerably harder to obtain.
         </p>
 
       </div>
@@ -772,38 +918,122 @@
     <div class="counter-grid">
 
       <div class="counter-card">
-        <h3>Control</h3>
+
+        <h3>Somna</h3>
+
         <p>
-          Control effects can interrupt Kayla's offensive momentum and
-          prevent her from freely applying pressure after entering the
-          enemy formation.
+          Somna can disrupt Kayla after she enters the enemy formation,
+          pushing her away from targets while reducing her Physical Attack
+          and Armor Penetration. This directly reduces Kayla's damage and
+          momentum.
         </p>
+
       </div>
 
-      <div class="counter-card">
-        <h3>Fast Focus Damage</h3>
-        <p>
-          Because Kayla places herself in dangerous positions, teams that
-          can quickly focus and eliminate her can punish her aggressive
-          playstyle.
-        </p>
-      </div>
 
       <div class="counter-card">
-        <h3>Defensive Protection</h3>
+
+        <h3>Tempus</h3>
+
         <p>
-          Strong defensive mechanics can reduce the impact of Kayla's
-          initial pressure and give the defending team time to respond.
+          Tempus attacks Kayla's core strengths by reducing her Physical
+          Attack and maximum Health while also burning her Energy, making
+          her slower and less threatening.
         </p>
+
       </div>
 
+
       <div class="counter-card">
-        <h3>Anti-Resurrection</h3>
+
+        <h3>Guus</h3>
+
         <p>
-          When Kayla is paired with Aidan, resurrection prevention becomes
-          especially valuable because it can stop Phoenix Ritual from
-          repeatedly bringing her back into the battle.
+          Guus can provide enormous healing through his feathers, helping
+          allies survive Kayla's continuous burning pressure and reducing
+          the impact of longer fights.
         </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Miu</h3>
+
+        <p>
+          Blind can severely disrupt Kayla because of her dependence on
+          Physical Damage. Preventing her from consistently hitting targets
+          limits her ability to do her job.
+        </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Drayne</h3>
+
+        <p>
+          Against a Kayla that has not yet reached very high Health values,
+          Drayne can provide enough damage pressure to eliminate her before
+          she has time to scale.
+        </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Corvus</h3>
+
+        <p>
+          Altar of Souls can punish Kayla's repeated area damage. Corvus
+          may be particularly uncomfortable for her during earlier and
+          mid-game development.
+        </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Morrigan</h3>
+
+        <p>
+          Necromancy prevents Kayla from being resurrected when she is
+          relying on Aidan or Astaroth. Removing resurrection significantly
+          weakens one of the most dangerous parts of the Fire siblings'
+          interaction.
+        </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Xe'Sha</h3>
+
+        <p>
+          If Kayla has the lowest Magic Defense on the battlefield, Xe'Sha
+          can exploit that weakness with massive Magic Damage and potentially
+          eliminate her before she takes control of the battle.
+        </p>
+
+      </div>
+
+
+      <div class="counter-card">
+
+        <h3>Burst Magic Damage</h3>
+
+        <p>
+          Kayla needs time to jump into the enemy formation and establish
+          pressure. Rapidly reducing her Health before Acrobatics can do its
+          job can force her into healing mode instead of allowing her to
+          begin her assault.
+        </p>
+
       </div>
 
     </div>
@@ -815,18 +1045,19 @@
 
   <section class="summary">
 
-    <div class="eyebrow">QUICK SUMMARY</div>
+    <div class="eyebrow">
+      QUICK SUMMARY
+    </div>
 
-    <h2>HOW TO BUILD KAYLA</h2>
+    <h2>WHY KAYLA IS SO DANGEROUS</h2>
 
     <p>
-      Kayla is an aggressive Chaos Warrior who creates pressure by diving
-      directly into the enemy formation. Her build needs to support both
-      sides of that identity: enough offensive development to make her
-      attacks dangerous, and enough survivability to keep her alive while
-      fighting in exposed positions. She becomes particularly threatening
-      when combined with Aidan, whose Phoenix Ritual can bring her back
-      after she falls.
+      Kayla combines explosive Physical Damage, continuous pressure,
+      Health scaling, self-healing and exceptional Chaos synergy. She is
+      designed to enter the enemy formation and become more dangerous the
+      longer she survives. Building her correctly means developing both
+      the offensive stats that power her attacks and the survivability
+      required to keep her active inside enemy lines.
     </p>
 
   </section>
@@ -836,13 +1067,15 @@
 
   <section class="video-section">
 
-    <div class="eyebrow">GODS OF ALLIANCE VIDEO</div>
+    <div class="eyebrow">
+      GODS OF ALLIANCE VIDEO
+    </div>
 
     <h2>WATCH THE FULL KAYLA GUIDE</h2>
 
     <p>
-      Watch the complete Gods of Alliance video for the full explanation
-      of Kayla's skills, development priorities and counters.
+      Watch the complete Gods of Alliance guide for the full breakdown of
+      Kayla's skills, build priorities, Talismans and counters.
     </p>
 
     <div class="video-wrapper">
