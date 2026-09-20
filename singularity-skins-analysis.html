@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Singularity Skins Analysis | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, #171717 0%, #090909 38%, #000 75%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .back-link {
+      color: #d8ad54;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transition: 0.2s;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* PAGE */
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    /* COVER */
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid #282828;
+      background: #0b0b0b;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* INTRO */
+
+    .intro {
+      max-width: 900px;
+      margin: 55px auto 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .intro-subtitle {
+      margin-top: 16px;
+      color: #d8ad54;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 780px;
+      margin: 25px auto 0;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .gold-line {
+      width: 70px;
+      height: 3px;
+      background: #d8ad54;
+      margin: 30px auto 0;
+    }
+
+    /* OVERVIEW */
+
+    .overview {
+      margin-bottom: 70px;
+    }
+
+    .section-title {
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-title h2 {
+      margin-top: 7px;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .overview-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 22px;
+    }
+
+    .overview-card h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .stat {
+      color: #d8ad54;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    /* SKIN SECTIONS */
+
+    .skins {
+      display: grid;
+      gap: 25px;
+    }
+
+    .skin-card {
+      border: 1px solid #252525;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.055),
+          rgba(255, 255, 255, 0.015)
+        );
+      padding: 35px;
+    }
+
+    .skin-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #242424;
+    }
+
+    .skin-name {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .skin-stat {
+      margin-top: 8px;
+      color: #d8ad54;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .priority {
+      border: 1px solid #3a3120;
+      background: rgba(216, 173, 84, 0.07);
+      color: #d8ad54;
+      padding: 8px 12px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .skin-card p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .skin-card p + p {
+      margin-top: 15px;
+    }
+
+    .key-point {
+      margin-top: 22px;
+      border-left: 3px solid #d8ad54;
+      padding: 13px 0 13px 18px;
+      color: #e5e5e5;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* SPECIAL NOTE */
+
+    .decision-box {
+      margin-top: 25px;
+      padding: 22px;
+      border: 1px solid #3b3120;
+      background: rgba(216, 173, 84, 0.055);
+    }
+
+    .decision-box strong {
+      display: block;
+      color: #d8ad54;
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .decision-box p {
+      color: #b5b5b5;
+      font-size: 14px;
+    }
+
+    /* MARKSMEN */
+
+    .marksmen {
+      margin-top: 70px;
+      padding: 40px;
+      border: 1px solid #252525;
+      background: #0c0c0c;
+    }
+
+    .marksmen h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .marksmen p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* FINAL TAKEAWAY */
+
+    .takeaway {
+      margin-top: 30px;
+      padding: 40px;
+      border: 1px solid #3b3120;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(0, 0, 0, 0.3)
+        );
+    }
+
+    .takeaway h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .takeaway p {
+      color: #b3b3b3;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .takeaway p + p {
+      margin-top: 15px;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    .video-section .eyebrow {
+      margin-bottom: 10px;
+    }
+
+    .video-section h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .video-section > p {
+      color: #999;
+      max-width: 680px;
+      margin: 0 auto 30px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+      background: #000;
+      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skin-top {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skin-card,
+      .marksmen,
+      .takeaway {
+        padding: 25px 22px;
+      }
+
+      .skin-name {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="hwa-all.html">
+        ← HWA ALL
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+      <img
+        src="Images/HWA-All/singularity-skins-analysis.png"
+        alt="Singularity Skins Analysis"
+      >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        SKIN ANALYSIS
+      </div>
+
+      <h1>SINGULARITY SKINS</h1>
+
+      <div class="intro-subtitle">
+        STATS • VALUE • PRIORITY
+      </div>
+
+      <p>
+        Eva's Season introduced six Singularity Skins for Eva,
+        Nebula, Isaac, Peech, Ginger and Polaris. But a new skin
+        does not automatically mean it should become your next
+        investment. Here is what each new stat brings to its Hero
+        and what you should consider before spending resources.
+      </p>
+
+      <div class="gold-line"></div>
+
+    </section>
+
+
+    <!-- QUICK OVERVIEW -->
+
+    <section class="overview">
+
+      <div class="section-title">
+        <span>QUICK REFERENCE</span>
+        <h2>THE SIX SINGULARITY SKINS</h2>
+      </div>
+
+      <div class="overview-grid">
+
+        <div class="overview-card">
+          <h3>Eva</h3>
+          <div class="stat">HEALTH</div>
+        </div>
+
+        <div class="overview-card">
+          <h3>Nebula</h3>
+          <div class="stat">HEALTH</div>
+        </div>
+
+        <div class="overview-card">
+          <h3>Isaac</h3>
+          <div class="stat">PHYSICAL ATTACK • SKIN+</div>
+        </div>
+
+        <div class="overview-card">
+          <h3>Peech</h3>
+          <div class="stat">ARMOR PENETRATION • SKIN+</div>
+        </div>
+
+        <div class="overview-card">
+          <h3>Polaris</h3>
+          <div class="stat">MAGIC PENETRATION</div>
+        </div>
+
+        <div class="overview-card">
+          <h3>Ginger</h3>
+          <div class="stat">CRITICAL HIT CHANCE</div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKIN ANALYSIS -->
+
+    <section>
+
+      <div class="section-title">
+        <span>DETAILED ANALYSIS</span>
+        <h2>WHAT DOES EACH SKIN BRING?</h2>
+      </div>
+
+
+      <div class="skins">
+
+        <!-- EVA -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">EVA</div>
+              <div class="skin-stat">HEALTH</div>
+            </div>
+
+            <div class="priority">
+              SURVIVABILITY UPGRADE
+            </div>
+
+          </div>
+
+          <p>
+            Health is exactly the type of stat Eva benefits from.
+            Her offensive potential is already enormous, while
+            survivability is one of the areas that can limit how
+            much pressure she produces during a battle.
+          </p>
+
+          <p>
+            More Health gives Eva additional time to aim, activate
+            her skills and continue applying offensive pressure.
+            It does not change her role — it helps her remain on
+            the battlefield long enough to perform it.
+          </p>
+
+          <div class="key-point">
+            A very useful survivability upgrade for a powerful new
+            Marksman.
+          </div>
+
+        </article>
+
+
+        <!-- NEBULA -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">NEBULA</div>
+              <div class="skin-stat">HEALTH</div>
+            </div>
+
+            <div class="priority">
+              STRONG FOR REGULAR USERS
+            </div>
+
+          </div>
+
+          <p>
+            Nebula's survivability relies heavily on Dodge, so
+            additional Health gives her another layer of protection.
+            Keeping Nebula alive is particularly valuable because
+            of how much support she can provide to the entire team.
+          </p>
+
+          <p>
+            She can cleanse negative effects, heal, buff allies,
+            increase Movement Speed and Skill Recharge, and provide
+            protection against incoming damage-over-time effects
+            during Disharmony.
+          </p>
+
+          <div class="key-point">
+            Not mandatory for every account, but highly valuable if
+            Nebula is a regular part of your teams.
+          </div>
+
+        </article>
+
+
+        <!-- ISAAC -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">ISAAC</div>
+              <div class="skin-stat">
+                PHYSICAL ATTACK • SKIN+
+              </div>
+            </div>
+
+            <div class="priority">
+              USEFUL • NOT URGENT
+            </div>
+
+          </div>
+
+          <p>
+            Physical Attack is a welcome offensive improvement for
+            Isaac because several parts of his kit benefit from the
+            stat. The new skin therefore gives him additional damage
+            potential.
+          </p>
+
+          <p>
+            However, Isaac already has access to Physical Attack,
+            Critical Hit Chance and Armor Penetration through his
+            existing skins. For a well-developed Isaac, this is an
+            additional offensive boost rather than a solution to a
+            major weakness.
+          </p>
+
+          <div class="key-point">
+            Good skin and more damage, but it does not need to become
+            an immediate investment if your important Isaac skins are
+            already developed.
+          </div>
+
+        </article>
+
+
+        <!-- PEECH -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">PEECH</div>
+              <div class="skin-stat">
+                ARMOR PENETRATION • SKIN+
+              </div>
+            </div>
+
+            <div class="priority">
+              MAJOR OFFENSIVE UPGRADE
+            </div>
+
+          </div>
+
+          <p>
+            Peech already has the ability to produce a huge amount
+            of physical damage, making Armor Penetration an especially
+            valuable addition to her offensive build.
+          </p>
+
+          <p>
+            The new stat gives her another way to push physical damage
+            through enemy Armor and makes her existing damage potential
+            even more threatening.
+          </p>
+
+          <div class="key-point">
+            Armor Penetration is one of the most meaningful new stats
+            introduced among the Singularity Skins.
+          </div>
+
+          <div class="decision-box">
+
+            <strong>RESOURCE DECISION</strong>
+
+            <p>
+              Relic Shards are also available through the event.
+              Consider your own account before choosing: does your
+              Peech benefit more from the new Skin, or would Relic
+              Shards provide greater progress for what you are
+              currently building?
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- POLARIS -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">POLARIS</div>
+              <div class="skin-stat">
+                MAGIC PENETRATION
+              </div>
+            </div>
+
+            <div class="priority">
+              HIGH-VALUE STAT
+            </div>
+
+          </div>
+
+          <p>
+            Magic Penetration fits Polaris extremely well. It helps
+            her magical damage work more effectively against enemy
+            Magic Defense while strengthening the offensive side of
+            a Hero that already provides excellent control and
+            disruption.
+          </p>
+
+          <p>
+            Her damage-over-time pressure becomes more threatening,
+            while her damaging abilities gain additional potential
+            against protected targets.
+          </p>
+
+          <div class="key-point">
+            A highly relevant offensive stat if Polaris is an
+            important Hero in your roster.
+          </div>
+
+        </article>
+
+
+        <!-- GINGER -->
+
+        <article class="skin-card">
+
+          <div class="skin-top">
+
+            <div>
+              <div class="skin-name">GINGER</div>
+              <div class="skin-stat">
+                CRITICAL HIT CHANCE
+              </div>
+            </div>
+
+            <div class="priority">
+              ACCOUNT DEPENDENT
+            </div>
+
+          </div>
+
+          <p>
+            From a pure stat perspective, Critical Hit Chance is
+            exactly the type of offensive improvement Ginger wants.
+            The bigger question is whether Ginger is actually part
+            of your roster.
+          </p>
+
+          <p>
+            Eva's arrival creates new possibilities for Marksman
+            teams because her mechanics are designed to work alongside
+            allied Marksmen and help them generate significant
+            offensive pressure.
+          </p>
+
+          <p>
+            If Ginger is already developed, or you are testing her
+            alongside Eva, this skin becomes much more interesting.
+            If Ginger has remained unused for a long time, one new
+            skin alone may not justify investing heavily into the
+            Hero from scratch.
+          </p>
+
+          <div class="key-point">
+            Excellent offensive stat for Ginger users — but whether
+            it deserves your resources depends heavily on your account.
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- MARKSMEN -->
+
+    <section class="marksmen">
+
+      <div class="eyebrow">
+        META WATCH
+      </div>
+
+      <h2>ARE MARKSMEN GETTING NEW LIFE?</h2>
+
+      <p>
+        One of the most interesting parts of Eva's Season is the
+        attention returning to Marksmen. Eva arrives with mechanics
+        specifically designed to empower allied Marksmen, while
+        Ginger receives Critical Hit Chance during the same season.
+        That does not automatically mean Marksmen will dominate the
+        game, but it creates a strong reason to test these Heroes and
+        team structures again and watch how this direction develops.
+      </p>
+
+    </section>
+
+
+    <!-- FINAL TAKEAWAY -->
+
+    <section class="takeaway">
+
+      <div class="eyebrow">
+        FINAL TAKEAWAY
+      </div>
+
+      <h2>INVEST FOR YOUR ACCOUNT</h2>
+
+      <p>
+        These six skins do not have equal value for every player.
+        Peech's Armor Penetration and Polaris' Magic Penetration are
+        highly relevant offensive additions, while Eva's Health
+        directly addresses the survivability that helps her continue
+        producing damage.
+      </p>
+
+      <p>
+        Nebula gains useful extra protection, Isaac receives another
+        offensive boost, and Ginger's Critical Hit Chance becomes
+        particularly interesting for players who already use her or
+        are experimenting with Eva-based Marksman teams.
+      </p>
+
+      <p>
+        The most important rule remains simple: do not invest in a
+        skin only because it is new. Look at the Heroes you actually
+        use, the resources available to you, and what will create the
+        most meaningful progress for your own roster.
+      </p>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section">
+
+      <div class="eyebrow">
+        GODS OF ALLIANCE VIDEO
+      </div>
+
+      <h2>WATCH THE FULL SKIN ANALYSIS</h2>
+
+      <p>
+        For the complete discussion of the Singularity Skins and
+        their value, watch the full Gods of Alliance video.
+      </p>
+
+      <div class="video-wrapper">
+
+        <iframe
+          src="https://www.youtube.com/embed/BV2nHJ2OLAI"
+          title="Gods of Alliance - Singularity Skins Analysis"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+</body>
+</html>
