@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Best Teams | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(212, 164, 76, 0.08), transparent 35%),
+        #050505;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+
+    header {
+      width: 100%;
+      border-bottom: 1px solid #252525;
+      background: rgba(5, 5, 5, 0.96);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 22px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .brand span {
+      color: #d7a94d;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+
+    .nav a {
+      color: #bdbdbd;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #d7a94d;
+    }
+
+    /* PAGE */
+
+    .page {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 70px 30px 100px;
+    }
+
+    .eyebrow {
+      color: #d7a94d;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -3px;
+      font-weight: 900;
+      margin-bottom: 24px;
+    }
+
+    .intro {
+      max-width: 780px;
+      color: #a8a8a8;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 55px;
+    }
+
+    /* TEAMS GRID */
+
+    .teams-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+    }
+
+    .team-card {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #262626;
+      background: #0b0b0b;
+      text-decoration: none;
+      color: #ffffff;
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      border-color: #d7a94d;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    }
+
+    .team-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .team-card:hover .team-image {
+      transform: scale(1.02);
+    }
+
+    .team-info {
+      padding: 26px 26px 30px;
+    }
+
+    .team-label {
+      color: #d7a94d;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+      margin-bottom: 10px;
+    }
+
+    .team-title {
+      font-size: 27px;
+      line-height: 1.1;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .heroes {
+      color: #a9a9a9;
+      font-size: 14px;
+      line-height: 1.6;
+      font-weight: 700;
+      margin-bottom: 19px;
+    }
+
+    .team-description {
+      color: #858585;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 22px;
+    }
+
+    .read-guide {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .read-guide span {
+      color: #d7a94d;
+      margin-left: 7px;
+    }
+
+    /* COMING SOON */
+
+    .coming-soon {
+      min-height: 100%;
+      border: 1px dashed #292929;
+      background: rgba(255, 255, 255, 0.015);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 30px;
+    }
+
+    .coming-soon-inner {
+      max-width: 330px;
+    }
+
+    .coming-soon .plus {
+      color: #d7a94d;
+      font-size: 42px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+
+    .coming-soon h2 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon p {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #202020;
+      padding: 28px 30px;
+      color: #656565;
+      font-size: 12px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .teams-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        padding: 18px 20px;
+      }
+
+      .page {
+        padding: 50px 20px 80px;
+      }
+
+      .nav {
+        gap: 15px;
+      }
+
+      .nav a {
+        font-size: 11px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .team-info {
+        padding: 22px;
+      }
+
+      .team-title {
+        font-size: 23px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">HOME</a>
+        <a href="heroes.html">HERO GUIDES</a>
+        <a class="active" href="best-teams.html">BEST TEAMS</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="page">
+
+    <div class="eyebrow">GODS OF ALLIANCE</div>
+
+    <h1>BEST TEAMS</h1>
+
+    <p class="intro">
+      Discover powerful Hero Wars Alliance team compositions, how their
+      core synergies work, and what makes each lineup effective.
+      Select a team below to open the complete guide.
+    </p>
+
+    <section class="teams-grid">
+
+      <!-- HEALTH SACRIFICE TEAM -->
+
+      <a class="team-card" href="health-sacrifice-team.html">
+
+        <img
+          class="team-image"
+          src="Images/Best-Teams/health-sacrifice-team.png"
+          alt="Cleaver Byrna Dorian Kendle Aidan Health Sacrifice Team"
+        >
+
+        <div class="team-info">
+
+          <div class="team-label">BEST TEAM GUIDE</div>
+
+          <h2 class="team-title">
+            HEALTH SACRIFICE
+          </h2>
+
+          <div class="heroes">
+            CLEAVER • BYRNA • DORIAN • KENDLE • AIDAN
+          </div>
+
+          <p class="team-description">
+            A powerful sacrifice-based composition built around friendly
+            damage, cleansing, healing, Pure Damage, Maximum Health growth
+            and exceptional sustain.
+          </p>
+
+          <div class="read-guide">
+            VIEW TEAM GUIDE <span>→</span>
+          </div>
+
+        </div>
+
+      </a>
+
+      <!-- FUTURE TEAMS -->
+
+      <div class="coming-soon">
+
+        <div class="coming-soon-inner">
+
+          <div class="plus">+</div>
+
+          <h2>MORE TEAMS COMING</h2>
+
+          <p>
+            New tested team compositions and complete synergy guides
+            will be added here.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES
+  </footer>
+
+</body>
+</html>
