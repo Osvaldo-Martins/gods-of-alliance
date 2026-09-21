@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Julius Relic Guide | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top, #171717 0%, #090909 38%, #000 75%);
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .back-link {
+      color: #d8ad54;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid #282828;
+      background: #0b0b0b;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 55px auto 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      margin-top: 16px;
+      color: #d8ad54;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 790px;
+      margin: 25px auto 0;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .gold-line {
+      width: 70px;
+      height: 3px;
+      background: #d8ad54;
+      margin: 30px auto 0;
+    }
+
+    .notice {
+      max-width: 900px;
+      margin: 0 auto 70px;
+      padding: 25px 28px;
+      border: 1px solid #3b3120;
+      border-left: 4px solid #d8ad54;
+      background: rgba(216, 173, 84, 0.05);
+    }
+
+    .notice strong {
+      color: #d8ad54;
+    }
+
+    .notice p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .section {
+      margin-top: 70px;
+    }
+
+    .section-title {
+      margin-bottom: 25px;
+    }
+
+    .section-title span {
+      color: #d8ad54;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-title h2 {
+      margin-top: 7px;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    /* QUICK PROGRESSION */
+
+    .progression {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .progress-card {
+      background: #0d0d0d;
+      padding: 25px 20px;
+      text-align: center;
+      border: 1px solid #252525;
+    }
+
+    .progress-card .level {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .progress-card h3 {
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .progress-card p {
+      color: #888;
+      font-size: 13px;
+    }
+
+    .green {
+      border-top: 4px solid #35c76f;
+    }
+
+    .green .level {
+      color: #35c76f;
+    }
+
+    .blue {
+      border-top: 4px solid #4295ff;
+    }
+
+    .blue .level {
+      color: #4295ff;
+    }
+
+    .purple {
+      border-top: 4px solid #a75cff;
+    }
+
+    .purple .level {
+      color: #a75cff;
+    }
+
+    .orange {
+      border-top: 4px solid #f2a629;
+    }
+
+    .orange .level {
+      color: #f2a629;
+    }
+
+    /* RELICS */
+
+    .relics {
+      display: grid;
+      gap: 25px;
+    }
+
+    .relic-card {
+      background: #0d0d0d;
+      padding: 34px;
+      border: 1px solid #252525;
+    }
+
+    .relic-card.green {
+      border-left: 5px solid #35c76f;
+      border-top: 1px solid #252525;
+    }
+
+    .relic-card.blue {
+      border-left: 5px solid #4295ff;
+      border-top: 1px solid #252525;
+    }
+
+    .relic-card.purple {
+      border-left: 5px solid #a75cff;
+      border-top: 1px solid #252525;
+    }
+
+    .relic-card.orange {
+      border-left: 5px solid #f2a629;
+      border-top: 1px solid #252525;
+    }
+
+    .relic-level {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .relic-card.green .relic-level {
+      color: #35c76f;
+    }
+
+    .relic-card.blue .relic-level {
+      color: #4295ff;
+    }
+
+    .relic-card.purple .relic-level {
+      color: #a75cff;
+    }
+
+    .relic-card.orange .relic-level {
+      color: #f2a629;
+    }
+
+    .relic-card h3 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .type {
+      color: #777;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .relic-card p {
+      color: #aaa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .relic-card p + p {
+      margin-top: 14px;
+    }
+
+    .mechanic {
+      margin-top: 23px;
+      padding: 18px 20px;
+      background: #090909;
+      border: 1px solid #222;
+    }
+
+    .mechanic-title {
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 7px;
+    }
+
+    .mechanic p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    /* TESTING */
+
+    .testing {
+      margin-top: 25px;
+      padding: 22px;
+      border: 1px solid #4d3765;
+      background: rgba(167, 92, 255, 0.06);
+    }
+
+    .testing h4 {
+      color: #c68aff;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 9px;
+    }
+
+    .testing p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* EVOLUTION */
+
+    .evolution {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border: 1px solid #292929;
+    }
+
+    .evolution-item {
+      padding: 30px 18px;
+      text-align: center;
+      background: #0d0d0d;
+      border-right: 1px solid #292929;
+    }
+
+    .evolution-item:last-child {
+      border-right: 0;
+    }
+
+    .evolution-number {
+      color: #666;
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .evolution-item h3 {
+      color: #d8ad54;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .evolution-item p {
+      color: #777;
+      font-size: 12px;
+    }
+
+    /* QUESTIONS */
+
+    .question-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .question-card {
+      border: 1px solid #252525;
+      background: #0d0d0d;
+      padding: 27px;
+    }
+
+    .question-card h3 {
+      color: #d8ad54;
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    .question-card p {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .summary {
+      margin-top: 70px;
+      padding: 40px;
+      border: 1px solid #3b3120;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(0, 0, 0, 0.3)
+        );
+    }
+
+    .summary h2 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .summary p {
+      color: #b3b3b3;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .summary p + p {
+      margin-top: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 850px) {
+      .progression,
+      .evolution {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .evolution-item {
+        border-bottom: 1px solid #292929;
+      }
+
+      .question-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      .progression,
+      .evolution {
+        grid-template-columns: 1fr;
+      }
+
+      .relic-card,
+      .summary {
+        padding: 25px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <a class="brand" href="index.html">
+      GODS <span>OF ALLIANCE</span>
+    </a>
+
+    <a class="back-link" href="hwa-all.html">
+      ← HWA ALL
+    </a>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- COVER -->
+
+  <section class="cover">
+    <img
+      src="Images/HWA-All/julius-relic-guide.png"
+      alt="Julius Relic Guide"
+    >
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="eyebrow">HWA ALL • RELIC GUIDE</div>
+
+    <h1>JULIUS RELICS</h1>
+
+    <div class="subtitle">
+      FIRST LOOK • MECHANICS • TESTING
+    </div>
+
+    <p>
+      Julius has entered the Relic system. His four Legendary Relic
+      stages expand the mechanic that has always defined him:
+      Shields. From emergency protection and healing to negative-effect
+      removal and Armor Penetration, each stage adds a different layer
+      to Julius's defensive identity.
+    </p>
+
+    <div class="gold-line"></div>
+
+  </section>
+
+
+  <!-- FIRST LOOK NOTICE -->
+
+  <section class="notice">
+
+    <p>
+      <strong>FIRST LOOK:</strong>
+      Julius is already available with his Relics in Brawls, giving us
+      an opportunity to test these mechanics in real battles. This is
+      not yet a recommendation for the best stopping level or an
+      assessment of whether Level 30 is mandatory. Those conclusions
+      require proper battle testing.
+    </p>
+
+  </section>
+
+
+  <!-- QUICK REFERENCE -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>QUICK REFERENCE</span>
+      <h2>RELIC PROGRESSION</h2>
+    </div>
+
+    <div class="progression">
+
+      <div class="progress-card green">
+        <div class="level">🟢 LEVEL 1</div>
+        <h3>Shield</h3>
+        <p>Emergency protection for the most injured ally.</p>
+      </div>
+
+      <div class="progress-card blue">
+        <div class="level">🔵 LEVEL 10</div>
+        <h3>Healing</h3>
+        <p>Shields can transition into team sustain.</p>
+      </div>
+
+      <div class="progress-card purple">
+        <div class="level">🟣 LEVEL 20</div>
+        <h3>Cleanse</h3>
+        <p>Gaining a Shield removes negative effects.</p>
+      </div>
+
+      <div class="progress-card orange">
+        <div class="level">🟠 LEVEL 30</div>
+        <h3>Offense</h3>
+        <p>Active Shields contribute Armor Penetration.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DETAILED RELICS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>DETAILED BREAKDOWN</span>
+      <h2>JULIUS RELICS</h2>
+    </div>
+
+    <div class="relics">
+
+
+      <!-- LEVEL 1 -->
+
+      <article class="relic-card green">
+
+        <div class="relic-level">
+          🟢 LEGENDARY RELIC LEVEL 1
+        </div>
+
+        <h3>Pawsitive Influence</h3>
+
+        <div class="type">
+          NEW SKILL
+        </div>
+
+        <p>
+          Pawsitive Influence is a completely new skill rather than an
+          upgrade to one of Julius's existing abilities.
+        </p>
+
+        <p>
+          Every 13 seconds, Julius identifies the most injured ally and
+          gives that Hero a Shield capable of absorbing any type of damage.
+        </p>
+
+        <p>
+          The amount of Health that ally has already lost matters:
+          the more Health they have lost, the stronger the Shield becomes.
+        </p>
+
+        <div class="mechanic">
+
+          <div class="mechanic-title">
+            CORE MECHANIC
+          </div>
+
+          <p>
+            Every 13 seconds → Find the most injured ally → Apply a
+            Shield → More missing Health creates a stronger Shield.
+          </p>
+
+        </div>
+
+        <p>
+          This gives Julius an emergency protection mechanic specifically
+          aimed at the Hero who currently needs his help the most.
+        </p>
+
+      </article>
+
+
+      <!-- LEVEL 10 -->
+
+      <article class="relic-card blue">
+
+        <div class="relic-level">
+          🔵 LEGENDARY RELIC LEVEL 10
+        </div>
+
+        <h3>Meowsterpiece of Defense</h3>
+
+        <div class="type">
+          LEGENDARY SKILL UPGRADE
+        </div>
+
+        <p>
+          At Level 10, Julius upgrades one of his existing skills to
+          Legendary.
+        </p>
+
+        <p>
+          When a Shield is destroyed or expires, the Hero who was
+          protected by that Shield recovers Health.
+        </p>
+
+        <p>
+          Way of Progress Heroes receive twice as much healing from
+          this effect.
+        </p>
+
+        <p>
+          There is one important exception: this additional effect does
+          not apply to the Meowsterpiece of Defense skill itself.
+        </p>
+
+        <div class="mechanic">
+
+          <div class="mechanic-title">
+            CORE MECHANIC
+          </div>
+
+          <p>
+            Shield destroyed or expires → Protected Hero recovers
+            Health → Way of Progress Heroes receive double healing.
+          </p>
+
+        </div>
+
+        <p>
+          The important development here is the connection between
+          protection and sustain. Julius's Shields are no longer only
+          absorbing damage — their disappearance can also contribute
+          to healing.
+        </p>
+
+      </article>
+
+
+      <!-- LEVEL 20 -->
+
+      <article class="relic-card purple">
+
+        <div class="relic-level">
+          🟣 LEGENDARY RELIC LEVEL 20
+        </div>
+
+        <h3>Nine-Lives Engine</h3>
+
+        <div class="type">
+          LEGENDARY SKILL UPGRADE
+        </div>
+
+        <p>
+          At Level 20, Nine-Lives Engine is upgraded to Legendary.
+        </p>
+
+        <p>
+          Whenever Julius or one of his allies gains a Shield,
+          all negative effects are removed from that Hero.
+        </p>
+
+        <div class="mechanic">
+
+          <div class="mechanic-title">
+            CORE MECHANIC
+          </div>
+
+          <p>
+            Julius or ally gains a Shield → All negative effects
+            are removed from that Hero.
+          </p>
+
+        </div>
+
+        <p>
+          This means a Shield can potentially perform two jobs at once:
+          protect the Hero from incoming damage and remove negative
+          effects already affecting that Hero.
+        </p>
+
+        <div class="testing">
+
+          <h4>⚠ DAMAGE OVER TIME — TESTING REQUIRED</h4>
+
+          <p>
+            One major interaction still needs to be verified in battle.
+            If a Hero is already suffering from an active Damage over Time
+            effect and then receives a Shield, exactly what happens?
+          </p>
+
+          <p>
+            The description states that all negative effects are removed,
+            but we are not assuming how every active DoT interaction
+            behaves. This needs direct testing in Brawls before drawing
+            conclusions.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- LEVEL 30 -->
+
+      <article class="relic-card orange">
+
+        <div class="relic-level">
+          🟠 LEGENDARY RELIC LEVEL 30
+        </div>
+
+        <h3>Defensive Lunge</h3>
+
+        <div class="type">
+          NEW SKILL
+        </div>
+
+        <p>
+          Level 30 gives Julius another completely new skill:
+          Defensive Lunge.
+        </p>
+
+        <p>
+          While Julius or his allies have a Shield, their Armor
+          Penetration is increased for each active Shield.
+        </p>
+
+        <div class="mechanic">
+
+          <div class="mechanic-title">
+            CORE MECHANIC
+          </div>
+
+          <p>
+            Active Shields → Increased Armor Penetration →
+            Each active Shield contributes to the effect.
+          </p>
+
+        </div>
+
+        <p>
+          This introduces an offensive component after three Relic
+          stages focused heavily on keeping the team alive.
+        </p>
+
+        <p>
+          Julius's signature defensive mechanic can now potentially
+          contribute to how effectively his team attacks as well.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVOLUTION -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>THE BIG PICTURE</span>
+      <h2>HOW THE RELICS EVOLVE JULIUS</h2>
+    </div>
+
+    <div class="evolution">
+
+      <div class="evolution-item">
+        <div class="evolution-number">LEVEL 1</div>
+        <h3>PROTECTION</h3>
+        <p>Another Shield.</p>
+      </div>
+
+      <div class="evolution-item">
+        <div class="evolution-number">LEVEL 10</div>
+        <h3>SUSTAIN</h3>
+        <p>Shields connect to healing.</p>
+      </div>
+
+      <div class="evolution-item">
+        <div class="evolution-number">LEVEL 20</div>
+        <h3>CLEANSE</h3>
+        <p>Shields remove negative effects.</p>
+      </div>
+
+      <div class="evolution-item">
+        <div class="evolution-number">LEVEL 30</div>
+        <h3>OFFENSE</h3>
+        <p>Shields connect to Armor Penetration.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TESTING QUESTIONS -->
+
+  <section class="section">
+
+    <div class="section-title">
+      <span>NEXT STEP</span>
+      <h2>WHAT STILL NEEDS TESTING?</h2>
+    </div>
+
+    <div class="question-grid">
+
+      <div class="question-card">
+
+        <h3>Level 1 Shield</h3>
+
+        <p>
+          How significant is Pawsitive Influence's Shield in real combat,
+          how often can it change a battle, and which Heroes benefit most
+          from Julius protecting them this way?
+        </p>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>Shield Healing</h3>
+
+        <p>
+          How much additional survivability does the Level 10 healing
+          mechanic create across a complete battle, particularly for
+          Way of Progress Heroes?
+        </p>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>Negative Effects & DoT</h3>
+
+        <p>
+          Which negative effects can Level 20 consistently remove,
+          how frequently can the cleanse activate, and exactly how does
+          it interact with active Damage over Time effects?
+        </p>
+
+      </div>
+
+
+      <div class="question-card">
+
+        <h3>Armor Penetration</h3>
+
+        <p>
+          How does Level 30 behave with multiple active Shields, how
+          consistently can those Shields be maintained, and does the
+          offensive benefit create a meaningful difference in battle?
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINAL TAKEAWAY -->
+
+  <section class="summary">
+
+    <div class="eyebrow">
+      FIRST LOOK TAKEAWAY
+    </div>
+
+    <h2>SHIELDS REMAIN THE CENTER OF JULIUS</h2>
+
+    <p>
+      The four Relic stages follow a clear progression:
+      protection, sustain, cleanse and finally offense. On paper, Julius
+      gains several new ways to make Shields matter without moving away
+      from the mechanic that has always defined him.
+    </p>
+
+    <p>
+      What we are not doing yet is declaring Level 20 the ideal stopping
+      point, Level 30 mandatory, or Julius suddenly unstoppable.
+      Those conclusions require proper testing.
+    </p>
+
+    <p>
+      Level 20 is particularly interesting because of its negative-effect
+      removal, especially the unanswered Damage over Time interaction.
+      Level 30 creates a different question: can Julius's defensive
+      Shields also make his team meaningfully more dangerous offensively?
+    </p>
+
+    <p>
+      The descriptions are here. The Relics are here.
+      Now they need to be tested in real battles.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+</footer>
+
+</body>
+</html>
