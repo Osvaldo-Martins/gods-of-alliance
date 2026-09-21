@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>New Elarite Super Titan Revealed | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 20% 15%, rgba(115, 55, 210, 0.15), transparent 30%),
+        radial-gradient(circle at 85% 35%, rgba(20, 170, 220, 0.09), transparent 28%),
+        radial-gradient(circle at 50% 75%, rgba(180, 55, 210, 0.07), transparent 35%),
+        #050505;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .back-link {
+      color: #c777ff;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    /* COVER */
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid #33273b;
+      background: #0b0b0b;
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55),
+        0 0 35px rgba(140, 60, 210, 0.08);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* INTRO */
+
+    .intro {
+      max-width: 920px;
+      margin: 55px auto 55px;
+      text-align: center;
+    }
+
+    .breaking {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 7px 13px;
+      border: 1px solid rgba(205, 120, 255, 0.4);
+      background: rgba(160, 70, 220, 0.08);
+      color: #d58aff;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 0.98;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .subtitle {
+      margin-top: 18px;
+      color: #c777ff;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 790px;
+      margin: 27px auto 0;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .purple-line {
+      width: 75px;
+      height: 3px;
+      margin: 30px auto 0;
+      background: linear-gradient(90deg, #6945ff, #dd70ff);
+      box-shadow: 0 0 22px rgba(185, 90, 255, 0.55);
+    }
+
+    /* REVEALED */
+
+    .reveal {
+      max-width: 960px;
+      margin: 0 auto 75px;
+      padding: 38px;
+      border: 1px solid #33273b;
+      background:
+        radial-gradient(circle at top, rgba(148, 65, 210, 0.10), transparent 60%),
+        #0b0a0d;
+      text-align: center;
+    }
+
+    .reveal-label {
+      color: #8d659f;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .reveal h2 {
+      font-size: clamp(31px, 5vw, 50px);
+      line-height: 1;
+      margin-bottom: 17px;
+    }
+
+    .reveal h2 span {
+      color: #cf78ff;
+      text-shadow: 0 0 25px rgba(200, 100, 255, 0.25);
+    }
+
+    .reveal p {
+      max-width: 720px;
+      margin: auto;
+      color: #999;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* STATUS */
+
+    .section {
+      margin-top: 75px;
+    }
+
+    .section-heading {
+      margin-bottom: 26px;
+    }
+
+    .section-heading span {
+      color: #c777ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-heading h2 {
+      margin-top: 7px;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .status-card {
+      min-height: 155px;
+      padding: 25px 18px;
+      border: 1px solid #29252d;
+      background: #0c0b0e;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .status-label {
+      color: #777;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 11px;
+    }
+
+    .status-value {
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .confirmed {
+      color: #c979f3;
+    }
+
+    .unknown {
+      color: #ffffff;
+    }
+
+    .soon {
+      color: #68d8ff;
+    }
+
+    /* MYSTERY */
+
+    .mystery {
+      margin-top: 75px;
+      padding: 50px 40px;
+      border: 1px solid #302638;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(125, 55, 190, 0.09),
+          rgba(15, 15, 18, 0.8)
+        );
+      text-align: center;
+    }
+
+    .mystery .small {
+      color: #c777ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 14px;
+    }
+
+    .mystery h2 {
+      font-size: clamp(32px, 5vw, 53px);
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .mystery p {
+      max-width: 800px;
+      margin: auto;
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    /* QUESTIONS */
+
+    .questions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .question {
+      padding: 30px 25px;
+      border: 1px solid #29252d;
+      background: #0c0b0e;
+    }
+
+    .question-number {
+      color: #724a85;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .question h3 {
+      font-size: 19px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .question p {
+      color: #8f8f8f;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* WARNING / FACT */
+
+    .fact-box {
+      margin-top: 65px;
+      padding: 27px 30px;
+      border-left: 4px solid #b45ce5;
+      border-top: 1px solid #302638;
+      border-right: 1px solid #302638;
+      border-bottom: 1px solid #302638;
+      background: rgba(150, 65, 205, 0.055);
+    }
+
+    .fact-box strong {
+      color: #d083f6;
+    }
+
+    .fact-box p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* FINAL */
+
+    .final {
+      margin-top: 75px;
+      padding: 55px 35px;
+      text-align: center;
+      border-top: 1px solid #28212c;
+      border-bottom: 1px solid #28212c;
+      background:
+        radial-gradient(circle at center, rgba(135, 55, 200, 0.10), transparent 65%);
+    }
+
+    .final span {
+      color: #c777ff;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+
+    .final h2 {
+      max-width: 800px;
+      margin: 12px auto 20px;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.05;
+    }
+
+    .final p {
+      max-width: 760px;
+      margin: auto;
+      color: #a5a5a5;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 75px;
+    }
+
+    .video-box {
+      margin-top: 25px;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid #33273b;
+      background: #000;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    .video-box iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .questions {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .status-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reveal,
+      .mystery {
+        padding: 30px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="header-inner">
+
+    <a class="brand" href="index.html">
+      GODS <span>OF ALLIANCE</span>
+    </a>
+
+    <a class="back-link" href="news.html">
+      ← NEWS
+    </a>
+
+  </div>
+
+</header>
+
+
+<main>
+
+  <!-- COVER -->
+
+  <section class="cover">
+
+    <img
+      src="Images/News/new-super-titan-revealed.png"
+      alt="New Elarite Super Titan Coming Soon"
+    >
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="intro">
+
+    <div class="breaking">
+      NEW REVEAL
+    </div>
+
+    <h1>
+      A NEW SUPER TITAN IS COMING
+    </h1>
+
+    <div class="subtitle">
+      ELARITE • COMING SOON
+    </div>
+
+    <p>
+      Something new is coming to Dominion.
+      We don't know its name. We don't know its Skills.
+      And we still don't know its second Synergy Element.
+      But one thing has now been revealed:
+      a brand-new Elarite Super Titan is coming to Hero Wars Alliance.
+    </p>
+
+    <div class="purple-line"></div>
+
+  </section>
+
+
+  <!-- CONFIRMED REVEAL -->
+
+  <section class="reveal">
+
+    <div class="reveal-label">
+      WHAT HAS BEEN REVEALED?
+    </div>
+
+    <h2>
+      ELARITE HAS ITS <span>SUPER TITAN</span>
+    </h2>
+
+    <p>
+      For now, we have the first look and the Elarite connection.
+      The rest of this Titan's identity and capabilities remain a mystery.
+    </p>
+
+  </section>
+
+
+  <!-- CURRENT STATUS -->
+
+  <section class="section">
+
+    <div class="section-heading">
+
+      <span>CURRENT INFORMATION</span>
+
+      <h2>WHAT DO WE ACTUALLY KNOW?</h2>
+
+    </div>
+
+
+    <div class="status-grid">
+
+      <div class="status-card">
+
+        <div class="status-label">
+          ELEMENT
+        </div>
+
+        <div class="status-value confirmed">
+          ELARITE
+        </div>
+
+      </div>
+
+
+      <div class="status-card">
+
+        <div class="status-label">
+          NAME
+        </div>
+
+        <div class="status-value unknown">
+          UNKNOWN
+        </div>
+
+      </div>
+
+
+      <div class="status-card">
+
+        <div class="status-label">
+          SKILLS
+        </div>
+
+        <div class="status-value unknown">
+          UNKNOWN
+        </div>
+
+      </div>
+
+
+      <div class="status-card">
+
+        <div class="status-label">
+          RELEASE
+        </div>
+
+        <div class="status-value soon">
+          COMING SOON
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MYSTERY -->
+
+  <section class="mystery">
+
+    <div class="small">
+      THE MYSTERY
+    </div>
+
+    <h2>
+      WE HAVE A FACE.<br>
+      WE DON'T HAVE THE ANSWERS.
+    </h2>
+
+    <p>
+      There is no complete kit yet, no revealed second Synergy Element
+      and no explanation of what this Super Titan is truly capable of.
+      Hero Wars Alliance has given us a first look — and left almost
+      everything else unanswered.
+    </p>
+
+  </section>
+
+
+  <!-- QUESTIONS -->
+
+  <section class="section">
+
+    <div class="section-heading">
+
+      <span>WHAT COMES NEXT?</span>
+
+      <h2>THE BIG QUESTIONS</h2>
+
+    </div>
+
+
+    <div class="questions">
+
+      <div class="question">
+
+        <div class="question-number">
+          QUESTION 01
+        </div>
+
+        <h3>
+          What is its second Synergy Element?
+        </h3>
+
+        <p>
+          Elarite is confirmed, but the Titan's second Synergy Element
+          has not yet been revealed.
+        </p>
+
+      </div>
+
+
+      <div class="question">
+
+        <div class="question-number">
+          QUESTION 02
+        </div>
+
+        <h3>
+          What kind of power will it bring?
+        </h3>
+
+        <p>
+          Without the Skills, we cannot yet know how this Super Titan
+          will function or what role it will play in battle.
+        </p>
+
+      </div>
+
+
+      <div class="question">
+
+        <div class="question-number">
+          QUESTION 03
+        </div>
+
+        <h3>
+          What happens to Titan battles?
+        </h3>
+
+        <p>
+          Its actual impact cannot be determined until its mechanics
+          and Synergies are revealed and tested.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FACT CHECK -->
+
+  <section class="fact-box">
+
+    <p>
+      <strong>IMPORTANT:</strong>
+      No name, complete Skill kit or second Synergy Element has been
+      confirmed in the information available for this first reveal.
+      Gods of Alliance will not speculate and present assumptions as facts.
+      This page will be updated as more confirmed information becomes available.
+    </p>
+
+  </section>
+
+
+  <!-- FINAL -->
+
+  <section class="final">
+
+    <span>REMEMBER THIS FACE</span>
+
+    <h2>
+      SOMETHING NEW IS ENTERING DOMINION.
+    </h2>
+
+    <p>
+      Dominion has seen powerful Titans before — but not this one.
+      Elarite has its Super Titan. We just don't know yet what kind of
+      force is about to enter the battlefield.
+    </p>
+
+  </section>
+
+
+  <!-- VIDEO -->
+
+  <section class="video-section">
+
+    <div class="section-heading">
+
+      <span>GODS OF ALLIANCE</span>
+
+      <h2>WATCH THE REVEAL</h2>
+
+    </div>
+
+    <div class="video-box">
+
+      <iframe
+        src="https://www.youtube.com/embed/sKpa7hAsDWE"
+        title="New Elarite Super Titan Revealed"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & GUIDES
+</footer>
+
+</body>
+</html>
