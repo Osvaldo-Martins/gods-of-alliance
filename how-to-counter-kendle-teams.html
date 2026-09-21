@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Counter Kendle Teams | Gods of Alliance</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:
+        radial-gradient(circle at 20% 10%, rgba(130,45,65,0.12), transparent 30%),
+        radial-gradient(circle at 85% 35%, rgba(40,75,130,0.10), transparent 30%),
+        #060606;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #252525;
+    background: rgba(0,0,0,0.95);
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 82px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #d8ad54;
+}
+
+.back-link {
+    color: #d8ad54;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 35px 100px;
+}
+
+/* COVER */
+
+.cover {
+    overflow: hidden;
+    border: 1px solid #292929;
+    background: #0b0b0b;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.55);
+}
+
+.cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* INTRO */
+
+.intro {
+    max-width: 900px;
+    margin: 55px auto 65px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #d8ad54;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -3px;
+}
+
+.subtitle {
+    margin-top: 18px;
+    color: #d8ad54;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.intro p {
+    max-width: 790px;
+    margin: 27px auto 0;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.gold-line {
+    width: 75px;
+    height: 3px;
+    background: #d8ad54;
+    margin: 30px auto 0;
+}
+
+/* TARGET */
+
+.target-box {
+    padding: 38px;
+    margin-bottom: 65px;
+    text-align: center;
+    border: 1px solid #33292b;
+    background:
+        radial-gradient(circle at center, rgba(160,45,60,0.08), transparent 65%),
+        #0c0b0b;
+}
+
+.target-label {
+    color: #a16b72;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.target-box h2 {
+    font-size: clamp(27px, 4vw, 42px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.target-box p {
+    max-width: 760px;
+    margin: auto;
+    color: #999;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* IMPORTANT */
+
+.warning {
+    padding: 28px 30px;
+    margin-bottom: 70px;
+    border-left: 4px solid #d8ad54;
+    border-top: 1px solid #302d27;
+    border-right: 1px solid #302d27;
+    border-bottom: 1px solid #302d27;
+    background: rgba(216,173,84,0.045);
+}
+
+.warning strong {
+    color: #e3bb67;
+}
+
+.warning p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* SECTION */
+
+.section {
+    margin-top: 75px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading span {
+    color: #d8ad54;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    margin-top: 7px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* COUNTERS */
+
+.counter {
+    margin-bottom: 30px;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+    overflow: hidden;
+}
+
+.counter-top {
+    padding: 25px 30px;
+    border-bottom: 1px solid #242424;
+    background:
+        linear-gradient(90deg, rgba(216,173,84,0.06), transparent);
+}
+
+.counter-number {
+    color: #7e6a42;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.counter-top h3 {
+    font-size: clamp(21px, 3vw, 29px);
+    line-height: 1.2;
+}
+
+.counter-body {
+    padding: 28px 30px 32px;
+}
+
+.counter-body p {
+    color: #a5a5a5;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.counter-body p:last-child {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #e1bb69;
+    font-weight: 900;
+}
+
+/* RESULT */
+
+.result {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 7px 11px;
+    border: 1px solid #3a3325;
+    color: #d8ad54;
+    background: rgba(216,173,84,0.05);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* RELIC SECTION */
+
+.relic-box {
+    margin-top: 30px;
+    padding: 32px;
+    border: 1px solid #34302a;
+    background:
+        radial-gradient(circle at top left, rgba(216,173,84,0.08), transparent 45%),
+        #0c0c0c;
+}
+
+.relic-box h3 {
+    color: #e2b75e;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.relic-box p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.relic-comparison {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.relic-level {
+    padding: 22px;
+    border: 1px solid #282828;
+    background: #090909;
+}
+
+.relic-level span {
+    display: block;
+    color: #777;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.relic-level strong {
+    font-size: 19px;
+}
+
+/* EVERYTHING COUNTS */
+
+.everything {
+    margin-top: 75px;
+    padding: 50px 35px;
+    text-align: center;
+    border-top: 1px solid #2b2924;
+    border-bottom: 1px solid #2b2924;
+    background:
+        radial-gradient(circle at center, rgba(216,173,84,0.08), transparent 65%);
+}
+
+.everything span {
+    color: #d8ad54;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.everything h2 {
+    font-size: clamp(35px, 6vw, 58px);
+    margin: 12px 0 20px;
+    line-height: 1;
+}
+
+.everything p {
+    max-width: 800px;
+    margin: auto;
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* DEVELOPMENT GRID */
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.development-card {
+    padding: 28px 15px;
+    text-align: center;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.development-card strong {
+    color: #d8ad54;
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* VIDEO */
+
+.video-section {
+    margin-top: 75px;
+}
+
+.video-box {
+    margin-top: 25px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid #302d27;
+    background: #000;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #1d1d1d;
+    padding: 30px 20px;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+    .development-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .relic-comparison {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    main {
+        padding: 30px 20px 70px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .target-box,
+    .counter-body,
+    .relic-box {
+        padding: 25px 22px;
+    }
+
+    .development-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <a class="brand" href="index.html">
+            GODS <span>OF ALLIANCE</span>
+        </a>
+
+        <a class="back-link" href="best-teams.html">
+            ← BEST TEAMS
+        </a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+        <img
+            src="Images/Best-Teams/how-to-counter-kendle-teams.png"
+            alt="How to Counter Kendle Teams"
+        >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <div class="eyebrow">
+            BEST TEAMS • COUNTER STRATEGY
+        </div>
+
+        <h1>
+            HOW TO COUNTER<br>KENDLE TEAMS
+        </h1>
+
+        <div class="subtitle">
+            COUNTERS • DEVELOPMENT • RELIC LEVELS
+        </div>
+
+        <p>
+            Cleaver, Byrna, Dorian, Kendle and Aidan can be an extremely
+            difficult defense to break consistently. Our testing shows that
+            finding the right five Heroes is only part of the answer.
+            Development and Relic levels can completely change the battle.
+        </p>
+
+        <div class="gold-line"></div>
+
+    </section>
+
+
+    <!-- TARGET -->
+
+    <section class="target-box">
+
+        <div class="target-label">
+            DEFENSIVE TEAM
+        </div>
+
+        <h2>
+            CLEAVER • BYRNA • DORIAN • KENDLE • AIDAN
+        </h2>
+
+        <p>
+            This is the Kendle composition used as the main defensive target
+            during these tests. The challenge is not simply finding something
+            that can win — it is finding options capable of producing
+            consistent results as development and Relic levels increase.
+        </p>
+
+    </section>
+
+
+    <!-- WARNING -->
+
+    <section class="warning">
+
+        <p>
+            <strong>IMPORTANT:</strong>
+            These are not guaranteed counters. Results can change depending on
+            Relic levels, Glyphs, Skins and overall Hero development.
+            The same five Heroes can produce very different results on two
+            different accounts. Test your own setup before investing specifically
+            for this matchup.
+        </p>
+
+    </section>
+
+
+    <!-- COUNTER 1 -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>COUNTER 01</span>
+            <h2>YASMINE VARIATION</h2>
+        </div>
+
+        <div class="counter">
+
+            <div class="counter-top">
+                <div class="counter-number">
+                    TEAM COMPOSITION
+                </div>
+
+                <h3>
+                    YASMINE • BYRNA • CROW • GUUS • OCTAVIA
+                </h3>
+            </div>
+
+            <div class="counter-body">
+
+                <p>
+                    Yasmine can work against this Kendle composition, but she is
+                    <span class="highlight">not a plug-and-play solution.</span>
+                    Her development matters, and the Relic and Glyph levels of
+                    the supporting Heroes can noticeably affect the results.
+                </p>
+
+                <p>
+                    In our tests, stronger development improved the results.
+                    Yasmine needs the opportunity to create the opening, while
+                    Byrna must survive the pressure. Crow contributes to the
+                    battlefield while Guus and Octavia provide the support
+                    required to keep the team functioning.
+                </p>
+
+                <p>
+                    This is an option worth testing, but it should not be treated
+                    as a guaranteed answer to Kendle.
+                </p>
+
+                <div class="result">
+                    TEST RESULT • REAL POTENTIAL, DEVELOPMENT DEPENDENT
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTER 2 -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>COUNTER 02</span>
+            <h2>FOLIO VARIATION</h2>
+        </div>
+
+        <div class="counter">
+
+            <div class="counter-top">
+
+                <div class="counter-number">
+                    TEAM COMPOSITION
+                </div>
+
+                <h3>
+                    BYRNA • FOLIO • DORIAN • KENDLE • AIDAN
+                </h3>
+
+            </div>
+
+            <div class="counter-body">
+
+                <p>
+                    This was one of the strongest variations tested.
+                    The major change is removing Cleaver and replacing him
+                    with <span class="highlight">Folio.</span>
+                </p>
+
+                <p>
+                    Byrna can hold the front line long enough to give Folio
+                    the opportunity to activate his ultimate. Folio can then
+                    create the disruption needed to interfere with the enemy
+                    team's momentum.
+                </p>
+
+                <p>
+                    Once that opening appears, the objective is clear:
+                    <span class="highlight">focus Kendle.</span>
+                    If the battlefield can be destabilized and Kendle removed,
+                    the rest of the composition becomes easier to control.
+                </p>
+
+                <p>
+                    The results were promising, but not completely stable.
+                    This remains a variation worth including in your own tests.
+                </p>
+
+                <div class="result">
+                    TEST RESULT • ONE OF THE STRONGEST VARIATIONS TESTED
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COUNTER 3 -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>COUNTER 03</span>
+            <h2>TRISTAN RELIC TEST</h2>
+        </div>
+
+        <div class="counter">
+
+            <div class="counter-top">
+
+                <div class="counter-number">
+                    TEAM COMPOSITION
+                </div>
+
+                <h3>
+                    CLEAVER • TRISTAN • DRAYNE • BYRNA • FOLIO
+                </h3>
+
+            </div>
+
+            <div class="counter-body">
+
+                <p>
+                    This produced the
+                    <span class="highlight">best results of the three counter teams</span>
+                    during our testing when the Heroes were tested with
+                    Relic Level 20.
+                </p>
+
+                <p>
+                    It also became particularly important when tested against
+                    the defensive composition at Relic Level 30. Of the options
+                    tested under those conditions, this team showed the clearest
+                    potential without requiring every counter Hero to be pushed
+                    directly to Relic Level 30.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="relic-box">
+
+            <h3>Why Tristan's Relic Level Matters</h3>
+
+            <p>
+                Changing Tristan's Relic level produced a major difference in
+                stability during these tests. With Tristan at Relic Level 20,
+                the team produced substantially stronger results. When Tristan
+                was reduced to Relic Level 10 while the supporting setup remained
+                developed, victories were still possible — but the stability
+                dropped significantly.
+            </p>
+
+            <div class="relic-comparison">
+
+                <div class="relic-level">
+                    <span>TRISTAN</span>
+                    <strong>RELIC LEVEL 20</strong>
+                </div>
+
+                <div class="relic-level">
+                    <span>TRISTAN</span>
+                    <strong>RELIC LEVEL 10</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVERYTHING COUNTS -->
+
+    <section class="everything">
+
+        <span>THE MOST IMPORTANT LESSON</span>
+
+        <h2>EVERYTHING COUNTS.</h2>
+
+        <p>
+            Against a highly developed Kendle defense, there are no shortcuts.
+            The counter composition matters, but so does the development behind
+            every Hero. A small difference in investment can change a successful
+            counter into an inconsistent one.
+        </p>
+
+    </section>
+
+
+    <!-- DEVELOPMENT -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>BEFORE YOU TEST</span>
+            <h2>DEVELOPMENT MATTERS</h2>
+        </div>
+
+        <div class="development-grid">
+
+            <div class="development-card">
+                <strong>RELICS</strong>
+            </div>
+
+            <div class="development-card">
+                <strong>GLYPHS</strong>
+            </div>
+
+            <div class="development-card">
+                <strong>SKINS</strong>
+            </div>
+
+            <div class="development-card">
+                <strong>HERO DEVELOPMENT</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="warning" style="margin-top:70px; margin-bottom:0;">
+
+        <p>
+            <strong>FINAL TAKEAWAY:</strong>
+            The three teams above showed different levels of potential during
+            our testing, but none should be treated as a universal or automatic
+            Kendle counter. Your own Relics, Glyphs, Skins and Hero development
+            can change the outcome. Testing remains essential.
+        </p>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section">
+
+        <div class="section-heading">
+            <span>GODS OF ALLIANCE</span>
+            <h2>WATCH THE FULL COUNTER TESTS</h2>
+        </div>
+
+        <div class="video-box">
+
+            <iframe
+                src="https://www.youtube.com/embed/XZx837G_Y58"
+                title="How to Counter Kendle Teams"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+</footer>
+
+</body>
+</html>
