@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orion Hero Guide | Gods of Alliance</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background:
+        radial-gradient(circle at 18% 8%, rgba(0, 170, 255, 0.10), transparent 28%),
+        radial-gradient(circle at 85% 25%, rgba(216, 173, 84, 0.06), transparent 30%),
+        #060606;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #252525;
+    background: rgba(0, 0, 0, 0.95);
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: auto;
+    min-height: 82px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brand span {
+    color: #d8ad54;
+}
+
+.back-link {
+    color: #d8ad54;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 55px 35px 100px;
+}
+
+/* COVER */
+
+.cover {
+    overflow: hidden;
+    border: 1px solid #292929;
+    background: #0b0b0b;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.55);
+}
+
+.cover img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* INTRO */
+
+.intro {
+    max-width: 900px;
+    margin: 55px auto 70px;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #d8ad54;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(50px, 9vw, 88px);
+    line-height: 0.95;
+    font-weight: 900;
+    letter-spacing: -4px;
+}
+
+.hero-meta {
+    margin-top: 18px;
+    color: #6fd7ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.intro p {
+    max-width: 790px;
+    margin: 27px auto 0;
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.gold-line {
+    width: 75px;
+    height: 3px;
+    background: #d8ad54;
+    margin: 30px auto 0;
+}
+
+/* CORE MECHANIC */
+
+.engine {
+    margin-bottom: 75px;
+    padding: 42px 35px;
+    text-align: center;
+    border: 1px solid #23343d;
+    background:
+        radial-gradient(circle at center, rgba(0, 174, 255, 0.09), transparent 65%),
+        #0b0d0e;
+}
+
+.engine-label {
+    color: #6fd7ff;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.engine h2 {
+    margin: 10px 0 18px;
+    font-size: clamp(28px, 5vw, 45px);
+}
+
+.engine p {
+    max-width: 780px;
+    margin: auto;
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.engine-flow {
+    margin-top: 28px;
+    color: #ffffff;
+    font-size: clamp(15px, 2.5vw, 20px);
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.engine-flow span {
+    color: #6fd7ff;
+}
+
+/* SECTIONS */
+
+.section {
+    margin-top: 75px;
+}
+
+.section-heading {
+    margin-bottom: 28px;
+}
+
+.section-heading span {
+    color: #d8ad54;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    margin-top: 7px;
+    font-size: 31px;
+    font-weight: 900;
+}
+
+/* SKILLS */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 30px;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.skill-number {
+    color: #6fd7ff;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.skill-card h3 {
+    font-size: 23px;
+    margin-bottom: 14px;
+}
+
+.skill-card p {
+    color: #a5a5a5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.skill-card.featured {
+    border-color: #31505d;
+    background:
+        radial-gradient(circle at top left, rgba(0, 174, 255, 0.08), transparent 50%),
+        #0c0c0c;
+}
+
+/* PRIORITY */
+
+.priority-box {
+    border: 1px solid #292929;
+    background: #0c0c0c;
+    overflow: hidden;
+}
+
+.priority-row {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    align-items: center;
+    min-height: 72px;
+    border-bottom: 1px solid #222;
+}
+
+.priority-row:last-child {
+    border-bottom: 0;
+}
+
+.priority-number {
+    color: #d8ad54;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.priority-content {
+    padding: 17px 20px 17px 0;
+}
+
+.priority-content strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.priority-content p {
+    color: #858585;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+/* INFO BOX */
+
+.info-box {
+    margin-top: 25px;
+    padding: 25px 28px;
+    border-left: 4px solid #d8ad54;
+    border-top: 1px solid #302d27;
+    border-right: 1px solid #302d27;
+    border-bottom: 1px solid #302d27;
+    background: rgba(216, 173, 84, 0.04);
+}
+
+.info-box p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.info-box strong {
+    color: #e0b75f;
+}
+
+/* ARTIFACTS */
+
+.artifact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.artifact-card {
+    padding: 28px;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.artifact-card span {
+    color: #777;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.artifact-card h3 {
+    margin: 8px 0 10px;
+    font-size: 20px;
+}
+
+.artifact-card p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.artifact-card.weapon {
+    border-color: #3a3325;
+    background:
+        radial-gradient(circle at top left, rgba(216, 173, 84, 0.08), transparent 50%),
+        #0c0c0c;
+}
+
+/* TALISMANS */
+
+.talisman-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.talisman-card {
+    padding: 30px;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.talisman-card span {
+    color: #d8ad54;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.talisman-card h3 {
+    margin: 8px 0 15px;
+    font-size: 22px;
+}
+
+.talisman-stats {
+    color: #6fd7ff;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.talisman-card p {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* COUNTERS */
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+}
+
+.counter-card {
+    padding: 25px 17px;
+    text-align: center;
+    border: 1px solid #292929;
+    background: #0c0c0c;
+}
+
+.counter-card h3 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.counter-card p {
+    color: #858585;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+/* FINAL */
+
+.final-box {
+    margin-top: 75px;
+    padding: 45px 35px;
+    text-align: center;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    background:
+        radial-gradient(circle at center, rgba(0, 174, 255, 0.07), transparent 65%);
+}
+
+.final-box span {
+    color: #6fd7ff;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.final-box h2 {
+    margin: 10px 0 18px;
+    font-size: clamp(30px, 5vw, 48px);
+}
+
+.final-box p {
+    max-width: 800px;
+    margin: auto;
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* VIDEO */
+
+.video-section {
+    margin-top: 75px;
+}
+
+.video-box {
+    margin-top: 25px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid #302d27;
+    background: #000;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #1d1d1d;
+    padding: 30px 20px;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .skill-grid,
+    .talisman-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artifact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+    }
+
+    .brand {
+        font-size: 17px;
+    }
+
+    main {
+        padding: 30px 20px 70px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .engine,
+    .skill-card,
+    .talisman-card {
+        padding: 25px 22px;
+    }
+
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <a class="brand" href="index.html">
+            GODS <span>OF ALLIANCE</span>
+        </a>
+
+        <a class="back-link" href="heroes.html">
+            ← HERO GUIDIDES
+        </a>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+        <img
+            src="Images/Hero-Guides/Orion/orion-guide.png"
+            alt="Orion Hero Guide"
+        >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <div class="eyebrow">
+            GODS OF ALLIANCE • HERO GUIDE
+        </div>
+
+        <h1>ORION</h1>
+
+        <div class="hero-meta">
+            MAGE • PROGRESS • BACK LINE
+        </div>
+
+        <p>
+            Orion is a long-standing Progress Mage built around speed,
+            control and one of the most valuable team-wide offensive stats
+            for magic compositions: Magic Penetration.
+        </p>
+
+        <div class="gold-line"></div>
+
+    </section>
+
+
+    <!-- CORE MECHANIC -->
+
+    <section class="engine">
+
+        <div class="engine-label">
+            WHY ORION WORKS
+        </div>
+
+        <h2>THE MAGIC PENETRATION ENGINE</h2>
+
+        <p>
+            Orion's Full Charge gives him additional Energy every time he
+            attacks. That rapid Energy generation allows him to activate his
+            Ultimate repeatedly, triggering his Weapon Artifact and providing
+            Magic Penetration to the entire team again and again.
+        </p>
+
+        <div class="engine-flow">
+            ATTACK → <span>ENERGY</span> → ULTIMATE →
+            <span>MAGIC PENETRATION</span> → REPEAT
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>ABILITIES</span>
+            <h2>SKILLS</h2>
+        </div>
+
+        <div class="skill-grid">
+
+            <div class="skill-card">
+
+                <div class="skill-number">SKILL 01</div>
+
+                <h3>Total Destruction</h3>
+
+                <p>
+                    Orion fires six magic missiles at the enemies with the
+                    highest Health, dealing Magic Damage with each hit.
+                    The damage scales with Orion's Magic Attack.
+                    This can become a strong finishing tool when the enemy
+                    team has already been weakened.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-number">SKILL 02</div>
+
+                <h3>Magnetic Field</h3>
+
+                <p>
+                    Orion creates an explosion in the enemy back line,
+                    dealing area Magic Damage and slowing affected enemies
+                    for four seconds. Against enemies above level 120,
+                    the chance of applying the Slow is reduced.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <div class="skill-number">SKILL 03</div>
+
+                <h3>Antimatter Blast</h3>
+
+                <p>
+                    Orion fires a magic missile at the nearest enemy,
+                    dealing Magic Damage and stunning the target for four
+                    seconds. Against enemies above level 120, the chance
+                    of applying the Stun is reduced.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card featured">
+
+                <div class="skill-number">SKILL 04 • PASSIVE</div>
+
+                <h3>Full Charge</h3>
+
+                <p>
+                    Every time Orion attacks, he receives additional Energy.
+                    This is the mechanic that allows him to cycle his Ultimate
+                    rapidly and repeatedly activate his team-wide Magic
+                    Penetration Weapon Artifact.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>BUILD PRIORITY</span>
+            <h2>SKINS</h2>
+        </div>
+
+        <div class="priority-box">
+
+            <div class="priority-row">
+                <div class="priority-number">1</div>
+                <div class="priority-content">
+                    <strong>MAGIC ATTACK — BOTH SKINS</strong>
+                    <p>
+                        Highest priority. Magic Attack directly improves
+                        Orion's first three skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">2</div>
+                <div class="priority-content">
+                    <strong>HEALTH + PLUS VERSION</strong>
+                    <p>
+                        More survivability means more time to generate Energy,
+                        activate Ultimates and support the team.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">3</div>
+                <div class="priority-content">
+                    <strong>ARMOR</strong>
+                    <p>
+                        Improves Orion's physical resistance against attackers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">4</div>
+                <div class="priority-content">
+                    <strong>DEFAULT — INTELLIGENCE</strong>
+                    <p>
+                        Adds scaling to his first three skills while also
+                        contributing additional Magic Defense.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">5</div>
+                <div class="priority-content">
+                    <strong>MAGIC DEFENSE</strong>
+                    <p>
+                        Lowest current priority because Orion already gains
+                        Magic Defense through his Intelligence development.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>Future skins:</strong>
+                another Magic Attack or Health skin would immediately become
+                an interesting development option for Orion.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- GLYPHS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>BUILD PRIORITY</span>
+            <h2>GLYPHS</h2>
+        </div>
+
+        <div class="priority-box">
+
+            <div class="priority-row">
+                <div class="priority-number">1</div>
+                <div class="priority-content">
+                    <strong>MAGIC PENETRATION</strong>
+                    <p>
+                        Helps Orion bypass enemy Magic Defense and makes
+                        his damage more reliable, especially earlier in development.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">2</div>
+                <div class="priority-content">
+                    <strong>HEALTH</strong>
+                    <p>
+                        Orion needs enough survivability to keep his Energy
+                        and Ultimate cycle running.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">3</div>
+                <div class="priority-content">
+                    <strong>MAGIC ATTACK</strong>
+                    <p>
+                        Improves the damage of Orion's first three skills.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">4</div>
+                <div class="priority-content">
+                    <strong>INTELLIGENCE</strong>
+                    <p>
+                        Provides additional scaling while also improving
+                        Magic Defense.
+                    </p>
+                </div>
+            </div>
+
+            <div class="priority-row">
+                <div class="priority-number">5</div>
+                <div class="priority-content">
+                    <strong>MAGIC DEFENSE</strong>
+                    <p>
+                        Lower priority because Intelligence already contributes
+                        to this defensive stat.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>Progression:</strong>
+                take all five Glyphs to Level 40 first. Beyond Level 40,
+                continue only if you are specifically pursuing Skill Class progression.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>BUILD PRIORITY</span>
+            <h2>ARTIFACTS</h2>
+        </div>
+
+        <div class="artifact-grid">
+
+            <div class="artifact-card weapon">
+
+                <span>PRIORITY 01</span>
+
+                <h3>WEAPON</h3>
+
+                <p>
+                    Provides Magic Penetration to the entire team when Orion
+                    uses his first skill. Full Charge allows Orion to trigger
+                    this bonus frequently, making the Weapon the highest
+                    Artifact priority.
+                </p>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <span>PRIORITY 02</span>
+
+                <h3>BOOK</h3>
+
+                <p>
+                    Provides Magic Attack and Magic Penetration — exactly the
+                    offensive stats Orion wants for his personal damage.
+                </p>
+
+            </div>
+
+
+            <div class="artifact-card">
+
+                <span>PRIORITY 03</span>
+
+                <h3>RING</h3>
+
+                <p>
+                    Provides Intelligence. Useful, but with less immediate
+                    impact than the Weapon's team bonus and the Book's direct
+                    offensive stats.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>DEVELOPMENT</span>
+            <h2>GIFT OF THE ELEMENTS</h2>
+        </div>
+
+        <div class="engine">
+
+            <div class="engine-label">
+                RECOMMENDATION
+            </div>
+
+            <h2>MAX IT OUT</h2>
+
+            <p>
+                The additional Health and Magic Attack are both valuable.
+                Orion fights from the back line, but he is not untouchable.
+                Keeping him alive gives him more opportunities to generate
+                Energy, launch another Ultimate and activate another
+                Magic Penetration bonus.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>BUILD OPTIONS</span>
+            <h2>TALISMANS</h2>
+        </div>
+
+        <div class="talisman-grid">
+
+            <div class="talisman-card">
+
+                <span>TALISMAN 01</span>
+
+                <h3>Balanced Option</h3>
+
+                <div class="talisman-stats">
+                    INTELLIGENCE • ARMOR
+                </div>
+
+                <p>
+                    Provides additional scaling together with physical
+                    survivability. This Talisman is permanently available
+                    through the Eternal Frontier Shop for
+                    <strong>700,000 Frontier Coins.</strong>
+                </p>
+
+            </div>
+
+
+            <div class="talisman-card">
+
+                <span>TALISMAN 02</span>
+
+                <h3>Offensive Option</h3>
+
+                <div class="talisman-stats">
+                    TOUGHNESS • MAGIC ATTACK
+                </div>
+
+                <p>
+                    Toughness provides additional defensive value while
+                    Magic Attack directly improves Orion's offensive abilities.
+                    This Talisman is obtainable through special events.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>Which is better?</strong>
+                Both are valuable. The better option can depend on the enemy
+                composition and exactly what you need Orion to do in the battle.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+            <span>HOW TO FIGHT HIM</span>
+            <h2>ORION COUNTERS</h2>
+        </div>
+
+        <div class="counter-grid">
+
+            <div class="counter-card">
+                <h3>SATORI</h3>
+                <p>
+                    Orion's additional Energy generation can result in
+                    Fox Fire Marks being applied, turning Full Charge into
+                    a potential weakness.
+                </p>
+            </div>
+
+
+            <div class="counter-card">
+                <h3>RUFUS</h3>
+                <p>
+                    Rakashi's Barrier can absorb Magic Damage and reduce
+                    the effectiveness of Orion's magical pressure.
+                </p>
+            </div>
+
+
+            <div class="counter-card">
+                <h3>CORNELIUS</h3>
+                <p>
+                    Orion's high Intelligence makes him a dangerous target
+                    against Cornelius, whose damage can punish that stat.
+                </p>
+            </div>
+
+
+            <div class="counter-card">
+                <h3>LIAN</h3>
+                <p>
+                    Orion's area damage can hit Lian and trigger her Charm,
+                    disrupting the speed and repeated activation cycle
+                    Orion depends on.
+                </p>
+            </div>
+
+
+            <div class="counter-card">
+                <h3>SOMNA</h3>
+                <p>
+                    If Orion's attacks connect with Somna, she can transform
+                    him into a sheep and interrupt his offensive rhythm.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="final-box">
+
+        <span>ORION IN ONE SENTENCE</span>
+
+        <h2>KEEP THE ENGINE RUNNING.</h2>
+
+        <p>
+            Orion's strength comes from the cycle: Energy, Ultimate,
+            Magic Penetration, another attack, more Energy and another Ultimate.
+            Build around that cycle and he can provide enormous value to a
+            magic composition. Shut down his Energy generation, Magic Damage
+            or exploit his high Intelligence, and the machine can collapse.
+        </p>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section">
+
+        <div class="section-heading">
+            <span>GODS OF ALLIANCE</span>
+            <h2>WATCH THE FULL ORION GUIDE</h2>
+        </div>
+
+        <div class="video-box">
+
+            <iframe
+                src="https://www.youtube.com/embed/GXus4xoXBhE"
+                title="Orion Hero Guide - Gods of Alliance"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES
+</footer>
+
+</body>
+</html>
