@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>News | Gods of Alliance</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 50% 0%, rgba(126, 60, 255, 0.16), transparent 32%),
+        radial-gradient(circle at 90% 35%, rgba(0, 190, 255, 0.07), transparent 30%),
+        #050505;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid #252525;
+      background: rgba(0, 0, 0, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      margin: auto;
+      min-height: 82px;
+      padding: 0 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #d8ad54;
+    }
+
+    .home-link {
+      color: #d8ad54;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      transition: 0.2s;
+    }
+
+    .home-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1400px;
+      margin: auto;
+      padding: 85px 35px 48px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #c777ff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(50px, 8vw, 90px);
+      line-height: 0.95;
+      letter-spacing: -4px;
+      font-weight: 900;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: 24px auto 0;
+      color: #a9a9a9;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .purple-line {
+      width: 75px;
+      height: 3px;
+      margin: 30px auto 0;
+      background: linear-gradient(90deg, #6e45ff, #d66cff);
+      box-shadow: 0 0 20px rgba(188, 90, 255, 0.45);
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1400px;
+      margin: auto;
+      padding: 30px 35px 100px;
+    }
+
+    .section-heading {
+      margin-bottom: 28px;
+    }
+
+    .section-heading h2 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .section-heading p {
+      margin-top: 8px;
+      color: #777;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    /* NEWS GRID */
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      border: 1px solid #29242e;
+      background: #0c0b0e;
+      text-decoration: none;
+      color: #ffffff;
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-6px);
+      border-color: #a958df;
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(157, 72, 220, 0.08);
+    }
+
+    .news-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #111;
+      border-bottom: 1px solid #2c2431;
+    }
+
+    .news-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .news-card:hover .news-image img {
+      transform: scale(1.025);
+    }
+
+    .news-content {
+      padding: 28px 30px 32px;
+    }
+
+    .breaking {
+      display: inline-block;
+      margin-bottom: 13px;
+      padding: 6px 10px;
+      border: 1px solid rgba(200, 110, 255, 0.35);
+      background: rgba(165, 74, 220, 0.08);
+      color: #d58aff;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .news-title {
+      font-size: 30px;
+      line-height: 1.05;
+      font-weight: 900;
+      margin-bottom: 11px;
+    }
+
+    .news-subtitle {
+      color: #c879f2;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .news-description {
+      color: #a5a5a5;
+      font-size: 14px;
+      line-height: 1.75;
+      max-width: 650px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 23px;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #a958df;
+      padding-bottom: 5px;
+    }
+
+    /* MYSTERY PANEL */
+
+    .mystery-card {
+      min-height: 100%;
+      border: 1px dashed #312938;
+      background:
+        radial-gradient(circle at center, rgba(141, 65, 190, 0.06), transparent 55%),
+        rgba(255, 255, 255, 0.012);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .mystery-card span {
+      display: block;
+      color: #7e548f;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 11px;
+    }
+
+    .mystery-card h3 {
+      color: #a7a7a7;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .mystery-card p {
+      color: #666;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #1d1d1d;
+      padding: 30px 20px;
+      text-align: center;
+      color: #555;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        padding: 0 20px;
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      .hero,
+      main {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .news-content {
+        padding: 22px;
+      }
+
+      .news-title {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="home-link" href="index.html">
+        HOME
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      GODS OF ALLIANCE
+    </div>
+
+    <h1>NEWS</h1>
+
+    <p>
+      The latest Hero Wars Alliance reveals, announcements
+      and important developments from Dominion.
+    </p>
+
+    <div class="purple-line"></div>
+
+  </section>
+
+
+  <main>
+
+    <div class="section-heading">
+
+      <h2>LATEST NEWS</h2>
+
+      <p>
+        REVEALS • ANNOUNCEMENTS • WHAT'S COMING NEXT
+      </p>
+
+    </div>
+
+
+    <div class="news-grid">
+
+
+      <!-- NEW SUPER TITAN -->
+
+      <a
+        class="news-card"
+        href="new-super-titan-revealed.html"
+      >
+
+        <div class="news-image">
+
+          <img
+            src="Images/News/new-super-titan-revealed.png"
+            alt="New Elarite Super Titan Revealed"
+          >
+
+        </div>
+
+        <div class="news-content">
+
+          <div class="breaking">
+            NEW REVEAL
+          </div>
+
+          <div class="news-title">
+            NEW SUPER TITAN REVEALED
+          </div>
+
+          <div class="news-subtitle">
+            ELARITE • COMING SOON
+          </div>
+
+          <div class="news-description">
+            A new Elarite Super Titan is coming to Hero Wars Alliance.
+            Its name, Skills and second Synergy Element remain unknown.
+            For now, Dominion has only been given its first look.
+          </div>
+
+          <div class="read-more">
+            READ NEWS →
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <!-- FUTURE NEWS -->
+
+      <div class="mystery-card">
+
+        <div>
+
+          <span>DOMINION WATCH</span>
+
+          <h3>WHAT COMES NEXT?</h3>
+
+          <p>
+            New reveals and important Hero Wars Alliance
+            announcements will appear here.
+          </p>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & GUIDES
+  </footer>
+
+</body>
+</html>
