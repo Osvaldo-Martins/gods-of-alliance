@@ -14,9 +14,12 @@
 }
 
 body {
-    background: #070707;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(245, 169, 0, 0.09) 0%, rgba(245, 169, 0, 0.035) 28%, transparent 55%),
+        linear-gradient(180deg, #0b0904 0%, #070707 42%, #070707 100%);
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
 /* HEADER */
@@ -28,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 7%;
-    background: #050505;
+    background: rgba(5, 5, 5, 0.96);
 }
 
 .logo {
@@ -39,19 +42,6 @@ header {
 }
 
 .logo span {
-    color: #f5a900;
-}
-
-.home-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 14px;
-    letter-spacing: 2px;
-    transition: 0.2s;
-}
-
-.home-link:hover {
     color: #f5a900;
 }
 
@@ -221,7 +211,6 @@ footer {
 
 <header>
     <div class="logo">GODS OF <span>ALLIANCE</span></div>
-    <a class="home-link" href="index.html">HOME</a>
 </header>
 
 <section class="hero-intro">
@@ -397,5 +386,8 @@ heroes.forEach(hero => {
 });
 
 </script>
+
+<script src="goa-global.js"></script>
+
 </body>
 </html>
