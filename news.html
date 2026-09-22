@@ -15,19 +15,166 @@
 
     body {
       background:
-        radial-gradient(circle at 50% 0%, rgba(126, 60, 255, 0.16), transparent 32%),
-        radial-gradient(circle at 90% 35%, rgba(0, 190, 255, 0.07), transparent 30%),
-        #050505;
+        radial-gradient(circle at 50% -5%,
+          rgba(115, 218, 255, 0.20) 0%,
+          rgba(66, 177, 232, 0.09) 27%,
+          rgba(23, 91, 132, 0.035) 48%,
+          transparent 65%
+        ),
+        radial-gradient(circle at 92% 38%,
+          rgba(111, 224, 255, 0.08),
+          transparent 30%
+        ),
+        radial-gradient(circle at 8% 65%,
+          rgba(65, 159, 214, 0.055),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          #07131b 0%,
+          #071017 34%,
+          #05090d 67%,
+          #040506 100%
+        );
       color: #ffffff;
       font-family: Arial, Helvetica, sans-serif;
       min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* DIAMOND NEWS ATMOSPHERE */
+
+    .news-atmosphere {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .news-symbol {
+      position: absolute;
+      color: #8ee8ff;
+      opacity: 0.09;
+      text-shadow:
+        0 0 12px rgba(118, 225, 255, 0.55),
+        0 0 28px rgba(60, 169, 220, 0.25);
+      user-select: none;
+    }
+
+    .symbol-1 {
+      top: 145px;
+      left: 7%;
+      font-size: 28px;
+      transform: rotate(18deg);
+    }
+
+    .symbol-2 {
+      top: 230px;
+      right: 8%;
+      font-size: 42px;
+      opacity: 0.07;
+      transform: rotate(45deg);
+    }
+
+    .symbol-3 {
+      top: 430px;
+      left: 3%;
+      font-size: 18px;
+      opacity: 0.12;
+    }
+
+    .symbol-4 {
+      top: 570px;
+      right: 5%;
+      font-size: 25px;
+      opacity: 0.09;
+    }
+
+    .symbol-5 {
+      top: 760px;
+      left: 11%;
+      font-size: 34px;
+      opacity: 0.055;
+      transform: rotate(45deg);
+    }
+
+    .symbol-6 {
+      top: 900px;
+      right: 13%;
+      font-size: 16px;
+      opacity: 0.11;
+    }
+
+    .symbol-7 {
+      top: 1040px;
+      left: 4%;
+      font-size: 22px;
+      opacity: 0.07;
+    }
+
+    .symbol-8 {
+      top: 1180px;
+      right: 4%;
+      font-size: 36px;
+      opacity: 0.05;
+      transform: rotate(45deg);
+    }
+
+    .fresh-particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #a9edff;
+      box-shadow: 0 0 12px rgba(127, 224, 255, 0.8);
+      opacity: 0.16;
+    }
+
+    .particle-1 {
+      top: 185px;
+      left: 20%;
+    }
+
+    .particle-2 {
+      top: 325px;
+      right: 23%;
+    }
+
+    .particle-3 {
+      top: 510px;
+      left: 16%;
+    }
+
+    .particle-4 {
+      top: 690px;
+      right: 17%;
+    }
+
+    .particle-5 {
+      top: 860px;
+      left: 27%;
+    }
+
+    .particle-6 {
+      top: 1080px;
+      right: 29%;
+    }
+
+    header,
+    .hero,
+    main,
+    footer {
+      position: relative;
+      z-index: 1;
     }
 
     /* HEADER */
 
     header {
-      border-bottom: 1px solid #252525;
-      background: rgba(0, 0, 0, 0.94);
+      border-bottom: 1px solid rgba(105, 208, 245, 0.18);
+      background: rgba(3, 8, 12, 0.94);
     }
 
     .header-inner {
@@ -53,19 +200,6 @@
       color: #d8ad54;
     }
 
-    .home-link {
-      color: #d8ad54;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      transition: 0.2s;
-    }
-
-    .home-link:hover {
-      color: #ffffff;
-    }
-
     /* HERO */
 
     .hero {
@@ -76,11 +210,12 @@
     }
 
     .eyebrow {
-      color: #c777ff;
+      color: #8be7ff;
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 4px;
       margin-bottom: 18px;
+      text-shadow: 0 0 18px rgba(108, 218, 255, 0.25);
     }
 
     h1 {
@@ -88,22 +223,30 @@
       line-height: 0.95;
       letter-spacing: -4px;
       font-weight: 900;
+      text-shadow: 0 0 35px rgba(83, 191, 235, 0.10);
     }
 
     .hero p {
       max-width: 750px;
       margin: 24px auto 0;
-      color: #a9a9a9;
+      color: #aab7bd;
       font-size: 16px;
       line-height: 1.7;
     }
 
-    .purple-line {
-      width: 75px;
+    .diamond-line {
+      width: 82px;
       height: 3px;
       margin: 30px auto 0;
-      background: linear-gradient(90deg, #6e45ff, #d66cff);
-      box-shadow: 0 0 20px rgba(188, 90, 255, 0.45);
+      background: linear-gradient(
+        90deg,
+        #368fbd,
+        #a8efff,
+        #55c7ed
+      );
+      box-shadow:
+        0 0 12px rgba(124, 224, 255, 0.45),
+        0 0 28px rgba(63, 175, 220, 0.20);
     }
 
     /* MAIN */
@@ -125,7 +268,7 @@
 
     .section-heading p {
       margin-top: 8px;
-      color: #777;
+      color: #70838c;
       font-size: 13px;
       letter-spacing: 1px;
     }
@@ -142,8 +285,13 @@
       display: block;
       overflow: hidden;
       position: relative;
-      border: 1px solid #29242e;
-      background: #0c0b0e;
+      border: 1px solid rgba(107, 205, 239, 0.20);
+      background:
+        linear-gradient(
+          180deg,
+          rgba(9, 24, 32, 0.96),
+          rgba(7, 14, 19, 0.98)
+        );
       text-decoration: none;
       color: #ffffff;
       transition:
@@ -152,20 +300,31 @@
         box-shadow 0.25s ease;
     }
 
+    .news-card::after {
+      content: "✦";
+      position: absolute;
+      right: 24px;
+      bottom: 21px;
+      color: #92e8ff;
+      font-size: 18px;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
     .news-card:hover {
       transform: translateY(-6px);
-      border-color: #a958df;
+      border-color: #7bdcf7;
       box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.5),
-        0 0 30px rgba(157, 72, 220, 0.08);
+        0 0 32px rgba(80, 193, 235, 0.10);
     }
 
     .news-image {
       width: 100%;
       aspect-ratio: 16 / 9;
       overflow: hidden;
-      background: #111;
-      border-bottom: 1px solid #2c2431;
+      background: #071017;
+      border-bottom: 1px solid rgba(107, 205, 239, 0.17);
     }
 
     .news-image img {
@@ -185,15 +344,25 @@
     }
 
     .breaking {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       margin-bottom: 13px;
-      padding: 6px 10px;
-      border: 1px solid rgba(200, 110, 255, 0.35);
-      background: rgba(165, 74, 220, 0.08);
-      color: #d58aff;
+      padding: 7px 11px;
+      border: 1px solid rgba(132, 226, 255, 0.36);
+      background: rgba(86, 192, 229, 0.08);
+      color: #a6edff;
       font-size: 10px;
       font-weight: 900;
       letter-spacing: 3px;
+      box-shadow: 0 0 20px rgba(76, 188, 228, 0.04);
+    }
+
+    .breaking::before {
+      content: "◆";
+      color: #c1f4ff;
+      font-size: 8px;
+      text-shadow: 0 0 9px rgba(145, 231, 255, 0.8);
     }
 
     .news-title {
@@ -204,7 +373,7 @@
     }
 
     .news-subtitle {
-      color: #c879f2;
+      color: #7ddbf6;
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 2px;
@@ -212,7 +381,7 @@
     }
 
     .news-description {
-      color: #a5a5a5;
+      color: #a5b0b5;
       font-size: 14px;
       line-height: 1.75;
       max-width: 650px;
@@ -225,7 +394,7 @@
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 2px;
-      border-bottom: 2px solid #a958df;
+      border-bottom: 2px solid #70d8f5;
       padding-bottom: 5px;
     }
 
@@ -233,20 +402,47 @@
 
     .mystery-card {
       min-height: 100%;
-      border: 1px dashed #312938;
+      border: 1px dashed rgba(111, 203, 234, 0.22);
       background:
-        radial-gradient(circle at center, rgba(141, 65, 190, 0.06), transparent 55%),
-        rgba(255, 255, 255, 0.012);
+        radial-gradient(
+          circle at center,
+          rgba(78, 184, 222, 0.08),
+          transparent 55%
+        ),
+        rgba(8, 18, 24, 0.55);
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 60px 30px;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mystery-card::before {
+      content: "✦";
+      position: absolute;
+      top: 26px;
+      right: 32px;
+      color: #9beaff;
+      font-size: 30px;
+      opacity: 0.08;
+    }
+
+    .mystery-card::after {
+      content: "◆";
+      position: absolute;
+      bottom: 31px;
+      left: 35px;
+      color: #8ce5ff;
+      font-size: 18px;
+      opacity: 0.07;
+      transform: rotate(45deg);
     }
 
     .mystery-card span {
       display: block;
-      color: #7e548f;
+      color: #76d6ef;
       font-size: 11px;
       font-weight: 900;
       letter-spacing: 3px;
@@ -254,13 +450,13 @@
     }
 
     .mystery-card h3 {
-      color: #a7a7a7;
+      color: #d7edf3;
       font-size: 22px;
       margin-bottom: 10px;
     }
 
     .mystery-card p {
-      color: #666;
+      color: #71838a;
       font-size: 13px;
       line-height: 1.65;
     }
@@ -268,10 +464,10 @@
     /* FOOTER */
 
     footer {
-      border-top: 1px solid #1d1d1d;
+      border-top: 1px solid rgba(100, 200, 235, 0.12);
       padding: 30px 20px;
       text-align: center;
-      color: #555;
+      color: #58676d;
       font-size: 12px;
       letter-spacing: 1px;
     }
@@ -316,21 +512,42 @@
       .news-title {
         font-size: 24px;
       }
+
+      .news-symbol {
+        opacity: 0.05;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <!-- LIGHT DIAMOND / FRESH NEWS SYMBOLS -->
+
+  <div class="news-atmosphere" aria-hidden="true">
+    <span class="news-symbol symbol-1">✦</span>
+    <span class="news-symbol symbol-2">◆</span>
+    <span class="news-symbol symbol-3">✦</span>
+    <span class="news-symbol symbol-4">◆</span>
+    <span class="news-symbol symbol-5">◇</span>
+    <span class="news-symbol symbol-6">✦</span>
+    <span class="news-symbol symbol-7">◆</span>
+    <span class="news-symbol symbol-8">◇</span>
+
+    <span class="fresh-particle particle-1"></span>
+    <span class="fresh-particle particle-2"></span>
+    <span class="fresh-particle particle-3"></span>
+    <span class="fresh-particle particle-4"></span>
+    <span class="fresh-particle particle-5"></span>
+    <span class="fresh-particle particle-6"></span>
+  </div>
+
+
   <header>
     <div class="header-inner">
 
       <a class="brand" href="index.html">
         GODS <span>OF ALLIANCE</span>
-      </a>
-
-      <a class="home-link" href="index.html">
-        HOME
       </a>
 
     </div>
@@ -340,7 +557,7 @@
   <section class="hero">
 
     <div class="eyebrow">
-      GODS OF ALLIANCE
+      GODS OF ALLIANCE • LATEST INTELLIGENCE
     </div>
 
     <h1>NEWS</h1>
@@ -350,7 +567,7 @@
       and important developments from Dominion.
     </p>
 
-    <div class="purple-line"></div>
+    <div class="diamond-line"></div>
 
   </section>
 
@@ -422,7 +639,7 @@
 
         <div>
 
-          <span>DOMINION WATCH</span>
+          <span>◆ DOMINION WATCH ◆</span>
 
           <h3>WHAT COMES NEXT?</h3>
 
@@ -444,6 +661,8 @@
   <footer>
     GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & GUIDES
   </footer>
+
+  <script src="goa-global.js"></script>
 
 </body>
 </html>
