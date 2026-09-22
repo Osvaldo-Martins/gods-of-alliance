@@ -110,9 +110,7 @@
         );
     }
 
-    /* ================================
-       XE'SHA CHAOS ATMOSPHERE
-       ================================ */
+    /* XE'SHA CHAOS ATMOSPHERE */
 
     .chaos-background {
       position: fixed;
@@ -535,67 +533,55 @@
       line-height: 1.5;
     }
 
-    /* FINAL YOUTUBE SECTION */
+    /* VIDEO GUIDE */
 
     .video-section {
-      padding: 60px 0 10px;
-    }
-
-    .video-box {
-      padding: 38px 30px;
+      padding: 60px 0 15px;
       text-align: center;
-
-      border: 1px solid rgba(239, 93, 161, 0.30);
-
-      background:
-        radial-gradient(
-          circle at 50% 0%,
-          rgba(211, 48, 126, 0.18),
-          transparent 55%
-        ),
-        rgba(20, 9, 16, 0.92);
     }
 
-    .video-box .section-label {
+    .video-section .section-label {
       margin-bottom: 12px;
     }
 
-    .video-box h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
+    .video-section h2 {
+      font-size: 31px;
+      margin-bottom: 13px;
     }
 
-    .video-box p {
-      max-width: 700px;
-      margin: 0 auto 25px;
+    .video-description {
+      max-width: 760px;
+      margin: 0 auto 32px;
+
       color: #a99da4;
       font-size: 14px;
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
-    .video-button {
-      display: inline-block;
-      padding: 16px 24px;
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
 
-      border: 1px solid #f078af;
-      background: #c83277;
+      overflow: hidden;
 
-      color: #ffffff;
-      text-decoration: none;
+      border: 1px solid rgba(238, 92, 159, 0.24);
 
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 1.5px;
-
-      transition: 0.2s ease;
-    }
-
-    .video-button:hover {
-      background: #e34a91;
-      border-color: #ff9bc8;
+      background: #000000;
 
       box-shadow:
-        0 0 30px rgba(218, 56, 132, 0.25);
+        0 25px 70px rgba(0, 0, 0, 0.45),
+        0 0 40px rgba(203, 48, 122, 0.06);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
     }
 
     /* FOOTER */
@@ -649,6 +635,10 @@
         letter-spacing: -2px;
       }
 
+      .video-section h2 {
+        font-size: 26px;
+      }
+
     }
 
     @media (max-width: 480px) {
@@ -668,7 +658,7 @@
 
 <body>
 
-  <!-- XE'SHA CHAOS BACKGROUND -->
+  <!-- CHAOS BACKGROUND -->
 
   <div class="chaos-background" aria-hidden="true">
 
@@ -745,16 +735,13 @@
 
     <section class="guide-section">
 
-      <div class="section-label">
-        ABILITIES
-      </div>
+      <div class="section-label">ABILITIES</div>
 
       <h2>SKILLS</h2>
 
       <p class="section-intro">
         Xe'Sha's abilities revolve around allied Health sacrifice,
-        Magic Attack growth, priority-target burst and offensive
-        support.
+        Magic Attack growth, priority-target burst and offensive support.
       </p>
 
       <div class="cards">
@@ -775,10 +762,10 @@
           </p>
 
           <p style="margin-top:12px;">
-            The damage scales with both her Magic Attack and the
-            amount of Health sacrificed by her allies. If the target
-            dies, every sacrificed ally immediately recovers twice
-            the Health they lost.
+            The damage scales with both her Magic Attack and the amount
+            of Health sacrificed by her allies. If the target dies,
+            every sacrificed ally immediately recovers twice the
+            Health they lost.
           </p>
 
         </article>
@@ -786,9 +773,7 @@
 
         <article class="card">
 
-          <div class="card-number">
-            SKILL 02
-          </div>
+          <div class="card-number">SKILL 02</div>
 
           <h3>Spiritual Power</h3>
 
@@ -807,9 +792,7 @@
 
         <article class="card">
 
-          <div class="card-number">
-            SKILL 03
-          </div>
+          <div class="card-number">SKILL 03</div>
 
           <h3>Crimson Mist</h3>
 
@@ -819,9 +802,8 @@
           </p>
 
           <p style="margin-top:12px;">
-            Unlike her previous abilities, Crimson Mist does not
-            scale with her Magic Attack. Its strength comes entirely
-            from the skill itself.
+            Crimson Mist does not scale with Magic Attack. Its
+            strength comes from the skill itself.
           </p>
 
         </article>
@@ -854,7 +836,7 @@
     </section>
 
 
-    <!-- CHAOS SYNERGY -->
+    <!-- CORE SYNERGY -->
 
     <section class="guide-section">
 
@@ -865,17 +847,15 @@
       <h2>CHAOS SACRIFICE SYNERGY</h2>
 
       <p class="section-intro">
-        Xe'Sha becomes especially dangerous alongside heroes who
-        cause allied Health loss. Aidan is a key example: Phoenix's
-        Ritual and Bonds of Fire repeatedly sacrifice Health,
-        triggering Soaring Might and permanently increasing Xe'Sha's
-        Magic Attack.
+        Xe'Sha becomes especially dangerous alongside heroes who cause
+        allied Health loss. Aidan is a key example: Phoenix's Ritual
+        and Bonds of Fire repeatedly sacrifice Health, triggering
+        Soaring Might and permanently increasing Xe'Sha's Magic Attack.
       </p>
 
       <p class="section-intro">
         Xe'Sha can then share that increased Magic Attack back with
-        the team through Spiritual Power, creating a cycle where the
-        team becomes increasingly dangerous as the battle continues.
+        the team through Spiritual Power.
       </p>
 
     </section>
@@ -898,10 +878,8 @@
 
       <div class="priority-list">
 
-
         <div class="priority">
           <div class="priority-number">1</div>
-
           <div>
             <strong>Magic Attack</strong>
             <span>
@@ -911,71 +889,55 @@
           </div>
         </div>
 
-
         <div class="priority">
           <div class="priority-number">2</div>
-
           <div>
             <strong>Magic Penetration</strong>
             <span>
-              Allows Xe'Sha to bypass enemy Magic Defense and reach
-              her full damage potential.
+              Helps Xe'Sha break through enemy Magic Defense.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">3</div>
-
           <div>
             <strong>Magic Critical Hit Chance</strong>
             <span>
-              Increases her burst potential against vulnerable
-              targets.
+              Strengthens her offensive burst potential.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">4</div>
-
           <div>
             <strong>Default Skin — Intelligence</strong>
             <span>
-              Intelligence increases both Magic Attack and
-              Magic Defense.
+              Intelligence increases Magic Attack and Magic Defense.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">5</div>
-
           <div>
             <strong>Health</strong>
             <span>
-              Helps Xe'Sha survive longer and continue stacking
-              Soaring Might.
+              Helps Xe'Sha survive and continue stacking Soaring Might.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">6</div>
-
           <div>
             <strong>Armor</strong>
             <span>
-              Provides additional protection against physical
-              pressure.
+              Additional protection against physical pressure.
             </span>
           </div>
         </div>
-
 
       </div>
 
@@ -993,78 +955,60 @@
       <h2>GLYPHS</h2>
 
       <p class="section-intro">
-        A practical approach is to bring every Glyph to around
-        Level 40 before pushing them further, unless you are
-        specifically progressing Hero Classes.
+        Bring every Glyph to around Level 40 before pushing further,
+        unless you are specifically progressing Hero Classes.
       </p>
 
       <div class="priority-list">
 
-
         <div class="priority">
           <div class="priority-number">1</div>
-
           <div>
             <strong>Magic Penetration</strong>
-            <span>
-              Primary offensive priority for breaking through
-              enemy Magic Defense.
-            </span>
+            <span>Primary offensive priority.</span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">2</div>
-
           <div>
             <strong>Health</strong>
             <span>
-              Helps Xe'Sha survive long enough to fully benefit
-              from Soaring Might.
+              Helps Xe'Sha survive long enough to benefit from
+              Soaring Might.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">3</div>
-
           <div>
             <strong>Magic Attack</strong>
             <span>
-              Improves Deadly Ray and the Magic Attack bonus
-              granted by Spiritual Power.
+              Improves Deadly Ray and Spiritual Power.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">4</div>
-
           <div>
             <strong>Intelligence</strong>
             <span>
-              Adds offensive power while also increasing
-              Magic Defense.
+              Adds offensive power and Magic Defense.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">5</div>
-
           <div>
             <strong>Magic Defense</strong>
             <span>
-              Lowest immediate priority compared with her
-              other Glyphs.
+              Lowest immediate priority.
             </span>
           </div>
         </div>
-
 
       </div>
 
@@ -1083,55 +1027,43 @@
 
       <div class="priority-list">
 
-
         <div class="priority">
           <div class="priority-number">1</div>
-
           <div>
             <strong>Weapon — Magic Attack</strong>
             <span>
-              Grants the entire team a Magic Attack bonus every
-              time Xe'Sha activates Deadly Ray.
+              Grants the entire team a Magic Attack bonus whenever
+              Deadly Ray activates.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">2</div>
-
           <div>
-            <strong>
-              Book — Magic Penetration + Magic Attack
-            </strong>
-
+            <strong>Book — Magic Penetration + Magic Attack</strong>
             <span>
-              Provides the two major offensive stats Xe'Sha wants
-              as a burst mage.
+              Provides two major offensive stats for Xe'Sha.
             </span>
           </div>
         </div>
-
 
         <div class="priority">
           <div class="priority-number">3</div>
-
           <div>
             <strong>Ring — Intelligence</strong>
             <span>
-              Valuable primary-stat development after Weapon
-              and Book.
+              Valuable primary-stat development after Weapon and Book.
             </span>
           </div>
         </div>
-
 
       </div>
 
     </section>
 
 
-    <!-- GIFT OF THE ELEMENTS -->
+    <!-- GIFT -->
 
     <section class="guide-section">
 
@@ -1142,9 +1074,8 @@
       <h2>MAX IT</h2>
 
       <p class="section-intro">
-        Xe'Sha needs every possible stat increase to remain alive
-        while continuously scaling throughout the battle. The longer
-        she survives, the stronger Soaring Might becomes.
+        Xe'Sha benefits from every possible stat increase to remain
+        alive while continuously scaling throughout the battle.
       </p>
 
     </section>
@@ -1162,16 +1093,13 @@
 
       <div class="talisman-grid">
 
-
         <article class="talisman">
 
           <div class="talisman-label">
             TALISMAN 01
           </div>
 
-          <h3>
-            Intelligence + Magic Attack
-          </h3>
+          <h3>Intelligence + Magic Attack</h3>
 
           <p>
             Easier to obtain through the Eternal Frontier Shop
@@ -1187,18 +1115,14 @@
             TALISMAN 02
           </div>
 
-          <h3>
-            Armor + Magic Penetration
-          </h3>
+          <h3>Armor + Magic Penetration</h3>
 
           <p>
-            More difficult to acquire, but the additional Magic
-            Penetration helps Xe'Sha deal devastating damage against
-            heavily protected enemies.
+            More difficult to acquire, but its Magic Penetration
+            is valuable against heavily protected enemies.
           </p>
 
         </article>
-
 
       </div>
 
@@ -1216,9 +1140,9 @@
       <h2>HOW TO COUNTER XE'SHA</h2>
 
       <p class="section-intro">
-        These heroes can interfere with Xe'Sha through Intelligence
-        targeting, burst protection, redirection, control, Energy
-        disruption or resistance to Magic Damage.
+        Xe'Sha can be disrupted through Intelligence targeting,
+        burst protection, target redirection, control, Energy
+        disruption and resistance to Magic Damage.
       </p>
 
       <div class="counter-grid">
@@ -1274,83 +1198,54 @@
 
         <div class="summary-grid">
 
-
           <div class="summary-item">
             <span>ROLE</span>
             <strong>Mage</strong>
           </div>
-
 
           <div class="summary-item">
             <span>FACTION</span>
             <strong>Way of Chaos</strong>
           </div>
 
-
           <div class="summary-item">
             <span>POSITION</span>
             <strong>Middle Line</strong>
           </div>
 
-
           <div class="summary-item">
-
             <span>SKINS</span>
-
             <strong>
               Magic Attack → Magic Penetration →
               Magic Critical Hit Chance →
               Default Intelligence → Health → Armor
             </strong>
-
           </div>
 
-
           <div class="summary-item">
-
             <span>GLYPHS</span>
-
             <strong>
               Magic Penetration → Health → Magic Attack →
               Intelligence → Magic Defense
             </strong>
-
           </div>
 
-
           <div class="summary-item">
-
             <span>ARTIFACTS</span>
-
-            <strong>
-              Weapon → Book → Ring
-            </strong>
-
+            <strong>Weapon → Book → Ring</strong>
           </div>
 
-
           <div class="summary-item">
-
             <span>GIFT OF THE ELEMENTS</span>
-
-            <strong>
-              MAX
-            </strong>
-
+            <strong>MAX</strong>
           </div>
-
 
           <div class="summary-item">
-
             <span>CORE MECHANIC</span>
-
             <strong>
-              Allied Health Sacrifice →
-              Permanent Magic Attack Growth
+              Allied Health Sacrifice → Permanent Magic Attack Growth
             </strong>
-
           </div>
-
 
         </div>
 
@@ -1359,33 +1254,34 @@
     </section>
 
 
-    <!-- FULL VIDEO GUIDE — ALWAYS AT THE END -->
+    <!-- FULL VIDEO GUIDE — AT THE END -->
 
     <section class="video-section">
 
-      <div class="video-box">
+      <div class="section-label">
+        FULL VIDEO GUIDE
+      </div>
 
-        <div class="section-label">
-          FULL VIDEO GUIDE
-        </div>
+      <h2>
+        WATCH THE COMPLETE XE'SHA GUIDE
+      </h2>
 
-        <h2>
-          WATCH THE COMPLETE XE'SHA GUIDE
-        </h2>
+      <p class="video-description">
+        Watch the complete Gods of Alliance guide for the full
+        explanation of Xe'Sha's mechanics, build priorities,
+        synergies and counters.
+      </p>
 
-        <p>
-          Watch the full Gods of Alliance video for the complete
-          Xe'Sha breakdown, mechanics, build priorities and counters.
-        </p>
+      <div class="video-wrapper">
 
-        <a
-          class="video-button"
-          href="https://youtu.be/F7_0lGu7Xr4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ▶ WATCH ON YOUTUBE
-        </a>
+        <iframe
+          src="https://www.youtube.com/embed/F7_0lGu7Xr4"
+          title="Xe'Sha Complete Hero Guide - Gods of Alliance"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
 
       </div>
 
