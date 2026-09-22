@@ -1,1 +1,2089 @@
-<!-- Gods of Alliance Tier List Maker -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hero Wars Alliance Tier List Maker 2026 | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Create your own Hero Wars Alliance Tier List. Rank every hero from S+ to D, drag and drop heroes, save your list automatically and download or share your finished tier list."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/tier-list.html"
+  >
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gods of Alliance">
+  <meta
+    property="og:title"
+    content="Hero Wars Alliance Tier List Maker 2026"
+  >
+  <meta
+    property="og:description"
+    content="Make your own Hero Wars Alliance Tier List. Rank the heroes your way from S+ to D."
+  >
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/tier-list.html"
+  >
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Tier-List/tier-list-maker.png"
+  >
+  <meta
+    property="og:image:alt"
+    content="Hero Wars Alliance Tier List Maker - Gods of Alliance"
+  >
+
+  <!-- X / TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta
+    name="twitter:title"
+    content="Hero Wars Alliance Tier List Maker 2026"
+  >
+  <meta
+    name="twitter:description"
+    content="Make your own Hero Wars Alliance Tier List and rank every hero your way."
+  >
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Tier-List/tier-list-maker.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -10%, rgba(233, 169, 35, 0.08), transparent 35%),
+        #070707;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button,
+    select {
+      font: inherit;
+    }
+
+    img {
+      display: block;
+    }
+
+    /* =========================
+       GOA HEADER
+    ========================= */
+
+    .site-header {
+      min-height: 78px;
+      background: rgba(7, 7, 7, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 0 5%;
+      position: relative;
+      z-index: 20;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      color: #e9a923;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .header-nav a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      transition: 0.2s ease;
+    }
+
+    .header-nav a:hover,
+    .header-nav a.active {
+      color: #e9a923;
+    }
+
+    /* =========================
+       HERO / INTRO
+    ========================= */
+
+    .page-hero {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 60px 30px 35px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: #e9a923;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .page-hero h1 {
+      margin: 0;
+      font-size: clamp(38px, 6vw, 76px);
+      line-height: 0.98;
+      letter-spacing: -2px;
+      font-weight: 950;
+    }
+
+    .page-hero h1 span {
+      color: #e9a923;
+    }
+
+    .page-hero p {
+      max-width: 780px;
+      margin: 22px auto 0;
+      color: rgba(255, 255, 255, 0.62);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* =========================
+       APP
+    ========================= */
+
+    .tier-app {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 20px 30px 70px;
+    }
+
+    .app-shell {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.025), transparent),
+        #0b0b0b;
+      border: 1px solid rgba(233, 169, 35, 0.18);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow:
+        0 25px 80px rgba(0, 0, 0, 0.55),
+        0 0 80px rgba(233, 169, 35, 0.025);
+    }
+
+    /* =========================
+       TOOLBAR
+    ========================= */
+
+    .toolbar {
+      padding: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+      background: #0e0e0e;
+    }
+
+    .filter-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .filter-area label {
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    #roleFilter {
+      appearance: none;
+      min-width: 185px;
+      padding: 12px 38px 12px 15px;
+      border: 1px solid rgba(233, 169, 35, 0.3);
+      border-radius: 8px;
+      background:
+        linear-gradient(45deg, transparent 50%, #e9a923 50%) calc(100% - 17px) 50% / 6px 6px no-repeat,
+        linear-gradient(135deg, #e9a923 50%, transparent 50%) calc(100% - 12px) 50% / 6px 6px no-repeat,
+        #080808;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    #roleFilter option {
+      background: #111111;
+      color: #ffffff;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .tool-btn {
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #151515;
+      color: #ffffff;
+      padding: 11px 16px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .tool-btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(233, 169, 35, 0.55);
+    }
+
+    .tool-btn.gold {
+      background: #e9a923;
+      color: #090909;
+      border-color: #e9a923;
+    }
+
+    .tool-btn.gold:hover {
+      background: #f3bd4b;
+    }
+
+    /* =========================
+       ACTIVE TIER MESSAGE
+    ========================= */
+
+    .active-message {
+      display: none;
+      margin: 18px 22px 0;
+      padding: 13px 16px;
+      border-radius: 9px;
+      border: 1px solid rgba(233, 169, 35, 0.35);
+      background: rgba(233, 169, 35, 0.07);
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .active-message.show {
+      display: flex;
+    }
+
+    .active-copy {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .active-copy strong {
+      color: #e9a923;
+      font-size: 16px;
+    }
+
+    .deselect-btn {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 7px;
+      padding: 7px 12px;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       CAPTURE AREA
+    ========================= */
+
+    #captureArea {
+      position: relative;
+      margin: 22px;
+      padding: 22px;
+      background:
+        radial-gradient(circle at 80% 0%, rgba(233, 169, 35, 0.08), transparent 32%),
+        linear-gradient(180deg, #101010 0%, #080808 100%);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 13px;
+      overflow: hidden;
+    }
+
+    .capture-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 18px;
+      padding-bottom: 17px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .capture-brand {
+      font-size: 13px;
+      font-weight: 950;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .capture-brand span {
+      color: #e9a923;
+    }
+
+    .capture-title {
+      color: rgba(255, 255, 255, 0.42);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    /* =========================
+       TIERS
+    ========================= */
+
+    .tier-row {
+      display: flex;
+      min-height: 104px;
+      margin-bottom: 10px;
+      border-radius: 9px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.055);
+      transition: 0.2s ease;
+    }
+
+    .tier-row.selected {
+      box-shadow:
+        0 0 0 2px rgba(233, 169, 35, 0.75),
+        0 0 25px rgba(233, 169, 35, 0.12);
+    }
+
+    .tier-label {
+      width: 82px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 950;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      transition: 0.2s ease;
+    }
+
+    .tier-label:hover {
+      filter: brightness(1.1);
+    }
+
+    .tier-label::after {
+      content: "SELECT";
+      position: absolute;
+      bottom: 8px;
+      font-size: 7px;
+      letter-spacing: 1px;
+      opacity: 0.65;
+    }
+
+    .tier-row.selected .tier-label::after {
+      content: "ACTIVE";
+      opacity: 1;
+    }
+
+    .label-splus {
+      background: linear-gradient(135deg, #a30d2d, #d4143e);
+    }
+
+    .label-s {
+      background: linear-gradient(135deg, #d84b4b, #ff6666);
+    }
+
+    .label-a {
+      background: linear-gradient(135deg, #d96a1f, #ff9347);
+    }
+
+    .label-b {
+      background: linear-gradient(135deg, #d5a51e, #f3ca45);
+      color: #111111;
+    }
+
+    .label-c {
+      background: linear-gradient(135deg, #4f9b56, #79c87f);
+    }
+
+    .label-d {
+      background: linear-gradient(135deg, #414141, #676767);
+    }
+
+    .tier-content {
+      flex: 1;
+      min-width: 0;
+      min-height: 102px;
+      padding: 9px;
+      display: flex;
+      align-content: flex-start;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 7px;
+      background: rgba(0, 0, 0, 0.42);
+      transition: 0.15s ease;
+    }
+
+    .tier-content.drag-over,
+    .hero-pool.drag-over {
+      background: rgba(233, 169, 35, 0.09);
+      box-shadow: inset 0 0 0 2px rgba(233, 169, 35, 0.45);
+    }
+
+    /* =========================
+       HERO CARDS
+    ========================= */
+
+    .hero-card {
+      width: 76px;
+      padding: 6px 5px 7px;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 8px;
+      background: #141414;
+      cursor: grab;
+      user-select: none;
+      transition:
+        transform 0.16s ease,
+        border-color 0.16s ease,
+        box-shadow 0.16s ease,
+        opacity 0.16s ease;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(233, 169, 35, 0.55);
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-card.dragging {
+      opacity: 0.35;
+      transform: scale(0.94);
+    }
+
+    .hero-card.hidden {
+      display: none;
+    }
+
+    .hero-image {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 6px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      border: 2px solid rgba(233, 169, 35, 0.35);
+      background: #222222;
+    }
+
+    .hero-name {
+      min-height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.83);
+      font-size: 9px;
+      font-weight: 750;
+      line-height: 1.15;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+
+    /* =========================
+       EXPORT WATERMARK
+    ========================= */
+
+    .capture-footer {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .capture-footer-left {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .capture-footer-right {
+      color: #e9a923;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    /* =========================
+       HERO POOL
+    ========================= */
+
+    .pool-section {
+      margin: 0 22px 22px;
+      padding: 22px;
+      border-radius: 13px;
+      background: #0d0d0d;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: 0.2s ease;
+    }
+
+    .pool-section.active {
+      border-color: rgba(233, 169, 35, 0.4);
+      box-shadow: 0 0 30px rgba(233, 169, 35, 0.04);
+    }
+
+    .pool-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 17px;
+    }
+
+    .pool-title-wrap h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 950;
+      letter-spacing: -0.3px;
+    }
+
+    .pool-title-wrap h2 span {
+      color: #e9a923;
+    }
+
+    #poolHint {
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 11px;
+    }
+
+    .hero-count {
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero-pool {
+      min-height: 150px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      gap: 9px;
+      padding: 14px;
+      background: #080808;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.045);
+      transition: 0.15s ease;
+    }
+
+    /* =========================
+       INSTRUCTIONS
+    ========================= */
+
+    .instructions {
+      max-width: 1100px;
+      margin: 45px auto 0;
+      padding: 0 30px 70px;
+      text-align: center;
+    }
+
+    .instructions h2 {
+      margin: 0 0 15px;
+      font-size: 28px;
+    }
+
+    .instructions p {
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .instructions strong {
+      color: #e9a923;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .site-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      padding: 28px 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 11px;
+    }
+
+    /* =========================
+       TOAST
+    ========================= */
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 30px;
+      transform: translate(-50%, 20px);
+      background: #e9a923;
+      color: #090909;
+      padding: 11px 18px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 900;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.25s ease;
+      z-index: 9999;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 760px) {
+      .site-header {
+        padding: 0 18px;
+      }
+
+      .brand {
+        font-size: 16px;
+      }
+
+      .header-nav {
+        gap: 12px;
+      }
+
+      .header-nav a {
+        font-size: 10px;
+      }
+
+      .page-hero {
+        padding: 42px 18px 25px;
+      }
+
+      .page-hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .tier-app {
+        padding: 15px 10px 50px;
+      }
+
+      .toolbar {
+        padding: 15px;
+      }
+
+      .filter-area {
+        width: 100%;
+      }
+
+      #roleFilter {
+        width: 100%;
+      }
+
+      .action-buttons {
+        width: 100%;
+      }
+
+      .tool-btn {
+        flex: 1 1 calc(50% - 5px);
+        padding: 11px 8px;
+      }
+
+      #captureArea {
+        margin: 12px;
+        padding: 10px;
+      }
+
+      .capture-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .capture-title {
+        text-align: left;
+      }
+
+      .tier-row {
+        min-height: 83px;
+        margin-bottom: 7px;
+      }
+
+      .tier-label {
+        width: 50px;
+        font-size: 22px;
+      }
+
+      .tier-label::after {
+        display: none;
+      }
+
+      .tier-content {
+        min-height: 81px;
+        padding: 6px;
+        gap: 5px;
+      }
+
+      .hero-card {
+        width: 59px;
+        padding: 4px;
+      }
+
+      .hero-image {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 4px;
+      }
+
+      .hero-name {
+        min-height: 21px;
+        font-size: 7.5px;
+      }
+
+      .capture-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .pool-section {
+        margin: 0 12px 12px;
+        padding: 14px;
+      }
+
+      .pool-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .hero-pool {
+        gap: 6px;
+        padding: 8px;
+      }
+
+      .active-message {
+        margin: 12px 12px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      GODS OF <span>ALLIANCE</span>
+    </a>
+
+    <nav class="header-nav">
+      <a href="index.html">HOME</a>
+      <a href="heroes.html">HERO GUIDES</a>
+      <a class="active" href="tier-list.html">TIER LIST</a>
+    </nav>
+  </header>
+
+  <!-- =========================
+       INTRO
+  ========================== -->
+
+  <section class="page-hero">
+    <div class="eyebrow">Gods of Alliance Interactive Tool</div>
+
+    <h1>
+      BUILD YOUR OWN<br>
+      <span>TIER LIST</span>
+    </h1>
+
+    <p>
+      Rank the Hero Wars Alliance heroes your way.
+      Select a tier and click heroes to assign them, or drag and drop
+      heroes directly between the Hero Pool and each tier.
+      Your tier list is saved automatically on this device.
+    </p>
+  </section>
+
+  <!-- =========================
+       TIER LIST APP
+  ========================== -->
+
+  <main class="tier-app">
+    <div class="app-shell">
+
+      <!-- TOOLBAR -->
+      <div class="toolbar">
+
+        <div class="filter-area">
+          <label for="roleFilter">Filter by role</label>
+
+          <select id="roleFilter">
+            <option value="all">All Heroes</option>
+            <option value="mage">Mage</option>
+            <option value="tank">Tank</option>
+            <option value="marksman">Marksman</option>
+            <option value="healer">Healer</option>
+            <option value="support">Support</option>
+            <option value="warrior">Warrior</option>
+            <option value="control">Control</option>
+          </select>
+        </div>
+
+        <div class="action-buttons">
+          <button id="resetBtn" class="tool-btn">
+            Reset
+          </button>
+
+          <button id="downloadBtn" class="tool-btn gold">
+            Download Image
+          </button>
+
+          <button id="shareBtn" class="tool-btn gold">
+            Share
+          </button>
+        </div>
+
+      </div>
+
+      <!-- ACTIVE TIER -->
+      <div id="activeMessage" class="active-message">
+        <div class="active-copy">
+          Assigning heroes to:
+          <strong id="activeTierText">S+</strong>
+          &nbsp;—&nbsp; click heroes in the pool below.
+        </div>
+
+        <button id="deselectBtn" class="deselect-btn">
+          Deselect
+        </button>
+      </div>
+
+      <!-- =========================
+           EXPORT / CAPTURE AREA
+      ========================== -->
+
+      <div id="captureArea">
+
+        <div class="capture-header">
+          <div class="capture-brand">
+            GODS OF <span>ALLIANCE</span>
+          </div>
+
+          <div class="capture-title">
+            Hero Wars Alliance • My Tier List
+          </div>
+        </div>
+
+        <!-- S+ -->
+        <div class="tier-row" data-row-tier="splus">
+          <div
+            class="tier-label label-splus"
+            data-select-tier="splus"
+          >
+            S+
+          </div>
+
+          <div
+            id="tier-splus"
+            class="tier-content drop-zone"
+            data-container="splus"
+          ></div>
+        </div>
+
+        <!-- S -->
+        <div class="tier-row" data-row-tier="s">
+          <div
+            class="tier-label label-s"
+            data-select-tier="s"
+          >
+            S
+          </div>
+
+          <div
+            id="tier-s"
+            class="tier-content drop-zone"
+            data-container="s"
+          ></div>
+        </div>
+
+        <!-- A -->
+        <div class="tier-row" data-row-tier="a">
+          <div
+            class="tier-label label-a"
+            data-select-tier="a"
+          >
+            A
+          </div>
+
+          <div
+            id="tier-a"
+            class="tier-content drop-zone"
+            data-container="a"
+          ></div>
+        </div>
+
+        <!-- B -->
+        <div class="tier-row" data-row-tier="b">
+          <div
+            class="tier-label label-b"
+            data-select-tier="b"
+          >
+            B
+          </div>
+
+          <div
+            id="tier-b"
+            class="tier-content drop-zone"
+            data-container="b"
+          ></div>
+        </div>
+
+        <!-- C -->
+        <div class="tier-row" data-row-tier="c">
+          <div
+            class="tier-label label-c"
+            data-select-tier="c"
+          >
+            C
+          </div>
+
+          <div
+            id="tier-c"
+            class="tier-content drop-zone"
+            data-container="c"
+          ></div>
+        </div>
+
+        <!-- D -->
+        <div class="tier-row" data-row-tier="d">
+          <div
+            class="tier-label label-d"
+            data-select-tier="d"
+          >
+            D
+          </div>
+
+          <div
+            id="tier-d"
+            class="tier-content drop-zone"
+            data-container="d"
+          ></div>
+        </div>
+
+        <div class="capture-footer">
+          <div class="capture-footer-left">
+            Created with the Gods of Alliance Tier List Maker
+          </div>
+
+          <div class="capture-footer-right">
+            gods-of-alliance.vercel.app
+          </div>
+        </div>
+
+      </div>
+
+      <!-- =========================
+           HERO POOL
+      ========================== -->
+
+      <section id="poolSection" class="pool-section">
+
+        <div class="pool-heading">
+
+          <div class="pool-title-wrap">
+            <h2>
+              HERO <span>POOL</span>
+            </h2>
+
+            <div id="poolHint">
+              Select a tier above, then click heroes to assign them.
+            </div>
+          </div>
+
+          <div id="heroCount" class="hero-count"></div>
+
+        </div>
+
+        <div
+          id="heroPool"
+          class="hero-pool drop-zone"
+          data-container="pool"
+        ></div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================
+       HELP
+  ========================== -->
+
+  <section class="instructions">
+    <h2>Make the Tier List Yours</h2>
+
+    <p>
+      On desktop, you can <strong>drag and drop</strong> heroes between
+      tiers and the Hero Pool. You can also select any tier and then
+      <strong>click heroes</strong> in the pool to add them.
+      Click a hero already inside a tier to return that hero to the pool.
+      Your progress is saved automatically in your browser.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <!-- html2canvas for PNG export -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+  ></script>
+
+  <script>
+    /* =========================================================
+       GODS OF ALLIANCE — HERO DATABASE
+       Images use the existing GOA Images/Heroes folder.
+
+       IMPORTANT:
+       Crow and Kendle are included in ALL HEROES.
+       Their role is intentionally left unclassified here until
+       their role is confirmed from GOA source material.
+    ========================================================= */
+
+    const heroes = [
+      { name: "Aidan", image: "Aidan.png", role: "healer" },
+      { name: "Alvanor", image: "Alvanor.png", role: "support" },
+      { name: "Amira", image: "Amira.png", role: "support" },
+      { name: "Andvari", image: "Andvari.png", role: "support" },
+      { name: "Arachne", image: "arachne.png", role: "control" },
+      { name: "Artemis", image: "artemis.png", role: "marksman" },
+      { name: "Astaroth", image: "Astaroth.png", role: "tank" },
+      { name: "Astrid and Lucas", image: "Astrid.png", role: "marksman" },
+      { name: "Aurora", image: "Aurora.png", role: "tank" },
+
+      { name: "Byrna", image: "byrna.png", role: "healer" },
+
+      { name: "Cascade", image: "Cascade.png", role: "mage" },
+      { name: "Celeste", image: "Celeste.png", role: "mage" },
+      { name: "Chabba", image: "Chabba.png", role: "tank" },
+      { name: "Cleaver", image: "Cleaver.png", role: "tank" },
+      { name: "Cornelius", image: "Cornelius.png", role: "support" },
+      { name: "Corvus", image: "Corvus.png", role: "tank" },
+      { name: "Crow", image: "Crow.png", role: null },
+
+      { name: "Dante", image: "Dante.png", role: "marksman" },
+      { name: "Daredevil", image: "Daredevil.png", role: "marksman" },
+      { name: "Dark Star", image: "Darkstar.png", role: "control" },
+      { name: "Dorian", image: "Dorian.png", role: "healer" },
+      { name: "Drayne", image: "Drayne.png", role: "warrior" },
+
+      { name: "Electra Von Grave", image: "Electra Von Grave.png", role: "tank" },
+      { name: "Elmir", image: "Elmir.png", role: "warrior" },
+      { name: "Eva", image: "Eva.png", role: "marksman" },
+
+      { name: "Faceless", image: "Faceless.png", role: "mage" },
+      { name: "Fafnir", image: "Fafnir.png", role: "support" },
+      { name: "Folio", image: "Folio.png", role: "mage" },
+      { name: "Fox", image: "Fox.png", role: "marksman" },
+
+      { name: "Galahad", image: "Galahad.png", role: "tank" },
+      { name: "Ginger", image: "Ginger.png", role: "marksman" },
+      { name: "Guus", image: "Guus.png", role: "healer" },
+
+      { name: "Heidi", image: "Heidi.png", role: "mage" },
+      { name: "Helios", image: "Helios.png", role: "mage" },
+
+      { name: "Iris", image: "Iris.png", role: "mage" },
+      { name: "Isaac", image: "Isaac.png", role: "support" },
+      { name: "Ishmael", image: "Ishmael.png", role: "warrior" },
+
+      { name: "Jet", image: "Jet.png", role: "healer" },
+      { name: "Jhu", image: "Jhu.png", role: "marksman" },
+      { name: "Jorgen", image: "Jorgen.png", role: "control" },
+      { name: "Judge", image: "Judge.png", role: "mage" },
+      { name: "Julius", image: "Julius.png", role: "tank" },
+
+      { name: "Kai", image: "kai.png", role: "mage" },
+      { name: "K'arkh", image: "K'arh.png", role: "warrior" },
+      { name: "Kayla", image: "Kayla.png", role: "warrior" },
+      { name: "Keira", image: "Keira.png", role: "marksman" },
+      { name: "Kendle", image: "Kendle.png", role: null },
+      { name: "Krista", image: "Krista.png", role: "mage" },
+
+      { name: "Lara Croft", image: "Lara-Croft.png", role: "marksman" },
+      { name: "Lars", image: "Lars.png", role: "mage" },
+      { name: "Leonel", image: "Leonel.png", role: "warrior" },
+      { name: "Lian", image: "Lian.png", role: "control" },
+      { name: "Lilith", image: "Lilith.png", role: "mage" },
+      { name: "Luther", image: "Luther.png", role: "tank" },
+
+      { name: "Markus", image: "Markus.png", role: "healer" },
+      { name: "Martha", image: "Martha.png", role: "healer" },
+      { name: "Maya", image: "Maya.png", role: "healer" },
+      { name: "Miu", image: "Miu.png", role: "support" },
+      { name: "Mojo", image: "Mojo.png", role: "mage" },
+      { name: "Morrigan", image: "Morrigan.png", role: "support" },
+      { name: "Mushy and Shroom", image: "Mushy.png", role: "tank" },
+
+      { name: "Nebula", image: "Nebula.png", role: "support" },
+      { name: "Ninja Turtles", image: "Ninja Turtles.png", role: "warrior" },
+
+      { name: "Octavia", image: "Octavia.png", role: "support" },
+      { name: "Orion", image: "Orion.png", role: "mage" },
+      { name: "Oya", image: "Oya.png", role: "warrior" },
+
+      { name: "Peech", image: "Peech.png", role: "warrior" },
+      { name: "Peppy", image: "Peppy.png", role: "mage" },
+      { name: "Phobos", image: "Phobos.png", role: "control" },
+      { name: "Polaris", image: "polaris.png", role: "control" },
+
+      { name: "Qing Mao", image: "Quing-Mao.png", role: "warrior" },
+
+      { name: "Rufus", image: "Rufus.png", role: "tank" },
+
+      { name: "Satori", image: "Satori.png", role: "mage" },
+      { name: "Sebastian", image: "Sebastian.png", role: "support" },
+      { name: "Soleil", image: "Soleil.png", role: "support" },
+      { name: "Somna", image: "somna.png", role: "control" },
+
+      { name: "Tempus", image: "Tempus.png", role: "support" },
+      { name: "Thea", image: "Thea.png", role: "healer" },
+      { name: "Tristan", image: "Tristan.png", role: "warrior" },
+
+      { name: "Xe'Sha", image: "Xesha.png", role: "mage" },
+
+      { name: "Yasmine", image: "Yasmine.png", role: "warrior" },
+
+      { name: "Ziri", image: "Ziri.png", role: "tank" }
+    ];
+
+    /* =========================================================
+       CONSTANTS
+    ========================================================= */
+
+    const STORAGE_KEY = "goa_tier_list_2026_v1";
+
+    const tierNames = {
+      splus: "S+",
+      s: "S",
+      a: "A",
+      b: "B",
+      c: "C",
+      d: "D"
+    };
+
+    const containers = [
+      "pool",
+      "splus",
+      "s",
+      "a",
+      "b",
+      "c",
+      "d"
+    ];
+
+    /* =========================================================
+       STATE
+    ========================================================= */
+
+    let state = createDefaultState();
+
+    let activeTier = null;
+    let currentFilter = "all";
+
+    let draggedHero = null;
+    let draggedFrom = null;
+
+    /* =========================================================
+       DEFAULT STATE
+    ========================================================= */
+
+    function createDefaultState() {
+      return {
+        pool: heroes.map(hero => hero.name),
+        splus: [],
+        s: [],
+        a: [],
+        b: [],
+        c: [],
+        d: []
+      };
+    }
+
+    /* =========================================================
+       STORAGE
+    ========================================================= */
+
+    function saveState() {
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify(state)
+      );
+    }
+
+    function loadState() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+
+      if (!saved) {
+        state = createDefaultState();
+        return;
+      }
+
+      try {
+        const parsed = JSON.parse(saved);
+
+        const rebuilt = {
+          pool: [],
+          splus: [],
+          s: [],
+          a: [],
+          b: [],
+          c: [],
+          d: []
+        };
+
+        const validHeroNames = new Set(
+          heroes.map(hero => hero.name)
+        );
+
+        const alreadyPlaced = new Set();
+
+        containers.forEach(containerName => {
+          const savedHeroes = Array.isArray(parsed[containerName])
+            ? parsed[containerName]
+            : [];
+
+          savedHeroes.forEach(heroName => {
+            if (
+              validHeroNames.has(heroName) &&
+              !alreadyPlaced.has(heroName)
+            ) {
+              rebuilt[containerName].push(heroName);
+              alreadyPlaced.add(heroName);
+            }
+          });
+        });
+
+        /*
+          If new heroes are added to the website later,
+          they automatically appear in the Hero Pool
+          without deleting the user's existing Tier List.
+        */
+        heroes.forEach(hero => {
+          if (!alreadyPlaced.has(hero.name)) {
+            rebuilt.pool.push(hero.name);
+          }
+        });
+
+        state = rebuilt;
+
+      } catch (error) {
+        console.error("Could not load Tier List:", error);
+        state = createDefaultState();
+      }
+    }
+
+    /* =========================================================
+       HERO HELPERS
+    ========================================================= */
+
+    function getHeroByName(name) {
+      return heroes.find(hero => hero.name === name);
+    }
+
+    function findHeroContainer(heroName) {
+      return containers.find(containerName =>
+        state[containerName].includes(heroName)
+      );
+    }
+
+    /* =========================================================
+       RENDER
+    ========================================================= */
+
+    function render() {
+      document.getElementById("heroPool").innerHTML = "";
+
+      Object.keys(tierNames).forEach(tier => {
+        document.getElementById("tier-" + tier).innerHTML = "";
+      });
+
+      renderContainer("pool", state.pool);
+
+      Object.keys(tierNames).forEach(tier => {
+        renderContainer(tier, state[tier]);
+      });
+
+      applyFilter();
+      updateHeroCount();
+    }
+
+    function renderContainer(containerName, heroNames) {
+      const element =
+        containerName === "pool"
+          ? document.getElementById("heroPool")
+          : document.getElementById("tier-" + containerName);
+
+      heroNames.forEach(heroName => {
+        const hero = getHeroByName(heroName);
+
+        if (!hero) return;
+
+        element.appendChild(
+          createHeroCard(hero, containerName)
+        );
+      });
+    }
+
+    function createHeroCard(hero, containerName) {
+      const card = document.createElement("div");
+
+      card.className = "hero-card";
+      card.draggable = true;
+
+      card.dataset.heroName = hero.name;
+      card.dataset.role = hero.role || "";
+      card.dataset.container = containerName;
+
+      const image = document.createElement("img");
+
+      image.className = "hero-image";
+      image.src = "Images/Heroes/" + hero.image;
+      image.alt = hero.name;
+      image.loading = "lazy";
+      image.draggable = false;
+
+      image.onerror = function () {
+        this.onerror = null;
+
+        this.src =
+          "data:image/svg+xml;charset=UTF-8," +
+          encodeURIComponent(
+            `<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+              <rect width="80" height="80" fill="#1b1b1b"/>
+              <text
+                x="40"
+                y="44"
+                text-anchor="middle"
+                fill="#e9a923"
+                font-family="Arial"
+                font-size="13"
+                font-weight="700"
+              >
+                ${hero.name.substring(0, 3)}
+              </text>
+            </svg>`
+          );
+      };
+
+      const name = document.createElement("div");
+
+      name.className = "hero-name";
+      name.textContent = hero.name;
+
+      card.appendChild(image);
+      card.appendChild(name);
+
+      card.addEventListener("click", event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        handleHeroClick(hero.name, containerName);
+      });
+
+      card.addEventListener("dragstart", event => {
+        draggedHero = hero.name;
+        draggedFrom = containerName;
+
+        card.classList.add("dragging");
+
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData(
+          "text/plain",
+          hero.name
+        );
+      });
+
+      card.addEventListener("dragend", () => {
+        card.classList.remove("dragging");
+
+        document
+          .querySelectorAll(".drag-over")
+          .forEach(element =>
+            element.classList.remove("drag-over")
+          );
+
+        draggedHero = null;
+        draggedFrom = null;
+      });
+
+      /*
+        Allows dropping BEFORE another hero.
+        This means heroes can be reordered inside a tier,
+        instead of always being added to the end.
+      */
+      card.addEventListener("dragover", event => {
+        event.preventDefault();
+        event.stopPropagation();
+      });
+
+      card.addEventListener("drop", event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!draggedHero) return;
+
+        moveHero(
+          draggedHero,
+          containerName,
+          hero.name
+        );
+      });
+
+      return card;
+    }
+
+    /* =========================================================
+       MOVE HERO
+    ========================================================= */
+
+    function moveHero(
+      heroName,
+      targetContainer,
+      beforeHeroName = null
+    ) {
+      const sourceContainer = findHeroContainer(heroName);
+
+      if (!sourceContainer) return;
+      if (!state[targetContainer]) return;
+
+      const sourceIndex =
+        state[sourceContainer].indexOf(heroName);
+
+      if (sourceIndex !== -1) {
+        state[sourceContainer].splice(sourceIndex, 1);
+      }
+
+      if (
+        beforeHeroName &&
+        beforeHeroName !== heroName
+      ) {
+        const targetIndex =
+          state[targetContainer].indexOf(beforeHeroName);
+
+        if (targetIndex !== -1) {
+          state[targetContainer].splice(
+            targetIndex,
+            0,
+            heroName
+          );
+        } else {
+          state[targetContainer].push(heroName);
+        }
+      } else {
+        state[targetContainer].push(heroName);
+      }
+
+      saveState();
+      render();
+    }
+
+    /* =========================================================
+       CLICK TO ASSIGN
+    ========================================================= */
+
+    function handleHeroClick(heroName, containerName) {
+      if (
+        containerName === "pool" &&
+        activeTier
+      ) {
+        moveHero(heroName, activeTier);
+        return;
+      }
+
+      if (containerName !== "pool") {
+        moveHero(heroName, "pool");
+      }
+    }
+
+    /* =========================================================
+       ACTIVE TIER
+    ========================================================= */
+
+    function setActiveTier(tier) {
+      if (activeTier === tier) {
+        clearActiveTier();
+        return;
+      }
+
+      activeTier = tier;
+
+      document
+        .querySelectorAll(".tier-row")
+        .forEach(row =>
+          row.classList.remove("selected")
+        );
+
+      const row = document.querySelector(
+        `[data-row-tier="${tier}"]`
+      );
+
+      if (row) {
+        row.classList.add("selected");
+      }
+
+      document
+        .getElementById("activeMessage")
+        .classList.add("show");
+
+      document.getElementById(
+        "activeTierText"
+      ).textContent = tierNames[tier];
+
+      document
+        .getElementById("poolSection")
+        .classList.add("active");
+
+      document.getElementById(
+        "poolHint"
+      ).textContent =
+        "Click heroes below to add them to " +
+        tierNames[tier] +
+        ".";
+    }
+
+    function clearActiveTier() {
+      activeTier = null;
+
+      document
+        .querySelectorAll(".tier-row")
+        .forEach(row =>
+          row.classList.remove("selected")
+        );
+
+      document
+        .getElementById("activeMessage")
+        .classList.remove("show");
+
+      document
+        .getElementById("poolSection")
+        .classList.remove("active");
+
+      document.getElementById(
+        "poolHint"
+      ).textContent =
+        "Select a tier above, then click heroes to assign them.";
+    }
+
+    /* =========================================================
+       FILTER
+    ========================================================= */
+
+    function applyFilter() {
+      const poolCards =
+        document.querySelectorAll(
+          "#heroPool .hero-card"
+        );
+
+      poolCards.forEach(card => {
+        if (currentFilter === "all") {
+          card.classList.remove("hidden");
+          return;
+        }
+
+        if (
+          card.dataset.role === currentFilter
+        ) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+
+      updateHeroCount();
+    }
+
+    function updateHeroCount() {
+      const poolCards =
+        Array.from(
+          document.querySelectorAll(
+            "#heroPool .hero-card"
+          )
+        );
+
+      const visible =
+        poolCards.filter(
+          card =>
+            !card.classList.contains("hidden")
+        ).length;
+
+      document.getElementById(
+        "heroCount"
+      ).textContent =
+        visible +
+        " HERO" +
+        (visible === 1 ? "" : "ES") +
+        " AVAILABLE";
+    }
+
+    /* =========================================================
+       DROP ZONES
+    ========================================================= */
+
+    function setupDropZones() {
+      document
+        .querySelectorAll(".drop-zone")
+        .forEach(zone => {
+
+          zone.addEventListener(
+            "dragover",
+            event => {
+              event.preventDefault();
+
+              event.dataTransfer.dropEffect =
+                "move";
+
+              zone.classList.add(
+                "drag-over"
+              );
+            }
+          );
+
+          zone.addEventListener(
+            "dragleave",
+            event => {
+              if (
+                !zone.contains(
+                  event.relatedTarget
+                )
+              ) {
+                zone.classList.remove(
+                  "drag-over"
+                );
+              }
+            }
+          );
+
+          zone.addEventListener(
+            "drop",
+            event => {
+              event.preventDefault();
+
+              zone.classList.remove(
+                "drag-over"
+              );
+
+              if (!draggedHero) return;
+
+              const target =
+                zone.dataset.container;
+
+              moveHero(
+                draggedHero,
+                target
+              );
+            }
+          );
+        });
+    }
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    function resetTierList() {
+      const confirmed = confirm(
+        "Reset your entire Tier List? All heroes will return to the Hero Pool."
+      );
+
+      if (!confirmed) return;
+
+      state = createDefaultState();
+
+      saveState();
+      clearActiveTier();
+
+      currentFilter = "all";
+
+      document.getElementById(
+        "roleFilter"
+      ).value = "all";
+
+      render();
+
+      showToast("Tier List reset");
+    }
+
+    /* =========================================================
+       CLEAN EXPORT STATE
+    ========================================================= */
+
+    function prepareExport() {
+      document
+        .querySelectorAll(".tier-row")
+        .forEach(row =>
+          row.classList.remove("selected")
+        );
+    }
+
+    function restoreExportState() {
+      if (!activeTier) return;
+
+      const row = document.querySelector(
+        `[data-row-tier="${activeTier}"]`
+      );
+
+      if (row) {
+        row.classList.add("selected");
+      }
+    }
+
+    /* =========================================================
+       DOWNLOAD PNG
+    ========================================================= */
+
+    async function downloadImage() {
+      if (
+        typeof html2canvas === "undefined"
+      ) {
+        alert(
+          "The image export tool is still loading. Please try again in a moment."
+        );
+
+        return;
+      }
+
+      prepareExport();
+
+      try {
+        const captureArea =
+          document.getElementById(
+            "captureArea"
+          );
+
+        const canvas =
+          await html2canvas(
+            captureArea,
+            {
+              backgroundColor: "#080808",
+              scale: 2,
+              logging: false,
+              useCORS: true
+            }
+          );
+
+        const link =
+          document.createElement("a");
+
+        link.download =
+          "gods-of-alliance-tier-list.png";
+
+        link.href =
+          canvas.toDataURL("image/png");
+
+        link.click();
+
+        showToast(
+          "Tier List image created"
+        );
+
+      } catch (error) {
+        console.error(error);
+
+        alert(
+          "The Tier List image could not be generated. Please try again."
+        );
+      }
+
+      restoreExportState();
+    }
+
+    /* =========================================================
+       SHARE
+    ========================================================= */
+
+    async function shareTierList() {
+      if (
+        typeof html2canvas === "undefined"
+      ) {
+        alert(
+          "The image export tool is still loading. Please try again in a moment."
+        );
+
+        return;
+      }
+
+      prepareExport();
+
+      try {
+        const captureArea =
+          document.getElementById(
+            "captureArea"
+          );
+
+        const canvas =
+          await html2canvas(
+            captureArea,
+            {
+              backgroundColor: "#080808",
+              scale: 2,
+              logging: false,
+              useCORS: true
+            }
+          );
+
+        canvas.toBlob(
+          async blob => {
+            if (!blob) {
+              restoreExportState();
+              return;
+            }
+
+            const file =
+              new File(
+                [blob],
+                "gods-of-alliance-tier-list.png",
+                {
+                  type: "image/png"
+                }
+              );
+
+            if (
+              navigator.share &&
+              navigator.canShare &&
+              navigator.canShare({
+                files: [file]
+              })
+            ) {
+              try {
+                await navigator.share({
+                  title:
+                    "My Hero Wars Alliance Tier List",
+                  text:
+                    "Check out my Hero Wars Alliance Tier List!",
+                  files: [file]
+                });
+              } catch (error) {
+                console.log(
+                  "Share cancelled:",
+                  error
+                );
+              }
+
+            } else {
+              const url =
+                URL.createObjectURL(blob);
+
+              const link =
+                document.createElement("a");
+
+              link.href = url;
+
+              link.download =
+                "gods-of-alliance-tier-list.png";
+
+              link.click();
+
+              setTimeout(
+                () =>
+                  URL.revokeObjectURL(url),
+                1000
+              );
+
+              showToast(
+                "Sharing is not supported here — image downloaded instead"
+              );
+            }
+
+            restoreExportState();
+          },
+          "image/png"
+        );
+
+      } catch (error) {
+        console.error(error);
+
+        alert(
+          "The Tier List could not be shared. Please try again."
+        );
+
+        restoreExportState();
+      }
+    }
+
+    /* =========================================================
+       TOAST
+    ========================================================= */
+
+    let toastTimer = null;
+
+    function showToast(message) {
+      const toast =
+        document.getElementById("toast");
+
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      clearTimeout(toastTimer);
+
+      toastTimer = setTimeout(
+        () =>
+          toast.classList.remove("show"),
+        2200
+      );
+    }
+
+    /* =========================================================
+       EVENTS
+    ========================================================= */
+
+    function setupEvents() {
+      document
+        .querySelectorAll(
+          "[data-select-tier]"
+        )
+        .forEach(label => {
+
+          label.addEventListener(
+            "click",
+            () => {
+              setActiveTier(
+                label.dataset.selectTier
+              );
+            }
+          );
+        });
+
+      document
+        .getElementById(
+          "deselectBtn"
+        )
+        .addEventListener(
+          "click",
+          clearActiveTier
+        );
+
+      document
+        .getElementById(
+          "roleFilter"
+        )
+        .addEventListener(
+          "change",
+          event => {
+            currentFilter =
+              event.target.value;
+
+            applyFilter();
+          }
+        );
+
+      document
+        .getElementById(
+          "resetBtn"
+        )
+        .addEventListener(
+          "click",
+          resetTierList
+        );
+
+      document
+        .getElementById(
+          "downloadBtn"
+        )
+        .addEventListener(
+          "click",
+          downloadImage
+        );
+
+      document
+        .getElementById(
+          "shareBtn"
+        )
+        .addEventListener(
+          "click",
+          shareTierList
+        );
+
+      setupDropZones();
+    }
+
+    /* =========================================================
+       START
+    ========================================================= */
+
+    function init() {
+      loadState();
+      render();
+      setupEvents();
+    }
+
+    if (
+      document.readyState === "loading"
+    ) {
+      document.addEventListener(
+        "DOMContentLoaded",
+        init
+      );
+    } else {
+      init();
+    }
+  </script>
+
+</body>
+</html>
