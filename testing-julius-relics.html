@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Testing Julius Relics | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Testing Julius Relics in Hero Wars Alliance. See our first Relic Level 10 battle comparisons, results, team tests and the differences between Julius with and without Relics."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/testing-julius-relics.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Testing Julius Relics | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Julius Relic Level 10 enters real battle testing. Compare Julius with and without Relics across multiple Hero Wars Alliance teams and matchups."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/testing-julius-relics.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/Testing-Julius-Relics/testing-julius-relics.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Testing Julius Relics - Tests, Results and Comparison"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Testing Julius Relics | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="First Julius Relic Level 10 battle tests, results and comparisons in Hero Wars Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/Testing-Julius-Relics/testing-julius-relics.png"
+  >
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      background: #05090d;
+    }
+
+    body {
+      min-height: 100vh;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(0, 194, 224, 0.11),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 88% 30%,
+          rgba(206, 30, 79, 0.09),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 50% 75%,
+          rgba(14, 97, 133, 0.08),
+          transparent 38%
+        ),
+        linear-gradient(
+          180deg,
+          #071119 0%,
+          #060b10 45%,
+          #050709 100%
+        );
+    }
+
+    /* BACKGROUND ATMOSPHERE */
+
+    .tech-background {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .tech-line {
+      position: absolute;
+      height: 1px;
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(37, 204, 228, 0.16),
+          transparent
+        );
+    }
+
+    .line1 {
+      width: 45%;
+      top: 18%;
+      left: -5%;
+      transform: rotate(-10deg);
+    }
+
+    .line2 {
+      width: 55%;
+      top: 43%;
+      right: -12%;
+      transform: rotate(12deg);
+    }
+
+    .line3 {
+      width: 50%;
+      top: 72%;
+      left: -10%;
+      transform: rotate(8deg);
+    }
+
+    .tech-orb {
+      position: absolute;
+      border-radius: 50%;
+      background: #27d4ed;
+      opacity: 0.09;
+
+      box-shadow:
+        0 0 20px rgba(39, 212, 237, 0.65),
+        0 0 45px rgba(39, 212, 237, 0.20);
+    }
+
+    .orb1 {
+      width: 5px;
+      height: 5px;
+      top: 20%;
+      left: 7%;
+    }
+
+    .orb2 {
+      width: 4px;
+      height: 4px;
+      top: 38%;
+      right: 10%;
+    }
+
+    .orb3 {
+      width: 6px;
+      height: 6px;
+      top: 64%;
+      left: 12%;
+    }
+
+    .orb4 {
+      width: 4px;
+      height: 4px;
+      top: 84%;
+      right: 16%;
+    }
+
+    header,
+    main,
+    footer {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid rgba(46, 190, 215, 0.15);
+      background: rgba(4, 8, 11, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 82px;
+      padding: 0 35px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: #e9a923;
+    }
+
+    /* PAGE */
+
+    main {
+      max-width: 1250px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    /* COVER */
+
+    .cover {
+      overflow: hidden;
+
+      border: 1px solid rgba(45, 194, 220, 0.20);
+      background: #05090c;
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.48),
+        0 0 45px rgba(28, 190, 220, 0.05);
+    }
+
+    .cover img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* INTRO */
+
+    .article-intro {
+      padding: 55px 0 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .eyebrow {
+      color: #2dcce7;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      max-width: 1000px;
+
+      font-size: clamp(40px, 6vw, 70px);
+      line-height: 0.98;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .article-subtitle {
+      margin-top: 18px;
+
+      color: #e9a923;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .intro-text {
+      max-width: 900px;
+      margin-top: 25px;
+
+      color: #aeb7bd;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* TEST SETUP */
+
+    .setup-box {
+      margin-top: 30px;
+      padding: 25px;
+
+      border-left: 3px solid #2dcce7;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(24, 132, 155, 0.12),
+          rgba(9, 14, 18, 0.78)
+        );
+    }
+
+    .setup-label {
+      color: #2dcce7;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 9px;
+    }
+
+    .setup-box strong {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .setup-box p {
+      color: #9ca6ac;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* SECTIONS */
+
+    .article-section {
+      padding: 55px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .section-label {
+      color: #2dcce7;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 11px;
+    }
+
+    .article-section h2 {
+      font-size: 31px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-intro {
+      max-width: 900px;
+
+      color: #9ca6ac;
+      font-size: 15px;
+      line-height: 1.8;
+
+      margin-bottom: 28px;
+    }
+
+    /* COMPARISON */
+
+    .comparison {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .comparison-card {
+      padding: 25px;
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(9, 14, 18, 0.82);
+    }
+
+    .comparison-card.without {
+      border-top: 2px solid rgba(208, 61, 82, 0.75);
+    }
+
+    .comparison-card.with {
+      border-top: 2px solid rgba(45, 204, 231, 0.85);
+    }
+
+    .comparison-label {
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .without .comparison-label {
+      color: #d65a6e;
+    }
+
+    .with .comparison-label {
+      color: #2dcce7;
+    }
+
+    .comparison-card h3 {
+      font-size: 20px;
+      margin-bottom: 11px;
+    }
+
+    .comparison-card p {
+      color: #9ca6ac;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* RESULT */
+
+    .result-box {
+      padding: 22px 24px;
+
+      border: 1px solid rgba(233, 169, 35, 0.22);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(87, 63, 15, 0.16),
+          rgba(9, 13, 16, 0.86)
+        );
+    }
+
+    .result-label {
+      color: #e9a923;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .result-box strong {
+      display: block;
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    /* TEAM */
+
+    .team-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 25px;
+    }
+
+    .hero-chip {
+      padding: 9px 12px;
+
+      border: 1px solid rgba(45, 204, 231, 0.20);
+      background: rgba(13, 28, 34, 0.76);
+
+      color: #d9f8fd;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    /* KEY FINDINGS */
+
+    .findings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .finding {
+      padding: 25px;
+
+      border: 1px solid rgba(45, 204, 231, 0.14);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(13, 30, 36, 0.78),
+          rgba(7, 11, 14, 0.92)
+        );
+    }
+
+    .finding-number {
+      color: #2dcce7;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .finding h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .finding p {
+      color: #9ba5aa;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    /* FUTURE TESTING */
+
+    .future-box {
+      padding: 30px;
+
+      border: 1px solid rgba(233, 169, 35, 0.22);
+
+      background:
+        radial-gradient(
+          circle at 0% 0%,
+          rgba(233, 169, 35, 0.09),
+          transparent 45%
+        ),
+        rgba(8, 12, 15, 0.88);
+    }
+
+    .future-box h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .future-box p {
+      color: #9ca6ac;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .relic-list {
+      margin-top: 20px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .relic-row {
+      padding: 14px 16px;
+
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: rgba(6, 10, 13, 0.72);
+    }
+
+    .relic-row strong {
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .relic-row span {
+      color: #8e999f;
+      font-size: 13px;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      padding: 60px 0 15px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 31px;
+      margin-bottom: 13px;
+    }
+
+    .video-description {
+      max-width: 760px;
+      margin: 0 auto 32px;
+
+      color: #9ca6ac;
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+
+      overflow: hidden;
+
+      border: 1px solid rgba(45, 204, 231, 0.22);
+      background: #000000;
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.48),
+        0 0 40px rgba(45, 204, 231, 0.05);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 32px 20px;
+
+      border-top: 1px solid rgba(45, 204, 231, 0.12);
+
+      text-align: center;
+
+      color: #59666c;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .findings-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      main {
+        padding: 35px 20px 75px;
+      }
+
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .article-section h2,
+      .video-section h2 {
+        font-size: 26px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- TECH BACKGROUND -->
+
+  <div class="tech-background" aria-hidden="true">
+
+    <span class="tech-line line1"></span>
+    <span class="tech-line line2"></span>
+    <span class="tech-line line3"></span>
+
+    <span class="tech-orb orb1"></span>
+    <span class="tech-orb orb2"></span>
+    <span class="tech-orb orb3"></span>
+    <span class="tech-orb orb4"></span>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+
+      <img
+        src="Images/HWA-All/Testing-Julius-Relics/testing-julius-relics.png"
+        alt="Testing Julius Relics - Tests, Results and Comparison"
+      >
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+
+    <section class="article-intro">
+
+      <div class="eyebrow">
+        HWA ALL • RELIC TESTING
+      </div>
+
+      <h1>
+        TESTING JULIUS RELICS
+      </h1>
+
+      <div class="article-subtitle">
+        FIRST BATTLE TESTS • RESULTS • COMPARISON
+      </div>
+
+      <p class="intro-text">
+        We already explored what the new Julius Relics bring to the
+        battlefield. Now it is time to move from theory into real
+        battles and compare exactly what changes when Julius starts
+        fighting with his Relics equipped.
+      </p>
+
+      <p class="intro-text">
+        These are our first tests, focused on Julius at Relic Level 10.
+        The objective is simple: compare Julius without Relics against
+        Julius with his first two Relics and observe what changes under
+        actual battle pressure.
+      </p>
+
+
+      <div class="setup-box">
+
+        <div class="setup-label">
+          CURRENT TEST LEVEL
+        </div>
+
+        <strong>
+          JULIUS — RELIC LEVEL 10
+        </strong>
+
+        <p>
+          These first comparisons use only the first two Julius Relics.
+          Level 20 Nine Lives Engine and Level 30 Defensive Lunge are
+          not part of these first tests and will require further testing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEST 1 -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        TEST 01 • 1V1
+      </div>
+
+      <h2>
+        JULIUS VS IRIS
+      </h2>
+
+      <p class="section-intro">
+        The first comparison is intentionally simple: one Hero against
+        one Hero. Julius without Relics is compared directly with Julius
+        at Relic Level 10 against Iris.
+      </p>
+
+
+      <div class="comparison">
+
+        <article class="comparison-card without">
+
+          <div class="comparison-label">
+            WITHOUT RELICS
+          </div>
+
+          <h3>
+            Julius struggles to finish
+          </h3>
+
+          <p>
+            In the previous version of the matchup, Julius could struggle
+            to eliminate Iris before the available battle time expired.
+            The fight could end in a timeout.
+          </p>
+
+        </article>
+
+
+        <article class="comparison-card with">
+
+          <div class="comparison-label">
+            RELIC LEVEL 10
+          </div>
+
+          <h3>
+            Julius finishes the battle
+          </h3>
+
+          <p>
+            With Relics equipped, the timeout problem disappears in
+            these tests. Julius is consistently able to eliminate Iris
+            before the battle ends, and he finishes the fight faster.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="result-box">
+
+        <div class="result-label">
+          TEST RESULT
+        </div>
+
+        <strong>
+          The first comparison already shows a practical performance
+          difference: Julius at Relic Level 10 is able to complete a
+          fight that could previously run out of time.
+        </strong>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEST 2 -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        TEST 02 • PROGRESS
+      </div>
+
+      <h2>
+        JULIUS • JUDGE • NEBULA • POLARIS • EVA
+      </h2>
+
+
+      <div class="team-line">
+
+        <span class="hero-chip">Julius</span>
+        <span class="hero-chip">Judge</span>
+        <span class="hero-chip">Nebula</span>
+        <span class="hero-chip">Polaris</span>
+        <span class="hero-chip">Eva</span>
+
+      </div>
+
+
+      <p class="section-intro">
+        The second test moves into a full Progress composition that has
+        shown serious potential since the arrival of Eva. Here the
+        difference becomes much more visible.
+      </p>
+
+
+      <div class="comparison">
+
+        <article class="comparison-card without">
+
+          <div class="comparison-label">
+            WITHOUT RELICS
+          </div>
+
+          <h3>
+            Defensive layers collapse early
+          </h3>
+
+          <p>
+            The Shields do not have the same staying power. Nebula's
+            Shield and Judge's Shield collapse too early, exposing the
+            Heroes and allowing the team to start losing members before
+            its complete mechanics can take over.
+          </p>
+
+        </article>
+
+
+        <article class="comparison-card with">
+
+          <div class="comparison-label">
+            RELIC LEVEL 10
+          </div>
+
+          <h3>
+            More stability creates more time
+          </h3>
+
+          <p>
+            Julius at Relic Level 10 changes the rhythm of the battle.
+            The Shields survive longer, the team remains protected for
+            longer, and the Heroes have more time to execute their
+            mechanics and synergies.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="result-box">
+
+        <div class="result-label">
+          KEY DIFFERENCE
+        </div>
+
+        <strong>
+          Eva receives the time she needs. Once her Ultimates begin
+          coming through, the opposing Heroes start falling one after
+          another.
+        </strong>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEST 3 -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        TEST 03 • TEAM COMPARISON
+      </div>
+
+      <h2>
+        JULIUS • KAYLA • FOLIO • AIDAN • POLARIS
+      </h2>
+
+
+      <div class="team-line">
+
+        <span class="hero-chip">Julius</span>
+        <span class="hero-chip">Kayla</span>
+        <span class="hero-chip">Folio</span>
+        <span class="hero-chip">Aidan</span>
+        <span class="hero-chip">Polaris</span>
+
+      </div>
+
+
+      <p class="section-intro">
+        This test puts Julius into another configuration that remains
+        popular among players, while the opposing team applies serious
+        pressure through Iris and Folio, supported by Guus, Dorian and
+        Electra.
+      </p>
+
+
+      <div class="comparison">
+
+        <article class="comparison-card without">
+
+          <div class="comparison-label">
+            WITHOUT RELICS
+          </div>
+
+          <h3>
+            The team loses stability
+          </h3>
+
+          <p>
+            Julius cannot provide enough stability against the incoming
+            pressure. Heroes begin to collapse before the composition
+            has enough time to establish its complete synergy.
+          </p>
+
+        </article>
+
+
+        <article class="comparison-card with">
+
+          <div class="comparison-label">
+            RELIC LEVEL 10
+          </div>
+
+          <h3>
+            The battle has time to develop
+          </h3>
+
+          <p>
+            With Relic Level 10, the team becomes visibly more stable.
+            The additional resistance creates time for the mechanics
+            to activate and for the Heroes to build momentum.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="result-box">
+
+        <div class="result-label">
+          TEST RESULT
+        </div>
+
+        <strong>
+          Once the team establishes its mechanics, the direction of
+          the battle changes and Kayla and Folio are able to finish
+          the job.
+        </strong>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEST 4 -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        TEST 04 • PRESSURE TEST
+      </div>
+
+      <h2>
+        JULIUS • BYRNA • DORIAN • KENDLE • AIDAN
+      </h2>
+
+
+      <div class="team-line">
+
+        <span class="hero-chip">Julius</span>
+        <span class="hero-chip">Byrna</span>
+        <span class="hero-chip">Dorian</span>
+        <span class="hero-chip">Kendle</span>
+        <span class="hero-chip">Aidan</span>
+
+      </div>
+
+
+      <p class="section-intro">
+        The final comparison deliberately places Julius in front of this
+        composition instead of Cleaver, pushing the test further and
+        examining how the team behaves under pressure.
+      </p>
+
+
+      <div class="comparison">
+
+        <article class="comparison-card without">
+
+          <div class="comparison-label">
+            WITHOUT RELICS
+          </div>
+
+          <h3>
+            Pressure overwhelms the team
+          </h3>
+
+          <p>
+            Julius struggles to absorb the opposing pressure. Even with
+            Kendle managing to eliminate Phobos and Dante, the team does
+            not have enough stability to activate its full mechanics.
+          </p>
+
+        </article>
+
+
+        <article class="comparison-card with">
+
+          <div class="comparison-label">
+            RELIC LEVEL 10
+          </div>
+
+          <h3>
+            Better maintained under pressure
+          </h3>
+
+          <p>
+            Julius' Health is better maintained in this test and the
+            team receives the opportunity to begin executing the
+            composition's mechanics.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="result-box">
+
+        <div class="result-label">
+          TEST RESULT
+        </div>
+
+        <strong>
+          Even against Level 30 Relics, the Relic Level 10 Julius team
+          begins removing the biggest threats first and then cleans up
+          the remaining Heroes.
+        </strong>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT CHANGED -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        FIRST OBSERVATIONS
+      </div>
+
+      <h2>
+        WHAT CHANGED?
+      </h2>
+
+      <p class="section-intro">
+        These are still early tests, but several repeated differences
+        appeared across the comparisons.
+      </p>
+
+
+      <div class="findings-grid">
+
+        <article class="finding">
+
+          <div class="finding-number">
+            01
+          </div>
+
+          <h3>
+            Stronger Shields
+          </h3>
+
+          <p>
+            The Relic Level 10 tests show stronger defensive capability,
+            with Shields remaining active for longer in the tested
+            battles.
+          </p>
+
+        </article>
+
+
+        <article class="finding">
+
+          <div class="finding-number">
+            02
+          </div>
+
+          <h3>
+            More Team Stability
+          </h3>
+
+          <p>
+            The additional defensive stability allows allied Heroes to
+            remain active longer instead of collapsing before their
+            mechanics can develop.
+          </p>
+
+        </article>
+
+
+        <article class="finding">
+
+          <div class="finding-number">
+            03
+          </div>
+
+          <h3>
+            More Time
+          </h3>
+
+          <p>
+            This is one of the most important practical differences.
+            More survival time gives offensive mechanics, Ultimates
+            and team synergies the opportunity to activate.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONCLUSION / FUTURE -->
+
+    <section class="article-section">
+
+      <div class="section-label">
+        FIRST TEST CONCLUSIONS
+      </div>
+
+      <h2>
+        PROMISING — BUT TESTING HAS JUST STARTED
+      </h2>
+
+      <p class="section-intro">
+        These first tests show a different defensive capability from
+        Julius at Relic Level 10. His Shields are stronger in the
+        tested battles, his teams survive longer, and that additional
+        stability can change how a battle develops.
+      </p>
+
+      <p class="section-intro">
+        However, these are only the first comparisons. More teams,
+        more enemy compositions and higher Relic levels still need
+        to be tested before the complete impact of Julius' Relics
+        can be understood.
+      </p>
+
+
+      <div class="future-box">
+
+        <div class="section-label">
+          NEXT TESTS
+        </div>
+
+        <h3>
+          Julius still has two higher Relic levels to explore
+        </h3>
+
+        <p>
+          This article is based on Julius at Relic Level 10. The next
+          stages can change his behaviour further and will require
+          their own battle testing.
+        </p>
+
+
+        <div class="relic-list">
+
+          <div class="relic-row">
+            <strong>Level 20 — Nine Lives Engine</strong>
+            <span> — further testing required.</span>
+          </div>
+
+          <div class="relic-row">
+            <strong>Level 30 — Defensive Lunge</strong>
+            <span> — further testing required.</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FULL VIDEO — ALWAYS AT THE END -->
+
+    <section class="video-section">
+
+      <div class="section-label">
+        FULL VIDEO
+      </div>
+
+      <h2>
+        WATCH THE COMPLETE JULIUS RELIC TESTS
+      </h2>
+
+      <p class="video-description">
+        Watch the complete Gods of Alliance battle tests and see the
+        Julius Relic Level 10 comparisons directly in action.
+      </p>
+
+
+      <div class="video-wrapper">
+
+        <iframe
+          src="https://www.youtube.com/embed/dCleIRl55PI"
+          title="Testing Julius Relics - Gods of Alliance"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HWA ALL
+  </footer>
+
+
+  <!-- GLOBAL GOA NAVIGATION -->
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
