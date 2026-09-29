@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Peppy Guide — Skills, Builds, Synergies & Counters | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Peppy guide for Hero Wars Alliance covering skills, skins, glyphs, artifacts, Gift of the Elements, talismans, Chaos synergies and counters."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/peppy.html"
+  >
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Peppy Guide — Skills, Builds, Synergies & Counters | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Complete Peppy guide covering her skills, build priorities, Chaos synergies, Talismans and counters."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/peppy.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/peppy-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Peppy Full Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Peppy Guide — Skills, Builds, Synergies & Counters | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Skills, skins, glyphs, artifacts, Talismans, Chaos synergies and counters for Peppy in Hero Wars Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/peppy-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #070510;
+      --panel: rgba(15, 10, 24, 0.96);
+      --panel-soft: rgba(20, 11, 31, 0.95);
+
+      --purple: #a844e8;
+      --purple-light: #cf74ff;
+      --pink: #f04de4;
+      --pink-light: #ff8bf3;
+      --blue: #287fd6;
+
+      --gold: #e9a923;
+      --white: #ffffff;
+      --text: #d4ced8;
+      --muted: #99909f;
+
+      --border: rgba(203, 72, 238, 0.20);
+      --border-strong: rgba(234, 77, 226, 0.43);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 8% 12%,
+          rgba(96, 34, 170, 0.18),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 22%,
+          rgba(229, 43, 216, 0.12),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 52% 65%,
+          rgba(48, 76, 181, 0.07),
+          transparent 34%
+        ),
+        linear-gradient(
+          180deg,
+          #0b0715 0%,
+          #08060e 48%,
+          #050408 100%
+        );
+
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(5, 4, 9, 0.97);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--pink-light);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .article-hero {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 72px 35px 45px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--pink);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(48px, 8vw, 78px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+
+      text-shadow:
+        0 0 30px rgba(219, 62, 238, 0.20);
+    }
+
+    .hero-role {
+      margin-top: 18px;
+
+      color: var(--pink-light);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      max-width: 800px;
+      margin: 22px auto 0;
+
+      color: #aaa2af;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      width: 78px;
+      height: 3px;
+      margin: 28px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--purple),
+          var(--pink)
+        );
+
+      box-shadow:
+        0 0 20px rgba(225, 55, 232, 0.35);
+    }
+
+    /* COVER */
+
+    .cover-wrap {
+      max-width: 1120px;
+      margin: 0 auto 55px;
+      padding: 0 35px;
+    }
+
+    .cover {
+      overflow: hidden;
+
+      background: #09060e;
+      border: 1px solid rgba(211, 68, 237, 0.28);
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5),
+        0 0 45px rgba(205, 50, 229, 0.07);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 35px 100px;
+    }
+
+    .intro {
+      padding: 30px;
+      margin-bottom: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(35, 13, 46, 0.95),
+          rgba(12, 9, 17, 0.97)
+        );
+
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--pink);
+    }
+
+    .intro p {
+      color: #c6c0c9;
+      font-size: 15px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      margin: 30px 0 55px;
+      padding: 24px;
+
+      background: rgba(10, 7, 14, 0.93);
+      border: 1px solid var(--border);
+    }
+
+    .quick-title {
+      margin-bottom: 14px;
+
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .quick-links a {
+      padding: 8px 11px;
+
+      background: #15101b;
+      border: 1px solid #30243a;
+
+      color: #cbc5cf;
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .quick-links a:hover {
+      color: #ffffff;
+      border-color: var(--border-strong);
+    }
+
+    /* SECTIONS */
+
+    .article-section {
+      margin-top: 68px;
+    }
+
+    .section-kicker {
+      margin-bottom: 7px;
+
+      color: var(--pink);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 37px);
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .article-section > p {
+      margin-top: 14px;
+
+      color: #b8b1bc;
+      font-size: 14px;
+    }
+
+    .article-section strong {
+      color: #ffffff;
+    }
+
+    /* SKILL CARDS */
+
+    .cards {
+      display: grid;
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .detail-card {
+      padding: 27px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(23, 11, 32, 0.98),
+          rgba(12, 9, 17, 0.98)
+        );
+
+      border: 1px solid var(--border);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      margin-bottom: 13px;
+    }
+
+    .card-label {
+      color: var(--pink-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .detail-card p {
+      color: #b3acb7;
+      font-size: 14px;
+    }
+
+    /* PRIORITY */
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .priority {
+      padding: 20px 12px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .priority-number {
+      margin-bottom: 8px;
+
+      color: var(--pink-light);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    .info-box {
+      margin-top: 24px;
+      padding: 25px;
+
+      background: rgba(15, 10, 21, 0.96);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--purple-light);
+    }
+
+    .info-box p {
+      color: #b6afb9;
+      font-size: 14px;
+    }
+
+    /* ARTIFACTS */
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .build-card {
+      padding: 25px 20px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .build-number {
+      color: var(--pink-light);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .build-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .build-card p {
+      color: #9e96a3;
+      font-size: 12px;
+    }
+
+    /* TALISMANS */
+
+    .talisman-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .talisman {
+      padding: 27px;
+
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(236, 70, 224, 0.08),
+          transparent 40%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(38, 15, 48, 0.96),
+          rgba(13, 9, 18, 0.98)
+        );
+
+      border: 1px solid rgba(198, 89, 232, 0.25);
+    }
+
+    .talisman-label {
+      margin-bottom: 7px;
+
+      color: var(--purple-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .talisman h3 {
+      margin-bottom: 12px;
+    }
+
+    .talisman p {
+      color: #ada6b1;
+      font-size: 13px;
+    }
+
+    .availability {
+      margin-top: 15px;
+      padding-top: 14px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: #d2ccd5;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* SYNERGIES */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .hero-card {
+      padding: 23px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .hero-card p {
+      color: #9f98a3;
+      font-size: 12px;
+    }
+
+    /* FEATURE SYNERGY */
+
+    .feature-synergy {
+      margin-top: 25px;
+      padding: 30px;
+
+      background:
+        radial-gradient(
+          circle at 0% 0%,
+          rgba(236, 68, 218, 0.11),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(34, 13, 44, 0.97),
+          rgba(12, 9, 17, 0.98)
+        );
+
+      border: 1px solid rgba(232, 69, 222, 0.25);
+      border-left: 3px solid var(--pink);
+    }
+
+    .feature-label {
+      color: var(--pink-light);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.7px;
+      margin-bottom: 8px;
+    }
+
+    .feature-synergy h3 {
+      margin-bottom: 12px;
+    }
+
+    .feature-synergy p {
+      color: #afa8b3;
+      font-size: 13px;
+    }
+
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .counter-card {
+      padding: 26px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(31, 12, 38, 0.96),
+          rgba(11, 8, 15, 0.98)
+        );
+
+      border: 1px solid rgba(232, 75, 224, 0.20);
+    }
+
+    .counter-label {
+      margin-bottom: 7px;
+
+      color: var(--pink-light);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .counter-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .counter-card p {
+      color: #aaa3ae;
+      font-size: 13px;
+    }
+
+    /* FINAL */
+
+    .final-box {
+      margin-top: 25px;
+      padding: 31px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(38, 13, 47, 0.96),
+          rgba(11, 8, 15, 0.98)
+        );
+
+      border: 1px solid rgba(224, 69, 220, 0.25);
+    }
+
+    .final-box p {
+      margin-top: 12px;
+
+      color: #bbb4bf;
+      font-size: 14px;
+    }
+
+    .final-box p:first-child {
+      margin-top: 0;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 78px;
+      padding-top: 52px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .video-section .section-kicker,
+    .video-section h2,
+    .video-section > p {
+      text-align: center;
+    }
+
+    .video-section > p {
+      max-width: 700px;
+      margin: 0 auto 27px;
+
+      color: #9c95a0;
+      font-size: 14px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      aspect-ratio: 16 / 9;
+
+      background: #000000;
+      border: 1px solid rgba(219, 67, 231, 0.30);
+
+      box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    footer {
+      padding: 34px 20px;
+
+      border-top: 1px solid #1d1722;
+
+      text-align: center;
+
+      color: #5e5862;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 850px) {
+      .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .three-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .article-hero {
+        padding: 55px 20px 35px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .cover-wrap {
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+
+      main {
+        padding: 0 20px 70px;
+      }
+
+      .talisman-grid,
+      .hero-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-head {
+        display: block;
+      }
+
+      .card-label {
+        margin-top: 7px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="article-hero">
+
+    <div class="eyebrow">
+      COMPLETE HERO GUIDE
+    </div>
+
+    <h1>PEPPY</h1>
+
+    <div class="hero-role">
+      CONTROL • WAY OF CHAOS • BACK LINE
+    </div>
+
+    <p class="subtitle">
+      Control the enemy team's rhythm, punish incoming attacks with
+      Boldness and unlock some of the most explosive interactions
+      available inside Chaos compositions.
+    </p>
+
+    <div class="hero-line"></div>
+
+  </section>
+
+
+  <div class="cover-wrap">
+    <div class="cover">
+
+      <img
+        src="Images/Hero-Guides/peppy-guide.png"
+        alt="Peppy Full Guide"
+      >
+
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="intro">
+
+      <p>
+        Peppy is a <strong>Control Hero</strong> from the
+        <strong>Way of Chaos</strong>, positioned on the
+        <strong>back line</strong>. Her kit combines team-wide
+        disruption, Magic Damage, crowd control and the unique
+        ability to punish enemies for attacking a protected ally.
+      </p>
+
+    </section>
+
+
+    <nav class="quick-nav">
+
+      <div class="quick-title">
+        QUICK NAVIGATION
+      </div>
+
+      <div class="quick-links">
+
+        <a href="#skills">SKILLS</a>
+        <a href="#skins">SKINS</a>
+        <a href="#glyphs">GLYPHS</a>
+        <a href="#artifacts">ARTIFACTS</a>
+        <a href="#gift">GIFT</a>
+        <a href="#talismans">TALISMANS</a>
+        <a href="#synergies">SYNERGIES</a>
+        <a href="#counters">COUNTERS</a>
+        <a href="#video">VIDEO</a>
+
+      </div>
+
+    </nav>
+
+
+    <!-- SKILLS -->
+
+    <section class="article-section" id="skills">
+
+      <div class="section-kicker">
+        PEPPY'S KIT
+      </div>
+
+      <h2>SKILLS</h2>
+
+
+      <div class="cards">
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Masquerade</h3>
+            <div class="card-label">TEAM-WIDE CONTROL</div>
+          </div>
+
+          <p>
+            Peppy unleashes a wave of magic that can
+            <strong>stun, blind or slow every enemy for six seconds</strong>.
+            The power of the ability scales with her Magic Attack.
+          </p>
+
+          <p style="margin-top:12px;">
+            The randomly selected control effect makes Masquerade
+            unpredictable. A stun can stop enemy initiation, Blind can
+            reduce incoming physical pressure, while Slow can give
+            Peppy's team additional time to generate Energy and act.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Boldness</h3>
+            <div class="card-label">SHIELD • MAGIC DAMAGE</div>
+          </div>
+
+          <p>
+            Peppy surrounds an ally with a
+            <strong>magical shield for four seconds</strong>.
+            Every time the protected ally takes damage, nearby enemies
+            receive Magic Damage in return.
+          </p>
+
+          <p style="margin-top:12px;">
+            Boldness scales with Magic Attack and becomes particularly
+            dangerous when placed on heroes who repeatedly take damage,
+            including self-inflicted damage.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Frolic</h3>
+            <div class="card-label">BURST • STUN</div>
+          </div>
+
+          <p>
+            Peppy fires a magical beam at the
+            <strong>nearest enemy</strong>, dealing heavy Magic Damage
+            and stunning the target for <strong>three seconds</strong>.
+            The skill scales with her Magic Attack.
+          </p>
+
+          <p style="margin-top:12px;">
+            The combination of burst damage and reliable crowd control
+            can delay the target's Energy generation and interrupt its
+            offensive rhythm.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Trickster</h3>
+            <div class="card-label">PASSIVE</div>
+          </div>
+
+          <p>
+            Trickster gives Frolic a chance to deal
+            <strong>double or quadruple damage</strong>.
+            Unlike Peppy's other abilities, this passive depends only
+            on Skill Level.
+          </p>
+
+          <p style="margin-top:12px;">
+            This creates an unpredictable burst element: the same
+            Frolic cast can range from strong pressure to an extremely
+            damaging hit.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section class="article-section" id="skins">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>SKINS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">MAGIC ATTACK</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">MAGIC PENETRATION</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">DEFAULT • INTELLIGENCE</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">ARMOR</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          <strong>Magic Attack is the main priority</strong> because
+          Masquerade, Boldness and Frolic all scale directly with it.
+          Magic Penetration follows to help Peppy's abilities push
+          through enemy magical defenses.
+        </p>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          If Peppy receives another
+          <strong>Magic Attack or Magic Penetration Skin</strong> in
+          the future, it immediately becomes a top development
+          priority.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- GLYPHS -->
+
+    <section class="article-section" id="glyphs">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>GLYPHS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">MAGIC PENETRATION</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">MAGIC ATTACK</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">INTELLIGENCE</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">MAGIC DEFENSE</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Take every Glyph to <strong>Level 40 first</strong> before
+          pushing individual Glyphs further, unless you're specifically
+          progressing Skill Classes.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="article-section" id="artifacts">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>ARTIFACTS</h2>
+
+
+      <div class="three-grid">
+
+        <article class="build-card">
+
+          <div class="build-number">01</div>
+
+          <h3>Book</h3>
+
+          <p>
+            Provides Magic Attack and Magic Penetration, improving
+            both Peppy's offensive power and her ability to overcome
+            enemy magical defenses.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">02</div>
+
+          <h3>Ring</h3>
+
+          <p>
+            Increases Intelligence, further strengthening Peppy's
+            abilities while also increasing her own Magic Defense.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">03</div>
+
+          <h3>Weapon</h3>
+
+          <p>
+            Grants Magic Defense to the entire team whenever Peppy
+            activates Masquerade.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="article-section" id="gift">
+
+      <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+      </div>
+
+      <h2>MAX IT</h2>
+
+
+      <div class="info-box">
+
+        <p>
+          Maximize Peppy's Gift of the Elements and prioritize her
+          <strong>Magic-related development</strong>. Even from the
+          back line, she still needs sufficient investment to remain
+          active long enough to repeatedly control the battlefield.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="article-section" id="talismans">
+
+      <div class="section-kicker">
+        TWO STRONG OPTIONS
+      </div>
+
+      <h2>TALISMANS</h2>
+
+
+      <div class="talisman-grid">
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            FIRST TALISMAN
+          </div>
+
+          <h3>Intelligence + Magic Attack</h3>
+
+          <p>
+            Reinforces the stats behind Peppy's primary abilities and
+            improves the consistency of her offensive and control
+            contribution.
+          </p>
+
+          <div class="availability">
+            ETERNAL FRONTIER SHOP
+          </div>
+
+        </article>
+
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            SECOND TALISMAN
+          </div>
+
+          <h3>Health + Magic Critical Hit Chance</h3>
+
+          <p>
+            Provides additional survivability through Health while
+            adding Magic Critical Hit Chance to Peppy's offensive
+            development.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="article-section" id="synergies">
+
+      <div class="section-kicker">
+        CHAOS COMBINATIONS
+      </div>
+
+      <h2>BEST SYNERGIES</h2>
+
+
+      <div class="feature-synergy">
+
+        <div class="feature-label">
+          SIGNATURE INTERACTION
+        </div>
+
+        <h3>Cleaver + Peppy</h3>
+
+        <p>
+          Cleaver is one of Peppy's defining partners. When Cleaver
+          pulls an enemy forward with Rusty Hook and activates
+          Putrefaction, his repeated self-inflicted damage can trigger
+          <strong>Boldness repeatedly</strong>, creating substantial
+          area Magic Damage around him.
+        </p>
+
+      </div>
+
+
+      <div class="hero-grid">
+
+        <article class="hero-card">
+
+          <h3>Kayla</h3>
+
+          <p>
+            Kayla jumps into battle and repeatedly damages herself
+            through her own abilities. With Boldness protecting her,
+            those hits can repeatedly trigger Magic Damage against
+            nearby enemies.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Faceless</h3>
+
+          <p>
+            Power Throw can group enemies together, creating an
+            opportunity for Boldness to pressure multiple targets
+            while an aggressive ally such as Kayla fights among them.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Masquerade can also create a tempo advantage for powerful
+          magical allies such as <strong>Lars, Krista, Xe'Sha and
+          Lilith</strong>. Disrupting enemy actions gives those heroes
+          additional opportunities to activate their own powerful
+          abilities before the opposition can respond.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="article-section" id="counters">
+
+      <div class="section-kicker">
+        STOPPING THE TRICKSTER
+      </div>
+
+      <h2>COUNTERS & KEY INTERACTIONS</h2>
+
+
+      <div class="counter-grid">
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            BACK-LINE PRESSURE
+          </div>
+
+          <h3>Jhu</h3>
+
+          <p>
+            Jhu's third skill specifically targets back-line heroes,
+            allowing him to reach Peppy and pressure her before she
+            has time to dominate the battle through repeated control.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            DAMAGE REDIRECTION
+          </div>
+
+          <h3>Jorgen</h3>
+
+          <p>
+            Leper redirects Physical Damage toward the furthest enemy
+            hero. Peppy's back-line position can therefore make her
+            particularly vulnerable to this interaction.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            CONTROL PUNISHMENT
+          </div>
+
+          <h3>Soleil</h3>
+
+          <p>
+            If Peppy occupies the center position of the enemy team,
+            Soleil can become an effective answer through his ability
+            to deal heavy damage to Control heroes.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            MAGIC RESISTANCE
+          </div>
+
+          <h3>Rufus</h3>
+
+          <p>
+            Rufus provides a durable frontline answer against Peppy's
+            Magic Damage, absorbing magical pressure while protecting
+            the rest of his team.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            VS CLEAVER + PEPPY
+          </div>
+
+          <h3>Dorian</h3>
+
+          <p>
+            Against a Cleaver and Peppy combination, Cleaver pulling
+            Dorian into the frontline can place nearby allies inside
+            Dorian's Vampirism Aura, helping them recover through the
+            continuous damage generated by the combination.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="article-section">
+
+      <div class="section-kicker">
+        FINAL TAKEAWAY
+      </div>
+
+      <h2>CONTROL THROUGH CHAOS</h2>
+
+
+      <div class="final-box">
+
+        <p>
+          Peppy's identity is built around
+          <strong>control, unpredictability and unusual team
+          interactions</strong>.
+        </p>
+
+        <p>
+          Masquerade disrupts the entire enemy formation through
+          randomly selected control effects. Frolic combines burst
+          Magic Damage with a stun, while Trickster can dramatically
+          increase Frolic's damage.
+        </p>
+
+        <p>
+          But <strong>Boldness is what makes many of Peppy's most
+          explosive combinations possible</strong>. Heroes such as
+          Cleaver and Kayla can repeatedly trigger its retaliation
+          damage, while Faceless can help group targets into positions
+          where that pressure becomes even more dangerous.
+        </p>
+
+        <p>
+          Build her offensive magical stats first, give her enough
+          survivability to remain active, and use her alongside heroes
+          capable of taking advantage of the disruption and unusual
+          mechanics she brings to battle.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+      <div class="section-kicker">
+        GODS OF ALLIANCE
+      </div>
+
+      <h2>WATCH THE COMPLETE PEPPY GUIDE</h2>
+
+      <p>
+        Watch the full guide for Peppy's skills, development
+        priorities, Chaos synergies, counters and battlefield
+        interactions.
+      </p>
+
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/4_2irdEgAtk"
+          title="Peppy Full Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
