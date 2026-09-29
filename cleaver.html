@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Cleaver Guide | Gods of Alliance</title>
+  <title>Cleaver Guide — Rework, Relics, Builds & Teams | Gods of Alliance</title>
 
   <meta
     name="description"
-    content="Complete Cleaver guide for Hero Wars Alliance. Skills, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies and counters."
+    content="Complete Cleaver guide for Hero Wars Alliance covering his rework, skills, Relics, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies, counters and team examples."
   >
 
   <meta name="robots" content="index, follow">
@@ -24,12 +24,12 @@
 
   <meta
     property="og:title"
-    content="Cleaver Guide | Gods of Alliance"
+    content="Cleaver Guide — Rework, Relics, Builds & Teams | Gods of Alliance"
   >
 
   <meta
     property="og:description"
-    content="Complete Cleaver guide covering Rusty Hook, tank development priorities, Chaos synergies, talismans and counters."
+    content="The complete Cleaver guide: reworked skills, new Relics, build priorities, Talismans, synergies, counters and tested team examples."
   >
 
   <meta
@@ -52,12 +52,12 @@
 
   <meta
     name="twitter:title"
-    content="Cleaver Guide | Gods of Alliance"
+    content="Cleaver Guide — Rework, Relics, Builds & Teams | Gods of Alliance"
   >
 
   <meta
     name="twitter:description"
-    content="Skills, skins, glyphs, artifacts, talismans, Chaos synergies and counters for Cleaver in Hero Wars Alliance."
+    content="Complete Cleaver guide covering his rework, Relics, skills, skins, glyphs, artifacts, Talismans, counters and team examples."
   >
 
   <meta
@@ -73,14 +73,16 @@
     }
 
     :root {
-      --bg: #070606;
+      --bg: #060505;
       --panel: rgba(17, 11, 11, 0.96);
+      --panel-soft: rgba(23, 13, 12, 0.94);
       --border: rgba(225, 57, 43, 0.19);
       --border-strong: rgba(225, 57, 43, 0.42);
       --red: #df3d32;
       --red-light: #ff7160;
       --orange: #ff7a25;
       --gold: #e9a923;
+      --gold-light: #ffd36a;
       --white: #ffffff;
       --text: #d2cece;
       --muted: #979293;
@@ -97,19 +99,24 @@
 
       background:
         radial-gradient(
-          circle at 12% 12%,
-          rgba(205, 42, 30, 0.14),
+          circle at 8% 12%,
+          rgba(205, 42, 30, 0.15),
           transparent 28%
         ),
         radial-gradient(
-          circle at 88% 28%,
-          rgba(255, 102, 26, 0.07),
+          circle at 92% 30%,
+          rgba(255, 102, 26, 0.08),
           transparent 27%
         ),
         radial-gradient(
-          circle at 50% 72%,
-          rgba(117, 19, 17, 0.06),
-          transparent 34%
+          circle at 48% 68%,
+          rgba(58, 135, 104, 0.035),
+          transparent 31%
+        ),
+        radial-gradient(
+          circle at 50% 85%,
+          rgba(117, 19, 17, 0.07),
+          transparent 35%
         ),
         linear-gradient(
           180deg,
@@ -126,8 +133,6 @@
     a {
       color: inherit;
     }
-
-    /* HEADER */
 
     header {
       background: rgba(5, 4, 4, 0.97);
@@ -170,8 +175,6 @@
       color: #ffffff;
     }
 
-    /* HERO */
-
     .article-hero {
       max-width: 1160px;
       margin: 0 auto;
@@ -208,7 +211,7 @@
     }
 
     .subtitle {
-      max-width: 790px;
+      max-width: 800px;
       margin: 22px auto 0;
 
       color: #aaa5a5;
@@ -232,8 +235,6 @@
         0 0 20px rgba(220, 55, 35, 0.35);
     }
 
-    /* COVER */
-
     .cover-wrap {
       max-width: 1120px;
       margin: 0 auto 55px;
@@ -255,8 +256,6 @@
       display: block;
       width: 100%;
     }
-
-    /* MAIN */
 
     main {
       max-width: 1000px;
@@ -288,31 +287,33 @@
       color: #ffffff;
     }
 
-    /* NOTICE */
-
-    .notice {
+    .rework-box {
       margin: 0 0 32px;
-      padding: 22px 25px;
+      padding: 25px;
 
-      background: rgba(38, 28, 11, 0.55);
-      border: 1px solid rgba(233, 169, 35, 0.25);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(47, 24, 8, 0.72),
+          rgba(17, 10, 8, 0.96)
+        );
+
+      border: 1px solid rgba(233, 169, 35, 0.27);
       border-left: 3px solid var(--gold);
     }
 
-    .notice-title {
+    .rework-title {
       color: var(--gold);
       font-size: 10px;
       font-weight: 900;
       letter-spacing: 2px;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
-    .notice p {
-      color: #bbb5aa;
+    .rework-box p {
+      color: #c2b9aa;
       font-size: 13px;
     }
-
-    /* QUICK NAV */
 
     .quick-nav {
       margin: 30px 0 55px;
@@ -355,10 +356,8 @@
       border-color: var(--border-strong);
     }
 
-    /* SECTIONS */
-
     .article-section {
-      margin-top: 65px;
+      margin-top: 68px;
     }
 
     .section-kicker {
@@ -396,8 +395,6 @@
       color: #ffffff;
     }
 
-    /* CARDS */
-
     .cards {
       display: grid;
       gap: 17px;
@@ -432,8 +429,6 @@
       font-size: 14px;
     }
 
-    /* PRIORITY */
-
     .priority-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -465,8 +460,6 @@
       line-height: 1.35;
     }
 
-    /* INFO */
-
     .info-box {
       margin-top: 24px;
       padding: 25px;
@@ -480,8 +473,6 @@
       color: #b6b0b0;
       font-size: 14px;
     }
-
-    /* ARTIFACTS */
 
     .three-grid {
       display: grid;
@@ -516,7 +507,101 @@
       font-size: 12px;
     }
 
-    /* TALISMANS */
+    /* RELICS */
+
+    .relic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .relic-card {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(233, 169, 35, 0.09),
+          transparent 38%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(35, 16, 12, 0.98),
+          rgba(12, 9, 9, 0.98)
+        );
+
+      border: 1px solid rgba(233, 169, 35, 0.23);
+    }
+
+    .relic-level {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 5px 9px;
+
+      color: var(--gold-light);
+      background: rgba(233, 169, 35, 0.08);
+      border: 1px solid rgba(233, 169, 35, 0.18);
+
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
+    }
+
+    .relic-card h3 {
+      margin-bottom: 11px;
+      color: #ffffff;
+    }
+
+    .relic-card p {
+      color: #aaa4a0;
+      font-size: 13px;
+    }
+
+    .relic-note {
+      margin-top: 15px;
+      padding-top: 13px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+      color: #d0c4a9;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .skin-feature {
+      margin-top: 25px;
+      padding: 28px;
+
+      background:
+        radial-gradient(
+          circle at 0% 50%,
+          rgba(210, 47, 32, 0.12),
+          transparent 35%
+        ),
+        var(--panel);
+
+      border: 1px solid var(--border);
+    }
+
+    .skin-feature-label {
+      color: var(--red-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      margin-bottom: 7px;
+    }
+
+    .skin-feature h3 {
+      margin-bottom: 10px;
+    }
+
+    .skin-feature p {
+      color: #aaa5a5;
+      font-size: 13px;
+    }
 
     .talisman-grid {
       display: grid;
@@ -567,8 +652,6 @@
       font-weight: 800;
     }
 
-    /* SYNERGIES */
-
     .hero-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -593,7 +676,60 @@
       font-size: 12px;
     }
 
-    /* COUNTERS */
+    /* TEAMS */
+
+    .team-grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 27px;
+    }
+
+    .team-card {
+      padding: 28px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(29, 14, 12, 0.97),
+          rgba(11, 9, 9, 0.98)
+        );
+
+      border: 1px solid var(--border);
+    }
+
+    .team-number {
+      margin-bottom: 8px;
+
+      color: var(--gold);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.7px;
+    }
+
+    .team-line {
+      margin-bottom: 12px;
+
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .team-card p {
+      color: #a9a3a3;
+      font-size: 13px;
+    }
+
+    .team-warning {
+      margin-top: 23px;
+      padding: 20px 23px;
+
+      background: rgba(32, 24, 10, 0.55);
+      border: 1px solid rgba(233, 169, 35, 0.18);
+
+      color: #bdb3a2;
+      font-size: 12px;
+    }
 
     .counter-grid {
       display: grid;
@@ -633,8 +769,6 @@
       font-size: 13px;
     }
 
-    /* FINAL */
-
     .final-box {
       margin-top: 25px;
       padding: 31px;
@@ -659,8 +793,6 @@
     .final-box p:first-child {
       margin-top: 0;
     }
-
-    /* VIDEO */
 
     .video-section {
       margin-top: 78px;
@@ -707,8 +839,6 @@
       border: 0;
     }
 
-    /* FOOTER */
-
     footer {
       padding: 34px 20px;
 
@@ -720,8 +850,6 @@
       font-size: 11px;
       letter-spacing: 1px;
     }
-
-    /* RESPONSIVE */
 
     @media (max-width: 850px) {
       .priority-grid {
@@ -761,6 +889,7 @@
         padding: 0 20px 70px;
       }
 
+      .relic-grid,
       .talisman-grid,
       .hero-grid,
       .counter-grid {
@@ -804,7 +933,7 @@
   <section class="article-hero">
 
     <div class="eyebrow">
-      COMPLETE HERO GUIDE
+      COMPLETE HERO GUIDE • UPDATED REWORK
     </div>
 
     <h1>CLEAVER</h1>
@@ -814,9 +943,9 @@
     </div>
 
     <p class="subtitle">
-      Survive the frontline, destroy enemy positioning and turn
-      Rusty Hook into an opportunity for your entire team to
-      eliminate priority targets.
+      The complete guide to the reworked Cleaver — his updated skills,
+      Relics, development priorities, Chaos interactions, counters
+      and team examples.
     </p>
 
     <div class="hero-line"></div>
@@ -842,25 +971,26 @@
 
       <p>
         Cleaver is a <strong>Chaos Tank</strong> positioned on the
-        <strong>front line</strong>. His defining strength is his
-        ability to disrupt enemy positioning with Rusty Hook while
-        surviving long enough to control the battlefield.
+        <strong>front line</strong>. His rework gives him considerably
+        more offensive pressure while preserving the durability and
+        positioning disruption that have always defined the hero.
       </p>
 
     </section>
 
 
-    <section class="notice">
+    <section class="rework-box">
 
-      <div class="notice-title">
-        RELICS — CURRENT CONTEXT
+      <div class="rework-title">
+        CLEAVER REWORK
       </div>
 
       <p>
-        Current information discussed in this guide suggests Cleaver
-        may receive Relics in the next season. This guide does not
-        treat that release as confirmed. His future value may change
-        if and when those Relics are officially released.
+        The updated Cleaver brings Pure Damage into more of his kit,
+        expands his battlefield pressure through Relics, introduces
+        healing reduction and gives him new ways to influence longer
+        battles. This guide combines those changes with his complete
+        development priorities.
       </p>
 
     </section>
@@ -875,12 +1005,14 @@
       <div class="quick-links">
 
         <a href="#skills">SKILLS</a>
+        <a href="#relics">RELICS</a>
         <a href="#skins">SKINS</a>
         <a href="#glyphs">GLYPHS</a>
         <a href="#artifacts">ARTIFACTS</a>
         <a href="#gift">GIFT</a>
         <a href="#talismans">TALISMANS</a>
         <a href="#synergies">SYNERGIES</a>
+        <a href="#teams">TEAMS</a>
         <a href="#counters">COUNTERS</a>
         <a href="#video">VIDEO</a>
 
@@ -894,7 +1026,7 @@
     <section class="article-section" id="skills">
 
       <div class="section-kicker">
-        CLEAVER'S KIT
+        UPDATED KIT
       </div>
 
       <h2>SKILLS</h2>
@@ -906,21 +1038,21 @@
 
           <div class="card-head">
             <h3>Rusty Hook</h3>
-            <div class="card-label">POSITIONING CONTROL</div>
+            <div class="card-label">POSITIONING • PURE DAMAGE</div>
           </div>
 
           <p>
             Cleaver throws his hook at the
-            <strong>furthest enemy</strong>, dealing Physical Damage
-            before dragging that hero directly to the front line.
-            The damage scales with his Physical Attack.
+            <strong>farthest enemy</strong>, pulling that hero directly
+            into battle and dealing <strong>Pure Damage</strong>.
           </p>
 
           <p style="margin-top:12px;">
-            A protected backline hero can suddenly find themselves
-            standing directly in front of Cleaver's team, creating an
-            opportunity for physical pressure and burst damage to
-            eliminate the target before the enemy can recover.
+            Following the rework, Cleaver's
+            <strong>basic attacks also deal Pure Damage</strong>.
+            This gives him consistent offensive pressure while Rusty
+            Hook continues to disrupt enemy positioning and expose
+            protected targets.
           </p>
 
         </article>
@@ -930,19 +1062,20 @@
 
           <div class="card-head">
             <h3>Putrefaction</h3>
-            <div class="card-label">PURE DAMAGE</div>
+            <div class="card-label">AREA PRESSURE</div>
           </div>
 
           <p>
-            Cleaver continuously deals
-            <strong>Pure Damage</strong> to nearby enemies while also
-            damaging himself. Unlike several of his other abilities,
-            Putrefaction scales with his <strong>Health</strong>.
+            Putrefaction can now be upgraded to
+            <strong>Legendary</strong>, repeatedly dealing Pure Damage
+            to Cleaver himself and to nearby enemies over several
+            seconds.
           </p>
 
           <p style="margin-top:12px;">
-            Its rapid sequence of Pure Damage hits can pressure shields,
-            frontline barriers and heroes such as Lucas.
+            The self-damage creates important interactions with
+            Cleaver's surrounding team, while the repeated area damage
+            applies constant pressure to nearby enemies.
           </p>
 
         </article>
@@ -952,19 +1085,18 @@
 
           <div class="card-head">
             <h3>Mutilation</h3>
-            <div class="card-label">CONTROL</div>
+            <div class="card-label">PURE DAMAGE • STUN</div>
           </div>
 
           <p>
-            Cleaver attacks enemies in front of him, dealing damage
-            while <strong>stunning everyone caught in the attack</strong>.
-            The skill scales with Physical Attack and Skill Level.
+            Cleaver strikes enemies in front of him,
+            <strong>dealing Pure Damage and stunning nearby targets</strong>.
           </p>
 
           <p style="margin-top:12px;">
-            After Cleaver pulls a priority target forward, Mutilation
-            can help keep that hero under control while the team
-            focuses them down.
+            The stun chance is reduced against enemies above
+            <strong>Level 120</strong>, but the combination of damage
+            and crowd control can still strongly influence the fight.
           </p>
 
         </article>
@@ -978,13 +1110,135 @@
           </div>
 
           <p>
-            Heavyweight permanently increases
-            <strong>Cleaver's Strength</strong>, contributing more
-            Health, survivability and additional scaling across his
-            kit.
+            Heavyweight provides Cleaver with additional
+            <strong>Strength</strong>. That extra Strength reinforces
+            his durability and ability to remain active on the
+            frontline while dealing damage and controlling enemies.
           </p>
 
         </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- RELICS -->
+
+    <section class="article-section" id="relics">
+
+      <div class="section-kicker">
+        NEW DEVELOPMENT SYSTEM
+      </div>
+
+      <h2>RELICS</h2>
+
+      <p>
+        Cleaver's Relics expand his reworked identity around area
+        pressure, healing reduction, battlefield interactions and
+        increased offensive potential.
+      </p>
+
+
+      <div class="relic-grid">
+
+        <article class="relic-card">
+
+          <div class="relic-level">
+            RELIC LEVEL 1
+          </div>
+
+          <h3>Miasma</h3>
+
+          <p>
+            Applies an effect to the
+            <strong>central enemy for seven seconds</strong>, dealing
+            damage to all enemies around that target every
+            <strong>half second</strong>.
+          </p>
+
+          <div class="relic-note">
+            When Putrefaction is upgraded, affected enemies also
+            receive its healing-reduction interaction.
+          </div>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">
+            RELIC LEVEL 10
+          </div>
+
+          <h3>Putrefaction Relic</h3>
+
+          <p>
+            Adds a <strong>60% healing reduction</strong> to enemies
+            inside Putrefaction's area of effect or affected by
+            Miasma.
+          </p>
+
+          <div class="relic-note">
+            If an enemy is affected by both effects simultaneously,
+            the healing reduction is doubled.
+          </div>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">
+            LEGENDARY RELIC • LEVEL 20
+          </div>
+
+          <h3>Heavyweight</h3>
+
+          <p>
+            Whenever Cleaver or one of his allies takes damage from
+            an enemy hero, <strong>all negative effects are removed
+            from that enemy</strong>.
+          </p>
+
+          <div class="relic-note">
+            The effect remains active while Cleaver is alive.
+          </div>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">
+            LEGENDARY RELIC • LEVEL 30
+          </div>
+
+          <h3>Carnage</h3>
+
+          <p>
+            Carnage increases <strong>Cleaver's damage for every enemy
+            around him</strong>.
+          </p>
+
+          <div class="relic-note">
+            This can become particularly relevant while Cleaver is
+            surrounded by enemies in the middle of frontline combat.
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          At the time of the battle testing used for this guide,
+          <strong>Heavyweight and Carnage had not yet been unlocked</strong>.
+          Their descriptions are therefore included here, but their
+          full battle impact was not part of those tests.
+        </p>
 
       </div>
 
@@ -1037,13 +1291,29 @@
       </div>
 
 
+      <div class="skin-feature">
+
+        <div class="skin-feature-label">
+          NEW SKIN
+        </div>
+
+        <h3>Inner Demon Skin — Health</h3>
+
+        <p>
+          Cleaver's new Inner Demon Skin provides
+          <strong>Health</strong>, giving an already durable frontline
+          tank additional staying power in battle.
+        </p>
+
+      </div>
+
+
       <div class="info-box">
 
         <p>
-          Cleaver's primary responsibility is
-          <strong>surviving and controlling the frontline</strong>.
-          Armor and Health therefore take priority over offensive
-          development.
+          Cleaver's primary responsibility remains surviving and
+          controlling the frontline. Defensive development therefore
+          remains the foundation of his build.
         </p>
 
       </div>
@@ -1054,7 +1324,7 @@
         <p>
           If Cleaver receives additional
           <strong>Armor or Health Skins</strong> in the future,
-          those should immediately receive high priority.
+          they should immediately receive high priority.
         </p>
 
       </div>
@@ -1106,9 +1376,9 @@
       <div class="info-box">
 
         <p>
-          Bring every Glyph to <strong>Level 40</strong> before
+          Bring every Glyph to <strong>Level 40</strong> first before
           pushing individual Glyphs significantly further, unless
-          you are specifically progressing Skill Classes.
+          you're specifically progressing Skill Classes.
         </p>
 
       </div>
@@ -1189,9 +1459,10 @@
       <div class="info-box">
 
         <p>
-          Prioritize <strong>Armor and Health</strong>. Cleaver needs
-          to remain alive to protect his team, disrupt enemy
-          positioning and continue controlling the battlefield.
+          Maximize the Gift of the Elements and prioritize
+          <strong>Armor and Health</strong>. Cleaver needs to stay
+          alive to continue disrupting the enemy formation, applying
+          pressure and controlling the frontline.
         </p>
 
       </div>
@@ -1242,8 +1513,9 @@
           <h3>Crushing + Toughness</h3>
 
           <p>
-            Provides a different combination of offensive and
-            defensive development through Crushing and Toughness.
+            Provides Cleaver with a combination of Crushing and
+            Toughness, giving him another development option beyond
+            his first Talisman.
           </p>
 
           <div class="availability">
@@ -1287,7 +1559,7 @@
 
           <p>
             Putrefaction damages Cleaver himself. That allied Health
-            sacrifice can create additional value for Aidan inside
+            sacrifice creates additional value for Aidan inside
             Chaos compositions.
           </p>
 
@@ -1299,12 +1571,146 @@
           <h3>Xe'Sha</h3>
 
           <p>
-            Cleaver's self-sacrifice through Putrefaction can also
-            benefit Xe'Sha, turning Cleaver's self-damage into
-            additional offensive value for a Chaos team.
+            Cleaver's self-sacrifice through Putrefaction can benefit
+            Xe'Sha, turning his self-damage into additional offensive
+            value inside Chaos teams.
           </p>
 
         </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- TEAM EXAMPLES -->
+
+    <section class="article-section" id="teams">
+
+      <div class="section-kicker">
+        BATTLE TESTING
+      </div>
+
+      <h2>TEAM EXAMPLES</h2>
+
+      <p>
+        The reworked Cleaver was tested inside several different
+        compositions. These examples demonstrate his flexibility
+        rather than defining one mandatory Cleaver team.
+      </p>
+
+
+      <div class="team-grid">
+
+        <article class="team-card">
+
+          <div class="team-number">
+            TEAM 01
+          </div>
+
+          <div class="team-line">
+            Cleaver • Kayla • Crow • Guus • Aidan
+          </div>
+
+          <p>
+            This composition combines Cleaver's control and pressure
+            with the offensive potential of Kayla and Crow. Guus and
+            Aidan help keep the team active during intense periods of
+            the battle while Cleaver creates openings through
+            positioning disruption.
+          </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+          <div class="team-number">
+            TEAM 02
+          </div>
+
+          <div class="team-line">
+            Cleaver • Crow • Peech • Kendle • Aidan
+          </div>
+
+          <p>
+            This setup explores a more aggressive but still durable
+            Cleaver composition. Crow contributes offensive pressure,
+            Peech and Kendle add additional tools, and Aidan provides
+            sustain for longer fights.
+          </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+          <div class="team-number">
+            TEAM 03
+          </div>
+
+          <div class="team-line">
+            Cleaver • Byrna • Guus • Kendle • Aidan
+          </div>
+
+          <p>
+            A more survival-oriented composition. Guus and Aidan help
+            stabilize the team while Byrna and Kendle provide
+            additional options. The longer Cleaver remains alive, the
+            more opportunities he has to apply his control and effects.
+          </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+          <div class="team-number">
+            TEAM 04
+          </div>
+
+          <div class="team-line">
+            Cleaver • Tristan • Yasmine • Guus • Fafnir
+          </div>
+
+          <p>
+            Cleaver acts as the frontline anchor while Tristan and
+            Yasmine provide major offensive potential. His durability
+            and positioning control create space for the rest of the
+            lineup to apply pressure.
+          </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+          <div class="team-number">
+            TEAM 05
+          </div>
+
+          <div class="team-line">
+            Cleaver • Phobos • Dorian • Kendle • Aidan
+          </div>
+
+          <p>
+            This composition combines Cleaver's durability and control
+            with several forms of sustain and utility. Phobos provides
+            additional control, while Dorian and Aidan help the team
+            survive longer battles.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="team-warning">
+
+        These teams are examples from battle testing, not a claim that
+        Cleaver is limited to these formations. His rework allows him
+        to function with several different types of compositions
+        depending on the opponent and the role required from him.
 
       </div>
 
@@ -1326,7 +1732,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">HOOK INTERACTION</div>
+          <div class="counter-label">
+            HOOK INTERACTION
+          </div>
 
           <h3>Dorian</h3>
 
@@ -1341,7 +1749,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">DISPLACEMENT PROTECTION</div>
+          <div class="counter-label">
+            DISPLACEMENT PROTECTION
+          </div>
 
           <h3>Andvari</h3>
 
@@ -1355,7 +1765,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">REFLECTED PRESSURE</div>
+          <div class="counter-label">
+            REFLECTED PRESSURE
+          </div>
 
           <h3>Peppy + Aurora</h3>
 
@@ -1370,7 +1782,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">CHARM</div>
+          <div class="counter-label">
+            CHARM
+          </div>
 
           <h3>Lian</h3>
 
@@ -1384,7 +1798,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">TRANSFORMATION</div>
+          <div class="counter-label">
+            TRANSFORMATION
+          </div>
 
           <h3>Somna</h3>
 
@@ -1398,7 +1814,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">BLIND</div>
+          <div class="counter-label">
+            BLIND
+          </div>
 
           <h3>Electra</h3>
 
@@ -1412,7 +1830,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">SURVIVABILITY</div>
+          <div class="counter-label">
+            SURVIVABILITY
+          </div>
 
           <h3>Martha</h3>
 
@@ -1427,7 +1847,9 @@
 
         <article class="counter-card">
 
-          <div class="counter-label">ENERGY CONTROL</div>
+          <div class="counter-label">
+            ENERGY CONTROL
+          </div>
 
           <h3>Jorgen</h3>
 
@@ -1452,34 +1874,35 @@
         FINAL TAKEAWAY
       </div>
 
-      <h2>CONTROL THE BATTLEFIELD</h2>
+      <h2>THE NEW CLEAVER</h2>
 
 
       <div class="final-box">
 
         <p>
-          Cleaver's defining value comes from combining
-          <strong>durability with positioning disruption</strong>.
+          Cleaver's rework gives him considerably more depth than a
+          traditional frontline tank.
         </p>
 
         <p>
-          Rusty Hook can remove the protection normally provided by
-          the enemy formation. Putrefaction applies repeated Pure
-          Damage while creating Chaos interactions through Cleaver's
-          self-damage. Mutilation adds frontline control, while
-          Heavyweight reinforces his durability through Strength.
+          He now combines <strong>Pure Damage, crowd control,
+          positioning disruption, area pressure and healing
+          reduction</strong> while retaining the durability required
+          to anchor the frontline.
         </p>
 
         <p>
-          Build his defenses first. Give him the Armor and Health
-          necessary to survive, then allow his disruptive mechanics
-          to create opportunities for the rest of the team.
+          His tested compositions also demonstrate that he does not
+          need to be locked into one specific lineup. Depending on
+          the heroes around him, Cleaver can support aggressive,
+          sustainable or control-oriented approaches.
         </p>
 
         <p>
-          If Cleaver does receive Relics in a future season, his
-          development and team interactions will need to be
-          reevaluated once their actual mechanics are known.
+          The final two Legendary Relics —
+          <strong>Heavyweight and Carnage</strong> — were not unlocked
+          during the testing used for this guide, so their complete
+          battle impact remains an important area for future testing.
         </p>
 
       </div>
@@ -1495,12 +1918,11 @@
         GODS OF ALLIANCE
       </div>
 
-      <h2>WATCH THE COMPLETE CLEAVER GUIDE</h2>
+      <h2>WATCH THE CLEAVER GUIDE</h2>
 
       <p>
-        Watch the full guide for the complete explanation of
-        Cleaver's skills, build priorities, Chaos interactions,
-        counters and battlefield mechanics.
+        Watch the full guide for Cleaver's development priorities,
+        synergies and counters.
       </p>
 
 
