@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cleaver Guide | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Cleaver guide for Hero Wars Alliance. Skills, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies and counters."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/cleaver.html"
+  >
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Cleaver Guide | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Complete Cleaver guide covering Rusty Hook, tank development priorities, Chaos synergies, talismans and counters."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/cleaver.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/cleaver-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Cleaver Full Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Cleaver Guide | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Skills, skins, glyphs, artifacts, talismans, Chaos synergies and counters for Cleaver in Hero Wars Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/cleaver-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #070606;
+      --panel: rgba(17, 11, 11, 0.96);
+      --border: rgba(225, 57, 43, 0.19);
+      --border-strong: rgba(225, 57, 43, 0.42);
+      --red: #df3d32;
+      --red-light: #ff7160;
+      --orange: #ff7a25;
+      --gold: #e9a923;
+      --white: #ffffff;
+      --text: #d2cece;
+      --muted: #979293;
+      --green: #57c29a;
+      --purple: #b868e8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 12% 12%,
+          rgba(205, 42, 30, 0.14),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 88% 28%,
+          rgba(255, 102, 26, 0.07),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 50% 72%,
+          rgba(117, 19, 17, 0.06),
+          transparent 34%
+        ),
+        linear-gradient(
+          180deg,
+          #0d0909 0%,
+          #080606 48%,
+          #050404 100%
+        );
+
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(5, 4, 4, 0.97);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--red-light);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .article-hero {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 72px 35px 45px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(48px, 8vw, 78px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+
+      text-shadow:
+        0 0 30px rgba(220, 50, 35, 0.14);
+    }
+
+    .hero-role {
+      margin-top: 18px;
+
+      color: #ff7d68;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      margin: 22px auto 0;
+
+      color: #aaa5a5;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      width: 78px;
+      height: 3px;
+      margin: 28px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--red),
+          var(--orange)
+        );
+
+      box-shadow:
+        0 0 20px rgba(220, 55, 35, 0.35);
+    }
+
+    /* COVER */
+
+    .cover-wrap {
+      max-width: 1120px;
+      margin: 0 auto 55px;
+      padding: 0 35px;
+    }
+
+    .cover {
+      overflow: hidden;
+
+      background: #090707;
+      border: 1px solid rgba(225, 57, 43, 0.26);
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5),
+        0 0 45px rgba(210, 45, 25, 0.05);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 35px 100px;
+    }
+
+    .intro {
+      padding: 30px;
+      margin-bottom: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(39, 14, 13, 0.95),
+          rgba(12, 10, 10, 0.97)
+        );
+
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+    }
+
+    .intro p {
+      color: #c5c1c1;
+      font-size: 15px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+    }
+
+    /* NOTICE */
+
+    .notice {
+      margin: 0 0 32px;
+      padding: 22px 25px;
+
+      background: rgba(38, 28, 11, 0.55);
+      border: 1px solid rgba(233, 169, 35, 0.25);
+      border-left: 3px solid var(--gold);
+    }
+
+    .notice-title {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 7px;
+    }
+
+    .notice p {
+      color: #bbb5aa;
+      font-size: 13px;
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      margin: 30px 0 55px;
+      padding: 24px;
+
+      background: rgba(10, 8, 8, 0.92);
+      border: 1px solid var(--border);
+    }
+
+    .quick-title {
+      margin-bottom: 14px;
+
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .quick-links a {
+      padding: 8px 11px;
+
+      background: #151111;
+      border: 1px solid #302525;
+
+      color: #cbc7c7;
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .quick-links a:hover {
+      color: #ffffff;
+      border-color: var(--border-strong);
+    }
+
+    /* SECTIONS */
+
+    .article-section {
+      margin-top: 65px;
+    }
+
+    .section-kicker {
+      margin-bottom: 7px;
+
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 37px);
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .article-section > p {
+      margin-top: 14px;
+
+      color: #b8b3b3;
+      font-size: 14px;
+    }
+
+    .article-section strong {
+      color: #ffffff;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .detail-card {
+      padding: 27px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      margin-bottom: 13px;
+    }
+
+    .card-label {
+      color: var(--red-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .detail-card p {
+      color: #b1acac;
+      font-size: 14px;
+    }
+
+    /* PRIORITY */
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .priority {
+      padding: 20px 12px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .priority-number {
+      margin-bottom: 8px;
+
+      color: var(--red-light);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    /* INFO */
+
+    .info-box {
+      margin-top: 24px;
+      padding: 25px;
+
+      background: rgba(16, 11, 11, 0.95);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+    }
+
+    .info-box p {
+      color: #b6b0b0;
+      font-size: 14px;
+    }
+
+    /* ARTIFACTS */
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .build-card {
+      padding: 25px 20px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .build-number {
+      color: var(--red-light);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .build-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .build-card p {
+      color: #999393;
+      font-size: 12px;
+    }
+
+    /* TALISMANS */
+
+    .talisman-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .talisman {
+      padding: 27px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(37, 15, 30, 0.95),
+          rgba(13, 9, 10, 0.97)
+        );
+
+      border: 1px solid rgba(184, 104, 232, 0.23);
+    }
+
+    .talisman-label {
+      margin-bottom: 7px;
+
+      color: var(--purple);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .talisman h3 {
+      margin-bottom: 12px;
+    }
+
+    .talisman p {
+      color: #aca6a8;
+      font-size: 13px;
+    }
+
+    .availability {
+      margin-top: 15px;
+      padding-top: 14px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: #d2ced0;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* SYNERGIES */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .hero-card {
+      padding: 22px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .hero-card p {
+      color: #9d9797;
+      font-size: 12px;
+    }
+
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .counter-card {
+      padding: 26px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(34, 13, 14, 0.96),
+          rgba(11, 9, 9, 0.97)
+        );
+
+      border: 1px solid rgba(255, 75, 65, 0.19);
+    }
+
+    .counter-label {
+      margin-bottom: 7px;
+
+      color: #ff7465;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .counter-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .counter-card p {
+      color: #aaa5a5;
+      font-size: 13px;
+    }
+
+    /* FINAL */
+
+    .final-box {
+      margin-top: 25px;
+      padding: 31px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(43, 14, 14, 0.95),
+          rgba(11, 9, 9, 0.98)
+        );
+
+      border: 1px solid rgba(220, 57, 43, 0.25);
+    }
+
+    .final-box p {
+      margin-top: 12px;
+
+      color: #bbb5b5;
+      font-size: 14px;
+    }
+
+    .final-box p:first-child {
+      margin-top: 0;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 78px;
+      padding-top: 52px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .video-section .section-kicker,
+    .video-section h2,
+    .video-section > p {
+      text-align: center;
+    }
+
+    .video-section > p {
+      max-width: 700px;
+      margin: 0 auto 27px;
+
+      color: #9b9595;
+      font-size: 14px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      aspect-ratio: 16 / 9;
+
+      background: #000000;
+      border: 1px solid rgba(220, 57, 43, 0.28);
+
+      box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 34px 20px;
+
+      border-top: 1px solid #1d1818;
+
+      text-align: center;
+
+      color: #5b5656;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .three-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .article-hero {
+        padding: 55px 20px 35px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .cover-wrap {
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+
+      main {
+        padding: 0 20px 70px;
+      }
+
+      .talisman-grid,
+      .hero-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-head {
+        display: block;
+      }
+
+      .card-label {
+        margin-top: 7px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="article-hero">
+
+    <div class="eyebrow">
+      COMPLETE HERO GUIDE
+    </div>
+
+    <h1>CLEAVER</h1>
+
+    <div class="hero-role">
+      TANK • WAY OF CHAOS • FRONT LINE
+    </div>
+
+    <p class="subtitle">
+      Survive the frontline, destroy enemy positioning and turn
+      Rusty Hook into an opportunity for your entire team to
+      eliminate priority targets.
+    </p>
+
+    <div class="hero-line"></div>
+
+  </section>
+
+
+  <div class="cover-wrap">
+    <div class="cover">
+
+      <img
+        src="Images/Hero-Guides/cleaver-guide.png"
+        alt="Cleaver Full Guide"
+      >
+
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="intro">
+
+      <p>
+        Cleaver is a <strong>Chaos Tank</strong> positioned on the
+        <strong>front line</strong>. His defining strength is his
+        ability to disrupt enemy positioning with Rusty Hook while
+        surviving long enough to control the battlefield.
+      </p>
+
+    </section>
+
+
+    <section class="notice">
+
+      <div class="notice-title">
+        RELICS — CURRENT CONTEXT
+      </div>
+
+      <p>
+        Current information discussed in this guide suggests Cleaver
+        may receive Relics in the next season. This guide does not
+        treat that release as confirmed. His future value may change
+        if and when those Relics are officially released.
+      </p>
+
+    </section>
+
+
+    <nav class="quick-nav">
+
+      <div class="quick-title">
+        QUICK NAVIGATION
+      </div>
+
+      <div class="quick-links">
+
+        <a href="#skills">SKILLS</a>
+        <a href="#skins">SKINS</a>
+        <a href="#glyphs">GLYPHS</a>
+        <a href="#artifacts">ARTIFACTS</a>
+        <a href="#gift">GIFT</a>
+        <a href="#talismans">TALISMANS</a>
+        <a href="#synergies">SYNERGIES</a>
+        <a href="#counters">COUNTERS</a>
+        <a href="#video">VIDEO</a>
+
+      </div>
+
+    </nav>
+
+
+    <!-- SKILLS -->
+
+    <section class="article-section" id="skills">
+
+      <div class="section-kicker">
+        CLEAVER'S KIT
+      </div>
+
+      <h2>SKILLS</h2>
+
+
+      <div class="cards">
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Rusty Hook</h3>
+            <div class="card-label">POSITIONING CONTROL</div>
+          </div>
+
+          <p>
+            Cleaver throws his hook at the
+            <strong>furthest enemy</strong>, dealing Physical Damage
+            before dragging that hero directly to the front line.
+            The damage scales with his Physical Attack.
+          </p>
+
+          <p style="margin-top:12px;">
+            A protected backline hero can suddenly find themselves
+            standing directly in front of Cleaver's team, creating an
+            opportunity for physical pressure and burst damage to
+            eliminate the target before the enemy can recover.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Putrefaction</h3>
+            <div class="card-label">PURE DAMAGE</div>
+          </div>
+
+          <p>
+            Cleaver continuously deals
+            <strong>Pure Damage</strong> to nearby enemies while also
+            damaging himself. Unlike several of his other abilities,
+            Putrefaction scales with his <strong>Health</strong>.
+          </p>
+
+          <p style="margin-top:12px;">
+            Its rapid sequence of Pure Damage hits can pressure shields,
+            frontline barriers and heroes such as Lucas.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Mutilation</h3>
+            <div class="card-label">CONTROL</div>
+          </div>
+
+          <p>
+            Cleaver attacks enemies in front of him, dealing damage
+            while <strong>stunning everyone caught in the attack</strong>.
+            The skill scales with Physical Attack and Skill Level.
+          </p>
+
+          <p style="margin-top:12px;">
+            After Cleaver pulls a priority target forward, Mutilation
+            can help keep that hero under control while the team
+            focuses them down.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Heavyweight</h3>
+            <div class="card-label">PASSIVE</div>
+          </div>
+
+          <p>
+            Heavyweight permanently increases
+            <strong>Cleaver's Strength</strong>, contributing more
+            Health, survivability and additional scaling across his
+            kit.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section class="article-section" id="skins">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>SKINS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">ARMOR</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">STRENGTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">TOUGHNESS</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">MAGIC DEFENSE</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">06</div>
+          <div class="priority-name">PHYSICAL ATTACK</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Cleaver's primary responsibility is
+          <strong>surviving and controlling the frontline</strong>.
+          Armor and Health therefore take priority over offensive
+          development.
+        </p>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          If Cleaver receives additional
+          <strong>Armor or Health Skins</strong> in the future,
+          those should immediately receive high priority.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- GLYPHS -->
+
+    <section class="article-section" id="glyphs">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>GLYPHS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">ARMOR</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">STRENGTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">MAGIC DEFENSE</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">PHYSICAL ATTACK</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Bring every Glyph to <strong>Level 40</strong> before
+          pushing individual Glyphs significantly further, unless
+          you are specifically progressing Skill Classes.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="article-section" id="artifacts">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>ARTIFACTS</h2>
+
+
+      <div class="three-grid">
+
+        <article class="build-card">
+
+          <div class="build-number">01</div>
+
+          <h3>Book</h3>
+
+          <p>
+            Increases Armor and Magic Defense, strengthening both of
+            Cleaver's primary defensive stats simultaneously.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">02</div>
+
+          <h3>Weapon</h3>
+
+          <p>
+            Grants Armor to the entire team whenever Cleaver activates
+            Rusty Hook.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">03</div>
+
+          <h3>Ring</h3>
+
+          <p>
+            Increases Strength, providing additional durability and
+            supporting Cleaver's overall scaling.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="article-section" id="gift">
+
+      <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+      </div>
+
+      <h2>MAX IT</h2>
+
+
+      <div class="info-box">
+
+        <p>
+          Prioritize <strong>Armor and Health</strong>. Cleaver needs
+          to remain alive to protect his team, disrupt enemy
+          positioning and continue controlling the battlefield.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="article-section" id="talismans">
+
+      <div class="section-kicker">
+        TWO STRONG OPTIONS
+      </div>
+
+      <h2>TALISMANS</h2>
+
+
+      <div class="talisman-grid">
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            FIRST TALISMAN
+          </div>
+
+          <h3>Strength + Health</h3>
+
+          <p>
+            Strength and Health reinforce Cleaver's core tank role,
+            improving the durability he needs to remain active on the
+            frontline.
+          </p>
+
+          <div class="availability">
+            ETERNAL FRONTIER
+          </div>
+
+        </article>
+
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            SECOND TALISMAN
+          </div>
+
+          <h3>Crushing + Toughness</h3>
+
+          <p>
+            Provides a different combination of offensive and
+            defensive development through Crushing and Toughness.
+          </p>
+
+          <div class="availability">
+            VIP PROGRESSION
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Both Talismans are valuable. Cleaver can still perform
+          extremely well with proper investment even if only one
+          option is available on your account.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="article-section" id="synergies">
+
+      <div class="section-kicker">
+        CHAOS INTERACTIONS
+      </div>
+
+      <h2>SYNERGIES & MECHANICS</h2>
+
+
+      <div class="hero-grid">
+
+        <article class="hero-card">
+
+          <h3>Aidan</h3>
+
+          <p>
+            Putrefaction damages Cleaver himself. That allied Health
+            sacrifice can create additional value for Aidan inside
+            Chaos compositions.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Xe'Sha</h3>
+
+          <p>
+            Cleaver's self-sacrifice through Putrefaction can also
+            benefit Xe'Sha, turning Cleaver's self-damage into
+            additional offensive value for a Chaos team.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="article-section" id="counters">
+
+      <div class="section-kicker">
+        DISRUPTING CLEAVER
+      </div>
+
+      <h2>COUNTERS & KEY INTERACTIONS</h2>
+
+
+      <div class="counter-grid">
+
+        <article class="counter-card">
+
+          <div class="counter-label">HOOK INTERACTION</div>
+
+          <h3>Dorian</h3>
+
+          <p>
+            If Cleaver pulls Dorian forward, Dorian's Vampirism Aura
+            can begin supporting frontline allies instead, potentially
+            making them considerably harder to eliminate.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">DISPLACEMENT PROTECTION</div>
+
+          <h3>Andvari</h3>
+
+          <p>
+            Living Earth prevents displacement effects, stopping
+            Cleaver from pulling protected heroes with Rusty Hook.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">REFLECTED PRESSURE</div>
+
+          <h3>Peppy + Aurora</h3>
+
+          <p>
+            Peppy's shield together with Aurora's Rainbow Halo can
+            reflect large amounts of Magic Damage back into Cleaver,
+            creating a dangerous interaction for him.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">CHARM</div>
+
+          <h3>Lian</h3>
+
+          <p>
+            Lian can interrupt Rusty Hook by charming Cleaver when he
+            targets her, breaking the hook interaction.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">TRANSFORMATION</div>
+
+          <h3>Somna</h3>
+
+          <p>
+            Somna can transform Cleaver into a sheep when he attempts
+            to hook her, disrupting one of his defining mechanics.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">BLIND</div>
+
+          <h3>Electra</h3>
+
+          <p>
+            Electra can blind Cleaver, causing several of his damaging
+            attacks to miss.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">SURVIVABILITY</div>
+
+          <h3>Martha</h3>
+
+          <p>
+            Martha can survive surprisingly well after being pulled,
+            potentially buying enough time for her team to recover
+            from Cleaver's positioning disruption.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">ENERGY CONTROL</div>
+
+          <h3>Jorgen</h3>
+
+          <p>
+            Torment of Powerlessness can prevent Cleaver from gaining
+            Energy, delaying Rusty Hook activations and reducing his
+            battlefield impact.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="article-section">
+
+      <div class="section-kicker">
+        FINAL TAKEAWAY
+      </div>
+
+      <h2>CONTROL THE BATTLEFIELD</h2>
+
+
+      <div class="final-box">
+
+        <p>
+          Cleaver's defining value comes from combining
+          <strong>durability with positioning disruption</strong>.
+        </p>
+
+        <p>
+          Rusty Hook can remove the protection normally provided by
+          the enemy formation. Putrefaction applies repeated Pure
+          Damage while creating Chaos interactions through Cleaver's
+          self-damage. Mutilation adds frontline control, while
+          Heavyweight reinforces his durability through Strength.
+        </p>
+
+        <p>
+          Build his defenses first. Give him the Armor and Health
+          necessary to survive, then allow his disruptive mechanics
+          to create opportunities for the rest of the team.
+        </p>
+
+        <p>
+          If Cleaver does receive Relics in a future season, his
+          development and team interactions will need to be
+          reevaluated once their actual mechanics are known.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+      <div class="section-kicker">
+        GODS OF ALLIANCE
+      </div>
+
+      <h2>WATCH THE COMPLETE CLEAVER GUIDE</h2>
+
+      <p>
+        Watch the full guide for the complete explanation of
+        Cleaver's skills, build priorities, Chaos interactions,
+        counters and battlefield mechanics.
+      </p>
+
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/T4VmX8O_0bc"
+          title="Cleaver Full Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
