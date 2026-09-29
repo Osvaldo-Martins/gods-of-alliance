@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Daredevil Guide | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Daredevil guide for Hero Wars Alliance. Skills, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies, mechanics and counters."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/daredevil.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Daredevil Guide | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Complete Daredevil guide covering her Critical Hit engine, Fire Support, development priorities, talismans, synergies and counters."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/daredevil.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/daredevil-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Daredevil Full Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Daredevil Guide | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Skills, skins, glyphs, artifacts, talismans, synergies and counters for Daredevil in Hero Wars Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/daredevil-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #07090d;
+      --panel: rgba(13, 16, 21, 0.95);
+      --panel-light: rgba(19, 22, 28, 0.95);
+      --border: rgba(255, 139, 36, 0.18);
+      --border-strong: rgba(255, 139, 36, 0.40);
+      --orange: #ff8a22;
+      --orange-light: #ffb347;
+      --gold: #e9a923;
+      --white: #ffffff;
+      --text: #d4d5da;
+      --muted: #92959e;
+      --purple: #a568ff;
+      --green: #67dca2;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 15% 10%,
+          rgba(255, 108, 20, 0.12),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 87% 22%,
+          rgba(255, 156, 40, 0.08),
+          transparent 26%
+        ),
+        radial-gradient(
+          circle at 50% 58%,
+          rgba(106, 65, 155, 0.035),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          #0b0e13 0%,
+          #080a0e 45%,
+          #050609 100%
+        );
+
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(5, 6, 8, 0.97);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--orange);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .article-hero {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 72px 35px 45px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(48px, 8vw, 78px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .hero-role {
+      margin-top: 18px;
+
+      color: var(--orange-light);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      margin: 22px auto 0;
+
+      color: #a6a9b0;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      width: 78px;
+      height: 3px;
+      margin: 28px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--orange),
+          var(--gold)
+        );
+
+      box-shadow:
+        0 0 20px rgba(255, 138, 34, 0.3);
+    }
+
+    /* COVER */
+
+    .cover-wrap {
+      max-width: 1120px;
+      margin: 0 auto 55px;
+      padding: 0 35px;
+    }
+
+    .cover {
+      overflow: hidden;
+
+      background: #0b0c10;
+      border: 1px solid rgba(255, 139, 36, 0.25);
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.48),
+        0 0 45px rgba(255, 121, 22, 0.05);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 35px 100px;
+    }
+
+    .intro {
+      padding: 30px;
+      margin-bottom: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(29, 22, 18, 0.96),
+          rgba(12, 14, 18, 0.96)
+        );
+
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
+    }
+
+    .intro p {
+      color: #c2c4ca;
+      font-size: 15px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      margin: 30px 0 55px;
+      padding: 24px;
+
+      background: rgba(10, 12, 16, 0.9);
+      border: 1px solid var(--border);
+    }
+
+    .quick-title {
+      margin-bottom: 14px;
+
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .quick-links a {
+      padding: 8px 11px;
+
+      background: #121419;
+      border: 1px solid #2a2d33;
+
+      color: #c7c9cf;
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .quick-links a:hover {
+      color: #ffffff;
+      border-color: var(--border-strong);
+    }
+
+    /* SECTIONS */
+
+    .article-section {
+      margin-top: 65px;
+    }
+
+    .section-kicker {
+      margin-bottom: 7px;
+
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 37px);
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .article-section > p {
+      margin-top: 14px;
+
+      color: #b5b7bd;
+      font-size: 14px;
+    }
+
+    .article-section strong {
+      color: #ffffff;
+    }
+
+    /* CARDS */
+
+    .cards {
+      display: grid;
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .detail-card {
+      padding: 27px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      margin-bottom: 13px;
+    }
+
+    .card-label {
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .detail-card p {
+      color: #adb0b7;
+      font-size: 14px;
+    }
+
+    /* ENGINE */
+
+    .engine {
+      margin-top: 25px;
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(38, 23, 14, 0.92),
+          rgba(12, 14, 19, 0.96)
+        );
+
+      border: 1px solid rgba(255, 138, 34, 0.25);
+    }
+
+    .engine-line {
+      padding: 12px 0;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      color: #c4c6cc;
+      font-size: 14px;
+    }
+
+    .engine-line:last-child {
+      border-bottom: none;
+    }
+
+    .engine-line strong {
+      color: var(--orange-light);
+    }
+
+    /* PRIORITY */
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .priority {
+      padding: 20px 12px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .priority-number {
+      margin-bottom: 8px;
+
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    /* INFO */
+
+    .info-box {
+      margin-top: 24px;
+      padding: 25px;
+
+      background: rgba(14, 16, 21, 0.94);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--orange);
+    }
+
+    .info-box p {
+      color: #b3b5bc;
+      font-size: 14px;
+    }
+
+    /* ARTIFACT PRIORITY */
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .build-card {
+      padding: 25px 20px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .build-number {
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .build-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .build-card p {
+      color: #9699a1;
+      font-size: 12px;
+    }
+
+    /* TALISMANS */
+
+    .talisman-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .talisman {
+      padding: 27px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(27, 20, 34, 0.95),
+          rgba(12, 14, 19, 0.96)
+        );
+
+      border: 1px solid rgba(165, 104, 255, 0.24);
+    }
+
+    .talisman-label {
+      margin-bottom: 7px;
+
+      color: var(--purple);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .talisman h3 {
+      margin-bottom: 12px;
+    }
+
+    .talisman p {
+      color: #aaaab4;
+      font-size: 13px;
+    }
+
+    .availability {
+      margin-top: 15px;
+      padding-top: 14px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: #d1d2d7;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* SYNERGY */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .hero-card {
+      padding: 22px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .hero-card p {
+      color: #999ca4;
+      font-size: 12px;
+    }
+
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .counter-card {
+      padding: 26px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(25, 16, 17, 0.96),
+          rgba(11, 13, 17, 0.96)
+        );
+
+      border: 1px solid rgba(255, 96, 70, 0.18);
+    }
+
+    .counter-label {
+      margin-bottom: 7px;
+
+      color: #ff7865;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .counter-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .counter-card p {
+      color: #a9abb1;
+      font-size: 13px;
+    }
+
+    /* FINAL */
+
+    .final-box {
+      margin-top: 25px;
+      padding: 31px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(38, 23, 14, 0.94),
+          rgba(11, 13, 17, 0.97)
+        );
+
+      border: 1px solid rgba(255, 138, 34, 0.25);
+    }
+
+    .final-box p {
+      margin-top: 12px;
+
+      color: #b9bbc1;
+      font-size: 14px;
+    }
+
+    .final-box p:first-child {
+      margin-top: 0;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 78px;
+      padding-top: 52px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .video-section .section-kicker,
+    .video-section h2,
+    .video-section > p {
+      text-align: center;
+    }
+
+    .video-section > p {
+      max-width: 700px;
+      margin: 0 auto 27px;
+
+      color: #979aa1;
+      font-size: 14px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      aspect-ratio: 16 / 9;
+
+      background: #000000;
+      border: 1px solid rgba(255, 138, 34, 0.27);
+
+      box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.48);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 34px 20px;
+
+      border-top: 1px solid #1b1d21;
+
+      text-align: center;
+
+      color: #56585f;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .three-grid,
+      .hero-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .article-hero {
+        padding: 55px 20px 35px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .cover-wrap {
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+
+      main {
+        padding: 0 20px 70px;
+      }
+
+      .talisman-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-head {
+        display: block;
+      }
+
+      .card-label {
+        margin-top: 7px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="article-hero">
+
+    <div class="eyebrow">
+      COMPLETE HERO GUIDE
+    </div>
+
+    <h1>DAREDEVIL</h1>
+
+    <div class="hero-role">
+      MARKSMAN • WAY OF PROGRESS • BACK LINE
+    </div>
+
+    <p class="subtitle">
+      Build the Critical Hit engine, create more attacks through Fire
+      Support, and give Daredevil enough time to turn growing Physical
+      Attack into overwhelming pressure.
+    </p>
+
+    <div class="hero-line"></div>
+
+  </section>
+
+
+  <div class="cover-wrap">
+    <div class="cover">
+
+      <img
+        src="Images/Hero-Guides/daredevil-guide.png"
+        alt="Daredevil Full Guide"
+      >
+
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="intro">
+
+      <p>
+        Daredevil is a backline <strong>Marksman</strong> whose opening
+        damage does not tell the full story. She wants momentum,
+        Critical Hits, additional attacks and enough time for her
+        Physical Attack to continue growing throughout the battle.
+      </p>
+
+    </section>
+
+
+    <nav class="quick-nav">
+
+      <div class="quick-title">
+        QUICK NAVIGATION
+      </div>
+
+      <div class="quick-links">
+
+        <a href="#skills">SKILLS</a>
+        <a href="#engine">CORE MECHANIC</a>
+        <a href="#skins">SKINS</a>
+        <a href="#glyphs">GLYPHS</a>
+        <a href="#artifacts">ARTIFACTS</a>
+        <a href="#gift">GIFT</a>
+        <a href="#talismans">TALISMANS</a>
+        <a href="#synergies">SYNERGIES</a>
+        <a href="#counters">COUNTERS</a>
+        <a href="#video">VIDEO</a>
+
+      </div>
+
+    </nav>
+
+
+    <!-- SKILLS -->
+
+    <section class="article-section" id="skills">
+
+      <div class="section-kicker">
+        DAREDEVIL'S KIT
+      </div>
+
+      <h2>SKILLS</h2>
+
+
+      <div class="cards">
+
+        <article class="detail-card">
+
+          <div class="card-head">
+
+            <h3>Rapid Fire</h3>
+
+            <div class="card-label">
+              ULTIMATE
+            </div>
+
+          </div>
+
+          <p>
+            Daredevil attacks the nearest enemy five times.
+            Every subsequent shot increases its damage by
+            <strong>25%</strong>, causing the pressure to escalate
+            throughout the sequence.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+
+            <h3>Big Badda Boom!</h3>
+
+            <div class="card-label">
+              SECOND SKILL
+            </div>
+
+          </div>
+
+          <p>
+            Daredevil throws a bomb into the center of the enemy
+            formation, damaging heroes inside the blast radius.
+            The bomb <strong>always deals Critical Damage</strong>.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+
+            <h3>Fire Support</h3>
+
+            <div class="card-label">
+              CORE INTERACTION
+            </div>
+
+          </div>
+
+          <p>
+            Whenever an ally positioned behind Daredevil successfully
+            performs a basic attack, Daredevil responds with an
+            additional basic attack of her own.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+
+            <h3>Thirst for Blood</h3>
+
+            <div class="card-label">
+              SNOWBALL
+            </div>
+
+          </div>
+
+          <p>
+            Every Critical Hit Daredevil deals permanently increases
+            her <strong>Physical Attack for the remainder of the
+            battle</strong>.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ENGINE -->
+
+    <section class="article-section" id="engine">
+
+      <div class="section-kicker">
+        HOW DAREDEVIL WORKS
+      </div>
+
+      <h2>THE DAREDEVIL ENGINE</h2>
+
+      <p>
+        Daredevil should not be viewed as a collection of isolated
+        Skills. Her mechanics feed into one another and can create a
+        snowball as the battle continues.
+      </p>
+
+
+      <div class="engine">
+
+        <div class="engine-line">
+          <strong>Critical Hits</strong>
+          activate Thirst for Blood.
+        </div>
+
+        <div class="engine-line">
+          <strong>Thirst for Blood</strong>
+          increases Physical Attack.
+        </div>
+
+        <div class="engine-line">
+          <strong>Fire Support</strong>
+          creates additional attacks.
+        </div>
+
+        <div class="engine-line">
+          <strong>Additional attacks</strong>
+          generate Energy.
+        </div>
+
+        <div class="engine-line">
+          <strong>Energy</strong>
+          brings Rapid Fire back sooner.
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Positioning matters. Fire Support specifically reacts to
+          successful basic attacks from allies positioned
+          <strong>behind Daredevil</strong>. The important question
+          therefore is not only who deals damage with her, but
+          <strong>who can make Daredevil fire more often</strong>.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section class="article-section" id="skins">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>SKINS</h2>
+
+      <p>
+        Daredevil currently has five Skins covered by this guide.
+        Critical Hit Chance takes first priority because Critical Hits
+        directly support the mechanic behind Thirst for Blood.
+      </p>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">
+            CRITICAL HIT CHANCE
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">
+            PHYSICAL ATTACK
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">
+            HEALTH
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">
+            ARMOR
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">
+            DEFAULT AGILITY
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          If Daredevil eventually receives another
+          <strong>Critical Hit Chance</strong> or
+          <strong>Physical Attack</strong> Skin, it would deserve
+          serious priority consideration.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- GLYPHS -->
+
+    <section class="article-section" id="glyphs">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>GLYPHS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">
+            CRITICAL HIT CHANCE
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">
+            MAGIC DEFENSE
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">
+            HEALTH
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">
+            PHYSICAL ATTACK
+          </div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">
+            AGILITY
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Bring all five Glyphs to <strong>Level 40</strong>.
+          Beyond that, do not automatically continue pushing
+          everything unless you are specifically pursuing Skill Class
+          progression or have a clear account-specific reason.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="article-section" id="artifacts">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>ARTIFACTS</h2>
+
+
+      <div class="three-grid">
+
+        <article class="build-card">
+
+          <div class="build-number">01</div>
+
+          <h3>Book</h3>
+
+          <p>
+            Critical Hit Chance + Physical Attack.
+            Two fundamental offensive stats for Daredevil.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">02</div>
+
+          <h3>Weapon</h3>
+
+          <p>
+            Provides a teamwide Physical Attack bonus when
+            Daredevil activates Rapid Fire.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">03</div>
+
+          <h3>Ring</h3>
+
+          <p>
+            Provides Agility, contributing additional Physical Attack
+            and value against physical opponents through Main Stat.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="article-section" id="gift">
+
+      <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+      </div>
+
+      <h2>MAX IT</h2>
+
+      <div class="info-box">
+
+        <p>
+          Daredevil wants the additional
+          <strong>Physical Attack and Health</strong>.
+          She is a damage dealer whose strength can increase as the
+          fight continues, so she needs enough development to remain
+          alive and keep the engine running.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="article-section" id="talismans">
+
+      <div class="section-kicker">
+        BOTH OPTIONS MATTER
+      </div>
+
+      <h2>TALISMANS</h2>
+
+
+      <div class="talisman-grid">
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            FIRST TALISMAN
+          </div>
+
+          <h3>
+            Agility + Armor Penetration
+          </h3>
+
+          <p>
+            Provides Agility together with Armor Penetration, an
+            important offensive stat when Daredevil faces properly
+            developed defenses.
+          </p>
+
+          <div class="availability">
+            ETERNAL FRONTIER SHOP • 700,000 FRONTIER COINS
+          </div>
+
+        </article>
+
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            SECOND TALISMAN
+          </div>
+
+          <h3>
+            Armor Penetration + Physical Attack
+          </h3>
+
+          <p>
+            Reverses the offensive emphasis by combining Armor
+            Penetration with direct Physical Attack.
+          </p>
+
+          <div class="availability">
+            SPECIAL-EVENT AVAILABILITY
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Both Talismans are genuinely useful offensive options.
+          Armor Penetration is particularly important when Daredevil
+          needs her physical attacks to remain effective against
+          developed defenses.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="article-section" id="synergies">
+
+      <div class="section-kicker">
+        MECHANICS & SUPPORT
+      </div>
+
+      <h2>HEROES THAT CAN ENABLE DAREDEVIL</h2>
+
+      <p>
+        Different allies support different parts of Daredevil's
+        engine. These interactions should be considered together with
+        positioning and the matchup rather than as one mandatory team.
+      </p>
+
+
+      <div class="hero-grid">
+
+        <article class="hero-card">
+          <h3>Sebastian</h3>
+          <p>
+            Rhythm of War can add significant extra damage to
+            Daredevil's Critical Hits.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Jet</h3>
+          <p>
+            Can help Daredevil create more Critical Hits and therefore
+            more opportunities to activate Thirst for Blood.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Guus</h3>
+          <p>
+            Can contribute to her Critical Hit pressure through
+            Golden Feathers.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Elmir</h3>
+          <p>
+            His clones can create additional successful regular
+            attacks capable of producing more Fire Support triggers.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Dark Star</h3>
+          <p>
+            Her shadow copy can contribute additional regular attacks
+            and therefore interact with Fire Support.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Fox</h3>
+          <p>
+            Can provide Armor Penetration support, helping Daredevil's
+            physical damage become more effective.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Isaac</h3>
+          <p>
+            Another source of Armor Penetration support for
+            Daredevil's physical pressure.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Julius</h3>
+          <p>
+            His shield can contribute Attack Speed and help accelerate
+            Daredevil's attacking process.
+          </p>
+        </article>
+
+        <article class="hero-card">
+          <h3>Polaris</h3>
+          <p>
+            Glacial Fortress can slow down what the enemy is trying
+            to accomplish while Daredevil's side develops pressure.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="article-section" id="counters">
+
+      <div class="section-kicker">
+        HOW TO DISRUPT THE ENGINE
+      </div>
+
+      <h2>COUNTERS</h2>
+
+
+      <div class="counter-grid">
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            CONTROL
+          </div>
+
+          <h3>Polaris</h3>
+
+          <p>
+            Repeated control interferes with Daredevil's rhythm.
+            Every interruption is time she is not attacking,
+            generating the same pressure or moving toward another
+            Rapid Fire.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            RETALIATION
+          </div>
+
+          <h3>Corvus</h3>
+
+          <p>
+            When Daredevil produces AoE damage through Big Badda Boom,
+            Corvus' Altar can retaliate against her, turning her own
+            aggression into incoming punishment.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            OFFENSIVE DISRUPTION
+          </div>
+
+          <h3>Somna</h3>
+
+          <p>
+            Somna can interfere with two important parts of
+            Daredevil's offensive profile:
+            <strong>Physical Attack and Armor Penetration</strong>.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          The objective is to attack Daredevil's engine before
+          Thirst for Blood has enough time to snowball:
+          <strong>
+            control her, punish her AoE, reduce her offensive stats,
+            disrupt the heroes enabling Fire Support and deny her a
+            comfortable battle.
+          </strong>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="article-section">
+
+      <div class="section-kicker">
+        FINAL TAKEAWAY
+      </div>
+
+      <h2>BUILD THE ENGINE</h2>
+
+
+      <div class="final-box">
+
+        <p>
+          Daredevil is not simply five shots from Rapid Fire.
+          <strong>She is a system.</strong>
+        </p>
+
+        <p>
+          Critical Hits feed Thirst for Blood. Thirst for Blood feeds
+          Physical Attack. Fire Support creates additional attacks.
+          Additional attacks create Energy. Energy brings Rapid Fire
+          back.
+        </p>
+
+        <p>
+          Prioritize her Critical Hit engine, give her the Physical
+          Attack and survivability needed to capitalize on it, respect
+          Armor Penetration and pay close attention to the heroes
+          positioned around her.
+        </p>
+
+        <p>
+          Give Daredevil the support, positioning and time she needs,
+          and those bullets can start feeling like
+          <strong>missiles.</strong>
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+      <div class="section-kicker">
+        GODS OF ALLIANCE
+      </div>
+
+      <h2>WATCH THE COMPLETE DAREDEVIL GUIDE</h2>
+
+      <p>
+        Watch the full guide for the complete explanation of
+        Daredevil's mechanics, development priorities, synergies and
+        counters.
+      </p>
+
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/-nOA4Vvpc80"
+          title="Daredevil Full Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
