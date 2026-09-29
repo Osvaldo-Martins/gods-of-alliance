@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Titans | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Hero Wars Alliance Titan guides, maxed testing, team analysis, upgrades and practical Titan strategy from Gods of Alliance."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/titans.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Titans | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Hero Wars Alliance Titan guides, maxed testing, team analysis, upgrades and practical Titan strategy."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/titans.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Titans/metida-first-tests-maxed.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Gods of Alliance Titans"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Titans | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Hero Wars Alliance Titan guides, maxed testing, team analysis, upgrades and practical Titan strategy."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Titans/metida-first-tests-maxed.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #07070b;
+      --card: #0c0d13;
+      --card-hover: #11131b;
+      --gold: #e9a923;
+      --white: #ffffff;
+      --muted: #999ba5;
+      --border: #23242d;
+      --cyan: #65d9ff;
+      --purple: #8d65ff;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 18% 18%,
+          rgba(72, 127, 255, 0.11),
+          transparent 31%
+        ),
+        radial-gradient(
+          circle at 82% 14%,
+          rgba(142, 83, 255, 0.10),
+          transparent 29%
+        ),
+        radial-gradient(
+          circle at 50% 75%,
+          rgba(54, 191, 255, 0.04),
+          transparent 35%
+        ),
+        var(--bg);
+
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(5, 5, 8, 0.97);
+      border-bottom: 1px solid #1c1d25;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .home-link {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .home-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 35px 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 8vw, 82px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 25px auto 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      width: 72px;
+      height: 3px;
+      margin: 30px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--cyan),
+          var(--purple)
+        );
+
+      box-shadow:
+        0 0 20px rgba(101, 217, 255, 0.25);
+    }
+
+    /* CONTENT */
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 35px 100px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 25px;
+
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .section-header p {
+      max-width: 440px;
+      color: #777984;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    /* TITAN GRID */
+
+    .titans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .titan-card {
+      display: flex;
+      flex-direction: column;
+
+      overflow: hidden;
+
+      border: 1px solid var(--border);
+      background: var(--card);
+
+      text-decoration: none;
+      color: #ffffff;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .titan-card:hover {
+      transform: translateY(-5px);
+
+      border-color: rgba(101, 217, 255, 0.52);
+      background: var(--card-hover);
+
+      box-shadow:
+        0 14px 40px rgba(0, 0, 0, 0.30),
+        0 0 30px rgba(101, 217, 255, 0.06);
+    }
+
+    .card-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #11121a;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+
+      transition: transform 0.35s ease;
+    }
+
+    .titan-card:hover .card-image img {
+      transform: scale(1.025);
+    }
+
+    .card-tag {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+
+      padding: 7px 10px;
+
+      background: rgba(0, 0, 0, 0.90);
+      border: 1px solid rgba(101, 217, 255, 0.52);
+
+      color: var(--cyan);
+
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      padding: 25px 24px 24px;
+    }
+
+    .card-type {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      margin-bottom: 9px;
+    }
+
+    .card-content h3 {
+      font-size: 22px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .card-content p {
+      color: #90929c;
+      font-size: 13px;
+      line-height: 1.75;
+      flex: 1;
+    }
+
+    .read-more {
+      margin-top: 22px;
+      padding-top: 17px;
+
+      border-top: 1px solid #20212a;
+
+      color: var(--cyan);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    /* FUTURE */
+
+    .future-note {
+      margin-top: 60px;
+      padding: 30px;
+
+      border: 1px solid #20212a;
+      border-left: 3px solid var(--cyan);
+
+      background: rgba(10, 11, 17, 0.90);
+    }
+
+    .future-note h3 {
+      color: var(--cyan);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .future-note p {
+      color: #858792;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 32px 20px;
+
+      border-top: 1px solid #1b1c23;
+
+      text-align: center;
+      color: #555762;
+
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .titans-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      .hero {
+        padding: 65px 20px 50px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      main {
+        padding: 10px 20px 70px;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-header p {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .titans-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="home-link" href="index.html">
+        HOME
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      GODS OF ALLIANCE
+    </div>
+
+    <h1>TITANS</h1>
+
+    <p>
+      Titan guides, maxed testing, upgrades, battle analysis and
+      practical strategy for Hero Wars Alliance.
+    </p>
+
+    <div class="hero-line"></div>
+
+  </section>
+
+
+  <main>
+
+    <div class="section-header">
+
+      <div>
+
+        <div class="section-label">
+          LATEST TITAN CONTENT
+        </div>
+
+        <h2>TITAN GUIDES & TESTING</h2>
+
+      </div>
+
+      <p>
+        Explore Titan upgrades, battle tests and team interactions
+        before committing your resources.
+      </p>
+
+    </div>
+
+
+    <section class="titans-grid">
+
+      <!-- METIDA FIRST TESTS -->
+
+      <a
+        class="titan-card"
+        href="metida-first-tests-maxed.html"
+      >
+
+        <div class="card-image">
+
+          <img
+            src="Images/Titans/metida-first-tests-maxed.png"
+            alt="Metida First Tests Maxed"
+          >
+
+          <div class="card-tag">
+            MAXED TESTING
+          </div>
+
+        </div>
+
+
+        <div class="card-content">
+
+          <div class="card-type">
+            ELARITE SUPERTITAN
+          </div>
+
+          <h3>
+            Metida — First Tests Maxed
+          </h3>
+
+          <p>
+            Take Metida to level 120, upgrade her Artifacts and Default
+            Skin, examine her final displayed stats, and see her first
+            maxed battle tests across Fire and Water teams.
+          </p>
+
+          <div class="read-more">
+            OPEN TITAN ANALYSIS →
+          </div>
+
+        </div>
+
+      </a>
+
+    </section>
+
+
+    <section class="future-note">
+
+      <h3>MORE TITAN CONTENT IS COMING</h3>
+
+      <p>
+        This section will continue expanding with Titan guides,
+        upgrade analysis, battle testing, team interactions and
+        future Titan releases.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
