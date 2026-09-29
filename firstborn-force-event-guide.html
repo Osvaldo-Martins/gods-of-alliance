@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Firstborn Force Event Guide | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Firstborn Force event guide for Hero Wars Alliance with Event Shop prices, Titan Brawls, all eight quest tabs, Event Coin totals and resource strategy."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/firstborn-force-event-guide.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Firstborn Force Event Guide | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Firstborn Force explained: all eight tabs, Event Coin totals, Metida's Primordial Skin and Skin+, Titan Brawls, rewards and strategy."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/firstborn-force-event-guide.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/firstborn-force-event-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Firstborn Force Event Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Firstborn Force Event Guide | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="All Firstborn Force quests, Event Coin totals, Event Shop prices, Titan Brawls and resource strategy."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/firstborn-force-event-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --purple-light: #c7a7ff;
+      --purple: #a875ff;
+      --purple-strong: #8550e8;
+      --violet: #7445c9;
+      --cyan: #72e4ff;
+      --gold: #e6b85c;
+      --white: #ffffff;
+      --text: #eee9f8;
+      --muted: #bdb2d0;
+      --dark-purple: #171022;
+      --card: rgba(31, 20, 47, 0.88);
+      --card-light: rgba(74, 48, 104, 0.32);
+      --border: rgba(199, 167, 255, 0.25);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+
+      background:
+        radial-gradient(
+          circle at 12% 8%,
+          rgba(197, 155, 255, 0.35),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 88% 18%,
+          rgba(119, 209, 255, 0.18),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 50% 45%,
+          rgba(173, 111, 255, 0.20),
+          transparent 38%
+        ),
+        radial-gradient(
+          circle at 15% 75%,
+          rgba(216, 177, 255, 0.14),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          #4b3270 0%,
+          #382452 17%,
+          #28193c 38%,
+          #1b1129 68%,
+          #0c0812 100%
+        );
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(255, 255, 255, 0.10) 0 1px,
+          transparent 2px
+        ),
+        radial-gradient(
+          circle at 80% 55%,
+          rgba(197, 167, 255, 0.12) 0 1px,
+          transparent 2px
+        );
+
+      background-size: 125px 125px, 170px 170px;
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(19, 12, 29, 0.92);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 80px;
+      padding: 0 35px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .event-label {
+      color: var(--purple-light);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    /* COVER */
+
+    .cover {
+      overflow: hidden;
+
+      border: 1px solid rgba(209, 178, 255, 0.35);
+
+      background: #1a1028;
+
+      box-shadow:
+        0 35px 90px rgba(0, 0, 0, 0.42),
+        0 0 80px rgba(183, 123, 255, 0.20);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* INTRO */
+
+    .intro {
+      max-width: 950px;
+      margin: 60px auto 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--purple-light);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(43px, 7vw, 76px);
+      line-height: 0.98;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .subtitle {
+      margin-top: 19px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 830px;
+      margin: 25px auto 0;
+      color: #d0c6dc;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .purple-line {
+      width: 85px;
+      height: 3px;
+      margin: 30px auto 0;
+
+      background: linear-gradient(
+        90deg,
+        var(--purple-light),
+        var(--cyan)
+      );
+
+      box-shadow: 0 0 25px rgba(199, 167, 255, 0.65);
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+
+      max-width: 1000px;
+      margin: 0 auto 75px;
+    }
+
+    .quick-nav a {
+      padding: 10px 14px;
+
+      border: 1px solid rgba(199, 167, 255, 0.25);
+      background: rgba(38, 23, 56, 0.70);
+
+      color: #d9c7f7;
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+
+      transition: 0.2s ease;
+    }
+
+    .quick-nav a:hover {
+      border-color: var(--purple-light);
+      background: rgba(123, 77, 175, 0.35);
+      color: #ffffff;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      margin-top: 85px;
+    }
+
+    .section-head {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+
+      border-bottom: 1px solid rgba(207, 177, 255, 0.18);
+    }
+
+    .section-kicker {
+      color: var(--purple-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.05;
+      font-weight: 900;
+    }
+
+    .section-head p {
+      max-width: 850px;
+      margin-top: 14px;
+      color: #c1b6ce;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* INFO CARDS */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .info-card {
+      padding: 27px 25px;
+
+      border: 1px solid var(--border);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(91, 57, 128, 0.38),
+          rgba(27, 17, 41, 0.88)
+        );
+
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .info-card .label {
+      color: var(--purple-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .info-card h3 {
+      color: #ffffff;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+      color: #c2b7ce;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .info-card strong {
+      color: #ffffff;
+    }
+
+    /* SHOP */
+
+    .shop-highlight {
+      padding: 35px;
+
+      border: 1px solid rgba(230, 184, 92, 0.35);
+
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(230, 184, 92, 0.12),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(88, 54, 122, 0.52),
+          rgba(28, 17, 41, 0.90)
+        );
+    }
+
+    .shop-highlight h3 {
+      color: var(--gold);
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .shop-highlight p {
+      color: #c9bfd3;
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .price {
+      padding: 22px;
+      text-align: center;
+
+      border: 1px solid rgba(230, 184, 92, 0.22);
+      background: rgba(19, 12, 29, 0.55);
+    }
+
+    .price .name {
+      color: #d4c7df;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .price .value {
+      margin-top: 7px;
+      color: var(--gold);
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .price .small {
+      margin-top: 3px;
+      color: #998ca6;
+      font-size: 10px;
+    }
+
+    /* WARNING / STRATEGY */
+
+    .strategy {
+      margin-top: 23px;
+      padding: 25px 27px;
+
+      border-left: 4px solid var(--purple-light);
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(188, 145, 255, 0.15),
+          rgba(30, 18, 45, 0.72)
+        );
+    }
+
+    .strategy h3 {
+      color: var(--purple-light);
+      font-size: 16px;
+      margin-bottom: 7px;
+    }
+
+    .strategy p {
+      color: #c9bfd4;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* QUEST TABLE */
+
+    .table-wrap {
+      overflow-x: auto;
+
+      border: 1px solid rgba(199, 167, 255, 0.23);
+
+      background: rgba(25, 15, 38, 0.78);
+    }
+
+    table {
+      width: 100%;
+      min-width: 800px;
+      border-collapse: collapse;
+    }
+
+    th {
+      padding: 17px 15px;
+
+      background: rgba(123, 76, 174, 0.35);
+
+      color: #ffffff;
+      text-align: left;
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.3px;
+    }
+
+    td {
+      padding: 17px 15px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: #c5bacf;
+      font-size: 12px;
+      vertical-align: top;
+    }
+
+    td strong {
+      color: #ffffff;
+    }
+
+    .coins {
+      color: var(--gold);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .vip-row {
+      background: rgba(211, 163, 255, 0.07);
+    }
+
+    /* QUEST DETAIL CARDS */
+
+    .quest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .quest-card {
+      padding: 28px;
+
+      border: 1px solid var(--border);
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(83, 51, 117, 0.34),
+          rgba(25, 15, 37, 0.91)
+        );
+    }
+
+    .quest-number {
+      color: var(--purple-light);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    .quest-card h3 {
+      font-size: 21px;
+      margin-bottom: 9px;
+    }
+
+    .quest-card .objective {
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 11px;
+    }
+
+    .quest-card p {
+      color: #bfb4c9;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .quest-total {
+      margin-top: 16px;
+      padding-top: 14px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: var(--purple-light);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    /* TOTALS */
+
+    .totals {
+      margin-top: 85px;
+      padding: 43px;
+
+      border: 1px solid rgba(199, 167, 255, 0.38);
+
+      background:
+        radial-gradient(
+          circle at 15% 0%,
+          rgba(216, 177, 255, 0.24),
+          transparent 34%
+        ),
+        radial-gradient(
+          circle at 100% 100%,
+          rgba(104, 219, 255, 0.12),
+          transparent 34%
+        ),
+        linear-gradient(
+          145deg,
+          rgba(83, 51, 119, 0.70),
+          rgba(25, 15, 37, 0.94)
+        );
+
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+    }
+
+    .totals .eyebrow {
+      text-align: left;
+    }
+
+    .totals h2 {
+      font-size: clamp(30px, 5vw, 43px);
+      margin-bottom: 25px;
+    }
+
+    .total-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .total-box {
+      padding: 26px 20px;
+      text-align: center;
+
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(18, 11, 27, 0.58);
+    }
+
+    .total-box .label {
+      color: #c9bdd4;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .total-box .number {
+      margin-top: 8px;
+      color: #ffffff;
+      font-size: clamp(25px, 4vw, 36px);
+      font-weight: 900;
+    }
+
+    .total-box.gold .number {
+      color: var(--gold);
+    }
+
+    .totals-note {
+      margin-top: 24px;
+      color: #c5bacf;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 90px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: clamp(29px, 5vw, 40px);
+      margin-bottom: 12px;
+    }
+
+    .video-section > p {
+      max-width: 760px;
+      margin: 0 auto 28px;
+      color: #c1b6cb;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+
+      border: 1px solid rgba(199, 167, 255, 0.35);
+      background: #000;
+
+      box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.40),
+        0 0 60px rgba(183, 124, 255, 0.14);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 32px 20px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+      background: rgba(11, 7, 17, 0.92);
+
+      text-align: center;
+      color: #796d84;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .info-grid,
+      .price-grid,
+      .total-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quest-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      .event-label {
+        display: none;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .shop-highlight,
+      .totals {
+        padding: 25px 21px;
+      }
+
+      .quest-card,
+      .info-card {
+        padding: 23px 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <div class="event-label">
+        EVENT GUIDE
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+      <img
+        src="Images/Events/firstborn-force-event-guide.png"
+        alt="Firstborn Force Event Guide"
+      >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        BURIED TRUTHS • EVENT GUIDE
+      </div>
+
+      <h1>FIRSTBORN FORCE</h1>
+
+      <div class="subtitle">
+        QUESTS • REWARDS • EVENT COINS • STRATEGY
+      </div>
+
+      <p>
+        Ancient Awakening marks the arrival of Metida, the new Elarite
+        Super Titan. The seven-day event contains three connected
+        subevents: Firstborn Force, Unstable Equilibrium and Ancient
+        Awakening.
+      </p>
+
+      <p>
+        This guide focuses on the main event systems, Event Shop,
+        Exclusive Bundles, Titan Brawls and all eight tabs of
+        Firstborn Force.
+      </p>
+
+      <div class="purple-line"></div>
+
+    </section>
+
+
+    <!-- QUICK NAV -->
+
+    <nav class="quick-nav">
+      <a href="#main-event">MAIN EVENT</a>
+      <a href="#shop">EVENT SHOP</a>
+      <a href="#brawls">TITAN BRAWLS</a>
+      <a href="#quests">8 QUEST TABS</a>
+      <a href="#totals">COIN TOTALS</a>
+      <a href="#video">VIDEO GUIDE</a>
+    </nav>
+
+
+    <!-- MAIN EVENT -->
+
+    <section class="section" id="main-event">
+
+      <div class="section-head">
+
+        <div class="section-kicker">
+          ANCIENT AWAKENING
+        </div>
+
+        <h2>THE MAIN EVENT</h2>
+
+        <p>
+          The Ancient Awakening event screen brings the main activities
+          together: event quests, the Event Shop, Exclusive Bundles,
+          Titan Brawls, the Ancients Pass and Emerald offers.
+        </p>
+
+      </div>
+
+
+      <div class="info-grid">
+
+        <article class="info-card">
+          <div class="label">EVENT STRUCTURE</div>
+          <h3>Three Subevents</h3>
+          <p>
+            Firstborn Force, Unstable Equilibrium and Ancient Awakening
+            are connected across the seven-day event.
+          </p>
+        </article>
+
+
+        <article class="info-card">
+          <div class="label">OUR MAIN COUNT</div>
+          <h3>Event Coins</h3>
+          <p>
+            This guide tracks the Event Coins available from Firstborn
+            Force. Other rewards matter, but they are not added to the
+            Event Coin total.
+          </p>
+        </article>
+
+
+        <article class="info-card">
+          <div class="label">IMPORTANT</div>
+          <h3>Theoretical Maximums</h3>
+          <p>
+            Daily totals assume every listed milestone can be completed
+            on every event day. They are maximum possibilities, not
+            guaranteed earnings.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- EVENT SHOP -->
+
+    <section class="section" id="shop">
+
+      <div class="section-head">
+
+        <div class="section-kicker">
+          SPENDING EVENT COINS
+        </div>
+
+        <h2>EVENT SHOP</h2>
+
+        <p>
+          The headline rewards are Metida's Primordial Skin and its
+          Skin+ upgrade. If these are your priority, your Event Coin
+          spending needs to be planned around their combined cost.
+        </p>
+
+      </div>
+
+
+      <div class="shop-highlight">
+
+        <h3>METIDA — PRIMORDIAL SKIN PATH</h3>
+
+        <p>
+          The Primordial Skin costs 100,000 Event Coins. Once Metida is
+          obtained and her Primordial Skin is unlocked, the Skin+ becomes
+          available for another 400,000 Event Coins.
+        </p>
+
+
+        <div class="price-grid">
+
+          <div class="price">
+            <div class="name">PRIMORDIAL SKIN</div>
+            <div class="value">100,000</div>
+            <div class="small">EVENT COINS</div>
+          </div>
+
+
+          <div class="price">
+            <div class="name">SKIN+ UPGRADE</div>
+            <div class="value">400,000</div>
+            <div class="small">EVENT COINS</div>
+          </div>
+
+
+          <div class="price">
+            <div class="name">BOTH</div>
+            <div class="value">500,000</div>
+            <div class="small">EVENT COINS TOTAL</div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="strategy">
+
+        <h3>SKIN+ EFFECT</h3>
+
+        <p>
+          The Skin+ doubles the skin bonus shown in the shop. At the
+          displayed maximum, the Health bonus rises from 10,000 to
+          5,255,950. For players seriously developing Metida, this makes
+          the skin path one of the biggest Event Coin decisions of the
+          event.
+        </p>
+
+      </div>
+
+
+      <div class="info-grid" style="margin-top: 25px;">
+
+        <article class="info-card">
+          <div class="label">OTHER SHOP OPTIONS</div>
+          <h3>Titan & Hero Resources</h3>
+          <p>
+            Metida fragments, Pallant and Orm fragments, Cascade and
+            Satori Relic Shards and Titan equipment fragments including
+            the <strong>Elarite Crown</strong>.
+          </p>
+        </article>
+
+
+        <article class="info-card">
+          <div class="label">RESOURCE OPTIONS</div>
+          <h3>Development Resources</h3>
+          <p>
+            Titan Skin Stones, Titan Potions, Elemental Spheres,
+            Summoning Spheres and Fairy Dust are also available.
+          </p>
+        </article>
+
+
+        <article class="info-card">
+          <div class="label">SHOP TIMER</div>
+          <h3>24 Extra Hours</h3>
+          <p>
+            The Event Shop remains open for 24 hours after the event
+            ends, allowing already-earned Event Coins to be spent after
+            the quests close.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- BUNDLES / BRAWLS -->
+
+    <section class="section" id="brawls">
+
+      <div class="section-head">
+
+        <div class="section-kicker">
+          ADDITIONAL EVENT SYSTEMS
+        </div>
+
+        <h2>BUNDLES & TITAN BRAWLS</h2>
+
+      </div>
+
+
+      <div class="info-grid">
+
+        <article class="info-card">
+
+          <div class="label">EXCLUSIVE BUNDLES</div>
+
+          <h3>Resources & VIP Points</h3>
+
+          <p>
+            The bundles shown contain different combinations of Rune
+            Stones and VIP Points alongside resources such as Elemental
+            Spheres, Fairy Dust, Bottled Energy, Titan Potions,
+            Summoning Spheres and Gold.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="label">TITAN BRAWLS</div>
+
+          <h3>Test Metida Maxed</h3>
+
+          <p>
+            All Titans in the Brawls are maxed. This gives players a
+            chance to observe Metida at maximum development on both
+            attack and defense before deciding how heavily to invest.
+          </p>
+
+        </article>
+
+
+        <article class="info-card">
+
+          <div class="label">BRAWL QUEST</div>
+
+          <h3>500 Event Coins</h3>
+
+          <p>
+            The Brawls show a quest rewarding
+            <strong>500 Event Coins for five victories</strong>.
+            Watch its reset while Brawls are active. Eternal Marks
+            belong to the Brawls' own shop.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="strategy">
+
+        <h3>EMERALD OFFERS</h3>
+
+        <p>
+          The four-times Emerald purchase bonus is scheduled for the
+          second part of the event. Players already planning an Emerald
+          purchase should keep that timing in mind.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- QUESTS -->
+
+    <section class="section" id="quests">
+
+      <div class="section-head">
+
+        <div class="section-kicker">
+          FIRSTBORN FORCE
+        </div>
+
+        <h2>ALL 8 QUEST TABS</h2>
+
+        <p>
+          Most quests shown reset daily. Seven-day totals therefore
+          assume every milestone in the relevant tab is completed on
+          every event day. Generous Soul is separated because it requires
+          VIP Points.
+        </p>
+
+      </div>
+
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>TAB</th>
+              <th>MAIN REQUIREMENT</th>
+              <th>COINS / DAY</th>
+              <th>7-DAY MAX</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><strong>Day After Day</strong></td>
+              <td>Daily Login</td>
+              <td class="coins">300</td>
+              <td class="coins">2,100</td>
+            </tr>
+
+            <tr class="vip-row">
+              <td><strong>Generous Soul</strong></td>
+              <td>VIP Points</td>
+              <td class="coins">25,250</td>
+              <td class="coins">176,750</td>
+            </tr>
+
+            <tr>
+              <td><strong>United Front</strong></td>
+              <td>Guild Activity</td>
+              <td class="coins">10,500</td>
+              <td class="coins">73,500</td>
+            </tr>
+
+            <tr>
+              <td><strong>Hidden Reserves</strong></td>
+              <td>Spend Fairy Dust</td>
+              <td class="coins">6,950</td>
+              <td class="coins">48,650</td>
+            </tr>
+
+            <tr>
+              <td><strong>Summoning Titans</strong></td>
+              <td>Summoning Circle</td>
+              <td class="coins">5,000</td>
+              <td class="coins">35,000</td>
+            </tr>
+
+            <tr>
+              <td><strong>Tower Trophy</strong></td>
+              <td>Open Tower Chests</td>
+              <td class="coins">5,300</td>
+              <td class="coins">37,100</td>
+            </tr>
+
+            <tr>
+              <td><strong>Valkyrie's Artifacts</strong></td>
+              <td>Open Artifact Chests</td>
+              <td class="coins">3,850</td>
+              <td class="coins">26,950</td>
+            </tr>
+
+            <tr>
+              <td><strong>Payback Time</strong></td>
+              <td>Raid Leader Boss Defeats</td>
+              <td class="coins">1,750</td>
+              <td class="coins">12,250</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+
+      <div class="quest-grid">
+
+        <!-- 1 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 01</div>
+
+          <h3>Day After Day</h3>
+
+          <div class="objective">
+            LOG IN EVERY DAY
+          </div>
+
+          <p>
+            Seven login milestones each reward 300 Event Coins.
+            Completing all seven also provides Titan Skin Stones.
+          </p>
+
+          <div class="quest-total">
+            EVENT TOTAL: 2,100 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 2 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 02 • VIP</div>
+
+          <h3>Generous Soul</h3>
+
+          <div class="objective">
+            EARN VIP POINTS EACH DAY
+          </div>
+
+          <p>
+            The seven daily milestones provide a combined 25,250 Event
+            Coins per day. Because access depends on obtaining VIP Points,
+            this tab is kept separate from the standard Firstborn Force
+            total.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 176,750 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 3 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 03</div>
+
+          <h3>United Front</h3>
+
+          <div class="objective">
+            250 → 4,500 GUILD ACTIVITY
+          </div>
+
+          <p>
+            The full daily ladder provides 10,500 Event Coins. Other
+            rewards include Pallant fragments, Elemental Spheres, Titan
+            Potions, Titan Skin Stones, Fairy Dust, Adventure resources,
+            Season Points and Mastery Crystals.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 73,500 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 4 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 04</div>
+
+          <h3>Hidden Reserves</h3>
+
+          <div class="objective">
+            SPEND 100 → 10,000 FAIRY DUST
+          </div>
+
+          <p>
+            Fifteen daily milestones provide 6,950 Event Coins. Rewards
+            shown also include Orm fragments, Titan resources, Red Gear
+            Fragments, Adventure resources, Rune Spheres, Meta Cubes,
+            Season Points and Large Skin Stone Chests.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 48,650 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 5 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 05</div>
+
+          <h3>Summoning Titans</h3>
+
+          <div class="objective">
+            3 • 5 • 10 • 20 • 30 • 40 • 50 SUMMONS
+          </div>
+
+          <p>
+            Completing the full daily ladder provides 5,000 Event Coins.
+            Other rewards include Season Points, Titan Skin Stones,
+            Adventure Coins, Red Gear Fragments, Mastery Crystals and
+            Rune Spheres.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 35,000 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 6 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 06</div>
+
+          <h3>Tower Trophy</h3>
+
+          <div class="objective">
+            2 • 5 • 8 • 10 • 15 • 20 • 25 • 30 CHESTS
+          </div>
+
+          <p>
+            The full daily ladder provides 5,300 Event Coins. Only
+            11 free attempts are available, so reaching the higher
+            milestones requires Emerald spending and should be evaluated
+            individually.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 37,100 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 7 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 07</div>
+
+          <h3>Valkyrie's Artifacts</h3>
+
+          <div class="objective">
+            5 • 10 • 20 • 30 • 35 • 40 ARTIFACT CHESTS
+          </div>
+
+          <p>
+            The full ladder awards 3,850 Event Coins per day. Adventure
+            resources, Pallant Soul Stone fragments, Fairy Dust, Meta
+            Cubes and Season Points are also shown among the rewards.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 26,950 EVENT COINS
+          </div>
+
+        </article>
+
+
+        <!-- 8 -->
+
+        <article class="quest-card">
+
+          <div class="quest-number">TAB 08</div>
+
+          <h3>Payback Time</h3>
+
+          <div class="objective">
+            1 • 2 • 3 • 4 • 6 • 8 • 10 RAID LEADER BOSSES
+          </div>
+
+          <p>
+            Completing all seven milestones provides 1,750 Event Coins
+            per day. Additional rewards include Realm Resources,
+            Elemental Spheres, Titan Skin Stones, Fairy Dust, Season
+            Points, Titan Potions and five-minute General Speedups.
+          </p>
+
+          <div class="quest-total">
+            7-DAY MAX: 12,250 EVENT COINS
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="strategy">
+
+        <h3>DO NOT PLAN AROUND THE MAXIMUM BLINDLY</h3>
+
+        <p>
+          The maximum requires demanding daily targets involving Fairy
+          Dust, summons, Tower and Artifact Chests, Guild Activity and
+          Raid Leader victories. Calculate the milestones you can
+          realistically complete before treating the theoretical totals
+          as part of your Event Coin budget.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TOTALS -->
+
+    <section class="totals" id="totals">
+
+      <div class="eyebrow">
+        FIRSTBORN FORCE • EVENT COIN COUNT
+      </div>
+
+      <h2>THE COMPLETE THEORETICAL TOTAL</h2>
+
+
+      <div class="total-grid">
+
+        <div class="total-box">
+
+          <div class="label">
+            NON-VIP QUEST TABS
+          </div>
+
+          <div class="number">
+            235,550
+          </div>
+
+        </div>
+
+
+        <div class="total-box">
+
+          <div class="label">
+            GENEROUS SOUL • VIP
+          </div>
+
+          <div class="number">
+            +176,750
+          </div>
+
+        </div>
+
+
+        <div class="total-box gold">
+
+          <div class="label">
+            FULL THEORETICAL MAX
+          </div>
+
+          <div class="number">
+            412,300
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <p class="totals-note">
+        Across the seven tabs outside VIP spending, Firstborn Force
+        provides a theoretical maximum of <strong>235,550 Event
+        Coins</strong>. Generous Soul can add another
+        <strong>176,750</strong>, bringing the full theoretical total
+        to <strong>412,300 Event Coins</strong> if every VIP milestone
+        and every other daily milestone is completed.
+      </p>
+
+
+      <div class="strategy">
+
+        <h3>WHAT DOES THAT MEAN FOR METIDA?</h3>
+
+        <p>
+          Metida's Primordial Skin costs 100,000 Event Coins, while
+          obtaining the Skin and Skin+ requires 500,000 Event Coins in
+          total. Firstborn Force alone therefore does not tell us the
+          complete event economy. Unstable Equilibrium and Ancient
+          Awakening can contribute additional Event Coins, and the final
+          decision should consider the totals across all three subevents.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+      <div class="eyebrow">
+        FULL VIDEO GUIDE
+      </div>
+
+      <h2>FIRSTBORN FORCE — COMPLETE BREAKDOWN</h2>
+
+      <p>
+        Watch the full Gods of Alliance guide for the complete walkthrough
+        of the Event Shop, Titan Brawls, bundles, all eight Firstborn Force
+        tabs and the Event Coin calculations.
+      </p>
+
+
+      <div class="video-wrapper">
+
+        <iframe
+          src="https://www.youtube.com/embed/LLzRUbqK21A"
+          title="Firstborn Force Event Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
