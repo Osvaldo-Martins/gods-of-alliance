@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Arachne Guide | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Arachne guide for Hero Wars Alliance covering skills, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies and counters."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/arachne.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Arachne Guide | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Build Arachne with the right skills, skins, glyphs, artifacts and talismans, and explore useful synergies and counters."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/arachne.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/arachne-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Arachne Hero Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Arachne Guide | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Complete Arachne Hero Wars Alliance guide covering development, control mechanics, synergies and counters."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/arachne-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #65ff8d;
+      --green-strong: #20e967;
+      --green-dark: #0c6f39;
+      --gold: #d8ad54;
+      --text: #ffffff;
+      --muted: #a8afa9;
+      --card: rgba(8, 15, 11, 0.93);
+      --border: rgba(74, 255, 130, 0.18);
+    }
+
+    body {
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 12% 15%,
+          rgba(31, 233, 103, 0.15),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 88% 38%,
+          rgba(16, 116, 58, 0.14),
+          transparent 28%
+        ),
+        radial-gradient(
+          circle at 50% 100%,
+          rgba(46, 255, 116, 0.07),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #07100b 0%,
+          #050907 38%,
+          #020403 72%,
+          #000000 100%
+        );
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+
+      background:
+        linear-gradient(
+          115deg,
+          transparent 0 20%,
+          rgba(62, 255, 121, 0.025) 20.2% 20.5%,
+          transparent 20.7% 100%
+        ),
+        linear-gradient(
+          65deg,
+          transparent 0 76%,
+          rgba(62, 255, 121, 0.02) 76.2% 76.5%,
+          transparent 76.7% 100%
+        );
+    }
+
+    /* HEADER */
+
+    header {
+      border-bottom: 1px solid #17231b;
+      background: rgba(0, 4, 2, 0.94);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 82px;
+      padding: 0 35px;
+      margin: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--green);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 35px 100px;
+    }
+
+    /* COVER */
+
+    .cover {
+      overflow: hidden;
+      border: 1px solid rgba(70, 255, 128, 0.25);
+      background: #07100b;
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55),
+        0 0 55px rgba(26, 231, 92, 0.07);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+
+    /* INTRO */
+
+    .intro {
+      max-width: 920px;
+      margin: 55px auto 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 80px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .role {
+      margin-top: 18px;
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .intro p {
+      max-width: 800px;
+      margin: 26px auto 0;
+      color: #aeb5b0;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .green-line {
+      width: 72px;
+      height: 3px;
+      margin: 30px auto 0;
+      background: var(--green-strong);
+      box-shadow: 0 0 18px rgba(32, 233, 103, 0.5);
+    }
+
+    /* IDENTITY */
+
+    .identity {
+      max-width: 950px;
+      margin: 0 auto 75px;
+      padding: 30px 32px;
+
+      border: 1px solid rgba(74, 255, 130, 0.22);
+      border-left: 4px solid var(--green-strong);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(31, 233, 103, 0.075),
+          rgba(3, 9, 5, 0.75)
+        );
+    }
+
+    .identity strong {
+      color: var(--green);
+    }
+
+    .identity p {
+      color: #abb2ad;
+      font-size: 15px;
+      line-height: 1.85;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      margin-top: 78px;
+    }
+
+    .section-heading {
+      margin-bottom: 28px;
+    }
+
+    .section-label {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .section-heading h2 {
+      margin-top: 7px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.1;
+      font-weight: 900;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      margin-top: 12px;
+      color: #969d98;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* SKILLS */
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .skill-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card::after {
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      right: -50px;
+      bottom: -55px;
+      border: 1px solid rgba(61, 255, 120, 0.10);
+      border-radius: 50%;
+      box-shadow: 0 0 30px rgba(35, 255, 104, 0.04);
+    }
+
+    .skill-number {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 9px;
+    }
+
+    .skill-card h3 {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .skill-card p {
+      color: #a5aca7;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .skill-note {
+      margin-top: 17px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(75, 255, 131, 0.12);
+      color: #d3d8d4;
+      font-size: 13px;
+    }
+
+    /* PRIORITY CARDS */
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .priority-card {
+      padding: 31px;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .priority-card h3 {
+      color: var(--green);
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .priority-list {
+      list-style: none;
+      counter-reset: priority;
+    }
+
+    .priority-list li {
+      counter-increment: priority;
+      position: relative;
+      padding: 13px 0 13px 42px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+      color: #d1d5d2;
+      font-size: 14px;
+    }
+
+    .priority-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .priority-list li::before {
+      content: counter(priority);
+      position: absolute;
+      left: 0;
+      top: 11px;
+
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid rgba(75, 255, 131, 0.30);
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-note {
+      margin-top: 20px;
+      color: #8f9791;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* ARTIFACTS */
+
+    .artifact-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .artifact-card {
+      padding: 27px 22px;
+      text-align: center;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .artifact-position {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .artifact-card h3 {
+      font-size: 21px;
+      margin-bottom: 7px;
+    }
+
+    .artifact-card p {
+      color: #929a94;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    /* GIFT */
+
+    .gift-box {
+      padding: 34px;
+      border: 1px solid rgba(216, 173, 84, 0.32);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(216, 173, 84, 0.08),
+          rgba(6, 12, 8, 0.85)
+        );
+    }
+
+    .gift-box h3 {
+      color: var(--gold);
+      font-size: 25px;
+      margin-bottom: 9px;
+    }
+
+    .gift-box p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* TALISMANS */
+
+    .talisman-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .talisman-card {
+      padding: 31px;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .talisman-number {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 9px;
+    }
+
+    .talisman-card h3 {
+      font-size: 23px;
+      margin-bottom: 14px;
+    }
+
+    .stats {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    .talisman-card p {
+      color: #9fa6a1;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .availability {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 7px 10px;
+      border: 1px solid rgba(75, 255, 131, 0.20);
+      color: #cbd2cd;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    /* SYNERGY / COUNTERS */
+
+    .hero-name-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .hero-name {
+      padding: 20px 12px;
+      text-align: center;
+      border: 1px solid var(--border);
+      background: var(--card);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .hero-name span {
+      display: block;
+      margin-top: 5px;
+      color: #7f8982;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .counter-card {
+      padding: 21px 12px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      background: rgba(11, 13, 12, 0.94);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .counter-card span {
+      display: block;
+      margin-top: 6px;
+      color: #888f8a;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* BUILD SUMMARY */
+
+    .summary {
+      margin-top: 80px;
+      padding: 42px;
+      border: 1px solid rgba(74, 255, 130, 0.24);
+
+      background:
+        radial-gradient(
+          circle at 100% 0%,
+          rgba(31, 233, 103, 0.12),
+          transparent 34%
+        ),
+        rgba(5, 11, 7, 0.94);
+    }
+
+    .summary h2 {
+      font-size: 31px;
+      margin-bottom: 22px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px 35px;
+    }
+
+    .summary-item {
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: #aeb5b0;
+      font-size: 14px;
+    }
+
+    .summary-item strong {
+      color: var(--green);
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 85px;
+      text-align: center;
+    }
+
+    .video-section .section-label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .video-section h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      margin-bottom: 12px;
+    }
+
+    .video-section > p {
+      max-width: 720px;
+      margin: 0 auto 27px;
+      color: #959d97;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden;
+      border: 1px solid rgba(74, 255, 130, 0.23);
+      background: #000;
+      box-shadow: 0 25px 65px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid #172019;
+      padding: 30px 20px;
+      text-align: center;
+      color: #535b55;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .skill-grid,
+      .priority-grid,
+      .talisman-grid,
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-name-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .artifact-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      main {
+        padding: 30px 20px 70px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .identity,
+      .skill-card,
+      .priority-card,
+      .talisman-card,
+      .gift-box,
+      .summary {
+        padding: 24px 21px;
+      }
+
+      .hero-name-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- COVER -->
+
+    <section class="cover">
+      <img
+        src="Images/Hero-Guides/arachne-guide.png"
+        alt="Arachne Hero Guide"
+      >
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+      <div class="eyebrow">
+        HERO GUIDE • WAY OF PROGRESS
+      </div>
+
+      <h1>ARACHNE</h1>
+
+      <div class="role">
+        CONTROL • MIDDLE LINE
+      </div>
+
+      <p>
+        Arachne plays a different game. Her job is not simply to trade
+        damage with the enemy. She disrupts the battle through repeated
+        stuns, targets vulnerable Heroes, applies poison and creates
+        opportunities that the rest of her team can exploit.
+      </p>
+
+      <div class="green-line"></div>
+
+    </section>
+
+
+    <!-- IDENTITY -->
+
+    <section class="identity">
+      <p>
+        <strong>ARACHNE'S IDENTITY:</strong>
+        control the enemy's time. Her kit can interrupt groups, reach
+        low-Health targets and keep pressure on opponents through
+        Neurotoxin. To do that consistently, she needs both the offensive
+        stats that strengthen her Skills and enough survivability to remain
+        active in the fight.
+      </p>
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">SKILLS</div>
+        <h2>ARACHNE'S CONTROL KIT</h2>
+        <p class="section-intro">
+          Arachne combines repeated stuns, direct access to vulnerable
+          enemies and Pure Damage pressure.
+        </p>
+      </div>
+
+      <div class="skill-grid">
+
+        <article class="skill-card">
+          <div class="skill-number">SKILL 1</div>
+          <h3>Demolition Robot</h3>
+
+          <p>
+            Arachne summons a machine that charges toward the first enemy
+            it encounters. The machine explodes and stuns enemies in the
+            area for five seconds.
+          </p>
+
+          <div class="skill-note">
+            Scales with Magic Attack. Grouping or compressing the enemy
+            formation can allow the stun to affect more Heroes.
+          </div>
+        </article>
+
+
+        <article class="skill-card">
+          <div class="skill-number">SKILL 2</div>
+          <h3>Teleport</h3>
+
+          <p>
+            Arachne jumps directly toward the enemy with the lowest Health,
+            attacks that target with her claws and then jumps back.
+          </p>
+
+          <div class="skill-note">
+            Scales with Magic Attack and gives Arachne a way to reach a
+            vulnerable Hero without necessarily working through the
+            frontline first.
+          </div>
+        </article>
+
+
+        <article class="skill-card">
+          <div class="skill-number">SKILL 3</div>
+          <h3>Underground Strike</h3>
+
+          <p>
+            Arachne attacks the nearest enemy, dealing damage and stunning
+            that Hero and nearby enemies for five seconds.
+          </p>
+
+          <div class="skill-note">
+            Positioning matters. When enemies are close together, one
+            activation can disrupt several Heroes at once.
+          </div>
+        </article>
+
+
+        <article class="skill-card">
+          <div class="skill-number">SKILL 4</div>
+          <h3>Neurotoxin</h3>
+
+          <p>
+            Any enemy damaged by Arachne becomes poisoned for three seconds.
+            This adds Pure Damage to her pressure.
+          </p>
+
+          <div class="skill-note">
+            Pure Damage does not need to pass through Armor or Magic Defense,
+            and Dodge does not avoid it.
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS + GLYPHS -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">DEVELOPMENT</div>
+        <h2>SKINS & GLYPHS</h2>
+        <p class="section-intro">
+          Magic Attack sits at the center of Arachne's development because
+          it repeatedly contributes to the effectiveness of her Skills.
+        </p>
+      </div>
+
+      <div class="priority-grid">
+
+        <article class="priority-card">
+          <h3>SKIN PRIORITY</h3>
+
+          <ol class="priority-list">
+            <li>Magic Attack</li>
+            <li>Second Magic Attack</li>
+            <li>Default Intelligence</li>
+            <li>Magic Penetration + Super Skin</li>
+            <li>Health</li>
+            <li>Armor</li>
+          </ol>
+
+          <p class="priority-note">
+            The first investments strengthen the stats driving Arachne's
+            Skills. Health then helps her remain active long enough to keep
+            controlling the fight, while Armor comes last.
+          </p>
+        </article>
+
+
+        <article class="priority-card">
+          <h3>GLYPH PRIORITY</h3>
+
+          <ol class="priority-list">
+            <li>Magic Attack</li>
+            <li>Intelligence</li>
+            <li>Magic Penetration</li>
+            <li>Health</li>
+            <li>Armor</li>
+          </ol>
+
+          <p class="priority-note">
+            Take all five Glyphs to Level 40. Beyond that point, further
+            investment should depend on your development objectives,
+            including whether you are pursuing Skill Class progression.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">ARTIFACTS</div>
+        <h2>ARTIFACT PRIORITY</h2>
+      </div>
+
+      <div class="artifact-row">
+
+        <article class="artifact-card">
+          <div class="artifact-position">1ST PRIORITY</div>
+          <h3>Book</h3>
+          <p>
+            Provides Magic Attack and Health, strengthening Arachne's
+            Skills while also improving survivability.
+          </p>
+        </article>
+
+        <article class="artifact-card">
+          <div class="artifact-position">2ND PRIORITY</div>
+          <h3>Ring</h3>
+          <p>
+            Provides Intelligence, supporting her Skills and adding some
+            additional Magic Defense.
+          </p>
+        </article>
+
+        <article class="artifact-card">
+          <div class="artifact-position">3RD PRIORITY</div>
+          <h3>Weapon</h3>
+          <p>
+            Provides a teamwide Armor bonus when Arachne activates her
+            first Skill.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">GIFT OF THE ELEMENTS</div>
+        <h2>MAX IT</h2>
+      </div>
+
+      <div class="gift-box">
+        <h3>GIFT OF THE ELEMENTS — MAX</h3>
+
+        <p>
+          Arachne needs solid fundamental stats. Her offensive development
+          keeps her Skills meaningful, while additional survivability gives
+          her more time to continue applying control. Being a Control Hero
+          does not remove the need for strong base development.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">TALISMANS</div>
+        <h2>TWO DIFFERENT OPTIONS</h2>
+      </div>
+
+      <div class="talisman-grid">
+
+        <article class="talisman-card">
+          <div class="talisman-number">TALISMAN 1</div>
+          <h3>Development Option</h3>
+
+          <div class="stats">
+            INTELLIGENCE • MAGIC ATTACK
+          </div>
+
+          <p>
+            A natural fit with Arachne's development. Intelligence and
+            Magic Attack both support the direction of her build and the
+            Skills at the center of her kit.
+          </p>
+
+          <div class="availability">
+            ETERNAL FRONTIER SHOP • PERMANENTLY AVAILABLE
+          </div>
+        </article>
+
+
+        <article class="talisman-card">
+          <div class="talisman-number">TALISMAN 2</div>
+          <h3>Offensive Option</h3>
+
+          <div class="stats">
+            MAGICAL CRITICAL HIT CHANCE • MAGIC PENETRATION
+          </div>
+
+          <p>
+            A more offensive option combining penetration against enemy
+            Magic Defense with the possibility of magical critical
+            pressure.
+          </p>
+
+          <div class="availability">
+            SPECIAL EVENTS
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">SYNERGIES</div>
+        <h2>HEROES THAT CAN SUPPORT HER CONTROL</h2>
+
+        <p class="section-intro">
+          These are examples directly connected to the mechanics discussed
+          in the guide rather than a fixed five-Hero team recommendation.
+        </p>
+      </div>
+
+      <div class="hero-name-grid">
+
+        <div class="hero-name">
+          Dante
+          <span>DISPLACEMENT</span>
+        </div>
+
+        <div class="hero-name">
+          Qing Mao
+          <span>DISPLACEMENT</span>
+        </div>
+
+        <div class="hero-name">
+          Judge
+          <span>ADDITIONAL CONTROL</span>
+        </div>
+
+        <div class="hero-name">
+          Polaris
+          <span>CONTROL SYNERGY</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="section">
+
+      <div class="section-heading">
+        <div class="section-label">COUNTERS</div>
+        <h2>WAYS TO DISRUPT ARACHNE</h2>
+
+        <p class="section-intro">
+          Arachne can bring extensive control, but teams can attack the
+          mechanics she depends on or punish her for repeatedly using them.
+        </p>
+      </div>
+
+      <div class="counter-grid">
+
+        <div class="counter-card">
+          Soleil
+          <span>PUNISHES CONTROL</span>
+        </div>
+
+        <div class="counter-card">
+          Thea
+          <span>SILENCE</span>
+        </div>
+
+        <div class="counter-card">
+          Crow
+          <span>SILENCE</span>
+        </div>
+
+        <div class="counter-card">
+          Mushy and Shroom
+          <span>SILENCE</span>
+        </div>
+
+        <div class="counter-card">
+          Corvus
+          <span>ALTAR PRESSURE</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+
+    <section class="summary">
+
+      <div class="eyebrow">
+        BUILD SUMMARY
+      </div>
+
+      <h2>ARACHNE QUICK REFERENCE</h2>
+
+      <div class="summary-grid">
+
+        <div class="summary-item">
+          <strong>Role:</strong> Control • Middle Line
+        </div>
+
+        <div class="summary-item">
+          <strong>Faction:</strong> Way of Progress
+        </div>
+
+        <div class="summary-item">
+          <strong>Skins:</strong>
+          MA → MA → Intelligence → MP → Health → Armor
+        </div>
+
+        <div class="summary-item">
+          <strong>Glyphs:</strong>
+          MA → Intelligence → MP → Health → Armor
+        </div>
+
+        <div class="summary-item">
+          <strong>Artifacts:</strong>
+          Book → Ring → Weapon
+        </div>
+
+        <div class="summary-item">
+          <strong>Gift of the Elements:</strong> MAX
+        </div>
+
+        <div class="summary-item">
+          <strong>Talisman 1:</strong>
+          Intelligence + Magic Attack
+        </div>
+
+        <div class="summary-item">
+          <strong>Talisman 2:</strong>
+          Magical Critical Hit Chance + Magic Penetration
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section">
+
+      <span class="section-label">
+        FULL VIDEO GUIDE
+      </span>
+
+      <h2>WATCH THE COMPLETE ARACHNE GUIDE</h2>
+
+      <p>
+        Watch the full Gods of Alliance video for the complete explanation
+        of Arachne's Skills, development priorities, synergies and counters.
+      </p>
+
+      <div class="video-wrapper">
+
+        <iframe
+          src="https://www.youtube.com/embed/Ji6RiORTF4g"
+          title="Arachne Complete Hero Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
