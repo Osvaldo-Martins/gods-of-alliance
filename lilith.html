@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lilith Guide | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Lilith guide for Hero Wars Alliance. Skills, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies and counters."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/lilith.html"
+  >
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Lilith Guide | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Complete Lilith guide covering her Health and Magic Attack scaling, development priorities, Chaos synergies, talismans and counters."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/lilith.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/lilith-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Lilith Full Guide - Gods of Alliance"
+  >
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Lilith Guide | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Skills, skins, glyphs, artifacts, talismans, Chaos synergies and counters for Lilith in Hero Wars Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/lilith-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #070607;
+      --panel: rgba(16, 11, 13, 0.96);
+      --panel-light: rgba(22, 13, 16, 0.96);
+      --border: rgba(255, 84, 44, 0.18);
+      --border-strong: rgba(255, 84, 44, 0.42);
+      --red: #ff3d32;
+      --crimson: #d71f3f;
+      --orange: #ff7b22;
+      --gold: #e9a923;
+      --white: #ffffff;
+      --text: #d4d2d3;
+      --muted: #969297;
+      --purple: #c14dff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 12% 13%,
+          rgba(255, 65, 25, 0.14),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 87% 28%,
+          rgba(190, 20, 55, 0.10),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 50% 65%,
+          rgba(255, 101, 25, 0.045),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #0d090b 0%,
+          #080608 48%,
+          #050405 100%
+        );
+
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    header {
+      background: rgba(5, 4, 5, 0.97);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--orange);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .article-hero {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 72px 35px 45px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(48px, 8vw, 78px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+
+      text-shadow:
+        0 0 30px rgba(255, 45, 45, 0.12);
+    }
+
+    .hero-role {
+      margin-top: 18px;
+
+      color: #ff8064;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      max-width: 790px;
+      margin: 22px auto 0;
+
+      color: #aaa6aa;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-line {
+      width: 78px;
+      height: 3px;
+      margin: 28px auto 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--red),
+          var(--orange)
+        );
+
+      box-shadow:
+        0 0 20px rgba(255, 65, 35, 0.35);
+    }
+
+    /* COVER */
+
+    .cover-wrap {
+      max-width: 1120px;
+      margin: 0 auto 55px;
+      padding: 0 35px;
+    }
+
+    .cover {
+      overflow: hidden;
+
+      background: #090708;
+      border: 1px solid rgba(255, 73, 42, 0.25);
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5),
+        0 0 45px rgba(255, 60, 25, 0.05);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 35px 100px;
+    }
+
+    .intro {
+      padding: 30px;
+      margin-bottom: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(38, 15, 15, 0.94),
+          rgba(12, 10, 12, 0.97)
+        );
+
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+    }
+
+    .intro p {
+      color: #c5c1c3;
+      font-size: 15px;
+    }
+
+    .intro strong {
+      color: #ffffff;
+    }
+
+    /* QUICK NAV */
+
+    .quick-nav {
+      margin: 30px 0 55px;
+      padding: 24px;
+
+      background: rgba(10, 8, 10, 0.92);
+      border: 1px solid var(--border);
+    }
+
+    .quick-title {
+      margin-bottom: 14px;
+
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .quick-links a {
+      padding: 8px 11px;
+
+      background: #151013;
+      border: 1px solid #302428;
+
+      color: #cbc7c9;
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .quick-links a:hover {
+      color: #ffffff;
+      border-color: var(--border-strong);
+    }
+
+    /* SECTIONS */
+
+    .article-section {
+      margin-top: 65px;
+    }
+
+    .section-kicker {
+      margin-bottom: 7px;
+
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2.5px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      color: #ffffff;
+      font-size: clamp(28px, 4vw, 37px);
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    h3 {
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    .article-section > p {
+      margin-top: 14px;
+
+      color: #b8b3b6;
+      font-size: 14px;
+    }
+
+    .article-section strong {
+      color: #ffffff;
+    }
+
+    /* SKILL CARDS */
+
+    .cards {
+      display: grid;
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .detail-card {
+      padding: 27px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      margin-bottom: 13px;
+    }
+
+    .card-label {
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .detail-card p {
+      color: #b1acaf;
+      font-size: 14px;
+    }
+
+    /* ENGINE */
+
+    .engine {
+      margin-top: 25px;
+      padding: 30px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(49, 14, 16, 0.92),
+          rgba(13, 9, 12, 0.97)
+        );
+
+      border: 1px solid rgba(255, 62, 42, 0.25);
+    }
+
+    .engine-line {
+      padding: 12px 0;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      color: #c7c2c5;
+      font-size: 14px;
+    }
+
+    .engine-line:last-child {
+      border-bottom: none;
+    }
+
+    .engine-line strong {
+      color: #ff8265;
+    }
+
+    /* PRIORITIES */
+
+    .priority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .priority {
+      padding: 20px 12px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .priority-number {
+      margin-bottom: 8px;
+
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .priority-name {
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+
+    /* INFO */
+
+    .info-box {
+      margin-top: 24px;
+      padding: 25px;
+
+      background: rgba(16, 11, 14, 0.95);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--red);
+    }
+
+    .info-box p {
+      color: #b6b0b4;
+      font-size: 14px;
+    }
+
+    /* ARTIFACTS */
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .build-card {
+      padding: 25px 20px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+
+      text-align: center;
+    }
+
+    .build-number {
+      color: var(--red);
+      font-size: 11px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .build-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .build-card p {
+      color: #999397;
+      font-size: 12px;
+    }
+
+    /* TALISMANS */
+
+    .talisman-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .talisman {
+      padding: 27px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(41, 14, 31, 0.95),
+          rgba(13, 9, 12, 0.97)
+        );
+
+      border: 1px solid rgba(193, 77, 255, 0.23);
+    }
+
+    .talisman-label {
+      margin-bottom: 7px;
+
+      color: var(--purple);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .talisman h3 {
+      margin-bottom: 12px;
+    }
+
+    .talisman p {
+      color: #aca6ac;
+      font-size: 13px;
+    }
+
+    .availability {
+      margin-top: 15px;
+      padding-top: 14px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      color: #d2ced1;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    /* SYNERGIES */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .hero-card {
+      padding: 22px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+
+    .hero-card h3 {
+      margin-bottom: 8px;
+      font-size: 17px;
+    }
+
+    .hero-card p {
+      color: #9d979b;
+      font-size: 12px;
+    }
+
+    /* COUNTERS */
+
+    .counter-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+      margin-top: 25px;
+    }
+
+    .counter-card {
+      padding: 26px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(35, 13, 15, 0.96),
+          rgba(11, 9, 11, 0.97)
+        );
+
+      border: 1px solid rgba(255, 75, 65, 0.19);
+    }
+
+    .counter-label {
+      margin-bottom: 7px;
+
+      color: #ff7465;
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .counter-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .counter-card p {
+      color: #aaa5a8;
+      font-size: 13px;
+    }
+
+    /* FINAL */
+
+    .final-box {
+      margin-top: 25px;
+      padding: 31px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(45, 14, 16, 0.95),
+          rgba(11, 9, 11, 0.98)
+        );
+
+      border: 1px solid rgba(255, 68, 42, 0.25);
+    }
+
+    .final-box p {
+      margin-top: 12px;
+
+      color: #bbb5b8;
+      font-size: 14px;
+    }
+
+    .final-box p:first-child {
+      margin-top: 0;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      margin-top: 78px;
+      padding-top: 52px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .video-section .section-kicker,
+    .video-section h2,
+    .video-section > p {
+      text-align: center;
+    }
+
+    .video-section > p {
+      max-width: 700px;
+      margin: 0 auto 27px;
+
+      color: #9b9599;
+      font-size: 14px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+
+      aspect-ratio: 16 / 9;
+
+      background: #000000;
+      border: 1px solid rgba(255, 62, 42, 0.28);
+
+      box-shadow:
+        0 25px 65px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 34px 20px;
+
+      border-top: 1px solid #1d181a;
+
+      text-align: center;
+
+      color: #5b5659;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .priority-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .three-grid,
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      .article-hero {
+        padding: 55px 20px 35px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .cover-wrap {
+        padding: 0 20px;
+        margin-bottom: 40px;
+      }
+
+      main {
+        padding: 0 20px 70px;
+      }
+
+      .talisman-grid,
+      .counter-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-head {
+        display: block;
+      }
+
+      .card-label {
+        margin-top: 7px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .priority-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a class="back-link" href="heroes.html">
+        ← HERO GUIDES
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="article-hero">
+
+    <div class="eyebrow">
+      COMPLETE HERO GUIDE
+    </div>
+
+    <h1>LILITH</h1>
+
+    <div class="hero-role">
+      MAGE • WAY OF CHAOS • BACK LINE
+    </div>
+
+    <p class="subtitle">
+      Survive, scale and overwhelm the enemy. Lilith combines area
+      Magic Damage, permanent Health growth and Magic Defense reduction
+      with powerful Chaos interactions.
+    </p>
+
+    <div class="hero-line"></div>
+
+  </section>
+
+
+  <div class="cover-wrap">
+    <div class="cover">
+
+      <img
+        src="Images/Hero-Guides/lilith-guide.png"
+        alt="Lilith Full Guide"
+      >
+
+    </div>
+  </div>
+
+
+  <main>
+
+    <section class="intro">
+
+      <p>
+        Lilith is a <strong>Chaos Mage</strong> positioned on the
+        <strong>back line</strong>. Her strength comes from scaling
+        throughout the battle: increasing her Health, sacrificing
+        Health for Magic Attack and creating growing pressure as the
+        fight continues.
+      </p>
+
+    </section>
+
+
+    <nav class="quick-nav">
+
+      <div class="quick-title">
+        QUICK NAVIGATION
+      </div>
+
+      <div class="quick-links">
+
+        <a href="#skills">SKILLS</a>
+        <a href="#engine">CORE MECHANICS</a>
+        <a href="#skins">SKINS</a>
+        <a href="#glyphs">GLYPHS</a>
+        <a href="#artifacts">ARTIFACTS</a>
+        <a href="#gift">GIFT</a>
+        <a href="#talismans">TALISMANS</a>
+        <a href="#synergies">SYNERGIES</a>
+        <a href="#counters">COUNTERS</a>
+        <a href="#video">VIDEO</a>
+
+      </div>
+
+    </nav>
+
+
+    <!-- SKILLS -->
+
+    <section class="article-section" id="skills">
+
+      <div class="section-kicker">
+        LILITH'S KIT
+      </div>
+
+      <h2>SKILLS</h2>
+
+
+      <div class="cards">
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Underworld Seal</h3>
+            <div class="card-label">HEALTH SCALING</div>
+          </div>
+
+          <p>
+            Lilith places a demonic seal on the central enemy. It
+            explodes, dealing Magic Damage to the target and nearby
+            enemies. For every enemy hit and every allied Chaos hero
+            on the battlefield, Lilith permanently increases both her
+            <strong>current and maximum Health</strong>.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Demonic Fury</h3>
+            <div class="card-label">SUSTAINED DAMAGE</div>
+          </div>
+
+          <p>
+            For <strong>10 seconds</strong>, Lilith attacks twice with
+            every basic attack. Her strikes also target the central
+            enemy while dealing additional area Magic Damage,
+            increasing her sustained battlefield pressure.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Fire Breath</h3>
+            <div class="card-label">MAGIC DEFENSE REDUCTION</div>
+          </div>
+
+          <p>
+            Lilith breathes flames toward the central enemy, damaging
+            nearby opponents while reducing their
+            <strong>Magic Defense for 8 seconds</strong>. This creates
+            an important offensive window for allied Magic Damage
+            dealers.
+          </p>
+
+        </article>
+
+
+        <article class="detail-card">
+
+          <div class="card-head">
+            <h3>Sacrifice</h3>
+            <div class="card-label">SCALING ENGINE</div>
+          </div>
+
+          <p>
+            Whenever Lilith's Health is above
+            <strong>25%</strong>, she sacrifices
+            <strong>5% of her maximum Health</strong> before casting a
+            skill. In return, she gains a temporary Magic Attack bonus
+            based on the Health sacrificed. The bonus lasts
+            <strong>10 seconds</strong>.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- CORE -->
+
+    <section class="article-section" id="engine">
+
+      <div class="section-kicker">
+        HOW LILITH SCALES
+      </div>
+
+      <h2>THE LATE-BATTLE ENGINE</h2>
+
+      <p>
+        Lilith is designed around surviving long enough for her
+        mechanics to become increasingly difficult to contain.
+      </p>
+
+
+      <div class="engine">
+
+        <div class="engine-line">
+          <strong>Underworld Seal</strong>
+          permanently increases her current and maximum Health.
+        </div>
+
+        <div class="engine-line">
+          <strong>More Health</strong>
+          makes Lilith harder to eliminate and strengthens the value
+          of her Health-based mechanics.
+        </div>
+
+        <div class="engine-line">
+          <strong>Sacrifice</strong>
+          converts part of her maximum Health into temporary
+          Magic Attack.
+        </div>
+
+        <div class="engine-line">
+          <strong>Fire Breath</strong>
+          reduces enemy Magic Defense.
+        </div>
+
+        <div class="engine-line">
+          <strong>Demonic Fury</strong>
+          increases her sustained pressure across the enemy formation.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section class="article-section" id="skins">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>SKINS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">MAGIC ATTACK</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">MAGIC PENETRATION</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">HEALTH PLUS</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">DEFAULT SKIN</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">06</div>
+          <div class="priority-name">ARMOR</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Every Lilith ability scales from
+          <strong>Magic Attack</strong>, making it the first Skin
+          priority. Health development is also extremely important
+          because Lilith needs survivability to continue scaling and
+          her Health directly interacts with Underworld Seal and
+          Sacrifice.
+        </p>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          If Lilith receives another
+          <strong>Magic Penetration</strong> or
+          <strong>Health</strong> Skin in the future, it should
+          immediately receive serious priority consideration.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- GLYPHS -->
+
+    <section class="article-section" id="glyphs">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>GLYPHS</h2>
+
+
+      <div class="priority-grid">
+
+        <div class="priority">
+          <div class="priority-number">01</div>
+          <div class="priority-name">HEALTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">02</div>
+          <div class="priority-name">ARMOR</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">03</div>
+          <div class="priority-name">STRENGTH</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">04</div>
+          <div class="priority-name">MAGIC PENETRATION</div>
+        </div>
+
+        <div class="priority">
+          <div class="priority-number">05</div>
+          <div class="priority-name">MAGIC ATTACK</div>
+        </div>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Bring all five Glyphs to around
+          <strong>Level 40</strong> before pushing one significantly
+          further, unless you are specifically working toward
+          Skill Class progression.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section class="article-section" id="artifacts">
+
+      <div class="section-kicker">
+        DEVELOPMENT PRIORITY
+      </div>
+
+      <h2>ARTIFACTS</h2>
+
+
+      <div class="three-grid">
+
+        <article class="build-card">
+
+          <div class="build-number">01</div>
+
+          <h3>Weapon</h3>
+
+          <p>
+            Grants Magic Penetration to the entire team whenever
+            Lilith uses her Ultimate.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">02</div>
+
+          <h3>Book</h3>
+
+          <p>
+            Increases Magic Attack and Magic Penetration, strengthening
+            Lilith's offensive output.
+          </p>
+
+        </article>
+
+
+        <article class="build-card">
+
+          <div class="build-number">03</div>
+
+          <h3>Ring</h3>
+
+          <p>
+            Increases Lilith's primary stat, Strength, contributing
+            additional survivability.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIFT -->
+
+    <section class="article-section" id="gift">
+
+      <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+      </div>
+
+      <h2>MAX IT</h2>
+
+
+      <div class="info-box">
+
+        <p>
+          Focus on increasing <strong>Health</strong>. Lilith's
+          identity revolves around surviving, scaling and becoming
+          stronger as the battle progresses. The longer she remains
+          alive, the more opportunities she has to develop her
+          snowball.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TALISMANS -->
+
+    <section class="article-section" id="talismans">
+
+      <div class="section-kicker">
+        TWO STRONG OPTIONS
+      </div>
+
+      <h2>TALISMANS</h2>
+
+
+      <div class="talisman-grid">
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            FIRST TALISMAN
+          </div>
+
+          <h3>Strength + Armor</h3>
+
+          <p>
+            A defensive combination that helps Lilith survive longer
+            and continue developing her scaling mechanics.
+          </p>
+
+          <div class="availability">
+            NON-VIP • ETERNAL FRONTIER SHOP
+          </div>
+
+        </article>
+
+
+        <article class="talisman">
+
+          <div class="talisman-label">
+            SECOND TALISMAN
+          </div>
+
+          <h3>Health + Magic Attack</h3>
+
+          <p>
+            Combines additional survivability with direct offensive
+            development, supporting both sides of Lilith's scaling
+            identity.
+          </p>
+
+          <div class="availability">
+            NON-VIP
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <div class="info-box">
+
+        <p>
+          Both Talismans are valuable. The defensive bonuses help
+          Lilith stay alive, while the offensive development supports
+          the damage that makes her increasingly dangerous in longer
+          battles.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- SYNERGIES -->
+
+    <section class="article-section" id="synergies">
+
+      <div class="section-kicker">
+        CHAOS INTERACTIONS
+      </div>
+
+      <h2>SYNERGIES & MECHANICS</h2>
+
+
+      <div class="hero-grid">
+
+        <article class="hero-card">
+
+          <h3>Xe'Sha</h3>
+
+          <p>
+            One of Lilith's strongest interactions. Fire Breath lowers
+            enemy Magic Defense while Xe'Sha's Deadly Ray naturally
+            targets heroes with the lowest Magic Defense.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Xe'Sha + Sacrifice</h3>
+
+          <p>
+            Lilith's sacrifices activate Xe'Sha's passive, granting
+            Xe'Sha permanent Magic Attack. Spiritual Power can then
+            share growing Magic Attack back to the team, strengthening
+            Lilith further.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Cleaver</h3>
+
+          <p>
+            Pulling enemies toward the frontline can group targets
+            together, allowing Underworld Seal to hit multiple enemies
+            more consistently.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Lars</h3>
+
+          <p>
+            His vortex can gather the enemy team, creating stronger
+            opportunities for Underworld Seal to hit several targets.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Aidan</h3>
+
+          <p>
+            Aidan is highlighted as one of the heroes that can be
+            paired with Lilith inside Chaos compositions built around
+            longer scaling battles.
+          </p>
+
+        </article>
+
+
+        <article class="hero-card">
+
+          <h3>Chaos Heroes</h3>
+
+          <p>
+            Underworld Seal gains additional Health-growth value for
+            every allied Chaos hero on the battlefield, reinforcing
+            Lilith's natural connection to Chaos compositions.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- COUNTERS -->
+
+    <section class="article-section" id="counters">
+
+      <div class="section-kicker">
+        STOP THE SNOWBALL
+      </div>
+
+      <h2>COUNTERS</h2>
+
+
+      <div class="counter-grid">
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            ENERGY CONTROL
+          </div>
+
+          <h3>Jorgen</h3>
+
+          <p>
+            His ability to steal Energy can delay Lilith's Ultimate,
+            slowing down the snowball mechanics that make her more
+            threatening as the battle continues.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            ANTI-MAGIC
+          </div>
+
+          <h3>Rufus</h3>
+
+          <p>
+            Rufus can absorb the overwhelming majority of Lilith's
+            Magic Damage, forcing Chaos compositions into longer and
+            less efficient fights.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            CHARM
+          </div>
+
+          <h3>Lian</h3>
+
+          <p>
+            When Lilith attacks Lian with an offensive ability,
+            Lian's Charm can interrupt Lilith's aggression and break
+            her offensive rhythm.
+          </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+          <div class="counter-label">
+            POSITIONING
+          </div>
+
+          <h3>Cleaver</h3>
+
+          <p>
+            Cleaver can pull Lilith from the safety of the back line
+            directly toward the frontline, exposing her before she has
+            enough time to scale.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section class="article-section">
+
+      <div class="section-kicker">
+        FINAL TAKEAWAY
+      </div>
+
+      <h2>SURVIVE. SCALE. OVERWHELM.</h2>
+
+
+      <div class="final-box">
+
+        <p>
+          Lilith is built around becoming stronger as a battle lasts.
+          She is not designed around immediate elimination of the
+          enemy.
+        </p>
+
+        <p>
+          Every cast of Underworld Seal can increase her Health.
+          Sacrifice turns part of that Health into offensive power.
+          Fire Breath weakens enemy Magic Defense, while Demonic Fury
+          increases her sustained pressure.
+        </p>
+
+        <p>
+          Her interaction with <strong>Xe'Sha</strong> pushes that
+          scaling even further, while Chaos allies can increase the
+          value Lilith receives from Underworld Seal.
+        </p>
+
+        <p>
+          If you build Lilith around
+          <strong>survivability, scaling and Magic Damage</strong>,
+          she can become increasingly difficult to stop as the fight
+          progresses.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+      <div class="section-kicker">
+        GODS OF ALLIANCE
+      </div>
+
+      <h2>WATCH THE COMPLETE LILITH GUIDE</h2>
+
+      <p>
+        Watch the complete guide for the full explanation of Lilith's
+        skills, scaling mechanics, development priorities, Chaos
+        interactions and counters.
+      </p>
+
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/nyUYoAuDKTo"
+          title="Lilith Full Guide - Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+  </footer>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
