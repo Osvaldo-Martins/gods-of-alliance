@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ancient Awakening Event Guide — Metida Skin+ & Event Coins | Gods of Alliance</title>
+
+  <meta name="description" content="Ancient Awakening event guide covering all 8 tabs, Event Coin totals, Firstborn Force and Unstable Equilibrium connections, and a 500K Event Coin scenario for Metida's Primordial Skin and Skin+.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://gods-of-alliance.vercel.app/ancient-awakening-event-guide.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+  <meta property="og:title" content="Ancient Awakening Event Guide — Metida Skin+ & Event Coins">
+  <meta property="og:description" content="Explore all 8 Ancient Awakening tabs, Event Coin totals, connected subevents, and a detailed 500K Event Coin scenario for Metida's Primordial Skin and Skin+.">
+  <meta property="og:url" content="https://gods-of-alliance.vercel.app/ancient-awakening-event-guide.html">
+  <meta property="og:image" content="https://gods-of-alliance.vercel.app/Images/Events/ancient-awakening-event-guide.png">
+  <meta property="og:image:alt" content="Ancient Awakening event guide featuring Metida, Firstborn Force, Unstable Equilibrium and the 500K Event Coin Skin+ scenario">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ancient Awakening Event Guide — Metida Skin+ & Event Coins">
+  <meta name="twitter:description" content="All 8 Ancient Awakening tabs, Event Coin totals, connected subevents and the 500K Metida Skin+ scenario.">
+  <meta name="twitter:image" content="https://gods-of-alliance.vercel.app/Images/Events/ancient-awakening-event-guide.png">
+
+  <style>
+    :root {
+      --bg: #07060b;
+      --panel: rgba(19, 15, 29, 0.92);
+      --panel-soft: rgba(29, 20, 43, 0.72);
+      --gold: #e8c778;
+      --gold-light: #ffe6a0;
+      --violet: #a855f7;
+      --magenta: #f03bd5;
+      --crystal: #9edcff;
+      --text: #f5f1fa;
+      --muted: #bdb4c8;
+      --border: rgba(232, 199, 120, 0.24);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 85% 8%, rgba(240, 59, 213, 0.10), transparent 30%),
+        radial-gradient(circle at 15% 25%, rgba(100, 110, 255, 0.10), transparent 32%),
+        linear-gradient(180deg, #0b0710 0%, var(--bg) 48%, #050507 100%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 52px 0 80px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 46px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0 auto 14px;
+      max-width: 900px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.35rem, 6vw, 5rem);
+      line-height: 1;
+      color: var(--gold-light);
+      text-shadow: 0 0 28px rgba(232, 199, 120, 0.12);
+    }
+
+    .subtitle {
+      max-width: 820px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 24px 70px rgba(0, 0, 0, 0.55),
+        0 0 50px rgba(168, 85, 247, 0.08);
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 34px auto 0;
+      color: #ddd6e6;
+      font-size: 1.03rem;
+    }
+
+    section {
+      margin-top: 56px;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.7rem, 4vw, 2.55rem);
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      color: #fff1bd;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .section-copy {
+      color: var(--muted);
+      max-width: 900px;
+      margin-bottom: 24px;
+    }
+
+    .tabs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      border-radius: 15px;
+      border: 1px solid var(--border);
+      background:
+        linear-gradient(145deg, rgba(36, 24, 52, 0.88), rgba(13, 11, 19, 0.94));
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.24);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3px;
+      background: linear-gradient(var(--magenta), var(--violet), var(--crystal));
+      opacity: 0.72;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .coin {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--gold-light);
+      font-weight: 800;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      margin-right: 6px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      background: rgba(168, 85, 247, 0.08);
+      color: #dcbcff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .breakdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 20px 14px;
+      text-align: center;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--panel);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: clamp(1.3rem, 3vw, 2rem);
+      line-height: 1.15;
+      margin-bottom: 7px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .feature {
+      padding: 30px;
+      border-radius: 18px;
+      border: 1px solid rgba(232, 199, 120, 0.32);
+      background:
+        radial-gradient(circle at 90% 10%, rgba(240, 59, 213, 0.11), transparent 30%),
+        linear-gradient(145deg, rgba(34, 24, 46, 0.95), rgba(12, 10, 17, 0.96));
+    }
+
+    .feature h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    .feature + .feature {
+      margin-top: 16px;
+    }
+
+    .math {
+      margin: 24px 0;
+      padding: 24px;
+      border-radius: 14px;
+      background: rgba(5, 4, 8, 0.58);
+      border: 1px solid rgba(158, 220, 255, 0.15);
+    }
+
+    .math-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .math-row:last-child {
+      border-bottom: 0;
+    }
+
+    .math-row strong {
+      color: var(--gold-light);
+      white-space: nowrap;
+    }
+
+    .warning {
+      margin-top: 20px;
+      padding: 20px 22px;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      background: rgba(232, 199, 120, 0.06);
+      color: #d8cfdf;
+    }
+
+    .skin-goal {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin: 22px 0;
+    }
+
+    .skin-box {
+      text-align: center;
+      padding: 22px 14px;
+      border-radius: 14px;
+      background: var(--panel-soft);
+      border: 1px solid rgba(240, 59, 213, 0.18);
+    }
+
+    .skin-box strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 1.7rem;
+    }
+
+    .skin-box span {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .takeaway {
+      text-align: center;
+      padding: 36px 26px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at center top, rgba(168, 85, 247, 0.12), transparent 55%),
+        var(--panel);
+    }
+
+    .takeaway p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--muted);
+    }
+
+    .video-wrap {
+      margin-top: 26px;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #000;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: center;
+      color: #81798a;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 820px) {
+      .tabs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .breakdown {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .skin-goal {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        padding-top: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page {
+        width: min(100% - 20px, 1180px);
+      }
+
+      .breakdown {
+        grid-template-columns: 1fr;
+      }
+
+      .card,
+      .feature {
+        padding: 20px;
+      }
+
+      .math-row {
+        display: block;
+      }
+
+      .math-row strong {
+        display: block;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <header class="hero">
+      <div class="eyebrow">Hero Wars Alliance • Event Guide</div>
+
+      <h1>Ancient Awakening</h1>
+
+      <p class="subtitle">
+        Metida's seven-day launch event connects Firstborn Force and Unstable Equilibrium
+        through eight tabs, additional Event Coin rewards, and the path toward her
+        Primordial Skin and Skin+.
+      </p>
+
+      <img
+        class="cover"
+        src="Images/Events/ancient-awakening-event-guide.png"
+        alt="Ancient Awakening event guide with Metida, Firstborn Force, Unstable Equilibrium and the 500K Event Coin Skin+ scenario"
+      >
+
+      <p class="intro">
+        Ancient Awakening is the third subevent in Metida's launch event. Some rewards
+        come from normal participation, while others depend on repeatable objectives,
+        resource spending, troop losses, chest openings, or progress made in the two
+        connected subevents. The numbers below therefore separate practical participation
+        from conditional maximums.
+      </p>
+    </header>
+
+
+    <section>
+      <h2>Eight Event Tabs</h2>
+
+      <div class="tabs-grid">
+
+        <article class="card">
+          <h3>Day After Day</h3>
+          <p>
+            Log in across all seven event days. Each daily login awards 300 Event Coins,
+            alongside Titan Skin Stones.
+          </p>
+          <span class="coin">2,100 Event Coins total</span>
+        </article>
+
+        <article class="card">
+          <h3>Tactical Losses</h3>
+          <p>
+            Lose level-six troops across seven milestones ranging from 2,500 to 52,000
+            troops lost. The tab can be completed again after finishing a walkthrough.
+          </p>
+          <span class="coin">5,300 Event Coins per walkthrough</span><br>
+          <span class="tag">Repeatable</span>
+          <span class="tag">Real troop cost</span>
+        </article>
+
+        <article class="card">
+          <h3>Trade Route</h3>
+          <p>
+            Tracks cumulative Event Coins spent in the Event Shop from 1,500 up to
+            400,000. These are spending thresholds, not values to add together.
+            The tab does not directly award additional Event Coins.
+          </p>
+          <span class="coin">0 direct Event Coins</span><br>
+          <span class="tag">Spending thresholds</span>
+        </article>
+
+        <article class="card">
+          <h3>Heroic Discovery</h3>
+          <p>
+            Open Heroic Chests through milestones from 1 to 100. A complete walkthrough
+            can be repeated. Two free Heroic Chests per day provide 14 openings over
+            seven days, reaching 1,500 Event Coins from the early milestones.
+          </p>
+          <span class="coin">8,500 Event Coins per full walkthrough</span><br>
+          <span class="tag">Repeatable</span>
+        </article>
+
+        <article class="card">
+          <h3>Secrets of Outland</h3>
+          <p>
+            Open Outland Chests through 150 openings. All eleven milestones form one
+            complete walkthrough, after which the tab resets.
+          </p>
+          <span class="coin">6,675 Event Coins per walkthrough</span><br>
+          <span class="tag">Repeatable</span>
+          <span class="tag">Emerald route</span>
+        </article>
+
+        <article class="card">
+          <h3>Beyond Horizon</h3>
+          <p>
+            Start Expeditions through eight milestones, from 6 to 56. Starting eight
+            Expeditions each day across seven days reaches the final milestone.
+            Adventure Energy from this tab also advances the Buried Truths Season Adventure.
+          </p>
+          <span class="coin">7,600 Event Coins total</span>
+        </article>
+
+        <article class="card">
+          <h3>Titan's Roar</h3>
+          <p>
+            Counts quests completed in Firstborn Force. Sixteen milestones run from
+            10 to 370 completed quests and provide additional rewards on top of the
+            rewards earned from the original Firstborn Force quests.
+          </p>
+          <span class="coin">Up to 82,850 additional Event Coins</span><br>
+          <span class="tag">Firstborn Force connector</span>
+          <span class="tag">Conditional maximum</span>
+        </article>
+
+        <article class="card">
+          <h3>Elemental Tempest</h3>
+          <p>
+            Counts quests completed in Unstable Equilibrium, with milestones from
+            5 through 80 completed quests. At 63 quests, the standout reward is
+            Rigel – Biomech Skin.
+          </p>
+          <span class="coin">Up to 100,250 Event Coins</span><br>
+          <span class="tag">Unstable Equilibrium connector</span>
+          <span class="tag">Conditional maximum</span>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Ancient Awakening Event Coin Breakdown</h2>
+
+      <p class="section-copy">
+        Counting each repeatable tab once and completing every milestone shown produces
+        the following theoretical Ancient Awakening total.
+      </p>
+
+      <div class="breakdown">
+        <div class="stat">
+          <strong>2,100</strong>
+          <span>Day After Day</span>
+        </div>
+
+        <div class="stat">
+          <strong>5,300</strong>
+          <span>Tactical Losses</span>
+        </div>
+
+        <div class="stat">
+          <strong>8,500</strong>
+          <span>Heroic Discovery</span>
+        </div>
+
+        <div class="stat">
+          <strong>6,675</strong>
+          <span>Secrets of Outland</span>
+        </div>
+
+        <div class="stat">
+          <strong>7,600</strong>
+          <span>Beyond Horizon</span>
+        </div>
+
+        <div class="stat">
+          <strong>82,850</strong>
+          <span>Titan's Roar</span>
+        </div>
+
+        <div class="stat">
+          <strong>100,250</strong>
+          <span>Elemental Tempest</span>
+        </div>
+
+        <div class="stat">
+          <strong>213,275</strong>
+          <span>Ancient Awakening theoretical total</span>
+        </div>
+      </div>
+
+      <div class="warning">
+        <strong>Important:</strong> 213,275 Event Coins is not a normal free-player
+        expectation. It includes one completion of repeatable tabs, troop losses,
+        chest spending, and demanding connected quests. Additional repeatable cycles
+        can also change an individual player's total.
+      </div>
+    </section>
+
+
+    <section>
+      <h2>The Three-Subevent Picture</h2>
+
+      <div class="feature">
+        <h3>809,975 Event Coins — Theoretical Combined Total</h3>
+
+        <div class="math">
+          <div class="math-row">
+            <span>Firstborn Force</span>
+            <strong>412,300</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Unstable Equilibrium</span>
+            <strong>184,400</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Ancient Awakening</span>
+            <strong>213,275</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Theoretical combined total</span>
+            <strong>809,975</strong>
+          </div>
+        </div>
+
+        <p>
+          Firstborn Force's figure includes 176,750 Event Coins from VIP.
+          Unstable Equilibrium includes VIP, Emerald spending, additional battles,
+          and heavy resource milestones. Ancient Awakening counts each repeatable
+          tab once. The combined figure is therefore a theoretical maximum under
+          the stated conditions, not an ordinary player's expected income.
+        </p>
+      </div>
+
+      <div class="feature">
+        <h3>Conservative Participation Reference</h3>
+
+        <p>
+          Seven Firstborn Force logins provide 2,100 Event Coins. Seven Unstable
+          Equilibrium logins plus 35 free attempts in each Arena provide 6,800.
+          Ancient Awakening's seven logins, 56 Expeditions, and the milestones
+          reached with 14 free Heroic Chests provide 11,200.
+        </p>
+
+        <div class="math">
+          <div class="math-row">
+            <span>Base conservative example</span>
+            <strong>20,100</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Elemental Tempest unlocked through at least 21 Unstable quests</span>
+            <strong>+3,250</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Before Titan's Roar</span>
+            <strong>23,350</strong>
+          </div>
+
+          <div class="math-row">
+            <span>With 3 additional Firstborn quests reaching Titan's Roar's first milestone</span>
+            <strong>23,450</strong>
+          </div>
+        </div>
+
+        <p>
+          This is a conservative participation example, not a ceiling. Players using
+          saved resources or completing more Firstborn Force quests can unlock
+          additional connector milestones.
+        </p>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>The 500K Metida Skin+ Scenario</h2>
+
+      <div class="skin-goal">
+        <div class="skin-box">
+          <strong>100,000</strong>
+          <span>Primordial Skin</span>
+        </div>
+
+        <div class="skin-box">
+          <strong>400,000</strong>
+          <span>Skin+ after unlocking the Primordial Skin</span>
+        </div>
+
+        <div class="skin-box">
+          <strong>500,000</strong>
+          <span>Total Event Coin target</span>
+        </div>
+      </div>
+
+      <div class="feature">
+        <h3>One Outland-Based Estimate</h3>
+
+        <p>
+          This scenario assumes every Firstborn Force milestone except VIP is
+          completed. That produces 235,550 Event Coins. Completing its assumed
+          Firstborn quest count also reaches all Titan's Roar milestones,
+          adding 82,850.
+        </p>
+
+        <div class="math">
+          <div class="math-row">
+            <span>Firstborn Force — all assumed non-VIP milestones</span>
+            <strong>235,550</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Titan's Roar — full connector track</span>
+            <strong>82,850</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Unstable Equilibrium logins + free Arena attempts</span>
+            <strong>6,800</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Ancient Awakening logins + Expeditions + free Heroic Chest milestones</span>
+            <strong>11,200</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Elemental Tempest through the 20-quest milestone</span>
+            <strong>3,250</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Before buying Outland Chests</span>
+            <strong>339,650</strong>
+          </div>
+        </div>
+
+        <p>
+          Under the 55% Outland Chest discount used in this scenario, a pack of
+          100 chests costs 3,375 Emeralds. The calculation uses only these
+          100-chest packs.
+        </p>
+
+        <div class="math">
+          <div class="math-row">
+            <span>Outland packs</span>
+            <strong>32 × 100 chests</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Total Outland Chests</span>
+            <strong>3,200</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Emerald cost</span>
+            <strong>108,000</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Completed Secrets of Outland cycles</span>
+            <strong>21</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Secrets of Outland Event Coins</span>
+            <strong>140,175</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Wise Exchange milestones reached</span>
+            <strong>22,650</strong>
+          </div>
+
+          <div class="math-row">
+            <span>Estimated final Event Coins</span>
+            <strong>502,475</strong>
+          </div>
+        </div>
+
+        <div class="warning">
+          <strong>This is a scenario estimate, not a universal price.</strong>
+          The 108,000 Emerald figure depends on the assumptions above. It excludes
+          VIP points, Tactical Losses and Brawls, while already including all
+          Titan's Roar rewards generated by the assumed Firstborn progress and
+          Elemental Tempest through 20 quests. More progress elsewhere can reduce
+          the Outland requirement; less Firstborn progress can increase the
+          shortfall that must be covered.
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="takeaway">
+        <h2>Plan Across All Three Subevents</h2>
+
+        <p>
+          Ancient Awakening rewards coordinated progress rather than isolated spending.
+          Firstborn Force and Unstable Equilibrium feed additional rewards into
+          Titan's Roar and Elemental Tempest, while the repeatable chest tabs can
+          substantially change individual totals. Set the milestones your account
+          can realistically support, then spend Event Coins with intention.
+        </p>
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Watch the Full Ancient Awakening Guide</h2>
+
+      <p class="section-copy">
+        Watch the full breakdown for the complete explanation of the eight tabs,
+        connected subevents, Event Coin calculations, and the Metida Skin+ scenario.
+      </p>
+
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/RZU3LXV5rGY"
+          title="Ancient Awakening Event Guide — Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+
+    <footer>
+      Gods of Alliance • Hero Wars Alliance Guides, Events, Testing & Strategy
+    </footer>
+
+  </main>
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
