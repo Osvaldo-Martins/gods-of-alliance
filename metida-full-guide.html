@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Metida Full Guide — Build, Artifacts, Skins & Upgrades | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Metida Super Titan guide for Hero Wars Alliance covering Physical Attack, Supreme Harmony, artifacts, skins, Skin+, build priorities and total upgrade costs."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/metida-full-guide.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Metida Full Guide — Build, Artifacts, Skins & Upgrades"
+  >
+
+  <meta
+    property="og:description"
+    content="Build Metida with intention. Physical Attack, survivability, artifacts, skins, Skin+, upgrade priorities and complete resource costs."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/metida-full-guide.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Titans/metida-full-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Metida Super Titan Elarite Full Guide"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Metida Full Guide — Build, Artifacts, Skins & Upgrades"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Physical Attack, Supreme Harmony, artifacts, skins, Skin+, build priorities and complete upgrade costs for Metida."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Titans/metida-full-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #07060a;
+      --panel: #0d0b12;
+      --panel-soft: #12101a;
+      --gold: #e7bd64;
+      --gold-light: #ffe5a0;
+      --violet: #9b5cff;
+      --magenta: #ed3bd7;
+      --cyan: #6ce5ed;
+      --white: #ffffff;
+      --text: #e9e5ed;
+      --muted: #a59cab;
+      --border: rgba(231, 189, 100, 0.20);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 15% 8%, rgba(237, 59, 215, 0.10), transparent 28%),
+        radial-gradient(circle at 88% 18%, rgba(108, 229, 237, 0.08), transparent 28%),
+        linear-gradient(180deg, #0a0710 0%, var(--bg) 45%, #050506 100%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 55px 0 85px;
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 8vw, 82px);
+      line-height: 0.98;
+    }
+
+    .subtitle {
+      max-width: 820px;
+      margin: 20px auto 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55),
+        0 0 55px rgba(155, 92, 255, 0.08);
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 32px auto 0;
+      color: #d6d0da;
+      font-size: 16px;
+    }
+
+    /* GENERAL */
+
+    section {
+      margin-top: 58px;
+    }
+
+    h2 {
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #fff1c6;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .section-copy {
+      max-width: 900px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    /* QUICK INFO */
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .quick-card {
+      padding: 20px 16px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* CARDS */
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: 25px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(31, 22, 43, 0.90),
+          rgba(12, 10, 16, 0.96)
+        );
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 3px;
+      background: linear-gradient(
+        var(--magenta),
+        var(--violet),
+        var(--cyan)
+      );
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .value {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold-light);
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    /* FEATURE */
+
+    .feature {
+      padding: 30px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(237, 59, 215, 0.09), transparent 30%),
+        linear-gradient(145deg, #171020, #0c0a10);
+      border: 1px solid rgba(231, 189, 100, 0.28);
+      border-radius: 18px;
+    }
+
+    .feature + .feature {
+      margin-top: 16px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    /* STAT ROWS */
+
+    .stats {
+      margin-top: 22px;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 10px 20px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .stat-row:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-row strong {
+      color: var(--gold-light);
+      text-align: right;
+    }
+
+    /* PRIORITY */
+
+    .priority {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .priority-card {
+      padding: 25px 20px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .priority-number {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .priority-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* WARNING */
+
+    .note {
+      margin-top: 20px;
+      padding: 20px 22px;
+      background: rgba(231, 189, 100, 0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      color: #d8d1dc;
+    }
+
+    /* COST TABLE */
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      background: rgba(10, 8, 13, 0.88);
+    }
+
+    th,
+    td {
+      padding: 16px 18px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    th {
+      background: rgba(231, 189, 100, 0.06);
+      color: var(--gold-light);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    td {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    td strong {
+      color: #f5edf7;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    /* FINAL BUILD */
+
+    .final-build {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .final-stat {
+      padding: 22px 15px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .final-stat strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 22px;
+      line-height: 1.15;
+      margin-bottom: 7px;
+    }
+
+    .final-stat span {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* VIDEO */
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      margin-top: 25px;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      margin-top: 65px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      text-align: center;
+      color: #77707c;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .quick-grid,
+      .final-build {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-2,
+      .priority {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        width: calc(100% - 20px);
+        padding-top: 38px;
+      }
+
+      .quick-grid,
+      .final-build {
+        grid-template-columns: 1fr;
+      }
+
+      .feature,
+      .card {
+        padding: 20px;
+      }
+
+      .stat-row {
+        display: block;
+      }
+
+      .stat-row strong {
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        HERO WARS ALLIANCE • TITAN GUIDE
+      </div>
+
+      <h1>Metida Full Guide</h1>
+
+      <p class="subtitle">
+        How to build the Elarite Super Titan: Physical Attack, survivability,
+        artifacts, skins, upgrade priorities and the resources required to
+        develop her.
+      </p>
+
+      <img
+        class="cover"
+        src="Images/Titans/metida-full-guide.png"
+        alt="Metida Super Titan Elarite Full Guide"
+      >
+
+      <p class="intro">
+        Metida's build revolves around Physical Attack and survivability.
+        Physical Attack strengthens her damage and several effects from
+        Supreme Harmony, while Health helps keep her alive long enough to
+        continue providing control, healing, damage and team support.
+      </p>
+
+    </header>
+
+
+    <!-- QUICK INFO -->
+
+    <section>
+
+      <h2>Metida at a Glance</h2>
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <strong>Super Titan</strong>
+          <span>Type</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Elarite</strong>
+          <span>Faction</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Control</strong>
+          <span>Battle Role</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Physical Attack</strong>
+          <span>Core Build Focus</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PHYSICAL ATTACK -->
+
+    <section>
+
+      <h2>Why Physical Attack Matters</h2>
+
+      <p class="section-copy">
+        Physical Attack is central to Metida because it scales Crystal Vortex
+        and multiple effects provided by Supreme Harmony.
+      </p>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>Crystal Vortex</h3>
+
+          <p>
+            Traps the central enemy in a whirlwind for five seconds. While
+            trapped, the target cannot move, attack or use skills. The
+            whirlwind deals damage once per second, with every tick scaling
+            at 100% of Metida's Physical Attack.
+          </p>
+
+          <span class="value">
+            Current reference: 717,470 damage per tick
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Fire — Healing</h3>
+
+          <p>
+            For every surviving Fire Titan, Supreme Harmony heals all allies
+            once per second. Each healing tick equals 10% of Metida's
+            Physical Attack.
+          </p>
+
+          <span class="value">
+            Current reference: 71,747 healing per tick
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Water — Physical Attack</h3>
+
+          <p>
+            For every surviving Water Titan, Metida increases all allies'
+            Physical Attack by 20% of her own Physical Attack.
+          </p>
+
+          <span class="value">
+            Current reference: +143,494 Physical Attack per Water Titan
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Elarite — Additional Hit</h3>
+
+          <p>
+            For each surviving Elarite Titan, Metida applies an effect to one
+            ally, prioritizing Titans with the highest Attack. Whenever an
+            affected ally deals damage, Metida lands an additional hit equal
+            to 20% of her Physical Attack.
+          </p>
+
+          <span class="value">
+            Current reference: 143,494 additional damage
+          </span>
+
+        </article>
+
+      </div>
+
+
+      <div class="feature" style="margin-top:16px;">
+
+        <h3>Earth — Speed</h3>
+
+        <p>
+          Earth behaves differently. Each surviving Earth Titan provides
+          10% increased speed. This percentage does not scale with Metida's
+          Physical Attack.
+        </p>
+
+      </div>
+
+
+      <div class="note">
+        Supreme Harmony's bonuses depend on surviving Titans. Increasing
+        Metida's attributes strengthens the effects, but the team must remain
+        alive to continue providing the elemental contributions.
+      </div>
+
+    </section>
+
+
+    <!-- DEFAULT SKIN -->
+
+    <section>
+
+      <h2>Default Skin — Physical Attack</h2>
+
+      <div class="feature">
+
+        <h3>Maximum Bonus: +196,800 Physical Attack</h3>
+
+        <p>
+          At maximum level, the Default Skin adds 196,800 Physical Attack.
+          Because several of Metida's effects scale directly from this
+          attribute, the skin contributes to more than her personal damage.
+        </p>
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>Crystal Vortex damage per tick</span>
+            <strong>+196,800</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Each Fire healing tick</span>
+            <strong>+19,680</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Water Physical Attack bonus</span>
+            <strong>+39,360</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Elarite additional hit</span>
+            <strong>+39,360</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- HEALTH -->
+
+    <section>
+
+      <h2>Health — Primordial Skin & Skin+</h2>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>Primordial Skin</h3>
+
+          <p>
+            Without the Primordial Skin, the reference build has 10,027,050
+            Health. At maximum level, the normal Primordial Skin adds
+            2,627,975 Health.
+          </p>
+
+          <span class="value">
+            Total Health: 12,655,025
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Primordial Skin+</h3>
+
+          <p>
+            Skin+ doubles the Primordial Skin's bonus to 5,255,950 Health.
+            It doubles the skin bonus — not Metida's entire Health pool.
+          </p>
+
+          <span class="value">
+            Calculated Total Health: 15,283,000
+          </span>
+
+        </article>
+
+      </div>
+
+
+      <div class="note">
+        In our tests, the additional Health sometimes appeared to slightly
+        delay Crystal Vortex's activation. However, the comparisons tested
+        with the normal Primordial Skin were never worse. The increased
+        survivability appeared to compensate for the occasional timing delay.
+      </div>
+
+
+      <div class="feature" style="margin-top:16px;">
+
+        <h3>Event Coin Investment</h3>
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>Primordial Skin</span>
+            <strong>100,000 Event Coins</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Skin+ after unlocking the skin</span>
+            <strong>400,000 Event Coins</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Combined investment</span>
+            <strong>500,000 Event Coins</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BUILD PRIORITIES -->
+
+    <section>
+
+      <h2>Build Priorities</h2>
+
+      <div class="priority">
+
+        <article class="priority-card">
+          <div class="priority-number">PRIORITY 01</div>
+          <h3>Titan Level</h3>
+          <p>
+            Take Metida from level 1 to 120. This establishes the foundation
+            of her stats and is the first upgrade path we recommend completing.
+          </p>
+        </article>
+
+
+        <article class="priority-card">
+          <div class="priority-number">PRIORITY 02</div>
+          <h3>Stars</h3>
+          <p>
+            Fullstar is the ideal target. If all Soul Stones are not yet
+            available, aim for at least five stars and continue toward Fullstar.
+          </p>
+        </article>
+
+
+        <article class="priority-card">
+          <div class="priority-number">PRIORITY 03</div>
+          <h3>Artifacts & Skins</h3>
+          <p>
+            Develop her artifacts with particular attention to the Seal,
+            prioritize the Default Skin's Physical Attack, then build the
+            Primordial Skin for survivability.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ARTIFACTS -->
+
+    <section>
+
+      <h2>Artifact Priorities</h2>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>Zorval's Amulet</h3>
+
+          <p>
+            Provides a bonus specifically against Light and Dark Titans.
+            When its artifact bonus activates, the effect extends to the
+            entire team for nine seconds.
+          </p>
+
+          <span class="value">
+            Initial target: Level 100–105
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Elarite Crown</h3>
+
+          <p>
+            Provides additional defense against Light and Dark Titans,
+            reinforcing Metida's role when fighting teams built around
+            those elements.
+          </p>
+
+          <span class="value">
+            Initial target: Level 100–105
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Chthonic Balance Seal</h3>
+
+          <p>
+            Increases both Physical Attack and Health. Physical Attack
+            strengthens multiple parts of Metida's kit, making this artifact
+            particularly important to her overall build.
+          </p>
+
+          <span class="value">
+            Initial target: Level 105–110
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Final Artifact Goal</h3>
+
+          <p>
+            For all three artifacts, obtain the highest stars available to
+            your account and continue developing them beyond the practical
+            starting targets.
+          </p>
+
+          <span class="value">
+            Final goal: Level 120
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKINS -->
+
+    <section>
+
+      <h2>Skin Priority</h2>
+
+      <div class="feature">
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>1. Default Skin</span>
+            <strong>Physical Attack</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>2. Primordial Skin</span>
+            <strong>Health</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>3. Primordial Skin+</span>
+            <strong>Larger Health Bonus</strong>
+          </div>
+
+        </div>
+
+        <p style="margin-top:18px;">
+          Physical Attack comes first because it strengthens Crystal Vortex
+          damage, Fire healing, the Water attack bonus and Elarite additional
+          hits. The Primordial Skin then improves survivability, with Skin+
+          providing the larger Health bonus for players able to make the
+          additional investment.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- REFERENCE BUILD -->
+
+    <section>
+
+      <h2>Reference Build Before Skin+</h2>
+
+      <p class="section-copy">
+        With Metida fully upgraded in the reference build, using the normal
+        Primordial Skin and without Skin+, the displayed stats are:
+      </p>
+
+      <div class="final-build">
+
+        <div class="final-stat">
+          <strong>717,470</strong>
+          <span>Physical Attack</span>
+        </div>
+
+        <div class="final-stat">
+          <strong>12,655,025</strong>
+          <span>Health</span>
+        </div>
+
+        <div class="final-stat">
+          <strong>213,000</strong>
+          <span>Extra Damage vs Light & Dark</span>
+        </div>
+
+        <div class="final-stat">
+          <strong>120,600</strong>
+          <span>Extra Defense vs Light & Dark</span>
+        </div>
+
+      </div>
+
+
+      <div class="feature" style="margin-top:14px; text-align:center;">
+
+        <h3>Displayed Power</h3>
+
+        <div
+          style="
+            color:var(--gold-light);
+            font-size:34px;
+            font-weight:900;
+            margin-top:5px;
+          "
+        >
+          143,982
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- COSTS -->
+
+    <section>
+
+      <h2>Total Upgrade Costs</h2>
+
+      <p class="section-copy">
+        These resource totals cover the upgrade paths described in the guide.
+        Primordial Skin and Skin+ acquisition costs are separate from the
+        Titan Skin Stones required to level the skins.
+      </p>
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Upgrade</th>
+              <th>Target</th>
+              <th>Resource Cost</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><strong>Titan Level</strong></td>
+              <td>Level 1 → 120</td>
+              <td>686,760 Titan Potions</td>
+            </tr>
+
+            <tr>
+              <td><strong>Evolution</strong></td>
+              <td>3 Stars → Fullstar</td>
+              <td>2,900 Soul Stones</td>
+            </tr>
+
+            <tr>
+              <td><strong>Each Artifact Level</strong></td>
+              <td>Level 1 → 120</td>
+              <td>247,036 Fairy Dust + 196,147,700 Gold</td>
+            </tr>
+
+            <tr>
+              <td><strong>All 3 Artifact Levels</strong></td>
+              <td>Level 1 → 120</td>
+              <td>741,108 Fairy Dust + 588,443,100 Gold</td>
+            </tr>
+
+            <tr>
+              <td><strong>Each Artifact Evolution</strong></td>
+              <td>Unlock → Fullstar</td>
+              <td>22,215 specific Artifact Fragments</td>
+            </tr>
+
+            <tr>
+              <td><strong>All 3 Artifact Evolutions</strong></td>
+              <td>Unlock → Fullstar</td>
+              <td>66,645 total fragments across Amulet, Crown & Seal</td>
+            </tr>
+
+            <tr>
+              <td><strong>Each Skin</strong></td>
+              <td>0/60 → 60/60</td>
+              <td>166,350 Titan Skin Stones</td>
+            </tr>
+
+            <tr>
+              <td><strong>Default + Primordial Skins</strong></td>
+              <td>Both 0/60 → 60/60</td>
+              <td>332,700 Titan Skin Stones</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+
+    <!-- FUTURE ELARITE -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>The Elarite Team Is Not Complete Yet</h2>
+
+        <p>
+          The Elarite Summoner is coming soon. A complete Elarite team could
+          significantly change Metida's role and how her Supreme Harmony
+          effects are used. Until that lineup can be tested, her connections
+          with Water, Earth and Fire remain important areas for further
+          gameplay testing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TAKEAWAY -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>Build Metida With Intention</h2>
+
+        <p>
+          Metida has a clear build direction. Physical Attack strengthens
+          both her damage and several parts of her team support. Her artifacts
+          reinforce her attributes and her role against Light and Dark Titans,
+          while the Primordial Skin provides additional survivability.
+        </p>
+
+        <p style="margin-top:14px;">
+          Build her level first, continue toward Fullstar, develop her
+          artifacts with particular attention to the Chthonic Balance Seal,
+          maximize the Default Skin's Physical Attack, and then invest in the
+          Primordial Skin according to the resources available to your account.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section>
+
+      <h2>Watch the Full Metida Build Guide</h2>
+
+      <p class="section-copy">
+        Watch the complete video for the full explanation of Metida's Physical
+        Attack scaling, Supreme Harmony, Health testing, artifacts, skins and
+        upgrade costs.
+      </p>
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/mCchlO40FN8"
+          title="Metida Full Guide — Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      GODS OF ALLIANCE • HERO WARS ALLIANCE TITAN GUIDES & ANALYSIS
+    </footer>
+
+  </main>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
