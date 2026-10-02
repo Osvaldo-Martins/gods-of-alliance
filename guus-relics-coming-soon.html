@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guus Legendary Relics — Full Analysis | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Guus Legendary Relics explained: Featherhood, Critical Healing, Honkageddon Legendary and No Honk, No Gain, including the potential interaction with Kendle's Critical Pure Damage."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/guus-relics-coming-soon.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Guus Legendary Relics — Full Analysis"
+  >
+
+  <meta
+    property="og:description"
+    content="All four Guus Legendary Relics explained, from Golden Feather generation and Critical Healing to a potential 75% reduction against Pure Critical Damage."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/guus-relics-coming-soon.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/guus-relics-coming-soon.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Guus Legendary Relics Coming Soon"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Guus Legendary Relics — Full Analysis"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Golden Feathers, Critical Healing, Honkageddon and Guus' new protection against Magic Critical and Pure Critical Damage."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/guus-relics-coming-soon.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #07080b;
+      --panel: #0d1015;
+      --panel2: #11151c;
+      --gold: #e9b94f;
+      --gold-light: #ffe5a0;
+      --blue: #3276b8;
+      --cyan: #59d7df;
+      --green: #6ccf85;
+      --white: #ffffff;
+      --text: #e8e8eb;
+      --muted: #999da8;
+      --border: rgba(233, 185, 79, 0.20);
+    }
+
+    body {
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at 15% 8%,
+          rgba(47, 111, 173, 0.13),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 16%,
+          rgba(233, 185, 79, 0.08),
+          transparent 27%
+        ),
+        radial-gradient(
+          circle at 50% 65%,
+          rgba(67, 188, 125, 0.035),
+          transparent 34%
+        ),
+        var(--bg);
+
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 55px 0 85px;
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    h1 {
+      max-width: 950px;
+      margin: 0 auto;
+
+      color: var(--gold-light);
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(44px, 7vw, 78px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      max-width: 850px;
+      margin: 20px auto 30px;
+
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+
+      border-radius: 18px;
+      border: 1px solid var(--border);
+
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55),
+        0 0 45px rgba(233, 185, 79, 0.05);
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 34px auto 0;
+
+      color: #d2d3d8;
+      font-size: 16px;
+    }
+
+    /* GENERAL */
+
+    section {
+      margin-top: 58px;
+    }
+
+    h2 {
+      color: var(--gold-light);
+
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      color: #fff0c1;
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    p + p {
+      margin-top: 14px;
+    }
+
+    .section-copy {
+      max-width: 900px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    /* RELIC OVERVIEW */
+
+    .relic-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .relic-mini {
+      padding: 22px 18px;
+
+      background:
+        linear-gradient(
+          145deg,
+          rgba(24, 29, 38, 0.95),
+          rgba(10, 12, 16, 0.98)
+        );
+
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .relic-level {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .relic-mini strong {
+      display: block;
+      color: #ffffff;
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .relic-mini p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* FEATURE */
+
+    .feature {
+      position: relative;
+      overflow: hidden;
+
+      padding: 30px;
+
+      background:
+        radial-gradient(
+          circle at 95% 5%,
+          rgba(233, 185, 79, 0.07),
+          transparent 30%
+        ),
+        linear-gradient(
+          145deg,
+          rgba(20, 24, 32, 0.96),
+          rgba(10, 12, 16, 0.98)
+        );
+
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .feature + .feature {
+      margin-top: 17px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    .level-badge {
+      display: inline-block;
+
+      margin-bottom: 12px;
+      padding: 6px 10px;
+
+      color: var(--gold-light);
+      background: rgba(233, 185, 79, 0.08);
+      border: 1px solid rgba(233, 185, 79, 0.28);
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    /* STATS */
+
+    .stats {
+      margin-top: 22px;
+      padding: 10px 20px;
+
+      background: rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      padding: 12px 0;
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      color: var(--muted);
+    }
+
+    .stat-row:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-row strong {
+      color: var(--gold-light);
+      text-align: right;
+    }
+
+    /* NOTES */
+
+    .note {
+      margin-top: 20px;
+      padding: 20px 22px;
+
+      background: rgba(233, 185, 79, 0.055);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+
+      color: #d5d5da;
+    }
+
+    .testing-note {
+      margin-top: 20px;
+      padding: 20px 22px;
+
+      background: rgba(89, 215, 223, 0.055);
+      border-left: 3px solid var(--cyan);
+      border-radius: 0 12px 12px 0;
+
+      color: #d6d9dd;
+    }
+
+    /* KENDLE */
+
+    .versus {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: stretch;
+      gap: 18px;
+      margin-top: 25px;
+    }
+
+    .versus-card {
+      padding: 27px;
+
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .versus-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .versus-middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: var(--gold);
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .big-number {
+      display: block;
+
+      margin: 15px 0 4px;
+
+      color: var(--gold-light);
+      font-size: clamp(34px, 5vw, 52px);
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .number-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* PROGRESSION */
+
+    .progression {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .progress-card {
+      padding: 23px 19px;
+
+      background: var(--panel2);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-top: 2px solid var(--gold);
+
+      border-radius: 13px;
+    }
+
+    .progress-card span {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .progress-card h3 {
+      margin-top: 7px;
+    }
+
+    .progress-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* QUESTIONS */
+
+    .questions {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .question {
+      padding: 17px 19px;
+
+      color: #d5d6db;
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 65px;
+      padding-top: 25px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+
+      text-align: center;
+      color: #777982;
+      font-size: 12px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      .relic-grid,
+      .progression {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .versus {
+        grid-template-columns: 1fr;
+      }
+
+      .versus-middle {
+        padding: 4px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: calc(100% - 20px);
+        padding-top: 38px;
+      }
+
+      .relic-grid,
+      .progression,
+      .questions {
+        grid-template-columns: 1fr;
+      }
+
+      .feature,
+      .versus-card {
+        padding: 21px;
+      }
+
+      .stat-row {
+        display: block;
+      }
+
+      .stat-row strong {
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        HERO WARS ALLIANCE • LEGENDARY RELICS
+      </div>
+
+      <h1>Guus Legendary Relics</h1>
+
+      <p class="subtitle">
+        Golden Feathers, Critical Healing and a potentially major defensive
+        mechanic against Magic Critical Damage and Pure Critical Damage.
+      </p>
+
+      <img
+        class="cover"
+        src="Images/HWA-All/guus-relics-coming-soon.png"
+        alt="Guus Legendary Relics Coming Soon"
+      >
+
+      <p class="intro">
+        Guus is receiving four Legendary Relic upgrades that create an
+        interconnected system around Golden Feathers, Critical Hits, healing
+        and defensive protection. The progression begins with additional
+        Feather generation and eventually reaches a Level 30 effect that
+        could become highly relevant against Critical Pure Damage.
+      </p>
+
+    </header>
+
+
+    <!-- OVERVIEW -->
+
+    <section>
+
+      <h2>Relics at a Glance</h2>
+
+      <div class="relic-grid">
+
+        <article class="relic-mini">
+
+          <div class="relic-level">
+            LEVEL 1
+          </div>
+
+          <strong>Featherhood</strong>
+
+          <p>
+            Creates an additional automatic source of Golden Feathers.
+          </p>
+
+        </article>
+
+
+        <article class="relic-mini">
+
+          <div class="relic-level">
+            LEVEL 10
+          </div>
+
+          <strong>Beak Peak — Legendary</strong>
+
+          <p>
+            Allows healing from Guus' skills to become Critical Healing.
+          </p>
+
+        </article>
+
+
+        <article class="relic-mini">
+
+          <div class="relic-level">
+            LEVEL 20
+          </div>
+
+          <strong>Honkageddon — Legendary</strong>
+
+          <p>
+            Adds another interaction between Critical Damage, healing and
+            Golden Feathers.
+          </p>
+
+        </article>
+
+
+        <article class="relic-mini">
+
+          <div class="relic-level">
+            LEVEL 30
+          </div>
+
+          <strong>No Honk, No Gain</strong>
+
+          <p>
+            Golden Feather becomes a major defensive tool against specific
+            types of Critical Damage.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEVEL 1 -->
+
+    <section>
+
+      <div class="feature">
+
+        <div class="level-badge">
+          LEGENDARY RELIC • LEVEL 1
+        </div>
+
+        <h2>Featherhood</h2>
+
+        <p>
+          Every 11 seconds, Guus grants a Golden Feather to himself and to
+          the ally with the highest Health stat.
+        </p>
+
+        <p>
+          Golden Feathers already sit at the centre of Guus' kit, connecting
+          healing, protection, Critical Hit interactions and his ability to
+          protect allies from falling dangerously low.
+        </p>
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>Activation</span>
+            <strong>Every 11 seconds</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>First Golden Feather</span>
+            <strong>Guus</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Second Golden Feather</span>
+            <strong>Ally with highest Health stat</strong>
+          </div>
+
+        </div>
+
+        <div class="note">
+          The wording refers to the ally with the highest Health stat —
+          not the ally with the highest current Health percentage and not
+          necessarily the most injured ally.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEVEL 10 -->
+
+    <section>
+
+      <div class="feature">
+
+        <div class="level-badge">
+          LEGENDARY RELIC • LEVEL 10
+        </div>
+
+        <h2>Beak Peak — Legendary</h2>
+
+        <p>
+          Beak Peak normally activates when an ally carrying a Golden Feather
+          is about to fall below 25% Health. Before that happens, part of the
+          Hero's Health is restored.
+        </p>
+
+        <p>
+          The amount restored increases for every remaining second of the
+          Golden Feather's duration. Once the protection activates, the
+          Golden Feather disappears.
+        </p>
+
+        <p>
+          The Legendary upgrade introduces a new mechanic:
+          <strong style="color:#fff;">Critical Healing.</strong>
+        </p>
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>Critical Healing</span>
+            <strong>200%</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Critical Healing chance</span>
+            <strong>Depends on Guus' Critical Hit Chance</strong>
+          </div>
+
+        </div>
+
+        <div class="testing-note">
+          This makes Critical Hit Chance particularly interesting for Guus'
+          development. Its effect on different Talismans and overall healing
+          performance needs to be tested before declaring one development
+          path mandatory.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEVEL 20 -->
+
+    <section>
+
+      <div class="feature">
+
+        <div class="level-badge">
+          LEGENDARY RELIC • LEVEL 20
+        </div>
+
+        <h2>Honkageddon — Legendary</h2>
+
+        <p>
+          Honkageddon already connects Guus' Critical Hits with healing,
+          Golden Feathers and offensive support.
+        </p>
+
+        <p>
+          Normally, Guus' Critical Hits do not deal their additional Critical
+          Hit damage. Instead, they restore Health to allies around the target
+          and give those allies Golden Feathers.
+        </p>
+
+        <p>
+          Allies carrying Golden Feathers also deal increased damage with
+          their Critical Hits, while Honor Heroes receive additional damage
+          depending on their current Health.
+        </p>
+
+        <p>
+          At Legendary Relic Level 20, the description states that when Guus
+          deals critical damage, he additionally restores Health and grants
+          a Golden Feather to nearby allies.
+        </p>
+
+        <div class="testing-note">
+          <strong>Important:</strong> the wording requires battle verification.
+          The original skill trades Guus' additional Critical Hit damage for
+          healing and Golden Feathers, while the Legendary description
+          specifically refers to Guus dealing critical damage and additionally
+          healing nearby allies. Actual damage numbers and battle behaviour
+          need to be tested before drawing a final conclusion.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEVEL 30 -->
+
+    <section>
+
+      <div class="feature">
+
+        <div class="level-badge">
+          LEGENDARY RELIC • LEVEL 30
+        </div>
+
+        <h2>No Honk, No Gain</h2>
+
+        <p>
+          While Guus and his allies are affected by a Golden Feather, they
+          take less Magic Critical Damage and Pure Critical Damage.
+        </p>
+
+        <span class="big-number">
+          75%
+        </span>
+
+        <div class="number-label">
+          Magic Critical & Pure Critical Damage Reduction
+        </div>
+
+        <div class="note">
+          This does <strong>not</strong> state that Guus reduces all normal
+          Pure Damage by 75%. The specific wording is
+          <strong>Pure Critical Damage</strong>.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- KENDLE -->
+
+    <section>
+
+      <h2>Why Kendle Immediately Matters</h2>
+
+      <p class="section-copy">
+        Guus' Level 30 Relic becomes particularly interesting when compared
+        with one of the newer Critical Pure Damage interactions.
+      </p>
+
+      <div class="versus">
+
+        <article class="versus-card">
+
+          <h3>Kendle — Purge by Pain</h3>
+
+          <p>
+            Kendle's Legendary Relics allow the Pure Damage of her allies
+            to become critical.
+          </p>
+
+          <p>
+            The chance depends on Magical Critical Hit Chance, and when that
+            Pure Damage becomes critical, Critical Pure Damage reaches 200%.
+          </p>
+
+        </article>
+
+
+        <div class="versus-middle">
+          VS
+        </div>
+
+
+        <article class="versus-card">
+
+          <h3>Guus — No Honk, No Gain</h3>
+
+          <p>
+            Heroes affected by Golden Feather receive 75% less Pure Critical
+            Damage.
+          </p>
+
+          <p>
+            On paper, this appears directly relevant to the Critical Pure
+            Damage engine created by Kendle's mechanic.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="testing-note">
+        This is not yet a confirmed counter. The mechanic looks highly
+        relevant on paper, but the real matchup depends on Golden Feather
+        uptime, which Heroes receive the Feathers, and whether Critical Pure
+        Damage lands during protected or unprotected windows.
+      </div>
+
+    </section>
+
+
+    <!-- CLEAVER EXAMPLE -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>The Cleaver Example</h2>
+
+        <p>
+          Cleaver already produces Pure Damage through his own kit. Kendle
+          does not need to create that Pure Damage for him.
+        </p>
+
+        <p>
+          What her mechanic can potentially do is allow Pure Damage that
+          already exists to become Critical Pure Damage.
+        </p>
+
+        <p>
+          Cleaver is only one example. The same principle is relevant to
+          allies producing Pure Damage that can interact with Kendle's
+          mechanic.
+        </p>
+
+        <p>
+          This is why Guus' Level 30 reduction deserves direct testing against
+          Kendle compositions and the strongest Critical Pure Damage
+          combinations available.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROGRESSION -->
+
+    <section>
+
+      <h2>How the Four Relics Connect</h2>
+
+      <div class="progression">
+
+        <article class="progress-card">
+
+          <span>LEVEL 1</span>
+
+          <h3>More Feathers</h3>
+
+          <p>
+            Featherhood expands automatic Golden Feather generation.
+          </p>
+
+        </article>
+
+
+        <article class="progress-card">
+
+          <span>LEVEL 10</span>
+
+          <h3>Critical Healing</h3>
+
+          <p>
+            Guus' healing can critically heal for 200%, with the chance
+            connected to Critical Hit Chance.
+          </p>
+
+        </article>
+
+
+        <article class="progress-card">
+
+          <span>LEVEL 20</span>
+
+          <h3>Critical Interaction</h3>
+
+          <p>
+            Honkageddon gains another connection between Critical Damage,
+            healing and Golden Feather generation.
+          </p>
+
+        </article>
+
+
+        <article class="progress-card">
+
+          <span>LEVEL 30</span>
+
+          <h3>Critical Defense</h3>
+
+          <p>
+            Golden Feather becomes protection against Magic Critical Damage
+            and Pure Critical Damage.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- GOLDEN FEATHER UPTIME -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>The Real Question: Golden Feather Uptime</h2>
+
+        <p>
+          The 75% reduction only exists while a Hero is affected by a
+          Golden Feather.
+        </p>
+
+        <p>
+          That makes Golden Feather uptime one of the most important factors
+          to examine when Guus' Legendary Relics become available for battle
+          testing.
+        </p>
+
+        <div class="questions">
+
+          <div class="question">
+            What happens when Critical Pure Damage lands while a Feather is active?
+          </div>
+
+          <div class="question">
+            What happens during windows where the Feather is not active?
+          </div>
+
+          <div class="question">
+            Which Heroes receive the Golden Feathers most consistently?
+          </div>
+
+          <div class="question">
+            Can Guus maintain enough protection across the team?
+          </div>
+
+          <div class="question">
+            Can Kendle compositions still find unprotected damage windows?
+          </div>
+
+          <div class="question">
+            How much does Level 1 improve overall Feather uptime?
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHAT NEEDS TESTING -->
+
+    <section>
+
+      <h2>What Still Needs Testing</h2>
+
+      <p class="section-copy">
+        The Relic descriptions give us the mechanics, but several practical
+        questions cannot be answered from the descriptions alone.
+      </p>
+
+      <div class="questions">
+
+        <div class="question">
+          Which Legendary Relic level becomes the practical breakpoint?
+        </div>
+
+        <div class="question">
+          How important does Critical Hit Chance become after Level 10?
+        </div>
+
+        <div class="question">
+          How do Guus' different Talismans affect the new healing system?
+        </div>
+
+        <div class="question">
+          How exactly does Level 20 behave in real battles?
+        </div>
+
+        <div class="question">
+          Can Guus survive strong Kendle and Cleaver combinations?
+        </div>
+
+        <div class="question">
+          How consistently does the 75% reduction remain active?
+        </div>
+
+        <div class="question">
+          How effective is Level 30 against Magic Critical Damage?
+        </div>
+
+        <div class="question">
+          Does the theory translate into a meaningful matchup change?
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>Early Analysis</h2>
+
+        <p>
+          Guus' Legendary Relics form a clear progression rather than four
+          isolated upgrades.
+        </p>
+
+        <p>
+          Level 1 expands Golden Feather generation. Level 10 introduces
+          Critical Healing. Level 20 adds another interaction between
+          Critical Damage, healing and Golden Feathers. Level 30 transforms
+          Golden Feather into a potentially powerful defensive mechanic
+          against Magic Critical Damage and Pure Critical Damage.
+        </p>
+
+        <p>
+          The descriptions create an exciting theory, particularly against
+          Kendle's Critical Pure Damage mechanic. But the most important
+          conclusions — Golden Feather uptime, actual Level 20 behaviour,
+          development priorities and the Kendle matchup — belong in battle
+          testing.
+        </p>
+
+        <p>
+          Once those tests are complete, Gods of Alliance will return with
+          the results.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+    </footer>
+
+  </main>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
