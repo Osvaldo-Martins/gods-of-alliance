@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Metida Full Guide — Build, Artifacts, Skins & Upgrades | Gods of Alliance</title>
+  <title>Metida Full Guide — Build, Skills, Artifacts, Skins & Upgrades | Gods of Alliance</title>
 
   <meta
     name="description"
-    content="Complete Metida Super Titan guide for Hero Wars Alliance covering Physical Attack, Supreme Harmony, artifacts, skins, Skin+, build priorities and total upgrade costs."
+    content="Complete Metida Super Titan guide for Hero Wars Alliance covering Crystal Vortex, Supreme Harmony, Physical Attack, survivability, artifacts, skins, Skin+, build priorities and total upgrade costs."
   >
 
   <meta name="robots" content="index, follow">
@@ -25,12 +25,12 @@
 
   <meta
     property="og:title"
-    content="Metida Full Guide — Build, Artifacts, Skins & Upgrades"
+    content="Metida Full Guide — Skills, Build, Artifacts, Skins & Upgrades"
   >
 
   <meta
     property="og:description"
-    content="Build Metida with intention. Physical Attack, survivability, artifacts, skins, Skin+, upgrade priorities and complete resource costs."
+    content="Complete Metida build guide: Crystal Vortex, Supreme Harmony, Physical Attack, survivability, artifacts, skins, Skin+ and upgrade priorities."
   >
 
   <meta
@@ -54,12 +54,12 @@
 
   <meta
     name="twitter:title"
-    content="Metida Full Guide — Build, Artifacts, Skins & Upgrades"
+    content="Metida Full Guide — Skills, Build, Artifacts, Skins & Upgrades"
   >
 
   <meta
     name="twitter:description"
-    content="Physical Attack, Supreme Harmony, artifacts, skins, Skin+, build priorities and complete upgrade costs for Metida."
+    content="Crystal Vortex, Supreme Harmony, Physical Attack, survivability, artifacts, skins, Skin+ and complete upgrade costs for Metida."
   >
 
   <meta
@@ -83,6 +83,10 @@
       --violet: #9b5cff;
       --magenta: #ed3bd7;
       --cyan: #6ce5ed;
+      --fire: #ff8056;
+      --earth: #8fd36d;
+      --water: #66cfff;
+      --elarite: #c487ff;
       --white: #ffffff;
       --text: #e9e5ed;
       --muted: #a59cab;
@@ -210,6 +214,21 @@
       letter-spacing: 1px;
     }
 
+    /* SKILL LABEL */
+
+    .skill-label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      color: var(--gold-light);
+      background: rgba(231, 189, 100, 0.07);
+      border: 1px solid rgba(231, 189, 100, 0.24);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
     /* CARDS */
 
     .grid-2 {
@@ -278,6 +297,117 @@
       color: var(--muted);
     }
 
+    /* SKILL HERO */
+
+    .skill-feature {
+      position: relative;
+      overflow: hidden;
+      padding: 32px;
+      background:
+        radial-gradient(circle at 92% 12%, rgba(108, 229, 237, 0.08), transparent 28%),
+        radial-gradient(circle at 5% 90%, rgba(155, 92, 255, 0.08), transparent 30%),
+        linear-gradient(145deg, #171020, #0b0910);
+      border: 1px solid rgba(231, 189, 100, 0.30);
+      border-radius: 18px;
+    }
+
+    .skill-feature p {
+      color: var(--muted);
+    }
+
+    .skill-feature p + p {
+      margin-top: 13px;
+    }
+
+    .skill-value {
+      margin-top: 20px;
+      padding: 18px 20px;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+    }
+
+    .skill-value span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .skill-value strong {
+      display: block;
+      margin-top: 3px;
+      color: var(--gold-light);
+      font-size: 22px;
+    }
+
+    /* SUPREME HARMONY ELEMENTS */
+
+    .element-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .element-card {
+      position: relative;
+      overflow: hidden;
+      padding: 25px;
+      background: linear-gradient(145deg, rgba(25, 20, 34, 0.94), rgba(10, 9, 13, 0.98));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+    }
+
+    .element-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: var(--element);
+    }
+
+    .element-card.fire {
+      --element: var(--fire);
+    }
+
+    .element-card.earth {
+      --element: var(--earth);
+    }
+
+    .element-card.water {
+      --element: var(--water);
+    }
+
+    .element-card.elarite {
+      --element: var(--elarite);
+    }
+
+    .element-name {
+      color: var(--element);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .element-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .element-value {
+      display: block;
+      margin-top: 13px;
+      color: var(--gold-light);
+      font-size: 16px;
+      font-weight: 900;
+    }
+
     /* STAT ROWS */
 
     .stats {
@@ -334,7 +464,7 @@
       font-size: 14px;
     }
 
-    /* WARNING */
+    /* NOTE */
 
     .note {
       margin-top: 20px;
@@ -458,7 +588,8 @@
       }
 
       .grid-2,
-      .priority {
+      .priority,
+      .element-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -475,7 +606,9 @@
       }
 
       .feature,
-      .card {
+      .card,
+      .skill-feature,
+      .element-card {
         padding: 20px;
       }
 
@@ -507,9 +640,9 @@
       <h1>Metida Full Guide</h1>
 
       <p class="subtitle">
-        How to build the Elarite Super Titan: Physical Attack, survivability,
-        artifacts, skins, upgrade priorities and the resources required to
-        develop her.
+        How to build the Elarite Control Super Titan: skills, Physical Attack,
+        survivability, artifacts, skins, upgrade priorities and the resources
+        required to develop her.
       </p>
 
       <img
@@ -519,10 +652,11 @@
       >
 
       <p class="intro">
-        Metida's build revolves around Physical Attack and survivability.
-        Physical Attack strengthens her damage and several effects from
-        Supreme Harmony, while Health helps keep her alive long enough to
-        continue providing control, healing, damage and team support.
+        Metida is a Control Super Titan. Her value is not limited to dealing
+        damage or reaching Crystal Vortex as quickly as possible. Her build
+        must balance the Physical Attack that powers several parts of her kit
+        with enough survivability to remain on the battlefield and continue
+        controlling the fight through Supreme Harmony.
       </p>
 
     </header>
@@ -561,6 +695,165 @@
     </section>
 
 
+    <!-- SKILL 1 -->
+
+    <section>
+
+      <div class="skill-label">
+        SKILL 1
+      </div>
+
+      <h2>Crystal Vortex</h2>
+
+      <div class="skill-feature">
+
+        <h3>Five Seconds of Battlefield Control</h3>
+
+        <p>
+          Crystal Vortex traps the central enemy in a whirlwind for five
+          seconds and moves that enemy around the battlefield.
+        </p>
+
+        <p>
+          While trapped, the target cannot move, attack or use skills.
+          The whirlwind also deals damage once per second.
+        </p>
+
+        <p>
+          Each damage tick scales at 100% of Metida's Physical Attack.
+          Increasing Physical Attack therefore increases Crystal Vortex's
+          damage, but it does not extend the five-second control duration.
+        </p>
+
+        <div class="skill-value">
+          <span>Current Reference Build</span>
+          <strong>717,470 damage per tick</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILL 2 -->
+
+    <section>
+
+      <div class="skill-label">
+        SKILL 2
+      </div>
+
+      <h2>Supreme Harmony</h2>
+
+      <p class="section-copy">
+        Supreme Harmony empowers Metida's allies for nine seconds. The bonuses
+        depend on the number of surviving Titans of each element, meaning the
+        composition around Metida directly changes what the skill contributes
+        to the battle.
+      </p>
+
+      <div class="element-grid">
+
+        <!-- FIRE -->
+
+        <article class="element-card fire">
+
+          <div class="element-name">
+            FIRE • HEALING
+          </div>
+
+          <h3>Keep the Team Alive</h3>
+
+          <p>
+            For every surviving Fire Titan, Metida heals all allies once per
+            second. Each healing tick equals 10% of Metida's Physical Attack.
+          </p>
+
+          <span class="element-value">
+            71,747 healing per tick per surviving Fire Titan
+          </span>
+
+        </article>
+
+
+        <!-- EARTH -->
+
+        <article class="element-card earth">
+
+          <div class="element-name">
+            EARTH • SPEED
+          </div>
+
+          <h3>Accelerate the Team</h3>
+
+          <p>
+            Each surviving Earth Titan provides 10% increased speed.
+            Unlike Fire, Water and Elarite, this percentage does not scale
+            with Metida's Physical Attack.
+          </p>
+
+          <span class="element-value">
+            +10% Speed per surviving Earth Titan
+          </span>
+
+        </article>
+
+
+        <!-- WATER -->
+
+        <article class="element-card water">
+
+          <div class="element-name">
+            WATER • PHYSICAL ATTACK
+          </div>
+
+          <h3>Increase Offensive Pressure</h3>
+
+          <p>
+            For every surviving Water Titan, Metida increases all allies'
+            Physical Attack by 20% of her own Physical Attack.
+          </p>
+
+          <span class="element-value">
+            +143,494 Physical Attack per surviving Water Titan
+          </span>
+
+        </article>
+
+
+        <!-- ELARITE -->
+
+        <article class="element-card elarite">
+
+          <div class="element-name">
+            ELARITE • ADDITIONAL HIT
+          </div>
+
+          <h3>Additional Damage</h3>
+
+          <p>
+            For each surviving Elarite Titan, Metida applies an effect to one
+            ally, prioritizing Titans with the highest Attack. Whenever an
+            affected ally deals damage, Metida lands an additional hit.
+          </p>
+
+          <span class="element-value">
+            143,494 additional damage
+          </span>
+
+        </article>
+
+      </div>
+
+      <div class="note">
+        Supreme Harmony depends on surviving Titans. Fire, Earth, Water and
+        Elarite are therefore not simply four fixed bonuses — their contribution
+        changes according to which Titans remain alive during the fight.
+      </div>
+
+    </section>
+
+
     <!-- PHYSICAL ATTACK -->
 
     <section>
@@ -568,100 +861,44 @@
       <h2>Why Physical Attack Matters</h2>
 
       <p class="section-copy">
-        Physical Attack is central to Metida because it scales Crystal Vortex
-        and multiple effects provided by Supreme Harmony.
+        Physical Attack is one of Metida's most important development stats
+        because it affects both her personal damage and multiple support
+        effects inside Supreme Harmony.
       </p>
 
-      <div class="grid-2">
+      <div class="feature">
 
-        <article class="card">
+        <h3>One Stat — Multiple Effects</h3>
 
-          <h3>Crystal Vortex</h3>
+        <div class="stats">
 
-          <p>
-            Traps the central enemy in a whirlwind for five seconds. While
-            trapped, the target cannot move, attack or use skills. The
-            whirlwind deals damage once per second, with every tick scaling
-            at 100% of Metida's Physical Attack.
-          </p>
+          <div class="stat-row">
+            <span>Crystal Vortex</span>
+            <strong>100% of Physical Attack per damage tick</strong>
+          </div>
 
-          <span class="value">
-            Current reference: 717,470 damage per tick
-          </span>
+          <div class="stat-row">
+            <span>Fire</span>
+            <strong>10% of Physical Attack per healing tick</strong>
+          </div>
 
-        </article>
+          <div class="stat-row">
+            <span>Water</span>
+            <strong>20% of Physical Attack as team Physical Attack</strong>
+          </div>
 
+          <div class="stat-row">
+            <span>Elarite</span>
+            <strong>20% of Physical Attack as additional hit</strong>
+          </div>
 
-        <article class="card">
+          <div class="stat-row">
+            <span>Earth</span>
+            <strong>Fixed +10% Speed per surviving Earth Titan</strong>
+          </div>
 
-          <h3>Fire — Healing</h3>
+        </div>
 
-          <p>
-            For every surviving Fire Titan, Supreme Harmony heals all allies
-            once per second. Each healing tick equals 10% of Metida's
-            Physical Attack.
-          </p>
-
-          <span class="value">
-            Current reference: 71,747 healing per tick
-          </span>
-
-        </article>
-
-
-        <article class="card">
-
-          <h3>Water — Physical Attack</h3>
-
-          <p>
-            For every surviving Water Titan, Metida increases all allies'
-            Physical Attack by 20% of her own Physical Attack.
-          </p>
-
-          <span class="value">
-            Current reference: +143,494 Physical Attack per Water Titan
-          </span>
-
-        </article>
-
-
-        <article class="card">
-
-          <h3>Elarite — Additional Hit</h3>
-
-          <p>
-            For each surviving Elarite Titan, Metida applies an effect to one
-            ally, prioritizing Titans with the highest Attack. Whenever an
-            affected ally deals damage, Metida lands an additional hit equal
-            to 20% of her Physical Attack.
-          </p>
-
-          <span class="value">
-            Current reference: 143,494 additional damage
-          </span>
-
-        </article>
-
-      </div>
-
-
-      <div class="feature" style="margin-top:16px;">
-
-        <h3>Earth — Speed</h3>
-
-        <p>
-          Earth behaves differently. Each surviving Earth Titan provides
-          10% increased speed. This percentage does not scale with Metida's
-          Physical Attack.
-        </p>
-
-      </div>
-
-
-      <div class="note">
-        Supreme Harmony's bonuses depend on surviving Titans. Increasing
-        Metida's attributes strengthens the effects, but the team must remain
-        alive to continue providing the elemental contributions.
       </div>
 
     </section>
@@ -680,7 +917,8 @@
         <p>
           At maximum level, the Default Skin adds 196,800 Physical Attack.
           Because several of Metida's effects scale directly from this
-          attribute, the skin contributes to more than her personal damage.
+          attribute, the skin contributes to much more than her personal
+          damage.
         </p>
 
         <div class="stats">
@@ -707,6 +945,12 @@
 
         </div>
 
+        <div class="note">
+          Earth is intentionally absent from these scaling increases because
+          its +10% Speed contribution does not scale with Metida's Physical
+          Attack.
+        </div>
+
       </div>
 
     </section>
@@ -717,6 +961,13 @@
     <section>
 
       <h2>Health — Primordial Skin & Skin+</h2>
+
+      <p class="section-copy">
+        Health creates an important development question for Metida because
+        additional survivability can affect the timing of Energy gained from
+        incoming damage. The key is to judge that timing together with what
+        Metida provides while she remains alive.
+      </p>
 
       <div class="grid-2">
 
@@ -755,11 +1006,35 @@
       </div>
 
 
-      <div class="note">
-        In our tests, the additional Health sometimes appeared to slightly
-        delay Crystal Vortex's activation. However, the comparisons tested
-        with the normal Primordial Skin were never worse. The increased
-        survivability appeared to compensate for the occasional timing delay.
+      <div class="feature" style="margin-top:16px;">
+
+        <h3>Health vs Crystal Vortex Timing</h3>
+
+        <p>
+          In our tests, additional Health sometimes appeared to slightly delay
+          Crystal Vortex's activation. That difference is worth understanding,
+          but Crystal Vortex is not Metida's entire purpose.
+        </p>
+
+        <p style="margin-top:14px;">
+          Metida also needs to remain alive to continue influencing the battle
+          through Supreme Harmony. While she survives, Fire can continue
+          contributing healing, Earth speed, Water Physical Attack and Elarite
+          additional hits.
+        </p>
+
+        <p style="margin-top:14px;">
+          Across the different development stages we tested, we did not find
+          a reason to sacrifice Metida's survivability simply to pursue a
+          slightly earlier Crystal Vortex.
+        </p>
+
+        <div class="note">
+          The objective is balance: do not overbuild Metida unnecessarily,
+          but do not underbuild her purely because more Health can sometimes
+          alter Crystal Vortex timing.
+        </div>
+
       </div>
 
 
@@ -785,6 +1060,37 @@
           </div>
 
         </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BUILD PHILOSOPHY -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>Build the Control Titan — Not Just the Ultimate</h2>
+
+        <p>
+          Metida should not be developed as though her only purpose is to
+          activate Crystal Vortex as quickly as possible.
+        </p>
+
+        <p style="margin-top:14px;">
+          Crystal Vortex is excellent Control, but Metida also influences the
+          rhythm of her own team through Supreme Harmony. Her value comes from
+          surviving, controlling the enemy and continuing to strengthen the
+          different elements around her.
+        </p>
+
+        <p style="margin-top:14px;">
+          The goal is therefore not simply to chase the largest possible stat
+          total or the earliest possible ultimate. It is to give Metida enough
+          development to perform her complete role effectively.
+        </p>
 
       </div>
 
@@ -882,8 +1188,9 @@
 
           <p>
             Increases both Physical Attack and Health. Physical Attack
-            strengthens multiple parts of Metida's kit, making this artifact
-            particularly important to her overall build.
+            strengthens multiple parts of Metida's kit, while Health helps
+            her remain active long enough to continue providing Control and
+            Supreme Harmony support.
           </p>
 
           <span class="value">
@@ -900,7 +1207,7 @@
           <p>
             For all three artifacts, obtain the highest stars available to
             your account and continue developing them beyond the practical
-            starting targets.
+            starting targets as your resources allow.
           </p>
 
           <span class="value">
@@ -1104,9 +1411,14 @@
         <p>
           The Elarite Summoner is coming soon. A complete Elarite team could
           significantly change Metida's role and how her Supreme Harmony
-          effects are used. Until that lineup can be tested, her connections
-          with Water, Earth and Fire remain important areas for further
-          gameplay testing.
+          effects are used.
+        </p>
+
+        <p style="margin-top:14px;">
+          Until that lineup can be tested, her connections with Water, Earth
+          and Fire remain important areas for further gameplay testing, while
+          the complete Elarite interaction remains something we will need to
+          evaluate when the faction is complete.
         </p>
 
       </div>
@@ -1123,10 +1435,10 @@
         <h2>Build Metida With Intention</h2>
 
         <p>
-          Metida has a clear build direction. Physical Attack strengthens
-          both her damage and several parts of her team support. Her artifacts
-          reinforce her attributes and her role against Light and Dark Titans,
-          while the Primordial Skin provides additional survivability.
+          Metida's build has a clear direction. Physical Attack strengthens
+          Crystal Vortex and multiple parts of Supreme Harmony. Health gives
+          her the survivability required to stay in the fight and continue
+          influencing the team around her.
         </p>
 
         <p style="margin-top:14px;">
@@ -1134,6 +1446,13 @@
           artifacts with particular attention to the Chthonic Balance Seal,
           maximize the Default Skin's Physical Attack, and then invest in the
           Primordial Skin according to the resources available to your account.
+        </p>
+
+        <p style="margin-top:14px;">
+          Most importantly, do not judge Metida only by how quickly she reaches
+          Crystal Vortex. She is a Control Super Titan whose complete value
+          comes from controlling the enemy while continuing to support Fire,
+          accelerate Earth, strengthen Water and interact with Elarite allies.
         </p>
 
       </div>
@@ -1148,9 +1467,9 @@
       <h2>Watch the Full Metida Build Guide</h2>
 
       <p class="section-copy">
-        Watch the complete video for the full explanation of Metida's Physical
-        Attack scaling, Supreme Harmony, Health testing, artifacts, skins and
-        upgrade costs.
+        Watch the complete video for the full explanation of Metida's skills,
+        Physical Attack scaling, Supreme Harmony, Health testing, artifacts,
+        skins and upgrade costs.
       </p>
 
       <div class="video-wrap">
