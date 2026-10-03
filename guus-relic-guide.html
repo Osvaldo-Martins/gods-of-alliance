@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Guus Relic Guide — Build, Upgrades, Priority & First Tests | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Complete Guus Relic Guide for Hero Wars Alliance. Featherhood, Legendary Beak Peak, Legendary Honkageddon, No Honk No Gain, shard costs and first Level 10 battle tests."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/guus-relic-guide.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Guus Relic Guide — Build, Upgrades, Priority & First Tests"
+  >
+
+  <meta
+    property="og:description"
+    content="Explore all four Guus Relic unlocks, shard requirements and our first Level 10 battle tests against Kendle teams."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/guus-relic-guide.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/guus-relic-guide.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Guus Relic Guide Build Upgrades and Priority"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Guus Relic Guide — Build, Upgrades, Priority & First Tests"
+  >
+
+  <meta
+    name="twitter:description"
+    content="All four Guus Relic unlocks, shard costs and first Level 10 gameplay tests."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/guus-relic-guide.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #080706;
+      --panel: #100d09;
+      --panel-soft: #17110b;
+      --gold: #e7b84f;
+      --gold-light: #ffe28a;
+      --orange: #e96d20;
+      --fire: #ff8a2b;
+      --red: #c64022;
+      --green: #74b96a;
+      --white: #ffffff;
+      --text: #eee8dc;
+      --muted: #aca394;
+      --border: rgba(231, 184, 79, 0.23);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(233, 109, 32, 0.13), transparent 29%),
+        radial-gradient(circle at 88% 18%, rgba(231, 184, 79, 0.08), transparent 28%),
+        linear-gradient(180deg, #100a06 0%, var(--bg) 48%, #050504 100%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 55px 0 85px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      max-width: 950px;
+      margin: 0 auto;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 8vw, 82px);
+      line-height: 0.98;
+    }
+
+    .subtitle {
+      max-width: 840px;
+      margin: 20px auto 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.58),
+        0 0 55px rgba(233, 109, 32, 0.08);
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 32px auto 0;
+      color: #d8d0c4;
+      font-size: 16px;
+    }
+
+    section {
+      margin-top: 58px;
+    }
+
+    h2 {
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #fff0c8;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .section-copy {
+      max-width: 900px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .quick-card {
+      padding: 20px 16px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .feature {
+      padding: 30px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(233, 109, 32, 0.08), transparent 30%),
+        linear-gradient(145deg, #1b130b, #0d0a07);
+      border: 1px solid rgba(231, 184, 79, 0.28);
+      border-radius: 18px;
+    }
+
+    .feature + .feature {
+      margin-top: 16px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    .relic-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .relic-card {
+      position: relative;
+      overflow: hidden;
+      padding: 27px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(36, 24, 12, 0.94),
+          rgba(12, 9, 6, 0.98)
+        );
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .relic-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 3px;
+      background: linear-gradient(
+        var(--gold),
+        var(--fire),
+        var(--red)
+      );
+    }
+
+    .relic-level {
+      display: inline-block;
+      margin-bottom: 11px;
+      padding: 5px 9px;
+      color: var(--gold-light);
+      background: rgba(231, 184, 79, 0.07);
+      border: 1px solid rgba(231, 184, 79, 0.22);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .relic-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .relic-value {
+      display: block;
+      margin-top: 13px;
+      color: var(--gold-light);
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .stats {
+      margin-top: 22px;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .stat-row:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-row strong {
+      color: var(--gold-light);
+      text-align: right;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: 25px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .value {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold-light);
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 20px 22px;
+      background: rgba(231, 184, 79, 0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      color: #ddd4c4;
+    }
+
+    .cost-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .cost-card {
+      padding: 25px 18px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .cost-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .cost-card strong {
+      display: block;
+      margin: 6px 0;
+      color: var(--gold-light);
+      font-size: 26px;
+    }
+
+    .cost-card small {
+      color: #c8bfae;
+      font-size: 12px;
+    }
+
+    .test-card {
+      padding: 28px;
+      margin-top: 16px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(29, 20, 11, 0.94),
+          rgba(11, 9, 7, 0.98)
+        );
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .test-number {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .teams {
+      margin-top: 15px;
+      padding: 15px 17px;
+      background: rgba(0, 0, 0, 0.23);
+      border-radius: 10px;
+      color: #d5cdbc;
+      font-size: 13px;
+    }
+
+    .teams strong {
+      color: var(--gold-light);
+    }
+
+    .test-card p {
+      color: var(--muted);
+      margin-top: 15px;
+    }
+
+    .result {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 7px 11px;
+      color: #dff6d8;
+      background: rgba(116, 185, 106, 0.10);
+      border: 1px solid rgba(116, 185, 106, 0.25);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      margin-top: 25px;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      margin-top: 65px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      text-align: center;
+      color: #786f62;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .relic-grid,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .cost-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        width: calc(100% - 20px);
+        padding-top: 38px;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature,
+      .relic-card,
+      .card,
+      .test-card {
+        padding: 20px;
+      }
+
+      .stat-row {
+        display: block;
+      }
+
+      .stat-row strong {
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        HERO WARS ALLIANCE • RELIC GUIDE
+      </div>
+
+      <h1>Guus Relic Guide</h1>
+
+      <p class="subtitle">
+        All four Relic unlocks, build interactions, shard requirements and
+        our first Level 10 battle tests.
+      </p>
+
+      <img
+        class="cover"
+        src="Images/HWA-All/guus-relic-guide.png"
+        alt="Guus Relic Guide Build Upgrades and Priority"
+      >
+
+      <p class="intro">
+        Guus already combines healing with Golden Feathers to help allies
+        survive while strengthening their critical attacks. His Relic expands
+        those existing connections through additional feather applications,
+        Critical Healing and a new defensive interaction against specific
+        critical damage types.
+      </p>
+
+    </header>
+
+
+    <section>
+
+      <h2>Guus Relic at a Glance</h2>
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <strong>Level 1</strong>
+          <span>Featherhood</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Level 10</strong>
+          <span>Legendary Beak Peak</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Level 20</strong>
+          <span>Legendary Honkageddon</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Level 30</strong>
+          <span>No Honk, No Gain</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>First — Understand Golden Feathers</h2>
+
+      <p class="section-copy">
+        Guus's Relics build on mechanics already present in his original kit,
+        so understanding Golden Feathers is essential before evaluating the
+        new unlocks.
+      </p>
+
+      <div class="grid-2">
+
+        <article class="card">
+          <h3>Under the Wing</h3>
+          <p>
+            Heals all allies and grants Golden Feathers, increasing their
+            Critical Hit Chance for eight seconds. Reapplying a feather
+            extends its duration by another eight seconds.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Feather Squad</h3>
+          <p>
+            Grants feathers to allies in front of Guus. While a feather
+            remains active, those allies recover Health whenever they receive
+            enemy damage.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Beak Peak</h3>
+          <p>
+            Provides emergency healing before a feathered ally's Health would
+            fall below 25%. The remaining feather duration increases that
+            healing, and the feather disappears afterward.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Honkageddon</h3>
+          <p>
+            Connects Guus's critical hits to healing and feather distribution
+            around his target. Feathered allies also gain additional critical
+            damage, with a further bonus for Honor heroes based on their
+            current Health.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Build Context for Our Tests</h2>
+
+      <div class="feature">
+
+        <p>
+          Guus now has seven skins supporting his survivability, Physical
+          Attack and Critical Hit Chance.
+        </p>
+
+        <p style="margin-top:14px;">
+          For these first Relic tests we use
+          <strong style="color:#ffe28a;">Talisman of Feathers</strong>.
+          Its Strength and Critical Hit Chance become particularly interesting
+          once Critical Healing enters Guus's kit.
+        </p>
+
+        <p style="margin-top:14px;">
+          His other Talisman offers Armor and Physical Attack, giving Guus
+          another build option that deserves direct comparison in future
+          testing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>All Four Relic Unlocks</h2>
+
+      <div class="relic-grid">
+
+        <article class="relic-card">
+
+          <div class="relic-level">LEVEL 1 • NEW ABILITY</div>
+
+          <h3>Featherhood</h3>
+
+          <p>
+            Every 11 seconds, Guus grants a Golden Feather to himself and the
+            ally with the highest Health stat.
+          </p>
+
+          <p style="margin-top:12px;">
+            The selection is based on the highest Health stat — not whichever
+            ally currently has the lowest Health or needs healing most.
+          </p>
+
+          <p style="margin-top:12px;">
+            Reapplying a feather to an ally that already has one can extend its
+            duration, helping maintain the Critical Hit Chance and healing
+            interactions connected to Golden Feathers.
+          </p>
+
+          <span class="relic-value">
+            Golden Feather every 11 seconds
+          </span>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">LEVEL 10 • LEGENDARY UPGRADE</div>
+
+          <h3>Beak Peak</h3>
+
+          <p>
+            Healing from Guus's skills can now critically heal.
+          </p>
+
+          <p style="margin-top:12px;">
+            The listed Critical Healing value is 200%, meaning a critical heal
+            restores twice the normal amount. This is the healing multiplier,
+            not the probability of triggering a critical heal.
+          </p>
+
+          <p style="margin-top:12px;">
+            The chance depends on Guus's Critical Hit Chance, creating another
+            connection between that stat and his support potential.
+          </p>
+
+          <span class="relic-value">
+            Critical Healing: 200%
+          </span>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">LEVEL 20 • LEGENDARY UPGRADE</div>
+
+          <h3>Honkageddon</h3>
+
+          <p>
+            Guus's critical damage triggers healing and an additional Golden
+            Feather for nearby allies.
+          </p>
+
+          <p style="margin-top:12px;">
+            Healing already existed in the original interaction. The important
+            addition here is another feather application.
+          </p>
+
+          <p style="margin-top:12px;">
+            Reapplying feathers can extend their duration, helping maintain
+            their Critical Hit Chance and other feather-related benefits for
+            longer.
+          </p>
+
+          <span class="relic-value">
+            Adds another source of Golden Feathers
+          </span>
+
+        </article>
+
+
+        <article class="relic-card">
+
+          <div class="relic-level">LEVEL 30 • NEW ABILITY</div>
+
+          <h3>No Honk, No Gain</h3>
+
+          <p>
+            While Guus or an ally has a Golden Feather, incoming Magic
+            Critical Damage and Pure Critical Damage is reduced by 75%.
+          </p>
+
+          <p style="margin-top:12px;">
+            The damage type and critical condition are essential. This stated
+            protection does not include Physical Critical Damage or ordinary
+            non-critical damage.
+          </p>
+
+          <p style="margin-top:12px;">
+            At Level 30, maintaining Golden Feathers therefore gains an
+            additional defensive purpose against suitable opponents.
+          </p>
+
+          <span class="relic-value">
+            75% less Magic &amp; Pure Critical Damage
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Why More Golden Feathers Matter</h2>
+
+      <div class="feature">
+
+        <p>
+          Featherhood and Legendary Honkageddon do more than simply add
+          another buff. Golden Feathers are connected to several parts of
+          Guus's existing kit.
+        </p>
+
+        <div class="stats">
+
+          <div class="stat-row">
+            <span>Critical Hit Chance</span>
+            <strong>Golden Feather benefit</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Damage Received</span>
+            <strong>Feather Squad healing interaction</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Emergency Recovery</span>
+            <strong>Beak Peak</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Critical Damage</span>
+            <strong>Honkageddon interaction</strong>
+          </div>
+
+          <div class="stat-row">
+            <span>Level 30 Protection</span>
+            <strong>Magic &amp; Pure Critical Damage reduction</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Critical Healing &amp; Critical Hit Chance</h2>
+
+      <div class="feature">
+
+        <p>
+          Legendary Beak Peak gives Critical Hit Chance another role in Guus's
+          build. It already contributes to the critical hits involved in
+          Honkageddon; at Level 10, it also influences his potential to produce
+          Critical Healing.
+        </p>
+
+        <p style="margin-top:14px;">
+          This makes Talisman of Feathers and Guus's Critical Hit Chance skin
+          especially interesting for testing.
+        </p>
+
+        <div class="note">
+          Critical Healing is probabilistic. A 200% Critical Healing value
+          means twice the normal healing when it occurs — it does not mean a
+          200% chance to critically heal. The trigger chance depends on Guus's
+          Critical Hit Chance.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Guus Relic Shard Investment</h2>
+
+      <p class="section-copy">
+        The chart used for this guide shows the following total investments,
+        including the initial unlock.
+      </p>
+
+      <div class="cost-grid">
+
+        <div class="cost-card">
+          <span>Relic Level</span>
+          <strong>10</strong>
+          <small>330 Guus Relic Shards total</small>
+        </div>
+
+        <div class="cost-card">
+          <span>Relic Level</span>
+          <strong>20</strong>
+          <small>1,130 Guus Relic Shards total</small>
+        </div>
+
+        <div class="cost-card">
+          <span>Relic Level</span>
+          <strong>30</strong>
+          <small>2,880 Guus Relic Shards total</small>
+        </div>
+
+      </div>
+
+      <div class="note">
+        The initial Relic unlock requires
+        <strong>50 Guus Relic Shards</strong>.
+        Universal Relic Shards cannot be used for this first unlock.
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="feature">
+
+        <h2>What We Actually Tested</h2>
+
+        <p>
+          Our Guus Relic is currently at
+          <strong style="color:#ffe28a;">Level 10</strong>.
+        </p>
+
+        <p style="margin-top:14px;">
+          That means all three battles below include
+          <strong style="color:#ffe28a;">Featherhood</strong> and
+          <strong style="color:#ffe28a;">Legendary Beak Peak</strong>.
+        </p>
+
+        <p style="margin-top:14px;">
+          Legendary Honkageddon at Level 20 and No Honk, No Gain at Level 30
+          are not active in this footage and still require future battle
+          testing.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>First Level 10 Battle Tests</h2>
+
+      <article class="test-card">
+
+        <div class="test-number">TEST 01 • KENDLE DEFENSE</div>
+
+        <h3>Yasmine • Crow • Octavia • Byrna • Guus</h3>
+
+        <div class="teams">
+          <strong>Opponent:</strong> Kendle team
+        </div>
+
+        <p>
+          We selected this defense because Kendle teams have been difficult
+          opponents in our recent testing. Our lineup maintained its Health
+          while Yasmine and Crow applied pressure.
+        </p>
+
+        <p>
+          As the opposing heroes began to fall, all five of our heroes remained
+          standing.
+        </p>
+
+        <span class="value">
+          Guus: just over 4 million healing
+        </span>
+
+        <div class="result">
+          WIN • ALL 5 ALLIES SURVIVED
+        </div>
+
+      </article>
+
+
+      <article class="test-card">
+
+        <div class="test-number">TEST 02 • GUUS + KENDLE</div>
+
+        <h3>Guus • Kendle • Cleaver • Dorian • Aidan</h3>
+
+        <div class="teams">
+          <strong>Opponent:</strong>
+          Cascade • Drayne • Eva • Julius • Nebula
+        </div>
+
+        <p>
+          Several heroes contribute healing in this lineup, allowing us to
+          begin evaluating how Guus fits into a team with combined sustain.
+        </p>
+
+        <p>
+          The opposing lineup gradually lost ground while all five of our
+          heroes survived through the finish.
+        </p>
+
+        <span class="value">
+          Guus: around 3.8 million healing
+        </span>
+
+        <div class="result">
+          WIN • FIRST POSITIVE GUUS + KENDLE RESULT
+        </div>
+
+      </article>
+
+
+      <article class="test-card">
+
+        <div class="test-number">TEST 03 • LONG KENDLE FIGHT</div>
+
+        <h3>Yasmine • Crow • Byrna • Octavia • Guus</h3>
+
+        <div class="teams">
+          <strong>Opponent:</strong>
+          Cleaver • Kendle • Dorian • Aidan • Byrna
+        </div>
+
+        <p>
+          This was another Kendle defense and a longer battle. Our lineup
+          remained together under pressure, giving Yasmine and Crow time to
+          continue attacking while repeated Health recovery supported the team.
+        </p>
+
+        <p>
+          All five allies were still alive as the remaining enemies fell.
+        </p>
+
+        <span class="value">
+          Guus: almost 9.7 million healing
+        </span>
+
+        <span class="value">
+          Guus received more than 2 million damage
+        </span>
+
+        <div class="result">
+          WIN • ALL 5 ALLIES SURVIVED
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <section>
+
+      <div class="feature">
+
+        <h2>What These Results Do — and Don't — Tell Us</h2>
+
+        <p>
+          These first results are encouraging. Guus contributed substantial
+          healing, the tested lineups survived, and we recorded victories
+          against Kendle defenses that have been difficult opponents in recent
+          testing.
+        </p>
+
+        <p style="margin-top:14px;">
+          However, the displayed healing totals do not separate Critical
+          Healing from normal healing, and these battles do not measure the
+          improvement against an otherwise identical Guus without Relics.
+        </p>
+
+        <p style="margin-top:14px;">
+          They should therefore be treated as first results rather than proof
+          of the final strength or ideal breakpoint of Guus's Relic.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Relic Priority — Where We Stand</h2>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>Level 10 — Tested</h3>
+
+          <p>
+            Featherhood and Legendary Beak Peak are active in our current
+            build. The combination provides regular additional Golden Feathers
+            and introduces the possibility of Critical Healing.
+          </p>
+
+          <span class="value">
+            Current tested breakpoint
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Levels 20 &amp; 30 — More Testing Needed</h3>
+
+          <p>
+            Legendary Honkageddon and No Honk, No Gain introduce additional
+            feather applications and specialized defensive protection, but
+            our current Level 10 footage does not test these upgrades.
+          </p>
+
+          <span class="value">
+            No final recommendation yet
+          </span>
+
+        </article>
+
+      </div>
+
+      <div class="note">
+        We are not declaring Level 10, Level 20 or Level 30 the final optimal
+        stopping point yet. Direct comparisons across more teams, opponents
+        and Relic levels are still required.
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div class="feature">
+
+        <h2>First Verdict</h2>
+
+        <p>
+          Guus's Relic has made a positive first impression at Level 10.
+          Featherhood adds a regular source of Golden Feathers, while
+          Legendary Beak Peak introduces Critical Healing into a kit already
+          built around sustain and Critical Hit interactions.
+        </p>
+
+        <p style="margin-top:14px;">
+          The victories against Kendle defenses are encouraging, and Guus
+          fighting alongside Kendle gives us another combination worth
+          investigating.
+        </p>
+
+        <p style="margin-top:14px;">
+          The next step is comparison: more teams, more opponents, different
+          Relic levels and eventually direct testing of Legendary Honkageddon
+          and No Honk, No Gain.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <h2>Watch the Full Guus Relic Guide</h2>
+
+      <p class="section-copy">
+        Watch the complete Gods of Alliance breakdown for all four Guus Relic
+        unlocks and the full footage from our first Level 10 battle tests.
+      </p>
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/90A_cgFAuH8"
+          title="Guus Relic Guide — Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      GODS OF ALLIANCE • HERO WARS ALLIANCE RELIC GUIDES &amp; ANALYSIS
+    </footer>
+
+  </main>
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
