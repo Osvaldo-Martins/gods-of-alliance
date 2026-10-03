@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Crow New Talisman — Physical Attack & Critical Hit Chance | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Crow is getting a second Talisman with Physical Attack and Physical Critical Hit Chance, alongside Ocean Echo and Arbiter of Justice skins. First Gods of Alliance analysis before full battle testing."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/crow-new-talisman.html"
+  >
+
+  <!-- OPEN GRAPH -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Crow New Talisman — Physical Attack & Critical Hit Chance"
+  >
+
+  <meta
+    property="og:description"
+    content="Crow's second Talisman brings Physical Attack and Physical Critical Hit Chance. Plus two new skins: Ocean Echo and Arbiter of Justice."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/crow-new-talisman.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/News/crow-new-talisman.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Crow New Talisman Physical Attack and Critical Hit Chance"
+  >
+
+  <!-- TWITTER / X -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Crow New Talisman — Physical Attack & Critical Hit Chance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="First analysis of Crow's second Talisman, Ocean Echo Physical Attack skin and Arbiter of Justice Crushing skin."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/News/crow-new-talisman.png"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #07060a;
+      --panel: #0e0b12;
+      --panel-soft: #15101a;
+      --red: #c81f4c;
+      --red-bright: #ff315f;
+      --magenta: #f12d9d;
+      --purple: #9b4dff;
+      --gold: #e7bd64;
+      --gold-light: #ffe5a0;
+      --white: #ffffff;
+      --text: #ece6ee;
+      --muted: #aaa0ad;
+      --border: rgba(231, 189, 100, 0.20);
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(241, 45, 157, 0.12), transparent 30%),
+        radial-gradient(circle at 90% 18%, rgba(200, 31, 76, 0.10), transparent 28%),
+        linear-gradient(180deg, #0c0710 0%, var(--bg) 48%, #050506 100%);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 55px 0 85px;
+    }
+
+    /* HERO */
+
+    .hero {
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      max-width: 980px;
+      margin: 0 auto;
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+    }
+
+    .subtitle {
+      max-width: 850px;
+      margin: 20px auto 30px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .cover {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.58),
+        0 0 60px rgba(241, 45, 157, 0.08);
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 32px auto 0;
+      color: #d8d0da;
+      font-size: 16px;
+    }
+
+    /* GENERAL */
+
+    section {
+      margin-top: 58px;
+    }
+
+    h2 {
+      color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: #fff1c6;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .section-copy {
+      max-width: 900px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    /* QUICK INFO */
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .quick-card {
+      padding: 20px 16px;
+      text-align: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* FEATURE */
+
+    .feature {
+      padding: 30px;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(241, 45, 157, 0.09), transparent 30%),
+        linear-gradient(145deg, #1a0f19, #0c0910);
+      border: 1px solid rgba(231, 189, 100, 0.27);
+      border-radius: 18px;
+    }
+
+    .feature + .feature {
+      margin-top: 16px;
+    }
+
+    .feature p {
+      color: var(--muted);
+    }
+
+    /* CARDS */
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: 25px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(34, 16, 29, 0.92),
+          rgba(12, 9, 14, 0.97)
+        );
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 3px;
+      background: linear-gradient(
+        var(--red-bright),
+        var(--magenta),
+        var(--purple)
+      );
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .value {
+      display: block;
+      margin-top: 12px;
+      color: var(--gold-light);
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    /* COMPARISON */
+
+    .comparison {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .talisman {
+      padding: 28px;
+      border-radius: 16px;
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+    }
+
+    .talisman.new {
+      background:
+        radial-gradient(circle at 90% 10%, rgba(241, 45, 157, 0.12), transparent 35%),
+        linear-gradient(145deg, #20101c, #0d0910);
+      border-color: rgba(241, 45, 157, 0.30);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 9px;
+      color: var(--gold-light);
+      background: rgba(231, 189, 100, 0.07);
+      border: 1px solid rgba(231, 189, 100, 0.20);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .talisman p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .stats {
+      margin-top: 18px;
+      padding: 10px 18px;
+      background: rgba(0, 0, 0, 0.24);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .stat-row:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-row strong {
+      color: var(--gold-light);
+      text-align: right;
+    }
+
+    /* NOTE */
+
+    .note {
+      margin-top: 20px;
+      padding: 20px 22px;
+      background: rgba(231, 189, 100, 0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 12px 12px 0;
+      color: #d8d1dc;
+    }
+
+    /* VIDEO */
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      margin-top: 25px;
+      background: #000;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      margin-top: 65px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      text-align: center;
+      color: #77707c;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-2,
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        width: calc(100% - 20px);
+        padding-top: 38px;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature,
+      .card,
+      .talisman {
+        padding: 20px;
+      }
+
+      .stat-row {
+        display: block;
+      }
+
+      .stat-row strong {
+        display: block;
+        text-align: left;
+        margin-top: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+      <div class="eyebrow">
+        HERO WARS ALLIANCE • NEWS & FIRST ANALYSIS
+      </div>
+
+      <h1>Crow — New Talisman</h1>
+
+      <p class="subtitle">
+        Physical Attack, Physical Critical Hit Chance and two new skins open
+        a more aggressive development direction for Crow.
+      </p>
+
+      <img
+        class="cover"
+        src="Images/News/crow-new-talisman.png"
+        alt="Crow New Talisman Physical Attack and Critical Hit Chance"
+      >
+
+      <p class="intro">
+        Crow is getting a second Talisman alongside two new skins during this
+        season. For a relatively recent Honor hero who has already demonstrated
+        his potential, these upgrades create an interesting question: how much
+        more dangerous can Crow become when his build shifts toward offense?
+      </p>
+
+    </header>
+
+
+    <!-- QUICK INFO -->
+
+    <section>
+
+      <h2>What's New?</h2>
+
+      <div class="quick-grid">
+
+        <div class="quick-card">
+          <strong>Physical Attack</strong>
+          <span>New Talisman</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Physical Critical Hit Chance</strong>
+          <span>New Talisman</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Ocean Echo</strong>
+          <span>New Skin</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Arbiter of Justice</strong>
+          <span>New Skin</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CROW IDENTITY -->
+
+    <section>
+
+      <h2>Crow's Identity Starts With Silence</h2>
+
+      <div class="feature">
+
+        <p>
+          Crow is an Honor hero whose identity revolves around disrupting
+          magic-dependent opponents through Silence while continuing to deal
+          physical damage himself.
+        </p>
+
+        <p style="margin-top:14px;">
+          That combination allows him to interfere with enemy abilities while
+          maintaining offensive pressure. But Silence does not make every
+          opponent helpless. Physical attackers can still fight, and the enemy
+          composition still matters.
+        </p>
+
+        <p style="margin-top:14px;">
+          Crow therefore needs a team that helps him survive and take advantage
+          of the control windows his kit creates.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- TALISMAN COMPARISON -->
+
+    <section>
+
+      <h2>First Talisman vs New Talisman</h2>
+
+      <p class="section-copy">
+        Crow's two Talisman options appear to push his build in different
+        directions: one provides a more balanced defensive foundation, while
+        the new option increases his offensive potential.
+      </p>
+
+      <div class="comparison">
+
+        <!-- FIRST -->
+
+        <article class="talisman">
+
+          <div class="tag">FIRST TALISMAN</div>
+
+          <h3>Talisman of Deduction</h3>
+
+          <div class="stats">
+
+            <div class="stat-row">
+              <span>Main Stat</span>
+              <strong>Agility</strong>
+            </div>
+
+            <div class="stat-row">
+              <span>Additional Stat</span>
+              <strong>Armor</strong>
+            </div>
+
+          </div>
+
+          <p style="margin-top:18px;">
+            Agility gives Crow a balanced foundation for his offense and
+            defense, while Armor helps him withstand incoming physical damage.
+          </p>
+
+          <p style="margin-top:12px;">
+            For a Control hero, surviving longer can create more opportunities
+            to disrupt the enemy. This makes his first Talisman particularly
+            relevant when physical pressure threatens to remove Crow too early.
+          </p>
+
+        </article>
+
+
+        <!-- SECOND -->
+
+        <article class="talisman new">
+
+          <div class="tag">NEW TALISMAN</div>
+
+          <h3>More Aggressive Direction</h3>
+
+          <div class="stats">
+
+            <div class="stat-row">
+              <span>Stat</span>
+              <strong>Physical Attack</strong>
+            </div>
+
+            <div class="stat-row">
+              <span>Stat</span>
+              <strong>Physical Critical Hit Chance</strong>
+            </div>
+
+          </div>
+
+          <p style="margin-top:18px;">
+            Physical Attack strengthens Crow's offensive foundation, while
+            Physical Critical Hit Chance introduces the possibility of critical
+            physical attacks and additional damage spikes.
+          </p>
+
+          <p style="margin-top:12px;">
+            The trade-off is important: Crow gains more offensive potential
+            while moving away from the defensive benefits offered by his first
+            Talisman.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="note">
+        The new Talisman changes Crow's stats. The available information does
+        not indicate a new Silence mechanic or an increase to his Silence
+        duration.
+      </div>
+
+    </section>
+
+
+    <!-- WHAT IT COULD MEAN -->
+
+    <section>
+
+      <h2>What Could the New Talisman Change?</h2>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>More Offensive Pressure</h3>
+
+          <p>
+            Crow can already disrupt opponents while dealing physical damage.
+            Increasing Physical Attack gives him a stronger offensive
+            foundation during those existing control windows.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Critical Damage Potential</h3>
+
+          <p>
+            Physical Critical Hit Chance creates the possibility of larger
+            physical damage spikes. The important question is how consistently
+            that additional offensive potential affects real battles.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Less Defensive Support</h3>
+
+          <p>
+            Choosing the new Talisman means moving away from the Agility and
+            Armor combination of Talisman of Deduction. Team support and
+            survivability could therefore become even more important.
+          </p>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Battle Testing Is Required</h3>
+
+          <p>
+            The real test is whether the additional offensive potential helps
+            Crow secure important eliminations while his team provides enough
+            protection to keep him active.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEW SKINS -->
+
+    <section>
+
+      <h2>Two New Crow Skins</h2>
+
+      <p class="section-copy">
+        The new Talisman is only part of Crow's upcoming development. During
+        this season, he also receives Ocean Echo and Arbiter of Justice.
+      </p>
+
+      <div class="grid-2">
+
+        <article class="card">
+
+          <h3>Ocean Echo</h3>
+
+          <p>
+            Ocean Echo adds Physical Attack, further strengthening Crow's
+            offensive foundation.
+          </p>
+
+          <span class="value">
+            Preview shown: +7,095 Physical Attack at maximum level
+          </span>
+
+        </article>
+
+
+        <article class="card">
+
+          <h3>Arbiter of Justice</h3>
+
+          <p>
+            Arbiter of Justice adds Crushing. Crushing increases damage
+            against opponents with low Health, giving Crow another way to
+            pressure enemies that are already close to falling.
+          </p>
+
+          <span class="value">
+            Stat: Crushing
+          </span>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- COMPLETE PACKAGE -->
+
+    <section>
+
+      <div class="feature">
+
+        <h2>A More Aggressive Crow?</h2>
+
+        <p>
+          Crow already has skins for Agility, Health and Armor Penetration.
+          Ocean Echo now adds Physical Attack, while Arbiter of Justice adds
+          Crushing.
+        </p>
+
+        <p style="margin-top:14px;">
+          Combined with the second Talisman, these upgrades potentially support
+          several different stages of the fight: a stronger offensive
+          foundation, the possibility of critical physical attacks, and
+          additional pressure against enemies whose Health is already low.
+        </p>
+
+        <p style="margin-top:14px;">
+          On paper, that could make Crow more dangerous at converting his
+          control windows into eliminations. Whether that happens reliably in
+          battle still needs to be tested.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FIRST ANALYSIS -->
+
+    <section>
+
+      <h2>First Analysis — Not the Final Verdict</h2>
+
+      <div class="feature">
+
+        <p>
+          This is a preview of Crow's upcoming development options, not a final
+          recommendation between his two Talismans.
+        </p>
+
+        <p style="margin-top:14px;">
+          Talisman of Deduction offers the more defensive balance through
+          Agility and Armor. The second Talisman opens a more aggressive path
+          through Physical Attack and Physical Critical Hit Chance.
+        </p>
+
+        <p style="margin-top:14px;">
+          Choosing between them should ultimately depend on the fight, Crow's
+          survivability and the support provided by the rest of the team.
+        </p>
+
+        <div class="note">
+          Once the new Talisman becomes available for testing, Gods of Alliance
+          will compare both options directly and examine where the new skins
+          make the biggest difference.
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section>
+
+      <h2>Watch the Crow New Talisman Preview</h2>
+
+      <p class="section-copy">
+        Watch the full Gods of Alliance analysis of Crow's second Talisman,
+        his new Physical Attack and Crushing skins, and what these upgrades
+        could mean for his future builds.
+      </p>
+
+      <div class="video-wrap">
+
+        <iframe
+          src="https://www.youtube.com/embed/0oA-3aSZcak"
+          title="Crow New Talisman — Gods of Alliance"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+    </section>
+
+
+    <footer>
+      GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & ANALYSIS
+    </footer>
+
+  </main>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
