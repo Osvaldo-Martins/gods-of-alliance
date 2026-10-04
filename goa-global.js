@@ -51,21 +51,25 @@
     .goa-header-brand-enhanced {
       display: inline-flex !important;
       align-items: center !important;
-      gap: 10px !important;
+      gap: 13px !important;
+      overflow: visible !important;
     }
 
     .goa-header-brand-logo {
-      width: 54px;
-      height: 54px;
+      width: 82px;
+      height: 82px;
 
       display: block;
-      flex: 0 0 54px;
+      flex: 0 0 82px;
 
       object-fit: contain;
 
+      margin-top: -14px;
+      margin-bottom: -14px;
+
       filter:
-        drop-shadow(0 0 6px rgba(255, 115, 20, 0.40))
-        drop-shadow(0 0 12px rgba(233, 169, 35, 0.18));
+        drop-shadow(0 0 7px rgba(255, 100, 15, 0.55))
+        drop-shadow(0 0 16px rgba(233, 169, 35, 0.25));
 
       transition:
         transform .2s ease,
@@ -73,11 +77,11 @@
     }
 
     .goa-header-brand-enhanced:hover .goa-header-brand-logo {
-      transform: scale(1.06);
+      transform: scale(1.05);
 
       filter:
-        drop-shadow(0 0 8px rgba(255, 115, 20, 0.55))
-        drop-shadow(0 0 16px rgba(233, 169, 35, 0.28));
+        drop-shadow(0 0 9px rgba(255, 100, 15, 0.68))
+        drop-shadow(0 0 20px rgba(233, 169, 35, 0.34));
     }
 
     .goa-header-brand-text {
@@ -313,13 +317,16 @@
     @media (max-width: 700px) {
 
       .goa-header-brand-enhanced {
-        gap: 7px !important;
+        gap: 9px !important;
       }
 
       .goa-header-brand-logo {
-        width: 44px;
-        height: 44px;
-        flex-basis: 44px;
+        width: 66px;
+        height: 66px;
+        flex-basis: 66px;
+
+        margin-top: -11px;
+        margin-bottom: -11px;
       }
 
       .goa-global-menu-button {
@@ -348,13 +355,16 @@
     @media (max-width: 430px) {
 
       .goa-header-brand-logo {
-        width: 40px;
-        height: 40px;
-        flex-basis: 40px;
+        width: 58px;
+        height: 58px;
+        flex-basis: 58px;
+
+        margin-top: -8px;
+        margin-bottom: -8px;
       }
 
       .goa-header-brand-enhanced {
-        gap: 6px !important;
+        gap: 7px !important;
       }
     }
   `;
@@ -406,8 +416,8 @@
     logo.className = "goa-header-brand-logo";
     logo.src = "Images/goa-logo.png";
     logo.alt = "Gods of Alliance";
-    logo.width = 54;
-    logo.height = 54;
+    logo.width = 82;
+    logo.height = 82;
 
     const text = document.createElement("span");
 
