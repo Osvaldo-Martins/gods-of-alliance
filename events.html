@@ -18,8 +18,6 @@
     href="https://gods-of-alliance.vercel.app/events.html"
   >
 
-  <!-- OPEN GRAPH -->
-
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gods of Alliance">
 
@@ -47,8 +45,6 @@
     property="og:image:alt"
     content="Gods of Alliance Events"
   >
-
-  <!-- TWITTER / X -->
 
   <meta name="twitter:card" content="summary_large_image">
 
@@ -259,7 +255,6 @@
       height: 100%;
       display: block;
       object-fit: cover;
-
       transition: transform 0.35s ease;
     }
 
@@ -343,6 +338,70 @@
     }
 
     .future-note p {
+      color: #858585;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* ARCHIVE */
+
+    .archive-area {
+      margin-top: 38px;
+      text-align: center;
+    }
+
+    .archive-text {
+      color: #777777;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      margin-bottom: 16px;
+    }
+
+    .archive-button {
+      display: inline-block;
+      padding: 14px 26px;
+
+      border: 1px solid rgba(233, 169, 35, 0.60);
+      background: #0a0a0a;
+
+      color: var(--gold);
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+
+      transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .archive-button:hover {
+      color: #070707;
+      background: var(--gold);
+      border-color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* EMPTY CURRENT STATE */
+
+    .empty-current {
+      display: none;
+      padding: 50px 30px;
+      border: 1px dashed #292929;
+      background: #0a0a0a;
+      text-align: center;
+    }
+
+    .empty-current h3 {
+      color: var(--gold);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .empty-current p {
       color: #858585;
       font-size: 13px;
       line-height: 1.75;
@@ -451,7 +510,7 @@
           LATEST EVENT GUIDES
         </div>
 
-        <h2>EVENTS & SEASONS</h2>
+        <h2>EVENTS &amp; SEASONS</h2>
       </div>
 
       <p>
@@ -462,145 +521,22 @@
     </div>
 
 
-    <section class="events-grid">
-
-      <!-- ANCIENT AWAKENING -->
-
-      <a
-        class="event-card"
-        href="ancient-awakening-event-guide.html"
-      >
-
-        <div class="card-image">
-
-          <img
-            src="Images/Events/ancient-awakening-event-guide.png"
-            alt="Ancient Awakening Event Guide"
-          >
-
-          <div class="card-tag">
-            EVENT GUIDE
-          </div>
-
-        </div>
+    <section
+      class="events-grid"
+      id="currentEvents"
+    ></section>
 
 
-        <div class="card-content">
+    <section
+      class="empty-current"
+      id="emptyCurrent"
+    >
+      <h3>NO CURRENT EVENT GUIDES</h3>
 
-          <div class="card-date">
-            METIDA LAUNCH EVENT
-          </div>
-
-          <h3>
-            Ancient Awakening Event Guide
-          </h3>
-
-          <p>
-            Explore all eight Ancient Awakening tabs, connected Firstborn Force
-            and Unstable Equilibrium rewards, Event Coin totals and the
-            500,000-coin path toward Metida's Primordial Skin and Skin+.
-          </p>
-
-          <div class="read-more">
-            OPEN EVENT GUIDE →
-          </div>
-
-        </div>
-
-      </a>
-
-
-      <!-- FIRSTBORN FORCE -->
-
-      <a
-        class="event-card"
-        href="firstborn-force-event-guide.html"
-      >
-
-        <div class="card-image">
-
-          <img
-            src="Images/Events/firstborn-force-event-guide.png"
-            alt="Firstborn Force Event Guide"
-          >
-
-          <div class="card-tag">
-            EVENT GUIDE
-          </div>
-
-        </div>
-
-
-        <div class="card-content">
-
-          <div class="card-date">
-            BURIED TRUTHS SEASON
-          </div>
-
-          <h3>
-            Firstborn Force Event Guide
-          </h3>
-
-          <p>
-            Explore all eight Firstborn Force quest tabs, Event Coin
-            totals, Metida's Primordial Skin and Skin+, Titan Brawls,
-            Event Shop rewards and resource-planning strategy.
-          </p>
-
-          <div class="read-more">
-            OPEN EVENT GUIDE →
-          </div>
-
-        </div>
-
-      </a>
-
-
-      <!-- BURIED TRUTHS SEASON -->
-
-      <a
-        class="event-card"
-        href="buried-truths-season-calendar.html"
-      >
-
-        <div class="card-image">
-
-          <img
-            src="Images/Events/Buried-Truths-Season/buried-truths-season-calendar.png"
-            alt="Buried Truths Season Calendar"
-          >
-
-          <div class="card-tag">
-            SEASON CALENDAR
-          </div>
-
-        </div>
-
-
-        <div class="card-content">
-
-          <div class="card-date">
-            SEPTEMBER 28 — OCTOBER 25
-          </div>
-
-          <h3>
-            Buried Truths Season Calendar
-          </h3>
-
-          <p>
-            Plan the full Buried Truths Season week by week, including
-            Metida, Talismans, new Skins, Relic releases, Seer's Game,
-            discounts and the major dates to watch.
-          </p>
-
-          <div class="read-more">
-            OPEN EVENT GUIDE →
-          </div>
-
-        </div>
-
-      </a>
-
+      <p>
+        There are no active event guides listed right now.
+        Check the archive for previous Gods of Alliance event coverage.
+      </p>
     </section>
 
 
@@ -616,12 +552,118 @@
 
     </section>
 
+
+    <div class="archive-area">
+
+      <div class="archive-text">
+        LOOKING FOR PREVIOUS EVENTS AND SEASONS?
+      </div>
+
+      <a
+        class="archive-button"
+        href="events-archive.html"
+      >
+        VIEW EVENTS ARCHIVE →
+      </a>
+
+    </div>
+
   </main>
 
 
   <footer>
-    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
   </footer>
+
+
+  <script src="events-data.js"></script>
+
+  <script>
+    (function () {
+
+      const container =
+        document.getElementById("currentEvents");
+
+      const emptyCurrent =
+        document.getElementById("emptyCurrent");
+
+      const allEvents =
+        Array.isArray(window.GOA_EVENTS)
+          ? [...window.GOA_EVENTS]
+          : [];
+
+
+      const currentEvents =
+        allEvents
+          .filter(function (event) {
+            return event.status === "current";
+          })
+          .sort(function (a, b) {
+            return b.order - a.order;
+          });
+
+
+      if (currentEvents.length === 0) {
+        emptyCurrent.style.display = "block";
+        return;
+      }
+
+
+      currentEvents.forEach(function (event) {
+
+        const card =
+          document.createElement("a");
+
+        card.className =
+          "event-card";
+
+        card.href =
+          event.url;
+
+
+        card.innerHTML = `
+          <div class="card-image">
+
+            <img
+              src="${event.image}"
+              alt="${event.title}"
+            >
+
+            <div class="card-tag">
+              ${event.tag}
+            </div>
+
+          </div>
+
+
+          <div class="card-content">
+
+            <div class="card-date">
+              ${event.dateLabel}
+            </div>
+
+            <h3>
+              ${event.title}
+            </h3>
+
+            <p>
+              ${event.description}
+            </p>
+
+            <div class="read-more">
+              ${event.button}
+            </div>
+
+          </div>
+        `;
+
+
+        container.appendChild(card);
+
+      });
+
+    })();
+  </script>
 
 
   <script src="goa-global.js"></script>
