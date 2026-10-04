@@ -54,10 +54,7 @@
       overflow-x: hidden;
     }
 
-    /* =========================================================
-       DIAMOND BLUE NEWS BACKGROUND
-       Decorative symbols remain BEHIND all page content.
-       ========================================================= */
+    /* BACKGROUND */
 
     .news-background {
       position: fixed;
@@ -139,8 +136,6 @@
       opacity: 0.07;
     }
 
-    /* SMALL BACKGROUND SPARKS */
-
     .spark {
       position: absolute;
       width: 5px;
@@ -183,8 +178,6 @@
       top: 84%;
       right: 31%;
     }
-
-    /* KEEP CONTENT ABOVE BACKGROUND */
 
     header,
     .hero,
@@ -463,6 +456,52 @@
       line-height: 1.65;
     }
 
+    /* ARCHIVE */
+
+    .archive-area {
+      margin-top: 52px;
+      padding-top: 35px;
+      border-top: 1px solid rgba(126, 208, 236, 0.16);
+      text-align: center;
+    }
+
+    .archive-text {
+      color: #8098a1;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .archive-button {
+      display: inline-block;
+      padding: 15px 27px;
+
+      border: 1px solid #8ce4fb;
+      background: rgba(106, 206, 239, 0.08);
+
+      color: #ffffff;
+      text-decoration: none;
+
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+
+      transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .archive-button:hover {
+      background: #8ce4fb;
+      color: #061118;
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 0 25px rgba(99, 203, 239, 0.20);
+    }
+
     /* FOOTER */
 
     footer {
@@ -523,8 +562,6 @@
 </head>
 
 <body>
-
-  <!-- BACKGROUND DECORATION ONLY -->
 
   <div class="news-background" aria-hidden="true">
 
@@ -589,103 +626,124 @@
     </div>
 
 
-    <div class="news-grid">
+    <div
+      class="news-grid"
+      id="latestNews"
+    ></div>
 
 
-      <!-- CROW NEW TALISMAN -->
+    <div class="archive-area">
 
-      <a
-        class="news-card"
-        href="crow-new-talisman.html"
-      >
-
-        <div class="news-image">
-
-          <img
-            src="Images/News/crow-new-talisman.png"
-            alt="Crow New Talisman Physical Attack and Critical Hit Chance"
-          >
-
-        </div>
-
-        <div class="news-content">
-
-          <div class="breaking">
-            NEW TALISMAN
-          </div>
-
-          <div class="news-title">
-            CROW — NEW TALISMAN
-          </div>
-
-          <div class="news-subtitle">
-            PHYSICAL ATTACK • PHYSICAL CRITICAL HIT CHANCE
-          </div>
-
-          <div class="news-description">
-            Crow is getting a second Talisman and two new skins.
-            The new option pushes him toward a more aggressive build
-            with Physical Attack and Physical Critical Hit Chance.
-          </div>
-
-          <div class="read-more">
-            READ ANALYSIS →
-          </div>
-
-        </div>
-
-      </a>
-
-
-      <!-- NEW SUPER TITAN -->
+      <div class="archive-text">
+        LOOKING FOR OLDER NEWS?
+      </div>
 
       <a
-        class="news-card"
-        href="new-super-titan-revealed.html"
+        class="archive-button"
+        href="news-archive.html"
       >
-
-        <div class="news-image">
-
-          <img
-            src="Images/News/new-super-titan-revealed.png"
-            alt="New Elarite Super Titan Revealed"
-          >
-
-        </div>
-
-        <div class="news-content">
-
-          <div class="breaking">
-            NEW REVEAL
-          </div>
-
-          <div class="news-title">
-            NEW SUPER TITAN REVEALED
-          </div>
-
-          <div class="news-subtitle">
-            ELARITE • COMING SOON
-          </div>
-
-          <div class="news-description">
-            A new Elarite Super Titan is coming to Hero Wars Alliance.
-            Its name, Skills and second Synergy Element remain unknown.
-            For now, Dominion has only been given its first look.
-          </div>
-
-          <div class="read-more">
-            READ NEWS →
-          </div>
-
-        </div>
-
+        VIEW NEWS ARCHIVE →
       </a>
 
+    </div>
 
-      <!-- FUTURE NEWS -->
+  </main>
 
-      <div class="mystery-card">
 
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS &amp; GUIDES
+  </footer>
+
+
+  <script src="news-data.js"></script>
+
+
+  <script>
+    (function () {
+
+      const container =
+        document.getElementById("latestNews");
+
+      const articles =
+        Array.isArray(window.GOA_NEWS_ARTICLES)
+          ? [...window.GOA_NEWS_ARTICLES]
+          : [];
+
+
+      articles.sort(function (a, b) {
+        return b.order - a.order;
+      });
+
+
+      const latestNews =
+        articles.slice(0, 10);
+
+
+      latestNews.forEach(function (article) {
+
+        const card =
+          document.createElement("a");
+
+        card.className =
+          "news-card";
+
+        card.href =
+          article.url;
+
+
+        card.innerHTML = `
+          <div class="news-image">
+
+            <img
+              src="${article.image}"
+              alt="${article.title}"
+            >
+
+          </div>
+
+          <div class="news-content">
+
+            <div class="breaking">
+              ${article.label || article.type}
+            </div>
+
+            <div class="news-title">
+              ${article.title}
+            </div>
+
+            <div class="news-subtitle">
+              ${article.subtitle}
+            </div>
+
+            <div class="news-description">
+              ${article.description}
+            </div>
+
+            <div class="read-more">
+              ${article.button}
+            </div>
+
+          </div>
+        `;
+
+
+        container.appendChild(card);
+
+      });
+
+
+      /*
+        Keep the existing Dominion Watch panel
+        at the end of the current News grid.
+      */
+
+      const mysteryCard =
+        document.createElement("div");
+
+      mysteryCard.className =
+        "mystery-card";
+
+      mysteryCard.innerHTML = `
         <div>
 
           <span>DOMINION WATCH</span>
@@ -698,18 +756,14 @@
           </p>
 
         </div>
-
-      </div>
-
-
-    </div>
-
-  </main>
+      `;
 
 
-  <footer>
-    GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & GUIDES
-  </footer>
+      container.appendChild(mysteryCard);
+
+    })();
+  </script>
+
 
   <script src="goa-global.js"></script>
 
