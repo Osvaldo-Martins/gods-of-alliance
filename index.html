@@ -7,26 +7,31 @@
 <title>Gods of Alliance | Hero Wars Alliance Guides</title>
 
 <!-- SEO -->
-<meta name="description" content="Gods of Alliance provides Hero Wars Alliance hero guides, team building strategies, news, events and practical information to help players make smarter decisions.">
+<meta name="description" content="Gods of Alliance provides Hero Wars Alliance hero guides, team strategies, Titan guides, tier lists, news, events and practical information to help players make smarter decisions.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://gods-of-alliance.vercel.app/">
 
-<!-- OPEN GRAPH / SOCIAL SHARING -->
+<!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="Gods of Alliance | Hero Wars Alliance Guides">
-<meta property="og:description" content="Hero Wars Alliance guides, hero builds, best teams, news, events and practical strategies for players.">
+<meta property="og:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, tier lists, news, events and practical strategies.">
 <meta property="og:url" content="https://gods-of-alliance.vercel.app/">
 <meta property="og:image" content="https://gods-of-alliance.vercel.app/goa-banner.jpg">
 <meta property="og:image:alt" content="Gods of Alliance - Hero Wars Alliance Guides">
 
-<!-- X / TWITTER CARD -->
+<!-- TWITTER / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gods of Alliance | Hero Wars Alliance Guides">
-<meta name="twitter:description" content="Hero Wars Alliance guides, hero builds, best teams, news, events and practical strategies for players.">
+<meta name="twitter:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, tier lists, news, events and practical strategies.">
 <meta name="twitter:image" content="https://gods-of-alliance.vercel.app/goa-banner.jpg">
 
 <style>
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,448 +40,2180 @@
 
 html {
     scroll-behavior: smooth;
+    background: #030303;
+}
+
+:root {
+    --bg: #050504;
+    --panel: #0b0b09;
+    --gold: #f5a900;
+    --gold-bright: #ffc84a;
+    --gold-soft: #d79617;
+    --gold-dark: #7b5107;
+    --white: #ffffff;
+    --muted: #9c978e;
+    --line: rgba(245, 169, 0, 0.13);
 }
 
 body {
-    background: #070707;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(245, 169, 0, 0.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #080704 0%,
+            #050504 38%,
+            #030303 100%
+        );
+
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
 }
 
-/* HEADER */
+a {
+    color: inherit;
+}
 
-header {
-    height: 78px;
-    background: rgba(5,5,5,0.98);
-    border-bottom: 1px solid #252525;
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.site-header {
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 32px;
+
+    position: relative;
+    z-index: 100;
+
+    background:
+        rgba(3, 3, 3, 0.97);
+
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.07);
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7%;
-    position: relative;
-    z-index: 1000;
 }
 
 .brand {
-    font-size: 21px;
-    font-weight: 900;
-    letter-spacing: 2px;
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 950;
+
+    letter-spacing: 0.035em;
+
+    white-space: nowrap;
 }
 
 .brand span {
-    color: #e9a923;
+    color: var(--gold);
 }
 
-nav {
+
+/* =========================================================
+   CINEMATIC HERO
+   ========================================================= */
+
+.home-hero {
+    position: relative;
+
+    min-height: 720px;
+
+    overflow: hidden;
+
     display: flex;
-    align-items: center;
-    gap: 32px;
-}
+    align-items: flex-end;
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 1.3px;
-}
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.10);
 
-nav a:hover {
-    color: #e9a923;
-}
-
-/* SEARCH / GUIDES BUTTON */
-
-.search-button {
-    width: 42px;
-    height: 42px;
-    border: 1px solid #333;
-    border-radius: 50%;
-    background: #0d0d0d;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.search-button:hover {
-    border-color: #e9a923;
-    color: #e9a923;
-    transform: scale(1.05);
-}
-
-.search-button svg {
-    width: 19px;
-    height: 19px;
-}
-
-/* GUIDES PANEL */
-
-.guides-panel {
-    position: absolute;
-    top: 78px;
-    right: 7%;
-    width: 330px;
-    background: #0c0c0c;
-    border: 1px solid #292929;
-    border-top: 2px solid #e9a923;
-    box-shadow: 0 18px 50px rgba(0,0,0,0.65);
-    padding: 12px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: 0.2s ease;
-}
-
-.guides-panel.open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.guides-title {
-    color: #777;
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    padding: 10px 14px 12px;
-}
-
-.guide-link {
-    display: block;
-    padding: 16px 14px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
-    border-top: 1px solid #1f1f1f;
-    transition: 0.2s;
-}
-
-.guide-link:hover {
-    color: #e9a923;
-    background: #131313;
-    padding-left: 19px;
-}
-
-.guide-link span {
-    float: right;
-    color: #555;
-}
-
-.guide-link:hover span {
-    color: #e9a923;
-}
-
-/* MAIN BANNER */
-
-.banner {
-    width: 100%;
     background: #050505;
-    display: flex;
-    justify-content: center;
-    padding: 35px 5% 0;
 }
 
-.banner img {
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 3, 3, 0.96) 0%,
+            rgba(3, 3, 3, 0.78) 28%,
+            rgba(3, 3, 3, 0.23) 62%,
+            rgba(3, 3, 3, 0.72) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(3, 3, 3, 0.10) 0%,
+            rgba(3, 3, 3, 0.18) 45%,
+            #050504 100%
+        ),
+        url("goa-banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.hero-background::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 64% 43%,
+            rgba(245, 169, 0, 0.06),
+            transparent 31%
+        );
+
+    pointer-events: none;
+}
+
+.hero-shell {
     width: 100%;
-    max-width: 1500px;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-    box-shadow: 0 0 45px rgba(232, 142, 20, 0.14);
-}
+    max-width: 1400px;
 
-/* INTRO */
-
-.intro {
-    max-width: 1050px;
     margin: 0 auto;
-    padding: 70px 30px 80px;
-    text-align: center;
+
+    padding:
+        125px
+        32px
+        88px;
+
+    position: relative;
+    z-index: 2;
 }
 
-.label {
-    color: #e9a923;
+.hero-content {
+    width: min(720px, 100%);
+}
+
+.hero-eyebrow {
+    margin-bottom: 18px;
+
+    color: var(--gold-bright);
+
+    font-size: 11px;
+    font-weight: 950;
+
+    letter-spacing: 0.27em;
+
+    text-transform: uppercase;
+}
+
+.home-hero h1 {
+    max-width: 760px;
+
+    margin-bottom: 24px;
+
+    font-size:
+        clamp(53px, 7vw, 92px);
+
+    line-height: 0.91;
+
+    font-weight: 950;
+
+    letter-spacing: -0.055em;
+
+    text-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.78);
+}
+
+.home-hero h1 span {
+    display: block;
+
+    color: var(--gold-bright);
+}
+
+.hero-copy {
+    max-width: 640px;
+
+    margin-bottom: 31px;
+
+    color: #c3beb5;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    text-shadow:
+        0 2px 10px #000000;
+}
+
+.hero-copy strong {
+    color: #ffffff;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.primary-button,
+.secondary-button {
+    min-height: 51px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        0
+        22px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 950;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.primary-button {
+    border:
+        1px solid var(--gold);
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--gold-bright),
+            #e79c09
+        );
+
+    color: #090603;
+
+    box-shadow:
+        0 10px 30px rgba(245, 169, 0, 0.12);
+}
+
+.secondary-button {
+    border:
+        1px solid rgba(255, 255, 255, 0.18);
+
+    background:
+        rgba(8, 8, 8, 0.70);
+
+    color: #ffffff;
+
+    backdrop-filter: blur(5px);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform:
+        translateY(-2px);
+}
+
+.primary-button:hover {
+    background: #ffffff;
+
+    border-color: #ffffff;
+}
+
+.secondary-button:hover {
+    border-color:
+        rgba(245, 169, 0, 0.65);
+
+    color: var(--gold-bright);
+}
+
+
+/* =========================================================
+   SHARED CONTENT
+   ========================================================= */
+
+.section {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        90px
+        32px;
+}
+
+.section-kicker {
+    margin-bottom: 10px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+    font-weight: 950;
+
+    letter-spacing: 0.22em;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(32px, 5vw, 50px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -0.035em;
+}
+
+.section-description {
+    max-width: 700px;
+
+    color: #8f8a82;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HERO FINDER
+   ========================================================= */
+
+.hero-finder-section {
+    position: relative;
+
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.07);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(245, 169, 0, 0.055),
+            transparent 38%
+        );
+}
+
+.hero-finder {
+    margin-top: 34px;
+
+    padding:
+        28px;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.19);
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(18, 14, 7, 0.96),
+            rgba(8, 8, 7, 0.98)
+        );
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.28);
+}
+
+.finder-label {
+    margin-bottom: 11px;
+
+    color: #ffffff;
+
     font-size: 12px;
     font-weight: 900;
-    letter-spacing: 5px;
-    margin-bottom: 20px;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
 }
 
-.intro h1 {
-    font-size: clamp(38px, 5vw, 65px);
-    line-height: 1;
+.finder-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 65px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 8px;
+
+    background:
+        rgba(2, 2, 2, 0.62);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.finder-box:focus-within {
+    border-color:
+        rgba(245, 169, 0, 0.62);
+
+    box-shadow:
+        0 0 30px rgba(245, 169, 0, 0.045);
+}
+
+.finder-icon {
+    width: 62px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gold-bright);
+
+    font-size: 21px;
+}
+
+#homeHeroSearch {
+    width: 100%;
+
+    padding:
+        20px
+        12px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: 750;
+}
+
+#homeHeroSearch::placeholder {
+    color: #68645e;
+}
+
+.finder-results {
+    display: none;
+
+    margin-top: 9px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.15);
+
+    border-radius: 8px;
+
+    background: #090908;
+}
+
+.finder-results.open {
+    display: block;
+}
+
+.finder-result {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding:
+        15px
+        17px;
+
+    border: 0;
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    background: transparent;
+
+    color: #ffffff;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.finder-result:last-child {
+    border-bottom: 0;
+}
+
+.finder-result:hover {
+    background:
+        rgba(245, 169, 0, 0.055);
+
+    color: var(--gold-bright);
+}
+
+.finder-result-name {
+    font-size: 13px;
     font-weight: 900;
-    letter-spacing: -2px;
-    margin-bottom: 28px;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
 }
 
-.gold {
-    color: #e9a923;
+.finder-result-status {
+    color: #69655e;
+
+    font-size: 8px;
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
 }
 
-.intro p {
-    color: #b9b9b9;
-    font-size: 17px;
-    line-height: 1.8;
-    max-width: 820px;
-    margin: 0 auto 22px;
+.finder-result.has-guide
+.finder-result-status {
+    color: var(--gold);
 }
 
-.intro strong {
+.finder-message {
+    display: none;
+
+    margin-top: 12px;
+
+    padding:
+        13px
+        15px;
+
+    border-radius: 7px;
+
+    background:
+        rgba(245, 169, 0, 0.045);
+
+    color: #aaa49b;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.finder-footer {
+    margin-top: 14px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.finder-all {
+    color: var(--gold);
+
+    text-decoration: none;
+
+    font-size: 9px;
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+.finder-all:hover {
     color: #ffffff;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 18px 35px;
-    background: #e9a923;
-    color: #050505;
+
+/* =========================================================
+   EXPLORE DATABASE
+   ========================================================= */
+
+.explore-section {
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.07);
+}
+
+.explore-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 38px;
+}
+
+.explore-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.explore-card {
+    position: relative;
+
+    min-height: 245px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding:
+        24px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    background:
+        #0a0a09;
+
     text-decoration: none;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 1.4px;
-    border-radius: 3px;
-    transition: 0.2s;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
 }
 
-.button:hover {
-    background: white;
-    transform: translateY(-2px);
+.explore-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.75;
+
+    transition:
+        opacity 0.22s ease,
+        transform 0.3s ease;
 }
 
-/* DIVIDER */
+.explore-card::after {
+    content: "";
 
-.divider {
-    width: 80px;
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     height: 2px;
-    background: #e9a923;
-    margin: 0 auto 30px;
+
+    opacity: 0.55;
 }
 
-/* FOOTER */
+.explore-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(245, 169, 0, 0.36);
+
+    box-shadow:
+        0 25px 55px rgba(0, 0, 0, 0.35);
+}
+
+.explore-card:hover::before {
+    opacity: 1;
+
+    transform:
+        scale(1.025);
+}
+
+.explore-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-number {
+    margin-bottom: 23px;
+
+    color: rgba(255, 255, 255, 0.35);
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 0.15em;
+}
+
+.explore-card h3 {
+    margin-bottom: 9px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: 950;
+
+    letter-spacing: -0.025em;
+
+    text-transform: uppercase;
+}
+
+.explore-card p {
+    min-height: 58px;
+
+    margin-bottom: 18px;
+
+    color: #969189;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.card-link {
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+/* HERO GUIDES */
+
+.card-heroes::before {
+    background:
+        radial-gradient(
+            circle at 78% 18%,
+            rgba(245, 169, 0, 0.22),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(245, 169, 0, 0.09),
+            transparent 62%
+        );
+}
+
+.card-heroes::after {
+    background: var(--gold);
+}
+
+.card-heroes .card-link {
+    color: var(--gold-bright);
+}
+
+
+/* HWA ALL */
+
+.card-hwa::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(255, 176, 35, 0.17),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(136, 82, 7, 0.11),
+            transparent 62%
+        );
+}
+
+.card-hwa::after {
+    background: #d89522;
+}
+
+.card-hwa .card-link {
+    color: #e8aa3d;
+}
+
+
+/* TITANS */
+
+.card-titans::before {
+    background:
+        radial-gradient(
+            circle at 78% 15%,
+            rgba(79, 211, 255, 0.18),
+            transparent 34%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(159, 73, 255, 0.13),
+            transparent 42%
+        );
+}
+
+.card-titans::after {
+    background:
+        linear-gradient(
+            90deg,
+            #42c8ff,
+            #9c63ff
+        );
+}
+
+.card-titans .card-link {
+    color: #65d7ff;
+}
+
+
+/* BEGINNERS */
+
+.card-beginners::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(92, 219, 154, 0.16),
+            transparent 38%
+        );
+}
+
+.card-beginners::after {
+    background: #55cf91;
+}
+
+.card-beginners .card-link {
+    color: #6ee1a8;
+}
+
+
+/* BEST TEAMS */
+
+.card-teams::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(255, 177, 35, 0.18),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 20% 100%,
+            rgba(153, 67, 12, 0.10),
+            transparent 42%
+        );
+}
+
+.card-teams::after {
+    background: #f5a900;
+}
+
+.card-teams .card-link {
+    color: var(--gold-bright);
+}
+
+
+/* TIER LIST */
+
+.card-tier::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(235, 90, 90, 0.15),
+            transparent 38%
+        );
+}
+
+.card-tier::after {
+    background: #e76666;
+}
+
+.card-tier .card-link {
+    color: #f08282;
+}
+
+
+/* NEWS */
+
+.card-news::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(61, 166, 255, 0.18),
+            transparent 38%
+        );
+}
+
+.card-news::after {
+    background: #48a9ff;
+}
+
+.card-news .card-link {
+    color: #69b9ff;
+}
+
+
+/* EVENTS */
+
+.card-events::before {
+    background:
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(255, 163, 33, 0.18),
+            transparent 38%
+        ),
+        radial-gradient(
+            circle at 20% 100%,
+            rgba(181, 74, 16, 0.10),
+            transparent 42%
+        );
+}
+
+.card-events::after {
+    background: #ff9e2b;
+}
+
+.card-events .card-link {
+    color: #ffb85c;
+}
+
+
+/* =========================================================
+   MISSION / IDENTITY
+   ========================================================= */
+
+.mission-wrap {
+    position: relative;
+
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.07);
+
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(245, 169, 0, 0.045),
+            transparent 42%
+        ),
+        #050504;
+}
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr
+        1.2fr;
+
+    gap: 65px;
+
+    align-items: center;
+}
+
+.mission-mark {
+    position: relative;
+
+    min-height: 340px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.13);
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(245, 169, 0, 0.065),
+            rgba(5, 5, 4, 0.96)
+        );
+}
+
+.mission-mark::before {
+    content: "GOA";
+
+    color:
+        rgba(245, 169, 0, 0.08);
+
+    font-size:
+        clamp(95px, 15vw, 190px);
+
+    font-weight: 950;
+
+    letter-spacing: -0.08em;
+}
+
+.mission-mark::after {
+    content: "";
+
+    position: absolute;
+
+    width: 115px;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--gold),
+            transparent
+        );
+}
+
+.mission-copy .section-title {
+    max-width: 650px;
+}
+
+.mission-copy p {
+    max-width: 700px;
+
+    margin-bottom: 17px;
+
+    color: #9a958d;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.mission-copy strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.final-cta {
+    padding:
+        95px
+        30px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(245, 169, 0, 0.09),
+            transparent 35%
+        ),
+        #040403;
+}
+
+.final-cta-inner {
+    max-width: 800px;
+
+    margin: 0 auto;
+}
+
+.final-cta .section-kicker {
+    margin-bottom: 13px;
+}
+
+.final-cta h2 {
+    margin-bottom: 18px;
+
+    font-size:
+        clamp(38px, 6vw, 65px);
+
+    line-height: 0.95;
+
+    font-weight: 950;
+
+    letter-spacing: -0.045em;
+}
+
+.final-cta h2 span {
+    color: var(--gold-bright);
+}
+
+.final-cta p {
+    max-width: 600px;
+
+    margin:
+        0
+        auto
+        27px;
+
+    color: #918c84;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
-    border-top: 1px solid #222;
+    padding:
+        34px
+        20px;
+
+    border-top:
+        1px solid rgba(245, 169, 0, 0.06);
+
+    background: #030303;
+
     text-align: center;
-    color: #666;
-    padding: 28px;
-    font-size: 12px;
+
+    color: #5f5a53;
+
+    font-size: 11px;
+
+    letter-spacing: 0.04em;
 }
 
-/* MOBILE */
 
-@media (max-width: 700px) {
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
-    header {
-        padding: 0 5%;
+@media (max-width: 1100px) {
+
+    .explore-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .mission-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+
+        gap: 38px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .home-hero {
+        min-height: 650px;
+    }
+
+    .hero-background {
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(3, 3, 3, 0.35) 0%,
+                rgba(3, 3, 3, 0.55) 40%,
+                #050504 100%
+            ),
+            url("goa-banner.jpg");
+
+        background-position: center;
+    }
+
+    .hero-shell {
+        padding:
+            180px
+            22px
+            65px;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    .hero-copy {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .section {
+        padding:
+            70px
+            22px;
+    }
+
+    .mission-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .mission-mark {
+        min-height: 220px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .site-header {
+        min-height: 70px;
+
+        padding:
+            0
+            20px;
     }
 
     .brand {
-        font-size: 15px;
+        font-size: 13px;
     }
 
-    nav {
-        gap: 16px;
+    .home-hero {
+        min-height: 600px;
     }
 
-    nav a {
-        font-size: 10px;
+    .hero-shell {
+        padding:
+            160px
+            20px
+            55px;
     }
 
-    .search-button {
-        width: 38px;
-        height: 38px;
+    .home-hero h1 {
+        font-size:
+            clamp(47px, 14vw, 66px);
     }
 
-    .guides-panel {
-        right: 5%;
-        width: 90%;
-        max-width: 330px;
-        max-height: calc(100vh - 95px);
-        overflow-y: auto;
+    .hero-copy {
+        font-size: 14px;
     }
 
-    .banner {
-        padding: 18px 0 0;
+    .hero-actions {
+        flex-direction: column;
     }
 
-    .banner img {
-        border-radius: 0;
+    .primary-button,
+    .secondary-button {
+        width: 100%;
     }
 
-    .intro {
-        padding: 50px 22px 65px;
+    .explore-header {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .intro p {
-        font-size: 15px;
+    .explore-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+    .explore-card {
+        min-height: 215px;
+    }
+
+    .hero-finder {
+        padding: 18px;
+    }
+
+    .finder-icon {
+        width: 48px;
+    }
+
+    #homeHeroSearch {
+        font-size: 13px;
+    }
+
+    .mission-mark {
+        min-height: 190px;
     }
 }
+
 </style>
 </head>
 
+
 <body>
 
-<header>
 
-    <div class="brand">
-        GODS OF <span>ALLIANCE</span>
-    </div>
+<!-- =====================================================
+     TOP BAR
+     ===================================================== -->
 
-    <nav>
-        <a href="index.html">HOME</a>
+<header class="site-header">
 
-        <button
-            class="search-button"
-            id="searchButton"
-            aria-label="Open guides"
-            aria-expanded="false"
-            type="button"
-        >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                 stroke-width="2.2" stroke-linecap="round"
-                 stroke-linejoin="round">
-                <circle cx="11" cy="11" r="7"></circle>
-                <line x1="20" y1="20" x2="16.5" y2="16.5"></line>
-            </svg>
-        </button>
-    </nav>
+    <div class="header-inner">
 
-    <div class="guides-panel" id="guidesPanel">
-
-        <div class="guides-title">
-            EXPLORE GUIDES
+        <div class="brand">
+            GODS OF <span>ALLIANCE</span>
         </div>
-
-        <a class="guide-link" href="heroes.html">
-            HERO GUIDES
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="hwa-all.html">
-            HWA ALL
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="titans.html">
-            TITANS
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="beginners.html">
-            BEGINNERS AREA
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="best-teams.html">
-            BEST TEAMS
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="tier-list.html">
-            TIER LIST
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="news.html">
-            NEWS
-            <span>→</span>
-        </a>
-
-        <a class="guide-link" href="events.html">
-            EVENTS
-            <span>→</span>
-        </a>
 
     </div>
 
 </header>
 
 
-<section class="banner">
+<!-- =====================================================
+     CINEMATIC HERO
+     ===================================================== -->
 
-    <img src="goa-banner.jpg"
-         alt="Gods of Alliance - Hero Wars Alliance">
+<section class="home-hero">
 
-</section>
+    <div class="hero-background"></div>
 
+    <div class="hero-shell">
 
-<section class="intro">
+        <div class="hero-content">
 
-    <div class="label">
-        WELCOME TO GODS OF ALLIANCE
+            <div class="hero-eyebrow">
+                HERO WARS ALLIANCE DATABASE
+            </div>
+
+            <h1>
+                MASTER YOUR HEROES.
+                <span>DOMINATE DOMINION.</span>
+            </h1>
+
+            <p class="hero-copy">
+                <strong>Gods of Alliance</strong> brings Hero Wars Alliance
+                guides, tested strategies, team building, Titans, events,
+                news and practical game knowledge together in one place.
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    class="primary-button"
+                    href="heroes.html"
+                >
+                    EXPLORE HERO GUIDES →
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="#explore"
+                >
+                    EXPLORE DATABASE
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
 
-    <h1>
-        MASTER YOUR HEROES.<br>
-        <span class="gold">BUILD BETTER TEAMS.</span>
-    </h1>
+</section>
 
-    <div class="divider"></div>
 
-    <p>
-        <strong>Gods of Alliance</strong> is built for Hero Wars Alliance players
-        who want clear, practical and tested information without unnecessary complexity.
-    </p>
+<!-- =====================================================
+     HERO FINDER
+     ===================================================== -->
 
-    <p>
-        Our Hero Guides break down each hero step by step — from skills and builds
-        to team synergies, strengths, weaknesses and real battle applications.
-        The goal is simple: help you understand <strong>why</strong> something works,
-        not just tell you what to use.
-    </p>
+<section class="hero-finder-section">
 
-    <p>
-        Whether you are developing a new hero, improving an existing team or trying
-        to understand the current battlefield, everything here is designed to help
-        you make smarter decisions with your resources.
-    </p>
+    <div class="section">
 
-    <a class="button" href="heroes.html">
-        EXPLORE HERO GUIDES →
-    </a>
+        <div class="section-kicker">
+            QUICK ACCESS
+        </div>
+
+        <h2 class="section-title">
+            Find Your Hero.
+        </h2>
+
+        <p class="section-description">
+            Looking for a specific Hero Wars Alliance hero?
+            Search the Gods of Alliance database and jump directly
+            to an available guide.
+        </p>
+
+
+        <div class="hero-finder">
+
+            <div class="finder-label">
+                SEARCH HERO DATABASE
+            </div>
+
+            <div class="finder-box">
+
+                <div class="finder-icon">
+                    ⌕
+                </div>
+
+                <input
+                    id="homeHeroSearch"
+                    type="search"
+                    placeholder="Search Aidan, Dante, Cleaver, Orion..."
+                    autocomplete="off"
+                    aria-label="Search hero database"
+                >
+
+            </div>
+
+
+            <div
+                class="finder-results"
+                id="finderResults"
+            ></div>
+
+
+            <div
+                class="finder-message"
+                id="finderMessage"
+            ></div>
+
+
+            <div class="finder-footer">
+
+                <a
+                    class="finder-all"
+                    href="heroes.html"
+                >
+                    VIEW ALL HEROES →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
+
+<!-- =====================================================
+     EXPLORE DATABASE
+     ===================================================== -->
+
+<section
+    class="explore-section"
+    id="explore"
+>
+
+    <div class="section">
+
+
+        <div class="explore-header">
+
+            <div>
+
+                <div class="section-kicker">
+                    GODS OF ALLIANCE
+                </div>
+
+                <h2 class="section-title">
+                    Explore the Database.
+                </h2>
+
+                <p class="section-description">
+                    From individual hero development to team strategy,
+                    Titans, events and game updates — choose the area
+                    you need and go straight to the information.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="explore-grid">
+
+
+            <!-- HERO GUIDES -->
+
+            <a
+                class="explore-card card-heroes"
+                href="heroes.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        01 / HERO DATABASE
+                    </div>
+
+                    <h3>
+                        Hero Guides
+                    </h3>
+
+                    <p>
+                        Skills, builds, Glyphs, Skins, Artifacts,
+                        Talismans, synergies, counters and practical
+                        battle strategy.
+                    </p>
+
+                    <div class="card-link">
+                        EXPLORE HEROES →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- HWA ALL -->
+
+            <a
+                class="explore-card card-hwa"
+                href="hwa-all.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        02 / ANALYSIS
+                    </div>
+
+                    <h3>
+                        HWA All
+                    </h3>
+
+                    <p>
+                        Relics, Skins, testing, mechanics and deeper
+                        Hero Wars Alliance analysis.
+                    </p>
+
+                    <div class="card-link">
+                        OPEN HWA ALL →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- TITANS -->
+
+            <a
+                class="explore-card card-titans"
+                href="titans.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        03 / TITAN DATABASE
+                    </div>
+
+                    <h3>
+                        Titans
+                    </h3>
+
+                    <p>
+                        Titan builds, Super Titans, Artifacts,
+                        Skins, upgrades and battle testing.
+                    </p>
+
+                    <div class="card-link">
+                        EXPLORE TITANS →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- BEGINNERS -->
+
+            <a
+                class="explore-card card-beginners"
+                href="beginners.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        04 / LEARN THE GAME
+                    </div>
+
+                    <h3>
+                        Beginners Area
+                    </h3>
+
+                    <p>
+                        Clear resource guides and practical information
+                        designed to help players build smarter.
+                    </p>
+
+                    <div class="card-link">
+                        START HERE →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- BEST TEAMS -->
+
+            <a
+                class="explore-card card-teams"
+                href="best-teams.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        05 / WAR ROOM
+                    </div>
+
+                    <h3>
+                        Best Teams
+                    </h3>
+
+                    <p>
+                        Team compositions, counter strategies,
+                        tested approaches and battlefield concepts.
+                    </p>
+
+                    <div class="card-link">
+                        ENTER WAR ROOM →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- TIER LIST -->
+
+            <a
+                class="explore-card card-tier"
+                href="tier-list.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        06 / RANKINGS
+                    </div>
+
+                    <h3>
+                        Tier List
+                    </h3>
+
+                    <p>
+                        Explore the Hero Wars Alliance roster and
+                        organize heroes through the Gods of Alliance
+                        tier list.
+                    </p>
+
+                    <div class="card-link">
+                        VIEW TIER LIST →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- NEWS -->
+
+            <a
+                class="explore-card card-news"
+                href="news.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        07 / DOMINION WATCH
+                    </div>
+
+                    <h3>
+                        News
+                    </h3>
+
+                    <p>
+                        New heroes, Talismans, Titans and important
+                        developments across Hero Wars Alliance.
+                    </p>
+
+                    <div class="card-link">
+                        READ NEWS →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+            <!-- EVENTS -->
+
+            <a
+                class="explore-card card-events"
+                href="events.html"
+            >
+
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        08 / LIVE EVENTS
+                    </div>
+
+                    <h3>
+                        Events
+                    </h3>
+
+                    <p>
+                        Event guides, seasonal calendars, rewards,
+                        currencies and resource-planning information.
+                    </p>
+
+                    <div class="card-link">
+                        EXPLORE EVENTS →
+                    </div>
+
+                </div>
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GOA MISSION
+     ===================================================== -->
+
+<section class="mission-wrap">
+
+    <div class="section">
+
+        <div class="mission-grid">
+
+
+            <div class="mission-mark"></div>
+
+
+            <div class="mission-copy">
+
+                <div class="section-kicker">
+                    BUILT FOR PLAYERS
+                </div>
+
+                <h2 class="section-title">
+                    Information You Can Actually Use.
+                </h2>
+
+                <p>
+                    <strong>Gods of Alliance</strong> is built for
+                    Hero Wars Alliance players who want clear,
+                    practical information without unnecessary complexity.
+                </p>
+
+                <p>
+                    Our goal is not simply to tell you what to build.
+                    We want to help you understand <strong>why</strong>
+                    something works — from hero development and team
+                    synergy to game mechanics, counters and resource
+                    decisions.
+                </p>
+
+                <p>
+                    Whether you are developing a new hero, improving
+                    an existing team or preparing for the next major
+                    event, the database is designed to help you make
+                    smarter decisions across Dominion.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL CTA
+     ===================================================== -->
+
+<section class="final-cta">
+
+    <div class="final-cta-inner">
+
+        <div class="section-kicker">
+            ENTER THE DATABASE
+        </div>
+
+        <h2>
+            Build Smarter.
+            <span>Fight Better.</span>
+        </h2>
+
+        <p>
+            Start with the Hero Guides or explore the full
+            Gods of Alliance database.
+        </p>
+
+        <div class="hero-actions">
+
+            <a
+                class="primary-button"
+                href="heroes.html"
+            >
+                HERO GUIDES →
+            </a>
+
+            <a
+                class="secondary-button"
+                href="#explore"
+            >
+                ALL CATEGORIES
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
 
 <footer>
     © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
 
 
+<!-- =====================================================
+     HOME HERO SEARCH
+
+     IMPORTANT:
+     Same confirmed names, filenames/pages concept
+     used by the Hero Guides database.
+     Only heroes with existing guide pages are opened.
+     ===================================================== -->
+
 <script>
-const searchButton = document.getElementById("searchButton");
-const guidesPanel = document.getElementById("guidesPanel");
 
-searchButton.addEventListener("click", function(event) {
-    event.stopPropagation();
+const homeHeroes = [
 
-    const isOpen = guidesPanel.classList.toggle("open");
-    searchButton.setAttribute("aria-expanded", isOpen);
-});
+    { name: "Aidan", page: "aidan.html" },
+    { name: "Alvanor" },
+    { name: "Amira" },
+    { name: "Andvari" },
+    { name: "Arachne", page: "arachne.html" },
+    { name: "Artemis" },
+    { name: "Astaroth", page: "astaroth.html" },
+    { name: "Astrid and Lucas" },
+    { name: "Aurora" },
 
-guidesPanel.addEventListener("click", function(event) {
-    event.stopPropagation();
-});
+    { name: "Byrna" },
 
-document.addEventListener("click", function() {
-    guidesPanel.classList.remove("open");
-    searchButton.setAttribute("aria-expanded", "false");
-});
+    { name: "Cascade" },
+    { name: "Celeste" },
+    { name: "Chabba" },
+    { name: "Cleaver", page: "cleaver.html" },
+    { name: "Cornelius" },
+    { name: "Corvus" },
+    { name: "Crow" },
 
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Escape") {
-        guidesPanel.classList.remove("open");
-        searchButton.setAttribute("aria-expanded", "false");
+    { name: "Dante", page: "dante.html" },
+    { name: "Daredevil", page: "daredevil.html" },
+    { name: "Dark Star" },
+    { name: "Dorian" },
+    { name: "Drayne" },
+
+    { name: "Electra Von Grave" },
+    { name: "Elmir" },
+    { name: "Eva", page: "eva.html" },
+
+    { name: "Faceless" },
+    { name: "Fafnir" },
+    { name: "Folio" },
+    { name: "Fox" },
+
+    { name: "Galahad" },
+    { name: "Ginger" },
+    { name: "Guus" },
+
+    { name: "Heidi" },
+    { name: "Helios" },
+
+    { name: "Iris" },
+    { name: "Isaac" },
+    { name: "Ishmael" },
+
+    { name: "Jet" },
+    { name: "Jhu" },
+    { name: "Jorgen", page: "jorgen.html" },
+    { name: "Judge" },
+    { name: "Julius" },
+
+    { name: "Kai" },
+    { name: "K'arkh" },
+    { name: "Kayla", page: "kayla.html" },
+    { name: "Keira" },
+    { name: "Kendle" },
+    { name: "Krista", page: "krista.html" },
+
+    { name: "Lara Croft" },
+    { name: "Lars", page: "lars.html" },
+    { name: "Leonel" },
+    { name: "Lian" },
+    { name: "Lilith", page: "lilith.html" },
+    { name: "Luther" },
+
+    { name: "Markus" },
+    { name: "Martha" },
+    { name: "Maya" },
+    { name: "Miu" },
+    { name: "Mojo" },
+    { name: "Morrigan" },
+    { name: "Mushy and Shroom" },
+
+    { name: "Nebula" },
+    { name: "Ninja Turtles" },
+
+    { name: "Octavia" },
+    { name: "Orion", page: "orion.html" },
+    { name: "Oya" },
+
+    { name: "Peech" },
+    { name: "Peppy", page: "peppy.html" },
+    { name: "Phobos" },
+    { name: "Polaris" },
+
+    { name: "Qing Mao" },
+
+    { name: "Rufus" },
+
+    { name: "Satori" },
+    { name: "Sebastian" },
+    { name: "Soleil" },
+    { name: "Somna" },
+
+    { name: "Tempus" },
+    { name: "Thea" },
+    { name: "Tristan" },
+
+    { name: "Xe'Sha", page: "xesha.html" },
+
+    { name: "Yasmine" },
+
+    { name: "Ziri" }
+
+];
+
+
+const homeHeroSearch =
+    document.getElementById("homeHeroSearch");
+
+const finderResults =
+    document.getElementById("finderResults");
+
+const finderMessage =
+    document.getElementById("finderMessage");
+
+
+function closeFinder() {
+
+    finderResults.classList.remove("open");
+
+    finderResults.innerHTML = "";
+
+}
+
+
+function showFinderMessage(message) {
+
+    finderMessage.textContent = message;
+
+    finderMessage.style.display = "block";
+
+}
+
+
+function hideFinderMessage() {
+
+    finderMessage.textContent = "";
+
+    finderMessage.style.display = "none";
+
+}
+
+
+function renderHomeSearch() {
+
+    const query =
+        homeHeroSearch.value
+            .trim()
+            .toLowerCase();
+
+
+    hideFinderMessage();
+
+
+    if (!query) {
+
+        closeFinder();
+
+        return;
     }
-});
+
+
+    const matches =
+        homeHeroes
+            .filter(function(hero) {
+
+                return hero.name
+                    .toLowerCase()
+                    .includes(query);
+
+            })
+            .slice(0, 6);
+
+
+    if (matches.length === 0) {
+
+        closeFinder();
+
+        showFinderMessage(
+            "No hero found. Open the full Hero Guides database to browse all heroes."
+        );
+
+        return;
+    }
+
+
+    finderResults.innerHTML = "";
+
+
+    matches.forEach(function(hero) {
+
+        const result =
+            document.createElement("button");
+
+        result.type = "button";
+
+        result.className =
+            hero.page
+                ? "finder-result has-guide"
+                : "finder-result";
+
+
+        result.innerHTML = `
+
+            <span class="finder-result-name">
+                ${hero.name}
+            </span>
+
+            <span class="finder-result-status">
+                ${
+                    hero.page
+                        ? "OPEN GUIDE →"
+                        : "GUIDE COMING"
+                }
+            </span>
+
+        `;
+
+
+        result.addEventListener(
+            "click",
+            function() {
+
+                if (hero.page) {
+
+                    window.location.href =
+                        hero.page;
+
+                } else {
+
+                    closeFinder();
+
+                    showFinderMessage(
+                        `${hero.name} is in the Gods of Alliance hero database, but the full guide is not available yet.`
+                    );
+                }
+            }
+        );
+
+
+        finderResults.appendChild(result);
+
+    });
+
+
+    finderResults.classList.add("open");
+
+}
+
+
+homeHeroSearch.addEventListener(
+    "input",
+    renderHomeSearch
+);
+
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest(".hero-finder")
+        ) {
+
+            closeFinder();
+
+            hideFinderMessage();
+        }
+    }
+);
+
 </script>
+
+
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
+<script src="goa-global.js"></script>
+
 
 </body>
 </html>
