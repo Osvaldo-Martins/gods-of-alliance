@@ -6,232 +6,1119 @@
 
 <title>Hero Guides | Gods of Alliance</title>
 
+<meta
+    name="description"
+    content="Explore the Gods of Alliance Hero Wars Alliance hero database with hero guides, builds, skills, glyphs, skins, synergies and battle strategies."
+>
+
+<meta name="robots" content="index, follow">
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/heroes.html"
+>
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Hero Guides | Gods of Alliance">
+<meta
+    property="og:description"
+    content="Explore the Gods of Alliance Hero Wars Alliance hero database and quickly find the hero guide you need."
+>
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/heroes.html"
+>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hero Guides | Gods of Alliance">
+<meta
+    name="twitter:description"
+    content="Explore the Gods of Alliance Hero Wars Alliance hero database and quickly find the hero guide you need."
+>
+
 <style>
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background:
-        radial-gradient(circle at 50% 0%, rgba(245, 169, 0, 0.09) 0%, rgba(245, 169, 0, 0.035) 28%, transparent 55%),
-        linear-gradient(180deg, #0b0904 0%, #070707 42%, #070707 100%);
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+html {
+    scroll-behavior: smooth;
+    background: #050504;
 }
 
-/* HEADER */
+:root {
+    --bg: #050504;
+    --gold: #f5a900;
+    --gold-bright: #ffc84a;
+    --gold-dark: #9f6b08;
+    --white: #ffffff;
+    --muted: #9b978e;
+    --border: rgba(245, 169, 0, 0.14);
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 50% -4%,
+            rgba(245, 169, 0, 0.15),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 45%,
+            rgba(245, 169, 0, 0.03),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 60%,
+            rgba(245, 169, 0, 0.025),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #100c04 0%,
+            #090805 32%,
+            #060605 68%,
+            #030303 100%
+        );
+
+    color: #ffffff;
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
-    height: 105px;
-    border-bottom: 1px solid #242424;
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 32px;
+
+    background: rgba(4, 4, 3, 0.97);
+
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.08);
+
+    position: relative;
+    z-index: 100;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 7%;
-    background: rgba(5, 5, 5, 0.96);
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: 900;
-    letter-spacing: 4px;
     color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    letter-spacing: 0.035em;
+
+    white-space: nowrap;
 }
 
 .logo span {
-    color: #f5a900;
+    color: var(--gold);
 }
 
-/* HERO SECTION */
+
+/* =========================
+   HERO INTRO
+   ========================= */
 
 .hero-intro {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        92px
+        25px
+        62px;
+
     text-align: center;
-    padding: 75px 20px 55px;
+
+    border-bottom:
+        1px solid rgba(245, 169, 0, 0.06);
+
+    background:
+        radial-gradient(
+            circle at 50% 8%,
+            rgba(245, 169, 0, 0.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(15, 11, 4, 0.96),
+            rgba(7, 7, 5, 0.98)
+        );
+}
+
+.hero-intro::after {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    top: -290px;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        rotate(45deg);
+
+    border:
+        1px solid rgba(245, 169, 0, 0.055);
+
+    pointer-events: none;
+}
+
+.hero-intro-inner {
+    position: relative;
+    z-index: 2;
+
+    max-width: 900px;
+
+    margin: 0 auto;
 }
 
 .eyebrow {
-    color: #f5a900;
-    font-size: 14px;
-    letter-spacing: 7px;
+    margin-bottom: 15px;
+
+    color: var(--gold);
+
+    font-size: 11px;
     font-weight: 900;
-    margin-bottom: 35px;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
 }
 
 h1 {
-    font-size: clamp(42px, 6vw, 70px);
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+
+    color: #ffffff;
+
+    font-size:
+        clamp(50px, 8vw, 84px);
+
+    line-height: 0.94;
+
+    font-weight: 950;
+
+    letter-spacing: -0.05em;
+
+    text-shadow:
+        0 0 38px rgba(245, 169, 0, 0.06);
 }
 
 .description {
     max-width: 780px;
-    margin: auto;
-    color: #b9b9b9;
-    font-size: 17px;
-    line-height: 1.7;
+
+    margin: 0 auto;
+
+    color: #aaa59c;
+
+    font-size: 16px;
+
+    line-height: 1.8;
 }
 
-/* HERO GRID */
-
-.hero-grid {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto 100px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 26px;
+.description strong {
+    color: #ffffff;
 }
 
-.hero-card {
-    background: #0c0c0c;
-    border: 1px solid #292929;
-    border-radius: 5px;
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-    transition: 0.2s ease;
+.gold-line {
+    width: 86px;
+    height: 3px;
+
+    margin:
+        29px
+        auto
+        0;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--gold-dark),
+            var(--gold-bright),
+            var(--gold-dark)
+        );
+
+    box-shadow:
+        0 0 22px rgba(245, 169, 0, 0.22);
 }
 
-.hero-card:hover {
-    border-color: #f5a900;
-    transform: translateY(-4px);
-}
 
-.hero-image {
+/* =========================
+   MAIN DATABASE
+   ========================= */
+
+main {
     width: 100%;
-    aspect-ratio: 1 / 1;
-    background: #090909;
-    overflow: hidden;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        58px
+        30px
+        100px;
+}
+
+
+/* =========================
+   SEARCH AREA
+   ========================= */
+
+.database-tools {
+    margin-bottom: 34px;
+}
+
+.tools-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-bottom: 22px;
+}
+
+.tools-label {
+    margin-bottom: 6px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 0.19em;
+
+    text-transform: uppercase;
+}
+
+.tools-heading h2 {
+    color: #ffffff;
+
+    font-size:
+        clamp(25px, 4vw, 35px);
+
+    line-height: 1.05;
+
+    font-weight: 950;
+
+    letter-spacing: -0.025em;
+}
+
+.hero-count {
+    color: #7e786e;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* SEARCH BOX */
+
+.search-panel {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 66px;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.18);
+
+    border-radius: 11px;
+
+    background:
+        radial-gradient(
+            circle at 0% 50%,
+            rgba(245, 169, 0, 0.055),
+            transparent 34%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(15, 12, 7, 0.98),
+            rgba(8, 8, 7, 0.98)
+        );
+
+    box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.24);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-panel:focus-within {
+    border-color:
+        rgba(245, 169, 0, 0.55);
+
+    box-shadow:
+        0 20px 55px rgba(0, 0, 0, 0.34),
+        0 0 30px rgba(245, 169, 0, 0.045);
+}
+
+.search-icon {
+    width: 65px;
+
+    flex-shrink: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: var(--gold-bright);
+
+    font-size: 22px;
+}
+
+#heroSearch {
+    width: 100%;
+
+    padding:
+        20px
+        10px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#heroSearch::placeholder {
+    color: #6f6b64;
+
+    font-weight: 600;
+}
+
+.clear-search {
+    margin-right: 14px;
+
+    padding:
+        9px
+        12px;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.15);
+
+    border-radius: 6px;
+
+    background:
+        rgba(245, 169, 0, 0.035);
+
+    color: #9d978c;
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    letter-spacing: 0.1em;
+
+    cursor: pointer;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.clear-search.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.clear-search:hover {
+    color: #080604;
+
+    border-color: var(--gold);
+
+    background: var(--gold);
+}
+
+.search-help {
+    margin-top: 11px;
+
+    color: #68645d;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NO RESULTS
+   ========================= */
+
+.no-results {
+    display: none;
+
+    margin-bottom: 30px;
+
+    padding:
+        42px
+        25px;
+
+    border:
+        1px dashed rgba(245, 169, 0, 0.20);
+
+    border-radius: 10px;
+
+    background:
+        rgba(245, 169, 0, 0.018);
+
+    text-align: center;
+}
+
+.no-results strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--gold-bright);
+
+    font-size: 16px;
+}
+
+.no-results span {
+    color: #827d74;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   HERO GRID
+   ========================= */
+
+.hero-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================
+   HERO CARD
+   ========================= */
+
+.hero-card {
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 0;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 9px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #10100e,
+            #090909
+        );
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 15px 38px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+}
+
+.hero-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(245, 169, 0, 0.60);
+
+    box-shadow:
+        0 23px 50px rgba(0, 0, 0, 0.38),
+        0 0 28px rgba(245, 169, 0, 0.045);
+}
+
+
+/* HERO WITH GUIDE */
+
+.hero-card.has-guide {
+    border-color:
+        rgba(245, 169, 0, 0.17);
+}
+
+.hero-card.has-guide::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    opacity: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--gold-dark),
+            var(--gold-bright),
+            var(--gold-dark)
+        );
+
+    transition:
+        opacity 0.22s ease;
+}
+
+.hero-card.has-guide:hover::after {
+    opacity: 1;
+}
+
+
+/* IMAGE */
+
+.hero-image {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #090909;
+}
+
+.hero-image::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 66%,
+            rgba(5, 5, 4, 0.42) 100%
+        );
 }
 
 .hero-image img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
+
     display: block;
+
+    transition:
+        transform 0.32s ease,
+        filter 0.32s ease;
 }
+
+.hero-card:hover
+.hero-image img {
+    transform:
+        scale(1.025);
+
+    filter:
+        brightness(1.035)
+        contrast(1.02);
+}
+
+
+/* GUIDE BADGE */
+
+.guide-badge {
+    position: absolute;
+
+    top: 11px;
+    left: 11px;
+
+    z-index: 3;
+
+    padding:
+        6px
+        8px;
+
+    border:
+        1px solid rgba(245, 169, 0, 0.43);
+
+    border-radius: 5px;
+
+    background:
+        rgba(5, 5, 4, 0.86);
+
+    color: var(--gold-bright);
+
+    font-size: 7px;
+    font-weight: 900;
+
+    letter-spacing: 0.11em;
+
+    text-transform: uppercase;
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* PLACEHOLDER */
 
 .placeholder {
     width: 100%;
+
     aspect-ratio: 1 / 1;
-    background: #090909;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(245, 169, 0, 0.05),
+            transparent 35%
+        ),
+        #090909;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     gap: 16px;
 }
 
 .placeholder-icon {
     color: #f5a900;
+
     font-size: 25px;
 }
 
 .placeholder-text {
     color: #5d626a;
+
     font-size: 11px;
     font-weight: 900;
+
     letter-spacing: 3px;
 }
 
+
+/* HERO NAME */
+
 .hero-name {
     min-height: 64px;
-    background: #101010;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding:
+        11px
+        10px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(17, 17, 15, 0.99),
+            rgba(10, 10, 10, 0.99)
+        );
+
+    color: #ffffff;
+
     text-align: center;
-    padding: 10px;
-    font-size: 16px;
+
+    font-size: 14px;
     font-weight: 900;
-    letter-spacing: 1px;
+
+    line-height: 1.25;
+
+    letter-spacing: 0.055em;
+
     text-transform: uppercase;
+
+    transition:
+        color 0.2s ease;
 }
 
-/* FOOTER */
+.hero-card.has-guide:hover
+.hero-name {
+    color: var(--gold-bright);
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
 
 footer {
-    border-top: 1px solid #222;
-    padding: 35px 20px;
+    padding:
+        34px
+        20px;
+
+    border-top:
+        1px solid rgba(245, 169, 0, 0.055);
+
+    background:
+        rgba(3, 3, 3, 0.92);
+
     text-align: center;
-    color: #777;
-    font-size: 13px;
-    letter-spacing: 1px;
+
+    color: #5f5b54;
+
+    font-size: 11px;
+
+    letter-spacing: 0.04em;
 }
 
-/* RESPONSIVE */
+
+/* =========================
+   RESPONSIVE
+   ========================= */
 
 @media (max-width: 1100px) {
+
     .hero-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr));
     }
 }
+
 
 @media (max-width: 850px) {
+
     .hero-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 700px) {
+
     header {
-        padding: 0 5%;
-    }
-
-    .logo {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .hero-grid {
-        width: 92%;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
+        padding:
+            0
+            20px;
     }
 
     .hero-intro {
-        padding-top: 55px;
+        padding:
+            72px
+            20px
+            55px;
+    }
+
+    main {
+        padding:
+            48px
+            20px
+            75px;
+    }
+
+    .tools-heading {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .hero-count {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        min-height: 70px;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .hero-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 13px;
+    }
+
+    .search-panel {
+        min-height: 60px;
+    }
+
+    .search-icon {
+        width: 51px;
+
+        font-size: 19px;
+    }
+
+    #heroSearch {
+        padding:
+            18px
+            5px;
+
+        font-size: 14px;
+    }
+
+    .clear-search {
+        margin-right: 9px;
     }
 
     .hero-name {
-        font-size: 13px;
+        min-height: 58px;
+
+        font-size: 12px;
+    }
+
+    .guide-badge {
+        top: 8px;
+        left: 8px;
+
+        padding:
+            5px
+            6px;
+
+        font-size: 6px;
     }
 }
+
 </style>
 </head>
 
+
 <body>
 
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
 <header>
-    <div class="logo">GODS OF <span>ALLIANCE</span></div>
+
+    <div class="header-inner">
+
+        <div class="logo">
+            GODS OF <span>ALLIANCE</span>
+        </div>
+
+    </div>
+
 </header>
 
+
+<!-- =========================
+     HERO INTRO
+     ========================= -->
+
 <section class="hero-intro">
-    <div class="eyebrow">GODS OF ALLIANCE DATABASE</div>
 
-    <h1>HERO GUIDES</h1>
+    <div class="hero-intro-inner">
 
-    <p class="description">
-        Explore our Hero Wars Alliance hero database. Select a hero to discover
-        skills, builds, glyphs, skins, team synergies, strengths, weaknesses and
-        battle strategies.
-    </p>
+        <div class="eyebrow">
+            GODS OF ALLIANCE DATABASE
+        </div>
+
+        <h1>
+            HERO GUIDES
+        </h1>
+
+        <p class="description">
+            Explore our Hero Wars Alliance hero database.
+            Find any hero instantly and discover
+            <strong>skills, builds, glyphs, skins, team synergies,
+            strengths, weaknesses and battle strategies.</strong>
+        </p>
+
+        <div class="gold-line"></div>
+
+    </div>
+
 </section>
 
+
+<!-- =========================
+     HERO DATABASE
+     ========================= -->
+
 <main>
-<div class="hero-grid" id="heroGrid"></div>
+
+
+    <!-- SEARCH -->
+
+    <section class="database-tools">
+
+        <div class="tools-heading">
+
+            <div>
+
+                <div class="tools-label">
+                    HERO DATABASE
+                </div>
+
+                <h2>
+                    Find Your Hero
+                </h2>
+
+            </div>
+
+
+            <div
+                class="hero-count"
+                id="heroCount"
+            >
+                0 HEROES
+            </div>
+
+        </div>
+
+
+        <div class="search-panel">
+
+            <div class="search-icon">
+                ⌕
+            </div>
+
+            <input
+                type="search"
+                id="heroSearch"
+                placeholder="Search Aidan, Dante, Cleaver, Orion..."
+                autocomplete="off"
+                aria-label="Search heroes"
+            >
+
+            <button
+                type="button"
+                class="clear-search"
+                id="clearSearch"
+            >
+                CLEAR
+            </button>
+
+        </div>
+
+
+        <div class="search-help">
+            Start typing a hero name and the database will filter instantly.
+        </div>
+
+    </section>
+
+
+    <!-- NO RESULTS -->
+
+    <div
+        class="no-results"
+        id="noResults"
+    >
+
+        <strong>
+            HERO NOT FOUND
+        </strong>
+
+        <span>
+            Try another hero name.
+        </span>
+
+    </div>
+
+
+    <!-- HERO GRID -->
+
+    <div
+        class="hero-grid"
+        id="heroGrid"
+    ></div>
+
+
 </main>
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
 
 <footer>
     © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
+
+
+<!-- =========================
+     HERO DATABASE
+     IMPORTANT:
+     ORIGINAL HERO NAMES,
+     IMAGE FILENAMES AND LINKS
+     PRESERVED.
+     ========================= -->
 
 <script>
 
@@ -346,48 +1233,237 @@ const heroes = [
 
 ];
 
-const heroGrid = document.getElementById("heroGrid");
 
-heroes.forEach(hero => {
+/* =========================
+   ELEMENTS
+   ========================= */
 
-    const card = document.createElement("a");
-    card.className = "hero-card";
+const heroGrid =
+    document.getElementById("heroGrid");
 
-    /* If a hero has a guide page, open it. Otherwise remain on Hero Guides. */
-    card.href = hero.page ? hero.page : "#";
+const heroSearch =
+    document.getElementById("heroSearch");
+
+const heroCount =
+    document.getElementById("heroCount");
+
+const noResults =
+    document.getElementById("noResults");
+
+const clearSearch =
+    document.getElementById("clearSearch");
+
+
+/* =========================
+   CREATE HERO CARD
+   ========================= */
+
+function createHeroCard(hero) {
+
+    const card =
+        document.createElement("a");
+
+    card.className =
+        hero.page
+            ? "hero-card has-guide"
+            : "hero-card";
+
+    /*
+      If the hero has a guide page,
+      open the guide.
+
+      Otherwise the card remains
+      on Hero Guides exactly as before.
+    */
+
+    card.href =
+        hero.page
+            ? hero.page
+            : "#";
+
 
     let visual;
 
+
     if (hero.image) {
+
         visual = `
+
             <div class="hero-image">
+
                 <img
                     src="Images/Heroes/${hero.image}"
                     alt="${hero.name}"
                     loading="lazy"
                 >
+
+                ${
+                    hero.page
+                        ? `
+                            <div class="guide-badge">
+                                GUIDE AVAILABLE
+                            </div>
+                          `
+                        : ""
+                }
+
             </div>
+
         `;
+
     } else {
+
         visual = `
+
             <div class="placeholder">
-                <div class="placeholder-icon">⚔</div>
-                <div class="placeholder-text">IMAGE COMING SOON</div>
+
+                <div class="placeholder-icon">
+                    ⚔
+                </div>
+
+                <div class="placeholder-text">
+                    IMAGE COMING SOON
+                </div>
+
             </div>
+
         `;
     }
 
+
     card.innerHTML = `
+
         ${visual}
-        <div class="hero-name">${hero.name}</div>
+
+        <div class="hero-name">
+            ${hero.name}
+        </div>
+
     `;
 
-    heroGrid.appendChild(card);
-});
+
+    return card;
+}
+
+
+/* =========================
+   RENDER HEROES
+   ========================= */
+
+function renderHeroes(list) {
+
+    heroGrid.innerHTML = "";
+
+
+    list.forEach(function(hero) {
+
+        heroGrid.appendChild(
+            createHeroCard(hero)
+        );
+
+    });
+
+
+    heroCount.textContent =
+        list.length === 1
+            ? "1 HERO"
+            : `${list.length} HEROES`;
+
+
+    if (list.length === 0) {
+
+        noResults.style.display =
+            "block";
+
+        heroGrid.style.display =
+            "none";
+
+    } else {
+
+        noResults.style.display =
+            "none";
+
+        heroGrid.style.display =
+            "grid";
+    }
+}
+
+
+/* =========================
+   SEARCH HEROES
+   ========================= */
+
+function filterHeroes() {
+
+    const query =
+        heroSearch.value
+            .trim()
+            .toLowerCase();
+
+
+    if (query.length > 0) {
+
+        clearSearch.classList.add(
+            "visible"
+        );
+
+    } else {
+
+        clearSearch.classList.remove(
+            "visible"
+        );
+    }
+
+
+    const filteredHeroes =
+        heroes.filter(function(hero) {
+
+            return hero.name
+                .toLowerCase()
+                .includes(query);
+
+        });
+
+
+    renderHeroes(filteredHeroes);
+}
+
+
+/* =========================
+   SEARCH EVENTS
+   ========================= */
+
+heroSearch.addEventListener(
+    "input",
+    filterHeroes
+);
+
+
+clearSearch.addEventListener(
+    "click",
+    function() {
+
+        heroSearch.value = "";
+
+        filterHeroes();
+
+        heroSearch.focus();
+    }
+);
+
+
+/* =========================
+   FIRST LOAD
+   ========================= */
+
+renderHeroes(heroes);
 
 </script>
 
+
+<!-- GLOBAL NAVIGATION -->
 <script src="goa-global.js"></script>
+
 
 </body>
 </html>
