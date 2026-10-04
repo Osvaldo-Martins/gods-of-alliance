@@ -1065,42 +1065,32 @@ a {
     border-radius: 11px;
 
     background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(245, 169, 0, 0.07),
+            transparent 52%
+        ),
         linear-gradient(
             145deg,
-            rgba(245, 169, 0, 0.065),
-            rgba(5, 5, 4, 0.96)
+            rgba(245, 169, 0, 0.035),
+            rgba(5, 5, 4, 0.98)
         );
 }
 
-.mission-mark::before {
-    content: "GOA";
+.mission-logo {
+    width: 96%;
+    height: 96%;
 
-    color:
-        rgba(245, 169, 0, 0.08);
+    object-fit: contain;
 
-    font-size:
-        clamp(95px, 15vw, 190px);
+    display: block;
 
-    font-weight: 950;
+    position: relative;
+    z-index: 2;
 
-    letter-spacing: -0.08em;
-}
-
-.mission-mark::after {
-    content: "";
-
-    position: absolute;
-
-    width: 115px;
-    height: 2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--gold),
-            transparent
-        );
+    filter:
+        drop-shadow(0 0 18px rgba(255, 115, 0, 0.16))
+        drop-shadow(0 0 35px rgba(245, 169, 0, 0.08));
 }
 
 .mission-copy .section-title {
@@ -1287,7 +1277,12 @@ footer {
     }
 
     .mission-mark {
-        min-height: 220px;
+        min-height: 260px;
+    }
+
+    .mission-logo {
+        width: 94%;
+        height: 94%;
     }
 }
 
@@ -1362,7 +1357,12 @@ footer {
     }
 
     .mission-mark {
-        min-height: 190px;
+        min-height: 210px;
+    }
+
+    .mission-logo {
+        width: 96%;
+        height: 96%;
     }
 }
 
@@ -1824,7 +1824,15 @@ footer {
         <div class="mission-grid">
 
 
-            <div class="mission-mark"></div>
+            <div class="mission-mark">
+
+                <img
+                    src="Images/goa-full-logo.png"
+                    alt="Gods of Alliance"
+                    class="mission-logo"
+                >
+
+            </div>
 
 
             <div class="mission-copy">
@@ -1924,11 +1932,6 @@ footer {
 
 <!-- =====================================================
      HOME HERO SEARCH
-
-     IMPORTANT:
-     Same confirmed names, filenames/pages concept
-     used by the Hero Guides database.
-     Only heroes with existing guide pages are opened.
      ===================================================== -->
 
 <script>
