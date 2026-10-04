@@ -6,6 +6,65 @@
 
   <title>News | Gods of Alliance</title>
 
+  <meta
+    name="description"
+    content="The latest Hero Wars Alliance reveals, announcements and important developments from Dominion."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/news.html"
+  >
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="News | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="The latest Hero Wars Alliance reveals, announcements and important developments from Dominion."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/news.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/News/crow-new-talisman.png"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Gods of Alliance News"
+  >
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="News | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="The latest Hero Wars Alliance reveals, announcements and important developments from Dominion."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/News/crow-new-talisman.png"
+  >
+
   <style>
     * {
       box-sizing: border-box;
@@ -14,66 +73,101 @@
     }
 
     html {
-      background: #07151d;
+      background: #061219;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg: #061219;
+      --deep: #040d12;
+
+      --white: #ffffff;
+      --muted: #a6bac2;
+
+      --cyan: #8ce4fb;
+      --cyan-bright: #c3f3ff;
+      --cyan-dark: #4aa8cc;
+
+      --gold: #d8ad54;
+
+      --border: rgba(140, 228, 251, 0.16);
     }
 
     body {
+      min-height: 100vh;
+
+      position: relative;
+      overflow-x: hidden;
+
       background:
         radial-gradient(
           circle at 50% -5%,
-          rgba(146, 230, 255, 0.30) 0%,
-          rgba(82, 185, 226, 0.17) 22%,
-          rgba(38, 113, 151, 0.09) 42%,
-          transparent 64%
+          rgba(146, 230, 255, 0.25) 0%,
+          rgba(82, 185, 226, 0.13) 23%,
+          rgba(38, 113, 151, 0.07) 42%,
+          transparent 63%
         ),
         radial-gradient(
-          circle at 5% 43%,
-          rgba(104, 210, 244, 0.15) 0%,
-          rgba(40, 124, 164, 0.06) 30%,
-          transparent 48%
+          circle at 4% 45%,
+          rgba(104, 210, 244, 0.09),
+          transparent 32%
         ),
         radial-gradient(
-          circle at 96% 58%,
-          rgba(125, 221, 250, 0.13) 0%,
-          rgba(38, 126, 167, 0.055) 30%,
-          transparent 49%
+          circle at 96% 62%,
+          rgba(125, 221, 250, 0.075),
+          transparent 32%
         ),
         linear-gradient(
           180deg,
-          #0b2633 0%,
-          #0a202b 25%,
-          #081a24 52%,
-          #07151d 75%,
-          #061118 100%
+          #0a222e 0%,
+          #081a24 38%,
+          #06151d 70%,
+          #050f15 100%
         );
 
       color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
+
+      font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      line-height: 1.6;
     }
 
-    /* BACKGROUND */
+    a {
+      color: inherit;
+    }
+
+    /* =========================
+       ATMOSPHERE
+       ========================= */
 
     .news-background {
       position: fixed;
       inset: 0;
+
       z-index: 0;
+
       pointer-events: none;
       overflow: hidden;
     }
 
     .bg-symbol {
       position: absolute;
+
       color: #b9efff;
+
       user-select: none;
+
       line-height: 1;
-      opacity: 0.075;
+
+      opacity: 0.045;
 
       text-shadow:
-        0 0 18px rgba(147, 231, 255, 0.42),
-        0 0 45px rgba(75, 180, 221, 0.20);
+        0 0 18px rgba(147, 231, 255, 0.32),
+        0 0 45px rgba(75, 180, 221, 0.14);
     }
 
     .symbol-1 {
@@ -87,7 +181,6 @@
       top: 20%;
       right: 6%;
       font-size: 115px;
-      opacity: 0.055;
       transform: rotate(10deg);
     }
 
@@ -95,7 +188,6 @@
       top: 44%;
       left: 2%;
       font-size: 90px;
-      opacity: 0.055;
       transform: rotate(-18deg);
     }
 
@@ -103,7 +195,6 @@
       top: 50%;
       right: 3%;
       font-size: 74px;
-      opacity: 0.07;
       transform: rotate(45deg);
     }
 
@@ -111,7 +202,6 @@
       top: 72%;
       left: 7%;
       font-size: 125px;
-      opacity: 0.045;
       transform: rotate(45deg);
     }
 
@@ -119,34 +209,35 @@
       top: 77%;
       right: 9%;
       font-size: 84px;
-      opacity: 0.06;
     }
 
     .symbol-7 {
       top: 34%;
       left: 18%;
       font-size: 35px;
-      opacity: 0.08;
     }
 
     .symbol-8 {
       top: 63%;
       right: 20%;
       font-size: 42px;
-      opacity: 0.07;
     }
 
     .spark {
       position: absolute;
-      width: 5px;
-      height: 5px;
-      background: #bcefff;
+
+      width: 4px;
+      height: 4px;
+
       border-radius: 50%;
-      opacity: 0.14;
+
+      background: #bcefff;
+
+      opacity: 0.12;
 
       box-shadow:
-        0 0 12px rgba(173, 238, 255, 0.8),
-        0 0 28px rgba(92, 195, 231, 0.35);
+        0 0 12px rgba(173, 238, 255, 0.7),
+        0 0 28px rgba(92, 195, 231, 0.28);
     }
 
     .spark-1 {
@@ -187,79 +278,204 @@
       z-index: 2;
     }
 
-    /* HEADER */
+    /* =========================
+       HEADER
+       ========================= */
 
     header {
-      border-bottom: 1px solid rgba(136, 218, 244, 0.22);
-      background: rgba(4, 14, 20, 0.90);
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 0 32px;
+
+      background:
+        rgba(4, 13, 18, 0.96);
+
+      border-bottom:
+        1px solid rgba(140, 228, 251, 0.11);
     }
 
     .header-inner {
+      width: 100%;
       max-width: 1400px;
-      margin: auto;
-      min-height: 82px;
-      padding: 0 35px;
+
+      margin: 0 auto;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 25px;
     }
 
     .brand {
       color: #ffffff;
+
       text-decoration: none;
-      font-size: 22px;
+
+      font-size: 16px;
       font-weight: 900;
-      letter-spacing: 2px;
+
+      letter-spacing: 0.035em;
+
+      white-space: nowrap;
     }
 
-    .brand span {
-      color: #d8ad54;
-    }
-
-    /* HERO */
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
-      max-width: 1400px;
-      margin: auto;
-      padding: 85px 35px 48px;
+      position: relative;
+
+      overflow: hidden;
+
+      max-width: none;
+
+      padding:
+        100px
+        30px
+        84px;
+
       text-align: center;
+
+      border-bottom:
+        1px solid rgba(140, 228, 251, 0.075);
+
+      background:
+        radial-gradient(
+          circle at 50% 12%,
+          rgba(140, 228, 251, 0.13),
+          transparent 35%
+        ),
+        radial-gradient(
+          circle at 15% 40%,
+          rgba(68, 171, 210, 0.06),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 85% 35%,
+          rgba(87, 193, 231, 0.055),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(8, 30, 41, 0.95),
+          rgba(5, 17, 24, 0.97)
+        );
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(184, 240, 255, 0.022),
+          transparent
+        );
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 430px;
+      height: 430px;
+
+      top: -285px;
+      left: 50%;
+
+      transform:
+        translateX(-50%)
+        rotate(45deg);
+
+      border:
+        1px solid rgba(140, 228, 251, 0.06);
+
+      box-shadow:
+        0 0 90px rgba(101, 208, 243, 0.04);
+
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+
+      max-width: 900px;
+
+      margin: 0 auto;
     }
 
     .eyebrow {
-      color: #a8eaff;
-      font-size: 12px;
+      margin-bottom: 15px;
+
+      color: var(--cyan);
+
+      font-size: 11px;
       font-weight: 900;
-      letter-spacing: 4px;
-      margin-bottom: 18px;
+
+      letter-spacing: 0.25em;
+
+      text-transform: uppercase;
 
       text-shadow:
-        0 0 18px rgba(135, 224, 255, 0.30);
+        0 0 18px rgba(135, 224, 255, 0.24);
     }
 
     h1 {
-      font-size: clamp(50px, 8vw, 90px);
-      line-height: 0.95;
-      letter-spacing: -4px;
-      font-weight: 900;
+      color: #ffffff;
+
+      font-size:
+        clamp(50px, 8vw, 86px);
+
+      line-height: 0.93;
+
+      font-weight: 950;
+
+      letter-spacing: -0.05em;
 
       text-shadow:
-        0 0 35px rgba(123, 216, 247, 0.13);
+        0 0 38px rgba(123, 216, 247, 0.09);
     }
 
     .hero p {
       max-width: 750px;
-      margin: 24px auto 0;
-      color: #bfd0d6;
+
+      margin:
+        24px
+        auto
+        0;
+
+      color: #b4c8cf;
+
       font-size: 16px;
-      line-height: 1.7;
+
+      line-height: 1.8;
+    }
+
+    .hero p strong {
+      color: #ffffff;
     }
 
     .diamond-line {
-      width: 80px;
+      width: 86px;
       height: 3px;
-      margin: 30px auto 0;
+
+      margin:
+        30px
+        auto
+        0;
+
+      border-radius: 20px;
 
       background:
         linear-gradient(
@@ -270,292 +486,755 @@
         );
 
       box-shadow:
-        0 0 15px rgba(153, 231, 255, 0.55),
-        0 0 35px rgba(70, 174, 215, 0.25);
+        0 0 17px rgba(153, 231, 255, 0.43),
+        0 0 35px rgba(70, 174, 215, 0.18);
     }
 
-    /* MAIN */
+    /* =========================
+       MAIN
+       ========================= */
 
     main {
-      max-width: 1400px;
-      margin: auto;
-      padding: 30px 35px 100px;
+      width: 100%;
+      max-width: 1180px;
+
+      margin: 0 auto;
+
+      padding:
+        68px
+        30px
+        100px;
     }
 
     .section-heading {
-      margin-bottom: 28px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      gap: 28px;
+
+      margin-bottom: 31px;
+    }
+
+    .section-heading-left {
+      min-width: 0;
+    }
+
+    .section-label {
+      margin-bottom: 8px;
+
+      color: var(--cyan);
+
+      font-size: 10px;
+      font-weight: 900;
+
+      letter-spacing: 0.19em;
+
+      text-transform: uppercase;
     }
 
     .section-heading h2 {
-      font-size: 24px;
-      letter-spacing: 1px;
+      color: #ffffff;
+
+      font-size:
+        clamp(27px, 4vw, 39px);
+
+      line-height: 1.05;
+
+      font-weight: 950;
+
+      letter-spacing: -0.027em;
     }
 
     .section-heading p {
-      margin-top: 8px;
-      color: #8098a1;
-      font-size: 13px;
-      letter-spacing: 1px;
+      max-width: 420px;
+
+      color: #79929c;
+
+      font-size: 12px;
+
+      line-height: 1.7;
+
+      text-align: right;
     }
 
-    /* NEWS GRID */
+    /* =========================
+       NEWS GRID
+       ========================= */
 
     .news-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 30px;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 28px;
     }
 
+    /* =========================
+       PREMIUM NEWS CARD
+       ========================= */
+
     .news-card {
-      display: block;
-      overflow: hidden;
       position: relative;
 
-      border: 1px solid rgba(132, 214, 241, 0.25);
+      overflow: hidden;
+
+      display: flex;
+      flex-direction: column;
+
+      min-height: 100%;
+
+      border:
+        1px solid rgba(140, 228, 251, 0.16);
+
+      border-radius: 15px;
+
+      background:
+        radial-gradient(
+          circle at 90% 0%,
+          rgba(113, 216, 247, 0.065),
+          transparent 32%
+        ),
+        linear-gradient(
+          145deg,
+          rgba(11, 30, 39, 0.99),
+          rgba(5, 16, 22, 0.99)
+        );
+
+      color: #ffffff;
+
+      text-decoration: none;
+
+      box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.32);
+
+      transition:
+        transform 0.24s ease,
+        border-color 0.24s ease,
+        box-shadow 0.24s ease;
+    }
+
+    .news-card::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 2px;
+
+      opacity: 0;
 
       background:
         linear-gradient(
-          180deg,
-          rgba(10, 28, 37, 0.97),
-          rgba(6, 17, 23, 0.98)
+          90deg,
+          var(--cyan-dark),
+          var(--cyan-bright),
+          var(--cyan-dark)
         );
 
-      text-decoration: none;
-      color: #ffffff;
-
       transition:
-        transform 0.25s ease,
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+        opacity 0.24s ease;
     }
 
     .news-card:hover {
-      transform: translateY(-6px);
+      transform:
+        translateY(-6px);
 
-      border-color: #8ce3fb;
+      border-color:
+        rgba(140, 228, 251, 0.48);
 
       box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.48),
-        0 0 32px rgba(99, 203, 239, 0.12);
+        0 30px 70px rgba(0, 0, 0, 0.46),
+        0 0 38px rgba(99, 203, 239, 0.08);
     }
 
+    .news-card:hover::after {
+      opacity: 1;
+    }
+
+    /* IMAGE */
+
     .news-image {
-      width: 100%;
-      aspect-ratio: 16 / 9;
+      position: relative;
+
       overflow: hidden;
-      background: #08151c;
-      border-bottom: 1px solid rgba(129, 211, 238, 0.20);
+
+      width: 100%;
+
+      aspect-ratio: 16 / 9;
+
+      background: #07141b;
     }
 
     .news-image img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+
       display: block;
-      transition: transform 0.4s ease;
+
+      object-fit: cover;
+
+      transition:
+        transform 0.38s ease,
+        filter 0.38s ease;
     }
 
-    .news-card:hover .news-image img {
-      transform: scale(1.025);
+    .news-card:hover
+    .news-image img {
+      transform:
+        scale(1.028);
+
+      filter:
+        brightness(1.04)
+        contrast(1.025);
     }
+
+    .news-image::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.01) 42%,
+          rgba(3, 12, 17, 0.52) 100%
+        );
+    }
+
+    /* IMAGE BADGE */
+
+    .news-badge {
+      position: absolute;
+
+      top: 17px;
+      left: 17px;
+
+      z-index: 2;
+
+      padding:
+        8px
+        11px;
+
+      border:
+        1px solid rgba(140, 228, 251, 0.50);
+
+      border-radius: 6px;
+
+      background:
+        rgba(4, 15, 21, 0.89);
+
+      color: var(--cyan-bright);
+
+      font-size: 9px;
+      font-weight: 900;
+
+      letter-spacing: 0.14em;
+
+      text-transform: uppercase;
+
+      backdrop-filter: blur(5px);
+
+      box-shadow:
+        0 0 18px rgba(140, 228, 251, 0.07);
+    }
+
+    /* CONTENT */
 
     .news-content {
-      padding: 28px 30px 32px;
+      display: flex;
+      flex-direction: column;
+
+      flex: 1;
+
+      padding:
+        28px
+        28px
+        29px;
     }
 
     .breaking {
-      display: inline-block;
-      margin-bottom: 13px;
-      padding: 6px 10px;
+      margin-bottom: 10px;
 
-      border: 1px solid rgba(160, 229, 250, 0.40);
-      background: rgba(106, 206, 239, 0.10);
-
-      color: #b9efff;
+      color: var(--cyan);
 
       font-size: 10px;
       font-weight: 900;
-      letter-spacing: 3px;
+
+      letter-spacing: 0.16em;
+
+      text-transform: uppercase;
     }
 
     .news-title {
-      font-size: 30px;
-      line-height: 1.05;
-      font-weight: 900;
       margin-bottom: 11px;
+
+      color: #ffffff;
+
+      font-size:
+        clamp(24px, 3vw, 29px);
+
+      line-height: 1.1;
+
+      font-weight: 950;
+
+      letter-spacing: -0.027em;
     }
 
     .news-subtitle {
+      margin-bottom: 16px;
+
       color: #8fe4fb;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 18px;
+
+      font-size: 10px;
+      font-weight: 850;
+
+      line-height: 1.6;
+
+      letter-spacing: 0.10em;
+
+      text-transform: uppercase;
     }
 
     .news-description {
-      color: #afbec4;
-      font-size: 14px;
+      margin-bottom: 24px;
+
+      color: #a6b8bf;
+
+      font-size: 13px;
+
       line-height: 1.75;
-      max-width: 650px;
+
+      flex: 1;
     }
+
+    /* META */
+
+    .news-meta {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-bottom: 27px;
+    }
+
+    .meta-pill {
+      padding:
+        7px
+        9px;
+
+      border:
+        1px solid rgba(140, 228, 251, 0.10);
+
+      border-radius: 5px;
+
+      background:
+        rgba(140, 228, 251, 0.025);
+
+      color: #a8bbc2;
+
+      font-size: 9px;
+      font-weight: 850;
+
+      letter-spacing: 0.075em;
+
+      text-transform: uppercase;
+    }
+
+    .meta-pill.primary {
+      border-color:
+        rgba(140, 228, 251, 0.22);
+
+      background:
+        rgba(140, 228, 251, 0.055);
+
+      color: var(--cyan-bright);
+    }
+
+    /* OPEN */
 
     .read-more {
-      display: inline-block;
-      margin-top: 23px;
-      color: #ffffff;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
+      margin-top: auto;
 
-      border-bottom: 2px solid #8ce4fb;
-      padding-bottom: 5px;
+      display: inline-flex;
+      align-items: center;
+
+      gap: 8px;
+
+      color: var(--cyan-bright);
+
+      font-size: 11px;
+      font-weight: 900;
+
+      letter-spacing: 0.08em;
+
+      text-transform: uppercase;
     }
 
-    /* MYSTERY PANEL */
+    .read-arrow {
+      transition:
+        transform 0.2s ease;
+    }
+
+    .news-card:hover
+    .read-arrow {
+      transform:
+        translateX(5px);
+    }
+
+    /* =========================
+       DOMINION WATCH
+       ========================= */
 
     .mystery-card {
+      position: relative;
+
+      overflow: hidden;
+
       min-height: 100%;
 
-      border: 1px dashed rgba(137, 217, 243, 0.28);
+      border:
+        1px dashed rgba(140, 228, 251, 0.25);
+
+      border-radius: 15px;
 
       background:
         radial-gradient(
-          circle at center,
+          circle at 50% 38%,
           rgba(99, 202, 238, 0.10),
-          transparent 57%
+          transparent 55%
         ),
-        rgba(7, 21, 28, 0.70);
+        linear-gradient(
+          145deg,
+          rgba(10, 29, 38, 0.74),
+          rgba(5, 16, 22, 0.78)
+        );
 
       display: flex;
       align-items: center;
       justify-content: center;
 
-      padding: 60px 30px;
+      padding:
+        65px
+        35px;
+
       text-align: center;
+
+      box-shadow:
+        inset 0 0 60px rgba(105, 209, 242, 0.018);
+    }
+
+    .mystery-card::before {
+      content: "?";
+
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+
+      transform:
+        translate(-50%, -53%);
+
+      color:
+        rgba(185, 239, 255, 0.025);
+
+      font-size: 230px;
+      font-weight: 950;
+
+      line-height: 1;
+
+      pointer-events: none;
+    }
+
+    .mystery-inner {
+      position: relative;
+      z-index: 2;
     }
 
     .mystery-card span {
       display: block;
-      color: #8ddff5;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 3px;
+
       margin-bottom: 11px;
+
+      color: var(--cyan);
+
+      font-size: 10px;
+      font-weight: 900;
+
+      letter-spacing: 0.18em;
+
+      text-transform: uppercase;
     }
 
     .mystery-card h3 {
-      color: #e1f4f9;
-      font-size: 22px;
-      margin-bottom: 10px;
+      margin-bottom: 11px;
+
+      color: #eefbff;
+
+      font-size: 25px;
+
+      line-height: 1.1;
+
+      font-weight: 950;
     }
 
     .mystery-card p {
-      color: #80969f;
+      max-width: 390px;
+
+      margin: 0 auto;
+
+      color: #8199a2;
+
       font-size: 13px;
-      line-height: 1.65;
+
+      line-height: 1.7;
     }
 
-    /* ARCHIVE */
+    /* =========================
+       ARCHIVE
+       ========================= */
 
     .archive-area {
-      margin-top: 52px;
-      padding-top: 35px;
-      border-top: 1px solid rgba(126, 208, 236, 0.16);
+      position: relative;
+
+      overflow: hidden;
+
+      margin-top: 55px;
+
+      padding:
+        34px
+        30px;
+
+      border:
+        1px solid rgba(140, 228, 251, 0.11);
+
+      border-radius: 11px;
+
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(140, 228, 251, 0.065),
+          transparent 55%
+        ),
+        rgba(140, 228, 251, 0.018);
+
       text-align: center;
+    }
+
+    .archive-area::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 50%;
+
+      width: 130px;
+      height: 2px;
+
+      transform:
+        translateX(-50%);
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--cyan),
+          transparent
+        );
     }
 
     .archive-text {
-      color: #8098a1;
-      font-size: 12px;
-      letter-spacing: 1px;
       margin-bottom: 18px;
+
+      color: #7e98a2;
+
+      font-size: 10px;
+      font-weight: 850;
+
+      letter-spacing: 0.15em;
+
+      text-transform: uppercase;
     }
 
     .archive-button {
-      display: inline-block;
-      padding: 15px 27px;
+      display: inline-flex;
+      align-items: center;
 
-      border: 1px solid #8ce4fb;
-      background: rgba(106, 206, 239, 0.08);
+      gap: 9px;
 
-      color: #ffffff;
+      padding:
+        14px
+        21px;
+
+      border:
+        1px solid rgba(140, 228, 251, 0.43);
+
+      border-radius: 6px;
+
+      background:
+        rgba(140, 228, 251, 0.045);
+
+      color: var(--cyan-bright);
+
       text-decoration: none;
 
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 900;
-      letter-spacing: 2px;
+
+      letter-spacing: 0.11em;
+
+      text-transform: uppercase;
 
       transition:
-        background 0.25s ease,
-        color 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        box-shadow 0.2s ease;
     }
 
     .archive-button:hover {
-      background: #8ce4fb;
-      color: #061118;
-      transform: translateY(-2px);
+      transform:
+        translateY(-2px);
+
+      border-color:
+        var(--cyan);
+
+      background:
+        var(--cyan);
+
+      color: #041017;
 
       box-shadow:
-        0 0 25px rgba(99, 203, 239, 0.20);
+        0 0 25px rgba(99, 203, 239, 0.16);
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+       ========================= */
 
     footer {
-      border-top: 1px solid rgba(126, 208, 236, 0.16);
-      padding: 30px 20px;
+      padding:
+        34px
+        30px;
+
+      border-top:
+        1px solid rgba(140, 228, 251, 0.07);
+
+      background:
+        rgba(3, 10, 14, 0.90);
+
       text-align: center;
-      color: #647b84;
-      font-size: 12px;
-      letter-spacing: 1px;
+
+      color: #637b84;
+
+      font-size: 11px;
+
+      line-height: 1.7;
     }
 
-    /* RESPONSIVE */
+    /* =========================
+       RESPONSIVE
+       ========================= */
 
-    @media (max-width: 850px) {
-      .news-grid {
-        grid-template-columns: 1fr;
+    @media (max-width: 820px) {
+
+      header {
+        padding:
+          0
+          20px;
       }
 
       .hero {
-        padding-top: 60px;
+        padding:
+          78px
+          22px
+          66px;
+      }
+
+      main {
+        padding:
+          54px
+          22px
+          80px;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .section-heading p {
+        text-align: left;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width: 600px) {
-      .header-inner {
-        padding: 0 20px;
+    @media (max-width: 520px) {
+
+      header {
         min-height: 70px;
       }
 
       .brand {
-        font-size: 17px;
-        letter-spacing: 1px;
+        font-size: 13px;
       }
 
-      .hero,
+      .hero {
+        padding:
+          64px
+          18px
+          55px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
       main {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
+        padding:
+          45px
+          18px
+          65px;
       }
 
       .news-content {
-        padding: 22px;
+        padding:
+          23px
+          20px
+          25px;
       }
 
       .news-title {
-        font-size: 24px;
+        font-size: 23px;
+      }
+
+      .mystery-card {
+        padding:
+          52px
+          22px;
+      }
+
+      .archive-area {
+        padding:
+          29px
+          20px;
       }
 
       .bg-symbol {
-        opacity: 0.04;
+        opacity: 0.025;
       }
     }
   </style>
@@ -563,7 +1242,14 @@
 
 <body>
 
-  <div class="news-background" aria-hidden="true">
+  <!-- =========================
+       BACKGROUND
+       ========================= -->
+
+  <div
+    class="news-background"
+    aria-hidden="true"
+  >
 
     <span class="bg-symbol symbol-1">✦</span>
     <span class="bg-symbol symbol-2">⚡</span>
@@ -584,47 +1270,84 @@
   </div>
 
 
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <header>
+
     <div class="header-inner">
 
-      <a class="brand" href="index.html">
-        GODS <span>OF ALLIANCE</span>
+      <a
+        class="brand"
+        href="index.html"
+      >
+        GODS OF ALLIANCE
       </a>
 
     </div>
+
   </header>
 
 
+  <!-- =========================
+       CATEGORY HERO
+       ========================= -->
+
   <section class="hero">
 
-    <div class="eyebrow">
-      GODS OF ALLIANCE
+    <div class="hero-inner">
+
+      <div class="eyebrow">
+        GODS OF ALLIANCE DATABASE
+      </div>
+
+      <h1>
+        NEWS
+      </h1>
+
+      <p>
+        The latest Hero Wars Alliance reveals,
+        announcements and important developments
+        from <strong>Dominion.</strong>
+      </p>
+
+      <div class="diamond-line"></div>
+
     </div>
-
-    <h1>NEWS</h1>
-
-    <p>
-      The latest Hero Wars Alliance reveals, announcements
-      and important developments from Dominion.
-    </p>
-
-    <div class="diamond-line"></div>
 
   </section>
 
+
+  <!-- =========================
+       MAIN
+       ========================= -->
 
   <main>
 
     <div class="section-heading">
 
-      <h2>LATEST NEWS</h2>
+      <div class="section-heading-left">
+
+        <div class="section-label">
+          DOMINION NEWSROOM
+        </div>
+
+        <h2>
+          Latest News
+        </h2>
+
+      </div>
 
       <p>
-        REVEALS • ANNOUNCEMENTS • WHAT'S COMING NEXT
+        Reveals, announcements and the latest
+        developments coming to Hero Wars Alliance.
       </p>
 
     </div>
 
+
+    <!-- AUTOMATIC NEWS GRID -->
 
     <div
       class="news-grid"
@@ -632,17 +1355,20 @@
     ></div>
 
 
+    <!-- ARCHIVE -->
+
     <div class="archive-area">
 
       <div class="archive-text">
-        LOOKING FOR OLDER NEWS?
+        Looking for older news?
       </div>
 
       <a
         class="archive-button"
         href="news-archive.html"
       >
-        VIEW NEWS ARCHIVE →
+        VIEW NEWS ARCHIVE
+        <span>→</span>
       </a>
 
     </div>
@@ -650,13 +1376,25 @@
   </main>
 
 
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer>
     GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS &amp; GUIDES
   </footer>
 
 
+  <!-- =========================
+       NEWS DATABASE
+       ========================= -->
+
   <script src="news-data.js"></script>
 
+
+  <!-- =========================
+       AUTOMATIC NEWS CARDS
+       ========================= -->
 
   <script>
     (function () {
@@ -664,16 +1402,21 @@
       const container =
         document.getElementById("latestNews");
 
+
       const articles =
         Array.isArray(window.GOA_NEWS_ARTICLES)
           ? [...window.GOA_NEWS_ARTICLES]
           : [];
 
 
+      /* Preserve existing automatic order */
+
       articles.sort(function (a, b) {
         return b.order - a.order;
       });
 
+
+      /* Main News page = latest 10 */
 
       const latestNews =
         articles.slice(0, 10);
@@ -684,46 +1427,91 @@
         const card =
           document.createElement("a");
 
+
         card.className =
           "news-card";
+
 
         card.href =
           article.url;
 
 
+        const label =
+          article.label ||
+          article.type ||
+          "NEWS";
+
+
+        const category =
+          article.category
+            ? String(article.category).toUpperCase()
+            : "NEWS";
+
+
         card.innerHTML = `
+
           <div class="news-image">
 
             <img
               src="${article.image}"
               alt="${article.title}"
+              loading="lazy"
             >
 
+            <div class="news-badge">
+              ${label}
+            </div>
+
           </div>
+
 
           <div class="news-content">
 
             <div class="breaking">
-              ${article.label || article.type}
+              ${label}
             </div>
+
 
             <div class="news-title">
               ${article.title}
             </div>
 
+
             <div class="news-subtitle">
               ${article.subtitle}
             </div>
+
 
             <div class="news-description">
               ${article.description}
             </div>
 
+
+            <div class="news-meta">
+
+              <div class="meta-pill primary">
+                ${category}
+              </div>
+
+              <div class="meta-pill">
+                NEWS
+              </div>
+
+            </div>
+
+
             <div class="read-more">
+
               ${article.button}
+
+              <span class="read-arrow">
+                →
+              </span>
+
             </div>
 
           </div>
+
         `;
 
 
@@ -733,22 +1521,29 @@
 
 
       /*
-        Keep the existing Dominion Watch panel
-        at the end of the current News grid.
+        Preserve the existing Dominion Watch panel
+        at the end of the News grid.
       */
 
       const mysteryCard =
         document.createElement("div");
 
+
       mysteryCard.className =
         "mystery-card";
 
+
       mysteryCard.innerHTML = `
-        <div>
 
-          <span>DOMINION WATCH</span>
+        <div class="mystery-inner">
 
-          <h3>WHAT COMES NEXT?</h3>
+          <span>
+            DOMINION WATCH
+          </span>
+
+          <h3>
+            WHAT COMES NEXT?
+          </h3>
 
           <p>
             New reveals and important Hero Wars Alliance
@@ -756,6 +1551,7 @@
           </p>
 
         </div>
+
       `;
 
 
@@ -765,6 +1561,7 @@
   </script>
 
 
+  <!-- GLOBAL NAVIGATION -->
   <script src="goa-global.js"></script>
 
 </body>
