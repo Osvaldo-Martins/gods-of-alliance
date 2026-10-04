@@ -1,6 +1,6 @@
 /* =========================================================
    GODS OF ALLIANCE — GLOBAL SITE SYSTEM
-   Shared navigation + global background atmosphere
+   Shared navigation + global background atmosphere + branding
    ========================================================= */
 
 (function () {
@@ -44,6 +44,50 @@
       background-attachment: fixed !important;
     }
 
+    /* =========================
+       GLOBAL HEADER BRAND LOGO
+       ========================= */
+
+    .goa-header-brand-enhanced {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+    }
+
+    .goa-header-brand-logo {
+      width: 54px;
+      height: 54px;
+
+      display: block;
+      flex: 0 0 54px;
+
+      object-fit: contain;
+
+      filter:
+        drop-shadow(0 0 6px rgba(255, 115, 20, 0.40))
+        drop-shadow(0 0 12px rgba(233, 169, 35, 0.18));
+
+      transition:
+        transform .2s ease,
+        filter .2s ease;
+    }
+
+    .goa-header-brand-enhanced:hover .goa-header-brand-logo {
+      transform: scale(1.06);
+
+      filter:
+        drop-shadow(0 0 8px rgba(255, 115, 20, 0.55))
+        drop-shadow(0 0 16px rgba(233, 169, 35, 0.28));
+    }
+
+    .goa-header-brand-text {
+      display: inline-block;
+    }
+
+    /* =========================
+       MENU BUTTON
+       ========================= */
+
     .goa-global-menu-button {
       width: 44px;
       height: 44px;
@@ -83,6 +127,10 @@
       transform: scale(1.04);
     }
 
+    /* =========================
+       OVERLAY
+       ========================= */
+
     .goa-global-overlay {
       position: fixed;
       inset: 0;
@@ -104,6 +152,10 @@
       opacity: 1;
       visibility: visible;
     }
+
+    /* =========================
+       SIDE PANEL
+       ========================= */
 
     .goa-global-panel {
       position: fixed;
@@ -254,7 +306,22 @@
       overflow: hidden;
     }
 
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 700px) {
+
+      .goa-header-brand-enhanced {
+        gap: 7px !important;
+      }
+
+      .goa-header-brand-logo {
+        width: 44px;
+        height: 44px;
+        flex-basis: 44px;
+      }
+
       .goa-global-menu-button {
         width: 40px;
         height: 40px;
@@ -277,9 +344,81 @@
         min-height: 50px;
       }
     }
+
+    @media (max-width: 430px) {
+
+      .goa-header-brand-logo {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+      }
+
+      .goa-header-brand-enhanced {
+        gap: 6px !important;
+      }
+    }
   `;
 
   document.head.appendChild(style);
+
+
+  /* =========================
+     HEADER BRAND ENHANCEMENT
+     Adds the GOA logo beside the
+     existing GODS OF ALLIANCE text.
+     ========================= */
+
+  function enhanceHeaderBrand() {
+
+    const possibleBrands = Array.from(
+      document.querySelectorAll(
+        "header a.brand, header .brand, header a[href='index.html']"
+      )
+    );
+
+    const brand = possibleBrands.find(function (element) {
+      const text =
+        (element.textContent || "")
+          .replace(/\\s+/g, " ")
+          .trim()
+          .toUpperCase();
+
+      return text.includes("GODS") &&
+             text.includes("ALLIANCE");
+    });
+
+    if (!brand) {
+      return;
+    }
+
+    if (brand.classList.contains("goa-header-brand-enhanced")) {
+      return;
+    }
+
+    const originalHTML = brand.innerHTML;
+
+    brand.innerHTML = "";
+
+    brand.classList.add("goa-header-brand-enhanced");
+
+    const logo = document.createElement("img");
+
+    logo.className = "goa-header-brand-logo";
+    logo.src = "Images/goa-logo.png";
+    logo.alt = "Gods of Alliance";
+    logo.width = 54;
+    logo.height = 54;
+
+    const text = document.createElement("span");
+
+    text.className = "goa-header-brand-text";
+    text.innerHTML = originalHTML;
+
+    brand.appendChild(logo);
+    brand.appendChild(text);
+  }
+
+  enhanceHeaderBrand();
 
 
   /* =========================
@@ -339,8 +478,14 @@
 
   menuButton.className = "goa-global-menu-button";
   menuButton.type = "button";
-  menuButton.setAttribute("aria-label", "Open Gods of Alliance navigation");
-  menuButton.setAttribute("aria-expanded", "false");
+  menuButton.setAttribute(
+    "aria-label",
+    "Open Gods of Alliance navigation"
+  );
+  menuButton.setAttribute(
+    "aria-expanded",
+    "false"
+  );
 
   menuButton.innerHTML = "☰";
 
@@ -350,6 +495,7 @@
      ========================= */
 
   const overlay = document.createElement("div");
+
   overlay.className = "goa-global-overlay";
 
 
@@ -360,10 +506,14 @@
   const panel = document.createElement("aside");
 
   panel.className = "goa-global-panel";
-  panel.setAttribute("aria-hidden", "true");
+  panel.setAttribute(
+    "aria-hidden",
+    "true"
+  );
 
 
   const inner = document.createElement("div");
+
   inner.className = "goa-global-panel-inner";
 
 
@@ -372,14 +522,21 @@
      ========================= */
 
   const eyebrow = document.createElement("div");
+
   eyebrow.className = "goa-global-eyebrow";
-  eyebrow.textContent = "EXPLORE GODS OF ALLIANCE";
+  eyebrow.textContent =
+    "EXPLORE GODS OF ALLIANCE";
+
 
   const title = document.createElement("div");
+
   title.className = "goa-global-title";
-  title.innerHTML = 'GODS OF <span>ALLIANCE</span>';
+  title.innerHTML =
+    'GODS OF <span>ALLIANCE</span>';
+
 
   const subtitle = document.createElement("div");
+
   subtitle.className = "goa-global-subtitle";
   subtitle.textContent =
     "Hero Wars Alliance guides, tools, teams, news and practical strategies.";
@@ -389,15 +546,27 @@
      HOME LINK
      ========================= */
 
-  const homeWrapper = document.createElement("div");
+  const homeWrapper =
+    document.createElement("div");
+
   homeWrapper.className =
     "goa-global-links goa-global-home";
 
-  const homeLink = document.createElement("a");
-  homeLink.href = "index.html";
-  homeLink.textContent = "HOME";
 
-  if (currentPage === "index.html" || currentPage === "") {
+  const homeLink =
+    document.createElement("a");
+
+  homeLink.href =
+    "index.html";
+
+  homeLink.textContent =
+    "HOME";
+
+
+  if (
+    currentPage === "index.html" ||
+    currentPage === ""
+  ) {
     homeLink.classList.add("active");
   }
 
@@ -408,20 +577,31 @@
      NAVIGATION LINKS
      ========================= */
 
-  const linksWrapper = document.createElement("nav");
-  linksWrapper.className = "goa-global-links";
+  const linksWrapper =
+    document.createElement("nav");
 
-  navigation.forEach(item => {
-    const link = document.createElement("a");
+  linksWrapper.className =
+    "goa-global-links";
 
-    link.href = item.href;
-    link.textContent = item.label;
+
+  navigation.forEach(function (item) {
+
+    const link =
+      document.createElement("a");
+
+    link.href =
+      item.href;
+
+    link.textContent =
+      item.label;
+
 
     if (currentPage === item.href) {
       link.classList.add("active");
     }
 
     linksWrapper.appendChild(link);
+
   });
 
 
@@ -429,8 +609,11 @@
      PANEL FOOTER
      ========================= */
 
-  const footer = document.createElement("div");
-  footer.className = "goa-global-footer";
+  const footer =
+    document.createElement("div");
+
+  footer.className =
+    "goa-global-footer";
 
   footer.innerHTML =
     "© 2026 Gods of Alliance<br>Hero Wars Alliance Guides";
@@ -459,41 +642,80 @@
      ========================= */
 
   function openMenu() {
+
     panel.classList.add("open");
     overlay.classList.add("open");
-    document.body.classList.add("goa-menu-open");
+    document.body.classList.add(
+      "goa-menu-open"
+    );
 
-    panel.setAttribute("aria-hidden", "false");
-    menuButton.setAttribute("aria-expanded", "true");
+    panel.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      "true"
+    );
 
     menuButton.innerHTML = "✕";
   }
 
+
   function closeMenu() {
+
     panel.classList.remove("open");
     overlay.classList.remove("open");
-    document.body.classList.remove("goa-menu-open");
+    document.body.classList.remove(
+      "goa-menu-open"
+    );
 
-    panel.setAttribute("aria-hidden", "true");
-    menuButton.setAttribute("aria-expanded", "false");
+    panel.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      "false"
+    );
 
     menuButton.innerHTML = "☰";
   }
 
-  menuButton.addEventListener("click", function () {
-    if (panel.classList.contains("open")) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  });
 
-  overlay.addEventListener("click", closeMenu);
+  menuButton.addEventListener(
+    "click",
+    function () {
 
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeMenu();
+      if (
+        panel.classList.contains("open")
+      ) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+
     }
-  });
+  );
+
+
+  overlay.addEventListener(
+    "click",
+    closeMenu
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    function (event) {
+
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+
+    }
+  );
 
 })();
