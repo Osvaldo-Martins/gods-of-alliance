@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Events Archive | Gods of Alliance</title>
+
+  <meta
+    name="description"
+    content="Browse previous Hero Wars Alliance events, season calendars and event guides from Gods of Alliance."
+  >
+
+  <meta name="robots" content="index, follow">
+
+  <link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/events-archive.html"
+  >
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gods of Alliance">
+
+  <meta
+    property="og:title"
+    content="Events Archive | Gods of Alliance"
+  >
+
+  <meta
+    property="og:description"
+    content="Browse previous Hero Wars Alliance events, season calendars and event guides from Gods of Alliance."
+  >
+
+  <meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/events-archive.html"
+  >
+
+  <meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/goa-banner.jpg"
+  >
+
+  <meta
+    property="og:image:alt"
+    content="Gods of Alliance Events Archive"
+  >
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta
+    name="twitter:title"
+    content="Events Archive | Gods of Alliance"
+  >
+
+  <meta
+    name="twitter:description"
+    content="Browse previous Hero Wars Alliance events, season calendars and event guides from Gods of Alliance."
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/goa-banner.jpg"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #070707;
+      --card: #0d0d0d;
+      --card-hover: #111111;
+      --gold: #e9a923;
+      --white: #ffffff;
+      --muted: #999999;
+      --border: #222222;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+
+    header {
+      background: #050505;
+      border-bottom: 1px solid #1c1c1c;
+    }
+
+    .header-inner {
+      max-width: 1400px;
+      min-height: 78px;
+      margin: 0 auto;
+      padding: 0 35px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .back-link {
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .back-link:hover {
+      color: #ffffff;
+    }
+
+    /* HERO */
+
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 90px 35px 65px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(44px, 8vw, 78px);
+      line-height: 0.95;
+      font-weight: 900;
+      letter-spacing: -3px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 25px auto 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .gold-line {
+      width: 72px;
+      height: 3px;
+      margin: 30px auto 0;
+      background: var(--gold);
+      box-shadow: 0 0 18px rgba(233, 169, 35, 0.25);
+    }
+
+    /* MAIN */
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 35px 100px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 25px;
+
+      padding-bottom: 18px;
+      margin-bottom: 28px;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .section-header p {
+      max-width: 440px;
+      color: #777777;
+      font-size: 12px;
+      text-align: right;
+    }
+
+    /* EVENT GRID */
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .event-card {
+      display: flex;
+      flex-direction: column;
+
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--card);
+
+      text-decoration: none;
+      color: #ffffff;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(233, 169, 35, 0.55);
+      background: var(--card-hover);
+    }
+
+    .card-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #111111;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .event-card:hover .card-image img {
+      transform: scale(1.025);
+    }
+
+    .card-tag {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+
+      padding: 7px 10px;
+
+      background: rgba(0, 0, 0, 0.88);
+      border: 1px solid rgba(233, 169, 35, 0.45);
+
+      color: var(--gold);
+      font-size: 9px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      padding: 25px 24px 24px;
+    }
+
+    .card-date {
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      margin-bottom: 9px;
+    }
+
+    .card-content h3 {
+      font-size: 22px;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .card-content p {
+      color: #8f8f8f;
+      font-size: 13px;
+      line-height: 1.75;
+      flex: 1;
+    }
+
+    .read-more {
+      margin-top: 22px;
+      padding-top: 17px;
+
+      border-top: 1px solid #202020;
+
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    /* EMPTY ARCHIVE */
+
+    .empty-state {
+      display: none;
+
+      padding: 65px 30px;
+
+      border: 1px dashed #292929;
+      border-left: 3px solid var(--gold);
+
+      background: #0a0a0a;
+
+      text-align: center;
+    }
+
+    .empty-state h3 {
+      color: var(--gold);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .empty-state p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #858585;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 32px 20px;
+      border-top: 1px solid #1b1b1b;
+
+      text-align: center;
+      color: #555555;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 950px) {
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .header-inner {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      .hero {
+        padding: 65px 20px 50px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      main {
+        padding: 10px 20px 70px;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .section-header p {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .events-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-inner">
+
+      <a class="brand" href="index.html">
+        GODS <span>OF ALLIANCE</span>
+      </a>
+
+      <a
+        class="back-link"
+        href="events.html"
+      >
+        ← EVENTS
+      </a>
+
+    </div>
+  </header>
+
+
+  <section class="hero">
+
+    <div class="eyebrow">
+      GODS OF ALLIANCE
+    </div>
+
+    <h1>EVENTS ARCHIVE</h1>
+
+    <p>
+      Previous Hero Wars Alliance events, Season calendars,
+      guides and resource-planning coverage.
+    </p>
+
+    <div class="gold-line"></div>
+
+  </section>
+
+
+  <main>
+
+    <div class="section-header">
+
+      <div>
+
+        <div class="section-label">
+          PREVIOUS COVERAGE
+        </div>
+
+        <h2>PAST EVENTS &amp; SEASONS</h2>
+
+      </div>
+
+      <p>
+        Revisit previous Gods of Alliance event guides
+        without changing or removing their original pages.
+      </p>
+
+    </div>
+
+
+    <section
+      class="events-grid"
+      id="archivedEvents"
+    ></section>
+
+
+    <section
+      class="empty-state"
+      id="emptyArchive"
+    >
+
+      <h3>THE EVENTS ARCHIVE IS CURRENTLY EMPTY</h3>
+
+      <p>
+        There are no archived events yet.
+        Previous event guides will automatically appear here
+        when their status is changed from current to archived.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
+  </footer>
+
+
+  <script src="events-data.js"></script>
+
+  <script>
+    (function () {
+
+      const container =
+        document.getElementById("archivedEvents");
+
+      const emptyArchive =
+        document.getElementById("emptyArchive");
+
+
+      const allEvents =
+        Array.isArray(window.GOA_EVENTS)
+          ? [...window.GOA_EVENTS]
+          : [];
+
+
+      const archivedEvents =
+        allEvents
+          .filter(function (event) {
+            return event.status === "archived";
+          })
+          .sort(function (a, b) {
+            return b.order - a.order;
+          });
+
+
+      if (archivedEvents.length === 0) {
+        emptyArchive.style.display = "block";
+        return;
+      }
+
+
+      archivedEvents.forEach(function (event) {
+
+        const card =
+          document.createElement("a");
+
+        card.className =
+          "event-card";
+
+        card.href =
+          event.url;
+
+
+        card.innerHTML = `
+          <div class="card-image">
+
+            <img
+              src="${event.image}"
+              alt="${event.title}"
+            >
+
+            <div class="card-tag">
+              ${event.tag}
+            </div>
+
+          </div>
+
+
+          <div class="card-content">
+
+            <div class="card-date">
+              ${event.dateLabel}
+            </div>
+
+            <h3>
+              ${event.title}
+            </h3>
+
+            <p>
+              ${event.description}
+            </p>
+
+            <div class="read-more">
+              ${event.button}
+            </div>
+
+          </div>
+        `;
+
+
+        container.appendChild(card);
+
+      });
+
+    })();
+  </script>
+
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
