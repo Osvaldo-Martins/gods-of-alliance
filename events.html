@@ -70,392 +70,967 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+      background: #050403;
+    }
+
     :root {
-      --bg: #070707;
-      --card: #0d0d0d;
-      --card-hover: #111111;
+      --bg: #050403;
+      --panel: #0d0a06;
+      --panel-deep: #080604;
+
       --gold: #e9a923;
+      --gold-bright: #ffc84d;
       --gold-soft: #c78c17;
+      --amber: #ff8a22;
+
       --white: #ffffff;
-      --muted: #999999;
-      --border: #222222;
+      --muted: #a59c8e;
+
+      --border: rgba(233, 169, 35, 0.15);
     }
 
     body {
       min-height: 100vh;
-      background: var(--bg);
+
+      background:
+        radial-gradient(
+          circle at 50% -4%,
+          rgba(233, 169, 35, 0.16),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 8% 42%,
+          rgba(255, 116, 24, 0.045),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 92% 58%,
+          rgba(233, 169, 35, 0.045),
+          transparent 32%
+        ),
+        linear-gradient(
+          180deg,
+          #0d0904 0%,
+          #090704 35%,
+          #060504 70%,
+          #030303 100%
+        );
+
       color: var(--white);
-      font-family: Arial, Helvetica, sans-serif;
+
+      font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
       line-height: 1.6;
     }
 
-    /* HEADER */
+    a {
+      color: inherit;
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
 
     header {
-      background: #050505;
-      border-bottom: 1px solid #1c1c1c;
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+
+      padding: 0 32px;
+
+      background:
+        rgba(4, 4, 3, 0.97);
+
+      border-bottom:
+        1px solid rgba(233, 169, 35, 0.09);
+
+      position: relative;
+      z-index: 100;
     }
 
     .header-inner {
+      width: 100%;
       max-width: 1400px;
-      min-height: 78px;
+
       margin: 0 auto;
-      padding: 0 35px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 25px;
     }
 
     .brand {
       color: #ffffff;
+
       text-decoration: none;
-      font-size: 22px;
+
+      font-size: 16px;
       font-weight: 900;
-      letter-spacing: 2px;
+
+      letter-spacing: 0.035em;
+
+      white-space: nowrap;
     }
 
-    .brand span {
-      color: var(--gold);
-    }
-
-    .home-link {
-      color: var(--gold);
-      text-decoration: none;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .home-link:hover {
-      color: #ffffff;
-    }
-
-    /* HERO */
+    /* =========================
+       HERO
+       ========================= */
 
     .hero {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 90px 35px 65px;
+      position: relative;
+
+      overflow: hidden;
+
+      padding:
+        100px
+        30px
+        84px;
+
       text-align: center;
+
+      border-bottom:
+        1px solid rgba(233, 169, 35, 0.07);
+
+      background:
+        radial-gradient(
+          circle at 50% 12%,
+          rgba(233, 169, 35, 0.13),
+          transparent 36%
+        ),
+        radial-gradient(
+          circle at 25% 65%,
+          rgba(255, 111, 25, 0.035),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 75% 60%,
+          rgba(233, 169, 35, 0.035),
+          transparent 30%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(16, 11, 5, 0.97),
+          rgba(7, 6, 4, 0.99)
+        );
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 202, 91, 0.022),
+          transparent
+        );
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 430px;
+      height: 430px;
+
+      top: -285px;
+      left: 50%;
+
+      transform:
+        translateX(-50%)
+        rotate(45deg);
+
+      border:
+        1px solid rgba(233, 169, 35, 0.06);
+
+      box-shadow:
+        0 0 90px rgba(233, 169, 35, 0.035);
+
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+
+      max-width: 900px;
+
+      margin: 0 auto;
     }
 
     .eyebrow {
+      margin-bottom: 15px;
+
       color: var(--gold);
+
       font-size: 11px;
       font-weight: 900;
-      letter-spacing: 4px;
-      margin-bottom: 14px;
+
+      letter-spacing: 0.25em;
+
+      text-transform: uppercase;
     }
 
     h1 {
-      font-size: clamp(48px, 8vw, 82px);
-      line-height: 0.95;
-      font-weight: 900;
-      letter-spacing: -3px;
+      color: #ffffff;
+
+      font-size:
+        clamp(50px, 8vw, 86px);
+
+      line-height: 0.93;
+
+      font-weight: 950;
+
+      letter-spacing: -0.05em;
+
+      text-shadow:
+        0 0 38px rgba(233, 169, 35, 0.07);
     }
 
     .hero p {
       max-width: 760px;
-      margin: 25px auto 0;
-      color: var(--muted);
-      font-size: 15px;
+
+      margin:
+        24px
+        auto
+        0;
+
+      color: #aaa094;
+
+      font-size: 16px;
+
       line-height: 1.8;
     }
 
-    .gold-line {
-      width: 72px;
-      height: 3px;
-      margin: 30px auto 0;
-      background: var(--gold);
-      box-shadow: 0 0 18px rgba(233, 169, 35, 0.25);
+    .hero p strong {
+      color: #ffffff;
     }
 
-    /* CONTENT */
+    .gold-line {
+      width: 86px;
+      height: 3px;
+
+      margin:
+        30px
+        auto
+        0;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #9d6814,
+          var(--gold-bright),
+          #9d6814
+        );
+
+      box-shadow:
+        0 0 22px rgba(233, 169, 35, 0.24);
+    }
+
+    /* =========================
+       MAIN
+       ========================= */
 
     main {
-      max-width: 1200px;
+      width: 100%;
+      max-width: 1260px;
+
       margin: 0 auto;
-      padding: 10px 35px 100px;
+
+      padding:
+        68px
+        30px
+        100px;
     }
 
     .section-header {
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
-      gap: 25px;
 
-      padding-bottom: 18px;
-      margin-bottom: 28px;
+      gap: 28px;
 
-      border-bottom: 1px solid var(--border);
+      margin-bottom: 31px;
     }
 
     .section-label {
+      margin-bottom: 8px;
+
       color: var(--gold);
+
       font-size: 10px;
       font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 5px;
+
+      letter-spacing: 0.19em;
+
+      text-transform: uppercase;
     }
 
     .section-header h2 {
-      font-size: 28px;
-      font-weight: 900;
+      color: #ffffff;
+
+      font-size:
+        clamp(27px, 4vw, 39px);
+
+      line-height: 1.05;
+
+      font-weight: 950;
+
+      letter-spacing: -0.027em;
     }
 
     .section-header p {
       max-width: 440px;
-      color: #777777;
+
+      color: #81796f;
+
       font-size: 12px;
+
+      line-height: 1.7;
+
       text-align: right;
     }
 
-    /* EVENT GRID */
+    /* =========================
+       EVENT GRID
+       ========================= */
 
     .events-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
       gap: 24px;
     }
 
+    /* =========================
+       PREMIUM EVENT CARD
+       ========================= */
+
     .event-card {
+      position: relative;
+
+      overflow: hidden;
+
       display: flex;
       flex-direction: column;
 
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--card);
+      min-width: 0;
+      min-height: 100%;
 
-      text-decoration: none;
+      border:
+        1px solid rgba(233, 169, 35, 0.14);
+
+      border-radius: 15px;
+
+      background:
+        radial-gradient(
+          circle at 90% 0%,
+          rgba(233, 169, 35, 0.055),
+          transparent 33%
+        ),
+        linear-gradient(
+          145deg,
+          rgba(16, 12, 7, 0.99),
+          rgba(8, 7, 5, 0.99)
+        );
+
       color: #ffffff;
 
+      text-decoration: none;
+
+      box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.32);
+
       transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        background 0.2s ease;
+        transform 0.24s ease,
+        border-color 0.24s ease,
+        box-shadow 0.24s ease;
+    }
+
+    .event-card::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 2px;
+
+      opacity: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          #a66c14,
+          var(--gold-bright),
+          #a66c14
+        );
+
+      transition:
+        opacity 0.24s ease;
     }
 
     .event-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(233, 169, 35, 0.55);
-      background: var(--card-hover);
+      transform:
+        translateY(-6px);
+
+      border-color:
+        rgba(233, 169, 35, 0.48);
+
+      box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.46),
+        0 0 38px rgba(233, 169, 35, 0.055);
     }
+
+    .event-card:hover::after {
+      opacity: 1;
+    }
+
+    /* IMAGE */
 
     .card-image {
       position: relative;
+
       overflow: hidden;
+
+      width: 100%;
+
       aspect-ratio: 16 / 9;
-      background: #111111;
+
+      background: #0b0906;
     }
 
     .card-image img {
       width: 100%;
       height: 100%;
+
       display: block;
+
       object-fit: cover;
-      transition: transform 0.35s ease;
+
+      transition:
+        transform 0.38s ease,
+        filter 0.38s ease;
     }
 
-    .event-card:hover .card-image img {
-      transform: scale(1.025);
+    .event-card:hover
+    .card-image img {
+      transform: scale(1.03);
+
+      filter:
+        brightness(1.04)
+        contrast(1.025);
     }
+
+    .card-image::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.01) 40%,
+          rgba(7, 5, 2, 0.55) 100%
+        );
+    }
+
+    /* EVENT BADGE */
 
     .card-tag {
       position: absolute;
-      left: 14px;
-      bottom: 14px;
 
-      padding: 7px 10px;
+      top: 16px;
+      left: 16px;
 
-      background: rgba(0, 0, 0, 0.88);
-      border: 1px solid rgba(233, 169, 35, 0.45);
+      z-index: 2;
 
-      color: var(--gold);
-      font-size: 9px;
+      padding:
+        8px
+        10px;
+
+      border:
+        1px solid rgba(233, 169, 35, 0.50);
+
+      border-radius: 6px;
+
+      background:
+        rgba(7, 5, 2, 0.89);
+
+      color: var(--gold-bright);
+
+      font-size: 8px;
       font-weight: 900;
-      letter-spacing: 1.5px;
+
+      letter-spacing: 0.13em;
+
+      text-transform: uppercase;
+
+      backdrop-filter: blur(5px);
+
+      box-shadow:
+        0 0 18px rgba(233, 169, 35, 0.06);
     }
+
+    /* CONTENT */
 
     .card-content {
       display: flex;
       flex-direction: column;
+
       flex: 1;
 
-      padding: 25px 24px 24px;
+      padding:
+        25px
+        23px
+        26px;
     }
 
     .card-date {
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 1.5px;
       margin-bottom: 9px;
+
+      color: var(--gold);
+
+      font-size: 9px;
+      font-weight: 900;
+
+      line-height: 1.5;
+
+      letter-spacing: 0.11em;
+
+      text-transform: uppercase;
     }
 
     .card-content h3 {
-      font-size: 22px;
-      line-height: 1.15;
       margin-bottom: 12px;
+
+      color: #ffffff;
+
+      font-size: 23px;
+
+      line-height: 1.1;
+
+      font-weight: 950;
+
+      letter-spacing: -0.025em;
     }
 
     .card-content p {
-      color: #8f8f8f;
-      font-size: 13px;
+      margin-bottom: 23px;
+
+      color: #9a9287;
+
+      font-size: 12.5px;
+
       line-height: 1.75;
+
       flex: 1;
     }
 
+    /* META */
+
+    .event-meta {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 7px;
+
+      margin-bottom: 24px;
+    }
+
+    .meta-pill {
+      padding:
+        6px
+        8px;
+
+      border:
+        1px solid rgba(233, 169, 35, 0.11);
+
+      border-radius: 5px;
+
+      background:
+        rgba(233, 169, 35, 0.025);
+
+      color: #a79e91;
+
+      font-size: 8px;
+      font-weight: 850;
+
+      letter-spacing: 0.065em;
+
+      text-transform: uppercase;
+    }
+
+    .meta-pill.primary {
+      border-color:
+        rgba(233, 169, 35, 0.22);
+
+      background:
+        rgba(233, 169, 35, 0.055);
+
+      color: var(--gold-bright);
+    }
+
+    /* OPEN */
+
     .read-more {
-      margin-top: 22px;
+      margin-top: auto;
+
+      display: flex;
+      align-items: center;
+
+      gap: 8px;
+
       padding-top: 17px;
 
-      border-top: 1px solid #202020;
+      border-top:
+        1px solid rgba(233, 169, 35, 0.09);
 
-      color: var(--gold);
-      font-size: 10px;
+      color: var(--gold-bright);
+
+      font-size: 9px;
       font-weight: 900;
-      letter-spacing: 2px;
+
+      line-height: 1.5;
+
+      letter-spacing: 0.09em;
+
+      text-transform: uppercase;
     }
 
-    /* FUTURE EVENTS */
+    .read-arrow {
+      margin-left: auto;
 
-    .future-note {
-      margin-top: 60px;
-      padding: 30px;
-
-      border: 1px solid #1f1f1f;
-      border-left: 3px solid var(--gold);
-
-      background: #0a0a0a;
-    }
-
-    .future-note h3 {
-      color: var(--gold);
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    .future-note p {
-      color: #858585;
       font-size: 13px;
-      line-height: 1.75;
-    }
-
-    /* ARCHIVE */
-
-    .archive-area {
-      margin-top: 38px;
-      text-align: center;
-    }
-
-    .archive-text {
-      color: #777777;
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      margin-bottom: 16px;
-    }
-
-    .archive-button {
-      display: inline-block;
-      padding: 14px 26px;
-
-      border: 1px solid rgba(233, 169, 35, 0.60);
-      background: #0a0a0a;
-
-      color: var(--gold);
-      text-decoration: none;
-
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
 
       transition:
-        color 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease,
         transform 0.2s ease;
     }
 
-    .archive-button:hover {
-      color: #070707;
-      background: var(--gold);
-      border-color: var(--gold);
-      transform: translateY(-2px);
+    .event-card:hover
+    .read-arrow {
+      transform:
+        translateX(4px);
     }
 
-    /* EMPTY CURRENT STATE */
+    /* =========================
+       EMPTY CURRENT
+       ========================= */
 
     .empty-current {
       display: none;
-      padding: 50px 30px;
-      border: 1px dashed #292929;
-      background: #0a0a0a;
+
+      padding:
+        55px
+        30px;
+
+      border:
+        1px dashed rgba(233, 169, 35, 0.18);
+
+      border-radius: 12px;
+
+      background:
+        rgba(233, 169, 35, 0.018);
+
       text-align: center;
     }
 
     .empty-current h3 {
-      color: var(--gold);
-      font-size: 18px;
       margin-bottom: 8px;
+
+      color: var(--gold);
+
+      font-size: 18px;
     }
 
     .empty-current p {
-      color: #858585;
+      color: #8e867a;
+
       font-size: 13px;
+
       line-height: 1.75;
     }
 
-    /* FOOTER */
+    /* =========================
+       FUTURE EVENTS
+       ========================= */
 
-    footer {
-      padding: 32px 20px;
-      border-top: 1px solid #1b1b1b;
+    .future-note {
+      position: relative;
+
+      overflow: hidden;
+
+      margin-top: 50px;
+
+      padding:
+        31px
+        33px;
+
+      border:
+        1px solid rgba(233, 169, 35, 0.11);
+
+      border-radius: 11px;
+
+      background:
+        radial-gradient(
+          circle at 0% 50%,
+          rgba(233, 169, 35, 0.07),
+          transparent 35%
+        ),
+        linear-gradient(
+          90deg,
+          rgba(15, 11, 6, 0.98),
+          rgba(8, 7, 5, 0.98)
+        );
+    }
+
+    .future-note::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 3px;
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--gold-bright),
+          var(--gold-soft)
+        );
+
+      box-shadow:
+        0 0 16px rgba(233, 169, 35, 0.18);
+    }
+
+    .future-note h3 {
+      margin-bottom: 8px;
+
+      color: var(--gold-bright);
+
+      font-size: 15px;
+      font-weight: 900;
+
+      letter-spacing: 0.04em;
+    }
+
+    .future-note p {
+      max-width: 850px;
+
+      color: #91897e;
+
+      font-size: 13px;
+
+      line-height: 1.75;
+    }
+
+    /* =========================
+       ARCHIVE
+       ========================= */
+
+    .archive-area {
+      position: relative;
+
+      overflow: hidden;
+
+      margin-top: 35px;
+
+      padding:
+        31px
+        30px;
+
+      border:
+        1px solid rgba(233, 169, 35, 0.10);
+
+      border-radius: 11px;
+
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(233, 169, 35, 0.055),
+          transparent 55%
+        ),
+        rgba(233, 169, 35, 0.015);
 
       text-align: center;
-      color: #555555;
+    }
+
+    .archive-area::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 50%;
+
+      width: 130px;
+      height: 2px;
+
+      transform:
+        translateX(-50%);
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          var(--gold),
+          transparent
+        );
+    }
+
+    .archive-text {
+      margin-bottom: 17px;
+
+      color: #81796e;
+
+      font-size: 10px;
+      font-weight: 850;
+
+      letter-spacing: 0.14em;
+
+      text-transform: uppercase;
+    }
+
+    .archive-button {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 9px;
+
+      padding:
+        14px
+        21px;
+
+      border:
+        1px solid rgba(233, 169, 35, 0.43);
+
+      border-radius: 6px;
+
+      background:
+        rgba(233, 169, 35, 0.045);
+
+      color: var(--gold-bright);
+
+      text-decoration: none;
+
+      font-size: 10px;
+      font-weight: 900;
+
+      letter-spacing: 0.11em;
+
+      text-transform: uppercase;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .archive-button:hover {
+      transform:
+        translateY(-2px);
+
+      border-color:
+        var(--gold);
+
+      background:
+        var(--gold);
+
+      color: #080604;
+    }
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+      padding:
+        34px
+        30px;
+
+      border-top:
+        1px solid rgba(233, 169, 35, 0.055);
+
+      background:
+        rgba(3, 3, 3, 0.92);
+
+      text-align: center;
+
+      color: #5e574d;
+
       font-size: 11px;
-      letter-spacing: 1px;
+
+      line-height: 1.7;
     }
 
-    /* RESPONSIVE */
+    /* =========================
+       RESPONSIVE
+       ========================= */
 
-    @media (max-width: 950px) {
+    @media (max-width: 1000px) {
+
       .events-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
       }
     }
 
-    @media (max-width: 700px) {
-      .header-inner {
-        min-height: 70px;
-        padding: 0 20px;
-      }
+    @media (max-width: 720px) {
 
-      .brand {
-        font-size: 17px;
-        letter-spacing: 1px;
+      header {
+        padding:
+          0
+          20px;
       }
 
       .hero {
-        padding: 65px 20px 50px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
+        padding:
+          78px
+          22px
+          66px;
       }
 
       main {
-        padding: 10px 20px 70px;
+        padding:
+          54px
+          22px
+          80px;
       }
 
       .section-header {
-        display: block;
+        align-items: flex-start;
+        flex-direction: column;
       }
 
       .section-header p {
-        margin-top: 10px;
         text-align: left;
       }
 
@@ -463,63 +1038,141 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 520px) {
+
+      header {
+        min-height: 70px;
+      }
+
+      .brand {
+        font-size: 13px;
+      }
+
+      .hero {
+        padding:
+          64px
+          18px
+          55px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      main {
+        padding:
+          45px
+          18px
+          65px;
+      }
+
+      .card-content {
+        padding:
+          23px
+          20px
+          24px;
+      }
+
+      .card-content h3 {
+        font-size: 22px;
+      }
+
+      .future-note {
+        padding:
+          27px
+          24px;
+      }
+
+      .archive-area {
+        padding:
+          29px
+          20px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <header>
+
     <div class="header-inner">
 
-      <a class="brand" href="index.html">
-        GODS <span>OF ALLIANCE</span>
-      </a>
-
-      <a class="home-link" href="index.html">
-        HOME
+      <a
+        class="brand"
+        href="index.html"
+      >
+        GODS OF ALLIANCE
       </a>
 
     </div>
+
   </header>
 
 
+  <!-- =========================
+       HERO
+       ========================= -->
+
   <section class="hero">
 
-    <div class="eyebrow">
-      GODS OF ALLIANCE
+    <div class="hero-inner">
+
+      <div class="eyebrow">
+        GODS OF ALLIANCE DATABASE
+      </div>
+
+      <h1>
+        EVENTS
+      </h1>
+
+      <p>
+        Season calendars, event guides, rewards,
+        important dates and resource-planning information
+        for <strong>Hero Wars Alliance.</strong>
+      </p>
+
+      <div class="gold-line"></div>
+
     </div>
-
-    <h1>EVENTS</h1>
-
-    <p>
-      Season calendars, event guides, rewards, important dates and
-      resource-planning information for Hero Wars Alliance.
-    </p>
-
-    <div class="gold-line"></div>
 
   </section>
 
+
+  <!-- =========================
+       MAIN
+       ========================= -->
 
   <main>
 
     <div class="section-header">
 
       <div>
+
         <div class="section-label">
           LATEST EVENT GUIDES
         </div>
 
-        <h2>EVENTS &amp; SEASONS</h2>
+        <h2>
+          Events &amp; Seasons
+        </h2>
+
       </div>
 
       <p>
-        Explore our latest event coverage and prepare your resources
-        before committing them.
+        Explore our latest event coverage and prepare
+        your resources before committing them.
       </p>
 
     </div>
 
+
+    <!-- CURRENT EVENTS -->
 
     <section
       class="events-grid"
@@ -527,22 +1180,32 @@
     ></section>
 
 
+    <!-- EMPTY STATE -->
+
     <section
       class="empty-current"
       id="emptyCurrent"
     >
-      <h3>NO CURRENT EVENT GUIDES</h3>
+
+      <h3>
+        NO CURRENT EVENT GUIDES
+      </h3>
 
       <p>
         There are no active event guides listed right now.
         Check the archive for previous Gods of Alliance event coverage.
       </p>
+
     </section>
 
 
+    <!-- FUTURE CONTENT -->
+
     <section class="future-note">
 
-      <h3>MORE EVENT GUIDES ARE COMING</h3>
+      <h3>
+        MORE EVENT GUIDES ARE COMING
+      </h3>
 
       <p>
         This section will continue expanding with new Season calendars,
@@ -553,17 +1216,20 @@
     </section>
 
 
+    <!-- ARCHIVE -->
+
     <div class="archive-area">
 
       <div class="archive-text">
-        LOOKING FOR PREVIOUS EVENTS AND SEASONS?
+        Looking for previous events and seasons?
       </div>
 
       <a
         class="archive-button"
         href="events-archive.html"
       >
-        VIEW EVENTS ARCHIVE →
+        VIEW EVENTS ARCHIVE
+        <span>→</span>
       </a>
 
     </div>
@@ -571,12 +1237,25 @@
   </main>
 
 
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer>
     GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
   </footer>
 
 
+  <!-- =========================
+       EVENTS DATABASE
+       ========================= -->
+
   <script src="events-data.js"></script>
+
+
+  <!-- =========================
+       AUTOMATIC EVENT CARDS
+       ========================= -->
 
   <script>
     (function () {
@@ -584,14 +1263,22 @@
       const container =
         document.getElementById("currentEvents");
 
+
       const emptyCurrent =
         document.getElementById("emptyCurrent");
+
 
       const allEvents =
         Array.isArray(window.GOA_EVENTS)
           ? [...window.GOA_EVENTS]
           : [];
 
+
+      /*
+        Preserve the current Events system:
+        only events marked as "current"
+        appear on the main Events page.
+      */
 
       const currentEvents =
         allEvents
@@ -604,7 +1291,10 @@
 
 
       if (currentEvents.length === 0) {
-        emptyCurrent.style.display = "block";
+
+        emptyCurrent.style.display =
+          "block";
+
         return;
       }
 
@@ -614,19 +1304,23 @@
         const card =
           document.createElement("a");
 
+
         card.className =
           "event-card";
+
 
         card.href =
           event.url;
 
 
         card.innerHTML = `
+
           <div class="card-image">
 
             <img
               src="${event.image}"
               alt="${event.title}"
+              loading="lazy"
             >
 
             <div class="card-tag">
@@ -642,19 +1336,44 @@
               ${event.dateLabel}
             </div>
 
+
             <h3>
               ${event.title}
             </h3>
+
 
             <p>
               ${event.description}
             </p>
 
+
+            <div class="event-meta">
+
+              <div class="meta-pill primary">
+                ${event.tag}
+              </div>
+
+              <div class="meta-pill">
+                EVENTS
+              </div>
+
+            </div>
+
+
             <div class="read-more">
-              ${event.button}
+
+              <span>
+                ${event.button}
+              </span>
+
+              <span class="read-arrow">
+                →
+              </span>
+
             </div>
 
           </div>
+
         `;
 
 
@@ -666,6 +1385,7 @@
   </script>
 
 
+  <!-- GLOBAL NAVIGATION -->
   <script src="goa-global.js"></script>
 
 </body>
