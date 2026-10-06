@@ -1,5 +1,19 @@
 window.GOA_EVENTS = [
   {
+    id: "roads-unlocked",
+    title: "Roads Unlocked Event Guide",
+    tag: "EVENT GUIDE",
+    status: "current",
+    order: 4,
+    image: "Images/Events/roads-unlocked-event-guide.png",
+    url: "roads-unlocked-event-guide.html",
+    dateLabel: "OCTOBER 5 — OCTOBER 11",
+    description:
+      "Trade Routes Part 1: explore Caravan Hall, Reward Box, all seven Roads Unlocked quest tabs, daily resource requirements and the full Event Coin breakdown.",
+    button: "OPEN EVENT GUIDE →"
+  },
+
+  {
     id: "ancient-awakening",
     title: "Ancient Awakening Event Guide",
     tag: "EVENT GUIDE",
