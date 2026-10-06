@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Faceless Full Guide | Gods of Alliance</title>
+
+<meta
+    name="description"
+    content="Complete Faceless guide for Hero Wars Alliance. Skills, Skins, Glyphs, Artifacts, Gift of the Elements, Talismans, synergies, counters and build priorities."
+>
+
+<meta name="robots" content="index, follow">
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/faceless.html"
+>
+
+
+<!-- OPEN GRAPH -->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+
+<meta
+    property="og:title"
+    content="Faceless Full Guide | Gods of Alliance"
+>
+
+<meta
+    property="og:description"
+    content="Build Faceless correctly with our complete Hero Wars Alliance guide covering Doppelganger, Skills, Skins, Glyphs, Artifacts, Talismans, synergies and counters."
+>
+
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/faceless.html"
+>
+
+<meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/faceless-guide.png"
+>
+
+<meta
+    property="og:image:alt"
+    content="Faceless Full Guide - Gods of Alliance"
+>
+
+
+<!-- TWITTER / X -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Faceless Full Guide | Gods of Alliance"
+>
+
+<meta
+    name="twitter:description"
+    content="Complete Faceless build guide: Skills, Skins, Glyphs, Artifacts, Talismans, synergies and counters."
+>
+
+<meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/faceless-guide.png"
+>
+
+
+<style>
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #020707;
+}
+
+:root {
+
+    --bg: #020707;
+
+    --panel: rgba(7, 17, 18, 0.94);
+    --panel-soft: rgba(9, 22, 22, 0.88);
+
+    --spectral: #73e6d0;
+    --spectral-bright: #b8fff0;
+    --spectral-dark: #1d716c;
+
+    --fire: #f39a32;
+    --fire-bright: #ffc65e;
+
+    --purple: #8664b5;
+
+    --white: #ffffff;
+    --muted: #a1b1b1;
+
+    --line: rgba(115, 230, 208, 0.15);
+}
+
+body {
+
+    min-height: 100vh;
+
+    color: #ffffff;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(67, 190, 171, 0.08),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(115, 230, 208, 0.04),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            180deg,
+            #061010 0%,
+            #020707 46%,
+            #010404 100%
+        );
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================================
+   CINEMATIC HERO
+   ========================================================= */
+
+.hero-header {
+
+    position: relative;
+
+    min-height: 740px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(115, 230, 208, 0.12);
+
+    background: #020707;
+}
+
+.hero-background {
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(1, 5, 6, 0.08) 0%,
+            rgba(1, 5, 6, 0.12) 34%,
+            rgba(1, 5, 6, 0.52) 57%,
+            rgba(1, 5, 6, 0.94) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(2, 7, 7, 0.02) 0%,
+            rgba(2, 7, 7, 0.08) 48%,
+            #020707 100%
+        ),
+
+        url("Images/Hero-Guides/faceless-guide.png");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.hero-background::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 25% 40%,
+            rgba(71, 236, 204, 0.13),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 31% 45%,
+            rgba(243, 154, 50, 0.07),
+            transparent 20%
+        );
+}
+
+.hero-shell {
+
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        180px
+        32px
+        82px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+
+    width: min(650px, 100%);
+}
+
+.hero-badge {
+
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    padding: 8px 11px;
+
+    border:
+        1px solid rgba(184, 255, 240, 0.28);
+
+    border-radius: 4px;
+
+    background:
+        rgba(2, 8, 9, 0.70);
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+.hero-header h1 {
+
+    margin-bottom: 15px;
+
+    color:
+        var(--spectral-bright);
+
+    font-size:
+        clamp(55px, 8vw, 96px);
+
+    line-height: 0.9;
+
+    font-weight: 950;
+
+    letter-spacing: -0.055em;
+
+    text-shadow:
+        0 8px 35px rgba(0, 0, 0, 0.95),
+        0 0 28px rgba(115, 230, 208, 0.13);
+}
+
+.hero-role {
+
+    margin-bottom: 21px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    line-height: 1.7;
+
+    text-transform: uppercase;
+}
+
+.hero-role span {
+    color: var(--spectral);
+}
+
+.hero-intro {
+
+    max-width: 620px;
+
+    color: #b3c1c1;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    text-shadow:
+        0 2px 10px #000000;
+}
+
+.hero-intro strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+.article {
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding:
+        78px
+        28px
+        100px;
+}
+
+.section {
+
+    margin-bottom: 82px;
+}
+
+.section-kicker {
+
+    margin-bottom: 9px;
+
+    color:
+        var(--spectral);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.21em;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+
+    margin-bottom: 18px;
+
+    font-size:
+        clamp(30px, 4.4vw, 47px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -0.035em;
+}
+
+.section-lead {
+
+    max-width: 870px;
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.section-lead strong {
+    color: var(--spectral-bright);
+}
+
+
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.identity-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.identity-card {
+
+    padding: 24px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.14);
+
+    border-radius: 9px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(115, 230, 208, 0.07),
+            transparent 45%
+        ),
+
+        rgba(7, 16, 17, 0.90);
+}
+
+.identity-label {
+
+    margin-bottom: 9px;
+
+    color: #738787;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.identity-value {
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 20px;
+
+    font-weight: 950;
+}
+
+
+/* =========================================================
+   CORE IDEA
+   ========================================================= */
+
+.core-box {
+
+    margin-top: 31px;
+
+    padding: 31px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.22);
+
+    border-radius: 11px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(115, 230, 208, 0.10),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(10, 25, 25, 0.96),
+            rgba(3, 9, 10, 0.98)
+        );
+}
+
+.core-box p {
+
+    color: #a9b8b8;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+.core-box strong {
+    color: #ffffff;
+}
+
+.core-line {
+
+    margin-top: 24px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 8px;
+}
+
+.core-word {
+
+    padding: 14px 8px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.10);
+
+    border-radius: 5px;
+
+    color:
+        var(--spectral-bright);
+
+    background:
+        rgba(115, 230, 208, 0.025);
+
+    text-align: center;
+
+    font-size: 10px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-stack {
+
+    margin-top: 33px;
+
+    display: grid;
+
+    gap: 16px;
+}
+
+.skill-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 28px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.14);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(115, 230, 208, 0.07),
+            transparent 42%
+        ),
+
+        rgba(7, 16, 17, 0.91);
+}
+
+.skill-card.primary {
+
+    border-color:
+        rgba(243, 154, 50, 0.28);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(243, 154, 50, 0.10),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(115, 230, 208, 0.06),
+            transparent 35%
+        ),
+
+        rgba(8, 16, 17, 0.94);
+}
+
+.skill-number {
+
+    margin-bottom: 8px;
+
+    color:
+        var(--spectral);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+.skill-card.primary .skill-number {
+    color: var(--fire-bright);
+}
+
+.skill-name {
+
+    margin-bottom: 13px;
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.skill-card p {
+
+    color: #a4b3b3;
+
+    font-size: 13px;
+
+    line-height: 1.78;
+}
+
+.skill-card p + p {
+    margin-top: 12px;
+}
+
+.skill-highlight {
+
+    margin-top: 18px;
+
+    padding: 15px 17px;
+
+    border-left:
+        2px solid var(--spectral);
+
+    background:
+        rgba(115, 230, 208, 0.035);
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    line-height: 1.65;
+}
+
+.primary .skill-highlight {
+
+    border-left-color:
+        var(--fire);
+
+    color:
+        var(--fire-bright);
+
+    background:
+        rgba(243, 154, 50, 0.04);
+}
+
+
+/* =========================================================
+   PRIORITIES
+   ========================================================= */
+
+.priority-grid {
+
+    margin-top: 32px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.priority-card {
+
+    padding: 28px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.14);
+
+    border-radius: 10px;
+
+    background:
+        rgba(7, 16, 17, 0.91);
+}
+
+.priority-card h3 {
+
+    margin-bottom: 20px;
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 21px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.priority-list {
+
+    list-style: none;
+
+    counter-reset: priority;
+}
+
+.priority-list li {
+
+    counter-increment: priority;
+
+    position: relative;
+
+    min-height: 47px;
+
+    padding:
+        13px
+        10px
+        13px
+        47px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    color: #aab8b8;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+.priority-list li:last-child {
+    border-bottom: 0;
+}
+
+.priority-list li::before {
+
+    content: counter(priority);
+
+    position: absolute;
+
+    left: 5px;
+    top: 12px;
+
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.19);
+
+    border-radius: 50%;
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 9px;
+
+    font-weight: 950;
+}
+
+.priority-list strong {
+    color: #ffffff;
+}
+
+.priority-note {
+
+    margin-top: 17px;
+
+    color: #778b8b;
+
+    font-size: 10px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   ARTIFACTS
+   ========================================================= */
+
+.artifact-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.artifact-card {
+
+    position: relative;
+
+    padding: 26px 22px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.14);
+
+    border-radius: 9px;
+
+    background:
+        rgba(7, 16, 17, 0.91);
+}
+
+.artifact-order {
+
+    margin-bottom: 11px;
+
+    color:
+        var(--fire-bright);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.artifact-card h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 19px;
+
+    font-weight: 950;
+}
+
+.artifact-card p {
+
+    color: #94a6a6;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MAX
+   ========================================================= */
+
+.max-box {
+
+    margin-top: 30px;
+
+    padding: 33px;
+
+    border:
+        1px solid rgba(243, 154, 50, 0.24);
+
+    border-radius: 11px;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(243, 154, 50, 0.10),
+            transparent 45%
+        ),
+
+        rgba(9, 16, 16, 0.94);
+}
+
+.max-box span {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #819292;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.max-box strong {
+
+    color:
+        var(--fire-bright);
+
+    font-size:
+        clamp(35px, 5vw, 49px);
+
+    font-weight: 950;
+}
+
+.max-box p {
+
+    max-width: 690px;
+
+    margin:
+        15px auto 0;
+
+    color: #97a8a8;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TALISMANS
+   ========================================================= */
+
+.talisman-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.talisman-card {
+
+    padding: 28px;
+
+    border:
+        1px solid rgba(134, 100, 181, 0.22);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(134, 100, 181, 0.10),
+            transparent 43%
+        ),
+
+        rgba(8, 14, 18, 0.94);
+}
+
+.talisman-number {
+
+    margin-bottom: 9px;
+
+    color: #ad90d6;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.talisman-card h3 {
+
+    margin-bottom: 16px;
+
+    font-size: 22px;
+
+    font-weight: 950;
+}
+
+.stats {
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+}
+
+.stat {
+
+    padding: 7px 9px;
+
+    border:
+        1px solid rgba(173, 144, 214, 0.17);
+
+    border-radius: 4px;
+
+    color: #d9c8f0;
+
+    background:
+        rgba(134, 100, 181, 0.05);
+
+    font-size: 9px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+.talisman-card p {
+
+    color: #9aa9aa;
+
+    font-size: 12px;
+
+    line-height: 1.72;
+}
+
+.obtain {
+
+    margin-top: 17px;
+
+    padding-top: 15px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    color: #78898a;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+.obtain strong {
+    color: var(--spectral-bright);
+}
+
+
+/* =========================================================
+   SYNERGIES
+   ========================================================= */
+
+.synergy-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.synergy-card {
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.14);
+
+    border-radius: 9px;
+
+    background:
+        rgba(7, 16, 17, 0.90);
+}
+
+.synergy-card h3 {
+
+    margin-bottom: 11px;
+
+    color:
+        var(--spectral-bright);
+
+    font-size: 19px;
+
+    font-weight: 950;
+}
+
+.synergy-card p {
+
+    color: #97a8a8;
+
+    font-size: 11px;
+
+    line-height: 1.72;
+}
+
+
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+.counter-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+.counter-card {
+
+    padding: 23px;
+
+    border:
+        1px solid rgba(243, 154, 50, 0.14);
+
+    border-radius: 9px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(243, 154, 50, 0.055),
+            transparent 45%
+        ),
+
+        rgba(8, 15, 16, 0.92);
+}
+
+.counter-card h3 {
+
+    margin-bottom: 10px;
+
+    color:
+        var(--fire-bright);
+
+    font-size: 18px;
+
+    font-weight: 950;
+}
+
+.counter-card p {
+
+    color: #9caaaa;
+
+    font-size: 11px;
+
+    line-height: 1.72;
+}
+
+
+/* =========================================================
+   FINAL VERDICT
+   ========================================================= */
+
+.verdict {
+
+    padding: 34px;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.25);
+
+    border-radius: 12px;
+
+    background:
+
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(115, 230, 208, 0.10),
+            transparent 40%
+        ),
+
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(243, 154, 50, 0.07),
+            transparent 38%
+        ),
+
+        rgba(7, 16, 17, 0.96);
+}
+
+.verdict h2 {
+
+    margin-bottom: 17px;
+
+    font-size:
+        clamp(29px, 4vw, 43px);
+
+    font-weight: 950;
+
+    letter-spacing: -0.035em;
+}
+
+.verdict p {
+
+    color: #a7b6b6;
+
+    font-size: 14px;
+
+    line-height: 1.85;
+}
+
+.verdict p + p {
+    margin-top: 13px;
+}
+
+.verdict strong {
+    color: var(--spectral-bright);
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.video-section {
+
+    margin-top: 20px;
+}
+
+.video-frame {
+
+    position: relative;
+
+    width: 100%;
+
+    padding-top: 56.25%;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(115, 230, 208, 0.23);
+
+    border-radius: 12px;
+
+    background: #000000;
+
+    box-shadow:
+        0 28px 70px rgba(0, 0, 0, 0.40);
+}
+
+.video-frame iframe {
+
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    padding:
+        35px
+        20px;
+
+    border-top:
+        1px solid rgba(115, 230, 208, 0.08);
+
+    background: #010404;
+
+    color: #526464;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .identity-grid,
+    .artifact-grid,
+    .synergy-grid,
+    .counter-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .priority-grid,
+    .talisman-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .core-line {
+
+        grid-template-columns:
+            1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .hero-header {
+        min-height: 650px;
+    }
+
+    .hero-background {
+
+        background-image:
+
+            linear-gradient(
+                180deg,
+                rgba(2, 7, 7, 0.05) 0%,
+                rgba(2, 7, 7, 0.30) 42%,
+                #020707 100%
+            ),
+
+            url("Images/Hero-Guides/faceless-guide.png");
+
+        background-position:
+            30% center;
+    }
+
+    .hero-shell {
+
+        justify-content: flex-start;
+
+        padding:
+            310px
+            20px
+            55px;
+    }
+
+    .hero-content {
+
+        text-align: center;
+    }
+
+    .article {
+
+        padding:
+            64px
+            19px
+            80px;
+    }
+
+    .skill-card,
+    .priority-card,
+    .talisman-card,
+    .verdict {
+
+        padding: 22px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<header class="hero-header">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                HERO GUIDE
+            </div>
+
+            <h1>
+                FACELESS
+            </h1>
+
+            <div class="hero-role">
+                CONTROL
+                <span>•</span>
+                WAY OF ETERNITY
+                <span>•</span>
+                BACK LINE
+            </div>
+
+            <p class="hero-intro">
+                Faceless is one of the Dominion's most unusual Control Heroes.
+                He can <strong>copy the last first Skill used on the battlefield</strong>,
+                disrupt enemy positioning, weaken Physical Attack and increase
+                his entire team's Magic Defense.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="article">
+
+
+<!-- =========================================================
+     IDENTITY
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        HERO IDENTITY
+    </div>
+
+    <h2 class="section-title">
+        What Is Faceless?
+    </h2>
+
+    <p class="section-lead">
+        Faceless isn't defined by one job. His value comes from
+        <strong>versatility and timing.</strong>
+        Depending on the battle, he can control, displace, debuff,
+        protect the team from magical pressure or copy a decisive Skill.
+    </p>
+
+
+    <div class="identity-grid">
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                CLASS
+            </div>
+
+            <div class="identity-value">
+                Control
+            </div>
+
+        </article>
+
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                FACTION
+            </div>
+
+            <div class="identity-value">
+                Way of Eternity
+            </div>
+
+        </article>
+
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                POSITION
+            </div>
+
+            <div class="identity-value">
+                Back Line
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="core-box">
+
+        <p>
+            Faceless becomes much easier to understand when his kit is
+            reduced to its fundamental jobs. He can
+            <strong>copy, displace, control, debuff and protect.</strong>
+            The value of those mechanics changes depending on the Heroes
+            around him and, especially, on the timing of Doppelganger.
+        </p>
+
+        <div class="core-line">
+
+            <div class="core-word">COPY</div>
+            <div class="core-word">DISPLACE</div>
+            <div class="core-word">CONTROL</div>
+            <div class="core-word">DEBUFF</div>
+            <div class="core-word">PROTECT</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SKILLS
+    </div>
+
+    <h2 class="section-title">
+        Faceless' Skill Kit.
+    </h2>
+
+    <p class="section-lead">
+        Faceless' greatest strength is not necessarily his own Ultimate.
+        Sometimes, the strongest weapon on the battlefield
+        <strong>belongs to someone else.</strong>
+    </p>
+
+
+    <div class="skills-stack">
+
+
+        <!-- DOPPELGANGER -->
+
+        <article class="skill-card primary">
+
+            <div class="skill-number">
+                SKILL 01 • SIGNATURE MECHANIC
+            </div>
+
+            <h3 class="skill-name">
+                Doppelganger
+            </h3>
+
+            <p>
+                Faceless transforms into the ally or enemy who most
+                recently activated their first Skill and then uses
+                that Skill himself.
+            </p>
+
+            <p>
+                The copied Skill is increased to
+                <strong style="color:#ffffff;">
+                    Level 240.
+                </strong>
+            </p>
+
+            <p>
+                Faceless is not restricted to reproducing one kind
+                of effect. What he provides depends entirely on the
+                Skill he copies.
+            </p>
+
+            <p>
+                He can reproduce defensive effects such as
+                <strong style="color:#ffffff;">
+                    Julius' shields
+                </strong>
+                and, with the correct copied Skill, can even reproduce
+                resurrection mechanics from Heroes such as
+                <strong style="color:#ffffff;">
+                    Kayla or Aidan.
+                </strong>
+            </p>
+
+            <div class="skill-highlight">
+                TIMING MATTERS. The order of first Skills matters.
+                Waiting for the correct activation can be more valuable
+                than using Doppelganger immediately.
+            </div>
+
+        </article>
+
+
+        <!-- POWER THROW -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 02
+            </div>
+
+            <h3 class="skill-name">
+                Power Throw
+            </h3>
+
+            <p>
+                Faceless lifts the nearest enemy into the air and drops
+                that Hero into the center of the opposing team.
+            </p>
+
+            <p>
+                The impact deals damage and stuns enemies in the affected
+                area. Its power scales with Faceless' Magic Attack,
+                while the Stun becomes less likely to succeed if the
+                target's level is above 120.
+            </p>
+
+            <p>
+                The key mechanic is positioning. Power Throw removes the
+                nearest Hero from their normal position and throws them
+                deeper into their own formation, potentially exposing
+                Heroes that were protected behind the frontline.
+            </p>
+
+            <div class="skill-highlight">
+                IMPORTANT SYNERGY: K'arkh benefits enormously from enemies
+                being knocked into the air, making Power Throw a direct
+                offensive setup for him.
+            </div>
+
+        </article>
+
+
+        <!-- CHAIN LIGHTNING -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 03
+            </div>
+
+            <h3 class="skill-name">
+                Chain Lightning
+            </h3>
+
+            <p>
+                Faceless launches a magical projectile that ricochets
+                between three enemies.
+            </p>
+
+            <p>
+                It deals damage while reducing the targets'
+                <strong style="color:#ffffff;">
+                    Physical Attack by 1,800 for four seconds.
+                </strong>
+            </p>
+
+            <p>
+                The Skill scales with Faceless' Magic Attack and allows
+                him to weaken three targets simultaneously, giving the
+                team another defensive tool against physical pressure.
+            </p>
+
+            <div class="skill-highlight">
+                The negative effect also creates an interesting interaction
+                with Iris, giving her another opportunity to take advantage
+                of enemies affected by debuffs.
+            </div>
+
+        </article>
+
+
+        <!-- SPELL EXPERT -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 04 • PASSIVE
+            </div>
+
+            <h3 class="skill-name">
+                Spell Expert
+            </h3>
+
+            <p>
+                Faceless increases the entire team's
+                <strong style="color:#ffffff;">
+                    Magic Defense by 3,000.
+                </strong>
+            </p>
+
+            <p>
+                Because this passive depends only on its level,
+                Faceless provides this defensive value without needing
+                another activation.
+            </p>
+
+            <p>
+                Against magic-heavy compositions, that additional
+                Magic Defense can help the entire team survive.
+            </p>
+
+            <div class="skill-highlight">
+                ELECTRA INTERACTION: increasing Magic Defense can also
+                strengthen Electra's shell, creating another reason
+                to use Faceless in structures built around her.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKINS + GLYPHS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        DEVELOPMENT
+    </div>
+
+    <h2 class="section-title">
+        Skins & Glyphs.
+    </h2>
+
+    <p class="section-lead">
+        Faceless needs to survive long enough to control the battle
+        and reach the right Doppelganger timing. That is why
+        <strong>Health comes first.</strong>
+    </p>
+
+
+    <div class="priority-grid">
+
+
+        <!-- SKINS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Skin Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Health</strong><br>
+                    First priority for survivability and control uptime.
+                </li>
+
+                <li>
+                    <strong>Magic Attack</strong><br>
+                    Strengthens Power Throw and Chain Lightning.
+                </li>
+
+                <li>
+                    <strong>Intelligence</strong><br>
+                    Supports his magical development while also adding
+                    some Magic Defense.
+                </li>
+
+                <li>
+                    <strong>Magic Penetration</strong><br>
+                    Helps his magical damage bypass enemy Magic Defense.
+                </li>
+
+                <li>
+                    <strong>Magic Defense</strong><br>
+                    Further improves survivability against magical pressure.
+                </li>
+
+                <li>
+                    <strong>Magical Critical Hit Chance</strong><br>
+                    Offensive value, but final priority because Faceless'
+                    primary responsibility remains control.
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                Faceless currently has six Skins covering Intelligence,
+                Magic Attack, Health, Magic Defense, Magic Penetration
+                with a Skin+ version, and Magical Critical Hit Chance.
+            </div>
+
+        </article>
+
+
+        <!-- GLYPHS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Glyph Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Health</strong>
+                </li>
+
+                <li>
+                    <strong>Magic Attack</strong>
+                </li>
+
+                <li>
+                    <strong>Intelligence</strong>
+                </li>
+
+                <li>
+                    <strong>Magic Penetration</strong>
+                </li>
+
+                <li>
+                    <strong>Physical Attack</strong>
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                Bring all five Glyphs to
+                <strong style="color:#ffffff;">Level 40.</strong>
+                Beyond Level 40, further investment should depend on your
+                objectives, including Skill Class progression.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ARTIFACTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        ARTIFACTS
+    </div>
+
+    <h2 class="section-title">
+        Artifact Priority.
+    </h2>
+
+    <p class="section-lead">
+        Faceless' development begins with the Artifact that directly
+        supplies two of his most important offensive stats:
+        <strong>Magic Attack and Magic Penetration.</strong>
+    </p>
+
+
+    <div class="artifact-grid">
+
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 01
+            </div>
+
+            <h3>
+                Artifact Book
+            </h3>
+
+            <p>
+                Provides Magic Penetration and Magic Attack.
+                Both directly support Power Throw and Chain Lightning.
+            </p>
+
+        </article>
+
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 02
+            </div>
+
+            <h3>
+                Artifact Ring
+            </h3>
+
+            <p>
+                Provides Intelligence, further strengthening Faceless'
+                overall development and complementing the Book.
+            </p>
+
+        </article>
+
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 03
+            </div>
+
+            <h3>
+                Artifact Weapon
+            </h3>
+
+            <p>
+                Activating Doppelganger provides the entire team with
+                a Magic Penetration bonus. Valuable for magic-oriented
+                compositions, but third when prioritizing Faceless'
+                individual development.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GIFT OF ELEMENTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+    </div>
+
+    <h2 class="section-title">
+        No Compromise Here.
+    </h2>
+
+
+    <div class="max-box">
+
+        <span>
+            RECOMMENDED DEVELOPMENT
+        </span>
+
+        <strong>
+            MAX IT
+        </strong>
+
+        <p>
+            Faceless operates from the backline, but that does not make
+            him untouchable. He needs solid fundamental stats to survive
+            long enough to control the battle and execute Doppelganger
+            at the right moment.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TALISMANS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TALISMANS
+    </div>
+
+    <h2 class="section-title">
+        Two Different Development Paths.
+    </h2>
+
+    <p class="section-lead">
+        Faceless currently has two Talismans.
+        Both are useful, but they strengthen different parts of his build.
+    </p>
+
+
+    <div class="talisman-grid">
+
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 01
+            </div>
+
+            <h3>
+                Intelligence + Health
+            </h3>
+
+            <div class="stats">
+
+                <div class="stat">
+                    INTELLIGENCE
+                </div>
+
+                <div class="stat">
+                    HEALTH
+                </div>
+
+            </div>
+
+            <p>
+                This combination fits Faceless' core development philosophy
+                extremely well. Health helps keep him alive while Intelligence
+                strengthens his overall development.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Permanently available through the Eternal Frontier Shop
+                for 700,000 Frontier Coins.
+            </div>
+
+        </article>
+
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 02
+            </div>
+
+            <h3>
+                Armor + Magic Attack
+            </h3>
+
+            <div class="stats">
+
+                <div class="stat">
+                    ARMOR
+                </div>
+
+                <div class="stat">
+                    MAGIC ATTACK
+                </div>
+
+            </div>
+
+            <p>
+                Armor provides additional physical resistance while
+                Magic Attack directly strengthens the Skills in Faceless'
+                kit that scale with that stat.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Available through special events.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SYNERGIES
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SYNERGIES
+    </div>
+
+    <h2 class="section-title">
+        Heroes That Work With Faceless.
+    </h2>
+
+    <p class="section-lead">
+        Faceless can perform several jobs, which allows him to create
+        very different interactions depending on the Heroes around him.
+    </p>
+
+
+    <div class="synergy-grid">
+
+
+        <article class="synergy-card">
+
+            <h3>
+                K'arkh
+            </h3>
+
+            <p>
+                One of Faceless' classic interactions.
+                Power Throw knocks an enemy into the air, creating
+                exactly the type of opportunity K'arkh can exploit.
+            </p>
+
+        </article>
+
+
+        <article class="synergy-card">
+
+            <h3>
+                Iris
+            </h3>
+
+            <p>
+                Chain Lightning applies a negative effect by reducing
+                Physical Attack, creating another opportunity for Iris
+                to take advantage of debuffed enemies.
+            </p>
+
+        </article>
+
+
+        <article class="synergy-card">
+
+            <h3>
+                Electra
+            </h3>
+
+            <p>
+                Spell Expert increases the team's Magic Defense.
+                That additional Magic Defense can also strengthen
+                Electra's shell.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COUNTERS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        COUNTERS
+    </div>
+
+    <h2 class="section-title">
+        How Can Faceless Be Disrupted?
+    </h2>
+
+    <p class="section-lead">
+        Faceless wants time and control over the flow of the battle.
+        These Heroes provide different ways of interfering with that plan.
+    </p>
+
+
+    <div class="counter-grid">
+
+
+        <article class="counter-card">
+
+            <h3>
+                Soleil
+            </h3>
+
+            <p>
+                Soleil's Halo can cause Faceless' Stun to turn against
+                him, while repeated control effects can create additional
+                opportunities for Soleil to punish him.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <h3>
+                Iris
+            </h3>
+
+            <p>
+                Chain Lightning applies a debuff, and that negative
+                effect can make Faceless an interesting target for Iris.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <h3>
+                Cornelius
+            </h3>
+
+            <p>
+                Faceless is Intelligence-based. If his Intelligence
+                becomes sufficiently high while his Armor remains
+                vulnerable, Cornelius can become extremely dangerous
+                against him.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <h3>
+                Somna
+            </h3>
+
+            <p>
+                Somna can create control problems for Faceless when
+                her mechanics are triggered, disrupting a Hero whose
+                own game plan depends heavily on control.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <h3>
+                Lian
+            </h3>
+
+            <p>
+                Lian provides another route for creating control
+                problems for Faceless when her mechanics are triggered.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL VERDICT
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="verdict">
+
+        <div class="section-kicker">
+            FINAL ANALYSIS
+        </div>
+
+        <h2>
+            The Danger of Doppelganger.
+        </h2>
+
+        <p>
+            Faceless doesn't have one single mechanic that defines
+            everything he does. Sometimes he controls. Sometimes he
+            weakens physical attackers. Sometimes he increases the
+            team's resistance against magic.
+        </p>
+
+        <p>
+            He can set up <strong>K'arkh</strong>, support an
+            <strong>Electra</strong> structure, interact with
+            <strong>Iris</strong>, or simply copy one of the most
+            important first Skills on the battlefield.
+        </p>
+
+        <p>
+            That is what makes Doppelganger dangerous:
+            <strong>
+                the strongest Faceless activation isn't always determined
+                by Faceless. Sometimes, the enemy brings the weapon for him.
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VIDEO
+     ========================================================= -->
+
+<section class="section video-section">
+
+    <div class="section-kicker">
+        WATCH THE FULL GUIDE
+    </div>
+
+    <h2 class="section-title">
+        Faceless Video Guide.
+    </h2>
+
+    <p
+        class="section-lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the complete Gods of Alliance Faceless guide for the
+        full explanation of his mechanics, development priorities,
+        synergies and counters.
+    </p>
+
+
+    <div class="video-frame">
+
+        <iframe
+            src="https://www.youtube.com/embed/fxOlktDV3yQ"
+            title="Faceless Full Guide - Gods of Alliance"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
+<script src="goa-global.js"></script>
+
+
+</body>
+</html>
