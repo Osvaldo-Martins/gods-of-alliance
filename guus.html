@@ -1,0 +1,2800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guus Guide | Gods of Alliance</title>
+
+<meta
+    name="description"
+    content="Complete Guus guide for Hero Wars Alliance. Skills, Golden Feathers, Skins, Glyphs, Artifacts, Talismans, Legendary Relics, teams, counters and build priorities."
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/guus.html"
+>
+
+
+<!-- OPEN GRAPH -->
+
+<meta
+    property="og:type"
+    content="article"
+>
+
+<meta
+    property="og:site_name"
+    content="Gods of Alliance"
+>
+
+<meta
+    property="og:title"
+    content="Guus Full Guide | Gods of Alliance"
+>
+
+<meta
+    property="og:description"
+    content="Complete Guus build guide covering Golden Feathers, Skills, Skins, Glyphs, Artifacts, Talismans, Legendary Relics, teams and counters."
+>
+
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/guus.html"
+>
+
+<meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/guus-guide.png"
+>
+
+<meta
+    property="og:image:alt"
+    content="Guus Full Guide - Gods of Alliance"
+>
+
+
+<!-- TWITTER / X -->
+
+<meta
+    name="twitter:card"
+    content="summary_large_image"
+>
+
+<meta
+    name="twitter:title"
+    content="Guus Full Guide | Gods of Alliance"
+>
+
+<meta
+    name="twitter:description"
+    content="Skills, Golden Feathers, build priorities, Talismans, Legendary Relics, teams and counters for Guus."
+>
+
+<meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Hero-Guides/guus-guide.png"
+>
+
+
+<style>
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #02040a;
+}
+
+:root {
+
+    --bg: #02040a;
+
+    --panel:
+        rgba(7, 12, 23, 0.92);
+
+    --panel-soft:
+        rgba(11, 18, 32, 0.82);
+
+    --blue:
+        #163c72;
+
+    --blue-bright:
+        #4287d9;
+
+    --navy:
+        #07152d;
+
+    --gold:
+        #f1b83b;
+
+    --gold-bright:
+        #ffd96b;
+
+    --gold-dark:
+        #8e5c0b;
+
+    --cream:
+        #fff1c5;
+
+    --white:
+        #ffffff;
+
+    --muted:
+        #9ca6b6;
+
+    --line:
+        rgba(241, 184, 59, 0.16);
+}
+
+body {
+
+    min-height: 100vh;
+
+    color: #ffffff;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(30, 82, 150, 0.15),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 80% 18%,
+            rgba(241, 184, 59, 0.06),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            180deg,
+            #050b17 0%,
+            #02050b 38%,
+            #020308 100%
+        );
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.guus-hero {
+
+    position: relative;
+
+    min-height: 720px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+
+    border-bottom:
+        1px solid rgba(241, 184, 59, 0.14);
+
+    background: #02040a;
+}
+
+.guus-hero-bg {
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(2, 4, 10, 0.93) 0%,
+            rgba(2, 4, 10, 0.72) 30%,
+            rgba(2, 4, 10, 0.18) 59%,
+            rgba(2, 4, 10, 0.62) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(2, 4, 10, 0.10) 0%,
+            rgba(2, 4, 10, 0.15) 45%,
+            #02040a 100%
+        ),
+
+        url("Images/Hero-Guides/guus-guide.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.guus-hero-bg::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 23% 44%,
+            rgba(255, 206, 82, 0.09),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 72% 40%,
+            rgba(35, 94, 175, 0.10),
+            transparent 30%
+        );
+
+    pointer-events: none;
+}
+
+.hero-shell {
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        170px
+        32px
+        82px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-content {
+
+    width:
+        min(690px, 100%);
+}
+
+.hero-kicker {
+
+    margin-bottom: 17px;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 10px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
+}
+
+.guus-hero h1 {
+
+    margin-bottom: 18px;
+
+    font-size:
+        clamp(58px, 8vw, 105px);
+
+    line-height: 0.88;
+
+    font-weight: 950;
+
+    letter-spacing: -0.06em;
+
+    text-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.85);
+}
+
+.guus-hero h1 span {
+
+    display: block;
+
+    color:
+        var(--gold-bright);
+}
+
+.hero-role {
+
+    margin-bottom: 22px;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.14em;
+
+    text-transform: uppercase;
+}
+
+.hero-role span {
+
+    color:
+        var(--gold-bright);
+}
+
+.hero-intro {
+
+    max-width: 625px;
+
+    color: #c2c8d2;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    text-shadow:
+        0 2px 10px #000000;
+}
+
+.hero-intro strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.article {
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding:
+        80px
+        28px
+        100px;
+}
+
+.section {
+
+    margin-bottom: 76px;
+}
+
+.section-kicker {
+
+    margin-bottom: 9px;
+
+    color:
+        var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.21em;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+
+    margin-bottom: 19px;
+
+    font-size:
+        clamp(30px, 4.5vw, 46px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -0.035em;
+}
+
+.section-lead {
+
+    max-width: 840px;
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.section-lead strong {
+
+    color:
+        var(--gold-bright);
+}
+
+
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.identity-grid {
+
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.identity-card {
+
+    min-height: 130px;
+
+    padding: 22px;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.14);
+
+    border-radius: 9px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(241, 184, 59, 0.07),
+            transparent 45%
+        ),
+
+        rgba(7, 12, 23, 0.83);
+}
+
+.identity-label {
+
+    margin-bottom: 10px;
+
+    color:
+        #747f91;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.identity-value {
+
+    color:
+        #ffffff;
+
+    font-size: 17px;
+
+    font-weight: 950;
+
+    line-height: 1.25;
+
+    text-transform: uppercase;
+}
+
+.identity-value.gold {
+
+    color:
+        var(--gold-bright);
+}
+
+
+/* =========================================================
+   GOLDEN FEATHER
+   ========================================================= */
+
+.feather-feature {
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin-top: 30px;
+
+    padding:
+        34px;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.27);
+
+    border-radius: 12px;
+
+    background:
+
+        radial-gradient(
+            circle at 92% 15%,
+            rgba(255, 211, 99, 0.13),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(26, 35, 55, 0.94),
+            rgba(5, 10, 20, 0.98)
+        );
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+.feather-feature::after {
+
+    content: "✦";
+
+    position: absolute;
+
+    right: 28px;
+    top: 13px;
+
+    color:
+        rgba(255, 217, 107, 0.09);
+
+    font-size: 130px;
+
+    line-height: 1;
+}
+
+.feature-label {
+
+    margin-bottom: 12px;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.19em;
+
+    text-transform: uppercase;
+}
+
+.feather-feature h3 {
+
+    margin-bottom: 15px;
+
+    font-size:
+        clamp(25px, 4vw, 38px);
+
+    font-weight: 950;
+
+    letter-spacing: -0.03em;
+}
+
+.feather-feature p {
+
+    max-width: 790px;
+
+    color: #b5bdc9;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.skill-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 280px;
+
+    padding:
+        27px;
+
+    border:
+        1px solid rgba(72, 130, 206, 0.17);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(55, 113, 190, 0.10),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(9, 17, 32, 0.97),
+            rgba(4, 8, 16, 0.98)
+        );
+}
+
+.skill-number {
+
+    margin-bottom: 19px;
+
+    color:
+        rgba(255, 217, 107, 0.48);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.17em;
+}
+
+.skill-card h3 {
+
+    margin-bottom: 14px;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 21px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.skill-card p {
+
+    color: #a9b2c0;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+.skill-card p + p {
+
+    margin-top: 12px;
+}
+
+.skill-card strong {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   BUILD OVERVIEW
+   ========================================================= */
+
+.build-overview {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.build-card {
+
+    padding: 25px;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.15);
+
+    border-radius: 9px;
+
+    background:
+        rgba(7, 12, 23, 0.86);
+}
+
+.build-card h3 {
+
+    margin-bottom: 17px;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 15px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+.priority-list {
+
+    list-style: none;
+
+    counter-reset: build;
+}
+
+.priority-list li {
+
+    counter-increment: build;
+
+    position: relative;
+
+    min-height: 47px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding:
+        11px
+        10px
+        11px
+        45px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    color: #aeb6c2;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.priority-list li:last-child {
+    border-bottom: 0;
+}
+
+.priority-list li::before {
+
+    content:
+        counter(build, decimal-leading-zero);
+
+    position: absolute;
+
+    left: 4px;
+
+    color:
+        var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 950;
+}
+
+.priority-list strong {
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DEVELOPMENT PANELS
+   ========================================================= */
+
+.development-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.development-card {
+
+    padding: 27px;
+
+    border:
+        1px solid rgba(72, 130, 206, 0.16);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(40, 98, 175, 0.08),
+            transparent 40%
+        ),
+
+        rgba(7, 12, 23, 0.88);
+}
+
+.development-card h3 {
+
+    margin-bottom: 16px;
+
+    color: #ffffff;
+
+    font-size: 19px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.development-card p {
+
+    color: #a4adba;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+.development-card strong {
+
+    color:
+        var(--gold-bright);
+}
+
+
+/* =========================================================
+   TALISMANS
+   ========================================================= */
+
+.talisman-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.talisman-card {
+
+    padding: 28px;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.18);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(241, 184, 59, 0.10),
+            transparent 42%
+        ),
+
+        rgba(9, 13, 23, 0.93);
+}
+
+.talisman-number {
+
+    margin-bottom: 13px;
+
+    color:
+        var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.17em;
+
+    text-transform: uppercase;
+}
+
+.talisman-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.stat-pills {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 17px;
+}
+
+.stat-pill {
+
+    padding:
+        7px
+        9px;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.21);
+
+    border-radius: 999px;
+
+    background:
+        rgba(241, 184, 59, 0.055);
+
+    color:
+        var(--gold-bright);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.10em;
+
+    text-transform: uppercase;
+}
+
+.talisman-card p {
+
+    color: #a6afbc;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   RELICS
+   ========================================================= */
+
+.relics-grid {
+
+    margin-top: 32px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.relic-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 265px;
+
+    padding: 28px;
+
+    border-radius: 11px;
+
+    background:
+        rgba(8, 12, 21, 0.95);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.22);
+}
+
+.relic-level {
+
+    margin-bottom: 15px;
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+.relic-card h3 {
+
+    margin-bottom: 14px;
+
+    font-size: 20px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.relic-card p {
+
+    color: #adb5c1;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+.relic-1 {
+
+    border:
+        1px solid rgba(82, 198, 255, 0.25);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(82, 198, 255, 0.11),
+            transparent 43%
+        ),
+
+        rgba(8, 12, 21, 0.95);
+}
+
+.relic-1 .relic-level {
+    color: #69d3ff;
+}
+
+.relic-10 {
+
+    border:
+        1px solid rgba(97, 222, 146, 0.25);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(97, 222, 146, 0.10),
+            transparent 43%
+        ),
+
+        rgba(8, 12, 21, 0.95);
+}
+
+.relic-10 .relic-level {
+    color: #74e7a3;
+}
+
+.relic-20 {
+
+    border:
+        1px solid rgba(182, 111, 255, 0.27);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(182, 111, 255, 0.11),
+            transparent 43%
+        ),
+
+        rgba(8, 12, 21, 0.95);
+}
+
+.relic-20 .relic-level {
+    color: #c08aff;
+}
+
+.relic-30 {
+
+    border:
+        1px solid rgba(255, 188, 67, 0.36);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(255, 188, 67, 0.16),
+            transparent 43%
+        ),
+
+        rgba(12, 12, 17, 0.98);
+}
+
+.relic-30 .relic-level {
+    color:
+        var(--gold-bright);
+}
+
+.relic-warning {
+
+    margin-top: 17px;
+
+    padding:
+        13px
+        14px;
+
+    border-left:
+        2px solid var(--gold);
+
+    background:
+        rgba(241, 184, 59, 0.055);
+
+    color: #d5d8de;
+
+    font-size: 11px;
+
+    line-height: 1.65;
+}
+
+.relic-warning strong {
+
+    color:
+        var(--gold-bright);
+}
+
+
+/* =========================================================
+   TEAMS
+   ========================================================= */
+
+.team-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.team-card {
+
+    min-height: 220px;
+
+    padding: 24px;
+
+    border:
+        1px solid rgba(70, 130, 206, 0.17);
+
+    border-radius: 9px;
+
+    background:
+        rgba(7, 12, 23, 0.86);
+}
+
+.team-type {
+
+    margin-bottom: 12px;
+
+    color:
+        var(--gold);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.team-card h3 {
+
+    margin-bottom: 14px;
+
+    font-size: 17px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.team-members {
+
+    margin-bottom: 15px;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 12px;
+
+    font-weight: 850;
+
+    line-height: 1.65;
+}
+
+.team-card p {
+
+    color: #9fa8b6;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+.counter-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.counter-card {
+
+    padding: 24px;
+
+    border:
+        1px solid rgba(225, 91, 91, 0.17);
+
+    border-radius: 9px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(201, 62, 62, 0.07),
+            transparent 42%
+        ),
+
+        rgba(10, 10, 17, 0.90);
+}
+
+.counter-label {
+
+    margin-bottom: 11px;
+
+    color: #ef7777;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.counter-card h3 {
+
+    margin-bottom: 13px;
+
+    font-size: 18px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.counter-card p {
+
+    color: #a9a9b2;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUICK REFERENCE
+   ========================================================= */
+
+.quick-reference {
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(241, 184, 59, 0.27);
+
+    border-radius: 12px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(241, 184, 59, 0.10),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(16, 22, 35, 0.96),
+            rgba(5, 8, 15, 0.98)
+        );
+
+    box-shadow:
+        0 30px 70px rgba(0, 0, 0, 0.27);
+}
+
+.quick-header {
+
+    padding:
+        27px
+        29px;
+
+    border-bottom:
+        1px solid rgba(241, 184, 59, 0.14);
+}
+
+.quick-header .section-title {
+
+    margin-bottom: 0;
+}
+
+.quick-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+}
+
+.quick-item {
+
+    padding:
+        22px
+        28px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.quick-item:nth-child(odd) {
+
+    border-right:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.quick-label {
+
+    margin-bottom: 8px;
+
+    color:
+        #727d8e;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.quick-value {
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 850;
+
+    line-height: 1.65;
+}
+
+.quick-value span {
+
+    color:
+        var(--gold-bright);
+}
+
+
+/* =========================================================
+   FINAL NOTE
+   ========================================================= */
+
+.final-note {
+
+    margin-top: 35px;
+
+    text-align: center;
+
+    color: #7f8897;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    padding:
+        35px
+        20px;
+
+    border-top:
+        1px solid rgba(241, 184, 59, 0.08);
+
+    background: #020308;
+
+    color: #596170;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .identity-grid,
+    .team-grid,
+    .counter-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .skills-grid,
+    .build-overview,
+    .development-grid,
+    .talisman-grid,
+    .relics-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .guus-hero {
+
+        min-height: 620px;
+    }
+
+    .guus-hero-bg {
+
+        background-image:
+
+            linear-gradient(
+                180deg,
+                rgba(2, 4, 10, 0.20) 0%,
+                rgba(2, 4, 10, 0.50) 43%,
+                #02040a 100%
+            ),
+
+            url("Images/Hero-Guides/guus-guide.png");
+
+        background-position:
+            38% center;
+    }
+
+    .hero-shell {
+
+        padding:
+            250px
+            21px
+            55px;
+    }
+
+    .hero-content {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .article {
+
+        padding:
+            65px
+            20px
+            80px;
+    }
+
+    .quick-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .quick-item:nth-child(odd) {
+
+        border-right: 0;
+    }
+
+    .feather-feature {
+
+        padding: 26px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .guus-hero h1 {
+
+        font-size:
+            clamp(52px, 19vw, 76px);
+    }
+
+    .hero-role {
+
+        font-size: 10px;
+
+        line-height: 1.6;
+    }
+
+    .skill-card,
+    .development-card,
+    .talisman-card,
+    .relic-card {
+
+        padding: 22px;
+    }
+
+    .mission-logo {
+        width: 100%;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     CINEMATIC HEADER
+     ========================================================= -->
+
+<header class="guus-hero">
+
+    <div class="guus-hero-bg"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="hero-kicker">
+                GODS OF ALLIANCE • HERO GUIDE
+            </div>
+
+            <h1>
+                GUUS
+                <span>FULL GUIDE</span>
+            </h1>
+
+            <div class="hero-role">
+                HEALER
+                <span>•</span>
+                WAY OF HONOR
+                <span>•</span>
+                MIDDLE LINE
+            </div>
+
+            <p class="hero-intro">
+                Guus is a <strong>Way of Honor Healer</strong> whose
+                identity revolves around Golden Feathers, healing,
+                Critical Hit support and keeping allies alive when
+                enemy pressure becomes dangerous.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="article">
+
+
+<!-- =========================================================
+     HERO IDENTITY
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        HERO IDENTITY
+    </div>
+
+    <h2 class="section-title">
+        More Than a Healer.
+    </h2>
+
+    <p class="section-lead">
+        Guus does not simply restore Health. His kit connects healing,
+        Golden Feathers and Critical Hit mechanics, allowing him to
+        support both the survival and offensive potential of his team.
+    </p>
+
+
+    <div class="identity-grid">
+
+        <div class="identity-card">
+
+            <div class="identity-label">
+                ROLE
+            </div>
+
+            <div class="identity-value">
+                HEALER
+            </div>
+
+        </div>
+
+
+        <div class="identity-card">
+
+            <div class="identity-label">
+                FACTION
+            </div>
+
+            <div class="identity-value gold">
+                WAY OF HONOR
+            </div>
+
+        </div>
+
+
+        <div class="identity-card">
+
+            <div class="identity-label">
+                POSITION
+            </div>
+
+            <div class="identity-value">
+                MIDDLE LINE
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="feather-feature">
+
+        <div class="feature-label">
+            CORE MECHANIC
+        </div>
+
+        <h3>
+            Golden Feathers
+        </h3>
+
+        <p>
+            Golden Feathers sit at the center of Guus's kit.
+            They interact with healing, Critical Hit Chance,
+            emergency recovery and several of his later development
+            options. Understanding when Feathers are active and how
+            long they remain active is essential to understanding Guus.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SKILLS
+    </div>
+
+    <h2 class="section-title">
+        How Guus Works.
+    </h2>
+
+    <p class="section-lead">
+        Guus's four skills form one connected system.
+        Golden Feathers are distributed across the team and then
+        interact with healing, Critical Hits and emergency survival.
+    </p>
+
+
+    <div class="skills-grid">
+
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 01
+            </div>
+
+            <h3>
+                Under the Wing
+            </h3>
+
+            <p>
+                Guus restores Health and gives a
+                <strong>Golden Feather to each ally.</strong>
+            </p>
+
+            <p>
+                While an ally has a Golden Feather, their
+                <strong>Critical Hit Chance is increased for eight seconds.</strong>
+                Applying another Golden Feather before the effect expires
+                extends its duration by another eight seconds.
+            </p>
+
+            <p>
+                The healing scales with
+                <strong>Guus's Physical Attack.</strong>
+            </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 02
+            </div>
+
+            <h3>
+                Feather Squad
+            </h3>
+
+            <p>
+                Guus gives a Golden Feather to each ally positioned
+                <strong>in front of him.</strong>
+            </p>
+
+            <p>
+                While those allies have a Feather, they restore Health
+                whenever they receive damage from enemies.
+            </p>
+
+            <p>
+                This makes the mechanic particularly interesting for
+                frontline Heroes that regularly absorb enemy pressure.
+            </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 03
+            </div>
+
+            <h3>
+                Beak Peak
+            </h3>
+
+            <p>
+                If an ally carrying a Golden Feather is about to fall
+                below <strong>25% Health</strong>, their Health is
+                partially restored before that happens.
+            </p>
+
+            <p>
+                The amount restored increases according to how much
+                duration remained on the Golden Feather.
+            </p>
+
+            <p>
+                After Beak Peak triggers,
+                <strong>the Feather disappears.</strong>
+            </p>
+
+        </article>
+
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 04
+            </div>
+
+            <h3>
+                Honkageddon
+            </h3>
+
+            <p>
+                Normally, Guus's Critical Hits do not deal additional
+                damage. Instead, they restore Health to allies around
+                the target and give them Golden Feathers.
+            </p>
+
+            <p>
+                Allies who already have a Golden Feather deal
+                <strong>increased Critical Hit damage.</strong>
+            </p>
+
+            <p>
+                Way of Honor Heroes receive additional damage based
+                on their current Health.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BUILD PRIORITIES
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        DEVELOPMENT
+    </div>
+
+    <h2 class="section-title">
+        Build Priorities.
+    </h2>
+
+    <p class="section-lead">
+        Physical Attack appears repeatedly throughout Guus's kit,
+        while Critical Hit Chance becomes increasingly valuable through
+        Honkageddon and later Legendary Relic development.
+        Survivability remains essential because Guus must stay alive
+        to maintain his healing engine.
+    </p>
+
+
+    <div class="build-overview">
+
+
+        <div class="build-card">
+
+            <h3>
+                Skin Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Default Skin</strong>&nbsp;— Strength
+                </li>
+
+                <li>
+                    <strong>Harvest Skin</strong>&nbsp;— Physical Attack
+                </li>
+
+                <li>
+                    <strong>Twilight Skin</strong>&nbsp;— Critical Hit Chance + Skin Plus
+                </li>
+
+                <li>
+                    <strong>Angelical Skin</strong>&nbsp;— Health
+                </li>
+
+                <li>
+                    <strong>Mysterious Skin</strong>&nbsp;— Armor
+                </li>
+
+                <li>
+                    <strong>Dapper Skin</strong>&nbsp;— Magic Defense
+                </li>
+
+                <li>
+                    <strong>Gentleman Skin</strong>&nbsp;— Toughness
+                </li>
+
+            </ol>
+
+        </div>
+
+
+        <div class="build-card">
+
+            <h3>
+                Glyph Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Physical Attack</strong>
+                </li>
+
+                <li>
+                    <strong>Health</strong>
+                </li>
+
+                <li>
+                    <strong>Critical Hit Chance</strong>
+                </li>
+
+                <li>
+                    <strong>Strength</strong>
+                </li>
+
+                <li>
+                    <strong>Armor</strong>
+                </li>
+
+            </ol>
+
+        </div>
+
+
+        <div class="build-card">
+
+            <h3>
+                Artifact Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Book</strong> — Critical Hit Chance + Physical Attack
+                </li>
+
+                <li>
+                    <strong>Ring</strong> — Strength
+                </li>
+
+                <li>
+                    <strong>Weapon</strong> — Team Toughness
+                </li>
+
+            </ol>
+
+        </div>
+
+
+        <div class="build-card">
+
+            <h3>
+                Core Development
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    Build the stats that support Guus's
+                    <strong>skill effectiveness</strong>
+                </li>
+
+                <li>
+                    Maintain enough
+                    <strong>Health</strong>
+                    for reliable survival
+                </li>
+
+                <li>
+                    Increase
+                    <strong>Critical Hit Chance</strong>
+                    as his critical mechanics develop
+                </li>
+
+                <li>
+                    <strong>Max Gift of the Elements</strong>
+                </li>
+
+            </ol>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     DEVELOPMENT EXPLANATION
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        WHY THIS ORDER?
+    </div>
+
+    <h2 class="section-title">
+        Understanding the Build.
+    </h2>
+
+
+    <div class="development-grid">
+
+
+        <article class="development-card">
+
+            <h3>
+                Skins
+            </h3>
+
+            <p>
+                <strong>Strength comes first</strong> because it supports
+                both Health and Physical Attack. Harvest then directly
+                increases Physical Attack, while Twilight adds the
+                Critical Hit Chance that interacts strongly with
+                Honkageddon.
+            </p>
+
+        </article>
+
+
+        <article class="development-card">
+
+            <h3>
+                Glyphs
+            </h3>
+
+            <p>
+                Start with <strong>Physical Attack</strong>, followed by
+                Health and Critical Hit Chance. A useful initial target
+                is Level 40 across the Glyphs. Going further becomes a
+                larger investment and does not necessarily need to be
+                rushed unless Guus is a major account priority or you
+                are pursuing the Skill Class system.
+            </p>
+
+        </article>
+
+
+        <article class="development-card">
+
+            <h3>
+                Artifacts
+            </h3>
+
+            <p>
+                The <strong>Book comes first</strong> because Physical
+                Attack and Critical Hit Chance both fit Guus extremely
+                well. The Ring follows with Strength. The Weapon's
+                teamwide Toughness is useful, but the Book and Ring
+                provide stronger direct development for Guus first.
+            </p>
+
+        </article>
+
+
+        <article class="development-card">
+
+            <h3>
+                Gift of the Elements
+            </h3>
+
+            <p>
+                <strong>Max it.</strong> Guus is a middle-line Healer,
+                but leaving him fragile works against his role.
+                Additional Health and Physical Attack both support the
+                direction of the build.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TALISMANS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TALISMANS
+    </div>
+
+    <h2 class="section-title">
+        Two Strong Options.
+    </h2>
+
+    <p class="section-lead">
+        Neither of Guus's Talismans is a bad option.
+        The better choice depends on what your Guus needs and which
+        development path is available to your account.
+    </p>
+
+
+    <div class="talisman-grid">
+
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 01
+            </div>
+
+            <h3>
+                First Talisman
+            </h3>
+
+            <div class="stat-pills">
+
+                <span class="stat-pill">
+                    STRENGTH
+                </span>
+
+                <span class="stat-pill">
+                    CRITICAL HIT CHANCE
+                </span>
+
+            </div>
+
+            <p>
+                An excellent combination for Guus.
+                Strength contributes to survivability and Physical
+                Attack, while Critical Hit Chance supports his
+                critical-based mechanics.
+            </p>
+
+            <p style="margin-top:14px;">
+                Permanently available through the
+                <strong style="color:#ffffff;">
+                    Eternal Frontier Shop
+                </strong>
+                for
+                <strong style="color:#ffd96b;">
+                    700,000 Frontier Coins.
+                </strong>
+            </p>
+
+        </article>
+
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 02
+            </div>
+
+            <h3>
+                Second Talisman
+            </h3>
+
+            <div class="stat-pills">
+
+                <span class="stat-pill">
+                    ARMOR
+                </span>
+
+                <span class="stat-pill">
+                    PHYSICAL ATTACK
+                </span>
+
+            </div>
+
+            <p>
+                Physical Attack directly benefits Guus's kit,
+                while Armor gives him additional protection against
+                Physical Damage.
+            </p>
+
+            <p style="margin-top:14px;">
+                This Talisman is available through
+                <strong style="color:#ffffff;">
+                    special events.
+                </strong>
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     LEGENDARY RELICS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        LEGENDARY RELICS
+    </div>
+
+    <h2 class="section-title">
+        The Modern Guus.
+    </h2>
+
+    <p class="section-lead">
+        Legendary Relics add another layer to Guus's Golden Feather
+        and Critical Hit systems. They expand his healing engine and,
+        at the highest level, provide powerful protection against
+        specific forms of Critical Damage.
+    </p>
+
+
+    <div class="relics-grid">
+
+
+        <article class="relic-card relic-1">
+
+            <div class="relic-level">
+                LEVEL 1
+            </div>
+
+            <h3>
+                Featherhood
+            </h3>
+
+            <p>
+                Every <strong style="color:#ffffff;">11 seconds</strong>,
+                Guus grants a Golden Feather to himself and to the ally
+                with the <strong style="color:#ffffff;">highest Health stat.</strong>
+            </p>
+
+            <p style="margin-top:12px;">
+                This gives Guus another way to distribute Golden Feathers
+                beyond his standard skill rotation.
+            </p>
+
+        </article>
+
+
+        <article class="relic-card relic-10">
+
+            <div class="relic-level">
+                LEVEL 10
+            </div>
+
+            <h3>
+                Beak Peak Upgrade
+            </h3>
+
+            <p>
+                Guus's skill healing gains
+                <strong style="color:#ffffff;">
+                    Critical Healing at 200%.
+                </strong>
+            </p>
+
+            <p style="margin-top:12px;">
+                His skill healing can now critically heal, with the
+                chance depending on Guus's
+                <strong style="color:#ffffff;">
+                    Critical Hit Chance.
+                </strong>
+            </p>
+
+        </article>
+
+
+        <article class="relic-card relic-20">
+
+            <div class="relic-level">
+                LEVEL 20
+            </div>
+
+            <h3>
+                Honkageddon Upgrade
+            </h3>
+
+            <p>
+                When Guus deals critical damage, he additionally
+                restores Health and grants a
+                <strong style="color:#ffffff;">
+                    Golden Feather to nearby allies.
+                </strong>
+            </p>
+
+            <p style="margin-top:12px;">
+                This further connects Critical Hit development with
+                Guus's healing and Feather distribution.
+            </p>
+
+        </article>
+
+
+        <article class="relic-card relic-30">
+
+            <div class="relic-level">
+                LEVEL 30
+            </div>
+
+            <h3>
+                Critical Protection
+            </h3>
+
+            <p>
+                While Guus and his allies are affected by Golden Feather,
+                they take
+                <strong style="color:#ffd96b;">
+                    75% less Magic Critical Damage and Pure Critical Damage.
+                </strong>
+            </p>
+
+            <div class="relic-warning">
+
+                <strong>IMPORTANT:</strong><br>
+
+                This does not mean 75% less normal Magic Damage or
+                75% less normal Pure Damage. The protection specifically
+                applies to <strong>Magic Critical Damage</strong> and
+                <strong>Pure Critical Damage.</strong>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="feather-feature">
+
+        <div class="feature-label">
+            DEVELOPMENT NOTE
+        </div>
+
+        <h3>
+            Guus Does Not Begin at Level 30.
+        </h3>
+
+        <p>
+            The Level 30 Relic is a powerful late-game mechanic, but
+            Guus's fundamental healing and Golden Feather engine exists
+            long before it. Legendary Relics expand what he can do;
+            they do not create his entire identity.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TEAMS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TEAM CONCEPTS
+    </div>
+
+    <h2 class="section-title">
+        Don't Lock Guus Into One Team.
+    </h2>
+
+    <p class="section-lead">
+        Guus can fit multiple structures. His Golden Feathers,
+        healing, Critical Hit support and protection mechanics allow
+        him to support very different team concepts depending on what
+        the rest of the lineup needs.
+    </p>
+
+
+    <div class="team-grid">
+
+
+        <article class="team-card">
+
+            <div class="team-type">
+                HONOR STRUCTURES
+            </div>
+
+            <h3>
+                Natural Synergy
+            </h3>
+
+            <div class="team-members">
+                TRISTAN • GALAHAD • LUTHER • GUUS
+            </div>
+
+            <p>
+                Guus naturally fits Honor-based structures, while
+                Feather Squad can support frontline Heroes that are
+                repeatedly absorbing enemy pressure.
+            </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+            <div class="team-type">
+                DEFENSIVE CONCEPT
+            </div>
+
+            <h3>
+                Protection & Control
+            </h3>
+
+            <div class="team-members">
+                JULIUS • CROW • MIU • FOLIO • GUUS
+            </div>
+
+            <p>
+                A tested defensive structure built around protection,
+                control and Guus's sustain.
+            </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+            <div class="team-type">
+                DODGE CONCEPT
+            </div>
+
+            <h3>
+                Dodge Structure
+            </h3>
+
+            <div class="team-members">
+                YASMINE • DANTE • BYRNA • OCTAVIA • GUUS
+            </div>
+
+            <p>
+                A very different structure showing that Guus does not
+                need to remain inside a traditional Honor lineup.
+            </p>
+
+        </article>
+
+
+        <article class="team-card">
+
+            <div class="team-type">
+                CONTROL CONCEPT
+            </div>
+
+            <h3>
+                Control Defense
+            </h3>
+
+            <div class="team-members">
+                MIU • FOLIO • PHOBOS • TEMPUS • GUUS
+            </div>
+
+            <p>
+                Another control-heavy defensive option where Guus
+                provides sustain behind a completely different core.
+            </p>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="feather-feature">
+
+        <div class="feature-label">
+            TEAM BUILDING PRINCIPLE
+        </div>
+
+        <h3>
+            Ask What Your Team Needs.
+        </h3>
+
+        <p>
+            Instead of asking only, “What is the Guus team?”,
+            look at your existing structure and ask whether Guus's
+            healing, Golden Feathers, Critical Hit support and protection
+            solve a problem that team currently has.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COUNTERS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        COUNTERS
+    </div>
+
+    <h2 class="section-title">
+        Fighting Against Guus.
+    </h2>
+
+    <p class="section-lead">
+        Modern Guus has more tools than his original version.
+        His development, team structure, Golden Feather uptime and
+        Legendary Relics can all change how a matchup behaves.
+    </p>
+
+
+    <div class="counter-grid">
+
+
+        <article class="counter-card">
+
+            <div class="counter-label">
+                PRESSURE
+            </div>
+
+            <h3>
+                Mushy and Shroom
+            </h3>
+
+            <p>
+                Their heavy Magic Damage and Clouds of Spores can put
+                Guus under serious pressure while also bringing
+                Silence into the matchup.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <div class="counter-label">
+                CONTROL
+            </div>
+
+            <h3>
+                Polaris
+            </h3>
+
+            <p>
+                Control can interfere with Guus and prevent him from
+                freely cycling his Golden Feathers and healing.
+            </p>
+
+        </article>
+
+
+        <article class="counter-card">
+
+            <div class="counter-label">
+                BURST
+            </div>
+
+            <h3>
+                Folio
+            </h3>
+
+            <p>
+                Concentrated burst damage can potentially remove Guus
+                before his sustain engine gets the opportunity to
+                stabilize the team.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK REFERENCE
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="quick-reference">
+
+
+        <div class="quick-header">
+
+            <div class="section-kicker">
+                QUICK REFERENCE
+            </div>
+
+            <h2 class="section-title">
+                Guus Build at a Glance.
+            </h2>
+
+        </div>
+
+
+        <div class="quick-grid">
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    ROLE
+                </div>
+
+                <div class="quick-value">
+                    <span>Healer</span> • Way of Honor • Middle Line
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    CORE MECHANIC
+                </div>
+
+                <div class="quick-value">
+                    <span>Golden Feathers</span>
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    SKINS
+                </div>
+
+                <div class="quick-value">
+                    Strength → Physical Attack → Critical Hit Chance →
+                    Health → Armor → Magic Defense → Toughness
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    GLYPHS
+                </div>
+
+                <div class="quick-value">
+                    Physical Attack → Health → Critical Hit Chance →
+                    Strength → Armor
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    ARTIFACTS
+                </div>
+
+                <div class="quick-value">
+                    <span>Book</span> → Ring → Weapon
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    GIFT OF THE ELEMENTS
+                </div>
+
+                <div class="quick-value">
+                    <span>MAX</span>
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    TALISMAN 1
+                </div>
+
+                <div class="quick-value">
+                    Strength + Critical Hit Chance
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    TALISMAN 2
+                </div>
+
+                <div class="quick-value">
+                    Armor + Physical Attack
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    TEAM APPROACH
+                </div>
+
+                <div class="quick-value">
+                    Flexible — Honor, protection, Dodge and control
+                    structures are all possible.
+                </div>
+
+            </div>
+
+
+            <div class="quick-item">
+
+                <div class="quick-label">
+                    COUNTER APPROACH
+                </div>
+
+                <div class="quick-value">
+                    Pressure • Control • Concentrated Burst
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <p class="final-note">
+        Build priorities should always be adapted to your account,
+        available resources and the team structure where Guus is being used.
+    </p>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
+<script src="goa-global.js"></script>
+
+
+</body>
+</html>
