@@ -1,0 +1,2253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grand Caravan Event Guide | Gods of Alliance</title>
+
+<meta
+    name="description"
+    content="Complete Grand Caravan event guide for Hero Wars Alliance: all seven quest tabs, Event Coin totals, Arena battles, Emerald spending, Artifact resources, Tactical Losses and strategy."
+>
+
+<meta name="robots" content="index, follow">
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/grand-caravan-event-guide.html"
+>
+
+
+<!-- OPEN GRAPH -->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+
+<meta
+    property="og:title"
+    content="Grand Caravan Event Guide | Gods of Alliance"
+>
+
+<meta
+    property="og:description"
+    content="Trade Routes Part 2: Grand Caravan quests, rewards, resource requirements and the complete 13,550 Event Coin breakdown."
+>
+
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/grand-caravan-event-guide.html"
+>
+
+<meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/grand-caravan-event-guide.png"
+>
+
+<meta
+    property="og:image:alt"
+    content="Grand Caravan Event Guide - Gods of Alliance"
+>
+
+
+<!-- TWITTER / X -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Grand Caravan Event Guide | Gods of Alliance"
+>
+
+<meta
+    name="twitter:description"
+    content="Trade Routes Part 2: all seven Grand Caravan quest tabs, rewards, requirements and Event Coin totals."
+>
+
+<meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/grand-caravan-event-guide.png"
+>
+
+
+<style>
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #090603;
+}
+
+:root {
+
+    --bg: #090603;
+
+    --panel: rgba(24, 14, 8, 0.94);
+    --panel-soft: rgba(31, 18, 9, 0.88);
+
+    --gold: #e8ad43;
+    --gold-bright: #ffd875;
+    --gold-dark: #8b5614;
+
+    --fire: #f27828;
+    --fire-bright: #ffb447;
+
+    --red: #c74632;
+
+    --white: #ffffff;
+    --muted: #b2a79c;
+
+    --line: rgba(232, 173, 67, 0.16);
+}
+
+body {
+
+    min-height: 100vh;
+
+    color: #ffffff;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(232, 173, 67, 0.08),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 15% 40%,
+            rgba(242, 120, 40, 0.045),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            180deg,
+            #140c06 0%,
+            #090603 44%,
+            #040302 100%
+        );
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   CINEMATIC HEADER
+   ========================================================= */
+
+.event-hero {
+
+    position: relative;
+
+    min-height: 730px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(232, 173, 67, 0.14);
+
+    background: #090603;
+}
+
+.event-hero-bg {
+
+    position: absolute;
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            90deg,
+            rgba(5, 3, 2, 0.10) 0%,
+            rgba(5, 3, 2, 0.12) 34%,
+            rgba(5, 3, 2, 0.48) 59%,
+            rgba(5, 3, 2, 0.93) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(7, 4, 2, 0.03) 0%,
+            rgba(7, 4, 2, 0.08) 46%,
+            #090603 100%
+        ),
+
+        url("Images/Events/grand-caravan-event-guide.png");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.event-hero-bg::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 30% 36%,
+            rgba(255, 151, 48, 0.10),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 75% 30%,
+            rgba(255, 213, 112, 0.07),
+            transparent 26%
+        );
+}
+
+.hero-shell {
+
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding:
+        180px
+        32px
+        82px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+
+    width: min(650px, 100%);
+}
+
+.series-badge {
+
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    padding: 8px 11px;
+
+    border:
+        1px solid rgba(255, 216, 117, 0.32);
+
+    border-radius: 4px;
+
+    background:
+        rgba(10, 6, 3, 0.72);
+
+    color:
+        var(--gold-bright);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+}
+
+.event-hero h1 {
+
+    margin-bottom: 15px;
+
+    color:
+        var(--gold-bright);
+
+    font-size:
+        clamp(52px, 7vw, 90px);
+
+    line-height: 0.90;
+
+    font-weight: 950;
+
+    letter-spacing: -0.055em;
+
+    text-shadow:
+        0 10px 38px rgba(0, 0, 0, 0.95),
+        0 0 25px rgba(232, 173, 67, 0.12);
+}
+
+.event-hero h1 span {
+    display: block;
+}
+
+.hero-meta {
+
+    margin-bottom: 21px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    line-height: 1.7;
+
+    text-transform: uppercase;
+}
+
+.hero-meta span {
+    color: var(--fire-bright);
+}
+
+.hero-intro {
+
+    max-width: 620px;
+
+    color: #c4b9ae;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    text-shadow:
+        0 2px 10px #000000;
+}
+
+.hero-intro strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+.article {
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding:
+        78px
+        28px
+        100px;
+}
+
+.section {
+
+    margin-bottom: 80px;
+}
+
+.section-kicker {
+
+    margin-bottom: 9px;
+
+    color:
+        var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.21em;
+
+    text-transform: uppercase;
+}
+
+.section-title {
+
+    margin-bottom: 18px;
+
+    font-size:
+        clamp(30px, 4.4vw, 47px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -0.035em;
+}
+
+.section-lead {
+
+    max-width: 880px;
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.section-lead strong {
+    color: var(--gold-bright);
+}
+
+
+/* =========================================================
+   SERIES
+   ========================================================= */
+
+.series-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 13px;
+}
+
+.series-card {
+
+    min-height: 165px;
+
+    padding: 23px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.07);
+
+    border-radius: 9px;
+
+    background:
+        rgba(20, 12, 7, 0.88);
+}
+
+.series-card.active {
+
+    border-color:
+        rgba(232, 173, 67, 0.35);
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(232, 173, 67, 0.11),
+            transparent 44%
+        ),
+
+        rgba(24, 14, 8, 0.94);
+}
+
+.series-number {
+
+    margin-bottom: 13px;
+
+    color: #827468;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.series-card.active .series-number {
+    color: var(--gold);
+}
+
+.series-card h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.series-card p {
+
+    color: #9c9085;
+
+    font-size: 12px;
+
+    line-height: 1.65;
+}
+
+.series-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: var(--gold-bright);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TOTALS
+   ========================================================= */
+
+.totals-grid {
+
+    margin-top: 31px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.total-card {
+
+    padding: 29px 25px;
+
+    border:
+        1px solid rgba(232, 173, 67, 0.18);
+
+    border-radius: 10px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(232, 173, 67, 0.08),
+            transparent 45%
+        ),
+
+        rgba(20, 12, 7, 0.92);
+}
+
+.total-label {
+
+    margin-bottom: 12px;
+
+    color: #887b70;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.total-value {
+
+    margin-bottom: 9px;
+
+    color:
+        var(--gold-bright);
+
+    font-size:
+        clamp(34px, 5vw, 48px);
+
+    line-height: 1;
+
+    font-weight: 950;
+
+    letter-spacing: -0.04em;
+}
+
+.total-card p {
+
+    color: #a3978c;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   QUEST STACK
+   ========================================================= */
+
+.quest-stack {
+
+    margin-top: 32px;
+
+    display: grid;
+
+    gap: 16px;
+}
+
+.quest-card {
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.075);
+
+    border-radius: 10px;
+
+    background:
+        rgba(20, 12, 7, 0.92);
+}
+
+.quest-card.regular {
+    border-color: rgba(116, 190, 118, 0.21);
+}
+
+.quest-card.resource {
+    border-color: rgba(232, 173, 67, 0.24);
+}
+
+.quest-card.no-coins {
+    border-color: rgba(130, 120, 110, 0.14);
+}
+
+.quest-top {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding:
+        23px
+        25px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.quest-number {
+
+    margin-bottom: 7px;
+
+    color:
+        var(--gold);
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+.quest-title {
+
+    font-size: 21px;
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+}
+
+.quest-coins {
+
+    text-align: right;
+}
+
+.quest-coins strong {
+
+    display: block;
+
+    color:
+        var(--gold-bright);
+
+    font-size: 24px;
+
+    font-weight: 950;
+}
+
+.quest-coins span {
+
+    color: #82766b;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 0.11em;
+
+    text-transform: uppercase;
+}
+
+.quest-body {
+
+    padding:
+        23px
+        25px;
+}
+
+.quest-body p {
+
+    color: #aa9e93;
+
+    font-size: 13px;
+
+    line-height: 1.76;
+}
+
+.quest-body p + p {
+    margin-top: 12px;
+}
+
+.quest-facts {
+
+    margin-top: 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 9px;
+}
+
+.quest-fact {
+
+    padding: 14px;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    border-radius: 6px;
+
+    background:
+        rgba(255, 255, 255, 0.018);
+}
+
+.fact-label {
+
+    margin-bottom: 6px;
+
+    color: #81756b;
+
+    font-size: 7px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+.fact-value {
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 850;
+
+    line-height: 1.5;
+}
+
+.tag {
+
+    display: inline-block;
+
+    margin-top: 16px;
+
+    padding: 7px 9px;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+
+    font-weight: 950;
+
+    letter-spacing: 0.11em;
+
+    text-transform: uppercase;
+}
+
+.tag.free {
+
+    color: #92d295;
+
+    border:
+        1px solid rgba(116, 190, 118, 0.18);
+
+    background:
+        rgba(116, 190, 118, 0.06);
+}
+
+.tag.spend {
+
+    color:
+        var(--gold-bright);
+
+    border:
+        1px solid rgba(232, 173, 67, 0.18);
+
+    background:
+        rgba(232, 173, 67, 0.06);
+}
+
+.tag.none {
+
+    color: #a99d91;
+
+    border:
+        1px solid rgba(169, 157, 145, 0.13);
+
+    background:
+        rgba(169, 157, 145, 0.035);
+}
+
+
+/* =========================================================
+   COIN BREAKDOWN
+   ========================================================= */
+
+.breakdown {
+
+    margin-top: 31px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(232, 173, 67, 0.27);
+
+    border-radius: 11px;
+
+    background:
+        rgba(20, 12, 7, 0.94);
+}
+
+.breakdown-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding:
+        18px
+        24px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+}
+
+.breakdown-row:last-child {
+    border-bottom: 0;
+}
+
+.breakdown-name {
+
+    color: #b6aa9f;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.breakdown-note {
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #756a61;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+.breakdown-value {
+
+    color:
+        var(--gold-bright);
+
+    font-size: 17px;
+
+    font-weight: 950;
+}
+
+.breakdown-row.main {
+
+    background:
+        rgba(116, 190, 118, 0.035);
+}
+
+.breakdown-row.final {
+
+    padding:
+        25px
+        24px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 50%,
+            rgba(232, 173, 67, 0.10),
+            transparent 40%
+        );
+}
+
+.breakdown-row.final .breakdown-name {
+
+    color: #ffffff;
+
+    font-size: 15px;
+}
+
+.breakdown-row.final .breakdown-value {
+
+    font-size: 29px;
+}
+
+
+/* =========================================================
+   STRATEGY
+   ========================================================= */
+
+.strategy-box {
+
+    margin-top: 31px;
+
+    padding: 31px;
+
+    border:
+        1px solid rgba(232, 173, 67, 0.24);
+
+    border-radius: 11px;
+
+    background:
+
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(232, 173, 67, 0.09),
+            transparent 40%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(28, 16, 8, 0.96),
+            rgba(11, 7, 4, 0.98)
+        );
+}
+
+.strategy-list {
+
+    list-style: none;
+
+    counter-reset: strategy;
+}
+
+.strategy-list li {
+
+    counter-increment: strategy;
+
+    position: relative;
+
+    padding:
+        16px
+        10px
+        16px
+        52px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    color: #aa9f95;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.strategy-list li:last-child {
+    border-bottom: 0;
+}
+
+.strategy-list li::before {
+
+    content:
+        counter(strategy, decimal-leading-zero);
+
+    position: absolute;
+
+    left: 5px;
+    top: 18px;
+
+    color:
+        var(--gold);
+
+    font-size: 9px;
+
+    font-weight: 950;
+}
+
+.strategy-list strong {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.video-frame {
+
+    position: relative;
+
+    width: 100%;
+
+    padding-top: 56.25%;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(232, 173, 67, 0.25);
+
+    border-radius: 12px;
+
+    background: #000000;
+
+    box-shadow:
+        0 28px 70px rgba(0, 0, 0, 0.40);
+}
+
+.video-frame iframe {
+
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    padding:
+        35px
+        20px;
+
+    border-top:
+        1px solid rgba(232, 173, 67, 0.08);
+
+    background: #040302;
+
+    color: #655b52;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .series-grid,
+    .quest-facts {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .totals-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .event-hero {
+        min-height: 650px;
+    }
+
+    .event-hero-bg {
+
+        background-image:
+
+            linear-gradient(
+                180deg,
+                rgba(7, 4, 2, 0.04) 0%,
+                rgba(7, 4, 2, 0.28) 43%,
+                #090603 100%
+            ),
+
+            url("Images/Events/grand-caravan-event-guide.png");
+
+        background-position:
+            32% center;
+    }
+
+    .hero-shell {
+
+        justify-content: flex-start;
+
+        padding:
+            310px
+            20px
+            55px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .article {
+
+        padding:
+            64px
+            19px
+            80px;
+    }
+
+    .quest-top {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .quest-coins {
+        text-align: left;
+    }
+
+    .quest-body,
+    .strategy-box {
+        padding: 21px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<header class="event-hero">
+
+    <div class="event-hero-bg"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="series-badge">
+                TRADE ROUTES • PART 2 OF 3
+            </div>
+
+            <h1>
+                <span>GRAND</span>
+                <span>CARAVAN</span>
+            </h1>
+
+            <div class="hero-meta">
+                EVENT GUIDE
+                <span>•</span>
+                OCTOBER 5–11
+                <span>•</span>
+                7 DAYS
+            </div>
+
+            <p class="hero-intro">
+                Trade Routes continues with
+                <strong>Grand Caravan</strong>.
+                This second guide breaks down all seven quest tabs,
+                their resources and exactly where the event's
+                <strong>13,550 Event Coins</strong> come from.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="article">
+
+
+<!-- =========================================================
+     SERIES
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TRADE ROUTES
+    </div>
+
+    <h2 class="section-title">
+        Part 2 of the Journey.
+    </h2>
+
+    <p class="section-lead">
+        Trade Routes contains three connected subevents.
+        <strong>Roads Unlocked</strong> established the first set of
+        objectives. Grand Caravan now introduces another seven quest tabs
+        with very different resource requirements.
+    </p>
+
+
+    <div class="series-grid">
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 01 • COMPLETE
+            </div>
+
+            <h3>
+                Roads Unlocked
+            </h3>
+
+            <p>
+                Caravan Hall, Reward Box and the first seven quest tabs.
+            </p>
+
+            <a href="roads-unlocked-event-guide.html">
+                OPEN PART 1 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card active">
+
+            <div class="series-number">
+                PART 02 • YOU ARE HERE
+            </div>
+
+            <h3>
+                Grand Caravan
+            </h3>
+
+            <p>
+                Seven additional quest tabs and a maximum of
+                13,550 Event Coins.
+            </p>
+
+        </article>
+
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 03
+            </div>
+
+            <h3>
+                Bountiful Roads
+            </h3>
+
+            <p>
+                The final subevent connects progress from the first
+                two parts of Trade Routes.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     TOTAL OVERVIEW
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        EVENT COINS
+    </div>
+
+    <h2 class="section-title">
+        Regular vs Resource-Dependent Coins.
+    </h2>
+
+    <p class="section-lead">
+        The distinction is important. Only
+        <strong>4,000 Event Coins</strong>
+        come from the regular Arena route.
+        The remaining coins depend on resources such as Artifact Coins,
+        Artifact Chests, Emeralds or troop losses.
+    </p>
+
+
+    <div class="totals-grid">
+
+        <article class="total-card">
+
+            <div class="total-label">
+                REGULAR COIN TOTAL
+            </div>
+
+            <div class="total-value">
+                4,000
+            </div>
+
+            <p>
+                Trial of Strength. Achievable through the free Arena
+                attempts available during the seven-day event.
+            </p>
+
+        </article>
+
+
+        <article class="total-card">
+
+            <div class="total-label">
+                ADDITIONAL RESOURCE PATHS
+            </div>
+
+            <div class="total-value">
+                +9,550
+            </div>
+
+            <p>
+                Artifacts Empowering + Sealed Away + Wise Exchange +
+                Tactical Losses.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUESTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        GRAND CARAVAN
+    </div>
+
+    <h2 class="section-title">
+        All 7 Quest Tabs.
+    </h2>
+
+    <p class="section-lead">
+        The final milestone of a tab is not always the point where its
+        Event Coins stop. Knowing the exact coin cutoff can save
+        substantial resources.
+    </p>
+
+
+    <div class="quest-stack">
+
+
+        <!-- DAY AFTER DAY -->
+
+        <article class="quest-card no-coins">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 01</div>
+                    <div class="quest-title">Day After Day</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>0</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Log in throughout all seven days.
+                    There are no Event Coins in this tab, but completing
+                    every login milestone provides useful Adventure Energy.
+                </p>
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">REQUIREMENT</div>
+                        <div class="fact-value">Log in during all 7 days</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">ADVENTURE ENERGY</div>
+                        <div class="fact-value">140 total</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">SEASON POINTS</div>
+                        <div class="fact-value">60 total</div>
+                    </div>
+
+                </div>
+
+                <span class="tag none">
+                    NO EVENT COINS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- GENEROUS SOUL -->
+
+        <article class="quest-card no-coins">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 02</div>
+                    <div class="quest-title">Generous Soul</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>0</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Earn VIP Points during the event.
+                    Milestones range from
+                    <strong style="color:#ffffff;">
+                        700 to 35,000 VIP Points.
+                    </strong>
+                </p>
+
+                <p>
+                    These are
+                    <strong style="color:#ffffff;">
+                        accumulated event requirements,
+                    </strong>
+                    not daily targets.
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">ADVENTURE COINS</div>
+                        <div class="fact-value">19,500</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">RUNES</div>
+                        <div class="fact-value">2,500 Rune Stones • 1,000 Rune Spheres</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">OTHER REWARDS</div>
+                        <div class="fact-value">
+                            3,000 Mastery Crystals • 90 Tiara of Wisdom
+                            Recipe Fragments • 5 Crow Soul Stones •
+                            15 Eva Soul Stones
+                        </div>
+                    </div>
+
+                </div>
+
+                <span class="tag none">
+                    NO EVENT COINS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- WISE EXCHANGE -->
+
+        <article class="quest-card resource">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 03</div>
+                    <div class="quest-title">Wise Exchange</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>2,000</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Spend Emeralds during the event.
+                    Milestones begin at 100 and continue up to
+                    <strong style="color:#ffffff;">
+                        200,000 Emeralds spent.
+                    </strong>
+                </p>
+
+                <p>
+                    The key milestone is
+                    <strong style="color:#ffd875;">
+                        80,000 Emeralds.
+                    </strong>
+                    It awards Alecto's Primordial Skin and the entire
+                    2,000 Event Coin contribution from this tab.
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">ALL EVENT COINS</div>
+                        <div class="fact-value">80,000 Emeralds spent</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">KEY REWARD</div>
+                        <div class="fact-value">Alecto's Primordial Skin</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FINAL MILESTONE</div>
+                        <div class="fact-value">200,000 Emeralds spent</div>
+                    </div>
+
+                </div>
+
+                <p>
+                    Across all milestones, the remaining rewards total
+                    35,700 Adventure Coins, 55 Adventure Energy,
+                    340 Season Points, 750 Meta Cubes, 930 Rune Spheres,
+                    3,000 Rune Stones, 15 Elemental Spheres and
+                    3,000 Mastery Crystals.
+                </p>
+
+                <p>
+                    The tab also provides 25 Orm Soul Stones,
+                    10 Explorer Backpack Recipe Fragments and
+                    30 Tiara of Wisdom Recipe Fragments.
+                </p>
+
+                <span class="tag spend">
+                    SEPARATE • EMERALD SPENDING
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- ARTIFACTS EMPOWERING -->
+
+        <article class="quest-card resource">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 04</div>
+                    <div class="quest-title">Artifacts Empowering</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>850</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Spend Artifact Coins.
+                    The complete tab continues to
+                    <strong style="color:#ffffff;">
+                        60,000 Artifact Coins,
+                    </strong>
+                    but you do not need to spend that amount to collect
+                    every Event Coin.
+                </p>
+
+                <p>
+                    Spending
+                    <strong style="color:#ffd875;">1,800</strong>
+                    awards 350 Event Coins.
+                    Reaching
+                    <strong style="color:#ffd875;">4,800</strong>
+                    awards another 500.
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FIRST COIN MILESTONE</div>
+                        <div class="fact-value">1,800 → 350 Coins</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">ALL EVENT COINS</div>
+                        <div class="fact-value">4,800 → 850 total</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FULL TAB</div>
+                        <div class="fact-value">60,000 Artifact Coins</div>
+                    </div>
+
+                </div>
+
+                <p>
+                    Completing every milestone gives 20,000 Adventure Coins,
+                    50 Adventure Energy, 1,800 Rune Stones, 30 Rune Spheres,
+                    55 Season Points, 600 Meta Cubes and 15 Elemental Spheres.
+                </p>
+
+                <p>
+                    It also provides 5 Eva Soul Stones, 10 Crow Soul Stones,
+                    10 Runic Mantle Recipe Fragments and
+                    5 Tiara of Wisdom Recipe Fragments.
+                </p>
+
+                <span class="tag spend">
+                    SEPARATE • SAVED ARTIFACT RESOURCES
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- SEALED AWAY -->
+
+        <article class="quest-card resource">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 05</div>
+                    <div class="quest-title">Sealed Away</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>1,300</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Open Artifact Chests.
+                    Milestones begin at 10 chests and continue up to 125.
+                </p>
+
+                <p>
+                    Opening
+                    <strong style="color:#ffd875;">40 chests</strong>
+                    awards 300 Event Coins.
+                    Reaching
+                    <strong style="color:#ffd875;">60 chests</strong>
+                    awards another 1,000.
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">40 CHESTS</div>
+                        <div class="fact-value">300 Event Coins</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">60 CHESTS</div>
+                        <div class="fact-value">1,300 total Event Coins</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FULL TAB</div>
+                        <div class="fact-value">125 Artifact Chests</div>
+                    </div>
+
+                </div>
+
+                <p>
+                    Completing the tab also gives 9,000 Adventure Coins,
+                    2,600 Rune Stones, 100 Rune Spheres,
+                    400 Mastery Crystals and 70 Season Points,
+                    plus 5 Runic Mantle Recipe Fragments and
+                    5 Eva Soul Stones.
+                </p>
+
+                <span class="tag spend">
+                    ALL EVENT COINS END AT 60 CHESTS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- TRIAL OF STRENGTH -->
+
+        <article class="quest-card regular">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 06</div>
+                    <div class="quest-title">Trial of Strength</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>4,000</strong>
+                    <span>REGULAR EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Fight in the Arena.
+                    <strong style="color:#ffffff;">
+                        You do not need to win.
+                    </strong>
+                    Participation is what the quest requires.
+                </p>
+
+                <p>
+                    Eight milestones run from 3 to
+                    <strong style="color:#ffd875;">
+                        30 Arena battles
+                    </strong>
+                    and award a combined 4,000 Event Coins.
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FINAL REQUIREMENT</div>
+                        <div class="fact-value">30 Arena battles</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FREE ATTEMPTS</div>
+                        <div class="fact-value">5 / day • 35 over 7 days</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">OTHER REWARDS</div>
+                        <div class="fact-value">
+                            40 Adventure Energy • 75 Season Points •
+                            5 Elemental Spheres • 15 Orm Soul Stones
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    The seven-day event provides enough free Arena attempts
+                    to complete the 30-battle requirement.
+                    Spending Emeralds can finish it sooner, but does not
+                    increase the tab's Event Coin total.
+                </p>
+
+                <span class="tag free">
+                    REGULAR 4,000 • FREE ROUTE AVAILABLE
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <!-- TACTICAL LOSSES -->
+
+        <article class="quest-card resource">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-number">QUEST TAB 07</div>
+                    <div class="quest-title">Tactical Losses</div>
+                </div>
+
+                <div class="quest-coins">
+                    <strong>5,400</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+
+            <div class="quest-body">
+
+                <p>
+                    Lose
+                    <strong style="color:#ffffff;">
+                        Level 6 troops.
+                    </strong>
+                    The accumulated milestones continue up to
+                    65,000 troops.
+                </p>
+
+                <p>
+                    This tab can only be completed once.
+                    It does not repeat after completion.
+                </p>
+
+                <p>
+                    The first nine milestones award all
+                    <strong style="color:#ffd875;">
+                        5,400 Event Coins
+                    </strong>
+                    by the time you reach
+                    <strong style="color:#ffffff;">
+                        19,500 troops lost.
+                    </strong>
+                </p>
+
+
+                <div class="quest-facts">
+
+                    <div class="quest-fact">
+                        <div class="fact-label">ALL EVENT COINS</div>
+                        <div class="fact-value">19,500 troops lost</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">FULL TAB</div>
+                        <div class="fact-value">65,000 troops lost</div>
+                    </div>
+
+                    <div class="quest-fact">
+                        <div class="fact-label">COINS AFTER 19,500</div>
+                        <div class="fact-value">0 additional</div>
+                    </div>
+
+                </div>
+
+                <p>
+                    Across the full tab you also receive
+                    22,100 Rune Stones, 3,400 Adventure Coins,
+                    20 Adventure Energy, 100 Season Points and
+                    10 Elemental Spheres.
+                </p>
+
+                <p>
+                    Realm resources total
+                    <strong style="color:#ffffff;">
+                        1,070,000 Wood, 1,070,000 Food,
+                        970,000 Stone and 840,000 Metal.
+                    </strong>
+                    The tab also provides 2 hours of Research Speedups,
+                    9 hours of Construction Speedups,
+                    15 Explorer Backpack Recipe Fragments and
+                    10 Tiara of Wisdom Recipe Fragments.
+                </p>
+
+                <span class="tag spend">
+                    SEPARATE • CONSIDER TROOP REPLACEMENT COST
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     COMPLETE BREAKDOWN
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        COIN CALCULATION
+    </div>
+
+    <h2 class="section-title">
+        Where the 13,550 Comes From.
+    </h2>
+
+
+    <div class="breakdown">
+
+        <div class="breakdown-row main">
+
+            <div class="breakdown-name">
+                Trial of Strength
+                <span class="breakdown-note">
+                    Regular Arena route
+                </span>
+            </div>
+
+            <div class="breakdown-value">
+                4,000
+            </div>
+
+        </div>
+
+
+        <div class="breakdown-row">
+
+            <div class="breakdown-name">
+                Artifacts Empowering
+                <span class="breakdown-note">
+                    All coins by 4,800 Artifact Coins spent
+                </span>
+            </div>
+
+            <div class="breakdown-value">
+                +850
+            </div>
+
+        </div>
+
+
+        <div class="breakdown-row">
+
+            <div class="breakdown-name">
+                Sealed Away
+                <span class="breakdown-note">
+                    All coins by 60 Artifact Chests
+                </span>
+            </div>
+
+            <div class="breakdown-value">
+                +1,300
+            </div>
+
+        </div>
+
+
+        <div class="breakdown-row">
+
+            <div class="breakdown-name">
+                Wise Exchange
+                <span class="breakdown-note">
+                    All coins at 80,000 Emeralds spent
+                </span>
+            </div>
+
+            <div class="breakdown-value">
+                +2,000
+            </div>
+
+        </div>
+
+
+        <div class="breakdown-row">
+
+            <div class="breakdown-name">
+                Tactical Losses
+                <span class="breakdown-note">
+                    All coins by 19,500 Level 6 troops lost
+                </span>
+            </div>
+
+            <div class="breakdown-value">
+                +5,400
+            </div>
+
+        </div>
+
+
+        <div class="breakdown-row final">
+
+            <div class="breakdown-name">
+                MAXIMUM GRAND CARAVAN QUEST TOTAL
+            </div>
+
+            <div class="breakdown-value">
+                13,550
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STRATEGY
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        RESOURCE STRATEGY
+    </div>
+
+    <h2 class="section-title">
+        Know Where the Coins Stop.
+    </h2>
+
+    <p class="section-lead">
+        Grand Caravan is a good example of why the final milestone
+        and the final Event Coin milestone should
+        <strong>not be treated as the same thing.</strong>
+    </p>
+
+
+    <div class="strategy-box">
+
+        <ol class="strategy-list">
+
+            <li>
+                Use enough of your
+                <strong>five free Arena attempts per day</strong>
+                to reach 30 battles. You do not need to win.
+            </li>
+
+            <li>
+                <strong>4,800 Artifact Coins</strong>
+                are enough to collect all 850 Event Coins from
+                Artifacts Empowering. The tab itself continues to 60,000.
+            </li>
+
+            <li>
+                <strong>60 Artifact Chests</strong>
+                collect all 1,300 Event Coins from Sealed Away.
+                The tab continues to 125 chests.
+            </li>
+
+            <li>
+                Wise Exchange gives all
+                <strong>2,000 Event Coins at 80,000 Emeralds spent</strong>,
+                together with Alecto's Primordial Skin.
+                The remaining milestones continue to 200,000.
+            </li>
+
+            <li>
+                Tactical Losses gives all
+                <strong>5,400 Event Coins by 19,500 Level 6 troops lost</strong>.
+                The tab continues to 65,000 troops.
+            </li>
+
+            <li>
+                Consider the cost of
+                <strong>replacing Realm troops</strong>
+                before pursuing Tactical Losses solely for Event Coins.
+            </li>
+
+            <li>
+                Generous Soul contains valuable resources but
+                <strong>no Event Coins</strong>.
+                Judge its VIP milestones according to purchases you
+                already intend to make.
+            </li>
+
+        </ol>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERIES CONTINUATION
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TRADE ROUTES SERIES
+    </div>
+
+    <h2 class="section-title">
+        One Part Remains.
+    </h2>
+
+
+    <div class="series-grid">
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 01 • COMPLETE
+            </div>
+
+            <h3>
+                Roads Unlocked
+            </h3>
+
+            <p>
+                The first Trade Routes quest set and the main event features.
+            </p>
+
+            <a href="roads-unlocked-event-guide.html">
+                OPEN PART 1 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card active">
+
+            <div class="series-number">
+                PART 02 • COMPLETE
+            </div>
+
+            <h3>
+                Grand Caravan
+            </h3>
+
+            <p>
+                Seven quest tabs with a maximum of
+                13,550 Event Coins.
+            </p>
+
+        </article>
+
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 03 • NEXT
+            </div>
+
+            <h3>
+                Bountiful Roads
+            </h3>
+
+            <p>
+                The final subevent rewards milestones completed across
+                Roads Unlocked and Grand Caravan.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     VIDEO
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        WATCH THE FULL GUIDE
+    </div>
+
+    <h2 class="section-title">
+        Grand Caravan Video Guide.
+    </h2>
+
+    <p
+        class="section-lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the complete Gods of Alliance breakdown for all seven
+        Grand Caravan quest tabs, their rewards, resource requirements
+        and Event Coin totals.
+    </p>
+
+
+    <div class="video-frame">
+
+        <iframe
+            src="https://www.youtube.com/embed/7gdrsGDBxwE"
+            title="Grand Caravan Event Guide - Gods of Alliance"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
+<script src="goa-global.js"></script>
+
+
+</body>
+</html>
