@@ -1,5 +1,19 @@
 window.GOA_EVENTS = [
   {
+    id: "grand-caravan",
+    title: "Grand Caravan Event Guide",
+    tag: "EVENT GUIDE",
+    status: "current",
+    order: 5,
+    image: "Images/Events/grand-caravan-event-guide.png",
+    url: "grand-caravan-event-guide.html",
+    dateLabel: "OCTOBER 5 — OCTOBER 11",
+    description:
+      "Trade Routes Part 2: explore all seven Grand Caravan quest tabs, resource requirements, key reward milestones and the complete 13,550 Event Coin breakdown.",
+    button: "OPEN EVENT GUIDE →"
+  },
+
+  {
     id: "roads-unlocked",
     title: "Roads Unlocked Event Guide",
     tag: "EVENT GUIDE",
