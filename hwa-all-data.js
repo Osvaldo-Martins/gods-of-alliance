@@ -1,5 +1,19 @@
 window.HWA_ALL_ARTICLES = [
   {
+    id: "crow-new-talisman-full-analysis",
+    title: "CROW NEW TALISMAN",
+    type: "TALISMAN ANALYSIS",
+    category: "talismans",
+    date: "2026-10-07",
+    image: "Images/HWA-All/crow-new-talisman-full-analysis.png",
+    url: "crow-new-talisman-full-analysis.html",
+    subtitle: "PHYSICAL ATTACK • CRITICAL HIT CHANCE",
+    description:
+      "Full analysis of Crow's Talisman of Verdict: Level 50 stats, upgrade cost, Critical Hit Chance, comparison with Talisman of Deduction, Sebastian synergy and our first three battle tests.",
+    button: "READ ANALYSIS →"
+  },
+
+  {
     id: "guus-relic-guide",
     title: "GUUS RELIC GUIDE",
     type: "RELIC GUIDE",
