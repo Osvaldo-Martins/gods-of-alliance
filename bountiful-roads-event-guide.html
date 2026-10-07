@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bountiful Roads Event Guide | Gods of Alliance</title>
+
+<meta
+    name="description"
+    content="Complete Bountiful Roads guide for Hero Wars Alliance. Explore all six tabs, connector rewards, repeatable speedup quests and the final Trade Routes Event Coin totals."
+>
+
+<meta name="robots" content="index, follow">
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/bountiful-roads-event-guide.html"
+>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+
+<meta
+    property="og:title"
+    content="Bountiful Roads Event Guide | Gods of Alliance"
+>
+
+<meta
+    property="og:description"
+    content="Trade Routes Part 3: all six Bountiful Roads tabs, connector rewards, repeatable speedups and the final Event Coin calculation."
+>
+
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/bountiful-roads-event-guide.html"
+>
+
+<meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/bountiful-roads-event-guide.png"
+>
+
+<meta
+    property="og:image:alt"
+    content="Bountiful Roads Event Guide - Gods of Alliance"
+>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Bountiful Roads Event Guide | Gods of Alliance"
+>
+
+<meta
+    name="twitter:description"
+    content="The final Trade Routes guide: Bountiful Roads quests, connector rewards and complete Event Coin totals."
+>
+
+<meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/Events/bountiful-roads-event-guide.png"
+>
+
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #030713;
+}
+
+:root {
+    --bg: #030713;
+    --panel: rgba(8, 13, 31, 0.94);
+    --panel2: rgba(12, 18, 40, 0.92);
+
+    --gold: #e7b455;
+    --gold2: #ffe08a;
+
+    --blue: #3159c9;
+    --blue2: #7196ff;
+
+    --white: #ffffff;
+    --muted: #a8aec0;
+
+    --green: #8ed09c;
+    --purple: #a789e7;
+}
+
+body {
+    min-height: 100vh;
+
+    color: #fff;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(55, 88, 190, 0.15),
+            transparent 32%
+        ),
+        linear-gradient(
+            180deg,
+            #071027 0%,
+            #030713 48%,
+            #02040a 100%
+        );
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.event-hero {
+    position: relative;
+
+    min-height: 730px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(231, 180, 85, 0.14);
+}
+
+.event-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3, 7, 19, 0.05) 0%,
+            rgba(3, 7, 19, 0.13) 35%,
+            rgba(3, 7, 19, 0.55) 60%,
+            rgba(3, 7, 19, 0.95) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(3, 7, 19, 0.02) 0%,
+            rgba(3, 7, 19, 0.08) 48%,
+            #030713 100%
+        ),
+        url("Images/Events/bountiful-roads-event-guide.png");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.event-hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 33% 45%,
+            rgba(255, 197, 77, 0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 70% 25%,
+            rgba(66, 102, 221, 0.10),
+            transparent 30%
+        );
+}
+
+.hero-shell {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 180px 32px 82px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    width: min(650px, 100%);
+}
+
+.badge {
+    display: inline-block;
+
+    margin-bottom: 17px;
+    padding: 8px 11px;
+
+    border: 1px solid rgba(255, 224, 138, 0.30);
+    border-radius: 4px;
+
+    background: rgba(3, 7, 19, 0.72);
+
+    color: var(--gold2);
+
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.event-hero h1 {
+    margin-bottom: 15px;
+
+    color: var(--gold2);
+
+    font-size: clamp(52px, 7vw, 90px);
+    line-height: .90;
+
+    font-weight: 950;
+    letter-spacing: -.055em;
+
+    text-shadow:
+        0 10px 38px rgba(0,0,0,.95),
+        0 0 26px rgba(231,180,85,.13);
+}
+
+.event-hero h1 span {
+    display: block;
+}
+
+.hero-meta {
+    margin-bottom: 21px;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: .13em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.hero-meta span {
+    color: var(--blue2);
+}
+
+.hero-intro {
+    max-width: 620px;
+
+    color: #b9bfd0;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    text-shadow: 0 2px 10px #000;
+}
+
+.hero-intro strong {
+    color: #fff;
+}
+
+
+/* ARTICLE */
+
+.article {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 78px 28px 100px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
+
+.kicker {
+    margin-bottom: 9px;
+
+    color: var(--gold);
+
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: .21em;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 18px;
+
+    font-size: clamp(30px, 4.4vw, 47px);
+    line-height: 1;
+
+    font-weight: 950;
+    letter-spacing: -.035em;
+}
+
+.lead {
+    max-width: 880px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.lead strong {
+    color: var(--gold2);
+}
+
+
+/* SERIES */
+
+.series-grid {
+    margin-top: 31px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 13px;
+}
+
+.series-card {
+    min-height: 165px;
+
+    padding: 23px;
+
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 9px;
+
+    background: rgba(8,13,31,.88);
+}
+
+.series-card.active {
+    border-color: rgba(231,180,85,.34);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(231,180,85,.11),
+            transparent 45%
+        ),
+        rgba(10,15,33,.95);
+}
+
+.series-number {
+    margin-bottom: 13px;
+
+    color: #747b91;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.series-card.active .series-number {
+    color: var(--gold);
+}
+
+.series-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.series-card p {
+    color: #969db1;
+
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.series-card a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: var(--gold2);
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+
+/* QUESTS */
+
+.quest-stack {
+    margin-top: 32px;
+
+    display: grid;
+    gap: 16px;
+}
+
+.quest {
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.075);
+    border-radius: 10px;
+
+    background: rgba(8,13,31,.92);
+}
+
+.quest.connector {
+    border-color: rgba(231,180,85,.25);
+}
+
+.quest.repeatable {
+    border-color: rgba(113,150,255,.30);
+}
+
+.quest-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 23px 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.quest-num {
+    margin-bottom: 7px;
+
+    color: var(--gold);
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.quest-name {
+    font-size: 21px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.coins {
+    text-align: right;
+}
+
+.coins strong {
+    display: block;
+
+    color: var(--gold2);
+
+    font-size: 24px;
+    font-weight: 950;
+}
+
+.coins span {
+    color: #7d8499;
+
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+
+.quest-body {
+    padding: 23px 25px;
+}
+
+.quest-body p {
+    color: #a9afc0;
+
+    font-size: 13px;
+    line-height: 1.76;
+}
+
+.quest-body p + p {
+    margin-top: 12px;
+}
+
+.facts {
+    margin-top: 18px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 9px;
+}
+
+.fact {
+    padding: 14px;
+
+    border: 1px solid rgba(255,255,255,.055);
+    border-radius: 6px;
+
+    background: rgba(255,255,255,.018);
+}
+
+.fact-label {
+    margin-bottom: 6px;
+
+    color: #747b91;
+
+    font-size: 7px;
+    font-weight: 950;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.fact-value {
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 850;
+    line-height: 1.5;
+}
+
+.tag {
+    display: inline-block;
+
+    margin-top: 16px;
+    padding: 7px 9px;
+
+    border-radius: 4px;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+
+.tag.none {
+    color: #a7adbc;
+    border: 1px solid rgba(167,173,188,.15);
+    background: rgba(167,173,188,.035);
+}
+
+.tag.connector-tag {
+    color: var(--gold2);
+    border: 1px solid rgba(231,180,85,.20);
+    background: rgba(231,180,85,.055);
+}
+
+.tag.repeat {
+    color: #9eb5ff;
+    border: 1px solid rgba(113,150,255,.22);
+    background: rgba(113,150,255,.06);
+}
+
+
+/* COIN BOARD */
+
+.board {
+    margin-top: 31px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(231,180,85,.28);
+    border-radius: 11px;
+
+    background: rgba(8,13,31,.95);
+}
+
+.board-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 19px 24px;
+
+    border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.board-row:last-child {
+    border-bottom: 0;
+}
+
+.board-name {
+    color: #b5bbcb;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.board-note {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #737b91;
+
+    font-size: 9px;
+    font-weight: 500;
+}
+
+.board-value {
+    color: var(--gold2);
+
+    font-size: 18px;
+    font-weight: 950;
+}
+
+.board-row.total {
+    padding: 25px 24px;
+
+    background:
+        radial-gradient(
+            circle at 100% 50%,
+            rgba(231,180,85,.10),
+            transparent 42%
+        );
+}
+
+.board-row.total .board-name {
+    color: #fff;
+    font-size: 15px;
+}
+
+.board-row.total .board-value {
+    font-size: 29px;
+}
+
+.board-row.repeat-row {
+    background: rgba(113,150,255,.035);
+}
+
+.board-row.repeat-row .board-value {
+    color: #9eb5ff;
+}
+
+
+/* BIG TOTALS */
+
+.total-grid {
+    margin-top: 31px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 13px;
+}
+
+.total-card {
+    padding: 28px 23px;
+
+    border: 1px solid rgba(231,180,85,.18);
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(231,180,85,.07),
+            transparent 45%
+        ),
+        rgba(8,13,31,.92);
+}
+
+.total-card.featured {
+    border-color: rgba(113,150,255,.28);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(113,150,255,.10),
+            transparent 45%
+        ),
+        rgba(8,13,31,.95);
+}
+
+.total-label {
+    margin-bottom: 11px;
+
+    color: #7b8297;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.total-value {
+    margin-bottom: 10px;
+
+    color: var(--gold2);
+
+    font-size: clamp(31px,4vw,43px);
+    font-weight: 950;
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+
+.total-card.featured .total-value {
+    color: #a9bcff;
+}
+
+.total-card p {
+    color: #979eb1;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* VERDICT */
+
+.verdict {
+    padding: 34px;
+
+    border: 1px solid rgba(231,180,85,.26);
+    border-radius: 12px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(231,180,85,.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(66,102,221,.09),
+            transparent 40%
+        ),
+        rgba(8,13,31,.96);
+}
+
+.verdict h2 {
+    margin-bottom: 17px;
+
+    font-size: clamp(29px,4vw,43px);
+    font-weight: 950;
+    letter-spacing: -.035em;
+}
+
+.verdict p {
+    color: #aab0c1;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.verdict p + p {
+    margin-top: 13px;
+}
+
+.verdict strong {
+    color: var(--gold2);
+}
+
+
+/* VIDEO */
+
+.video-frame {
+    position: relative;
+
+    width: 100%;
+    padding-top: 56.25%;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(231,180,85,.25);
+    border-radius: 12px;
+
+    background: #000;
+
+    box-shadow: 0 28px 70px rgba(0,0,0,.40);
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+
+    border-top: 1px solid rgba(231,180,85,.08);
+
+    background: #02040a;
+
+    color: #5f6577;
+
+    text-align: center;
+
+    font-size: 10px;
+    letter-spacing: .05em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .series-grid,
+    .facts,
+    .total-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .event-hero {
+        min-height: 650px;
+    }
+
+    .event-hero-bg {
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(3,7,19,.04) 0%,
+                rgba(3,7,19,.30) 43%,
+                #030713 100%
+            ),
+            url("Images/Events/bountiful-roads-event-guide.png");
+
+        background-position: 30% center;
+    }
+
+    .hero-shell {
+        justify-content: flex-start;
+        padding: 310px 20px 55px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .article {
+        padding: 64px 19px 80px;
+    }
+
+    .quest-top {
+        grid-template-columns: 1fr;
+    }
+
+    .coins {
+        text-align: left;
+    }
+
+    .quest-body,
+    .verdict {
+        padding: 21px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="event-hero">
+
+    <div class="event-hero-bg"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                TRADE ROUTES • PART 3 OF 3
+            </div>
+
+            <h1>
+                <span>BOUNTIFUL</span>
+                <span>ROADS</span>
+            </h1>
+
+            <div class="hero-meta">
+                EVENT GUIDE
+                <span>•</span>
+                OCTOBER 5–11
+                <span>•</span>
+                FINAL PART
+            </div>
+
+            <p class="hero-intro">
+                The final Trade Routes subevent connects your progress
+                from <strong>Roads Unlocked</strong> and
+                <strong>Grand Caravan</strong>, adding connector rewards,
+                repeatable objectives and the final Event Coin calculation.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="article">
+
+
+<section class="section">
+
+    <div class="kicker">
+        TRADE ROUTES
+    </div>
+
+    <h2 class="title">
+        The Three-Part Journey.
+    </h2>
+
+    <p class="lead">
+        Bountiful Roads is the final piece of Trade Routes.
+        Progress made in the first two subevents now creates
+        <strong>a second layer of rewards.</strong>
+    </p>
+
+
+    <div class="series-grid">
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 01 • COMPLETE
+            </div>
+
+            <h3>
+                Roads Unlocked
+            </h3>
+
+            <p>
+                Main event features and the first seven quest tabs.
+            </p>
+
+            <a href="roads-unlocked-event-guide.html">
+                OPEN PART 1 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 02 • COMPLETE
+            </div>
+
+            <h3>
+                Grand Caravan
+            </h3>
+
+            <p>
+                Seven additional quest tabs and resource-dependent rewards.
+            </p>
+
+            <a href="grand-caravan-event-guide.html">
+                OPEN PART 2 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card active">
+
+            <div class="series-number">
+                PART 03 • YOU ARE HERE
+            </div>
+
+            <h3>
+                Bountiful Roads
+            </h3>
+
+            <p>
+                Connector rewards, repeatable quests and the final
+                Trade Routes calculation.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        BOUNTIFUL ROADS
+    </div>
+
+    <h2 class="title">
+        All 6 Tabs.
+    </h2>
+
+    <p class="lead">
+        Some tabs provide no Event Coins at all.
+        Others reward progress from Roads Unlocked and Grand Caravan.
+        <strong>No Time to Wait is repeatable</strong>, which means
+        its contribution has no fixed one-completion maximum.
+    </p>
+
+
+    <div class="quest-stack">
+
+
+        <article class="quest">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 01</div>
+                    <div class="quest-name">Daily Login</div>
+                </div>
+
+                <div class="coins">
+                    <strong>0</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Log in throughout all seven days.
+                    Completing the full sequence gives
+                    <strong style="color:#fff;">
+                        2,700 Adventure Coins.
+                    </strong>
+                </p>
+
+                <p>
+                    The final day alone provides
+                    <strong style="color:#fff;">
+                        1,200 Adventure Coins.
+                    </strong>
+                </p>
+
+                <span class="tag none">
+                    NO EVENT COINS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="quest">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 02</div>
+                    <div class="quest-name">Transforming Talismans</div>
+                </div>
+
+                <div class="coins">
+                    <strong>0</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Reroll Talisman slots.
+                    Milestones begin at five rerolls and finish at
+                    <strong style="color:#fff;">500.</strong>
+                </p>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <div class="fact-label">MASTERY CRYSTALS</div>
+                        <div class="fact-value">9,300</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">ADVENTURE COINS</div>
+                        <div class="fact-value">3,600</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">OTHER REWARDS</div>
+                        <div class="fact-value">
+                            65 Season Coins • 10 Rune Spheres •
+                            5 Tiara of Wisdom Recipe Fragments
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    The Mastery Crystals shown here are
+                    <strong style="color:#fff;">rewards you receive</strong>;
+                    they are not the cost of completing the rerolls.
+                </p>
+
+                <span class="tag none">
+                    NO EVENT COINS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="quest repeatable">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 03 • REPEATABLE</div>
+                    <div class="quest-name">No Time to Wait</div>
+                </div>
+
+                <div class="coins">
+                    <strong>7,300+</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Use speedups.
+                    Milestones run from 60 to
+                    <strong style="color:#fff;">
+                        2,460 minutes
+                    </strong>,
+                    equivalent to
+                    <strong style="color:#fff;">
+                        41 hours.
+                    </strong>
+                </p>
+
+                <p>
+                    One complete sequence awards
+                    <strong style="color:#ffe08a;">
+                        7,300 Event Coins.
+                    </strong>
+                </p>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <div class="fact-label">ONE FULL SEQUENCE</div>
+                        <div class="fact-value">41 hours of speedups</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">EVENT COINS</div>
+                        <div class="fact-value">7,300 per full completion</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">REALM RESOURCES</div>
+                        <div class="fact-value">
+                            200K Wood • 200K Food • 50K Stone • 100K Metal
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    After completing the entire sequence, the tab can
+                    <strong style="color:#9eb5ff;">
+                        begin again.
+                    </strong>
+                    Each additional full completion adds another
+                    7,300 Event Coins. An unfinished sequence contributes
+                    whichever milestones you reach.
+                </p>
+
+                <span class="tag repeat">
+                    REPEATABLE • NO FIXED EVENT MAXIMUM
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="quest repeatable">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 04 • REPEATABLE</div>
+                    <div class="quest-name">Energy of Evolution</div>
+                </div>
+
+                <div class="coins">
+                    <strong>0</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Spend Energy.
+                    Milestones begin at 100 Energy and finish at
+                    <strong style="color:#fff;">
+                        4,000 Energy.
+                    </strong>
+                </p>
+
+                <p>
+                    One complete sequence awards
+                    <strong style="color:#fff;">
+                        3,300 Rune Stones.
+                    </strong>
+                    After completion, another sequence can begin.
+                </p>
+
+                <span class="tag repeat">
+                    REPEATABLE • NO EVENT COINS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="quest connector">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 05 • CONNECTOR</div>
+                    <div class="quest-name">Roads Unlocked Progress</div>
+                </div>
+
+                <div class="coins">
+                    <strong>5,500</strong>
+                    <span>EVENT COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Every quest milestone completed in
+                    <strong style="color:#fff;">
+                        Roads Unlocked
+                    </strong>
+                    contributes toward this tab.
+                </p>
+
+                <p>
+                    The reward track begins at 10 completed quests and
+                    continues to 270.
+                    However, all
+                    <strong style="color:#ffe08a;">
+                        5,500 Event Coins
+                    </strong>
+                    are already collected at
+                    <strong style="color:#fff;">
+                        130 completed quests.
+                    </strong>
+                </p>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <div class="fact-label">ALL EVENT COINS</div>
+                        <div class="fact-value">130 completed quests</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">FULL TRACK</div>
+                        <div class="fact-value">270 completed quests</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">FULL TAB RESOURCES</div>
+                        <div class="fact-value">
+                            13,500 Adventure Coins • 3,750 Rune Stones •
+                            60 Adventure Energy • 260 Season Coins •
+                            20 Elemental Spheres
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>
+                    The full tab also provides 5 Crow Soul Stones,
+                    15 Eva Soul Stones, 10 Tiara of Wisdom Recipe Fragments
+                    and 2,500 Strength Skin Stones.
+                </p>
+
+                <p>
+                    For the regular coin scenario, these 5,500 coins
+                    are included on the condition that you reach the
+                    130-quest target. Daily activity matters, including
+                    the Fairy Dust requirements from Hidden Reserves.
+                </p>
+
+                <span class="tag connector-tag">
+                    5,500 INCLUDED IN REGULAR SCENARIO AT 130 QUESTS
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="quest connector">
+
+            <div class="quest-top">
+
+                <div>
+                    <div class="quest-num">TAB 06 • CONNECTOR</div>
+                    <div class="quest-name">Grand Caravan Progress</div>
+                </div>
+
+                <div class="coins">
+                    <strong>10,500</strong>
+                    <span>MAX CONNECTOR COINS</span>
+                </div>
+
+            </div>
+
+            <div class="quest-body">
+
+                <p>
+                    Completed quest milestones from
+                    <strong style="color:#fff;">
+                        Grand Caravan
+                    </strong>
+                    advance this reward track.
+                    Milestones begin at five and finish at 72.
+                </p>
+
+                <p>
+                    All
+                    <strong style="color:#ffe08a;">
+                        10,500 Event Coins
+                    </strong>
+                    are collected by
+                    <strong style="color:#fff;">
+                        35 completed quests.
+                    </strong>
+                </p>
+
+                <p>
+                    For the regular scenario, seven login milestones and
+                    eight Arena milestones provide
+                    <strong style="color:#fff;">
+                        15 completed quests.
+                    </strong>
+                    That unlocks
+                    <strong style="color:#ffe08a;">
+                        2,300 Event Coins.
+                    </strong>
+                </p>
+
+                <div class="facts">
+
+                    <div class="fact">
+                        <div class="fact-label">REGULAR SCENARIO</div>
+                        <div class="fact-value">15 quests → 2,300 Coins</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">ALL CONNECTOR COINS</div>
+                        <div class="fact-value">35 quests → 10,500 Coins</div>
+                    </div>
+
+                    <div class="fact">
+                        <div class="fact-label">FULL TRACK</div>
+                        <div class="fact-value">72 completed quests</div>
+                    </div>
+
+                </div>
+
+                <p>
+                    The remaining
+                    <strong style="color:#fff;">
+                        8,200 Event Coins
+                    </strong>
+                    require additional Grand Caravan quests involving
+                    the resource or spending conditions covered in Part 2.
+                </p>
+
+                <p>
+                    Cornelius' Stellar Skin is awarded at
+                    <strong style="color:#fff;">
+                        60 completed quests.
+                    </strong>
+                </p>
+
+                <p>
+                    Across the full tab you also receive
+                    6,000 Rune Spheres, 2,500 Mastery Crystals,
+                    5,500 Rune Stones, 45 Adventure Energy,
+                    290 Season Coins and 25 Elemental Spheres,
+                    plus 10 Crow Soul Stones and
+                    10 Explorer's Backpack Recipe Fragments.
+                </p>
+
+                <span class="tag connector-tag">
+                    2,300 REGULAR • +8,200 FROM ADDITIONAL QUESTS
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        BOUNTIFUL ROADS COINS
+    </div>
+
+    <h2 class="title">
+        Three Useful Totals.
+    </h2>
+
+    <p class="lead">
+        Because No Time to Wait is repeatable, the cleanest way to understand
+        Bountiful Roads is to separate the
+        <strong>regular scenario</strong>,
+        <strong>all connector coins</strong>,
+        and the result after
+        <strong>one complete speedup sequence.</strong>
+    </p>
+
+
+    <div class="board">
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Roads Unlocked Connector
+                <span class="board-note">
+                    Reach 130 completed Roads Unlocked quests
+                </span>
+            </div>
+
+            <div class="board-value">
+                5,500
+            </div>
+
+        </div>
+
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Grand Caravan Connector — Regular Scenario
+                <span class="board-note">
+                    15 completed quests
+                </span>
+            </div>
+
+            <div class="board-value">
+                +2,300
+            </div>
+
+        </div>
+
+
+        <div class="board-row total">
+
+            <div class="board-name">
+                REGULAR BOUNTIFUL ROADS SCENARIO
+            </div>
+
+            <div class="board-value">
+                7,800
+            </div>
+
+        </div>
+
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Remaining Grand Caravan Connector Coins
+                <span class="board-note">
+                    Additional quests required to reach 35
+                </span>
+            </div>
+
+            <div class="board-value">
+                +8,200
+            </div>
+
+        </div>
+
+
+        <div class="board-row total">
+
+            <div class="board-name">
+                ALL CONNECTOR EVENT COINS
+            </div>
+
+            <div class="board-value">
+                16,000
+            </div>
+
+        </div>
+
+
+        <div class="board-row repeat-row">
+
+            <div class="board-name">
+                One Full No Time to Wait Sequence
+                <span class="board-note">
+                    2,460 minutes / 41 hours of speedups
+                </span>
+            </div>
+
+            <div class="board-value">
+                +7,300
+            </div>
+
+        </div>
+
+
+        <div class="board-row total">
+
+            <div class="board-name">
+                ALL CONNECTORS + ONE FULL SPEEDUP SEQUENCE
+            </div>
+
+            <div class="board-value">
+                23,300
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        FINAL TRADE ROUTES BOARD
+    </div>
+
+    <h2 class="title">
+        Bringing All Three Events Together.
+    </h2>
+
+
+    <div class="total-grid">
+
+        <article class="total-card">
+
+            <div class="total-label">
+                REGULAR SCENARIO
+            </div>
+
+            <div class="total-value">
+                32,800
+            </div>
+
+            <p>
+                21,000 Roads Unlocked + 4,000 Grand Caravan +
+                7,800 Bountiful Roads, subject to the regular quest
+                and resource conditions described in the guides.
+            </p>
+
+        </article>
+
+
+        <article class="total-card">
+
+            <div class="total-label">
+                ALL SEPARATE AMOUNTS
+            </div>
+
+            <div class="total-value">
+                64,550
+            </div>
+
+            <p>
+                Includes the separate spending and resource-dependent
+                amounts from Roads Unlocked, Grand Caravan and all
+                Bountiful Roads connector coins.
+            </p>
+
+        </article>
+
+
+        <article class="total-card featured">
+
+            <div class="total-label">
+                + ONE SPEEDUP SEQUENCE
+            </div>
+
+            <div class="total-value">
+                71,850
+            </div>
+
+            <p>
+                Adds one complete No Time to Wait sequence.
+                Further repetitions can increase the Event Coin total
+                beyond 71,850.
+            </p>
+
+        </article>
+
+    </div>
+
+
+    <div class="board" style="margin-top:20px;">
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Roads Unlocked
+                <span class="board-note">
+                    Regular 21,000 • Including separate amounts 35,000
+                </span>
+            </div>
+
+            <div class="board-value">
+                21,000 / 35,000
+            </div>
+
+        </div>
+
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Grand Caravan
+                <span class="board-note">
+                    Regular 4,000 • Including separate amounts 13,550
+                </span>
+            </div>
+
+            <div class="board-value">
+                4,000 / 13,550
+            </div>
+
+        </div>
+
+
+        <div class="board-row">
+
+            <div class="board-name">
+                Bountiful Roads
+                <span class="board-note">
+                    Regular 7,800 • All connector coins 16,000
+                </span>
+            </div>
+
+            <div class="board-value">
+                7,800 / 16,000
+            </div>
+
+        </div>
+
+
+        <div class="board-row total">
+
+            <div class="board-name">
+                TRADE ROUTES BEFORE SPEEDUPS
+            </div>
+
+            <div class="board-value">
+                32,800 / 64,550
+            </div>
+
+        </div>
+
+
+        <div class="board-row repeat-row">
+
+            <div class="board-name">
+                One Full Speedup Sequence
+                <span class="board-note">
+                    Repeatable after completion
+                </span>
+            </div>
+
+            <div class="board-value">
+                +7,300
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="verdict">
+
+        <div class="kicker">
+            FINAL VERDICT
+        </div>
+
+        <h2>
+            Make Every Resource Work Twice.
+        </h2>
+
+        <p>
+            The strongest part of Bountiful Roads is that it rewards
+            progress you are already making elsewhere in Trade Routes.
+            Roads Unlocked and Grand Caravan therefore have
+            <strong>two layers of value:</strong>
+            their own rewards and the connector milestones here.
+        </p>
+
+        <p>
+            Make the daily progress count, collect the connector rewards
+            and choose additional spending around upgrades your account
+            actually needs.
+        </p>
+
+        <p>
+            Reward Boxes can provide additional Event Coins, but they cost
+            Emeralds and their coin rewards depend on random outcomes.
+            For that reason,
+            <strong>Reward Box coins are excluded from every total above.</strong>
+        </p>
+
+        <p>
+            And because No Time to Wait can restart after a complete sequence,
+            <strong>71,850 is not an absolute event maximum.</strong>
+            Further speedup repetitions can continue increasing the total.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        COMPLETE TRADE ROUTES SERIES
+    </div>
+
+    <h2 class="title">
+        All Three Guides.
+    </h2>
+
+
+    <div class="series-grid">
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 01
+            </div>
+
+            <h3>
+                Roads Unlocked
+            </h3>
+
+            <p>
+                Main event features, Caravan Hall and the first quest board.
+            </p>
+
+            <a href="roads-unlocked-event-guide.html">
+                OPEN PART 1 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card">
+
+            <div class="series-number">
+                PART 02
+            </div>
+
+            <h3>
+                Grand Caravan
+            </h3>
+
+            <p>
+                Arena, Artifact, Emerald and Realm-related objectives.
+            </p>
+
+            <a href="grand-caravan-event-guide.html">
+                OPEN PART 2 →
+            </a>
+
+        </article>
+
+
+        <article class="series-card active">
+
+            <div class="series-number">
+                PART 03
+            </div>
+
+            <h3>
+                Bountiful Roads
+            </h3>
+
+            <p>
+                Connector rewards and the final Trade Routes calculation.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        WATCH THE FULL GUIDE
+    </div>
+
+    <h2 class="title">
+        Bountiful Roads Video Guide.
+    </h2>
+
+    <p
+        class="lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the final Gods of Alliance Trade Routes guide for the
+        complete Bountiful Roads breakdown and final Event Coin analysis.
+    </p>
+
+
+    <div class="video-frame">
+
+        <iframe
+            src="https://www.youtube.com/embed/xgvUz8Eu2qQ"
+            title="Bountiful Roads Event Guide - Gods of Alliance"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+
+<script src="goa-global.js"></script>
+
+
+</body>
+</html>
