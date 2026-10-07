@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crow New Talisman Full Analysis | Gods of Alliance</title>
+
+<meta
+    name="description"
+    content="Full analysis of Crow's Talisman of Verdict in Hero Wars Alliance: upgrade cost, Physical Attack, Critical Hit Chance, comparison with Talisman of Deduction, Sebastian synergy and first battle tests."
+>
+
+<meta name="robots" content="index, follow">
+
+<link
+    rel="canonical"
+    href="https://gods-of-alliance.vercel.app/crow-new-talisman-full-analysis.html"
+>
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+
+<meta
+    property="og:title"
+    content="Crow New Talisman Full Analysis | Gods of Alliance"
+>
+
+<meta
+    property="og:description"
+    content="Talisman of Verdict vs Talisman of Deduction: complete stats, upgrade cost, Critical Hit Chance, Sebastian interaction and Crow's first battle tests."
+>
+
+<meta
+    property="og:url"
+    content="https://gods-of-alliance.vercel.app/crow-new-talisman-full-analysis.html"
+>
+
+<meta
+    property="og:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/crow-new-talisman-full-analysis.png"
+>
+
+<meta
+    property="og:image:alt"
+    content="Crow New Talisman Full Analysis - Gods of Alliance"
+>
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta
+    name="twitter:title"
+    content="Crow New Talisman Full Analysis | Gods of Alliance"
+>
+
+<meta
+    name="twitter:description"
+    content="Crow's Talisman of Verdict tested: Physical Attack, Critical Hit Chance, Deduction comparison, support synergy and first battle results."
+>
+
+<meta
+    name="twitter:image"
+    content="https://gods-of-alliance.vercel.app/Images/HWA-All/crow-new-talisman-full-analysis.png"
+>
+
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #050607;
+}
+
+:root {
+    --bg: #050607;
+    --panel: rgba(13, 15, 17, .95);
+    --panel2: rgba(18, 20, 22, .92);
+
+    --red: #b31f35;
+    --red2: #ed3f59;
+    --red-dark: #5e0d19;
+
+    --silver: #dce1e5;
+    --silver2: #ffffff;
+
+    --gold: #e4b958;
+
+    --green: #32d6a0;
+    --green2: #8affd6;
+
+    --muted: #a6a9ad;
+    --line: rgba(255,255,255,.075);
+}
+
+body {
+    min-height: 100vh;
+
+    color: #fff;
+
+    background:
+        radial-gradient(
+            circle at 20% 0%,
+            rgba(179,31,53,.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 25%,
+            rgba(50,214,160,.045),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #0b0c0e 0%,
+            #050607 48%,
+            #020303 100%
+        );
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    position: relative;
+
+    min-height: 740px;
+
+    display: flex;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(237,63,89,.14);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(3,4,5,.03) 0%,
+            rgba(3,4,5,.10) 34%,
+            rgba(3,4,5,.56) 60%,
+            rgba(3,4,5,.96) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(3,4,5,.02) 0%,
+            rgba(3,4,5,.10) 50%,
+            #050607 100%
+        ),
+        url("Images/HWA-All/crow-new-talisman-full-analysis.png");
+
+    background-size: cover;
+    background-position: center;
+
+    transform: scale(1.015);
+}
+
+.hero-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 27% 38%,
+            rgba(237,63,89,.10),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 69% 30%,
+            rgba(50,214,160,.055),
+            transparent 27%
+        );
+}
+
+.hero-shell {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 180px 32px 82px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    width: min(650px, 100%);
+}
+
+.badge {
+    display: inline-block;
+
+    margin-bottom: 17px;
+    padding: 8px 11px;
+
+    border: 1px solid rgba(237,63,89,.32);
+    border-radius: 4px;
+
+    background: rgba(5,6,7,.74);
+
+    color: #ff7186;
+
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+
+    color: #fff;
+
+    font-size: clamp(54px, 7vw, 94px);
+    line-height: .90;
+
+    font-weight: 950;
+    letter-spacing: -.055em;
+
+    text-shadow:
+        0 10px 38px rgba(0,0,0,.95),
+        0 0 25px rgba(179,31,53,.18);
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero h1 .accent {
+    color: #e83d55;
+}
+
+.hero-meta {
+    margin-bottom: 21px;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: .13em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.hero-meta span {
+    color: var(--green);
+}
+
+.hero-intro {
+    max-width: 620px;
+
+    color: #b8babc;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    text-shadow: 0 2px 10px #000;
+}
+
+.hero-intro strong {
+    color: #fff;
+}
+
+
+/* ARTICLE */
+
+.article {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 78px 28px 100px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
+
+.kicker {
+    margin-bottom: 9px;
+
+    color: var(--red2);
+
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: .21em;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 18px;
+
+    font-size: clamp(30px, 4.4vw, 47px);
+    line-height: 1;
+
+    font-weight: 950;
+    letter-spacing: -.035em;
+}
+
+.lead {
+    max-width: 900px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+    line-height: 1.82;
+}
+
+.lead strong {
+    color: #fff;
+}
+
+
+/* KEY STATS */
+
+.stats-grid {
+    margin-top: 31px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 12px;
+}
+
+.stat-card {
+    padding: 24px 20px;
+
+    border: 1px solid rgba(237,63,89,.17);
+    border-radius: 9px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(179,31,53,.09),
+            transparent 45%
+        ),
+        rgba(13,15,17,.94);
+}
+
+.stat-label {
+    margin-bottom: 10px;
+
+    color: #797d80;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.stat-value {
+    margin-bottom: 7px;
+
+    color: #fff;
+
+    font-size: 25px;
+    font-weight: 950;
+    line-height: 1.05;
+}
+
+.stat-card.highlight .stat-value {
+    color: #ff7186;
+}
+
+.stat-card.crit .stat-value {
+    color: var(--green2);
+}
+
+.stat-note {
+    color: #8f9397;
+
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+/* COMPARISON */
+
+.compare-grid {
+    margin-top: 31px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 15px;
+}
+
+.talisman-card {
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 11px;
+
+    background: rgba(13,15,17,.95);
+}
+
+.talisman-card.verdict {
+    border-color: rgba(237,63,89,.30);
+}
+
+.talisman-head {
+    padding: 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.talisman-type {
+    margin-bottom: 8px;
+
+    color: #7c8084;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.talisman-card.verdict .talisman-type {
+    color: #ff7186;
+}
+
+.talisman-head h3 {
+    font-size: 23px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.talisman-body {
+    padding: 24px 25px;
+}
+
+.compare-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.compare-row:last-child {
+    border-bottom: 0;
+}
+
+.compare-label {
+    color: #8d9195;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.compare-value {
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 950;
+    text-align: right;
+}
+
+.compare-value.red {
+    color: #ff7186;
+}
+
+.compare-value.green {
+    color: var(--green2);
+}
+
+
+/* TRADEOFF */
+
+.tradeoff {
+    margin-top: 22px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 11px;
+}
+
+.trade-card {
+    padding: 22px;
+
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 8px;
+
+    background: rgba(255,255,255,.018);
+}
+
+.trade-card h4 {
+    margin-bottom: 9px;
+
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.trade-card p {
+    color: #999da1;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.trade-card.attack {
+    border-color: rgba(237,63,89,.18);
+}
+
+.trade-card.crit {
+    border-color: rgba(50,214,160,.18);
+}
+
+.trade-card.defense {
+    border-color: rgba(220,225,229,.13);
+}
+
+
+/* EXPLANATION */
+
+.info-box {
+    margin-top: 28px;
+
+    padding: 29px;
+
+    border: 1px solid rgba(50,214,160,.18);
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(50,214,160,.06),
+            transparent 42%
+        ),
+        rgba(13,15,17,.94);
+}
+
+.info-box h3 {
+    margin-bottom: 13px;
+
+    color: var(--green2);
+
+    font-size: 18px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.info-box p {
+    color: #a4a8ac;
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.info-box p + p {
+    margin-top: 12px;
+}
+
+.info-box strong {
+    color: #fff;
+}
+
+
+/* KIT */
+
+.kit-grid {
+    margin-top: 31px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 12px;
+}
+
+.kit-card {
+    padding: 23px;
+
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 9px;
+
+    background: rgba(13,15,17,.92);
+}
+
+.kit-name {
+    margin-bottom: 10px;
+
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.kit-card p {
+    color: #999da1;
+
+    font-size: 12px;
+    line-height: 1.72;
+}
+
+
+/* RELICS */
+
+.relic-stack {
+    margin-top: 31px;
+
+    display: grid;
+    gap: 11px;
+}
+
+.relic {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 21px;
+
+    align-items: start;
+
+    padding: 22px;
+
+    border: 1px solid rgba(255,255,255,.07);
+    border-radius: 9px;
+
+    background: rgba(13,15,17,.92);
+}
+
+.relic-level {
+    color: var(--gold);
+
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.relic h3 {
+    margin-bottom: 7px;
+
+    font-size: 15px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.relic p {
+    color: #999da1;
+
+    font-size: 12px;
+    line-height: 1.72;
+}
+
+.relic.locked {
+    opacity: .65;
+}
+
+
+/* BATTLES */
+
+.battle-grid {
+    margin-top: 31px;
+
+    display: grid;
+    gap: 15px;
+}
+
+.battle {
+    overflow: hidden;
+
+    border: 1px solid rgba(255,255,255,.075);
+    border-radius: 10px;
+
+    background: rgba(13,15,17,.94);
+}
+
+.battle-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 23px 25px;
+
+    border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.battle-num {
+    margin-bottom: 7px;
+
+    color: var(--red2);
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.battle-team {
+    font-size: 18px;
+    font-weight: 950;
+}
+
+.damage {
+    text-align: right;
+}
+
+.damage strong {
+    display: block;
+
+    color: var(--green2);
+
+    font-size: 27px;
+    font-weight: 950;
+}
+
+.damage span {
+    color: #777b7f;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.battle-body {
+    padding: 23px 25px;
+}
+
+.enemy {
+    margin-bottom: 13px;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 850;
+    line-height: 1.7;
+}
+
+.enemy span {
+    color: #7f8387;
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .10em;
+    text-transform: uppercase;
+}
+
+.battle-body p {
+    color: #9da1a5;
+
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+.result {
+    display: inline-block;
+
+    margin-top: 16px;
+    padding: 7px 9px;
+
+    border: 1px solid rgba(50,214,160,.18);
+    border-radius: 4px;
+
+    background: rgba(50,214,160,.05);
+
+    color: var(--green2);
+
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+
+
+/* VERDICT */
+
+.verdict {
+    padding: 34px;
+
+    border: 1px solid rgba(237,63,89,.26);
+    border-radius: 12px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(179,31,53,.11),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(50,214,160,.055),
+            transparent 40%
+        ),
+        rgba(13,15,17,.96);
+}
+
+.verdict h2 {
+    margin-bottom: 17px;
+
+    font-size: clamp(29px,4vw,43px);
+    font-weight: 950;
+    letter-spacing: -.035em;
+}
+
+.verdict p {
+    color: #a5a9ad;
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.verdict p + p {
+    margin-top: 13px;
+}
+
+.verdict strong {
+    color: #fff;
+}
+
+
+/* VIDEO */
+
+.video-frame {
+    position: relative;
+
+    width: 100%;
+    padding-top: 56.25%;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(237,63,89,.25);
+    border-radius: 12px;
+
+    background: #000;
+
+    box-shadow: 0 28px 70px rgba(0,0,0,.40);
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 20px;
+
+    border-top: 1px solid rgba(237,63,89,.08);
+
+    background: #020303;
+
+    color: #606468;
+
+    text-align: center;
+
+    font-size: 10px;
+    letter-spacing: .05em;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .compare-grid,
+    .tradeoff,
+    .kit-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-bg {
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(3,4,5,.04) 0%,
+                rgba(3,4,5,.30) 43%,
+                #050607 100%
+            ),
+            url("Images/HWA-All/crow-new-talisman-full-analysis.png");
+
+        background-position: 30% center;
+    }
+
+    .hero-shell {
+        justify-content: flex-start;
+        padding: 310px 20px 55px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .article {
+        padding: 64px 19px 80px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .battle-top {
+        grid-template-columns: 1fr;
+    }
+
+    .damage {
+        text-align: left;
+    }
+
+    .relic {
+        grid-template-columns: 1fr;
+    }
+
+    .verdict {
+        padding: 22px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header class="hero">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                HWA ALL • TALISMAN ANALYSIS
+            </div>
+
+            <h1>
+                <span>CROW</span>
+                <span class="accent">NEW TALISMAN</span>
+            </h1>
+
+            <div class="hero-meta">
+                TALISMAN OF VERDICT
+                <span>•</span>
+                PHYSICAL ATTACK
+                <span>•</span>
+                CRITICAL HIT CHANCE
+            </div>
+
+            <p class="hero-intro">
+                Crow's second Talisman is here.
+                We upgrade it to level 50, compare it directly with
+                <strong>Talisman of Deduction</strong>, examine the new
+                Critical Hit Chance interaction and take the offensive
+                build into its first three battle tests.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="article">
+
+
+<section class="section">
+
+    <div class="kicker">
+        TALISMAN OF VERDICT
+    </div>
+
+    <h2 class="title">
+        The Final Upgrade.
+    </h2>
+
+    <p class="lead">
+        Talisman of Verdict takes Crow in a clearly more aggressive
+        direction. Its main stat is
+        <strong>Physical Attack</strong>, while its additional slots
+        introduce <strong>Physical Crit Hit Chance</strong>.
+    </p>
+
+
+    <div class="stats-grid">
+
+        <article class="stat-card">
+
+            <div class="stat-label">
+                LEVEL
+            </div>
+
+            <div class="stat-value">
+                50
+            </div>
+
+            <div class="stat-note">
+                Complete talisman upgrade.
+            </div>
+
+        </article>
+
+
+        <article class="stat-card highlight">
+
+            <div class="stat-label">
+                LEVELING COST
+            </div>
+
+            <div class="stat-value">
+                18,375
+            </div>
+
+            <div class="stat-note">
+                Mastery Crystals from level 1 to 50.
+            </div>
+
+        </article>
+
+
+        <article class="stat-card highlight">
+
+            <div class="stat-label">
+                MAIN BONUS
+            </div>
+
+            <div class="stat-value">
+                +8,000
+            </div>
+
+            <div class="stat-note">
+                Physical Attack at level 50.
+            </div>
+
+        </article>
+
+
+        <article class="stat-card crit">
+
+            <div class="stat-label">
+                TESTED CRIT ROLLS
+            </div>
+
+            <div class="stat-value">
+                +5,600
+            </div>
+
+            <div class="stat-note">
+                2,200 + 2,200 + 1,200 Physical Crit Hit Chance.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        DIRECT COMPARISON
+    </div>
+
+    <h2 class="title">
+        Deduction vs Verdict.
+    </h2>
+
+    <p class="lead">
+        Both Talismans are level 50, but they support different priorities.
+        The important comparison is between the
+        <strong>complete builds</strong>, not simply the headline
+        stat written on each Talisman.
+    </p>
+
+
+    <div class="compare-grid">
+
+        <article class="talisman-card">
+
+            <div class="talisman-head">
+
+                <div class="talisman-type">
+                    FIRST TALISMAN
+                </div>
+
+                <h3>
+                    Talisman of Deduction
+                </h3>
+
+            </div>
+
+            <div class="talisman-body">
+
+                <div class="compare-row">
+                    <div class="compare-label">Main Bonus</div>
+                    <div class="compare-value">2,000 Agility</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Additional Slots</div>
+                    <div class="compare-value">Armor</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Current Armor Rolls</div>
+                    <div class="compare-value">15,600</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Displayed Physical Attack</div>
+                    <div class="compare-value">≈ 101,489</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Displayed Armor</div>
+                    <div class="compare-value">≈ 43,833</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Primary Direction</div>
+                    <div class="compare-value">Protection / Balance</div>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="talisman-card verdict">
+
+            <div class="talisman-head">
+
+                <div class="talisman-type">
+                    SECOND TALISMAN
+                </div>
+
+                <h3>
+                    Talisman of Verdict
+                </h3>
+
+            </div>
+
+            <div class="talisman-body">
+
+                <div class="compare-row">
+                    <div class="compare-label">Main Bonus</div>
+                    <div class="compare-value red">8,000 Physical Attack</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Additional Slots</div>
+                    <div class="compare-value green">Physical Crit Hit Chance</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Current Crit Rolls</div>
+                    <div class="compare-value green">5,600</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Displayed Physical Attack</div>
+                    <div class="compare-value red">≈ 103,609</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Displayed Armor</div>
+                    <div class="compare-value">≈ 23,659</div>
+                </div>
+
+                <div class="compare-row">
+                    <div class="compare-label">Displayed Crit Rating</div>
+                    <div class="compare-value green">6,440</div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <div class="tradeoff">
+
+        <article class="trade-card attack">
+
+            <h4>
+                +2,120 Physical Attack
+            </h4>
+
+            <p>
+                In this complete build comparison, Verdict increases
+                Crow's displayed Physical Attack from approximately
+                101,489 to 103,609.
+            </p>
+
+        </article>
+
+
+        <article class="trade-card crit">
+
+            <h4>
+                Critical Hits Unlocked
+            </h4>
+
+            <p>
+                Verdict introduces Physical Crit Hit Chance directly,
+                reaching a displayed rating of 6,440 in this tested build.
+            </p>
+
+        </article>
+
+
+        <article class="trade-card defense">
+
+            <h4>
+                Armor Tradeoff
+            </h4>
+
+            <p>
+                Armor falls from approximately 43,833 to 23,659.
+                Deduction therefore retains a major physical
+                survivability advantage.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        WHY ONLY +2,120?
+    </div>
+
+    <h2 class="title">
+        Compare the Complete Build.
+    </h2>
+
+    <div class="info-box">
+
+        <h3>
+            8,000 Physical Attack Does Not Mean +8,000 Final Attack
+        </h3>
+
+        <p>
+            Talisman of Verdict gives Crow 8,000 Physical Attack as its
+            main bonus. But it replaces Talisman of Deduction, which already
+            contributes to Crow's attack through its
+            <strong>2,000 Agility.</strong>
+        </p>
+
+        <p>
+            That is why the actual displayed difference in this build is
+            approximately <strong>+2,120 Physical Attack</strong>,
+            rather than +8,000.
+        </p>
+
+        <p>
+            Health and Armor Penetration remain unchanged in this comparison.
+            The real decision is therefore centered on
+            <strong>offense and Critical Hit Chance versus considerably
+            stronger physical protection.</strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        CRITICAL HIT CHANCE
+    </div>
+
+    <h2 class="title">
+        The Most Important New Stat.
+    </h2>
+
+    <p class="lead">
+        With Verdict equipped, Crow's displayed Physical Crit Hit Chance
+        reaches <strong>6,440</strong> in this build.
+        The Talisman's tested raw rolls contribute 5,600 of that value.
+    </p>
+
+
+    <div class="info-box">
+
+        <h3>
+            Rating — Not a Fixed Percentage
+        </h3>
+
+        <p>
+            Physical Crit Hit Chance is a
+            <strong>rating</strong>, not a fixed percentage.
+            Crow's actual probability of landing a critical hit depends
+            on the target's main stat.
+        </p>
+
+        <p>
+            Different opponents can therefore produce different
+            critical-hit probabilities.
+        </p>
+
+    </div>
+
+
+    <div class="info-box">
+
+        <h3>
+            Confirmed Sebastian Interaction
+        </h3>
+
+        <p>
+            Sebastian's <strong>Hunter's Tune</strong> increases allies'
+            Critical Hit Chance for five seconds, but excludes heroes who
+            do not possess that stat.
+        </p>
+
+        <p>
+            Verdict now gives Crow Physical Crit Hit Chance directly.
+            That makes Crow <strong>eligible for Hunter's Tune</strong>
+            while Verdict is equipped.
+        </p>
+
+        <p>
+            This demonstrates why the value of the new stat goes beyond
+            the number displayed on Crow's character sheet: it can also
+            change which support effects he can benefit from.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        CROW'S KIT
+    </div>
+
+    <h2 class="title">
+        Why Physical Attack Matters.
+    </h2>
+
+    <p class="lead">
+        Crow combines physical pressure with Silence.
+        Physical Attack appears throughout his damage formulas, so the
+        offensive direction of Verdict supports several parts of his kit.
+    </p>
+
+
+    <div class="kit-grid">
+
+        <article class="kit-card">
+            <div class="kit-name">Silent Judgment</div>
+            <p>
+                Attacks enemies in front.
+            </p>
+        </article>
+
+        <article class="kit-card">
+            <div class="kit-name">Holy Grenade</div>
+            <p>
+                Targets the enemy with the highest Intelligence and
+                deals area damage.
+            </p>
+        </article>
+
+        <article class="kit-card">
+            <div class="kit-name">Swift Retribution</div>
+            <p>
+                Speeds up Crow's skill recharge and gives his basic
+                attacks an additional hit against silenced enemies.
+            </p>
+        </article>
+
+        <article class="kit-card">
+            <div class="kit-name">Final Verdict</div>
+            <p>
+                Adds damage when Crow reapplies Silence to an enemy
+                already affected by it, while extending the effect.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        TEST CONDITIONS
+    </div>
+
+    <h2 class="title">
+        Crow Relics — Level 20.
+    </h2>
+
+    <p class="lead">
+        These first battles were performed with Crow's Relics developed
+        through <strong>level 20</strong>. His level 30 ability,
+        Confinement, remains locked.
+    </p>
+
+
+    <div class="relic-stack">
+
+        <article class="relic">
+
+            <div class="relic-level">
+                BASE RELIC
+            </div>
+
+            <div>
+                <h3>Witch Hunt</h3>
+                <p>
+                    Adds another attack against the enemy with the highest
+                    Intelligence. It applies Silence or spreads an existing
+                    Silence to nearby enemies.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="relic">
+
+            <div class="relic-level">
+                LEVEL 10
+            </div>
+
+            <div>
+                <h3>Silent Judgment Upgrade</h3>
+                <p>
+                    Silent Judgment silences all enemies for eight seconds.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="relic">
+
+            <div class="relic-level">
+                LEVEL 20
+            </div>
+
+            <div>
+                <h3>Holy Grenade Upgrade</h3>
+                <p>
+                    Holy Grenade gains damaging fragments that hit
+                    silenced enemies and enemies around them,
+                    extending Silence on affected targets.
+                </p>
+            </div>
+
+        </article>
+
+
+        <article class="relic locked">
+
+            <div class="relic-level">
+                LEVEL 30 • LOCKED
+            </div>
+
+            <div>
+                <h3>Confinement</h3>
+                <p>
+                    Not active during these tests.
+                </p>
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        FIRST BATTLE TESTS
+    </div>
+
+    <h2 class="title">
+        Three Teams. Three Wins.
+    </h2>
+
+    <p class="lead">
+        These are the first examples with Talisman of Verdict.
+        They are promising results, but broader testing with repeated
+        attempts, more opponents and direct one-variable Talisman
+        comparisons is still needed.
+    </p>
+
+
+    <div class="battle-grid">
+
+
+        <article class="battle">
+
+            <div class="battle-top">
+
+                <div>
+                    <div class="battle-num">BATTLE 01</div>
+                    <div class="battle-team">
+                        Crow • Byrna • Judge • Julius • Guus
+                    </div>
+                </div>
+
+                <div class="damage">
+                    <strong>≈ 5.47M</strong>
+                    <span>CROW DAMAGE</span>
+                </div>
+
+            </div>
+
+            <div class="battle-body">
+
+                <div class="enemy">
+                    <span>VS</span><br>
+                    Satori • Byrna • Somna • Guus • Lian
+                </div>
+
+                <p>
+                    A sustained fight built around shields, healing and
+                    repeated skill activations gives Crow time to apply
+                    Silence and maintain physical pressure.
+                </p>
+
+                <p>
+                    Crow leads the team's damage and all five allies
+                    survive the battle.
+                </p>
+
+                <span class="result">
+                    WIN • 5 ALLIES SURVIVE
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="battle">
+
+            <div class="battle-top">
+
+                <div>
+                    <div class="battle-num">BATTLE 02</div>
+                    <div class="battle-team">
+                        Crow • Tristan • Byrna • Guus • Fafnir
+                    </div>
+                </div>
+
+                <div class="damage">
+                    <strong>≈ 7.78M</strong>
+                    <span>CROW DAMAGE</span>
+                </div>
+
+            </div>
+
+            <div class="battle-body">
+
+                <div class="enemy">
+                    <span>VS</span><br>
+                    Somna • Julius • Polaris • Phobos • Guus
+                </div>
+
+                <p>
+                    A longer defensive exchange gives us another environment
+                    for testing Crow's repeated Silent Judgment activations
+                    and sustained contribution.
+                </p>
+
+                <p>
+                    Crow again records the highest damage on our side,
+                    with all five allies surviving.
+                </p>
+
+                <span class="result">
+                    WIN • 5 ALLIES SURVIVE
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="battle">
+
+            <div class="battle-top">
+
+                <div>
+                    <div class="battle-num">BATTLE 03</div>
+                    <div class="battle-team">
+                        Crow • Yasmine • Byrna • Octavia • Guus
+                    </div>
+                </div>
+
+                <div class="damage">
+                    <strong>≈ 7.75M</strong>
+                    <span>CROW DAMAGE</span>
+                </div>
+
+            </div>
+
+            <div class="battle-body">
+
+                <div class="enemy">
+                    <span>VS</span><br>
+                    Cleaver • Kendle • Dorian • Byrna • Aidan
+                </div>
+
+                <p>
+                    Crow contributes alongside another strong damage dealer
+                    against a Kendle composition.
+                </p>
+
+                <p>
+                    Crow finishes at approximately 7.75M damage while
+                    Yasmine follows closely at approximately
+                    <strong style="color:#fff;">7.59M</strong>.
+                    All five allies survive again.
+                </p>
+
+                <span class="result">
+                    WIN • 5 ALLIES SURVIVE
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="verdict">
+
+        <div class="kicker">
+            FIRST VERDICT
+        </div>
+
+        <h2>
+            Which Crow Talisman Should You Use?
+        </h2>
+
+        <p>
+            <strong>Talisman of Verdict</strong> gives Crow a clear
+            offensive upgrade path. More Physical Attack strengthens
+            the damage formulas across his kit, while Physical Crit Hit
+            Chance introduces a new offensive stat and enables confirmed
+            interactions with support buffs that require that stat.
+        </p>
+
+        <p>
+            For an <strong>aggressive Crow build</strong>, Verdict is the
+            preferred choice after these first tests.
+        </p>
+
+        <p>
+            But Talisman of Deduction has not become useless.
+            Its Agility and substantially higher Armor remain valuable
+            when Crow needs more physical protection.
+        </p>
+
+        <p>
+            The correct choice therefore depends on what the battle demands:
+            <strong>Verdict for greater offensive potential;
+            Deduction when physical survivability matters more.</strong>
+        </p>
+
+        <p>
+            These are still first examples. More teams, opponents,
+            repeated attempts and direct Talisman comparisons are needed
+            to measure the upgrade's contribution more precisely.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="kicker">
+        WATCH THE FULL ANALYSIS
+    </div>
+
+    <h2 class="title">
+        Crow's New Talisman in Action.
+    </h2>
+
+    <p
+        class="lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the complete Gods of Alliance analysis for the level 50
+        upgrade, Deduction vs Verdict comparison, Critical Hit Chance
+        explanation and all three first battle tests.
+    </p>
+
+
+    <div class="video-frame">
+
+        <iframe
+            src="https://www.youtube.com/embed/YVHeu8d7cPc"
+            title="Crow New Talisman Full Analysis - Gods of Alliance"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+
+<script src="goa-global.js"></script>
+
+
+</body>
+</html>
