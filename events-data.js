@@ -1,5 +1,19 @@
 window.GOA_EVENTS = [
   {
+    id: "bountiful-roads",
+    title: "Bountiful Roads Event Guide",
+    tag: "EVENT GUIDE",
+    status: "current",
+    order: 6,
+    image: "Images/Events/bountiful-roads-event-guide.png",
+    url: "bountiful-roads-event-guide.html",
+    dateLabel: "OCTOBER 5 — OCTOBER 11",
+    description:
+      "Trade Routes Part 3: explore all six Bountiful Roads tabs, connector rewards from Roads Unlocked and Grand Caravan, repeatable speedup quests and the final Event Coin totals.",
+    button: "OPEN EVENT GUIDE →"
+  },
+
+  {
     id: "grand-caravan",
     title: "Grand Caravan Event Guide",
     tag: "EVENT GUIDE",
