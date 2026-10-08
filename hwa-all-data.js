@@ -1,4 +1,19 @@
+
 window.HWA_ALL_ARTICLES = [
+  {
+    id: "crow-talisman-analysis",
+    title: "CROW TALISMAN ANALYSIS",
+    type: "DETAILED TALISMAN ANALYSIS",
+    category: "talismans",
+    date: "2026-10-08",
+    image: "Images/HWA-All/crow-talisman-analysis.png",
+    url: "crow-talisman-analysis.html",
+    subtitle: "DEDUCTION VS VERDICT • PHYSICAL ATTACK • CRITICAL HIT CHANCE",
+    description:
+      "A detailed comparison of Crow's Talisman of Deduction and Talisman of Verdict. Explore Level 50 attributes, Armor versus Critical Hit Chance, Physical Attack scaling, all four skills and our final recommendation.",
+    button: "READ ANALYSIS →"
+  },
+
   {
     id: "crow-new-talisman-full-analysis",
     title: "CROW NEW TALISMAN",
