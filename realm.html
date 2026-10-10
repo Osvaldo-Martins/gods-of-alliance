@@ -1,0 +1,631 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Realm Guides | Gods of Alliance</title>
+
+  <meta name="description" content="Explore Hero Wars Alliance Realm guides, boss strategies, rally compositions, troop development and detailed battle mechanics at Gods of Alliance.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.godsofalliancehwa.com/realm.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Gods of Alliance">
+  <meta property="og:title" content="Realm Guides | Gods of Alliance">
+  <meta property="og:description" content="Hero Wars Alliance Realm Boss guides, rally strategies, troop development and battle analysis.">
+  <meta property="og:url" content="https://www.godsofalliancehwa.com/realm.html">
+  <meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Realm/realm-boss-level-30.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Realm Guides | Gods of Alliance">
+  <meta name="twitter:description" content="Explore Realm strategies and boss guides for Hero Wars Alliance.">
+  <meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Realm/realm-boss-level-30.jpg">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: #070707;
+    }
+
+    body {
+      min-height: 100vh;
+      color: #ffffff;
+      background: #070707;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    /* HEADER */
+
+    .site-header {
+      position: relative;
+      z-index: 100;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      padding: 0 32px;
+      background: rgba(3,3,3,.97);
+      border-bottom: 1px solid rgba(233,169,35,.10);
+    }
+
+    .header-inner {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 950;
+      letter-spacing: .035em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand span {
+      color: #e9a923;
+    }
+
+    /* REALM HERO */
+
+    .realm-hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(163,105,255,.15);
+      background:
+        radial-gradient(
+          ellipse at 78% 30%,
+          rgba(111,53,207,.24),
+          transparent 43%
+        ),
+        radial-gradient(
+          ellipse at 15% 85%,
+          rgba(233,169,35,.075),
+          transparent 45%
+        ),
+        linear-gradient(
+          140deg,
+          #100b19 0%,
+          #09080d 48%,
+          #050505 100%
+        );
+    }
+
+    .realm-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4,4,5,.90),
+          rgba(4,4,5,.30),
+          rgba(4,4,5,.55)
+        ),
+        url("Images/Realm/realm-boss-level-30.jpg");
+      background-position: center;
+      background-size: cover;
+      opacity: .23;
+      pointer-events: none;
+    }
+
+    .realm-hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 170px;
+      background: linear-gradient(transparent,#070707);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 110px 32px 105px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      align-items: center;
+      margin-bottom: 38px;
+      color: #aaa0b8;
+      font-size: 10px;
+      font-weight: 850;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .breadcrumb a {
+      color: #c0b4d1;
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+      color: #e9a923;
+    }
+
+    .breadcrumb span {
+      color: #b88cff;
+    }
+
+    .hero-kicker {
+      margin-bottom: 17px;
+      color: #c49aff;
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      margin-bottom: 22px;
+      font-size: clamp(64px,11vw,138px);
+      font-weight: 950;
+      line-height: .9;
+      letter-spacing: -.075em;
+      text-transform: uppercase;
+      text-shadow: 0 10px 40px rgba(0,0,0,.55);
+    }
+
+    .hero-title span {
+      color: #c39aff;
+    }
+
+    .hero-description {
+      max-width: 690px;
+      color: #b8b0c1;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-description strong {
+      color: #fff;
+    }
+
+    .hero-accent {
+      width: 90px;
+      height: 3px;
+      margin-top: 30px;
+      background: linear-gradient(
+        90deg,
+        #e9a923,
+        #ae73ff
+      );
+      border-radius: 5px;
+    }
+
+    /* MAIN CONTENT */
+
+    .content-section {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 85px 32px 115px;
+    }
+
+    .section-kicker {
+      margin-bottom: 11px;
+      color: #c49aff;
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-bottom: 16px;
+      color: #fff;
+      font-size: clamp(30px,4.5vw,48px);
+      font-weight: 950;
+      letter-spacing: -.04em;
+      line-height: 1.1;
+    }
+
+    .section-description {
+      max-width: 760px;
+      margin-bottom: 39px;
+      color: #99929f;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* GUIDE GRID */
+
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(3,minmax(0,1fr));
+      gap: 23px;
+    }
+
+    .guide-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(177,113,255,.20);
+      border-radius: 12px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(23,16,34,.95),
+          rgba(10,9,13,.98)
+        );
+      text-decoration: none;
+      transition:
+        transform .23s ease,
+        border-color .23s ease,
+        box-shadow .23s ease;
+    }
+
+    .guide-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(190,140,255,.65);
+      box-shadow: 0 22px 55px rgba(87,36,143,.18);
+    }
+
+    .guide-image-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9;
+      background: #17101d;
+    }
+
+    .guide-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .3s ease;
+    }
+
+    .guide-card:hover .guide-image {
+      transform: scale(1.045);
+    }
+
+    .guide-image-wrap::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 55%,
+        rgba(0,0,0,.35)
+      );
+      pointer-events: none;
+    }
+
+    .guide-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 25px;
+    }
+
+    .guide-category {
+      margin-bottom: 12px;
+      color: #c69dff;
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .guide-title {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 950;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+      text-transform: uppercase;
+    }
+
+    .guide-description {
+      margin-bottom: 26px;
+      color: #aaa2b0;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    .guide-link {
+      margin-top: auto;
+      color: #e9a923;
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .guide-card:hover .guide-link {
+      color: #fff;
+    }
+
+    /* MORE GUIDES */
+
+    .future-note {
+      margin-top: 45px;
+      padding: 27px 30px;
+      border: 1px solid rgba(233,169,35,.12);
+      border-radius: 10px;
+      background: rgba(233,169,35,.025);
+    }
+
+    .future-note h3 {
+      margin-bottom: 9px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .future-note p {
+      color: #938d97;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+
+    /* BOTTOM NAV */
+
+    .bottom-navigation {
+      border-top: 1px solid rgba(233,169,35,.10);
+      background: rgba(0,0,0,.30);
+    }
+
+    .bottom-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 40px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .bottom-inner p {
+      color: #99929f;
+      font-size: 13px;
+    }
+
+    .back-home {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border: 1px solid rgba(233,169,35,.45);
+      border-radius: 6px;
+      color: #e9a923;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transition: all .2s ease;
+    }
+
+    .back-home:hover {
+      background: #e9a923;
+      color: #070707;
+    }
+
+    footer {
+      padding: 30px 20px;
+      border-top: 1px solid rgba(233,169,35,.07);
+      color: #68616c;
+      background: #030303;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1050px) {
+      .guides-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width: 700px) {
+      .site-header {
+        min-height: 70px;
+        padding: 0 20px;
+      }
+
+      .brand {
+        font-size: 13px;
+      }
+
+      .hero-inner {
+        padding: 80px 22px 75px;
+      }
+
+      .hero-title {
+        font-size: clamp(55px,15vw,90px);
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .content-section {
+        padding: 65px 22px 80px;
+      }
+
+      .guides-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bottom-inner {
+        padding: 32px 22px;
+      }
+
+      .guide-title {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- GLOBAL HEADER -->
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        GODS OF <span>ALLIANCE</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- REALM HERO -->
+
+  <section class="realm-hero">
+    <div class="hero-inner">
+
+      <div class="breadcrumb">
+        <a href="index.html">HOME</a>
+        <span>›</span>
+        <span>REALM GUIDES</span>
+      </div>
+
+      <div class="hero-kicker">
+        HERO WARS ALLIANCE DATABASE
+      </div>
+
+      <h1 class="hero-title">
+        REALM<span>.</span>
+      </h1>
+
+      <p class="hero-description">
+        Explore the <strong>Gods of Alliance Realm Database</strong>.
+        Discover detailed Realm Boss strategies, rally compositions,
+        troop development and battle mechanics designed to help
+        you make smarter decisions across Dominion.
+      </p>
+
+      <div class="hero-accent"></div>
+
+    </div>
+  </section>
+
+  <!-- REALM GUIDE LIBRARY -->
+
+  <main class="content-section">
+
+    <div class="section-kicker">
+      GODS OF ALLIANCE / REALM
+    </div>
+
+    <h2 class="section-title">
+      Realm Guides &amp; Strategies
+    </h2>
+
+    <p class="section-description">
+      Browse our Realm guides and learn how different Hero
+      compositions, troop development and combat mechanics
+      can influence the outcome of powerful boss encounters.
+    </p>
+
+    <div class="guides-grid">
+
+      <!-- FIRST REALM GUIDE -->
+
+      <a
+        class="guide-card"
+        href="realm-boss-level-30.html"
+        aria-label="Read Realm Boss Level 30 guide"
+      >
+
+        <div class="guide-image-wrap">
+          <img
+            class="guide-image"
+            src="Images/Realm/realm-boss-level-30.jpg"
+            alt="Realm Boss Level 30 battle guide"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="guide-content">
+
+          <div class="guide-category">
+            REALM / BOSS STRATEGY
+          </div>
+
+          <h3 class="guide-title">
+            Realm Boss Level 30
+          </h3>
+
+          <p class="guide-description">
+            Discover how Julius, Qing Mao, Jhu, Mojo and Eva
+            can combine percentage-based damage, Armor reduction
+            and team bonuses to challenge a Level 30 Realm Boss,
+            even when Realm Skills are still developing.
+          </p>
+
+          <div class="guide-link">
+            READ FULL GUIDE →
+          </div>
+
+        </div>
+      </a>
+
+    </div>
+
+    <div class="future-note">
+      <h3>More Realm Guides Coming</h3>
+      <p>
+        The Gods of Alliance Realm Database will continue
+        expanding with new strategies, detailed analyses
+        and practical guides.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- BOTTOM NAVIGATION -->
+
+  <section class="bottom-navigation">
+    <div class="bottom-inner">
+      <p>
+        Explore more Gods of Alliance guides and strategies.
+      </p>
+
+      <a class="back-home" href="index.html">
+        ← BACK TO HOME
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+  </footer>
+
+  <!-- GLOBAL MENU -->
+
+  <script src="goa-global.js"></script>
+
+</body>
+</html>
