@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,28 +7,24 @@
 
 <title>Gods of Alliance | Hero Wars Alliance Guides</title>
 
-<!-- SEO -->
-<meta name="description" content="Gods of Alliance provides Hero Wars Alliance hero guides, team strategies, Titan guides, tier lists, news, events and practical information to help players make smarter decisions.">
+<meta name="description" content="Gods of Alliance provides Hero Wars Alliance hero guides, team strategies, Titan guides, Realm guides, tier lists, news, events and practical information to help players make smarter decisions.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.godsofalliancehwa.com/">
 
-<!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="Gods of Alliance | Hero Wars Alliance Guides">
-<meta property="og:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, tier lists, news, events and practical strategies.">
+<meta property="og:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, Realm, tier lists, news, events and practical strategies.">
 <meta property="og:url" content="https://www.godsofalliancehwa.com/">
 <meta property="og:image" content="https://www.godsofalliancehwa.com/goa-banner.jpg">
 <meta property="og:image:alt" content="Gods of Alliance - Hero Wars Alliance Guides">
 
-<!-- TWITTER / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gods of Alliance | Hero Wars Alliance Guides">
-<meta name="twitter:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, tier lists, news, events and practical strategies.">
+<meta name="twitter:description" content="Hero Wars Alliance guides, hero builds, best teams, Titans, Realm, tier lists, news, events and practical strategies.">
 <meta name="twitter:image" content="https://www.godsofalliancehwa.com/goa-banner.jpg">
 
 <style>
-
 /* =========================================================
    BASE
    ========================================================= */
@@ -57,35 +54,15 @@ html {
 
 body {
     min-height: 100vh;
-
     background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(245, 169, 0, 0.08),
-            transparent 30%
-        ),
-        linear-gradient(
-            180deg,
-            #080704 0%,
-            #050504 38%,
-            #030303 100%
-        );
-
+        radial-gradient(circle at 50% 0%, rgba(245,169,0,.08), transparent 30%),
+        linear-gradient(180deg,#080704 0%,#050504 38%,#030303 100%);
     color: #ffffff;
-
-    font-family:
-        Inter,
-        Arial,
-        Helvetica,
-        sans-serif;
-
+    font-family: Inter, Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
 
-a {
-    color: inherit;
-}
-
+a { color: inherit; }
 
 /* =========================================================
    TOP BAR
@@ -93,28 +70,19 @@ a {
 
 .site-header {
     min-height: 78px;
-
     display: flex;
     align-items: center;
-
     padding: 0 32px;
-
     position: relative;
     z-index: 100;
-
-    background:
-        rgba(3, 3, 3, 0.97);
-
-    border-bottom:
-        1px solid rgba(245, 169, 0, 0.07);
+    background: rgba(3,3,3,.97);
+    border-bottom: 1px solid rgba(245,169,0,.07);
 }
 
 .header-inner {
     width: 100%;
     max-width: 1400px;
-
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,19 +90,13 @@ a {
 
 .brand {
     color: #ffffff;
-
     font-size: 16px;
     font-weight: 950;
-
-    letter-spacing: 0.035em;
-
+    letter-spacing: .035em;
     white-space: nowrap;
 }
 
-.brand span {
-    color: var(--gold);
-}
-
+.brand span { color: var(--gold); }
 
 /* =========================================================
    CINEMATIC HERO
@@ -142,222 +104,147 @@ a {
 
 .home-hero {
     position: relative;
-
     min-height: 720px;
-
     overflow: hidden;
-
     display: flex;
     align-items: flex-end;
-
-    border-bottom:
-        1px solid rgba(245, 169, 0, 0.10);
-
+    border-bottom: 1px solid rgba(245,169,0,.10);
     background: #050505;
 }
 
 .hero-background {
     position: absolute;
     inset: 0;
-
     background-image:
-        linear-gradient(
-            90deg,
-            rgba(3, 3, 3, 0.96) 0%,
-            rgba(3, 3, 3, 0.78) 28%,
-            rgba(3, 3, 3, 0.23) 62%,
-            rgba(3, 3, 3, 0.72) 100%
-        ),
-        linear-gradient(
-            180deg,
-            rgba(3, 3, 3, 0.10) 0%,
-            rgba(3, 3, 3, 0.18) 45%,
-            #050504 100%
-        ),
+        linear-gradient(90deg,
+            rgba(3,3,3,.96) 0%,
+            rgba(3,3,3,.78) 28%,
+            rgba(3,3,3,.23) 62%,
+            rgba(3,3,3,.72) 100%),
+        linear-gradient(180deg,
+            rgba(3,3,3,.10) 0%,
+            rgba(3,3,3,.18) 45%,
+            #050504 100%),
         url("goa-banner.jpg");
-
     background-size: cover;
     background-position: center;
-
     transform: scale(1.015);
 }
 
 .hero-background::after {
     content: "";
-
     position: absolute;
     inset: 0;
-
-    background:
-        radial-gradient(
-            circle at 64% 43%,
-            rgba(245, 169, 0, 0.06),
-            transparent 31%
-        );
-
+    background: radial-gradient(
+        circle at 64% 43%,
+        rgba(245,169,0,.06),
+        transparent 31%
+    );
     pointer-events: none;
 }
 
 .hero-shell {
     width: 100%;
     max-width: 1400px;
-
     margin: 0 auto;
-
-    padding:
-        125px
-        32px
-        88px;
-
+    padding: 125px 32px 88px;
     position: relative;
     z-index: 2;
 }
 
-.hero-content {
-    width: min(720px, 100%);
-}
+.hero-content { width: min(720px,100%); }
 
 .hero-eyebrow {
     margin-bottom: 18px;
-
     color: var(--gold-bright);
-
     font-size: 11px;
     font-weight: 950;
-
-    letter-spacing: 0.27em;
-
+    letter-spacing: .27em;
     text-transform: uppercase;
 }
 
 .home-hero h1 {
     max-width: 760px;
-
     margin-bottom: 24px;
-
-    font-size:
-        clamp(53px, 7vw, 92px);
-
-    line-height: 0.91;
-
+    font-size: clamp(53px,7vw,92px);
+    line-height: .91;
     font-weight: 950;
-
-    letter-spacing: -0.055em;
-
-    text-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.78);
+    letter-spacing: -.055em;
+    text-shadow: 0 10px 35px rgba(0,0,0,.78);
 }
 
 .home-hero h1 span {
     display: block;
-
     color: var(--gold-bright);
 }
 
 .hero-copy {
     max-width: 640px;
-
     margin-bottom: 31px;
-
     color: #c3beb5;
-
     font-size: 16px;
-
     line-height: 1.75;
-
-    text-shadow:
-        0 2px 10px #000000;
+    text-shadow: 0 2px 10px #000;
 }
 
-.hero-copy strong {
-    color: #ffffff;
-}
+.hero-copy strong { color: #fff; }
 
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
-
     gap: 12px;
 }
 
 .primary-button,
 .secondary-button {
     min-height: 51px;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
-    padding:
-        0
-        22px;
-
+    padding: 0 22px;
     border-radius: 5px;
-
     text-decoration: none;
-
     font-size: 10px;
     font-weight: 950;
-
-    letter-spacing: 0.12em;
-
+    letter-spacing: .12em;
     text-transform: uppercase;
-
     transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        background 0.2s ease,
-        color 0.2s ease;
+        transform .2s ease,
+        border-color .2s ease,
+        background .2s ease,
+        color .2s ease;
 }
 
 .primary-button {
-    border:
-        1px solid var(--gold);
-
-    background:
-        linear-gradient(
-            180deg,
-            var(--gold-bright),
-            #e79c09
-        );
-
+    border: 1px solid var(--gold);
+    background: linear-gradient(
+        180deg,var(--gold-bright),#e79c09
+    );
     color: #090603;
-
-    box-shadow:
-        0 10px 30px rgba(245, 169, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(245,169,0,.12);
 }
 
 .secondary-button {
-    border:
-        1px solid rgba(255, 255, 255, 0.18);
-
-    background:
-        rgba(8, 8, 8, 0.70);
-
-    color: #ffffff;
-
+    border: 1px solid rgba(255,255,255,.18);
+    background: rgba(8,8,8,.70);
+    color: #fff;
     backdrop-filter: blur(5px);
 }
 
 .primary-button:hover,
 .secondary-button:hover {
-    transform:
-        translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .primary-button:hover {
-    background: #ffffff;
-
-    border-color: #ffffff;
+    background: #fff;
+    border-color: #fff;
 }
 
 .secondary-button:hover {
-    border-color:
-        rgba(245, 169, 0, 0.65);
-
+    border-color: rgba(245,169,0,.65);
     color: var(--gold-bright);
 }
-
 
 /* =========================================================
    SHARED CONTENT
@@ -366,52 +253,34 @@ a {
 .section {
     width: 100%;
     max-width: 1400px;
-
     margin: 0 auto;
-
-    padding:
-        90px
-        32px;
+    padding: 90px 32px;
 }
 
 .section-kicker {
     margin-bottom: 10px;
-
     color: var(--gold);
-
     font-size: 10px;
     font-weight: 950;
-
-    letter-spacing: 0.22em;
-
+    letter-spacing: .22em;
     text-transform: uppercase;
 }
 
 .section-title {
     margin-bottom: 15px;
-
-    color: #ffffff;
-
-    font-size:
-        clamp(32px, 5vw, 50px);
-
+    color: #fff;
+    font-size: clamp(32px,5vw,50px);
     line-height: 1;
-
     font-weight: 950;
-
-    letter-spacing: -0.035em;
+    letter-spacing: -.035em;
 }
 
 .section-description {
     max-width: 700px;
-
     color: #8f8a82;
-
     font-size: 14px;
-
     line-height: 1.75;
 }
-
 
 /* =========================================================
    HERO FINDER
@@ -419,357 +288,226 @@ a {
 
 .hero-finder-section {
     position: relative;
-
-    border-bottom:
-        1px solid rgba(245, 169, 0, 0.07);
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(245, 169, 0, 0.055),
-            transparent 38%
-        );
+    border-bottom: 1px solid rgba(245,169,0,.07);
+    background: radial-gradient(
+        circle at 50% 0%,
+        rgba(245,169,0,.055),
+        transparent 38%
+    );
 }
 
 .hero-finder {
     margin-top: 34px;
-
-    padding:
-        28px;
-
-    border:
-        1px solid rgba(245, 169, 0, 0.19);
-
+    padding: 28px;
+    border: 1px solid rgba(245,169,0,.19);
     border-radius: 12px;
-
-    background:
-        linear-gradient(
-            135deg,
-            rgba(18, 14, 7, 0.96),
-            rgba(8, 8, 7, 0.98)
-        );
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.28);
+    background: linear-gradient(
+        135deg,
+        rgba(18,14,7,.96),
+        rgba(8,8,7,.98)
+    );
+    box-shadow: 0 25px 60px rgba(0,0,0,.28);
 }
 
 .finder-label {
     margin-bottom: 11px;
-
-    color: #ffffff;
-
+    color: #fff;
     font-size: 12px;
     font-weight: 900;
-
-    letter-spacing: 0.08em;
-
+    letter-spacing: .08em;
     text-transform: uppercase;
 }
 
 .finder-box {
     position: relative;
-
     display: flex;
     align-items: center;
-
     min-height: 65px;
-
-    border:
-        1px solid rgba(255, 255, 255, 0.12);
-
+    border: 1px solid rgba(255,255,255,.12);
     border-radius: 8px;
-
-    background:
-        rgba(2, 2, 2, 0.62);
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
+    background: rgba(2,2,2,.62);
+    transition: border-color .2s ease,box-shadow .2s ease;
 }
 
 .finder-box:focus-within {
-    border-color:
-        rgba(245, 169, 0, 0.62);
-
-    box-shadow:
-        0 0 30px rgba(245, 169, 0, 0.045);
+    border-color: rgba(245,169,0,.62);
+    box-shadow: 0 0 30px rgba(245,169,0,.045);
 }
 
 .finder-icon {
     width: 62px;
-
     flex-shrink: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     color: var(--gold-bright);
-
     font-size: 21px;
 }
 
 #homeHeroSearch {
     width: 100%;
-
-    padding:
-        20px
-        12px;
-
+    padding: 20px 12px;
     border: 0;
     outline: 0;
-
     background: transparent;
-
-    color: #ffffff;
-
+    color: #fff;
     font-family: inherit;
-
     font-size: 15px;
     font-weight: 750;
 }
 
-#homeHeroSearch::placeholder {
-    color: #68645e;
-}
+#homeHeroSearch::placeholder { color: #68645e; }
 
 .finder-results {
     display: none;
-
     margin-top: 9px;
-
     overflow: hidden;
-
-    border:
-        1px solid rgba(245, 169, 0, 0.15);
-
+    border: 1px solid rgba(245,169,0,.15);
     border-radius: 8px;
-
     background: #090908;
 }
 
-.finder-results.open {
-    display: block;
-}
+.finder-results.open { display: block; }
 
 .finder-result {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 15px;
-
-    padding:
-        15px
-        17px;
-
+    padding: 15px 17px;
     border: 0;
-    border-bottom:
-        1px solid rgba(255, 255, 255, 0.06);
-
+    border-bottom: 1px solid rgba(255,255,255,.06);
     background: transparent;
-
-    color: #ffffff;
-
+    color: #fff;
     text-align: left;
-
     font-family: inherit;
-
     cursor: pointer;
-
-    transition:
-        background 0.2s ease,
-        color 0.2s ease;
+    transition: background .2s ease,color .2s ease;
 }
 
-.finder-result:last-child {
-    border-bottom: 0;
-}
+.finder-result:last-child { border-bottom: 0; }
 
 .finder-result:hover {
-    background:
-        rgba(245, 169, 0, 0.055);
-
+    background: rgba(245,169,0,.055);
     color: var(--gold-bright);
 }
 
 .finder-result-name {
     font-size: 13px;
     font-weight: 900;
-
-    letter-spacing: 0.04em;
-
+    letter-spacing: .04em;
     text-transform: uppercase;
 }
 
 .finder-result-status {
     color: #69655e;
-
     font-size: 8px;
     font-weight: 900;
-
-    letter-spacing: 0.12em;
-
+    letter-spacing: .12em;
     text-transform: uppercase;
 }
 
-.finder-result.has-guide
-.finder-result-status {
+.finder-result.has-guide .finder-result-status {
     color: var(--gold);
 }
 
 .finder-message {
     display: none;
-
     margin-top: 12px;
-
-    padding:
-        13px
-        15px;
-
+    padding: 13px 15px;
     border-radius: 7px;
-
-    background:
-        rgba(245, 169, 0, 0.045);
-
+    background: rgba(245,169,0,.045);
     color: #aaa49b;
-
     font-size: 12px;
-
     line-height: 1.6;
 }
 
 .finder-footer {
     margin-top: 14px;
-
     display: flex;
     justify-content: flex-end;
 }
 
 .finder-all {
     color: var(--gold);
-
     text-decoration: none;
-
     font-size: 9px;
     font-weight: 950;
-
-    letter-spacing: 0.13em;
-
+    letter-spacing: .13em;
     text-transform: uppercase;
 }
 
-.finder-all:hover {
-    color: #ffffff;
-}
-
+.finder-all:hover { color: #fff; }
 
 /* =========================================================
    EXPLORE DATABASE
    ========================================================= */
 
 .explore-section {
-    border-bottom:
-        1px solid rgba(245, 169, 0, 0.07);
+    border-bottom: 1px solid rgba(245,169,0,.07);
 }
 
 .explore-header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-
     gap: 30px;
-
     margin-bottom: 38px;
 }
 
 .explore-grid {
     display: grid;
-
-    grid-template-columns:
-        repeat(4, minmax(0, 1fr));
-
+    grid-template-columns: repeat(4,minmax(0,1fr));
     gap: 16px;
 }
 
 .explore-card {
     position: relative;
-
     min-height: 245px;
-
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-    padding:
-        24px;
-
-    border:
-        1px solid rgba(255, 255, 255, 0.08);
-
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,.08);
     border-radius: 10px;
-
-    background:
-        #0a0a09;
-
+    background: #0a0a09;
     text-decoration: none;
-
-    box-shadow:
-        0 18px 45px rgba(0, 0, 0, 0.22);
-
+    box-shadow: 0 18px 45px rgba(0,0,0,.22);
     transition:
-        transform 0.22s ease,
-        border-color 0.22s ease,
-        box-shadow 0.22s ease;
+        transform .22s ease,
+        border-color .22s ease,
+        box-shadow .22s ease;
 }
 
 .explore-card::before {
     content: "";
-
     position: absolute;
     inset: 0;
-
-    opacity: 0.75;
-
-    transition:
-        opacity 0.22s ease,
-        transform 0.3s ease;
+    opacity: .75;
+    transition: opacity .22s ease,transform .3s ease;
 }
 
 .explore-card::after {
     content: "";
-
     position: absolute;
-
     left: 0;
     right: 0;
     bottom: 0;
-
     height: 2px;
-
-    opacity: 0.55;
+    opacity: .55;
 }
 
 .explore-card:hover {
-    transform:
-        translateY(-5px);
-
-    border-color:
-        rgba(245, 169, 0, 0.36);
-
-    box-shadow:
-        0 25px 55px rgba(0, 0, 0, 0.35);
+    transform: translateY(-5px);
+    border-color: rgba(245,169,0,.36);
+    box-shadow: 0 25px 55px rgba(0,0,0,.35);
 }
 
 .explore-card:hover::before {
     opacity: 1;
-
-    transform:
-        scale(1.025);
+    transform: scale(1.025);
 }
 
 .explore-card-content {
@@ -779,241 +517,138 @@ a {
 
 .card-number {
     margin-bottom: 23px;
-
-    color: rgba(255, 255, 255, 0.35);
-
+    color: rgba(255,255,255,.35);
     font-size: 9px;
     font-weight: 900;
-
-    letter-spacing: 0.15em;
+    letter-spacing: .15em;
 }
 
 .explore-card h3 {
     margin-bottom: 9px;
-
-    color: #ffffff;
-
+    color: #fff;
     font-size: 22px;
     font-weight: 950;
-
-    letter-spacing: -0.025em;
-
+    letter-spacing: -.025em;
     text-transform: uppercase;
 }
 
 .explore-card p {
     min-height: 58px;
-
     margin-bottom: 18px;
-
     color: #969189;
-
     font-size: 12px;
-
     line-height: 1.6;
 }
 
 .card-link {
-    color: #ffffff;
-
+    color: #fff;
     font-size: 9px;
     font-weight: 950;
-
-    letter-spacing: 0.13em;
-
+    letter-spacing: .13em;
     text-transform: uppercase;
 }
-
 
 /* HERO GUIDES */
 
 .card-heroes::before {
     background:
-        radial-gradient(
-            circle at 78% 18%,
-            rgba(245, 169, 0, 0.22),
-            transparent 38%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(245, 169, 0, 0.09),
-            transparent 62%
-        );
+        radial-gradient(circle at 78% 18%,rgba(245,169,0,.22),transparent 38%),
+        linear-gradient(145deg,rgba(245,169,0,.09),transparent 62%);
 }
 
-.card-heroes::after {
-    background: var(--gold);
-}
-
-.card-heroes .card-link {
-    color: var(--gold-bright);
-}
-
+.card-heroes::after { background: var(--gold); }
+.card-heroes .card-link { color: var(--gold-bright); }
 
 /* HWA ALL */
 
 .card-hwa::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(255, 176, 35, 0.17),
-            transparent 38%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(136, 82, 7, 0.11),
-            transparent 62%
-        );
+        radial-gradient(circle at 80% 18%,rgba(255,176,35,.17),transparent 38%),
+        linear-gradient(145deg,rgba(136,82,7,.11),transparent 62%);
 }
 
-.card-hwa::after {
-    background: #d89522;
-}
-
-.card-hwa .card-link {
-    color: #e8aa3d;
-}
-
+.card-hwa::after { background: #d89522; }
+.card-hwa .card-link { color: #e8aa3d; }
 
 /* TITANS */
 
 .card-titans::before {
     background:
-        radial-gradient(
-            circle at 78% 15%,
-            rgba(79, 211, 255, 0.18),
-            transparent 34%
-        ),
-        radial-gradient(
-            circle at 100% 100%,
-            rgba(159, 73, 255, 0.13),
-            transparent 42%
-        );
+        radial-gradient(circle at 78% 15%,rgba(79,211,255,.18),transparent 34%),
+        radial-gradient(circle at 100% 100%,rgba(159,73,255,.13),transparent 42%);
 }
 
 .card-titans::after {
+    background: linear-gradient(90deg,#42c8ff,#9c63ff);
+}
+
+.card-titans .card-link { color: #65d7ff; }
+
+/* REALM — NEW CATEGORY */
+
+.card-realm::before {
     background:
-        linear-gradient(
-            90deg,
-            #42c8ff,
-            #9c63ff
-        );
+        radial-gradient(circle at 78% 18%,rgba(169,91,255,.23),transparent 38%),
+        radial-gradient(circle at 15% 95%,rgba(84,38,179,.13),transparent 45%);
 }
 
-.card-titans .card-link {
-    color: #65d7ff;
+.card-realm::after {
+    background: linear-gradient(90deg,#824cff,#c087ff);
 }
 
+.card-realm .card-link { color: #c49aff; }
 
 /* BEGINNERS */
 
 .card-beginners::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(92, 219, 154, 0.16),
-            transparent 38%
-        );
+        radial-gradient(circle at 80% 18%,rgba(92,219,154,.16),transparent 38%);
 }
 
-.card-beginners::after {
-    background: #55cf91;
-}
-
-.card-beginners .card-link {
-    color: #6ee1a8;
-}
-
+.card-beginners::after { background: #55cf91; }
+.card-beginners .card-link { color: #6ee1a8; }
 
 /* BEST TEAMS */
 
 .card-teams::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(255, 177, 35, 0.18),
-            transparent 38%
-        ),
-        radial-gradient(
-            circle at 20% 100%,
-            rgba(153, 67, 12, 0.10),
-            transparent 42%
-        );
+        radial-gradient(circle at 80% 18%,rgba(255,177,35,.18),transparent 38%),
+        radial-gradient(circle at 20% 100%,rgba(153,67,12,.10),transparent 42%);
 }
 
-.card-teams::after {
-    background: #f5a900;
-}
-
-.card-teams .card-link {
-    color: var(--gold-bright);
-}
-
+.card-teams::after { background: #f5a900; }
+.card-teams .card-link { color: var(--gold-bright); }
 
 /* TIER LIST */
 
 .card-tier::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(235, 90, 90, 0.15),
-            transparent 38%
-        );
+        radial-gradient(circle at 80% 18%,rgba(235,90,90,.15),transparent 38%);
 }
 
-.card-tier::after {
-    background: #e76666;
-}
-
-.card-tier .card-link {
-    color: #f08282;
-}
-
+.card-tier::after { background: #e76666; }
+.card-tier .card-link { color: #f08282; }
 
 /* NEWS */
 
 .card-news::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(61, 166, 255, 0.18),
-            transparent 38%
-        );
+        radial-gradient(circle at 80% 18%,rgba(61,166,255,.18),transparent 38%);
 }
 
-.card-news::after {
-    background: #48a9ff;
-}
-
-.card-news .card-link {
-    color: #69b9ff;
-}
-
+.card-news::after { background: #48a9ff; }
+.card-news .card-link { color: #69b9ff; }
 
 /* EVENTS */
 
 .card-events::before {
     background:
-        radial-gradient(
-            circle at 80% 18%,
-            rgba(255, 163, 33, 0.18),
-            transparent 38%
-        ),
-        radial-gradient(
-            circle at 20% 100%,
-            rgba(181, 74, 16, 0.10),
-            transparent 42%
-        );
+        radial-gradient(circle at 80% 18%,rgba(255,163,33,.18),transparent 38%),
+        radial-gradient(circle at 20% 100%,rgba(181,74,16,.10),transparent 42%);
 }
 
-.card-events::after {
-    background: #ff9e2b;
-}
-
-.card-events .card-link {
-    color: #ffb85c;
-}
-
+.card-events::after { background: #ff9e2b; }
+.card-events .card-link { color: #ffb85c; }
 
 /* =========================================================
    MISSION / IDENTITY
@@ -1021,238 +656,142 @@ a {
 
 .mission-wrap {
     position: relative;
-
     overflow: hidden;
-
-    border-bottom:
-        1px solid rgba(245, 169, 0, 0.07);
-
+    border-bottom: 1px solid rgba(245,169,0,.07);
     background:
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(245, 169, 0, 0.045),
-            transparent 42%
-        ),
+        radial-gradient(circle at 50% 50%,rgba(245,169,0,.045),transparent 42%),
         #050504;
 }
 
 .mission-grid {
     display: grid;
-
-    grid-template-columns:
-        0.8fr
-        1.2fr;
-
+    grid-template-columns: .8fr 1.2fr;
     gap: 65px;
-
     align-items: center;
 }
 
 .mission-mark {
     position: relative;
-
     min-height: 340px;
-
     overflow: hidden;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    border:
-        1px solid rgba(245, 169, 0, 0.13);
-
+    border: 1px solid rgba(245,169,0,.13);
     border-radius: 11px;
-
     background:
-        radial-gradient(
-            circle at 50% 50%,
-            rgba(245, 169, 0, 0.07),
-            transparent 52%
-        ),
-        linear-gradient(
-            145deg,
-            rgba(245, 169, 0, 0.035),
-            rgba(5, 5, 4, 0.98)
-        );
+        radial-gradient(circle at 50% 50%,rgba(245,169,0,.07),transparent 52%),
+        linear-gradient(145deg,rgba(245,169,0,.035),rgba(5,5,4,.98));
 }
 
 .mission-logo {
     width: 96%;
     height: 96%;
-
     object-fit: contain;
-
     display: block;
-
     position: relative;
     z-index: 2;
-
     filter:
-        drop-shadow(0 0 18px rgba(255, 115, 0, 0.16))
-        drop-shadow(0 0 35px rgba(245, 169, 0, 0.08));
+        drop-shadow(0 0 18px rgba(255,115,0,.16))
+        drop-shadow(0 0 35px rgba(245,169,0,.08));
 }
 
-.mission-copy .section-title {
-    max-width: 650px;
-}
+.mission-copy .section-title { max-width: 650px; }
 
 .mission-copy p {
     max-width: 700px;
-
     margin-bottom: 17px;
-
     color: #9a958d;
-
     font-size: 14px;
-
     line-height: 1.8;
 }
 
-.mission-copy strong {
-    color: #ffffff;
-}
-
+.mission-copy strong { color: #fff; }
 
 /* =========================================================
    FINAL CTA
    ========================================================= */
 
 .final-cta {
-    padding:
-        95px
-        30px;
-
+    padding: 95px 30px;
     text-align: center;
-
     background:
-        radial-gradient(
-            circle at 50% 45%,
-            rgba(245, 169, 0, 0.09),
-            transparent 35%
-        ),
+        radial-gradient(circle at 50% 45%,rgba(245,169,0,.09),transparent 35%),
         #040403;
 }
 
 .final-cta-inner {
     max-width: 800px;
-
     margin: 0 auto;
 }
 
-.final-cta .section-kicker {
-    margin-bottom: 13px;
-}
+.final-cta .section-kicker { margin-bottom: 13px; }
 
 .final-cta h2 {
     margin-bottom: 18px;
-
-    font-size:
-        clamp(38px, 6vw, 65px);
-
-    line-height: 0.95;
-
+    font-size: clamp(38px,6vw,65px);
+    line-height: .95;
     font-weight: 950;
-
-    letter-spacing: -0.045em;
+    letter-spacing: -.045em;
 }
 
-.final-cta h2 span {
-    color: var(--gold-bright);
-}
+.final-cta h2 span { color: var(--gold-bright); }
 
 .final-cta p {
     max-width: 600px;
-
-    margin:
-        0
-        auto
-        27px;
-
+    margin: 0 auto 27px;
     color: #918c84;
-
     font-size: 14px;
-
     line-height: 1.7;
 }
-
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
 footer {
-    padding:
-        34px
-        20px;
-
-    border-top:
-        1px solid rgba(245, 169, 0, 0.06);
-
+    padding: 34px 20px;
+    border-top: 1px solid rgba(245,169,0,.06);
     background: #030303;
-
     text-align: center;
-
     color: #5f5a53;
-
     font-size: 11px;
-
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
 }
-
 
 /* =========================================================
    RESPONSIVE
    ========================================================= */
 
-@media (max-width: 1100px) {
-
+@media (max-width:1100px) {
     .explore-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 
     .mission-grid {
-        grid-template-columns:
-            1fr
-            1fr;
-
+        grid-template-columns: 1fr 1fr;
         gap: 38px;
     }
 }
 
-
-@media (max-width: 800px) {
-
-    .home-hero {
-        min-height: 650px;
-    }
+@media (max-width:800px) {
+    .home-hero { min-height: 650px; }
 
     .hero-background {
         background-image:
-            linear-gradient(
-                180deg,
-                rgba(3, 3, 3, 0.35) 0%,
-                rgba(3, 3, 3, 0.55) 40%,
-                #050504 100%
-            ),
+            linear-gradient(180deg,
+                rgba(3,3,3,.35) 0%,
+                rgba(3,3,3,.55) 40%,
+                #050504 100%),
             url("goa-banner.jpg");
-
         background-position: center;
     }
 
-    .hero-shell {
-        padding:
-            180px
-            22px
-            65px;
-    }
+    .hero-shell { padding: 180px 22px 65px; }
 
     .hero-content {
         width: 100%;
-
         text-align: center;
-
         margin: 0 auto;
     }
 
@@ -1261,24 +800,10 @@ footer {
         margin-right: auto;
     }
 
-    .hero-actions {
-        justify-content: center;
-    }
-
-    .section {
-        padding:
-            70px
-            22px;
-    }
-
-    .mission-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-    .mission-mark {
-        min-height: 260px;
-    }
+    .hero-actions { justify-content: center; }
+    .section { padding: 70px 22px; }
+    .mission-grid { grid-template-columns: 1fr; }
+    .mission-mark { min-height: 260px; }
 
     .mission-logo {
         width: 94%;
@@ -1286,120 +811,68 @@ footer {
     }
 }
 
-
-@media (max-width: 600px) {
-
+@media (max-width:600px) {
     .site-header {
         min-height: 70px;
-
-        padding:
-            0
-            20px;
+        padding: 0 20px;
     }
 
-    .brand {
-        font-size: 13px;
-    }
-
-    .home-hero {
-        min-height: 600px;
-    }
-
-    .hero-shell {
-        padding:
-            160px
-            20px
-            55px;
-    }
+    .brand { font-size: 13px; }
+    .home-hero { min-height: 600px; }
+    .hero-shell { padding: 160px 20px 55px; }
 
     .home-hero h1 {
-        font-size:
-            clamp(47px, 14vw, 66px);
+        font-size: clamp(47px,14vw,66px);
     }
 
-    .hero-copy {
-        font-size: 14px;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-    }
+    .hero-copy { font-size: 14px; }
+    .hero-actions { flex-direction: column; }
 
     .primary-button,
-    .secondary-button {
-        width: 100%;
-    }
+    .secondary-button { width: 100%; }
 
     .explore-header {
         align-items: flex-start;
         flex-direction: column;
     }
 
-    .explore-grid {
-        grid-template-columns:
-            1fr;
-    }
-
-    .explore-card {
-        min-height: 215px;
-    }
-
-    .hero-finder {
-        padding: 18px;
-    }
-
-    .finder-icon {
-        width: 48px;
-    }
-
-    #homeHeroSearch {
-        font-size: 13px;
-    }
-
-    .mission-mark {
-        min-height: 210px;
-    }
+    .explore-grid { grid-template-columns: 1fr; }
+    .explore-card { min-height: 215px; }
+    .hero-finder { padding: 18px; }
+    .finder-icon { width: 48px; }
+    #homeHeroSearch { font-size: 13px; }
+    .mission-mark { min-height: 210px; }
 
     .mission-logo {
         width: 96%;
         height: 96%;
     }
 }
-
 </style>
 </head>
 
-
 <body>
-
 
 <!-- =====================================================
      TOP BAR
      ===================================================== -->
 
 <header class="site-header">
-
     <div class="header-inner">
-
         <div class="brand">
             GODS OF <span>ALLIANCE</span>
         </div>
-
     </div>
-
 </header>
-
 
 <!-- =====================================================
      CINEMATIC HERO
      ===================================================== -->
 
 <section class="home-hero">
-
     <div class="hero-background"></div>
 
     <div class="hero-shell">
-
         <div class="hero-content">
 
             <div class="hero-eyebrow">
@@ -1418,36 +891,24 @@ footer {
             </p>
 
             <div class="hero-actions">
-
-                <a
-                    class="primary-button"
-                    href="heroes.html"
-                >
+                <a class="primary-button" href="heroes.html">
                     EXPLORE HERO GUIDES →
                 </a>
 
-                <a
-                    class="secondary-button"
-                    href="#explore"
-                >
+                <a class="secondary-button" href="#explore">
                     EXPLORE DATABASE
                 </a>
-
             </div>
 
         </div>
-
     </div>
-
 </section>
-
 
 <!-- =====================================================
      HERO FINDER
      ===================================================== -->
 
 <section class="hero-finder-section">
-
     <div class="section">
 
         <div class="section-kicker">
@@ -1464,7 +925,6 @@ footer {
             to an available guide.
         </p>
 
-
         <div class="hero-finder">
 
             <div class="finder-label">
@@ -1472,10 +932,7 @@ footer {
             </div>
 
             <div class="finder-box">
-
-                <div class="finder-icon">
-                    ⌕
-                </div>
+                <div class="finder-icon">⌕</div>
 
                 <input
                     id="homeHeroSearch"
@@ -1484,56 +941,37 @@ footer {
                     autocomplete="off"
                     aria-label="Search hero database"
                 >
-
             </div>
-
 
             <div
                 class="finder-results"
                 id="finderResults"
             ></div>
 
-
             <div
                 class="finder-message"
                 id="finderMessage"
             ></div>
 
-
             <div class="finder-footer">
-
-                <a
-                    class="finder-all"
-                    href="heroes.html"
-                >
+                <a class="finder-all" href="heroes.html">
                     VIEW ALL HEROES →
                 </a>
-
             </div>
 
         </div>
-
     </div>
-
 </section>
-
 
 <!-- =====================================================
      EXPLORE DATABASE
      ===================================================== -->
 
-<section
-    class="explore-section"
-    id="explore"
->
-
+<section class="explore-section" id="explore">
     <div class="section">
 
-
         <div class="explore-header">
-
             <div>
-
                 <div class="section-kicker">
                     GODS OF ALLIANCE
                 </div>
@@ -1544,34 +982,24 @@ footer {
 
                 <p class="section-description">
                     From individual hero development to team strategy,
-                    Titans, events and game updates — choose the area
+                    Titans, Realm, events and game updates — choose the area
                     you need and go straight to the information.
                 </p>
-
             </div>
-
         </div>
-
 
         <div class="explore-grid">
 
-
             <!-- HERO GUIDES -->
 
-            <a
-                class="explore-card card-heroes"
-                href="heroes.html"
-            >
-
+            <a class="explore-card card-heroes" href="heroes.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
                         01 / HERO DATABASE
                     </div>
 
-                    <h3>
-                        Hero Guides
-                    </h3>
+                    <h3>Hero Guides</h3>
 
                     <p>
                         Skills, builds, Glyphs, Skins, Artifacts,
@@ -1584,26 +1012,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- HWA ALL -->
 
-            <a
-                class="explore-card card-hwa"
-                href="hwa-all.html"
-            >
-
+            <a class="explore-card card-hwa" href="hwa-all.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
                         02 / ANALYSIS
                     </div>
 
-                    <h3>
-                        HWA All
-                    </h3>
+                    <h3>HWA All</h3>
 
                     <p>
                         Relics, Skins, testing, mechanics and deeper
@@ -1615,26 +1035,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- TITANS -->
 
-            <a
-                class="explore-card card-titans"
-                href="titans.html"
-            >
-
+            <a class="explore-card card-titans" href="titans.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
                         03 / TITAN DATABASE
                     </div>
 
-                    <h3>
-                        Titans
-                    </h3>
+                    <h3>Titans</h3>
 
                     <p>
                         Titan builds, Super Titans, Artifacts,
@@ -1646,26 +1058,42 @@ footer {
                     </div>
 
                 </div>
-
             </a>
 
+            <!-- REALM — NEW CATEGORY -->
 
-            <!-- BEGINNERS -->
-
-            <a
-                class="explore-card card-beginners"
-                href="beginners.html"
-            >
-
+            <a class="explore-card card-realm" href="realm.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
-                        04 / LEARN THE GAME
+                        04 / REALM DATABASE
                     </div>
 
-                    <h3>
-                        Beginners Area
-                    </h3>
+                    <h3>Realm</h3>
+
+                    <p>
+                        Realm guides, strategies, mechanics,
+                        progression and practical information
+                        for Hero Wars Alliance players.
+                    </p>
+
+                    <div class="card-link">
+                        EXPLORE REALM →
+                    </div>
+
+                </div>
+            </a>
+
+            <!-- BEGINNERS -->
+
+            <a class="explore-card card-beginners" href="beginners.html">
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        05 / LEARN THE GAME
+                    </div>
+
+                    <h3>Beginners Area</h3>
 
                     <p>
                         Clear resource guides and practical information
@@ -1677,26 +1105,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- BEST TEAMS -->
 
-            <a
-                class="explore-card card-teams"
-                href="best-teams.html"
-            >
-
+            <a class="explore-card card-teams" href="best-teams.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
-                        05 / WAR ROOM
+                        06 / WAR ROOM
                     </div>
 
-                    <h3>
-                        Best Teams
-                    </h3>
+                    <h3>Best Teams</h3>
 
                     <p>
                         Team compositions, counter strategies,
@@ -1708,26 +1128,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- TIER LIST -->
 
-            <a
-                class="explore-card card-tier"
-                href="tier-list.html"
-            >
-
+            <a class="explore-card card-tier" href="tier-list.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
-                        06 / RANKINGS
+                        07 / RANKINGS
                     </div>
 
-                    <h3>
-                        Tier List
-                    </h3>
+                    <h3>Tier List</h3>
 
                     <p>
                         Explore the Hero Wars Alliance roster and
@@ -1740,26 +1152,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- NEWS -->
 
-            <a
-                class="explore-card card-news"
-                href="news.html"
-            >
-
+            <a class="explore-card card-news" href="news.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
-                        07 / DOMINION WATCH
+                        08 / DOMINION WATCH
                     </div>
 
-                    <h3>
-                        News
-                    </h3>
+                    <h3>News</h3>
 
                     <p>
                         New heroes, Talismans, Titans and important
@@ -1771,26 +1175,18 @@ footer {
                     </div>
 
                 </div>
-
             </a>
-
 
             <!-- EVENTS -->
 
-            <a
-                class="explore-card card-events"
-                href="events.html"
-            >
-
+            <a class="explore-card card-events" href="events.html">
                 <div class="explore-card-content">
 
                     <div class="card-number">
-                        08 / LIVE EVENTS
+                        09 / LIVE EVENTS
                     </div>
 
-                    <h3>
-                        Events
-                    </h3>
+                    <h3>Events</h3>
 
                     <p>
                         Event guides, seasonal calendars, rewards,
@@ -1802,38 +1198,27 @@ footer {
                     </div>
 
                 </div>
-
             </a>
 
-
         </div>
-
     </div>
-
 </section>
-
 
 <!-- =====================================================
      GOA MISSION
      ===================================================== -->
 
 <section class="mission-wrap">
-
     <div class="section">
-
         <div class="mission-grid">
 
-
             <div class="mission-mark">
-
                 <img
                     src="Images/goa-full-logo.png"
                     alt="Gods of Alliance"
                     class="mission-logo"
                 >
-
             </div>
-
 
             <div class="mission-copy">
 
@@ -1867,21 +1252,15 @@ footer {
                 </p>
 
             </div>
-
-
         </div>
-
     </div>
-
 </section>
-
 
 <!-- =====================================================
      FINAL CTA
      ===================================================== -->
 
 <section class="final-cta">
-
     <div class="final-cta-inner">
 
         <div class="section-kicker">
@@ -1899,27 +1278,17 @@ footer {
         </p>
 
         <div class="hero-actions">
-
-            <a
-                class="primary-button"
-                href="heroes.html"
-            >
+            <a class="primary-button" href="heroes.html">
                 HERO GUIDES →
             </a>
 
-            <a
-                class="secondary-button"
-                href="#explore"
-            >
+            <a class="secondary-button" href="#explore">
                 ALL CATEGORIES
             </a>
-
         </div>
 
     </div>
-
 </section>
-
 
 <!-- =====================================================
      FOOTER
@@ -1929,15 +1298,12 @@ footer {
     © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
 
-
 <!-- =====================================================
      HOME HERO SEARCH
      ===================================================== -->
 
 <script>
-
 const homeHeroes = [
-
     { name: "Aidan", page: "aidan.html" },
     { name: "Alvanor" },
     { name: "Amira" },
@@ -2042,9 +1408,7 @@ const homeHeroes = [
     { name: "Yasmine" },
 
     { name: "Ziri" }
-
 ];
-
 
 const homeHeroSearch =
     document.getElementById("homeHeroSearch");
@@ -2055,168 +1419,99 @@ const finderResults =
 const finderMessage =
     document.getElementById("finderMessage");
 
-
 function closeFinder() {
-
     finderResults.classList.remove("open");
-
     finderResults.innerHTML = "";
-
 }
-
 
 function showFinderMessage(message) {
-
     finderMessage.textContent = message;
-
     finderMessage.style.display = "block";
-
 }
-
 
 function hideFinderMessage() {
-
     finderMessage.textContent = "";
-
     finderMessage.style.display = "none";
-
 }
 
-
 function renderHomeSearch() {
-
     const query =
-        homeHeroSearch.value
-            .trim()
-            .toLowerCase();
-
+        homeHeroSearch.value.trim().toLowerCase();
 
     hideFinderMessage();
 
-
     if (!query) {
-
         closeFinder();
-
         return;
     }
 
-
-    const matches =
-        homeHeroes
-            .filter(function(hero) {
-
-                return hero.name
-                    .toLowerCase()
-                    .includes(query);
-
-            })
-            .slice(0, 6);
-
+    const matches = homeHeroes
+        .filter(function(hero) {
+            return hero.name.toLowerCase().includes(query);
+        })
+        .slice(0, 6);
 
     if (matches.length === 0) {
-
         closeFinder();
-
         showFinderMessage(
             "No hero found. Open the full Hero Guides database to browse all heroes."
         );
-
         return;
     }
 
-
     finderResults.innerHTML = "";
 
-
     matches.forEach(function(hero) {
-
-        const result =
-            document.createElement("button");
+        const result = document.createElement("button");
 
         result.type = "button";
 
-        result.className =
-            hero.page
-                ? "finder-result has-guide"
-                : "finder-result";
-
+        result.className = hero.page
+            ? "finder-result has-guide"
+            : "finder-result";
 
         result.innerHTML = `
-
             <span class="finder-result-name">
                 ${hero.name}
             </span>
 
             <span class="finder-result-status">
-                ${
-                    hero.page
-                        ? "OPEN GUIDE →"
-                        : "GUIDE COMING"
-                }
+                ${hero.page ? "OPEN GUIDE →" : "GUIDE COMING"}
             </span>
-
         `;
 
-
-        result.addEventListener(
-            "click",
-            function() {
-
-                if (hero.page) {
-
-                    window.location.href =
-                        hero.page;
-
-                } else {
-
-                    closeFinder();
-
-                    showFinderMessage(
-                        `${hero.name} is in the Gods of Alliance hero database, but the full guide is not available yet.`
-                    );
-                }
+        result.addEventListener("click", function() {
+            if (hero.page) {
+                window.location.href = hero.page;
+            } else {
+                closeFinder();
+                showFinderMessage(
+                    `${hero.name} is in the Gods of Alliance hero database, but the full guide is not available yet.`
+                );
             }
-        );
-
+        });
 
         finderResults.appendChild(result);
-
     });
 
-
     finderResults.classList.add("open");
-
 }
-
 
 homeHeroSearch.addEventListener(
     "input",
     renderHomeSearch
 );
 
-
-document.addEventListener(
-    "click",
-    function(event) {
-
-        if (
-            !event.target.closest(".hero-finder")
-        ) {
-
-            closeFinder();
-
-            hideFinderMessage();
-        }
+document.addEventListener("click", function(event) {
+    if (!event.target.closest(".hero-finder")) {
+        closeFinder();
+        hideFinderMessage();
     }
-);
-
+});
 </script>
-
 
 <!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
 <script src="goa-global.js"></script>
-
 
 </body>
 </html>
