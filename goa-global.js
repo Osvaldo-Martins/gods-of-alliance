@@ -1,3 +1,4 @@
+
 /* =========================================================
    GODS OF ALLIANCE — GLOBAL SITE SYSTEM
    Shared navigation + global background atmosphere + branding
@@ -389,7 +390,7 @@
     const brand = possibleBrands.find(function (element) {
       const text =
         (element.textContent || "")
-          .replace(/\\s+/g, " ")
+          .replace(/\s+/g, " ")
           .trim()
           .toUpperCase();
 
@@ -448,6 +449,10 @@
     {
       label: "TITANS",
       href: "titans.html"
+    },
+    {
+      label: "REALM",
+      href: "realm.html"
     },
     {
       label: "BEGINNERS AREA",
