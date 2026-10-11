@@ -1,0 +1,2102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Isaac Full Guide | Gods of Alliance</title>
+
+<meta name="description" content="Complete Isaac guide for Hero Wars Alliance. Skills, Skins, Glyphs, Artifacts, Gift of the Elements, Talismans, Progress synergies, counters and build priorities.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/isaac.html">
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Isaac Full Guide | Gods of Alliance">
+<meta property="og:description" content="Master Isaac's anti-mage abilities, shields, Physical Attack buffs, build priorities, Talismans, synergies and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/isaac.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Isaac/isaac-guide.jpg">
+<meta property="og:image:alt" content="Isaac Full Guide - Gods of Alliance">
+
+<!-- TWITTER / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Isaac Full Guide | Gods of Alliance">
+<meta name="twitter:description" content="Complete Isaac build guide: Skills, Skins, Glyphs, Artifacts, Talismans, synergies and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Isaac/isaac-guide.jpg">
+
+<style>
+
+/* =========================================================
+   BASE — ISAAC ELECTRIC BLUE THEME
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #02070d;
+}
+
+:root {
+    --bg: #02070d;
+
+    --panel: rgba(7, 17, 29, 0.94);
+    --panel-soft: rgba(9, 23, 38, 0.88);
+
+    --spectral: #32d9f6;
+    --spectral-bright: #a0f3ff;
+    --spectral-dark: #126c99;
+
+    --fire: #dba443;
+    --fire-bright: #ffd47d;
+
+    --purple: #7771bf;
+
+    --white: #ffffff;
+    --muted: #a0b3c3;
+
+    --line: rgba(50, 217, 246, 0.15);
+}
+
+body {
+    min-height: 100vh;
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(36, 171, 229, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(50, 217, 246, 0.04),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #071421 0%,
+            #02070d 46%,
+            #010408 100%
+        );
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================================================
+   CINEMATIC HERO
+   ========================================================= */
+
+.hero-header {
+    position: relative;
+    min-height: 740px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(50, 217, 246, 0.12);
+
+    background: #02070d;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(1, 5, 11, 0.08) 0%,
+            rgba(1, 5, 11, 0.12) 34%,
+            rgba(1, 5, 11, 0.52) 57%,
+            rgba(1, 5, 11, 0.94) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(2, 7, 13, 0.02) 0%,
+            rgba(2, 7, 13, 0.08) 48%,
+            #02070d 100%
+        ),
+        url("Images/Hero-Guides/Isaac/isaac-guide.jpg");
+
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.015);
+}
+
+.hero-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 25% 40%,
+            rgba(50, 217, 246, 0.13),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 31% 45%,
+            rgba(219, 164, 67, 0.07),
+            transparent 20%
+        );
+}
+
+.hero-shell {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 180px 32px 82px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-content {
+    width: min(650px, 100%);
+}
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 17px;
+    padding: 8px 11px;
+
+    border:
+        1px solid rgba(160, 243, 255, 0.28);
+
+    border-radius: 4px;
+    background: rgba(2, 8, 16, 0.70);
+    color: var(--spectral-bright);
+
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero-header h1 {
+    margin-bottom: 15px;
+    color: var(--spectral-bright);
+    font-size: clamp(55px, 8vw, 96px);
+    line-height: 0.9;
+    font-weight: 950;
+    letter-spacing: -0.055em;
+
+    text-shadow:
+        0 8px 35px rgba(0, 0, 0, 0.95),
+        0 0 28px rgba(50, 217, 246, 0.13);
+}
+
+.hero-role {
+    margin-bottom: 21px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: 0.13em;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.hero-role span {
+    color: var(--spectral);
+}
+
+.hero-intro {
+    max-width: 620px;
+    color: #b4c5d2;
+    font-size: 14px;
+    line-height: 1.8;
+    text-shadow: 0 2px 10px #000000;
+}
+
+.hero-intro strong {
+    color: #ffffff;
+}
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+.article {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 78px 28px 100px;
+}
+
+.section {
+    margin-bottom: 82px;
+}
+
+.section-kicker {
+    margin-bottom: 9px;
+    color: var(--spectral);
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+}
+
+.section-title {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 4.4vw, 47px);
+    line-height: 1;
+    font-weight: 950;
+    letter-spacing: -0.035em;
+}
+
+.section-lead {
+    max-width: 870px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.section-lead strong {
+    color: var(--spectral-bright);
+}
+
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.identity-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.identity-card {
+    padding: 24px;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.14);
+
+    border-radius: 9px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(50, 217, 246, 0.07),
+            transparent 45%
+        ),
+        rgba(7, 17, 29, 0.90);
+}
+
+.identity-label {
+    margin-bottom: 9px;
+    color: #73899b;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.identity-value {
+    color: var(--spectral-bright);
+    font-size: 20px;
+    font-weight: 950;
+}
+
+/* =========================================================
+   CORE IDEA
+   ========================================================= */
+
+.core-box {
+    margin-top: 31px;
+    padding: 31px;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.22);
+
+    border-radius: 11px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(50, 217, 246, 0.10),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(10, 25, 40, 0.96),
+            rgba(3, 9, 18, 0.98)
+        );
+}
+
+.core-box p {
+    color: #a9bac9;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.core-box strong {
+    color: #ffffff;
+}
+
+.core-line {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.core-word {
+    padding: 14px 8px;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.10);
+
+    border-radius: 5px;
+    color: var(--spectral-bright);
+    background: rgba(50, 217, 246, 0.025);
+
+    text-align: center;
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-stack {
+    margin-top: 33px;
+    display: grid;
+    gap: 16px;
+}
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    padding: 28px;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.14);
+
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(50, 217, 246, 0.07),
+            transparent 42%
+        ),
+        rgba(7, 17, 29, 0.91);
+}
+
+.skill-card.primary {
+    border-color:
+        rgba(219, 164, 67, 0.28);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(219, 164, 67, 0.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(50, 217, 246, 0.06),
+            transparent 35%
+        ),
+        rgba(8, 17, 29, 0.94);
+}
+
+.skill-number {
+    margin-bottom: 8px;
+    color: var(--spectral);
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.skill-card.primary .skill-number {
+    color: var(--fire-bright);
+}
+
+.skill-name {
+    margin-bottom: 13px;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.skill-card p {
+    color: #a4b5c5;
+    font-size: 13px;
+    line-height: 1.78;
+}
+
+.skill-card p + p {
+    margin-top: 12px;
+}
+
+.skill-card p strong {
+    color: #ffffff;
+}
+
+.skill-highlight {
+    margin-top: 18px;
+    padding: 15px 17px;
+    border-left: 2px solid var(--spectral);
+    background: rgba(50, 217, 246, 0.035);
+    color: var(--spectral-bright);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.65;
+}
+
+.primary .skill-highlight {
+    border-left-color: var(--fire);
+    color: var(--fire-bright);
+    background: rgba(219, 164, 67, 0.04);
+}
+
+/* =========================================================
+   PRIORITIES
+   ========================================================= */
+
+.priority-grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.priority-card {
+    padding: 28px;
+    border: 1px solid rgba(50, 217, 246, 0.14);
+    border-radius: 10px;
+    background: rgba(7, 17, 29, 0.91);
+}
+
+.priority-card h3 {
+    margin-bottom: 20px;
+    color: var(--spectral-bright);
+    font-size: 21px;
+    font-weight: 950;
+    text-transform: uppercase;
+}
+
+.priority-list {
+    list-style: none;
+    counter-reset: priority;
+}
+
+.priority-list li {
+    counter-increment: priority;
+    position: relative;
+    min-height: 47px;
+    padding: 13px 10px 13px 47px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    color: #aabac9;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.priority-list li:last-child {
+    border-bottom: 0;
+}
+
+.priority-list li::before {
+    content: counter(priority);
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.19);
+
+    border-radius: 50%;
+    color: var(--spectral-bright);
+    font-size: 9px;
+    font-weight: 950;
+}
+
+.priority-list strong {
+    color: #ffffff;
+}
+
+.priority-note {
+    margin-top: 17px;
+    color: #7b91a3;
+    font-size: 10px;
+    line-height: 1.65;
+}
+
+/* =========================================================
+   ARTIFACTS
+   ========================================================= */
+
+.artifact-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.artifact-card {
+    position: relative;
+    padding: 26px 22px;
+    border: 1px solid rgba(50, 217, 246, 0.14);
+    border-radius: 9px;
+    background: rgba(7, 17, 29, 0.91);
+}
+
+.artifact-order {
+    margin-bottom: 11px;
+    color: var(--fire-bright);
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.artifact-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 950;
+}
+
+.artifact-card p {
+    color: #94a8b9;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   GIFT OF THE ELEMENTS
+   ========================================================= */
+
+.max-box {
+    margin-top: 30px;
+    padding: 33px;
+    border: 1px solid rgba(219, 164, 67, 0.24);
+    border-radius: 11px;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(219, 164, 67, 0.10),
+            transparent 45%
+        ),
+        rgba(9, 17, 28, 0.94);
+}
+
+.max-box span {
+    display: block;
+    margin-bottom: 9px;
+    color: #8194a3;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.max-box strong {
+    color: var(--fire-bright);
+    font-size: clamp(35px, 5vw, 49px);
+    font-weight: 950;
+}
+
+.max-box p {
+    max-width: 690px;
+    margin: 15px auto 0;
+    color: #97aabb;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* =========================================================
+   TALISMANS
+   ========================================================= */
+
+.talisman-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.talisman-card {
+    padding: 28px;
+    border: 1px solid rgba(119, 113, 191, 0.22);
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(119, 113, 191, 0.10),
+            transparent 43%
+        ),
+        rgba(8, 15, 29, 0.94);
+}
+
+.talisman-number {
+    margin-bottom: 9px;
+    color: #b1a9ec;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.talisman-card h3 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 950;
+}
+
+.stats {
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.stat {
+    padding: 7px 9px;
+    border: 1px solid rgba(177, 169, 236, 0.17);
+    border-radius: 4px;
+    color: #ded8fa;
+    background: rgba(119, 113, 191, 0.05);
+    font-size: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.talisman-card p {
+    color: #9aafc0;
+    font-size: 12px;
+    line-height: 1.72;
+}
+
+.obtain {
+    margin-top: 17px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.055);
+    color: #788e9e;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.obtain strong {
+    color: var(--spectral-bright);
+}
+
+/* =========================================================
+   SYNERGIES
+   ========================================================= */
+
+.synergy-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.synergy-card {
+    padding: 25px;
+    border: 1px solid rgba(50, 217, 246, 0.14);
+    border-radius: 9px;
+    background: rgba(7, 17, 29, 0.90);
+}
+
+.synergy-card h3 {
+    margin-bottom: 11px;
+    color: var(--spectral-bright);
+    font-size: 19px;
+    font-weight: 950;
+}
+
+.synergy-card p {
+    color: #97aabc;
+    font-size: 11px;
+    line-height: 1.72;
+}
+
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+.counter-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.counter-card {
+    padding: 23px;
+    border: 1px solid rgba(219, 164, 67, 0.14);
+    border-radius: 9px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(219, 164, 67, 0.055),
+            transparent 45%
+        ),
+        rgba(8, 16, 28, 0.92);
+}
+
+.counter-card h3 {
+    margin-bottom: 10px;
+    color: var(--fire-bright);
+    font-size: 18px;
+    font-weight: 950;
+}
+
+.counter-card p {
+    color: #9cacc0;
+    font-size: 11px;
+    line-height: 1.72;
+}
+
+/* =========================================================
+   FINAL VERDICT
+   ========================================================= */
+
+.verdict {
+    padding: 34px;
+    border: 1px solid rgba(50, 217, 246, 0.25);
+    border-radius: 12px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(50, 217, 246, 0.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(219, 164, 67, 0.07),
+            transparent 38%
+        ),
+        rgba(7, 17, 29, 0.96);
+}
+
+.verdict h2 {
+    margin-bottom: 17px;
+    font-size: clamp(29px, 4vw, 43px);
+    font-weight: 950;
+    letter-spacing: -0.035em;
+}
+
+.verdict p {
+    color: #a7b8c9;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.verdict p + p {
+    margin-top: 13px;
+}
+
+.verdict strong {
+    color: var(--spectral-bright);
+}
+
+/* =========================================================
+   VIDEO
+   ========================================================= */
+
+.video-section {
+    margin-top: 20px;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    border:
+        1px solid rgba(50, 217, 246, 0.23);
+
+    border-radius: 12px;
+    background: #000000;
+
+    box-shadow:
+        0 28px 70px rgba(0, 0, 0, 0.40);
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    padding: 35px 20px;
+    border-top: 1px solid rgba(50, 217, 246, 0.08);
+    background: #010408;
+    color: #526879;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .identity-grid,
+    .artifact-grid,
+    .synergy-grid,
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .priority-grid,
+    .talisman-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .core-line {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .hero-header {
+        min-height: 650px;
+    }
+
+    .hero-background {
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(2, 7, 13, 0.05) 0%,
+                rgba(2, 7, 13, 0.30) 42%,
+                #02070d 100%
+            ),
+            url("Images/Hero-Guides/Isaac/isaac-guide.jpg");
+
+        background-position: 30% center;
+    }
+
+    .hero-shell {
+        justify-content: flex-start;
+        padding: 310px 20px 55px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .article {
+        padding: 64px 19px 80px;
+    }
+
+    .skill-card,
+    .priority-card,
+    .talisman-card,
+    .verdict {
+        padding: 22px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<header class="hero-header">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-shell">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                HERO GUIDE
+            </div>
+
+            <h1>
+                ISAAC
+            </h1>
+
+            <div class="hero-role">
+                MARKSMAN
+                <span>•</span>
+                WAY OF PROGRESS
+                <span>•</span>
+                MIDDLE LINE
+            </div>
+
+            <p class="hero-intro">
+                Isaac is one of the most important Heroes
+                in the Way of Progress. The legendary genius
+                combines <strong>devastating Physical Damage,
+                powerful shields, team-wide offensive buffs
+                and exceptional anti-mage support.</strong>
+                His inventions can turn an ordinary physical
+                team into a devastating fighting force.
+            </p>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="article">
+
+<!-- =========================================================
+     IDENTITY
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        HERO IDENTITY
+    </div>
+
+    <h2 class="section-title">
+        What Is Isaac?
+    </h2>
+
+    <p class="section-lead">
+        Isaac is a Progress Marksman whose true strength
+        goes far beyond his personal damage.
+        His abilities provide
+        <strong>Physical Attack buffs, Armor Penetration,
+        protective shields, healing for Engineers
+        and team-wide Magic Defense.</strong>
+        He can strengthen physical damage dealers
+        while protecting his team against some of
+        the most dangerous magical compositions.
+    </p>
+
+    <div class="identity-grid">
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                CLASS
+            </div>
+
+            <div class="identity-value">
+                Marksman
+            </div>
+
+        </article>
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                FACTION
+            </div>
+
+            <div class="identity-value">
+                Way of Progress
+            </div>
+
+        </article>
+
+        <article class="identity-card">
+
+            <div class="identity-label">
+                POSITION
+            </div>
+
+            <div class="identity-value">
+                Middle Line
+            </div>
+
+        </article>
+
+    </div>
+
+    <div class="core-box">
+
+        <p>
+            Isaac's kit can be understood through five
+            essential functions:
+            <strong>damage, buffs, shields, Armor reduction
+            and magical protection.</strong>
+            Each mechanic supports the others.
+            His Physical Attack improves his offensive buffs
+            and shields, while his Ultimate provides both
+            battlefield damage and defensive value
+            through his Weapon Artifact.
+        </p>
+
+        <div class="core-line">
+
+            <div class="core-word">DAMAGE</div>
+            <div class="core-word">BUFF</div>
+            <div class="core-word">SHIELD</div>
+            <div class="core-word">ARMOR BREAK</div>
+            <div class="core-word">PROTECT</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SKILLS
+    </div>
+
+    <h2 class="section-title">
+        Isaac's Skill Kit.
+    </h2>
+
+    <p class="section-lead">
+        Isaac's greatest advantage is his ability
+        to strengthen the entire team while simultaneously
+        weakening the opposition.
+        His abilities turn
+        <strong>Physical Attack into both offensive power
+        and defensive protection.</strong>
+    </p>
+
+    <div class="skills-stack">
+
+        <!-- TES'LIN'S OVERDRIVE -->
+
+        <article class="skill-card primary">
+
+            <div class="skill-number">
+                SKILL 01 • ULTIMATE
+            </div>
+
+            <h3 class="skill-name">
+                Tes'Lin's Overdrive
+            </h3>
+
+            <p>
+                Isaac fires a massive electrical charge
+                across the battlefield, dealing
+                <strong>Physical Damage to every enemy
+                it passes through.</strong>
+            </p>
+
+            <p>
+                The damage scales with Isaac's
+                <strong>Physical Attack</strong>.
+            </p>
+
+            <p>
+                However, the ability is especially
+                valuable because it also activates
+                Isaac's Weapon Artifact, granting
+                <strong>Magic Defense to the entire team.</strong>
+            </p>
+
+            <p>
+                Against heavy magical compositions,
+                this combination becomes extremely powerful.
+                While the electrical charge damages enemies,
+                Isaac's allies become significantly harder
+                to eliminate through magical burst damage.
+            </p>
+
+            <div class="skill-highlight">
+                ANTI-MAGE VALUE: Tes'Lin's Overdrive
+                deals Physical Damage while triggering
+                a team-wide Magic Defense bonus
+                through Isaac's Weapon Artifact.
+            </div>
+
+        </article>
+
+        <!-- OBSERVER DRONES -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 02
+            </div>
+
+            <h3 class="skill-name">
+                Observer Drones
+            </h3>
+
+            <p>
+                Isaac launches drones that increase
+                the <strong>Physical Attack of himself
+                and every ally positioned behind him</strong>
+                for eight seconds.
+            </p>
+
+            <p>
+                Progress Engineers also receive
+                additional <strong>Armor Penetration</strong>.
+                The strength of this buff scales
+                with Isaac's Physical Attack.
+            </p>
+
+            <p>
+                This ability is exceptionally valuable
+                for physical compositions.
+                Heroes such as
+                <strong>Ginger, Astrid and Lucas,
+                Daredevil, Fox and Lara Croft</strong>
+                become significantly more dangerous
+                when supported by Isaac.
+            </p>
+
+            <p>
+                <strong>Fafnir</strong> also benefits
+                enormously from additional Physical Attack,
+                which strengthens his Runic Blade
+                and Runic Shield.
+            </p>
+
+            <p>
+                More Physical Attack increases
+                basic attack damage and the power
+                of abilities that scale with that stat.
+                Additional Armor Penetration allows
+                Progress Engineers to threaten
+                heavily armored opponents.
+            </p>
+
+            <div class="skill-highlight">
+                KEYWORD: BUFF. Observer Drones
+                provide eight seconds of Physical Attack
+                support, with additional Armor Penetration
+                for Progress Engineers.
+            </div>
+
+        </article>
+
+        <!-- SHIELD DRONES -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 03
+            </div>
+
+            <h3 class="skill-name">
+                Shield Drones
+            </h3>
+
+            <p>
+                Isaac launches drones that create
+                protective shields for himself
+                and the allies positioned
+                <strong>in front of him.</strong>
+            </p>
+
+            <p>
+                These shields absorb both
+                <strong>Physical and Magical Damage</strong>.
+            </p>
+
+            <p>
+                If the protected Heroes are Engineers,
+                they also receive healing.
+                Shield strength scales with
+                Isaac's <strong>Physical Attack</strong>.
+            </p>
+
+            <p>
+                This ability becomes particularly
+                dangerous when Isaac is combined with
+                <strong>Julius and Judge</strong>.
+            </p>
+
+            <p>
+                Julius creates shields.
+                Isaac creates shields.
+                Judge creates shields.
+            </p>
+
+            <p>
+                Together, these abilities produce
+                repeated layers of protection,
+                allowing Progress teams to survive
+                tremendous amounts of incoming damage.
+            </p>
+
+            <div class="skill-highlight">
+                KEYWORD: SHIELD. Isaac protects himself
+                and allies in front of him,
+                while also healing protected Engineers.
+                Julius + Judge + Isaac forms
+                an exceptionally durable Progress core.
+            </div>
+
+        </article>
+
+        <!-- HIGH-VOLTAGE MODULE -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 04 • PASSIVE
+            </div>
+
+            <h3 class="skill-name">
+                High-Voltage Module
+            </h3>
+
+            <p>
+                High-Voltage Module upgrades
+                Tes'Lin's Overdrive.
+            </p>
+
+            <p>
+                Isaac's electrical charge now
+                <strong>knocks enemies backward</strong>
+                while reducing their Armor
+                for <strong>five seconds</strong>.
+            </p>
+
+            <p>
+                The closest enemy is knocked back twice.
+            </p>
+
+            <p>
+                Interestingly, this ability scales
+                with Isaac's <strong>Magic Attack</strong>,
+                rather than his Physical Attack.
+            </p>
+
+            <p>
+                Isaac does not naturally possess
+                particularly high Magic Attack,
+                but this changes dramatically
+                when he receives support from
+                <strong>Nebula</strong>.
+            </p>
+
+            <p>
+                Nebula can greatly increase
+                both Magic Attack and Physical Attack
+                for nearby allies.
+                This allows Isaac to apply
+                stronger Armor reduction while
+                simultaneously improving his
+                team's physical damage.
+            </p>
+
+            <div class="skill-highlight">
+                IMPORTANT SYNERGY: Nebula's Magic Attack
+                support strengthens Isaac's Armor reduction,
+                while her Physical Attack support
+                improves his damage, shields and buffs.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SKINS + GLYPHS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        DEVELOPMENT
+    </div>
+
+    <h2 class="section-title">
+        Skins & Glyphs.
+    </h2>
+
+    <p class="section-lead">
+        Isaac's development begins with
+        <strong>Physical Attack</strong>.
+        This single stat strengthens his personal damage,
+        offensive buffs and protective shields,
+        making it the foundation of his build.
+    </p>
+
+    <div class="priority-grid">
+
+        <!-- SKINS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Skin Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Physical Attack</strong><br>
+                    Highest priority. Improves Isaac's
+                    damage, buffs and shield strength.
+                </li>
+
+                <li>
+                    <strong>Armor Penetration</strong><br>
+                    Helps Isaac bypass enemy Armor
+                    and deal more effective Physical Damage.
+                </li>
+
+                <li>
+                    <strong>Critical Hit Chance</strong><br>
+                    Increases Isaac's damage potential
+                    through critical attacks.
+                </li>
+
+                <li>
+                    <strong>Health</strong><br>
+                    Improves survivability and allows Isaac
+                    to continue supporting his team.
+                </li>
+
+                <li>
+                    <strong>Default Skin — Agility</strong><br>
+                    Supports his overall development
+                    and provides additional Armor.
+                </li>
+
+                <li>
+                    <strong>Armor</strong><br>
+                    Useful for physical survivability,
+                    but the lowest priority
+                    in this development order.
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                FUTURE PRIORITY: If Isaac receives
+                another Physical Attack or Armor Penetration
+                Skin, that Skin immediately becomes
+                a top investment priority.
+            </div>
+
+        </article>
+
+        <!-- GLYPHS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Glyph Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Health</strong>
+                </li>
+
+                <li>
+                    <strong>Physical Attack</strong>
+                </li>
+
+                <li>
+                    <strong>Magic Defense</strong>
+                </li>
+
+                <li>
+                    <strong>Armor</strong>
+                </li>
+
+                <li>
+                    <strong>Agility</strong>
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                Bring all five Glyphs evenly to
+                <strong style="color:#ffffff;">
+                    Level 40.
+                </strong>
+                Beyond Level 40, further investment
+                should depend on your objectives,
+                including Skill Class progression.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     ARTIFACTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        ARTIFACTS
+    </div>
+
+    <h2 class="section-title">
+        Artifact Priority.
+    </h2>
+
+    <p class="section-lead">
+        Isaac's most important Artifact investment
+        is his Book, which supplies
+        <strong>Armor Penetration and Physical Attack.</strong>
+        His Weapon follows because of its powerful
+        anti-mage support.
+    </p>
+
+    <div class="artifact-grid">
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 01
+            </div>
+
+            <h3>
+                Artifact Book
+            </h3>
+
+            <p>
+                Provides Armor Penetration
+                and Physical Attack.
+                This is Isaac's strongest overall
+                development priority because it improves
+                his offensive potential and supports
+                the abilities that scale
+                with Physical Attack.
+            </p>
+
+        </article>
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 02
+            </div>
+
+            <h3>
+                Artifact Weapon
+            </h3>
+
+            <p>
+                Activating Tes'Lin's Overdrive
+                grants Magic Defense to the entire team.
+                This makes the Weapon particularly valuable
+                against heavy magic compositions.
+            </p>
+
+        </article>
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 03
+            </div>
+
+            <h3>
+                Artifact Ring
+            </h3>
+
+            <p>
+                Provides Agility, supporting Isaac's
+                overall stats and development.
+                Valuable, but less immediately impactful
+                than the Book and Weapon.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     GIFT OF THE ELEMENTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+    </div>
+
+    <h2 class="section-title">
+        No Compromise Here.
+    </h2>
+
+    <div class="max-box">
+
+        <span>
+            RECOMMENDED DEVELOPMENT
+        </span>
+
+        <strong>
+            MAX IT
+        </strong>
+
+        <p>
+            Isaac benefits enormously from strong
+            fundamental stats.
+            Focus on Agility and Physical Attack
+            to improve his damage, shield strength,
+            offensive buffs and overall effectiveness.
+            Maximizing the Gift of the Elements
+            is an essential part of completing
+            his development.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     TALISMANS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TALISMANS
+    </div>
+
+    <h2 class="section-title">
+        Two Powerful Development Paths.
+    </h2>
+
+    <p class="section-lead">
+        Isaac currently has two Talismans.
+        Both are valuable, but they strengthen
+        different aspects of his performance.
+    </p>
+
+    <div class="talisman-grid">
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 01
+            </div>
+
+            <h3>
+                Agility + Physical Attack
+            </h3>
+
+            <div class="stats">
+
+                <div class="stat">
+                    AGILITY
+                </div>
+
+                <div class="stat">
+                    PHYSICAL ATTACK
+                </div>
+
+            </div>
+
+            <p>
+                This Talisman directly supports
+                Isaac's core development.
+                Physical Attack strengthens
+                his damage, offensive buffs
+                and protective shields,
+                while Agility improves
+                his overall stats.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Permanently available through
+                the Eternal Frontier Shop.
+            </div>
+
+        </article>
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 02
+            </div>
+
+            <h3>
+                Toughness + Crushing
+            </h3>
+
+            <div class="stats">
+
+                <div class="stat">
+                    TOUGHNESS
+                </div>
+
+                <div class="stat">
+                    CRUSHING
+                </div>
+
+            </div>
+
+            <p>
+                Isaac's second Talisman offers
+                an alternative development path
+                through Toughness and Crushing.
+                Both stats contribute additional
+                value to his overall combat performance.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Available through special events.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SYNERGIES
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SYNERGIES
+    </div>
+
+    <h2 class="section-title">
+        Heroes That Work With Isaac.
+    </h2>
+
+    <p class="section-lead">
+        Isaac can support a wide range of physical
+        damage dealers, but his strongest interactions
+        emerge when allies benefit directly
+        from his buffs, shields or Armor reduction.
+    </p>
+
+    <div class="synergy-grid">
+
+        <article class="synergy-card">
+
+            <h3>
+                Julius
+            </h3>
+
+            <p>
+                Julius provides additional shields
+                and acceleration.
+                Together with Isaac,
+                he creates a durable Progress
+                frontline capable of surviving
+                heavy incoming damage.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Judge
+            </h3>
+
+            <p>
+                Judge adds even more shields
+                and battlefield control.
+                Combining Judge, Julius and Isaac
+                creates a powerful defensive
+                Progress core.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Nebula
+            </h3>
+
+            <p>
+                Nebula increases Physical Attack
+                and Magic Attack for nearby allies.
+                Her support strengthens Isaac's
+                shields and buffs while increasing
+                the Armor reduction applied
+                by High-Voltage Module.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Fafnir
+            </h3>
+
+            <p>
+                Isaac's Physical Attack buff
+                strengthens Fafnir's Runic Blade
+                and Runic Shield, improving
+                both offensive support
+                and team protection.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Ginger
+            </h3>
+
+            <p>
+                Ginger benefits from increased
+                Physical Attack and additional
+                Armor Penetration support,
+                making her damage significantly
+                more threatening.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Astrid and Lucas
+            </h3>
+
+            <p>
+                Astrid and Lucas benefit
+                from Isaac's offensive buffs,
+                allowing them to deliver
+                stronger Physical Damage
+                in Progress compositions.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Daredevil
+            </h3>
+
+            <p>
+                Daredevil gains additional
+                offensive value from Isaac's
+                Physical Attack support,
+                strengthening her damage output.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Fox
+            </h3>
+
+            <p>
+                Fox benefits from the additional
+                Physical Attack supplied
+                by Observer Drones,
+                increasing her offensive pressure.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Lara Croft
+            </h3>
+
+            <p>
+                Lara Croft can become even more
+                dangerous when supported
+                by Isaac's Physical Attack buffs,
+                making him a valuable partner
+                in physical compositions.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     COUNTERS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        COUNTERS
+    </div>
+
+    <h2 class="section-title">
+        How Can Isaac Be Countered?
+    </h2>
+
+    <p class="section-lead">
+        Isaac is dangerous because he combines
+        damage, buffs and shields.
+        Effective counters disrupt those mechanics
+        through <strong>damage-over-time,
+        crowd control, charm or damage absorption.</strong>
+    </p>
+
+    <div class="counter-grid">
+
+        <article class="counter-card">
+
+            <h3>
+                Iris
+            </h3>
+
+            <p>
+                Iris applies continuous area damage
+                and damage-over-time effects,
+                allowing her to rapidly destroy
+                Isaac's protective shields
+                and pressure his team.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Polaris
+            </h3>
+
+            <p>
+                Polaris can repeatedly stun Isaac,
+                delaying his drones,
+                offensive buffs and Armor reduction.
+                Interrupting his timing reduces
+                his overall impact.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Somna
+            </h3>
+
+            <p>
+                When Isaac's electrical charge
+                reaches Somna, her mechanics
+                can transform him into a sheep,
+                disrupting his offensive momentum.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Lian
+            </h3>
+
+            <p>
+                If Isaac's electrical charge
+                touches Lian, she can charm him,
+                interrupting his actions
+                and preventing him from
+                maintaining offensive pressure.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Electra
+            </h3>
+
+            <p>
+                Electra can absorb a significant
+                portion of Isaac's Ultimate damage,
+                reducing the impact of his
+                electrical charge during
+                important moments of battle.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FINAL VERDICT
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="verdict">
+
+        <div class="section-kicker">
+            FINAL ANALYSIS
+        </div>
+
+        <h2>
+            Is Isaac Worth Building?
+        </h2>
+
+        <p>
+            <strong>Without question.</strong>
+            Isaac remains one of the most valuable
+            support Marksmen in Hero Wars Alliance.
+        </p>
+
+        <p>
+            His Observer Drones increase Physical Attack
+            and provide additional Armor Penetration
+            to Progress Engineers.
+            Shield Drones protect allies and heal Engineers.
+            Tes'Lin's Overdrive deals Physical Damage
+            while triggering a team-wide Magic Defense bonus.
+        </p>
+
+        <p>
+            High-Voltage Module adds knockback
+            and Armor reduction, creating even more
+            opportunities for physical damage dealers
+            to eliminate dangerous opponents.
+        </p>
+
+        <p>
+            His strongest combinations include
+            <strong>Julius, Judge, Nebula and Fafnir</strong>,
+            alongside physical damage dealers
+            such as Ginger, Astrid and Lucas,
+            Daredevil, Fox and Lara Croft.
+        </p>
+
+        <p>
+            Isaac is not simply a damage dealer.
+            He is a Hero who makes the entire
+            team stronger, more durable
+            and more dangerous.
+        </p>
+
+        <p>
+            <strong>
+                Gods of Alliance Verdict:
+                Isaac is an outstanding long-term investment
+                for physical and Progress compositions,
+                particularly for players who need
+                powerful shields, offensive buffs
+                and reliable anti-mage support.
+            </strong>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     VIDEO
+     ========================================================= -->
+
+<section class="section video-section">
+
+    <div class="section-kicker">
+        WATCH THE FULL GUIDE
+    </div>
+
+    <h2 class="section-title">
+        Isaac Video Guide.
+    </h2>
+
+    <p
+        class="section-lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the complete Gods of Alliance Isaac guide
+        for the full explanation of his mechanics,
+        Skill interactions, development priorities,
+        Progress synergies and counters.
+    </p>
+
+    <div class="video-frame">
+
+        <iframe
+            src="https://www.youtube.com/embed/fXbc94lyNJ0"
+            title="Isaac Full Guide - Gods of Alliance"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
+<script src="goa-global.js"></script>
+
+</body>
+</html>
