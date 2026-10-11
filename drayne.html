@@ -1,0 +1,932 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drayne Full Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Drayne Hero Wars Alliance guide: Final Verdict execution mechanics, best skins, glyphs, artifacts, talismans, team synergies and counters.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/drayne.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Drayne Full Guide | Gods of Alliance">
+<meta property="og:description" content="Master Drayne's execution mechanic, Health scaling, optimal builds, synergies and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/drayne.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/drayne-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/drayne-guide.jpg">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:#020b0c}
+:root{
+--bg:#020b0c;
+--panel:rgba(7,23,25,.94);
+--spectral:#32e3b3;
+--spectral-bright:#a1ffe1;
+--fire:#dba443;
+--fire-bright:#ffdb83;
+--muted:#a0b8b4;
+}
+body{
+min-height:100vh;color:#fff;
+background:
+radial-gradient(circle at 50% 0%,rgba(24,174,135,.09),transparent 30%),
+linear-gradient(180deg,#071b1c 0%,#020b0c 46%,#010607 100%);
+font-family:Inter,Arial,Helvetica,sans-serif;
+overflow-x:hidden;
+}
+a{color:inherit}
+.hero-header{
+position:relative;min-height:740px;display:flex;
+align-items:flex-end;overflow:hidden;
+border-bottom:1px solid rgba(50,227,179,.12);
+background:#020b0c;
+}
+.hero-background{
+position:absolute;inset:0;
+background-image:
+linear-gradient(90deg,rgba(1,8,9,.07) 0%,rgba(1,8,9,.13) 34%,rgba(1,8,9,.55) 57%,rgba(1,8,9,.95) 100%),
+linear-gradient(180deg,rgba(2,11,12,.02) 0%,rgba(2,11,12,.09) 48%,#020b0c 100%),
+url("Images/Hero-Guides/drayne-guide.jpg");
+background-size:cover;
+background-position:center;
+transform:scale(1.015);
+}
+.hero-background::after{
+content:"";position:absolute;inset:0;
+background:
+radial-gradient(circle at 25% 40%,rgba(50,227,179,.12),transparent 27%),
+radial-gradient(circle at 31% 45%,rgba(219,164,67,.07),transparent 20%);
+}
+.hero-shell{
+position:relative;z-index:2;width:100%;max-width:1400px;
+margin:0 auto;padding:180px 32px 82px;
+display:flex;justify-content:flex-end;
+}
+.hero-content{width:min(650px,100%)}
+.hero-badge{
+display:inline-block;margin-bottom:17px;padding:8px 11px;
+border:1px solid rgba(161,255,225,.28);border-radius:4px;
+background:rgba(2,12,13,.7);color:var(--spectral-bright);
+font-size:9px;font-weight:950;letter-spacing:.18em;text-transform:uppercase;
+}
+.hero-header h1{
+margin-bottom:15px;color:var(--spectral-bright);
+font-size:clamp(55px,8vw,96px);line-height:.9;
+font-weight:950;letter-spacing:-.055em;
+text-shadow:0 8px 35px rgba(0,0,0,.95),0 0 28px rgba(50,227,179,.13);
+}
+.hero-role{
+margin-bottom:21px;color:#fff;font-size:11px;
+font-weight:950;letter-spacing:.13em;line-height:1.7;text-transform:uppercase;
+}
+.hero-role span{color:var(--spectral)}
+.hero-intro{
+max-width:620px;color:#b4ccc4;font-size:14px;
+line-height:1.8;text-shadow:0 2px 10px #000;
+}
+.hero-intro strong{color:#fff}
+.article{width:100%;max-width:1180px;margin:0 auto;padding:78px 28px 100px}
+.section{margin-bottom:82px}
+.section-kicker{
+margin-bottom:9px;color:var(--spectral);font-size:9px;
+font-weight:950;letter-spacing:.21em;text-transform:uppercase;
+}
+.section-title{
+margin-bottom:18px;font-size:clamp(30px,4.4vw,47px);
+line-height:1;font-weight:950;letter-spacing:-.035em;
+}
+.section-lead{max-width:870px;color:var(--muted);font-size:14px;line-height:1.8}
+.section-lead strong{color:var(--spectral-bright)}
+.identity-grid{
+margin-top:31px;display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
+}
+.identity-card{
+padding:24px;border:1px solid rgba(50,227,179,.14);
+border-radius:9px;
+background:radial-gradient(circle at 100% 0%,rgba(50,227,179,.07),transparent 45%),rgba(7,23,25,.9);
+}
+.identity-label{
+margin-bottom:9px;color:#77958d;font-size:8px;
+font-weight:950;letter-spacing:.15em;text-transform:uppercase;
+}
+.identity-value{color:var(--spectral-bright);font-size:20px;font-weight:950}
+.core-box{
+margin-top:31px;padding:31px;border:1px solid rgba(50,227,179,.22);
+border-radius:11px;
+background:radial-gradient(circle at 100% 0%,rgba(50,227,179,.1),transparent 40%),linear-gradient(145deg,rgba(10,32,30,.96),rgba(3,14,16,.98));
+}
+.core-box p{color:#a9c0b9;font-size:14px;line-height:1.85}
+.core-box strong{color:#fff}
+.core-line{
+margin-top:24px;display:grid;
+grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;
+}
+.core-word{
+padding:14px 8px;border:1px solid rgba(50,227,179,.1);
+border-radius:5px;color:var(--spectral-bright);
+background:rgba(50,227,179,.025);
+text-align:center;font-size:10px;font-weight:950;
+letter-spacing:.07em;text-transform:uppercase;
+}
+.skills-stack{margin-top:33px;display:grid;gap:16px}
+.skill-card{
+position:relative;overflow:hidden;padding:28px;
+border:1px solid rgba(50,227,179,.14);border-radius:10px;
+background:radial-gradient(circle at 100% 0%,rgba(50,227,179,.07),transparent 42%),rgba(7,23,25,.91);
+}
+.skill-card.primary{
+border-color:rgba(219,164,67,.28);
+background:radial-gradient(circle at 100% 0%,rgba(219,164,67,.1),transparent 40%),radial-gradient(circle at 0% 100%,rgba(50,227,179,.06),transparent 35%),rgba(8,24,25,.94);
+}
+.skill-number{
+margin-bottom:8px;color:var(--spectral);font-size:8px;
+font-weight:950;letter-spacing:.17em;text-transform:uppercase;
+}
+.skill-card.primary .skill-number{color:var(--fire-bright)}
+.skill-name{
+margin-bottom:13px;color:#fff;font-size:23px;
+font-weight:950;text-transform:uppercase;
+}
+.skill-card p{color:#a5bbb4;font-size:13px;line-height:1.78}
+.skill-card p+p{margin-top:12px}
+.skill-card p strong{color:#fff}
+.skill-highlight{
+margin-top:18px;padding:15px 17px;
+border-left:2px solid var(--spectral);
+background:rgba(50,227,179,.035);
+color:var(--spectral-bright);
+font-size:11px;font-weight:800;line-height:1.65;
+}
+.primary .skill-highlight{
+border-left-color:var(--fire);color:var(--fire-bright);
+background:rgba(219,164,67,.04);
+}
+.priority-grid{
+margin-top:32px;display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
+}
+.priority-card{
+padding:28px;border:1px solid rgba(50,227,179,.14);
+border-radius:10px;background:rgba(7,23,25,.91);
+}
+.priority-card h3{
+margin-bottom:20px;color:var(--spectral-bright);
+font-size:21px;font-weight:950;text-transform:uppercase;
+}
+.priority-list{list-style:none;counter-reset:priority}
+.priority-list li{
+counter-increment:priority;position:relative;min-height:47px;
+padding:13px 10px 13px 47px;
+border-bottom:1px solid rgba(255,255,255,.055);
+color:#aabfb9;font-size:12px;line-height:1.6;
+}
+.priority-list li:last-child{border-bottom:0}
+.priority-list li::before{
+content:counter(priority);position:absolute;left:5px;top:12px;
+width:26px;height:26px;display:flex;align-items:center;
+justify-content:center;border:1px solid rgba(50,227,179,.19);
+border-radius:50%;color:var(--spectral-bright);
+font-size:9px;font-weight:950;
+}
+.priority-list strong{color:#fff}
+.priority-note{margin-top:17px;color:#829c94;font-size:10px;line-height:1.65}
+.artifact-grid{
+margin-top:31px;display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
+}
+.artifact-card{
+padding:26px 22px;border:1px solid rgba(50,227,179,.14);
+border-radius:9px;background:rgba(7,23,25,.91);
+}
+.artifact-order{
+margin-bottom:11px;color:var(--fire-bright);
+font-size:8px;font-weight:950;letter-spacing:.15em;text-transform:uppercase;
+}
+.artifact-card h3{margin-bottom:10px;font-size:19px;font-weight:950}
+.artifact-card p{color:#96ada5;font-size:11px;line-height:1.7}
+.max-box{
+margin-top:30px;padding:33px;
+border:1px solid rgba(219,164,67,.24);
+border-radius:11px;text-align:center;
+background:radial-gradient(circle at 50% 0%,rgba(219,164,67,.1),transparent 45%),rgba(9,23,24,.94);
+}
+.max-box span{
+display:block;margin-bottom:9px;color:#839d94;
+font-size:8px;font-weight:950;letter-spacing:.16em;text-transform:uppercase;
+}
+.max-box strong{
+color:var(--fire-bright);
+font-size:clamp(35px,5vw,49px);font-weight:950;
+}
+.max-box p{
+max-width:690px;margin:15px auto 0;
+color:#98b0a7;font-size:12px;line-height:1.7;
+}
+.talisman-grid{
+margin-top:31px;display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
+}
+.talisman-card{
+padding:28px;border:1px solid rgba(119,113,191,.22);
+border-radius:10px;
+background:radial-gradient(circle at 100% 0%,rgba(119,113,191,.1),transparent 43%),rgba(8,19,27,.94);
+}
+.talisman-number{
+margin-bottom:9px;color:#b1a9ec;font-size:8px;
+font-weight:950;letter-spacing:.16em;text-transform:uppercase;
+}
+.talisman-card h3{margin-bottom:16px;font-size:22px;font-weight:950}
+.stats{margin-bottom:18px;display:flex;flex-wrap:wrap;gap:7px}
+.stat{
+padding:7px 9px;border:1px solid rgba(177,169,236,.17);
+border-radius:4px;color:#ded8fa;background:rgba(119,113,191,.05);
+font-size:9px;font-weight:900;text-transform:uppercase;
+}
+.talisman-card p{color:#9bb4ad;font-size:12px;line-height:1.72}
+.obtain{
+margin-top:17px;padding-top:15px;
+border-top:1px solid rgba(255,255,255,.055);
+color:#7d988f;font-size:10px;line-height:1.6;
+}
+.obtain strong{color:var(--spectral-bright)}
+.synergy-grid{
+margin-top:31px;display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
+}
+.synergy-card{
+padding:25px;border:1px solid rgba(50,227,179,.14);
+border-radius:9px;background:rgba(7,23,25,.9);
+}
+.synergy-card h3{
+margin-bottom:11px;color:var(--spectral-bright);
+font-size:19px;font-weight:950;
+}
+.synergy-card p{color:#98afa7;font-size:11px;line-height:1.72}
+.counter-grid{
+margin-top:31px;display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+}
+.counter-card{
+padding:23px;border:1px solid rgba(219,164,67,.14);
+border-radius:9px;
+background:radial-gradient(circle at 100% 0%,rgba(219,164,67,.055),transparent 45%),rgba(8,21,23,.92);
+}
+.counter-card h3{
+margin-bottom:10px;color:var(--fire-bright);
+font-size:18px;font-weight:950;
+}
+.counter-card p{color:#9fb5ae;font-size:11px;line-height:1.72}
+.verdict{
+padding:34px;border:1px solid rgba(50,227,179,.25);
+border-radius:12px;
+background:radial-gradient(circle at 0% 0%,rgba(50,227,179,.1),transparent 40%),radial-gradient(circle at 100% 100%,rgba(219,164,67,.07),transparent 38%),rgba(7,23,25,.96);
+}
+.verdict h2{
+margin-bottom:17px;font-size:clamp(29px,4vw,43px);
+font-weight:950;letter-spacing:-.035em;
+}
+.verdict p{color:#a8bfb6;font-size:14px;line-height:1.85}
+.verdict p+p{margin-top:13px}
+.verdict strong{color:var(--spectral-bright)}
+.video-section{margin-top:20px}
+.video-frame{
+position:relative;width:100%;padding-top:56.25%;overflow:hidden;
+border:1px solid rgba(50,227,179,.23);border-radius:12px;
+background:#000;box-shadow:0 28px 70px rgba(0,0,0,.4);
+}
+.video-frame iframe{
+position:absolute;inset:0;width:100%;height:100%;border:0;
+}
+footer{
+padding:35px 20px;border-top:1px solid rgba(50,227,179,.08);
+background:#010607;color:#58746a;text-align:center;
+font-size:10px;letter-spacing:.05em;
+}
+@media(max-width:900px){
+.identity-grid,.artifact-grid,.synergy-grid,.counter-grid{grid-template-columns:1fr}
+.priority-grid,.talisman-grid{grid-template-columns:1fr}
+.core-line{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+.hero-header{min-height:650px}
+.hero-background{
+background-image:
+linear-gradient(180deg,rgba(2,11,12,.05) 0%,rgba(2,11,12,.3) 42%,#020b0c 100%),
+url("Images/Hero-Guides/drayne-guide.jpg");
+background-position:30% center;
+}
+.hero-shell{justify-content:flex-start;padding:310px 20px 55px}
+.hero-content{text-align:center}
+.article{padding:64px 19px 80px}
+.skill-card,.priority-card,.talisman-card,.verdict{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero-header">
+<div class="hero-background"></div>
+<div class="hero-shell">
+<div class="hero-content">
+<div class="hero-badge">HERO GUIDE</div>
+<h1>DRAYNE</h1>
+<div class="hero-role">
+WARRIOR <span>•</span> WAY OF ETERNITY <span>•</span> FRONT LINE
+</div>
+<p class="hero-intro">
+The legendary swordmaster of Dominion is no ordinary frontline Warrior.
+Drayne combines <strong>Physical Damage, team-wide offensive support
+and a devastating execution mechanic.</strong> Once an enemy falls
+within the range of Final Verdict, a successful attack can end
+the battle permanently — <strong>without resurrection.</strong>
+</p>
+</div>
+</div>
+</header>
+
+<main class="article">
+
+<section class="section">
+<div class="section-kicker">HERO IDENTITY</div>
+<h2 class="section-title">What Is Drayne?</h2>
+<p class="section-lead">
+Drayne is a frontline Warrior from the <strong>Way of Eternity</strong>.
+He fights close to the enemy, delivering physical pressure
+while supporting allies with Crushing bonuses.
+His greatest weapon is <strong>Final Verdict</strong>,
+an execution mechanic that can permanently eliminate enemies
+who fall below his Health-based threshold.
+</p>
+<div class="identity-grid">
+<article class="identity-card">
+<div class="identity-label">CLASS</div>
+<div class="identity-value">Warrior</div>
+</article>
+<article class="identity-card">
+<div class="identity-label">FACTION</div>
+<div class="identity-value">Way of Eternity</div>
+</article>
+<article class="identity-card">
+<div class="identity-label">POSITION</div>
+<div class="identity-value">Front Line</div>
+</article>
+</div>
+<div class="core-box">
+<p>
+Drayne's mechanics combine <strong>Physical Damage,
+expanded attack range, surrounding attacks, Crushing support
+and permanent execution.</strong> His build must balance
+offensive power with sufficient Health to survive on the frontline
+and strengthen Final Verdict.
+</p>
+<div class="core-line">
+<div class="core-word">DAMAGE</div>
+<div class="core-word">RANGE</div>
+<div class="core-word">CRUSHING</div>
+<div class="core-word">HEALTH</div>
+<div class="core-word">EXECUTION</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">SKILLS</div>
+<h2 class="section-title">Drayne's Skill Kit.</h2>
+<p class="section-lead">
+Drayne's abilities explain why his development cannot focus
+exclusively on Physical Attack. <strong>Health is also an
+offensive investment</strong> because it strengthens both
+Power Charge and his signature execution mechanic.
+</p>
+<div class="skills-stack">
+
+<article class="skill-card">
+<div class="skill-number">SKILL 01 • ULTIMATE</div>
+<h3 class="skill-name">Rising Tornado</h3>
+<p>
+Drayne spins his sword, striking enemies in front of him
+<strong>three times</strong>.
+</p>
+<p>
+When activated, Drayne grows in size and increases both his
+<strong>Physical Attack and the range of his skills for nine seconds</strong>.
+This allows his attacks to threaten enemies who might otherwise
+remain outside his normal reach.
+</p>
+<p>
+Damage scales with <strong>Physical Attack</strong>,
+making this stat important for his offensive pressure.
+</p>
+<p>
+The Ultimate also activates Drayne's Weapon Artifact,
+providing a <strong>team-wide Crushing bonus</strong>.
+</p>
+<p>
+Heroes such as Guus and Jet can contribute to critical-oriented
+strategies, while Dante and Corvus can help weaken enemies
+through their own stat-reduction and defensive interactions.
+</p>
+<div class="skill-highlight">
+KEY MECHANIC: Three physical strikes, nine seconds of increased
+Physical Attack and skill range, plus team-wide Crushing
+from the Weapon Artifact.
+</div>
+</article>
+
+<article class="skill-card">
+<div class="skill-number">SKILL 02</div>
+<h3 class="skill-name">Shatter Strike</h3>
+<p>
+Every <strong>three basic attacks</strong>, Drayne unleashes
+a strike that damages enemies around him.
+</p>
+<p>
+Importantly, <strong>Shatter Strike itself counts as a basic attack</strong>.
+</p>
+<p>
+This surrounding damage allows Drayne to threaten enemies
+who move close to him instead of attacking only the opponent
+directly in front.
+</p>
+<p>
+The ability's damage scales with <strong>Physical Attack</strong>,
+so offensive investment improves both Rising Tornado
+and Shatter Strike.
+</p>
+<div class="skill-highlight">
+KEYWORD: AREA PRESSURE. Every three basic attacks,
+Drayne damages surrounding enemies, and Shatter Strike
+counts as a basic attack.
+</div>
+</article>
+
+<article class="skill-card">
+<div class="skill-number">SKILL 03</div>
+<h3 class="skill-name">Power Charge</h3>
+<p>
+For <strong>seven seconds</strong>, Drayne increases Crushing
+for himself and the allies positioned <strong>behind him</strong>,
+while attacking the nearest enemies in front.
+</p>
+<p>
+This ability scales with both <strong>Physical Attack and Health</strong>.
+</p>
+<p>
+That makes Health more than a defensive stat.
+Increasing it improves Drayne's survivability
+and contributes to the effectiveness of his offensive support.
+</p>
+<p>
+Dante and Corvus can complement this strategy by weakening
+enemy stats or defenses, helping the team convert
+its attacks into more effective damage.
+</p>
+<div class="skill-highlight">
+IMPORTANT SCALING: Power Charge uses both Physical Attack
+and Health. It grants Crushing to Drayne and allies behind
+him for seven seconds.
+</div>
+</article>
+
+<article class="skill-card primary">
+<div class="skill-number">SKILL 04 • SIGNATURE PASSIVE</div>
+<h3 class="skill-name">Final Verdict</h3>
+<p>
+Final Verdict allows Drayne's attacks and skills to
+<strong>instantly kill enemies whose Health falls below
+his execution threshold</strong>.
+</p>
+<p>
+Enemies killed by Drayne <strong>cannot be resurrected</strong>.
+This makes Final Verdict particularly dangerous
+against teams that rely on healing and resurrection.
+</p>
+<p>
+However, Drayne must still <strong>successfully connect
+with the target</strong>. A dodged attack does not
+deliver the execution.
+</p>
+<p>
+The execution threshold scales with <strong>Drayne's Health,
+not Physical Attack</strong>.
+</p>
+<p>
+This is the central mechanic behind his recommended build:
+Health improves his survival, strengthens Power Charge
+and increases the effectiveness of Final Verdict.
+</p>
+<div class="skill-highlight">
+EXECUTION MECHANIC: A successful attack can permanently
+eliminate enemies below Drayne's Health-based execution
+threshold. Dodged attacks do not execute the target,
+and victims cannot be resurrected.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">DEVELOPMENT</div>
+<h2 class="section-title">Skins &amp; Glyphs.</h2>
+<p class="section-lead">
+Drayne's development begins with <strong>Health</strong>.
+He needs enough survivability to remain active on the frontline,
+and Health directly supports his execution mechanic.
+</p>
+<div class="priority-grid">
+
+<article class="priority-card">
+<h3>Skin Priority</h3>
+<ol class="priority-list">
+<li>
+<strong>Guardian of the Goddess — Health</strong><br>
+Highest priority. Supports survival, Power Charge
+and Final Verdict. Its Skin+ version is especially valuable.
+</li>
+<li>
+<strong>Default Skin — Strength</strong><br>
+Reinforces Health and Physical Attack,
+providing a balanced frontline foundation.
+</li>
+<li>
+<strong>Flames of Jade — Physical Attack</strong><br>
+Improves basic attacks and offensive scaling
+of Drayne's first three skills.
+</li>
+<li>
+<strong>Skin of Rebirth — Armor Penetration</strong><br>
+Helps physical attacks overcome enemy Armor.
+</li>
+<li>
+<strong>Skin of Oblivion — Armor</strong><br>
+Provides additional protection against physical damage.
+</li>
+</ol>
+<div class="priority-note">
+FUTURE PRIORITY: Any new Health or Physical Attack Skin
+should be evaluated against this foundation.
+Health remains central to Final Verdict.
+</div>
+</article>
+
+<article class="priority-card">
+<h3>Glyph Priority</h3>
+<ol class="priority-list">
+<li><strong>Health</strong><br>
+Supports survival, Power Charge and Final Verdict.</li>
+<li><strong>Strength</strong><br>
+Reinforces offensive and defensive base stats.</li>
+<li><strong>Physical Attack</strong><br>
+Improves basic attacks and damage-based skills.</li>
+<li><strong>Armor Penetration</strong><br>
+Improves damage against armored enemies.</li>
+<li><strong>Crushing</strong><br>
+Provides additional offensive value after core stats.</li>
+</ol>
+<div class="priority-note">
+INITIAL DEVELOPMENT: Bring all five Glyphs to
+<strong>Level 40</strong> before committing additional
+resources to specialized progression.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">ARTIFACTS</div>
+<h2 class="section-title">Artifact Priority.</h2>
+<p class="section-lead">
+For Drayne, the recommended Artifact order prioritizes
+his <strong>personal foundation first</strong>,
+then offensive penetration and team support.
+</p>
+<div class="artifact-grid">
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 01</div>
+<h3>Artifact Ring</h3>
+<p>
+Provides Strength, supporting both Health and Physical Attack.
+This is the first priority because Drayne needs
+a strong frontline foundation.
+</p>
+</article>
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 02</div>
+<h3>Artifact Book</h3>
+<p>
+Provides Armor Penetration and Crushing,
+strengthening Drayne's offensive effectiveness
+once his core stats are established.
+</p>
+</article>
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 03</div>
+<h3>Artifact Weapon</h3>
+<p>
+Activating Rising Tornado grants a team-wide Crushing bonus.
+Useful for team offense, but developed after the Ring and Book
+in this recommended build.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">GIFT OF THE ELEMENTS</div>
+<h2 class="section-title">Build the Foundation.</h2>
+<div class="max-box">
+<span>RECOMMENDED DEVELOPMENT</span>
+<strong>MAX IT</strong>
+<p>
+Drayne needs the additional stats to survive on the frontline
+and continue attacking. His execution mechanic is only valuable
+when he remains alive long enough to connect with enemies
+who have entered Final Verdict's execution range.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">TALISMANS</div>
+<h2 class="section-title">Two Development Paths.</h2>
+<p class="section-lead">
+Drayne has two Talismans in the supplied guide.
+One reinforces his basic stats; the other focuses
+more directly on offensive penetration and Crushing.
+</p>
+<div class="talisman-grid">
+
+<article class="talisman-card">
+<div class="talisman-number">TALISMAN 01</div>
+<h3>Strength + Physical Attack</h3>
+<div class="stats">
+<div class="stat">STRENGTH</div>
+<div class="stat">PHYSICAL ATTACK</div>
+</div>
+<p>
+Strength supports Drayne's Health and Physical Attack foundation.
+The additional Physical Attack improves his basic attacks
+and offensive skills.
+</p>
+<div class="obtain">
+<strong>OBTAIN:</strong> Eternal Frontier Shop —
+<strong>700,000 Frontier Coins</strong>.
+</div>
+</article>
+
+<article class="talisman-card">
+<div class="talisman-number">TALISMAN 02</div>
+<h3>Armor Penetration + Crushing</h3>
+<div class="stats">
+<div class="stat">ARMOR PENETRATION</div>
+<div class="stat">CRUSHING</div>
+</div>
+<p>
+A more offense-focused option that becomes interesting
+once Drayne has sufficient survivability
+and needs stronger physical attacking performance.
+</p>
+<div class="obtain">
+<strong>OBTAIN:</strong> Special events.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">SYNERGIES</div>
+<h2 class="section-title">Heroes That Work With Drayne.</h2>
+<p class="section-lead">
+Drayne benefits from allies who improve his survivability,
+increase offensive pressure, weaken enemies,
+provide control or create more opportunities
+for <strong>Final Verdict to connect</strong>.
+</p>
+<div class="synergy-grid">
+
+<article class="synergy-card">
+<h3>Byrna</h3>
+<p>
+Health-related support makes Byrna especially interesting
+for a hero whose execution threshold scales with Health.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Tempus</h3>
+<p>
+Combines Health-related interactions with battlefield control,
+helping create opportunities for Drayne to attack.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Octavia</h3>
+<p>
+Dodge-related support can create defensive opportunities,
+alongside Energy and Armor Penetration interactions
+when Drayne successfully dodges.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Soleil</h3>
+<p>
+Magic Halo can protect Drayne against disruptive effects
+such as Blindness, Stun and Silence,
+especially when Drayne is the main frontline protector.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Guus</h3>
+<p>
+Can contribute to critical-oriented offensive strategies,
+helping Drayne maintain stronger attacking pressure.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Jet</h3>
+<p>
+Supports critical-oriented offense,
+providing another way to strengthen Drayne's physical pressure.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Dante</h3>
+<p>
+Can weaken enemy stats and complement Drayne's
+Crushing-based offensive support.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Corvus</h3>
+<p>
+His defensive and stat-reduction interactions
+can complement Drayne's frontline pressure.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">COUNTERS</div>
+<h2 class="section-title">How Can Drayne Be Countered?</h2>
+<p class="section-lead">
+Final Verdict is not automatic. Drayne must
+<strong>survive, attack and successfully connect</strong>.
+Counterplay focuses on interrupting these conditions
+rather than relying on one defensive Hero to solve everything.
+</p>
+<div class="counter-grid">
+
+<article class="counter-card">
+<h3>Electra</h3>
+<p>
+Her high Health, damage absorption and Blindness
+against nearby enemies can interfere with Drayne's attacks.
+Blindness is particularly relevant because Final Verdict
+requires a successful hit.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Tempus</h3>
+<p>
+Temporal Anomaly can interfere with Drayne's Energy
+and attack speed, slowing the offensive rhythm
+needed to deliver his execution attacks.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Iris</h3>
+<p>
+Can become particularly effective alongside Tempus
+through additional damage interactions involving
+the buffs and debuffs applied during battle.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Somna</h3>
+<p>
+Through the ally directly in front of her,
+Somna can contribute to reducing Drayne's Physical Damage
+and Armor Penetration, weakening his conventional pressure.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Alvanor</h3>
+<p>
+Provides protection against Drayne's basic attacks.
+However, he is not a complete counter by himself
+because Drayne also has skills, team support
+and Final Verdict.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="verdict">
+<div class="section-kicker">FINAL ANALYSIS</div>
+<h2>Is Drayne Worth Building?</h2>
+
+<p>
+<strong>Drayne is a dangerous frontline Warrior
+whose greatest strength is his permanent execution mechanic.</strong>
+</p>
+
+<p>
+Rising Tornado increases his Physical Attack and skill range.
+Shatter Strike punishes surrounding enemies.
+Power Charge provides Crushing to Drayne and allies behind him.
+Final Verdict can permanently eliminate enemies
+who fall below his execution threshold.
+</p>
+
+<p>
+The most important part of his development is understanding
+that <strong>Health is central to his mechanics</strong>.
+It improves his survivability, strengthens Power Charge
+and increases the effectiveness of Final Verdict.
+</p>
+
+<p>
+That is why the recommended build starts with
+<strong>Health, Strength and Physical Attack</strong>,
+followed by Armor Penetration and Crushing.
+</p>
+
+<p>
+His most interesting partners include
+<strong>Byrna, Tempus, Octavia and Soleil</strong>,
+with additional offensive possibilities through
+Guus, Jet, Dante and Corvus.
+</p>
+
+<p>
+When fighting against Drayne, prioritize disrupting
+his attacks, limiting his opportunities to connect
+and preventing him from freely reaching execution range.
+</p>
+
+<p>
+<strong>
+Gods of Alliance Verdict: Drayne is a powerful execution-focused
+Warrior who rewards careful investment in Health,
+a balanced offensive foundation and teammates
+that help him survive long enough to deliver Final Verdict.
+</strong>
+</p>
+</div>
+</section>
+
+<section class="section video-section">
+<div class="section-kicker">WATCH THE FULL GUIDE</div>
+<h2 class="section-title">Drayne Video Guide.</h2>
+<p class="section-lead" style="margin-bottom:26px">
+Watch the complete Gods of Alliance Drayne guide
+for his execution mechanics, best builds, investment priorities,
+team synergies and counters.
+</p>
+<div class="video-frame">
+<iframe
+src="https://www.youtube.com/embed/MeTvb20Y204"
+title="Drayne Full Guide - Gods of Alliance"
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+<script src="goa-global.js"></script>
+</body>
+</html>
