@@ -1,1340 +1,1910 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Judge Full Guide — Skills, Builds, Skins & Counters | Gods of Alliance</title>
-<meta name="description" content="Complete Judge guide for Hero Wars Alliance. Discover Judge's skills, best skins, glyphs, artifacts, talismans, team synergies and counters.">
+<title>Judge Full Guide | Gods of Alliance</title>
+
+<meta name="description" content="Complete Judge guide for Hero Wars Alliance. Skills, Skins, Glyphs, Artifacts, Gift of the Elements, Talismans, synergies, counters and build priorities.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.godsofalliancehwa.com/judge.html">
 
+<!-- OPEN GRAPH -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="Judge Full Guide | Gods of Alliance">
-<meta property="og:description" content="Judge skills, optimal builds, team synergies, talismans and counters in Hero Wars Alliance.">
+<meta property="og:description" content="Master Judge's control abilities, shields, skills, skins, glyphs, artifacts, talismans, team synergies and counters.">
 <meta property="og:url" content="https://www.godsofalliancehwa.com/judge.html">
 <meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Judge/judge-guide.jpg">
+<meta property="og:image:alt" content="Judge Full Guide - Gods of Alliance">
 
+<!-- TWITTER / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Judge Full Guide | Gods of Alliance">
-<meta name="twitter:description" content="Master Judge's control abilities, shields, builds and team synergies.">
+<meta name="twitter:description" content="Complete Judge build guide for Hero Wars Alliance.">
 <meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Judge/judge-guide.jpg">
 
 <style>
+
+/* =========================================================
+   BASE — JUDGE ELECTRIC BLUE THEME
+   ========================================================= */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  background: #07090e;
+    scroll-behavior: smooth;
+    background: #02060c;
+}
+
+:root {
+    --bg: #02060c;
+    --panel: rgba(7, 15, 27, 0.94);
+    --panel-soft: rgba(9, 22, 38, 0.88);
+
+    --spectral: #20c9f4;
+    --spectral-bright: #8aeaff;
+    --spectral-dark: #125c91;
+
+    --fire: #517bff;
+    --fire-bright: #a6baff;
+
+    --purple: #7464dc;
+
+    --white: #ffffff;
+    --muted: #a2b5c7;
+
+    --line: rgba(32, 201, 244, 0.15);
 }
 
 body {
-  min-height: 100vh;
-  color: #fff;
-  background: #07090e;
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+    min-height: 100vh;
+    color: #ffffff;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(22, 135, 216, 0.09),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 45%,
+            rgba(32, 201, 244, 0.04),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #071321 0%,
+            #02060c 46%,
+            #010308 100%
+        );
+
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
-.site-header {
-  position: relative;
-  z-index: 100;
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-  padding: 0 32px;
-  background: rgba(3,5,9,.97);
-  border-bottom: 1px solid rgba(0,215,255,.13);
+/* =========================================================
+   CINEMATIC HERO — SAME FACELESS STRUCTURE
+   ========================================================= */
+
+.hero-header {
+    position: relative;
+    min-height: 740px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+    border-bottom:
+        1px solid rgba(32, 201, 244, 0.12);
+
+    background: #02060c;
 }
 
-.header-inner {
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(1, 5, 12, 0.08) 0%,
+            rgba(1, 5, 12, 0.12) 34%,
+            rgba(1, 5, 12, 0.52) 57%,
+            rgba(1, 5, 12, 0.94) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(2, 6, 12, 0.02) 0%,
+            rgba(2, 6, 12, 0.08) 48%,
+            #02060c 100%
+        ),
+        url("Images/Hero-Guides/Judge/judge-guide.jpg");
+
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.015);
 }
 
-.brand {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 950;
-  letter-spacing: .035em;
-  text-decoration: none;
+.hero-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 25% 40%,
+            rgba(32, 201, 244, 0.13),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 31% 45%,
+            rgba(81, 123, 255, 0.07),
+            transparent 20%
+        );
 }
 
-.brand span {
-  color: #00dfff;
+.hero-shell {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 180px 32px 82px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-/* CINEMATIC HEADER */
-
-.article-hero {
-  position: relative;
-  min-height: 570px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(0,215,255,.16);
-  background: #06111c;
+.hero-content {
+    width: min(650px, 100%);
 }
 
-.article-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(2,7,13,.38) 0%,
-      rgba(2,7,13,.47) 36%,
-      rgba(2,7,13,.72) 66%,
-      rgba(2,7,13,.83) 100%
-    ),
-    url("Images/Hero-Guides/Judge/judge-guide.jpg") center/cover no-repeat;
-  opacity: .88;
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 17px;
+    padding: 8px 11px;
+
+    border:
+        1px solid rgba(138, 234, 255, 0.28);
+
+    border-radius: 4px;
+    background: rgba(2, 8, 17, 0.70);
+
+    color: var(--spectral-bright);
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
 
-.article-hero::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0;
-  height: 150px;
-  background: linear-gradient(transparent,#07090e);
-  pointer-events: none;
+.hero-header h1 {
+    margin-bottom: 15px;
+    color: var(--spectral-bright);
+    font-size: clamp(55px, 8vw, 96px);
+    line-height: 0.9;
+    font-weight: 950;
+    letter-spacing: -0.055em;
+
+    text-shadow:
+        0 8px 35px rgba(0, 0, 0, 0.95),
+        0 0 28px rgba(32, 201, 244, 0.13);
 }
 
-.hero-inner {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 95px 32px;
-  display: flex;
-  justify-content: flex-end;
+.hero-role {
+    margin-bottom: 21px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: 0.13em;
+    line-height: 1.7;
+    text-transform: uppercase;
 }
 
-.hero-copy {
-  width: min(680px,55%);
+.hero-role span {
+    color: var(--spectral);
 }
 
-.breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px;
-  align-items: center;
-  margin-bottom: 38px;
-  color: #a7b6c6;
-  font-size: 10px;
-  font-weight: 850;
-  letter-spacing: .13em;
-  text-transform: uppercase;
+.hero-intro {
+    max-width: 620px;
+    color: #b3c4d3;
+    font-size: 14px;
+    line-height: 1.8;
+    text-shadow: 0 2px 10px #000000;
 }
 
-.breadcrumb a {
-  color: #b7c6d3;
-  text-decoration: none;
+.hero-intro strong {
+    color: #ffffff;
 }
 
-.breadcrumb a:hover {
-  color: #00dfff;
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+
+.article {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 78px 28px 100px;
 }
 
-.breadcrumb .current {
-  color: #00e5ff;
+.section {
+    margin-bottom: 82px;
 }
 
-.hero-kicker {
-  margin-bottom: 17px;
-  color: #00e5ff;
-  font-size: 11px;
-  font-weight: 950;
-  letter-spacing: .20em;
-  text-transform: uppercase;
+.section-kicker {
+    margin-bottom: 9px;
+    color: var(--spectral);
+    font-size: 9px;
+    font-weight: 950;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
 }
 
-.hero-title {
-  margin-bottom: 20px;
-  font-size: clamp(65px,8vw,112px);
-  font-weight: 950;
-  line-height: .92;
-  letter-spacing: -.065em;
-  text-transform: uppercase;
-  text-shadow: 0 8px 28px rgba(0,0,0,.7);
+.section-title {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 4.4vw, 47px);
+    line-height: 1;
+    font-weight: 950;
+    letter-spacing: -0.035em;
 }
 
-.hero-title span {
-  display: block;
-  color: #00e5ff;
-  font-size: .55em;
-  letter-spacing: -.035em;
-  margin-top: 15px;
+.section-lead {
+    max-width: 870px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.8;
 }
 
-.hero-meta {
-  margin-bottom: 23px;
-  color: #e8f7fc;
-  font-size: 11px;
-  font-weight: 950;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  line-height: 1.9;
+.section-lead strong {
+    color: var(--spectral-bright);
 }
 
-.hero-meta span {
-  color: #00dfff;
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.identity-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
 }
 
-.hero-description {
-  max-width: 610px;
-  color: #c0ced8;
-  font-size: 15px;
-  line-height: 1.85;
+.identity-card {
+    padding: 24px;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.14);
+
+    border-radius: 9px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(32, 201, 244, 0.07),
+            transparent 45%
+        ),
+        rgba(7, 16, 30, 0.90);
 }
 
-.hero-accent {
-  width: 95px;
-  height: 3px;
-  margin-top: 28px;
-  background: linear-gradient(90deg,#00e5ff,#4b70ff);
+.identity-label {
+    margin-bottom: 9px;
+    color: #73899f;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
 
-/* ARTICLE */
-
-.article-container {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 78px 32px 105px;
+.identity-value {
+    color: var(--spectral-bright);
+    font-size: 20px;
+    font-weight: 950;
 }
 
-.article-layout {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) 260px;
-  gap: 54px;
-  align-items: start;
+/* =========================================================
+   CORE IDEA
+   ========================================================= */
+
+.core-box {
+    margin-top: 31px;
+    padding: 31px;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.22);
+
+    border-radius: 11px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(32, 201, 244, 0.10),
+            transparent 40%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(10, 25, 43, 0.96),
+            rgba(3, 9, 19, 0.98)
+        );
 }
 
-.article-content {
-  min-width: 0;
+.core-box p {
+    color: #a9bbcb;
+    font-size: 14px;
+    line-height: 1.85;
 }
 
-.article-content h2 {
-  margin: 54px 0 20px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(0,215,255,.17);
-  font-size: clamp(25px,3vw,36px);
-  font-weight: 950;
-  letter-spacing: -.04em;
-  line-height: 1.2;
+.core-box strong {
+    color: #ffffff;
 }
 
-.article-content h2:first-child {
-  margin-top: 0;
+.core-line {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
 }
 
-.article-content h3 {
-  margin: 30px 0 13px;
-  color: #00dfff;
-  font-size: 20px;
-  font-weight: 900;
+.core-word {
+    padding: 14px 8px;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.10);
+
+    border-radius: 5px;
+    color: var(--spectral-bright);
+    background: rgba(32, 201, 244, 0.025);
+
+    text-align: center;
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
 }
 
-.article-content p {
-  margin-bottom: 19px;
-  color: #b4c0cb;
-  font-size: 15px;
-  line-height: 1.9;
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-stack {
+    margin-top: 33px;
+    display: grid;
+    gap: 16px;
 }
 
-.article-content strong {
-  color: #fff;
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    padding: 28px;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.14);
+
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(32, 201, 244, 0.07),
+            transparent 42%
+        ),
+        rgba(7, 16, 30, 0.91);
 }
 
-.article-content ul,
-.article-content ol {
-  margin: 0 0 24px 23px;
-  color: #b4c0cb;
+.skill-card.primary {
+    border-color:
+        rgba(81, 123, 255, 0.28);
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(81, 123, 255, 0.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(32, 201, 244, 0.06),
+            transparent 35%
+        ),
+        rgba(8, 16, 31, 0.94);
 }
 
-.article-content li {
-  margin-bottom: 12px;
-  font-size: 15px;
-  line-height: 1.8;
+.skill-number {
+    margin-bottom: 8px;
+    color: var(--spectral);
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
 }
 
-.intro-panel {
-  margin-bottom: 38px;
-  padding: 27px 30px;
-  border-left: 3px solid #00dfff;
-  border-radius: 0 9px 9px 0;
-  background: linear-gradient(90deg,rgba(0,215,255,.09),rgba(0,215,255,.01));
+.skill-card.primary .skill-number {
+    color: var(--fire-bright);
 }
 
-.intro-panel p {
-  margin: 0;
-  color: #d0e0e9;
+.skill-name {
+    margin-bottom: 13px;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 950;
+    text-transform: uppercase;
 }
 
-.info-panel {
-  margin: 25px 0 30px;
-  padding: 25px;
-  border: 1px solid rgba(0,215,255,.22);
-  border-radius: 10px;
-  background: #0b1520;
+.skill-card p {
+    color: #a4b5c7;
+    font-size: 13px;
+    line-height: 1.78;
 }
 
-.info-panel h3 {
-  margin-top: 0;
+.skill-card p + p {
+    margin-top: 12px;
 }
 
-.info-panel p:last-child {
-  margin-bottom: 0;
+.skill-card strong {
+    color: #ffffff;
 }
 
-.hero-facts {
-  display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 13px;
-  margin: 28px 0 35px;
+.skill-highlight {
+    margin-top: 18px;
+    padding: 15px 17px;
+    border-left: 2px solid var(--spectral);
+    background: rgba(32, 201, 244, 0.035);
+    color: var(--spectral-bright);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.65;
 }
 
-.fact {
-  padding: 22px 16px;
-  border: 1px solid rgba(0,215,255,.20);
-  border-radius: 9px;
-  background: #0c1723;
-  text-align: center;
+.primary .skill-highlight {
+    border-left-color: var(--fire);
+    color: var(--fire-bright);
+    background: rgba(81, 123, 255, 0.04);
 }
 
-.fact-value {
-  margin-bottom: 9px;
-  color: #00e5ff;
-  font-size: 18px;
-  font-weight: 950;
+/* =========================================================
+   PRIORITIES
+   ========================================================= */
+
+.priority-grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
 }
 
-.fact-label {
-  color: #9babb8;
-  font-size: 11px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  letter-spacing: .07em;
+.priority-card {
+    padding: 28px;
+    border: 1px solid rgba(32, 201, 244, 0.14);
+    border-radius: 10px;
+    background: rgba(7, 16, 30, 0.91);
 }
 
-.guide-table {
-  width: 100%;
-  margin: 25px 0 32px;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-
-.guide-table th,
-.guide-table td {
-  padding: 16px 13px;
-  border-bottom: 1px solid rgba(255,255,255,.08);
-  text-align: left;
-  vertical-align: top;
-  line-height: 1.7;
-}
-
-.guide-table th {
-  color: #00dfff;
-  background: rgba(0,215,255,.06);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-}
-
-.guide-table td {
-  color: #b9c6d0;
-}
-
-.guide-table td:first-child {
-  color: #fff;
-  font-weight: 900;
-}
-
-.table-wrap {
-  overflow-x: auto;
+.priority-card h3 {
+    margin-bottom: 20px;
+    color: var(--spectral-bright);
+    font-size: 21px;
+    font-weight: 950;
+    text-transform: uppercase;
 }
 
 .priority-list {
-  display: grid;
-  gap: 10px;
-  margin: 25px 0 30px;
+    list-style: none;
+    counter-reset: priority;
 }
 
-.priority-item {
-  display: flex;
-  gap: 17px;
-  align-items: center;
-  padding: 15px 18px;
-  border: 1px solid rgba(0,215,255,.14);
-  border-radius: 8px;
-  background: #0b1520;
+.priority-list li {
+    counter-increment: priority;
+    position: relative;
+    min-height: 47px;
+    padding: 13px 10px 13px 47px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    color: #aabacb;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
-.priority-number {
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  background: rgba(0,215,255,.12);
-  color: #00e5ff;
-  font-size: 13px;
-  font-weight: 950;
+.priority-list li:last-child {
+    border-bottom: 0;
 }
 
-.priority-text {
-  color: #d8e3eb;
-  font-size: 14px;
-  font-weight: 850;
-  line-height: 1.5;
+.priority-list li::before {
+    content: counter(priority);
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.19);
+
+    border-radius: 50%;
+    color: var(--spectral-bright);
+    font-size: 9px;
+    font-weight: 950;
 }
 
-.priority-text small {
-  display: block;
-  margin-top: 4px;
-  color: #93a5b4;
-  font-size: 12px;
-  font-weight: 400;
+.priority-list strong {
+    color: #ffffff;
 }
 
-.note {
-  margin: 27px 0;
-  padding: 24px 27px;
-  border-left: 3px solid #00dfff;
-  border-radius: 0 8px 8px 0;
-  background: rgba(0,215,255,.045);
+.priority-note {
+    margin-top: 17px;
+    color: #8095a9;
+    font-size: 10px;
+    line-height: 1.65;
 }
 
-.note p:last-child {
-  margin-bottom: 0;
+/* =========================================================
+   ARTIFACTS
+   ========================================================= */
+
+.artifact-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
 }
 
-.sidebar {
-  position: sticky;
-  top: 28px;
-  padding: 25px;
-  border: 1px solid rgba(0,215,255,.16);
-  border-radius: 10px;
-  background: #0c131d;
+.artifact-card {
+    position: relative;
+    padding: 26px 22px;
+    border: 1px solid rgba(32, 201, 244, 0.14);
+    border-radius: 9px;
+    background: rgba(7, 16, 30, 0.91);
 }
 
-.sidebar-title {
-  margin-bottom: 21px;
-  color: #00dfff;
-  font-size: 11px;
-  font-weight: 950;
-  letter-spacing: .14em;
+.artifact-order {
+    margin-bottom: 11px;
+    color: var(--fire-bright);
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
 
-.sidebar a {
-  display: block;
-  margin-bottom: 15px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(255,255,255,.06);
-  color: #b5c3cf;
-  font-size: 12px;
-  line-height: 1.5;
-  text-decoration: none;
+.artifact-card h3 {
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 950;
 }
 
-.sidebar a:last-child {
-  margin: 0;
-  padding: 0;
-  border: 0;
+.artifact-card p {
+    color: #94a8bb;
+    font-size: 11px;
+    line-height: 1.7;
 }
 
-.sidebar a:hover {
-  color: #00e5ff;
+/* =========================================================
+   GIFT OF THE ELEMENTS
+   ========================================================= */
+
+.max-box {
+    margin-top: 30px;
+    padding: 33px;
+    border: 1px solid rgba(81, 123, 255, 0.24);
+    border-radius: 11px;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(81, 123, 255, 0.10),
+            transparent 45%
+        ),
+        rgba(9, 16, 31, 0.94);
 }
 
-.video-box {
-  margin: 30px 0;
-  padding: 26px;
-  border: 1px solid rgba(0,215,255,.25);
-  border-radius: 10px;
-  background: linear-gradient(135deg,#0d2231,#0a111b);
+.max-box span {
+    display: block;
+    margin-bottom: 9px;
+    color: #8197ac;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
 }
 
-.video-box h3 {
-  margin-top: 0;
+.max-box strong {
+    color: var(--fire-bright);
+    font-size: clamp(35px, 5vw, 49px);
+    font-weight: 950;
 }
 
-.video-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  min-height: 45px;
-  padding: 0 20px;
-  border-radius: 6px;
-  background: #00dfff;
-  color: #031019;
-  font-size: 11px;
-  font-weight: 950;
-  letter-spacing: .07em;
-  text-decoration: none;
-  text-transform: uppercase;
+.max-box p {
+    max-width: 690px;
+    margin: 15px auto 0;
+    color: #97aabc;
+    font-size: 12px;
+    line-height: 1.7;
 }
 
-.video-link:hover {
-  background: #fff;
+/* =========================================================
+   TALISMANS
+   ========================================================= */
+
+.talisman-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
 }
 
-.conclusion {
-  margin-top: 48px;
-  padding: 30px;
-  border: 1px solid rgba(0,215,255,.25);
-  border-radius: 11px;
-  background: linear-gradient(135deg,rgba(0,215,255,.075),#0a1018);
+.talisman-card {
+    padding: 28px;
+    border: 1px solid rgba(116, 100, 220, 0.22);
+    border-radius: 10px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(116, 100, 220, 0.10),
+            transparent 43%
+        ),
+        rgba(8, 14, 29, 0.94);
 }
 
-.conclusion h2 {
-  margin-top: 0;
+.talisman-number {
+    margin-bottom: 9px;
+    color: #b1a1f5;
+    font-size: 8px;
+    font-weight: 950;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
 }
 
-.conclusion p:last-child {
-  margin-bottom: 0;
+.talisman-card h3 {
+    margin-bottom: 16px;
+    font-size: 22px;
+    font-weight: 950;
 }
 
-.bottom-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 14px;
-  margin-top: 70px;
-  padding-top: 34px;
-  border-top: 1px solid rgba(0,215,255,.15);
+.stats {
+    margin-bottom: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
 }
 
-.nav-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 47px;
-  padding: 0 20px;
-  border: 1px solid rgba(0,215,255,.45);
-  border-radius: 6px;
-  color: #00dfff;
-  font-size: 10px;
-  font-weight: 950;
-  letter-spacing: .1em;
-  text-decoration: none;
-  text-transform: uppercase;
+.stat {
+    padding: 7px 9px;
+    border: 1px solid rgba(177, 161, 245, 0.17);
+    border-radius: 4px;
+    color: #ded5ff;
+    background: rgba(116, 100, 220, 0.05);
+    font-size: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
-.nav-button:hover {
-  background: #00dfff;
-  color: #031019;
+.talisman-card p {
+    color: #9aafc2;
+    font-size: 12px;
+    line-height: 1.72;
 }
+
+.obtain {
+    margin-top: 17px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.055);
+    color: #788da2;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.obtain strong {
+    color: var(--spectral-bright);
+}
+
+/* =========================================================
+   SYNERGIES
+   ========================================================= */
+
+.synergy-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 13px;
+}
+
+.synergy-card {
+    padding: 25px;
+    border: 1px solid rgba(32, 201, 244, 0.14);
+    border-radius: 9px;
+    background: rgba(7, 16, 30, 0.90);
+}
+
+.synergy-card h3 {
+    margin-bottom: 11px;
+    color: var(--spectral-bright);
+    font-size: 19px;
+    font-weight: 950;
+}
+
+.synergy-card p {
+    color: #97aabd;
+    font-size: 11px;
+    line-height: 1.72;
+}
+
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+.counter-grid {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.counter-card {
+    padding: 23px;
+    border: 1px solid rgba(81, 123, 255, 0.14);
+    border-radius: 9px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(81, 123, 255, 0.055),
+            transparent 45%
+        ),
+        rgba(8, 15, 29, 0.92);
+}
+
+.counter-card h3 {
+    margin-bottom: 10px;
+    color: var(--fire-bright);
+    font-size: 18px;
+    font-weight: 950;
+}
+
+.counter-card p {
+    color: #9cacc0;
+    font-size: 11px;
+    line-height: 1.72;
+}
+
+/* =========================================================
+   FINAL VERDICT
+   ========================================================= */
+
+.verdict {
+    padding: 34px;
+    border: 1px solid rgba(32, 201, 244, 0.25);
+    border-radius: 12px;
+
+    background:
+        radial-gradient(
+            circle at 0% 0%,
+            rgba(32, 201, 244, 0.10),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(81, 123, 255, 0.07),
+            transparent 38%
+        ),
+        rgba(7, 16, 30, 0.96);
+}
+
+.verdict h2 {
+    margin-bottom: 17px;
+    font-size: clamp(29px, 4vw, 43px);
+    font-weight: 950;
+    letter-spacing: -0.035em;
+}
+
+.verdict p {
+    color: #a7b9cb;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.verdict p + p {
+    margin-top: 13px;
+}
+
+.verdict strong {
+    color: var(--spectral-bright);
+}
+
+/* =========================================================
+   VIDEO — EMBEDDED YOUTUBE PLAYER
+   ========================================================= */
+
+.video-section {
+    margin-top: 20px;
+}
+
+.video-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    border:
+        1px solid rgba(32, 201, 244, 0.23);
+
+    border-radius: 12px;
+    background: #000000;
+
+    box-shadow:
+        0 28px 70px rgba(0, 0, 0, 0.40);
+}
+
+.video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 footer {
-  padding: 32px 20px;
-  border-top: 1px solid rgba(0,215,255,.09);
-  background: #030507;
-  color: #788793;
-  text-align: center;
-  font-size: 11px;
+    padding: 35px 20px;
+    border-top: 1px solid rgba(32, 201, 244, 0.08);
+    background: #010308;
+    color: #526779;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.05em;
 }
 
-@media(max-width:1000px) {
-  .article-layout {
-    grid-template-columns: 1fr;
-  }
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
-  .sidebar {
-    position: static;
-    order: -1;
-  }
+@media (max-width: 900px) {
+
+    .identity-grid,
+    .artifact-grid,
+    .synergy-grid,
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .priority-grid,
+    .talisman-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .core-line {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media(max-width:750px) {
-  .site-header {
-    min-height: 70px;
-    padding: 0 20px;
-  }
+@media (max-width: 700px) {
 
-  .brand {
-    font-size: 13px;
-  }
+    .hero-header {
+        min-height: 650px;
+    }
 
-  .article-hero {
-    min-height: 580px;
-  }
+    .hero-background {
+        background-image:
+            linear-gradient(
+                180deg,
+                rgba(2, 6, 12, 0.05) 0%,
+                rgba(2, 6, 12, 0.30) 42%,
+                #02060c 100%
+            ),
+            url("Images/Hero-Guides/Judge/judge-guide.jpg");
 
-  .article-hero::before {
-    background:
-      linear-gradient(rgba(2,7,13,.55),rgba(2,7,13,.85)),
-      url("Images/Hero-Guides/Judge/judge-guide.jpg") 35% center/cover no-repeat;
-  }
+        background-position: 30% center;
+    }
 
-  .hero-inner {
-    padding: 75px 22px;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
+    .hero-shell {
+        justify-content: flex-start;
+        padding: 310px 20px 55px;
+    }
 
-  .hero-copy {
-    width: 100%;
-  }
+    .hero-content {
+        text-align: center;
+    }
 
-  .hero-title {
-    font-size: clamp(55px,13vw,80px);
-  }
+    .article {
+        padding: 64px 19px 80px;
+    }
 
-  .article-container {
-    padding: 45px 20px 75px;
-  }
-
-  .hero-facts {
-    grid-template-columns: 1fr;
-  }
-
-  .article-content p,
-  .article-content li {
-    font-size: 14px;
-  }
+    .skill-card,
+    .priority-card,
+    .talisman-card,
+    .verdict {
+        padding: 22px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html">
-      GODS OF <span>ALLIANCE</span>
-    </a>
-  </div>
-</header>
+<!-- =========================================================
+     HERO
+     ========================================================= -->
 
-<section class="article-hero">
-  <div class="hero-inner">
-    <div class="hero-copy">
+<header class="hero-header">
 
-      <div class="breadcrumb">
-        <a href="index.html">HOME</a>
-        <span>›</span>
-        <a href="heroes.html">HERO GUIDES</a>
-        <span>›</span>
-        <span class="current">JUDGE</span>
-      </div>
+    <div class="hero-background"></div>
 
-      <div class="hero-kicker">
-        HERO WARS ALLIANCE / HERO GUIDE
-      </div>
+    <div class="hero-shell">
 
-      <h1 class="hero-title">
-        JUDGE
-        <span>FULL GUIDE</span>
-      </h1>
+        <div class="hero-content">
 
-      <div class="hero-meta">
-        CONTROL <span>•</span>
-        WAY OF PROGRESS <span>•</span>
-        MIDDLE LINE
-      </div>
+            <div class="hero-badge">
+                HERO GUIDE
+            </div>
 
-      <p class="hero-description">
-        Master Judge's constant stuns, protective shields,
-        battlefield disruption and powerful Progress synergies.
-        Discover the best build priorities, artifacts, talismans
-        and counters for this underrated control Hero.
-      </p>
+            <h1>
+                JUDGE
+            </h1>
 
-      <div class="hero-accent"></div>
+            <div class="hero-role">
+                CONTROL
+                <span>•</span>
+                WAY OF PROGRESS
+                <span>•</span>
+                MIDDLE LINE
+            </div>
+
+            <p class="hero-intro">
+                Judge is one of the most underrated Control Heroes
+                in the Way of Progress. The Guardian of the Universe
+                can <strong>stun entire enemy teams, protect key allies
+                with powerful shields and disrupt the rhythm of battle</strong>
+                through repeated control effects.
+            </p>
+
+        </div>
 
     </div>
-  </div>
+
+</header>
+
+<main class="article">
+
+<!-- =========================================================
+     IDENTITY
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        HERO IDENTITY
+    </div>
+
+    <h2 class="section-title">
+        What Is Judge?
+    </h2>
+
+    <p class="section-lead">
+        Judge is a Progress Control Hero whose greatest strength
+        is <strong>controlling the pace of the battlefield.</strong>
+        His abilities combine repeated Magic Damage, protective
+        shields, slowing effects and constant stuns.
+        When supported by the right allies, Judge can prevent
+        enemies from executing their strategies while giving
+        his own team more time to attack.
+    </p>
+
+    <div class="identity-grid">
+
+        <article class="identity-card">
+            <div class="identity-label">CLASS</div>
+            <div class="identity-value">Control</div>
+        </article>
+
+        <article class="identity-card">
+            <div class="identity-label">FACTION</div>
+            <div class="identity-value">Way of Progress</div>
+        </article>
+
+        <article class="identity-card">
+            <div class="identity-label">POSITION</div>
+            <div class="identity-value">Middle Line</div>
+        </article>
+
+    </div>
+
+    <div class="core-box">
+
+        <p>
+            Judge becomes easier to understand when his entire
+            kit is reduced to five fundamental functions:
+            <strong>damage, shields, slowing, stuns and control.</strong>
+            His first three abilities provide these effects,
+            while Enhanced Generator upgrades them into
+            a powerful system of repeated interruptions.
+        </p>
+
+        <div class="core-line">
+            <div class="core-word">DAMAGE</div>
+            <div class="core-word">SHIELDS</div>
+            <div class="core-word">SLOW</div>
+            <div class="core-word">STUN</div>
+            <div class="core-word">CONTROL</div>
+        </div>
+
+    </div>
+
 </section>
 
-<main class="article-container">
-
-  <div class="article-layout">
-
-    <article class="article-content">
-
-      <div class="intro-panel">
-        <p>
-          <strong>Judge</strong> is a Way of Progress Control Hero
-          positioned on the middle line. Known as the
-          Guardian of the Universe, he specializes in interrupting
-          enemy teams with repeated stuns, slowing their momentum
-          and protecting vulnerable allies through powerful shields.
-          His value comes from controlling the pace of combat
-          while contributing Magic Damage and defensive support.
-        </p>
-      </div>
-
-      <div class="hero-facts">
-        <div class="fact">
-          <div class="fact-value">CONTROL</div>
-          <div class="fact-label">Hero Role</div>
-        </div>
-        <div class="fact">
-          <div class="fact-value">PROGRESS</div>
-          <div class="fact-label">Faction</div>
-        </div>
-        <div class="fact">
-          <div class="fact-value">MIDDLE</div>
-          <div class="fact-label">Position</div>
-        </div>
-      </div>
-
-      <h2 id="overview">1. Judge Overview</h2>
-
-      <p>
-        Judge is not a conventional damage dealer.
-        His strength comes from combining area Magic Damage,
-        defensive shields, movement disruption and repeated
-        crowd-control effects.
-      </p>
-
-      <p>
-        His fourth skill upgrades the rest of his kit,
-        turning ordinary attacks and support abilities
-        into additional sources of stun.
-      </p>
-
-      <p>
-        This makes Judge particularly effective alongside
-        Heroes who can strengthen his Magic Damage,
-        accelerate Energy generation or add even more control.
-      </p>
-
-      <h2 id="skills">2. Judge Skills Explained</h2>
-
-      <h3>First Skill — Ion Cyclone</h3>
-
-      <p>
-        Judge unleashes an electrical storm that strikes
-        <strong>every enemy four times</strong>,
-        dealing Magic Damage with each hit.
-      </p>
-
-      <p>
-        The damage scales with his <strong>Magic Attack</strong>.
-        Because Ion Cyclone hits multiple enemies repeatedly,
-        it becomes the foundation of Judge's offensive contribution.
-      </p>
-
-      <p>
-        Magic Penetration is important for improving its effectiveness
-        against enemies with strong Magic Defense.
-      </p>
-
-      <p>
-        <strong>Orion</strong> is an excellent partner because
-        he can provide additional Magic Penetration,
-        allowing Judge's attacks to become more effective.
-      </p>
-
-      <p>
-        <strong>Polaris</strong> adds control and increases
-        the team's chance of Magic Critical Hits,
-        while <strong>Byrna</strong> contributes Energy
-        generation and Magic Penetration.
-      </p>
-
-      <h3>Second Skill — Force Field</h3>
-
-      <p>
-        Judge places protective shields on the
-        <strong>leftmost and rightmost allies</strong>.
-        These shields absorb every type of damage.
-      </p>
-
-      <p>
-        Their strength scales with Judge's Magic Attack.
-      </p>
-
-      <div class="info-panel">
-        <h3>Key Mechanic — Shield</h3>
-        <p>
-          Force Field protects important allies on opposite
-          ends of the formation. This can help the frontline
-          survive heavy burst damage while shielding the
-          backline from dangerous single-target threats.
-        </p>
-      </div>
-
-      <p>
-        This protection can be especially useful against
-        Heroes such as <strong>Yasmine, Jhu and Xe'Sha</strong>.
-      </p>
-
-      <p>
-        Keeping an important damage dealer alive for even
-        a few additional seconds can provide enough time
-        to activate an Ultimate and change the outcome
-        of the battle.
-      </p>
-
-      <h3>Third Skill — Spacial Rift</h3>
-
-      <p>
-        Judge opens a dimensional rift in the middle
-        of the enemy formation, slowing nearby enemies
-        for <strong>seven seconds</strong>.
-      </p>
-
-      <p>
-        This ability depends on <strong>Skill Level</strong>.
-      </p>
-
-      <p>
-        Slowing enemies disrupts their attack rhythm,
-        reduces the pace of Energy generation and can
-        delay the activation of important abilities.
-      </p>
-
-      <p>
-        <strong>Julius</strong> creates a particularly
-        useful combination by accelerating Judge's allies
-        while Judge slows the opposing team.
-      </p>
-
-      <p>
-        The result is a substantial tempo advantage,
-        allowing the Progress team to act more frequently
-        while the enemy struggles to maintain its rhythm.
-      </p>
-
-      <h3>Fourth Skill — Enhanced Generator</h3>
-
-      <p>
-        Enhanced Generator is the passive ability that
-        transforms Judge into a powerful control specialist.
-      </p>
-
-      <p>
-        It improves all three of his other skills:
-      </p>
-
-      <ul>
-        <li>
-          <strong>Ion Cyclone:</strong>
-          Each strike can stun enemies.
-        </li>
-        <li>
-          <strong>Force Field:</strong>
-          Stuns nearby enemies.
-        </li>
-        <li>
-          <strong>Spacial Rift:</strong>
-          Applies another stun when the rift disappears.
-        </li>
-      </ul>
-
-      <p>
-        Enhanced Generator depends on
-        <strong>Skill Level</strong>.
-      </p>
-
-      <div class="info-panel">
-        <h3>Key Mechanic — Continuous Control</h3>
-        <p>
-          Judge does not rely on a single stun.
-          His enhanced abilities create repeated interruptions,
-          preventing enemies from attacking, casting skills
-          and building momentum as effectively.
-        </p>
-      </div>
-
-      <p>
-        Combined with Heroes such as Polaris, Orion,
-        Julius and Byrna, Judge can help create teams
-        focused on sustained battlefield control
-        supported by Magic Damage.
-      </p>
-
-      <h2 id="synergies">3. Best Hero Synergies</h2>
-
-      <div class="table-wrap">
-        <table class="guide-table">
-          <thead>
-            <tr>
-              <th>Hero</th>
-              <th>Synergy</th>
-              <th>Benefit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Julius</td>
-              <td>Team acceleration and protection</td>
-              <td>Creates a tempo advantage while Judge slows enemies.</td>
-            </tr>
-            <tr>
-              <td>Orion</td>
-              <td>Magic Penetration</td>
-              <td>Improves Judge's Magic Damage against defensive teams.</td>
-            </tr>
-            <tr>
-              <td>Polaris</td>
-              <td>Additional control and Magic Critical Hit Chance</td>
-              <td>Strengthens control pressure and magical offense.</td>
-            </tr>
-            <tr>
-              <td>Byrna</td>
-              <td>Energy generation and Magic Penetration</td>
-              <td>Supports more frequent Ultimates and stronger damage.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        Judge performs especially well when his allies
-        strengthen the same mechanics that define his kit:
-        <strong>Magic Damage, Energy generation,
-        protection and crowd control</strong>.
-      </p>
-
-      <h2 id="skins">4. Best Skins — Upgrade Priority</h2>
-
-      <p>
-        Judge benefits from offensive scaling,
-        but survivability is equally important.
-        He must remain alive long enough to
-        repeatedly disrupt the opposing team.
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority-item">
-          <div class="priority-number">01</div>
-          <div class="priority-text">
-            Magic Attack
-            <small>
-              Strengthens Ion Cyclone and Force Field.
-            </small>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">02</div>
-          <div class="priority-text">
-            Health
-            <small>
-              Improves survivability and control uptime.
-            </small>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">03</div>
-          <div class="priority-text">
-            Default Skin — Intelligence
-            <small>
-              Improves ability scaling and personal Magic Defense.
-            </small>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">04</div>
-          <div class="priority-text">
-            Magic Defense
-            <small>
-              Additional protection against magical damage.
-            </small>
-          </div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">05</div>
-          <div class="priority-text">
-            Second Magic Attack Skin
-            <small>
-              Valuable later, after the earlier priorities.
-            </small>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="note">
-        <p>
-          <strong>Future Skin Priority:</strong>
-          If Judge receives another Health Skin,
-          it becomes the highest upgrade priority
-          according to this build strategy.
-        </p>
-      </div>
-
-      <h2 id="glyphs">5. Glyph Priority</h2>
-
-      <p>
-        Judge's Glyphs should balance durability
-        with Magic Attack scaling.
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority-item">
-          <div class="priority-number">01</div>
-          <div class="priority-text">Health</div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">02</div>
-          <div class="priority-text">Magic Attack</div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">03</div>
-          <div class="priority-text">Magic Defense</div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">04</div>
-          <div class="priority-text">Armor</div>
-        </div>
-
-        <div class="priority-item">
-          <div class="priority-number">05</div>
-          <div class="priority-text">Intelligence</div>
-        </div>
-
-      </div>
-
-      <div class="note">
-        <p>
-          <strong>Development Tip:</strong>
-          Upgrade every Glyph evenly to
-          <strong>Level 40</strong> before pushing
-          individual Glyphs further, unless
-          you are progressing Skill Classes.
-        </p>
-      </div>
-
-      <h2 id="artifacts">6. Artifact Priority</h2>
-
-      <p>
-        Judge's Artifacts provide Magic Attack,
-        Health and Intelligence.
-      </p>
-
-      <div class="table-wrap">
-        <table class="guide-table">
-          <thead>
-            <tr>
-              <th>Priority</th>
-              <th>Artifact</th>
-              <th>Benefit</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1st</td>
-              <td>Book</td>
-              <td>Magic Attack and Health</td>
-            </tr>
-            <tr>
-              <td>2nd</td>
-              <td>Ring</td>
-              <td>Intelligence</td>
-            </tr>
-            <tr>
-              <td>3rd</td>
-              <td>Weapon</td>
-              <td>Team-wide Magic Attack when Ion Cyclone activates</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>First Priority — Book</h3>
-
-      <p>
-        The Book provides both Magic Attack and Health.
-        This improves Judge's damage, shields
-        and survivability at the same time.
-      </p>
-
-      <h3>Second Priority — Ring</h3>
-
-      <p>
-        Intelligence further strengthens Judge's abilities
-        and increases his personal Magic Defense.
-      </p>
-
-      <h3>Third Priority — Weapon</h3>
-
-      <p>
-        The Weapon grants Magic Attack to the entire team
-        when Ion Cyclone is activated.
-        It is useful in Magic Damage compositions,
-        but this build prioritizes strengthening
-        Judge himself first.
-      </p>
-
-      <h2 id="gift">7. Gift of the Elements</h2>
-
-      <p>
-        <strong>Maximize Judge's Gift of the Elements.</strong>
-      </p>
-
-      <p>
-        The key development priorities are
-        <strong>Health and Magic Attack</strong>,
-        which support the most important parts
-        of his combat performance.
-      </p>
-
-      <ul>
-        <li>Better survivability</li>
-        <li>Stronger shields</li>
-        <li>Improved Magic Damage</li>
-        <li>More opportunities to apply control effects</li>
-      </ul>
-
-      <h2 id="talismans">8. Judge Talismans</h2>
-
-      <p>
-        Judge has two valuable Talisman options
-        that support different aspects of his build.
-      </p>
-
-      <div class="table-wrap">
-        <table class="guide-table">
-          <thead>
-            <tr>
-              <th>Talisman</th>
-              <th>Stats</th>
-              <th>Availability</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>First Talisman</td>
-              <td>Intelligence + Magic Attack</td>
-              <td>Eternal Frontier Shop</td>
-            </tr>
-            <tr>
-              <td>Second Talisman</td>
-              <td>Armor + Magic Penetration</td>
-              <td>Special events</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        Both options are valuable.
-        The first strengthens Intelligence and Magic Attack,
-        while the second provides Armor
-        and Magic Penetration.
-      </p>
-
-      <h2 id="counters">9. How to Counter Judge</h2>
-
-      <p>
-        Judge is extremely disruptive when his control
-        abilities activate repeatedly.
-        The most effective counters either protect
-        allies from control, punish control effects,
-        disable Judge or remove him from battle.
-      </p>
-
-      <h3>Sebastian — Protection Against Stuns</h3>
-
-      <p>
-        Sebastian's <strong>Ballad of Tenacity</strong>
-        protects the team from stuns,
-        dramatically reducing Judge's greatest strength.
-      </p>
-
-      <h3>Soleil — Punishing Control Effects</h3>
-
-      <p>
-        Soleil can punish central enemies whenever
-        Judge applies control effects,
-        turning Judge's own strategy against him.
-      </p>
-
-      <h3>Drayne — Execution Potential</h3>
-
-      <p>
-        Drayne can eventually execute Judge
-        regardless of his shields once
-        Drayne's maximum Health has scaled
-        sufficiently high.
-      </p>
-
-      <h3>Thea, Crow and Mushy and Shroom — Silence</h3>
-
-      <p>
-        These Heroes can silence Judge,
-        preventing him from casting his magic skills.
-      </p>
-
-      <p>
-        Without access to his abilities,
-        Judge loses much of the control
-        and protection that make him dangerous.
-      </p>
-
-      <div class="table-wrap">
-        <table class="guide-table">
-          <thead>
-            <tr>
-              <th>Counter</th>
-              <th>Counter Mechanic</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Sebastian</td>
-              <td>Stun protection</td>
-            </tr>
-            <tr>
-              <td>Soleil</td>
-              <td>Punishes control effects</td>
-            </tr>
-            <tr>
-              <td>Drayne</td>
-              <td>Execution after sufficient Health scaling</td>
-            </tr>
-            <tr>
-              <td>Thea</td>
-              <td>Silence</td>
-            </tr>
-            <tr>
-              <td>Crow</td>
-              <td>Silence</td>
-            </tr>
-            <tr>
-              <td>Mushy and Shroom</td>
-              <td>Silence</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2 id="video">10. Watch the Full Judge Guide</h2>
-
-      <p>
-        Explore the full Judge analysis on
-        the Gods of Alliance YouTube channel.
-      </p>
-
-      <div class="video-box">
-        <h3>Judge Full Guide — Gods of Alliance</h3>
+<!-- =========================================================
+     SKILLS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SKILLS
+    </div>
+
+    <h2 class="section-title">
+        Judge's Skill Kit.
+    </h2>
+
+    <p class="section-lead">
+        Judge's true potential comes from the interaction
+        between his abilities. His fourth Skill transforms
+        the other three into additional sources of control,
+        making <strong>repeated interruption</strong>
+        the defining mechanic of his kit.
+    </p>
+
+    <div class="skills-stack">
+
+        <!-- ION CYCLONE -->
+
+        <article class="skill-card primary">
+
+            <div class="skill-number">
+                SKILL 01 • ULTIMATE
+            </div>
+
+            <h3 class="skill-name">
+                Ion Cyclone
+            </h3>
+
+            <p>
+                Judge unleashes a massive electrical storm
+                that strikes <strong>every enemy four times</strong>,
+                dealing Magic Damage with each hit.
+            </p>
+
+            <p>
+                The damage scales with Judge's
+                <strong>Magic Attack</strong>.
+                This makes Ion Cyclone the foundation of
+                his offensive contribution.
+            </p>
+
+            <p>
+                However, without enough Magic Penetration,
+                the damage can struggle against enemies
+                with strong magical defenses.
+            </p>
+
+            <p>
+                <strong>Orion</strong> becomes an excellent partner
+                by providing additional Magic Penetration.
+                <strong>Polaris</strong> contributes further control
+                and Magic Critical Hit Chance, while
+                <strong>Byrna</strong> supplies Energy generation
+                and additional Magic Penetration.
+            </p>
+
+            <div class="skill-highlight">
+                KEY MECHANIC: Ion Cyclone strikes all enemies
+                four times. With Enhanced Generator active,
+                every strike also becomes a source of stun.
+            </div>
+
+        </article>
+
+        <!-- FORCE FIELD -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 02
+            </div>
+
+            <h3 class="skill-name">
+                Force Field
+            </h3>
+
+            <p>
+                Judge places powerful shields on the
+                <strong>leftmost and rightmost allies</strong>.
+            </p>
+
+            <p>
+                These shields absorb every type of damage,
+                and their strength scales with Judge's
+                <strong>Magic Attack</strong>.
+            </p>
+
+            <p>
+                The positioning is particularly important.
+                Judge can help protect the frontline against
+                heavy burst damage while also defending
+                vulnerable backline Heroes.
+            </p>
+
+            <p>
+                This can be valuable against dangerous threats
+                such as <strong>Yasmine, Jhu and Xe'Sha</strong>,
+                especially when those extra seconds allow
+                an important damage dealer to activate
+                an Ultimate.
+            </p>
+
+            <div class="skill-highlight">
+                KEYWORD: SHIELD. Force Field protects
+                two strategically important positions
+                and becomes an additional source of stun
+                through Enhanced Generator.
+            </div>
+
+        </article>
+
+        <!-- SPACIAL RIFT -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 03
+            </div>
+
+            <h3 class="skill-name">
+                Spacial Rift
+            </h3>
+
+            <p>
+                Judge opens a dimensional rift in the middle
+                of the enemy formation, slowing nearby
+                enemies for <strong>seven seconds</strong>.
+            </p>
+
+            <p>
+                This ability depends only on
+                <strong>Skill Level</strong>.
+            </p>
+
+            <p>
+                Slowing enemies disrupts their attack rhythm,
+                delays Energy generation and can postpone
+                important Ultimates.
+            </p>
+
+            <p>
+                This becomes especially effective alongside
+                <strong>Julius</strong>, who accelerates the allied
+                team while Judge simultaneously slows
+                the opposition.
+            </p>
+
+            <div class="skill-highlight">
+                TIMING MATTERS. Judge slows the enemy
+                while Julius accelerates allies, creating
+                a powerful tempo advantage.
+            </div>
+
+        </article>
+
+        <!-- ENHANCED GENERATOR -->
+
+        <article class="skill-card">
+
+            <div class="skill-number">
+                SKILL 04 • PASSIVE
+            </div>
+
+            <h3 class="skill-name">
+                Enhanced Generator
+            </h3>
+
+            <p>
+                Enhanced Generator upgrades every one
+                of Judge's other abilities.
+            </p>
+
+            <p>
+                <strong>Ion Cyclone:</strong>
+                Every strike now stuns enemies.
+            </p>
+
+            <p>
+                <strong>Force Field:</strong>
+                The shields stun nearby enemies.
+            </p>
+
+            <p>
+                <strong>Spacial Rift:</strong>
+                The rift applies another stun when
+                it disappears.
+            </p>
+
+            <p>
+                This passive depends only on
+                <strong>Skill Level</strong>.
+            </p>
+
+            <p>
+                Judge's enemies are no longer simply
+                taking damage or being slowed.
+                They are repeatedly interrupted,
+                losing opportunities to attack,
+                cast abilities and build momentum.
+            </p>
+
+            <div class="skill-highlight">
+                SIGNATURE MECHANIC: Enhanced Generator
+                transforms Judge into a continuous
+                crowd-control specialist. Repeated stuns
+                are the foundation of his battlefield value.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SKINS + GLYPHS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        DEVELOPMENT
+    </div>
+
+    <h2 class="section-title">
+        Skins & Glyphs.
+    </h2>
+
+    <p class="section-lead">
+        Judge needs enough Magic Attack to strengthen
+        his damage and shields, but he also needs
+        sufficient durability to stay alive and continue
+        applying control. For Skins,
+        <strong>Magic Attack comes first.</strong>
+    </p>
+
+    <div class="priority-grid">
+
+        <!-- SKINS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Skin Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Magic Attack</strong><br>
+                    First priority. Strengthens Ion Cyclone
+                    and the shields from Force Field.
+                </li>
+
+                <li>
+                    <strong>Health</strong><br>
+                    Improves survivability and gives Judge
+                    more time to control the battle.
+                </li>
+
+                <li>
+                    <strong>Default Skin — Intelligence</strong><br>
+                    Strengthens his magical development
+                    and provides additional Magic Defense.
+                </li>
+
+                <li>
+                    <strong>Magic Defense</strong><br>
+                    Helps Judge survive against
+                    magic-heavy compositions.
+                </li>
+
+                <li>
+                    <strong>Second Magic Attack Skin</strong><br>
+                    Valuable later, after the earlier
+                    development priorities.
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                FUTURE PRIORITY: If Judge receives another
+                Health Skin, it immediately becomes
+                the highest priority in this build.
+            </div>
+
+        </article>
+
+        <!-- GLYPHS -->
+
+        <article class="priority-card">
+
+            <h3>
+                Glyph Priority
+            </h3>
+
+            <ol class="priority-list">
+
+                <li>
+                    <strong>Health</strong>
+                </li>
+
+                <li>
+                    <strong>Magic Attack</strong>
+                </li>
+
+                <li>
+                    <strong>Magic Defense</strong>
+                </li>
+
+                <li>
+                    <strong>Armor</strong>
+                </li>
+
+                <li>
+                    <strong>Intelligence</strong>
+                </li>
+
+            </ol>
+
+            <div class="priority-note">
+                Bring all five Glyphs evenly to
+                <strong style="color:#ffffff;">Level 40.</strong>
+                Beyond Level 40, further investment
+                should depend on your objectives,
+                including Skill Class progression.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     ARTIFACTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        ARTIFACTS
+    </div>
+
+    <h2 class="section-title">
+        Artifact Priority.
+    </h2>
+
+    <p class="section-lead">
+        Judge's development should begin with the Artifact
+        that improves his two most important personal
+        requirements:
+        <strong>Magic Attack and Health.</strong>
+    </p>
+
+    <div class="artifact-grid">
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 01
+            </div>
+
+            <h3>
+                Artifact Book
+            </h3>
+
+            <p>
+                Provides Magic Attack and Health.
+                This combination improves Judge's
+                offensive abilities, shield strength
+                and survivability simultaneously.
+            </p>
+
+        </article>
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 02
+            </div>
+
+            <h3>
+                Artifact Ring
+            </h3>
+
+            <p>
+                Provides Intelligence, further strengthening
+                Judge's magical development while increasing
+                his personal Magic Defense.
+            </p>
+
+        </article>
+
+        <article class="artifact-card">
+
+            <div class="artifact-order">
+                PRIORITY 03
+            </div>
+
+            <h3>
+                Artifact Weapon
+            </h3>
+
+            <p>
+                Activating Ion Cyclone provides the entire
+                team with a Magic Attack bonus.
+                Useful in magical compositions,
+                but third when prioritizing Judge's
+                personal development.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     GIFT OF THE ELEMENTS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        GIFT OF THE ELEMENTS
+    </div>
+
+    <h2 class="section-title">
+        No Compromise Here.
+    </h2>
+
+    <div class="max-box">
+
+        <span>
+            RECOMMENDED DEVELOPMENT
+        </span>
+
+        <strong>
+            MAX IT
+        </strong>
 
         <p>
-          Skills, builds, skins, Glyphs, Artifacts,
-          Talismans, synergies and counters.
+            Judge needs solid fundamental stats to survive
+            and repeatedly activate his abilities.
+            Health and Magic Attack are central to his
+            overall development, supporting survivability,
+            shield strength and damage while allowing
+            his control abilities to remain relevant
+            throughout the battle.
         </p>
 
-        <a
-          class="video-link"
-          href="https://youtu.be/FRu126IxYpE"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WATCH ON YOUTUBE →
-        </a>
-      </div>
+    </div>
 
-      <div class="conclusion" id="verdict">
+</section>
 
-        <h2>Final Verdict — Is Judge Worth Building?</h2>
+<!-- =========================================================
+     TALISMANS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        TALISMANS
+    </div>
+
+    <h2 class="section-title">
+        Two Valuable Development Paths.
+    </h2>
+
+    <p class="section-lead">
+        Judge has two Talismans.
+        Both are useful, but they strengthen
+        different parts of his build.
+    </p>
+
+    <div class="talisman-grid">
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 01
+            </div>
+
+            <h3>
+                Intelligence + Magic Attack
+            </h3>
+
+            <div class="stats">
+                <div class="stat">INTELLIGENCE</div>
+                <div class="stat">MAGIC ATTACK</div>
+            </div>
+
+            <p>
+                This Talisman strengthens Judge's magical
+                development. Magic Attack improves Ion Cyclone
+                and Force Field, while Intelligence further
+                supports his overall performance.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Permanently available through
+                the Eternal Frontier Shop.
+            </div>
+
+        </article>
+
+        <article class="talisman-card">
+
+            <div class="talisman-number">
+                TALISMAN 02
+            </div>
+
+            <h3>
+                Armor + Magic Penetration
+            </h3>
+
+            <div class="stats">
+                <div class="stat">ARMOR</div>
+                <div class="stat">MAGIC PENETRATION</div>
+            </div>
+
+            <p>
+                Armor increases Judge's physical resistance,
+                while Magic Penetration helps his offensive
+                abilities overcome enemy Magic Defense.
+            </p>
+
+            <div class="obtain">
+                <strong>OBTAIN:</strong>
+                Available through special events.
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     SYNERGIES
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        SYNERGIES
+    </div>
+
+    <h2 class="section-title">
+        Heroes That Work With Judge.
+    </h2>
+
+    <p class="section-lead">
+        Judge becomes especially dangerous when his allies
+        improve his Magic Penetration, accelerate his Energy
+        generation or add even more crowd control.
+    </p>
+
+    <div class="synergy-grid">
+
+        <article class="synergy-card">
+
+            <h3>
+                Julius
+            </h3>
+
+            <p>
+                Julius accelerates the allied team
+                while Judge slows enemies.
+                This creates a strong tempo advantage
+                and allows the Progress team to
+                maintain pressure.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Orion
+            </h3>
+
+            <p>
+                Orion provides additional Magic Penetration,
+                helping Judge's Ion Cyclone deal more
+                effective damage against enemies
+                with strong magical defenses.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Polaris
+            </h3>
+
+            <p>
+                Polaris adds further control while
+                increasing the team's chance of
+                Magic Critical Hits, complementing
+                Judge's repeated stuns and
+                magical offense.
+            </p>
+
+        </article>
+
+        <article class="synergy-card">
+
+            <h3>
+                Byrna
+            </h3>
+
+            <p>
+                Byrna provides Energy generation
+                and additional Magic Penetration,
+                supporting more frequent Judge Ultimates
+                and improving their overall impact.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     COUNTERS
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="section-kicker">
+        COUNTERS
+    </div>
+
+    <h2 class="section-title">
+        How Can Judge Be Countered?
+    </h2>
+
+    <p class="section-lead">
+        Judge depends on repeatedly applying control effects.
+        The most effective answers protect against stuns,
+        punish control, silence his abilities or eliminate
+        him despite his defenses.
+    </p>
+
+    <div class="counter-grid">
+
+        <article class="counter-card">
+
+            <h3>
+                Sebastian
+            </h3>
+
+            <p>
+                Ballad of Tenacity protects allies
+                against stuns, dramatically reducing
+                the impact of Judge's strongest
+                control mechanic.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Soleil
+            </h3>
+
+            <p>
+                Soleil punishes central enemies
+                when Judge applies control effects,
+                potentially turning Judge's
+                own strategy against him.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Drayne
+            </h3>
+
+            <p>
+                Once Drayne's maximum Health has
+                scaled sufficiently high,
+                he can execute Judge regardless
+                of Judge's protective shields.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Thea
+            </h3>
+
+            <p>
+                Thea can silence Judge,
+                preventing him from casting
+                the magical abilities that
+                make his kit dangerous.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Crow
+            </h3>
+
+            <p>
+                Crow's silence can interrupt
+                Judge's spellcasting and reduce
+                his ability to maintain
+                battlefield control.
+            </p>
+
+        </article>
+
+        <article class="counter-card">
+
+            <h3>
+                Mushy and Shroom
+            </h3>
+
+            <p>
+                Silence provides another way
+                to disrupt Judge and limit
+                the repeated ability activations
+                his strategy depends on.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     FINAL VERDICT
+     ========================================================= -->
+
+<section class="section">
+
+    <div class="verdict">
+
+        <div class="section-kicker">
+            FINAL ANALYSIS
+        </div>
+
+        <h2>
+            Is Judge Worth Building?
+        </h2>
 
         <p>
-          <strong>Absolutely.</strong>
-          Judge is one of the most complete
-          control Heroes in the Way of Progress.
+            <strong>Absolutely.</strong>
+            Judge is one of the most complete
+            Control Heroes in the Way of Progress.
         </p>
 
         <p>
-          His shields protect important allies,
-          his repeated stuns interrupt enemy strategies,
-          and his slow effects create opportunities
-          for the rest of the team.
+            His Force Field protects important allies.
+            Spacial Rift disrupts enemy timing.
+            Ion Cyclone provides repeated Magic Damage.
+            And Enhanced Generator transforms
+            those abilities into a continuous
+            source of crowd control.
         </p>
 
         <p>
-          With powerful synergies involving
-          <strong>Julius, Orion, Polaris and Byrna</strong>,
-          Judge can become the foundation
-          of a highly disruptive Progress composition.
+            Judge also benefits from outstanding
+            interactions with
+            <strong>Julius, Orion, Polaris and Byrna</strong>,
+            allowing him to support powerful
+            Progress compositions.
         </p>
 
         <p>
-          His greatest strength is not simply
-          dealing damage. It is controlling
-          when and how the opposing team
-          can respond.
+            His greatest strength is not simply
+            how much damage he deals.
+            It is his ability to control
+            the enemy's opportunities to respond.
         </p>
 
         <p>
-          <strong>Gods of Alliance Verdict:</strong>
-          Judge is an excellent investment
-          for players who value battlefield control,
-          defensive support and strategic team synergy.
+            <strong>
+                Gods of Alliance Verdict:
+                Judge is an outstanding investment
+                for players who value strategic control,
+                defensive support and battlefield tempo.
+            </strong>
         </p>
 
-      </div>
+    </div>
 
-      <div class="bottom-nav">
-        <a class="nav-button" href="heroes.html">
-          ← ALL HERO GUIDES
-        </a>
+</section>
 
-        <a class="nav-button" href="index.html">
-          BACK TO HOME →
-        </a>
-      </div>
+<!-- =========================================================
+     VIDEO — SAME STRUCTURE AS FACELESS
+     ========================================================= -->
 
-    </article>
+<section class="section video-section">
 
-    <aside class="sidebar" aria-label="Guide contents">
+    <div class="section-kicker">
+        WATCH THE FULL GUIDE
+    </div>
 
-      <div class="sidebar-title">
-        IN THIS GUIDE
-      </div>
+    <h2 class="section-title">
+        Judge Video Guide.
+    </h2>
 
-      <a href="#overview">01 / Overview</a>
-      <a href="#skills">02 / Skills</a>
-      <a href="#synergies">03 / Best Synergies</a>
-      <a href="#skins">04 / Skins</a>
-      <a href="#glyphs">05 / Glyphs</a>
-      <a href="#artifacts">06 / Artifacts</a>
-      <a href="#gift">07 / Gift of the Elements</a>
-      <a href="#talismans">08 / Talismans</a>
-      <a href="#counters">09 / Counters</a>
-      <a href="#video">10 / Video Guide</a>
-      <a href="#verdict">Final Verdict</a>
+    <p
+        class="section-lead"
+        style="margin-bottom:26px;"
+    >
+        Watch the complete Gods of Alliance Judge guide
+        for the full explanation of his Skills,
+        development priorities, team synergies,
+        Talismans and counters.
+    </p>
 
-    </aside>
+    <div class="video-frame">
 
-  </div>
+        <iframe
+            src="https://www.youtube.com/embed/FRu126IxYpE"
+            title="Judge Full Guide - Gods of Alliance"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</section>
 
 </main>
 
 <footer>
-  © 2026 Gods of Alliance • Hero Wars Alliance Guides
+    © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
 
+<!-- GLOBAL GODS OF ALLIANCE NAVIGATION -->
 <script src="goa-global.js"></script>
 
 </body>
