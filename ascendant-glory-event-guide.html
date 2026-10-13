@@ -1,0 +1,1398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ascendant Glory Event Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Ascendant Glory event guide for Hero Wars Alliance. Rising Legend, Trial of Legends, Spark of Glory, Crow Ocean Echo Skin and Skin Plus, Ascension Crests, quests, rewards and Outland strategy.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/ascendant-glory-event-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Ascendant Glory Event Guide | Gods of Alliance">
+<meta property="og:description" content="Three connected subevents, Crow's Ocean Echo Skin Plus, all quest tabs and a complete Ascension Crest acquisition strategy.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/ascendant-glory-event-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Events/ascended-glory-event.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Events/ascended-glory-event.png">
+
+<style>
+:root {
+  --bg:#030713;
+  --panel:#0b1124;
+  --gold:#e7b455;
+  --gold2:#ffe08a;
+  --blue:#7196ff;
+  --white:#ffffff;
+  --muted:#a8aec0;
+  --border:rgba(231,180,85,.17);
+}
+
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html {
+  scroll-behavior:smooth;
+  background:var(--bg);
+}
+
+body {
+  color:var(--white);
+  background:
+    radial-gradient(circle at 50% 0%,rgba(55,88,190,.15),transparent 35%),
+    linear-gradient(180deg,#071027 0%,#030713 45%,#02040a 100%);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+.event-hero {
+  position:relative;
+  min-height:730px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+  border-bottom:1px solid var(--border);
+}
+
+.event-hero-bg {
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(90deg,rgba(3,7,19,.05) 0%,rgba(3,7,19,.16) 35%,rgba(3,7,19,.65) 65%,rgba(3,7,19,.96) 100%),
+    linear-gradient(180deg,transparent 0%,rgba(3,7,19,.15) 50%,#030713 100%),
+    url("Images/Events/ascended-glory-event.png");
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-shell {
+  position:relative;
+  z-index:2;
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding:180px 32px 80px;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.hero-content {
+  max-width:630px;
+}
+
+.badge {
+  display:inline-block;
+  padding:9px 17px;
+  border:1px solid rgba(231,180,85,.35);
+  border-radius:40px;
+  background:rgba(3,7,19,.75);
+  color:var(--gold2);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.event-hero h1 {
+  margin:25px 0;
+  font-size:clamp(56px,6.8vw,104px);
+  line-height:.99;
+  font-weight:950;
+  letter-spacing:-3px;
+  text-transform:uppercase;
+  text-shadow:0 8px 35px rgba(0,0,0,.65);
+}
+
+.event-hero h1 span {
+  display:block;
+}
+
+.event-hero h1 span:last-child {
+  color:var(--gold2);
+}
+
+.hero-meta {
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  color:var(--gold);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.4px;
+  text-transform:uppercase;
+}
+
+.hero-intro {
+  margin-top:25px;
+  max-width:590px;
+  color:#d7dbea;
+  font-size:17px;
+}
+
+.hero-intro strong {
+  color:#fff;
+}
+
+.article {
+  max-width:1160px;
+  margin:auto;
+  padding:90px 28px 120px;
+}
+
+.section {
+  margin-bottom:105px;
+}
+
+.kicker {
+  margin-bottom:13px;
+  color:var(--gold);
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.title {
+  margin-bottom:22px;
+  font-size:clamp(30px,4vw,49px);
+  line-height:1.13;
+  letter-spacing:-1px;
+}
+
+.lead {
+  max-width:940px;
+  margin-bottom:32px;
+  color:var(--muted);
+  font-size:16px;
+}
+
+.lead strong {
+  color:#fff;
+}
+
+.facts {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:35px;
+}
+
+.fact {
+  padding:28px 23px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:rgba(12,18,40,.78);
+}
+
+.fact-label {
+  color:var(--muted);
+  font-size:11px;
+  font-weight:750;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.fact-value {
+  margin-top:10px;
+  color:var(--gold2);
+  font-size:25px;
+  font-weight:900;
+}
+
+.quest-stack {
+  display:grid;
+  gap:17px;
+  margin-top:35px;
+}
+
+.quest {
+  overflow:hidden;
+  border:1px solid rgba(113,150,255,.17);
+  border-radius:17px;
+  background:linear-gradient(145deg,rgba(15,23,48,.96),rgba(6,11,26,.96));
+}
+
+.quest-top {
+  padding:23px 27px 17px;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.quest-num {
+  margin-bottom:7px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:2px;
+}
+
+.quest-name {
+  color:#fff;
+  font-size:23px;
+  line-height:1.25;
+}
+
+.quest-body {
+  padding:21px 27px 25px;
+  color:#bfc6d8;
+  font-size:14px;
+}
+
+.quest-body p + p {
+  margin-top:13px;
+}
+
+.quest-body strong {
+  color:#fff;
+}
+
+.board {
+  overflow:hidden;
+  margin-top:30px;
+  border:1px solid var(--border);
+  border-radius:17px;
+  background:rgba(8,13,31,.92);
+}
+
+.board-row {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+  padding:22px 26px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+
+.board-row:last-child {
+  border-bottom:0;
+}
+
+.board-name {
+  color:#fff;
+  font-size:15px;
+  font-weight:800;
+}
+
+.board-note {
+  margin-top:4px;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.board-value {
+  flex-shrink:0;
+  color:var(--gold2);
+  font-size:19px;
+  font-weight:900;
+  text-align:right;
+}
+
+.board-row.total {
+  background:rgba(231,180,85,.10);
+}
+
+.board-row.total .board-name,
+.board-row.total .board-value {
+  color:var(--gold2);
+}
+
+.verdict {
+  margin-top:30px;
+  padding:32px;
+  border:1px solid rgba(231,180,85,.25);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(40,29,12,.58),rgba(9,14,30,.95));
+}
+
+.verdict h3 {
+  margin-bottom:13px;
+  color:var(--gold2);
+  font-size:23px;
+}
+
+.verdict p {
+  color:#c5cad7;
+  font-size:14px;
+}
+
+.verdict p + p {
+  margin-top:14px;
+}
+
+.verdict strong {
+  color:#fff;
+}
+
+.video-frame {
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#000;
+  box-shadow:0 28px 70px rgba(0,0,0,.4);
+}
+
+.video-frame iframe {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+footer {
+  padding:35px 20px;
+  border-top:1px solid rgba(231,180,85,.08);
+  background:#02040a;
+  color:#777d8c;
+  text-align:center;
+  font-size:11px;
+}
+
+@media(max-width:800px) {
+  .facts {
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:700px) {
+  .event-hero {
+    min-height:660px;
+  }
+
+  .event-hero-bg {
+    background-image:
+      linear-gradient(180deg,rgba(3,7,19,.08),rgba(3,7,19,.40) 45%,#030713 100%),
+      url("Images/Events/ascended-glory-event.png");
+    background-position:30% center;
+  }
+
+  .hero-shell {
+    padding:330px 20px 55px;
+    justify-content:center;
+  }
+
+  .hero-content {
+    text-align:center;
+  }
+
+  .event-hero h1 {
+    font-size:clamp(42px,10vw,65px);
+    letter-spacing:-1px;
+  }
+
+  .hero-meta {
+    justify-content:center;
+  }
+
+  .article {
+    padding:65px 18px 80px;
+  }
+
+  .quest-top,
+  .quest-body {
+    padding-left:20px;
+    padding-right:20px;
+  }
+
+  .board-row {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:8px;
+    padding:20px;
+  }
+
+  .board-value {
+    text-align:left;
+  }
+
+  .verdict {
+    padding:23px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="event-hero">
+  <div class="event-hero-bg"></div>
+
+  <div class="hero-shell">
+    <div class="hero-content">
+
+      <div class="badge">
+        COMPLETE EVENT GUIDE • THREE SUBEVENTS
+      </div>
+
+      <h1>
+        <span>ASCENDANT</span>
+        <span>GLORY</span>
+      </h1>
+
+      <div class="hero-meta">
+        <span>CROW OCEAN ECHO</span>
+        <span>•</span>
+        <span>ASCENSION CRESTS</span>
+        <span>•</span>
+        <span>7 DAYS</span>
+      </div>
+
+      <p class="hero-intro">
+        Explore <strong>Rising Legend</strong>,
+        <strong>Trial of Legends</strong> and
+        <strong>Spark of Glory</strong>.
+        Plan your Ascension Crests and discover a
+        complete acquisition scenario for Crow's
+        Ocean Echo Skin and Skin Plus.
+      </p>
+
+    </div>
+  </div>
+</header>
+
+<main class="article">
+
+<!-- EVENT OVERVIEW -->
+
+<section class="section">
+
+  <div class="kicker">EVENT OVERVIEW</div>
+
+  <h2 class="title">
+    Three Connected Subevents.
+  </h2>
+
+  <p class="lead">
+    Ascendant Glory runs for seven days and connects
+    three separate quest boards. Your progress in
+    Rising Legend and Trial of Legends also unlocks
+    additional rewards through Spark of Glory.
+    Understanding these connections is essential
+    when planning your Ascension Crest budget.
+  </p>
+
+  <div class="facts">
+
+    <div class="fact">
+      <div class="fact-label">EVENT DURATION</div>
+      <div class="fact-value">7 Days</div>
+    </div>
+
+    <div class="fact">
+      <div class="fact-label">CONNECTED SUBEVENTS</div>
+      <div class="fact-value">3</div>
+    </div>
+
+    <div class="fact">
+      <div class="fact-label">EVENT CURRENCY</div>
+      <div class="fact-value">Ascension Crests</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EVENT SHOP -->
+
+<section class="section">
+
+  <div class="kicker">CHAMPION'S GALLERY</div>
+
+  <h2 class="title">
+    Crow's Ocean Echo Skin &amp; Skin Plus.
+  </h2>
+
+  <p class="lead">
+    The main attraction is Crow's Ocean Echo Skin.
+    You must own Crow before acquiring the Skin,
+    and the normal Skin must be purchased before
+    Skin Plus becomes available.
+  </p>
+
+  <div class="board">
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Ocean Echo Skin</div>
+        <div class="board-note">Normal version</div>
+      </div>
+      <div class="board-value">90,000 Crests</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Ocean Echo Skin Plus</div>
+        <div class="board-note">Requires the normal Skin first</div>
+      </div>
+      <div class="board-value">300,000 Crests</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">COMPLETE ACQUISITION PATH</div>
+        <div class="board-note">Normal Skin + Skin Plus</div>
+      </div>
+      <div class="board-value">390,000 Crests</div>
+    </div>
+
+  </div>
+
+  <div class="verdict">
+    <h3>More Than Just Crow's Skin.</h3>
+
+    <p>
+      Skin Plus doubles the Skin's bonus.
+      The Champion's Gallery also offers
+      <strong>Cascade and Satori Relic Shards</strong>,
+      Soul Stones for Eva, Fafnir and Qing Mao,
+      artifact fragments, Hero Skin Stones,
+      speedups, World Energy, resource chests
+      and purple and orange equipment.
+    </p>
+
+    <p>
+      The shop remains available for
+      <strong>24 hours after the event ends</strong>.
+      The main event also includes Glory Pass,
+      Reward Cascade, bundles and Emerald offers.
+      Our calculations focus on quest rewards,
+      excluding those purchase options.
+    </p>
+  </div>
+
+</section>
+
+<!-- RISING LEGEND -->
+
+<section class="section">
+
+  <div class="kicker">SUBEVENT 01 • EIGHT TABS</div>
+
+  <h2 class="title">Rising Legend.</h2>
+
+  <p class="lead">
+    Rising Legend contains eight quest tabs.
+    Login and Hydra milestones accumulate throughout
+    the event. The other six tracks reset daily,
+    meaning full weekly completion requires
+    progress every day.
+  </p>
+
+  <div class="quest-stack">
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 01</div>
+        <h3 class="quest-name">Day After Day</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Log in daily throughout the seven-day event.
+          Additional rewards include Skin Stone Chests,
+          Crow Soul Stones, and Artifact Essence,
+          Scroll and Metal Chests.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 02</div>
+        <h3 class="quest-name">Generous Soul</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Requires daily VIP Points and is counted
+          separately from our doable baseline.
+          Rewards include normal and Large Skin Stone
+          Chests, Titan Skin Stones, Pallant Soul Stones,
+          Season Points, Meta Cubes, Elemental Spheres
+          and Adventure Coins.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 03</div>
+        <h3 class="quest-name">Chaos Cores</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Spend Chaos Cores on useful Artifact upgrades.
+          This contribution remains separate from the
+          baseline. Other rewards include Season Points,
+          Skin Stone Chests, Adventure Coins,
+          Artifact Chest Keys, Whisper Ring Recipe
+          fragments and Orm Soul Stones.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 04</div>
+        <h3 class="quest-name">Summoning Titans</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Full completion requires
+          <strong>50 Titan summons every day</strong>.
+          This is a separate saved-resource contribution.
+          Additional rewards include Orm Soul Stones,
+          Season Points, Titan Skin Stones,
+          Mastery Crystals, Artifact Chest Keys,
+          Adventure Coins and other resources.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 05</div>
+        <h3 class="quest-name">Fairy Dust</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Reaching every milestone requires
+          <strong>10,000 Fairy Dust daily</strong>.
+          This is another separate resource contribution.
+          Rewards include Orm and Pallant Soul Stones,
+          Titan Skin Stones, Adventure Energy,
+          Titan Potions, Adventure Coins,
+          Skin Stone Chests and Whisper Ring
+          Recipe fragments.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 06</div>
+        <h3 class="quest-name">Taming Hydra</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Three participations daily reach
+          <strong>21 across the event</strong>.
+          This is included in our doable baseline.
+          Other rewards include Titan Potions,
+          Rune Spheres, Large Skin Stone Chests,
+          Season Points, Artifact Chest Keys,
+          Adventure Energy and Titan Skin Stones.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 07</div>
+        <h3 class="quest-name">Arena</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Arena counts battles, not victories.
+          Five free attempts daily form our baseline.
+          Full completion requires
+          <strong>15 battles daily</strong>.
+        </p>
+        <p>
+          The first extra pack of five battles costs
+          50 Emeralds and the next costs 100.
+          That is <strong>150 Emeralds daily</strong>,
+          or <strong>1,050 Emeralds over seven days</strong>.
+          This spending also progresses Wise Exchange
+          in Trial of Legends.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 08</div>
+        <h3 class="quest-name">Hold a Raid</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Requires boss victories as the Raid leader.
+          Our doable scenario includes
+          <strong>10 daily victories</strong>,
+          using World Energy instead of Emeralds.
+          Additional rewards include Food, Wood,
+          Stone and Metal.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="board">
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Doable Baseline</div>
+        <div class="board-note">Without separate spending and resource tracks</div>
+      </div>
+      <div class="board-value">45,150 Crests</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">Every Tab Completed</div>
+        <div class="board-note">Full completion across all tracks</div>
+      </div>
+      <div class="board-value">361,900 Crests</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TRIAL OF LEGENDS -->
+
+<section class="section">
+
+  <div class="kicker">SUBEVENT 02 • EIGHT TABS</div>
+
+  <h2 class="title">Trial of Legends.</h2>
+
+  <p class="lead">
+    Trial of Legends also contains eight quest tabs,
+    but its milestones accumulate across the
+    seven-day event. Emerald spending, VIP Points
+    and saved resources must be planned separately.
+  </p>
+
+  <div class="quest-stack">
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 01</div>
+        <h3 class="quest-name">Day After Day</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Daily login rewards, including Titan
+          Skin Stones alongside Ascension Crests.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 02</div>
+        <h3 class="quest-name">Generous Soul</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Rewards cumulative VIP Points and stays
+          separate from the baseline. Additional
+          rewards include Crow and Eva Soul Stones,
+          Pallant and Orm Soul Stones, Season Points,
+          Adventure Coins and Adventure Energy.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 03</div>
+        <h3 class="quest-name">Wise Exchange</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Rewards Emeralds spent during the event.
+          Arena purchases, Outland Chests and other
+          eligible Emerald spending all contribute
+          to the same counter.
+        </p>
+        <p>
+          Count the Emerald expenditure
+          <strong>only once</strong>, even when it
+          unlocks rewards across connected subevents.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 04</div>
+        <h3 class="quest-name">Guilds' Activity</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Depends on your activity and resources.
+          Glyph upgrades and equipment exchanges
+          in the Forge can help reach higher milestones.
+          Maximum completion is not accessible to
+          everyone, so this tab stays separate.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 05</div>
+        <h3 class="quest-name">Rune Stones</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          The final spending milestone requires
+          <strong>750,000 Rune Stones</strong>.
+          This contribution is counted separately.
+          Rewards include Soul Stones, recipe fragments,
+          Season Points, Meta Cubes, Elemental Spheres,
+          Mastery Crystals and a Skin Shop Certificate.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 06</div>
+        <h3 class="quest-name">Accelerations</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Full completion requires
+          <strong>41 hours of speedups</strong>.
+          Keep this separate because players have
+          different reserves. Rewards include
+          Titan Skin Stones, Crow Soul Stones,
+          Rune Spheres, Season Points,
+          Adventure Energy and Artifact Chest Keys.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 07</div>
+        <h3 class="quest-name">Titan Potion</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Requires spending Titan Potions.
+          Upgrading Titans or buying Golden Horns
+          of Summoning in the Titan Soul Shop
+          can advance the milestones.
+          Your available potions determine
+          your contribution.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 08</div>
+        <h3 class="quest-name">Heroic Discovery</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Rewards opening Heroic Chests.
+          Two free openings daily provide
+          <strong>14 openings across the event</strong>,
+          completing milestones up to 10.
+          Higher milestones reach 100 openings
+          and remain separate.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="board">
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Doable Baseline</div>
+        <div class="board-note">Includes free Heroic Chest progress</div>
+      </div>
+      <div class="board-value">5,750 Crests</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">Every Tab Completed</div>
+        <div class="board-note">Requires additional commitments</div>
+      </div>
+      <div class="board-value">230,550 Crests</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SPARK OF GLORY -->
+
+<section class="section">
+
+  <div class="kicker">SUBEVENT 03 • FIVE TABS</div>
+
+  <h2 class="title">Spark of Glory.</h2>
+
+  <p class="lead">
+    Spark of Glory connects progress from the
+    first two subevents while adding Outland
+    and Training objectives. Its connector
+    milestones are essential for understanding
+    the complete acquisition strategy.
+  </p>
+
+  <div class="quest-stack">
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 01</div>
+        <h3 class="quest-name">Day After Day</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Daily login rewards, including Skin
+          Stone Chests alongside Ascension Crests.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 02</div>
+        <h3 class="quest-name">Outland</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Opening Outland Chests awards Ascension Crests.
+          Our baseline assumes no free openings.
+          A complete sequence of
+          <strong>150 chests awards 6,850 Crests</strong>,
+          and the sequence can repeat.
+        </p>
+        <p>
+          From <strong>October 16–18</strong>,
+          the announced sale offers a
+          <strong>55% Outland Chest discount</strong>
+          and ×4 Emerald offers.
+        </p>
+        <p>
+          Our scenario uses discounted packs
+          of 100 chests, costing
+          <strong>3,375 Emeralds per pack</strong>.
+          This spending also advances Wise Exchange.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 03</div>
+        <h3 class="quest-name">Training</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Requires training troops of level six
+          or higher. A complete sequence needs
+          <strong>50,000 troops</strong> and awards
+          <strong>7,100 Crests</strong>.
+          The sequence is repeatable.
+        </p>
+        <p>
+          Additional rewards include Food,
+          Wood, Stone, Metal, General Speedups,
+          Construction Speedups and Rune Spheres.
+        </p>
+        <p>
+          <strong>Important limitation:</strong>
+          Players already exceeding their troop
+          limit may be unable to progress this
+          tab by training additional troops.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 04</div>
+        <h3 class="quest-name">Rising Legend Connector</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Rewards quests completed in Rising Legend.
+          Our baseline completes
+          <strong>84 quests</strong>, unlocking
+          <strong>4,100 extra Crests</strong>.
+          Higher milestones reach
+          <strong>97,600 Crests</strong> in total.
+        </p>
+        <p>
+          Additional rewards include Crow,
+          Pallant, Orm and Fafnir Soul Stones,
+          Adventure Energy, Holy Grenade
+          fragments for Crow's Artifact weapon,
+          Skin Shop Certificates and a Red Recipe Box.
+        </p>
+      </div>
+    </article>
+
+    <article class="quest">
+      <div class="quest-top">
+        <div class="quest-num">TAB 05</div>
+        <h3 class="quest-name">Trial of Legends Connector</h3>
+      </div>
+      <div class="quest-body">
+        <p>
+          Rewards quests completed in Trial of Legends.
+          Our baseline completes
+          <strong>10 quests</strong>, unlocking
+          <strong>1,250 extra Crests</strong>.
+          The highest connector milestone reaches
+          <strong>95,750 Crests</strong>.
+        </p>
+        <p>
+          Two special rewards deserve attention:
+          <strong>Qing Mao's Lunar Skin Plus</strong>
+          at 45 quests, and
+          <strong>Soleil's Talisman of Scholar</strong>
+          at 75 quests. The talisman provides
+          Magic Reflection and Health.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="board">
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">Spark of Glory Baseline</div>
+        <div class="board-note">Includes connector rewards</div>
+      </div>
+      <div class="board-value">8,850 Crests</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- BASELINE -->
+
+<section class="section">
+
+  <div class="kicker">ASCENSION CREST CALCULATION</div>
+
+  <h2 class="title">
+    The Doable Baseline.
+  </h2>
+
+  <p class="lead">
+    Our baseline keeps VIP, additional Emerald
+    spending and saved-resource commitments
+    separate. Only Ascension Crests are included
+    in the following totals.
+  </p>
+
+  <div class="board">
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Rising Legend</div>
+        <div class="board-note">Doable quest rewards</div>
+      </div>
+      <div class="board-value">45,150</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Trial of Legends</div>
+        <div class="board-note">Doable quest rewards</div>
+      </div>
+      <div class="board-value">5,750</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Spark of Glory</div>
+        <div class="board-note">Including connectors</div>
+      </div>
+      <div class="board-value">8,850</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">TOTAL DOABLE BASELINE</div>
+        <div class="board-note">All three subevents combined</div>
+      </div>
+      <div class="board-value">59,750 Crests</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Normal Ocean Echo Skin</div>
+        <div class="board-note">Required cost</div>
+      </div>
+      <div class="board-value">90,000 Crests</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">ADDITIONAL CRESTS NEEDED</div>
+        <div class="board-note">To obtain the normal Skin</div>
+      </div>
+      <div class="board-value">30,250 Crests</div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKIN PLUS SCENARIO -->
+
+<section class="section">
+
+  <div class="kicker">COMPLETE ACQUISITION STRATEGY</div>
+
+  <h2 class="title">
+    How to Reach Crow's Skin Plus.
+  </h2>
+
+  <p class="lead">
+    Reaching the full 390,000-Crest target
+    requires a much larger commitment.
+    The following example combines saved resources,
+    completed quest tracks, discounted Outland
+    Chests and connector rewards.
+  </p>
+
+  <div class="board">
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Rising Legend</div>
+        <div class="board-note">
+          Baseline + full Titan Summoning, Fairy Dust
+          and Arena; excludes VIP and Chaos Cores.
+          224 completed quests.
+        </div>
+      </div>
+      <div class="board-value">141,050</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Trial of Legends</div>
+        <div class="board-note">
+          Full Guilds' Activity, Accelerations and
+          Titan Potion; Rune Stones to 200,000;
+          free Heroic Discovery; excludes VIP.
+          51 quests before Wise Exchange.
+        </div>
+      </div>
+      <div class="board-value">79,650</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Subtotal With Spark Connectors</div>
+        <div class="board-note">
+          Includes Spark login rewards and connector
+          milestones from the completed quests.
+        </div>
+      </div>
+      <div class="board-value">325,550</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">10 Discounted Outland Packs</div>
+        <div class="board-note">
+          1,000 chests costing 33,750 Emeralds.
+          Six complete cycles plus milestones
+          up to 100 in the next cycle.
+        </div>
+      </div>
+      <div class="board-value">+45,950</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Arena Emerald Spending</div>
+        <div class="board-note">
+          1,050 Emeralds. Combined eligible spending
+          reaches 34,800 Emeralds.
+          Count the expenditure only once.
+        </div>
+      </div>
+      <div class="board-value">34,800 Spent</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Wise Exchange</div>
+        <div class="board-note">
+          Combined Emerald spending reaches
+          the 32,000-Emerald milestone.
+        </div>
+      </div>
+      <div class="board-value">+10,400</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Additional Spark Connector</div>
+        <div class="board-note">
+          Nine Wise Exchange quests raise
+          Trial of Legends to 60 completed quests.
+        </div>
+      </div>
+      <div class="board-value">+22,000</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">FINAL ASCENSION CREST TOTAL</div>
+        <div class="board-note">
+          Complete example scenario
+        </div>
+      </div>
+      <div class="board-value">403,900 Crests</div>
+    </div>
+
+    <div class="board-row">
+      <div>
+        <div class="board-name">Ocean Echo Skin + Skin Plus</div>
+        <div class="board-note">Combined purchase cost</div>
+      </div>
+      <div class="board-value">390,000 Crests</div>
+    </div>
+
+    <div class="board-row total">
+      <div>
+        <div class="board-name">REMAINING CRESTS</div>
+        <div class="board-note">After both purchases</div>
+      </div>
+      <div class="board-value">13,900 Crests</div>
+    </div>
+
+  </div>
+
+  <div class="verdict">
+
+    <h3>Important: Nine Packs Are Not Enough.</h3>
+
+    <p>
+      With nine discounted Outland packs,
+      the same Arena routine and no other
+      Emerald spending, the example reaches
+      only <strong>384,850 Crests</strong>,
+      below the 390,000 target.
+    </p>
+
+    <p>
+      VIP rewards, additional eligible Emerald
+      spending, Chaos Cores, Rune Stones beyond
+      200,000 and Training can reduce the number
+      of Outland packs needed. These contributions
+      depend on your own resources and progress.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- FINAL STRATEGY -->
+
+<section class="section">
+
+  <div class="kicker">FINAL STRATEGY</div>
+
+  <h2 class="title">
+    Plan Before You Spend.
+  </h2>
+
+  <p class="lead">
+    Ascendant Glory rewards planning across
+    all three subevents. The normal Crow Skin
+    is a smaller target, while Skin Plus
+    requires substantial saved resources
+    and additional progress.
+  </p>
+
+  <div class="verdict">
+
+    <h3>Knowledge. Precision. Control.</h3>
+
+    <p>
+      Complete daily tasks, monitor the next
+      connector milestone and consider the
+      Outland discount only if it fits your plan.
+      Keep the doable baseline separate from
+      VIP, Emerald spending and saved resources.
+    </p>
+
+    <p>
+      <strong>
+        Don't build randomly.
+        Build with intention.
+      </strong>
+    </p>
+
+  </div>
+
+</section>
+
+<!-- YOUTUBE VIDEO -->
+
+<section class="section">
+
+  <div class="kicker">WATCH THE FULL GUIDE</div>
+
+  <h2 class="title">
+    Ascendant Glory Video Guide.
+  </h2>
+
+  <p class="lead">
+    Watch the complete Gods of Alliance guide
+    for the full quest breakdown, reward analysis,
+    Ascension Crest calculations and Crow's
+    Ocean Echo Skin Plus acquisition scenario.
+  </p>
+
+  <div class="video-frame">
+
+    <iframe
+      src="https://www.youtube.com/embed/0SHtv_5jhQg"
+      title="Ascendant Glory Event Guide - Gods of Alliance"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+  © 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
