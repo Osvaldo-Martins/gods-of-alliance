@@ -1,0 +1,821 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Astrid and Lucas Guide | Gods of Alliance</title>
+
+<meta name="description" content="Complete Astrid and Lucas Hero Wars Alliance guide covering skills, rage mechanics, skins, glyphs, artifacts, talismans, team strategies and counters.">
+
+<link rel="canonical" href="https://www.godsofalliancehwa.com/astrid-and-lucas-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Astrid and Lucas — Complete Hero Guide">
+<meta property="og:description" content="Master Lucas's rage mechanics, builds, talismans and counters.">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/hero-guides/astrid-and-lucas-guide.jpg">
+
+<style>
+:root {
+  color-scheme: dark;
+  --bg: #080e17;
+  --panel: #101b2a;
+  --line: #26384a;
+  --text: #eaf2fb;
+  --muted: #b5c4d2;
+  --gold: #f8c66d;
+  --cyan: #5cdeed;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.75 system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+}
+
+a { color: var(--cyan); }
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #08111cef;
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 13px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .11em;
+  color: white;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: #d2deeb;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero {
+  min-height: 570px;
+  position: relative;
+  display: flex;
+  align-items: end;
+  isolation: isolate;
+  background: #101b29;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    url("Images/hero-guides/astrid-and-lucas-guide.jpg")
+    center / cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      0deg,
+      #080e17 0%,
+      #080e17dd 20%,
+      #080e1730 65%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 40%,
+      #080e1766
+    );
+}
+
+.hero-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 90px 24px 52px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: .2em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 76px);
+  line-height: 1.06;
+  margin: 13px 0 14px;
+  text-shadow: 0 4px 22px #000;
+}
+
+.hero p {
+  max-width: 750px;
+  color: #edf5fb;
+  font-size: 18px;
+  text-shadow: 0 2px 12px #000;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.chip {
+  background: #091625d9;
+  border: 1px solid #62728699;
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .05em;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: auto;
+  padding: 35px 24px 100px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #d3dfec;
+}
+
+.toc {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 22px;
+  margin: 30px 0;
+}
+
+.toc h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.toc-list {
+  display: flex;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.toc a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 75px;
+}
+
+.section h2 {
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.section h3 {
+  font-size: 20px;
+  color: var(--gold);
+  margin: 24px 0 7px;
+}
+
+.section p {
+  color: #c9d7e5;
+  margin: 9px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.card h3 { margin-top: 0; }
+.card p { margin-bottom: 0; }
+
+.note {
+  border-left: 3px solid var(--cyan);
+  padding: 12px 18px;
+  background: #10212e;
+  border-radius: 0 10px 10px 0;
+  margin: 18px 0;
+  color: #dcebf4;
+}
+
+.rank {
+  list-style: none;
+  counter-reset: rank;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.rank li {
+  counter-increment: rank;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.rank li::before {
+  content: counter(rank) ". ";
+  font-weight: 900;
+  color: var(--gold);
+}
+
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0e1924;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #121417;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  color: #94a8b9;
+  padding: 35px 20px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 470px;
+  }
+
+  .hero::before {
+    background-position: 35% center;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .nav {
+    padding: 12px 15px;
+  }
+
+  .links {
+    gap: 10px;
+  }
+
+  .links a {
+    font-size: 11px;
+  }
+
+  .wrap {
+    padding: 20px 17px 70px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="index.html">GODS OF ALLIANCE</a>
+
+    <div class="links">
+      <a href="index.html">HOME</a>
+      <a href="hero-guides.html">HERO GUIDES</a>
+      <a href="events.html">EVENTS</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      Hero Wars Alliance · Complete Hero Guide
+    </div>
+
+    <h1>Astrid and Lucas</h1>
+
+    <p>
+      Master Lucas's unique rage system, turn a backline
+      marksman into frontline protection, and build for
+      reliable physical pressure and control.
+    </p>
+
+    <div class="chips">
+      <span class="chip">MARKSMAN</span>
+      <span class="chip">WAY OF PROGRESS</span>
+      <span class="chip">BACK LINE</span>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+
+<p class="intro">
+  Astrid and Lucas are unlike conventional marksmen.
+  Astrid attacks from the back line, while Lucas can
+  transform into a raging frontline presence that absorbs
+  enemy attacks through his rage meter rather than
+  ordinary health loss.
+
+  Understanding when Lucas enters and leaves the battle
+  is the key to making this duo effective.
+</p>
+
+<nav class="toc" aria-label="Guide contents">
+  <h2>In This Guide</h2>
+
+  <div class="toc-list">
+    <a href="#skills">Skills</a>
+    <a href="#skins">Skins</a>
+    <a href="#glyphs">Glyphs</a>
+    <a href="#artifacts">Artifacts</a>
+    <a href="#elements">Gift of the Elements</a>
+    <a href="#talismans">Talismans</a>
+    <a href="#strategy">Team Strategy</a>
+    <a href="#counters">Counters</a>
+    <a href="#video">Video Guide</a>
+    <a href="#verdict">Verdict</a>
+  </div>
+</nav>
+
+<section class="section" id="skills">
+  <h2>⚔️ Skills and Mechanics</h2>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>1. Go for It, Lucas!</h3>
+      <p>
+        Lucas starts the battle with
+        <strong>25% rage</strong>.
+
+        Each Astrid attack generates another
+        <strong>25%</strong>.
+
+        At 100%, Astrid can activate the skill,
+        sending Lucas into raging form on the front line.
+
+        Each enemy hit removes
+        <strong>7% rage</strong>
+        instead of dealing conventional health damage.
+
+        At zero rage, Lucas returns to passive form.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>2. Rampant Nature</h3>
+      <p>
+        Astrid increases her attack and skill speed
+        for <strong>9 seconds</strong>.
+
+        If Lucas is already raging, the attack-speed
+        benefit applies to Lucas instead.
+
+        He also receives the buff when transforming.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>3. Predator's Charge</h3>
+      <p>
+        While raging, Lucas deals progressively
+        more damage with consecutive attacks.
+
+        Each attack increases damage by
+        <strong>6.5%</strong>.
+
+        Sustained frontline uptime becomes
+        especially valuable.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>4. Tracker's Mark</h3>
+      <p>
+        Each Astrid attack marks the enemy hit
+        for <strong>4 seconds</strong>.
+
+        When Lucas attacks a marked target,
+        he briefly stuns that enemy.
+
+        This adds frontline control to the duo's
+        physical pressure.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Key mechanic:</strong>
+
+    Lucas uses rage, not conventional energy,
+    and cannot be debuffed.
+
+    He has zero armor and magic defense,
+    but large individual hits do not remove his rage
+    any faster simply because they deal more damage.
+
+    The number of hits matters.
+  </div>
+</section>
+
+<section class="section" id="skins">
+  <h2>🎨 Skin Priority</h2>
+
+  <p>
+    Astrid and Lucas have six skins:
+    the default agility skin, two physical attack skins,
+    armor penetration, armor, and health with a Plus version.
+  </p>
+
+  <ol class="rank">
+    <li>
+      <strong>Physical Attack skins (both)</strong>
+      — Develop these early for stronger attacks
+      and offensive skill impact.
+    </li>
+
+    <li>
+      <strong>Default / Agility</strong>
+      — Improves physical attack and contributes armor.
+    </li>
+
+    <li>
+      <strong>Armor Penetration</strong>
+      — Helps convert offensive stats into damage
+      against armored targets.
+    </li>
+
+    <li>
+      <strong>Health (including Plus)</strong>
+      — Helps Astrid survive pressure reaching the back line.
+    </li>
+
+    <li>
+      <strong>Armor</strong>
+      — Useful, but the lowest priority in this build.
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="glyphs">
+  <h2>🔷 Glyph Priority</h2>
+
+  <ol class="rank">
+    <li>
+      <strong>Armor Penetration</strong>
+      — Improve damage against armored opponents early.
+    </li>
+
+    <li>
+      <strong>Health</strong>
+      — Stay alive to generate more rage
+      and deploy Lucas repeatedly.
+    </li>
+
+    <li>
+      <strong>Agility</strong>
+      — Main stat, adding physical attack and armor.
+    </li>
+
+    <li>
+      <strong>Physical Attack</strong>
+      — Strengthen Astrid's attacks and offensive output.
+    </li>
+
+    <li>
+      <strong>Armor</strong>
+      — Lower priority after the other four.
+    </li>
+  </ol>
+
+  <div class="note">
+    The recommended initial goal is
+    <strong>level 40 for all five glyphs</strong>.
+
+    Further investment is suggested only if pursuing
+    the skill class system.
+  </div>
+</section>
+
+<section class="section" id="artifacts">
+  <h2>🏺 Artifact Priority</h2>
+
+  <ol class="rank">
+    <li>
+      <strong>
+        Book — Armor Penetration + Physical Attack
+      </strong>
+
+      Strongest initial investment for Astrid's
+      personal damage.
+    </li>
+
+    <li>
+      <strong>Ring — Agility</strong>
+
+      Improves her main stat and offensive potential.
+    </li>
+
+    <li>
+      <strong>Weapon — Teamwide Armor</strong>
+
+      Useful defensive bonus when Astrid activates
+      her first skill, especially against physical teams,
+      but lower personal-build priority.
+    </li>
+  </ol>
+</section>
+
+<section class="section" id="elements">
+  <h2>✨ Gift of the Elements</h2>
+
+  <p>
+    <strong>Max it out.</strong>
+
+    Astrid needs both physical attack and enough health
+    to survive backline-targeting mechanics.
+
+    Her position does not make durability irrelevant.
+  </p>
+</section>
+
+<section class="section" id="talismans">
+  <h2>💎 Talismans</h2>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>
+        First Talisman — Agility + Armor Penetration
+      </h3>
+
+      <p>
+        A balanced offensive choice that strengthens
+        her main stat and ability to damage armored targets.
+
+        According to the guide, it is permanently available
+        from the <strong>Eternal Frontier Shop</strong>
+        for <strong>700,000 Frontier Coins</strong>.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>
+        Second Talisman — Physical Attack + Critical Hit Chance
+      </h3>
+
+      <p>
+        A more aggressive damage-focused option,
+        boosting physical attack and introducing
+        the potential for larger critical physical hits.
+      </p>
+    </article>
+
+  </div>
+
+  <p>
+    <strong>Which to choose?</strong>
+
+    Both are useful.
+
+    Prioritize the first for agility and penetration;
+    consider the second when the team and matchup
+    favor greater offensive pressure.
+  </p>
+</section>
+
+<section class="section" id="strategy">
+  <h2>🛡️ How to Use Astrid and Lucas</h2>
+
+  <p>
+    Astrid's value is not measured by damage alone.
+
+    When Lucas moves forward, he adds a temporary
+    frontline body, absorbs attacks through rage,
+    increases his consecutive attack damage,
+    and can stun marked enemies.
+  </p>
+
+  <p>
+    This extra space can help allies such as
+    <strong>Julius</strong> and <strong>Judge</strong>
+    establish their own mechanics.
+
+    The goal is to keep Astrid attacking safely
+    so Lucas can cycle into raging form
+    and maintain pressure.
+  </p>
+
+  <div class="note">
+    <strong>Practical focus:</strong>
+
+    Protect Astrid from backline threats,
+    develop her physical offense,
+    and avoid treating Lucas like an ordinary tank
+    with conventional defensive stats.
+  </div>
+</section>
+
+<section class="section" id="counters">
+  <h2>🎯 How to Counter Astrid and Lucas</h2>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>Iris</h3>
+
+      <p>
+        Tracker's Mark can interact dangerously
+        with Inner Fire, allowing Iris to punish Astrid
+        and potentially eliminate her quickly.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Somna</h3>
+
+      <p>
+        Drowsiness can reduce the effectiveness
+        of physical opponents and undermine
+        Astrid's offensive pressure.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Cleaver</h3>
+
+      <p>
+        Rusty Hook can pull Astrid away from
+        the safety of the back line and expose
+        her to direct frontline danger.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Chabba</h3>
+
+      <p>
+        Can swallow Lucas when he enters raging form,
+        disrupting his attacks and temporary
+        frontline protection.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Soleil</h3>
+
+      <p>
+        Can protect the frontmost ally against
+        stuns and heavy incoming damage,
+        limiting the value of Tracker's Mark control.
+      </p>
+    </article>
+
+  </div>
+
+  <p>
+    These are matchup interactions described
+    in the accompanying guide,
+    not guarantees of victory in every composition.
+  </p>
+</section>
+
+<section class="section" id="video">
+  <h2>▶️ Full Video Guide</h2>
+
+  <p>
+    Watch the complete Gods of Alliance breakdown
+    of Astrid and Lucas.
+  </p>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/B5xuGbd4D0M"
+      title="Astrid and Lucas — Gods of Alliance Hero Guide"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <a
+    class="btn"
+    href="https://youtu.be/B5xuGbd4D0M"
+    target="_blank"
+    rel="noopener">
+    WATCH ON YOUTUBE →
+  </a>
+</section>
+
+<section class="section" id="verdict">
+  <h2>🏆 Final Verdict</h2>
+
+  <p>
+    Astrid and Lucas combine ranged physical pressure
+    with something few marksmen offer:
+    a temporary frontline presence that absorbs attacks
+    through rage, builds consecutive damage,
+    and adds control through Tracker's Mark.
+  </p>
+
+  <p>
+    Invest in the right offensive stats,
+    maintain enough survivability to keep Astrid active,
+    and build a team that benefits from the extra
+    protection Lucas provides.
+  </p>
+
+  <p>
+    The strongest results come from understanding
+    the mechanic rather than simply maximizing
+    a damage number.
+  </p>
+
+  <p>
+    <strong>
+      Master the mechanics. Control the fight.
+      Let's break the game together.
+    </strong>
+  </p>
+</section>
+
+</main>
+
+<footer class="footer">
+  © Gods of Alliance · Hero Wars Alliance Hero Guides
+</footer>
+
+</body>
+</html>
