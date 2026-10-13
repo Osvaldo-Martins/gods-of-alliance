@@ -1,9 +1,23 @@
+
 window.GOA_EVENTS = [
+  {
+    id: "ascendant-glory",
+    title: "Ascendant Glory Event Guide",
+    tag: "EVENT GUIDE",
+    status: "current",
+    order: 7,
+    image: "Images/Events/ascended-glory-event.jpg",
+    url: "ascendant-glory-event-guide.html",
+    dateLabel: "OCTOBER 12 — OCTOBER 18",
+    description:
+      "Explore all three Ascendant Glory subevents — Rising Legend, Trial of Legends and Spark of Glory — with complete quest breakdowns, Ascension Crest calculations, Crow's Ocean Echo Skin and Skin Plus, and the Outland spending strategy.",
+    button: "OPEN EVENT GUIDE →"
+  },
   {
     id: "bountiful-roads",
     title: "Bountiful Roads Event Guide",
     tag: "EVENT GUIDE",
-    status: "current",
+    status: "archived",
     order: 6,
     image: "Images/Events/bountiful-roads-event-guide.png",
     url: "bountiful-roads-event-guide.html",
@@ -12,12 +26,11 @@ window.GOA_EVENTS = [
       "Trade Routes Part 3: explore all six Bountiful Roads tabs, connector rewards from Roads Unlocked and Grand Caravan, repeatable speedup quests and the final Event Coin totals.",
     button: "OPEN EVENT GUIDE →"
   },
-
   {
     id: "grand-caravan",
     title: "Grand Caravan Event Guide",
     tag: "EVENT GUIDE",
-    status: "current",
+    status: "archived",
     order: 5,
     image: "Images/Events/grand-caravan-event-guide.png",
     url: "grand-caravan-event-guide.html",
@@ -26,12 +39,11 @@ window.GOA_EVENTS = [
       "Trade Routes Part 2: explore all seven Grand Caravan quest tabs, resource requirements, key reward milestones and the complete 13,550 Event Coin breakdown.",
     button: "OPEN EVENT GUIDE →"
   },
-
   {
     id: "roads-unlocked",
     title: "Roads Unlocked Event Guide",
     tag: "EVENT GUIDE",
-    status: "current",
+    status: "archived",
     order: 4,
     image: "Images/Events/roads-unlocked-event-guide.png",
     url: "roads-unlocked-event-guide.html",
@@ -40,7 +52,6 @@ window.GOA_EVENTS = [
       "Trade Routes Part 1: explore Caravan Hall, Reward Box, all seven Roads Unlocked quest tabs, daily resource requirements and the full Event Coin breakdown.",
     button: "OPEN EVENT GUIDE →"
   },
-
   {
     id: "ancient-awakening",
     title: "Ancient Awakening Event Guide",
@@ -54,7 +65,6 @@ window.GOA_EVENTS = [
       "Explore all eight Ancient Awakening tabs, connected Firstborn Force and Unstable Equilibrium rewards, Event Coin totals and the 500,000-coin path toward Metida's Primordial Skin and Skin+.",
     button: "OPEN EVENT GUIDE →"
   },
-
   {
     id: "firstborn-force",
     title: "Firstborn Force Event Guide",
@@ -68,7 +78,6 @@ window.GOA_EVENTS = [
       "Explore all eight Firstborn Force quest tabs, Event Coin totals, Metida's Primordial Skin and Skin+, Titan Brawls, Event Shop rewards and resource-planning strategy.",
     button: "OPEN EVENT GUIDE →"
   },
-
   {
     id: "buried-truths",
     title: "Buried Truths Season Calendar",
