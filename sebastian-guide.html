@@ -1,0 +1,1229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sebastian Full Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Sebastian guide for Hero Wars Alliance: skills, skins, glyphs, artifacts, talismans, synergies, counters and team strategies.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/sebastian-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Sebastian Full Guide | Gods of Alliance">
+<meta property="og:description" content="Master Sebastian's anti-control protection, Critical Hit support, Pure Damage and development priorities.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/sebastian-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/sebastian-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/sebastian-guide.jpg">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;background:#090608}
+:root{
+--bg:#090608;
+--gold:#e5b65b;
+--gold-bright:#ffe2a3;
+--ruby:#b82d49;
+--ruby-bright:#ff9eac;
+--muted:#baaeb0;
+--border:rgba(229,182,91,.19);
+}
+body{
+min-height:100vh;
+color:#fff;
+background:
+radial-gradient(circle at 50% 0%,rgba(138,43,59,.13),transparent 35%),
+linear-gradient(180deg,#180b11 0%,#090608 48%,#050406 100%);
+font-family:Inter,Arial,Helvetica,sans-serif;
+overflow-x:hidden;
+}
+a{color:inherit}
+.hero-header{
+position:relative;
+min-height:740px;
+display:flex;
+align-items:flex-end;
+overflow:hidden;
+border-bottom:1px solid var(--border);
+background:#090608;
+}
+.hero-background{
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(90deg,rgba(7,3,6,.04) 0%,rgba(7,3,6,.08) 33%,rgba(7,3,6,.48) 57%,rgba(7,3,6,.94) 100%),
+linear-gradient(180deg,rgba(9,6,8,.02) 0%,rgba(9,6,8,.07) 48%,#090608 100%),
+url("Images/Hero-Guides/sebastian-guide.jpg");
+background-size:cover;
+background-position:center;
+transform:scale(1.015);
+}
+.hero-background::after{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 22% 35%,rgba(229,182,91,.12),transparent 30%),
+radial-gradient(circle at 35% 65%,rgba(184,45,73,.10),transparent 30%);
+}
+.hero-shell{
+position:relative;
+z-index:2;
+width:100%;
+max-width:1400px;
+margin:0 auto;
+padding:180px 32px 82px;
+display:flex;
+justify-content:flex-end;
+}
+.hero-content{width:min(650px,100%)}
+.hero-badge{
+display:inline-block;
+margin-bottom:17px;
+padding:8px 11px;
+border:1px solid rgba(255,226,163,.32);
+border-radius:4px;
+background:rgba(15,6,9,.76);
+color:var(--gold-bright);
+font-size:9px;
+font-weight:950;
+letter-spacing:.18em;
+text-transform:uppercase;
+}
+.hero-header h1{
+margin-bottom:15px;
+color:var(--gold-bright);
+font-size:clamp(54px,8vw,96px);
+line-height:.94;
+font-weight:950;
+letter-spacing:-.055em;
+text-shadow:0 8px 35px rgba(0,0,0,.95),0 0 30px rgba(229,182,91,.16);
+}
+.hero-role{
+margin-bottom:21px;
+color:#fff;
+font-size:11px;
+font-weight:950;
+letter-spacing:.13em;
+line-height:1.7;
+text-transform:uppercase;
+}
+.hero-role span{color:var(--gold)}
+.hero-intro{
+max-width:620px;
+color:#d0c0c0;
+font-size:14px;
+line-height:1.8;
+text-shadow:0 2px 10px #000;
+}
+.hero-intro strong{color:#fff}
+.article{
+width:100%;
+max-width:1180px;
+margin:0 auto;
+padding:78px 28px 100px;
+}
+.section{margin-bottom:82px}
+.section-kicker{
+margin-bottom:9px;
+color:var(--gold);
+font-size:9px;
+font-weight:950;
+letter-spacing:.21em;
+text-transform:uppercase;
+}
+.section-title{
+margin-bottom:18px;
+font-size:clamp(30px,4.4vw,47px);
+line-height:1.05;
+font-weight:950;
+letter-spacing:-.035em;
+}
+.section-lead{
+max-width:870px;
+color:var(--muted);
+font-size:14px;
+line-height:1.8;
+}
+.section-lead strong{color:var(--gold-bright)}
+.identity-grid{
+margin-top:31px;
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:13px;
+}
+.identity-card{
+padding:24px;
+border:1px solid var(--border);
+border-radius:9px;
+background:
+radial-gradient(circle at 100% 0%,rgba(229,182,91,.09),transparent 45%),
+rgba(24,12,17,.92);
+}
+.identity-label{
+margin-bottom:9px;
+color:#9e8588;
+font-size:8px;
+font-weight:950;
+letter-spacing:.15em;
+text-transform:uppercase;
+}
+.identity-value{
+color:var(--gold-bright);
+font-size:20px;
+font-weight:950;
+}
+.core-box{
+margin-top:31px;
+padding:31px;
+border:1px solid rgba(229,182,91,.26);
+border-radius:11px;
+background:
+radial-gradient(circle at 100% 0%,rgba(229,182,91,.10),transparent 40%),
+linear-gradient(145deg,rgba(37,16,24,.96),rgba(13,7,11,.98));
+}
+.core-box p{
+color:#c2b2b5;
+font-size:14px;
+line-height:1.85;
+}
+.core-box strong{color:#fff}
+.core-line{
+margin-top:24px;
+display:grid;
+grid-template-columns:repeat(5,minmax(0,1fr));
+gap:8px;
+}
+.core-word{
+padding:14px 8px;
+border:1px solid rgba(229,182,91,.16);
+border-radius:5px;
+color:var(--gold-bright);
+background:rgba(229,182,91,.035);
+text-align:center;
+font-size:10px;
+font-weight:950;
+letter-spacing:.04em;
+text-transform:uppercase;
+}
+.skills-stack{
+margin-top:33px;
+display:grid;
+gap:16px;
+}
+.skill-card{
+position:relative;
+overflow:hidden;
+padding:28px;
+border:1px solid var(--border);
+border-radius:10px;
+background:
+radial-gradient(circle at 100% 0%,rgba(229,182,91,.07),transparent 42%),
+rgba(25,12,18,.92);
+}
+.skill-card.primary{
+border-color:rgba(184,45,73,.40);
+background:
+radial-gradient(circle at 100% 0%,rgba(184,45,73,.18),transparent 45%),
+radial-gradient(circle at 0% 100%,rgba(229,182,91,.07),transparent 40%),
+rgba(29,11,18,.96);
+}
+.skill-number{
+margin-bottom:8px;
+color:var(--gold);
+font-size:8px;
+font-weight:950;
+letter-spacing:.17em;
+text-transform:uppercase;
+}
+.skill-card.primary .skill-number{color:var(--ruby-bright)}
+.skill-name{
+margin-bottom:13px;
+color:#fff;
+font-size:23px;
+font-weight:950;
+text-transform:uppercase;
+}
+.skill-card p{
+color:#c2b1b7;
+font-size:13px;
+line-height:1.78;
+}
+.skill-card p+p{margin-top:12px}
+.skill-card p strong{color:#fff}
+.skill-highlight{
+margin-top:18px;
+padding:15px 17px;
+border-left:2px solid var(--gold);
+background:rgba(229,182,91,.055);
+color:var(--gold-bright);
+font-size:11px;
+font-weight:800;
+line-height:1.65;
+}
+.primary .skill-highlight{
+border-left-color:var(--ruby);
+color:var(--ruby-bright);
+background:rgba(184,45,73,.09);
+}
+.priority-grid{
+margin-top:32px;
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:15px;
+}
+.priority-card{
+padding:28px;
+border:1px solid var(--border);
+border-radius:10px;
+background:rgba(25,12,18,.92);
+}
+.priority-card h3{
+margin-bottom:20px;
+color:var(--gold-bright);
+font-size:21px;
+font-weight:950;
+text-transform:uppercase;
+}
+.priority-list{
+list-style:none;
+counter-reset:priority;
+}
+.priority-list li{
+counter-increment:priority;
+position:relative;
+min-height:47px;
+padding:13px 10px 13px 47px;
+border-bottom:1px solid rgba(255,255,255,.07);
+color:#c0b0b5;
+font-size:12px;
+line-height:1.6;
+}
+.priority-list li:last-child{border-bottom:0}
+.priority-list li::before{
+content:counter(priority);
+position:absolute;
+left:5px;
+top:12px;
+width:26px;
+height:26px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid rgba(229,182,91,.25);
+border-radius:50%;
+color:var(--gold-bright);
+font-size:9px;
+font-weight:950;
+}
+.priority-list strong{color:#fff}
+.priority-note{
+margin-top:17px;
+color:#a18c91;
+font-size:10px;
+line-height:1.65;
+}
+.artifact-grid{
+margin-top:31px;
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:13px;
+}
+.artifact-card{
+padding:26px 22px;
+border:1px solid var(--border);
+border-radius:9px;
+background:rgba(25,12,18,.92);
+}
+.artifact-order{
+margin-bottom:11px;
+color:var(--ruby-bright);
+font-size:8px;
+font-weight:950;
+letter-spacing:.15em;
+text-transform:uppercase;
+}
+.artifact-card h3{
+margin-bottom:10px;
+font-size:19px;
+font-weight:950;
+}
+.artifact-card p{
+color:#b8a5ac;
+font-size:11px;
+line-height:1.7;
+}
+.max-box{
+margin-top:30px;
+padding:33px;
+border:1px solid rgba(229,182,91,.32);
+border-radius:11px;
+text-align:center;
+background:
+radial-gradient(circle at 50% 0%,rgba(229,182,91,.12),transparent 45%),
+rgba(28,12,19,.94);
+}
+.max-box span{
+display:block;
+margin-bottom:9px;
+color:#a99093;
+font-size:8px;
+font-weight:950;
+letter-spacing:.16em;
+text-transform:uppercase;
+}
+.max-box strong{
+color:var(--gold-bright);
+font-size:clamp(35px,5vw,49px);
+font-weight:950;
+}
+.max-box p{
+max-width:690px;
+margin:15px auto 0;
+color:#bdaab0;
+font-size:12px;
+line-height:1.7;
+}
+.talisman-grid{
+margin-top:31px;
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:15px;
+}
+.talisman-card{
+padding:28px;
+border:1px solid rgba(184,45,73,.29);
+border-radius:10px;
+background:
+radial-gradient(circle at 100% 0%,rgba(184,45,73,.13),transparent 43%),
+rgba(25,12,18,.94);
+}
+.talisman-number{
+margin-bottom:9px;
+color:var(--ruby-bright);
+font-size:8px;
+font-weight:950;
+letter-spacing:.16em;
+text-transform:uppercase;
+}
+.talisman-card h3{
+margin-bottom:16px;
+font-size:22px;
+font-weight:950;
+}
+.stats{
+margin-bottom:18px;
+display:flex;
+flex-wrap:wrap;
+gap:7px;
+}
+.stat{
+padding:7px 9px;
+border:1px solid rgba(229,182,91,.22);
+border-radius:4px;
+color:var(--gold-bright);
+background:rgba(229,182,91,.055);
+font-size:9px;
+font-weight:900;
+text-transform:uppercase;
+}
+.talisman-card p{
+color:#bcaab0;
+font-size:12px;
+line-height:1.72;
+}
+.obtain{
+margin-top:17px;
+padding-top:15px;
+border-top:1px solid rgba(255,255,255,.07);
+color:#a28c92;
+font-size:10px;
+line-height:1.6;
+}
+.obtain strong{color:var(--gold-bright)}
+.synergy-grid{
+margin-top:31px;
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:13px;
+}
+.synergy-card{
+padding:25px;
+border:1px solid var(--border);
+border-radius:9px;
+background:rgba(25,12,18,.9);
+}
+.synergy-card h3{
+margin-bottom:11px;
+color:var(--gold-bright);
+font-size:19px;
+font-weight:950;
+}
+.synergy-card p{
+color:#b8a5ac;
+font-size:11px;
+line-height:1.72;
+}
+.counter-grid{
+margin-top:31px;
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:12px;
+}
+.counter-card{
+padding:23px;
+border:1px solid rgba(184,45,73,.23);
+border-radius:9px;
+background:
+radial-gradient(circle at 100% 0%,rgba(184,45,73,.09),transparent 45%),
+rgba(27,12,18,.92);
+}
+.counter-card h3{
+margin-bottom:10px;
+color:var(--ruby-bright);
+font-size:18px;
+font-weight:950;
+}
+.counter-card p{
+color:#b8a5ac;
+font-size:11px;
+line-height:1.72;
+}
+.verdict{
+padding:34px;
+border:1px solid rgba(229,182,91,.32);
+border-radius:12px;
+background:
+radial-gradient(circle at 0% 0%,rgba(229,182,91,.12),transparent 40%),
+radial-gradient(circle at 100% 100%,rgba(184,45,73,.10),transparent 38%),
+rgba(26,12,18,.96);
+}
+.verdict h2{
+margin-bottom:17px;
+font-size:clamp(29px,4vw,43px);
+font-weight:950;
+letter-spacing:-.035em;
+}
+.verdict p{
+color:#c2b1b7;
+font-size:14px;
+line-height:1.85;
+}
+.verdict p+p{margin-top:13px}
+.verdict strong{color:var(--gold-bright)}
+.video-section{margin-top:20px}
+.video-frame{
+position:relative;
+width:100%;
+padding-top:56.25%;
+overflow:hidden;
+border:1px solid rgba(229,182,91,.30);
+border-radius:12px;
+background:#000;
+box-shadow:0 28px 70px rgba(0,0,0,.4);
+}
+.video-frame iframe{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+border:0;
+}
+footer{
+padding:35px 20px;
+border-top:1px solid rgba(229,182,91,.12);
+background:#050406;
+color:#8b777b;
+text-align:center;
+font-size:10px;
+letter-spacing:.05em;
+}
+@media(max-width:900px){
+.identity-grid,.artifact-grid,.synergy-grid,.counter-grid{
+grid-template-columns:1fr;
+}
+.priority-grid,.talisman-grid{
+grid-template-columns:1fr;
+}
+.core-line{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+}
+@media(max-width:700px){
+.hero-header{min-height:650px}
+.hero-background{
+background-image:
+linear-gradient(180deg,rgba(9,6,8,.08) 0%,rgba(9,6,8,.36) 42%,#090608 100%),
+url("Images/Hero-Guides/sebastian-guide.jpg");
+background-position:30% center;
+}
+.hero-shell{
+justify-content:flex-start;
+padding:310px 20px 55px;
+}
+.hero-content{text-align:center}
+.article{padding:64px 19px 80px}
+.skill-card,.priority-card,.talisman-card,.verdict{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero-header">
+<div class="hero-background"></div>
+<div class="hero-shell">
+<div class="hero-content">
+
+<div class="hero-badge">HERO GUIDE</div>
+
+<h1>SEBASTIAN</h1>
+
+<div class="hero-role">
+SUPPORT <span>•</span> WAY OF PROGRESS <span>•</span> MIDDLE LINE
+</div>
+
+<p class="hero-intro">
+Sebastian is the Dominion's legendary bard,
+a Support Hero who can
+<strong>protect allies from Stuns and Curses,
+amplify Critical Hits and add devastating Pure Damage</strong>
+to physical compositions.
+His strength is not measured by personal damage alone.
+It is measured by how much stronger he makes his team.
+</p>
+
+</div>
+</div>
+</header>
+
+<main class="article">
+
+<section class="section">
+<div class="section-kicker">HERO IDENTITY</div>
+<h2 class="section-title">The Bard Who Controls the Battle.</h2>
+
+<p class="section-lead">
+Sebastian is a Way of Progress Support Hero whose abilities
+combine <strong>anti-control protection, Critical Hit amplification,
+Armor reduction and additional Pure Damage.</strong>
+His entire skill set benefits from Physical Attack.
+</p>
+
+<div class="identity-grid">
+
+<article class="identity-card">
+<div class="identity-label">CLASS</div>
+<div class="identity-value">Support</div>
+</article>
+
+<article class="identity-card">
+<div class="identity-label">FACTION</div>
+<div class="identity-value">Way of Progress</div>
+</article>
+
+<article class="identity-card">
+<div class="identity-label">POSITION</div>
+<div class="identity-value">Middle Line</div>
+</article>
+
+</div>
+
+<div class="core-box">
+<p>
+Sebastian does not need to be the primary damage dealer.
+His job is to <strong>protect the team's timing,
+create opportunities for Critical Hits,
+weaken the enemy frontline and increase the damage
+his allies can inflict.</strong>
+</p>
+
+<div class="core-line">
+<div class="core-word">PROTECTION</div>
+<div class="core-word">CRITICAL HITS</div>
+<div class="core-word">ARMOR REDUCTION</div>
+<div class="core-word">PURE DAMAGE</div>
+<div class="core-word">SUPPORT</div>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">SKILLS</div>
+<h2 class="section-title">Sebastian's Four Skills.</h2>
+
+<p class="section-lead">
+Sebastian's skills are designed to work together.
+His protection keeps allies active, while his offensive
+abilities <strong>turn Critical Hits into a much greater threat.</strong>
+</p>
+
+<div class="skills-stack">
+
+<article class="skill-card primary">
+<div class="skill-number">SKILL 01 • ULTIMATE</div>
+<h3 class="skill-name">Ballad of Tenacity</h3>
+
+<p>
+Sebastian conjures a shield in front of his team,
+protecting allies from <strong>Stun and Curse effects</strong>.
+</p>
+
+<p>
+The shield loses health whenever the team takes damage,
+and its strength depends on Sebastian's
+<strong>Physical Attack</strong>.
+</p>
+
+<p>
+Stuns and Curses can interrupt crucial abilities
+and completely disrupt a team's timing.
+Ballad of Tenacity helps prevent that.
+</p>
+
+<p>
+Heroes such as <strong>Isaac and Julius</strong>
+can benefit greatly. Isaac can deploy his drones,
+while Julius can establish his shields
+without constantly being interrupted.
+</p>
+
+<div class="skill-highlight">
+KEY MECHANIC: Ballad of Tenacity protects the team's
+battle rhythm. Its timing matters because the shield
+is not necessarily active immediately.
+</div>
+</article>
+
+<article class="skill-card">
+<div class="skill-number">SKILL 02</div>
+<h3 class="skill-name">Hunter's Tune</h3>
+
+<p>
+Sebastian increases the
+<strong>Critical Hit Chance of his allies for five seconds</strong>.
+</p>
+
+<p>
+This buff applies only to heroes who already possess
+the Critical Hit stat. Its strength depends on
+Sebastian's Physical Attack.
+</p>
+
+<p>
+Heroes can possess Critical Hit Chance naturally
+or obtain it from other sources.
+<strong>Jet</strong> can provide it through Inordinate Fury.
+Certain Talismans and rank items can also grant the stat.
+</p>
+
+<p>
+Examples include <strong>Dante, Qing Mao, Kayla,
+Galahad, Astrid and Lucas, Ginger and Peech</strong>,
+depending on their development.
+</p>
+
+<p>
+Yasmine is an especially dangerous partner
+because her Ultimate allows her to reach
+extremely high Critical Hit Chance.
+</p>
+
+<div class="skill-highlight">
+IMPORTANT: Five seconds may sound short,
+but that window can be enough for a Critical Hit
+composition to decide the battle.
+</div>
+</article>
+
+<article class="skill-card">
+<div class="skill-number">SKILL 03</div>
+<h3 class="skill-name">Curse Song</h3>
+
+<p>
+At the beginning of battle, Sebastian curses
+the <strong>nearest enemy</strong>,
+reducing that enemy's Armor.
+</p>
+
+<p>
+The curse remains active
+<strong>until Sebastian dies</strong>.
+</p>
+
+<p>
+Because the nearest enemy is usually the tank,
+Curse Song can immediately weaken
+the opponent's frontline.
+</p>
+
+<p>
+Physical attackers benefit from the reduced Armor.
+Heroes such as <strong>Cascade</strong>
+can exploit these weakened defenses
+to put greater pressure on the enemy tank.
+</p>
+
+<div class="skill-highlight">
+TACTICAL VALUE: Curse Song can weaken the enemy
+frontline from the beginning of battle,
+but keeping Sebastian alive is essential.
+</div>
+</article>
+
+<article class="skill-card">
+<div class="skill-number">SKILL 04 • PASSIVE</div>
+<h3 class="skill-name">Rhythm of War</h3>
+
+<p>
+Whenever Sebastian or his allies perform
+a <strong>Critical Hit</strong>,
+they deal additional <strong>Pure Damage</strong>.
+</p>
+
+<p>
+The additional damage depends on Sebastian's
+Physical Attack.
+</p>
+
+<p>
+This is where Hunter's Tune becomes especially dangerous.
+One skill increases Critical Hit Chance,
+while the other rewards successful Critical Hits
+with additional Pure Damage.
+</p>
+
+<p>
+Because Pure Damage bypasses Armor,
+the combination can be devastating
+against vulnerable enemies.
+</p>
+
+<p>
+<strong>Yasmine</strong> is one of the clearest examples
+of a hero who can take advantage of this interaction.
+</p>
+
+<div class="skill-highlight">
+SIGNATURE COMBINATION: Hunter's Tune increases
+Critical Hit opportunities, and Rhythm of War
+adds Pure Damage when those Critical Hits occur.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">DEVELOPMENT</div>
+<h2 class="section-title">Skins &amp; Glyphs.</h2>
+
+<p class="section-lead">
+Sebastian needs <strong>Physical Attack</strong>
+because all four skills benefit from it.
+He also needs survivability to maintain
+his support abilities throughout the battle.
+</p>
+
+<div class="priority-grid">
+
+<article class="priority-card">
+<h3>Skin Priority</h3>
+
+<ol class="priority-list">
+<li>
+<strong>Physical Attack</strong>
+Strengthens all four skills and should be the first priority.
+</li>
+<li>
+<strong>Default Skin — Agility</strong>
+Improves his main stat and contributes additional Armor.
+</li>
+<li>
+<strong>Health</strong>
+Keeps Sebastian alive to maintain Curse Song
+and support his allies.
+</li>
+<li>
+<strong>Toughness</strong>
+Helps reduce incoming damage and counter enemy Crushing.
+</li>
+<li>
+<strong>Magic Defense</strong>
+Improves survivability against magical threats.
+</li>
+<li>
+<strong>Critical Hit Chance</strong>
+Useful, but lower priority than the stats supporting
+his main role.
+</li>
+</ol>
+
+<div class="priority-note">
+FUTURE PRIORITY: A new Physical Attack or Health Skin
+would become an important investment.
+</div>
+</article>
+
+<article class="priority-card">
+<h3>Glyph Priority</h3>
+
+<ol class="priority-list">
+<li><strong>Health</strong></li>
+<li><strong>Physical Attack</strong></li>
+<li><strong>Agility</strong></li>
+<li><strong>Magic Defense</strong></li>
+<li><strong>Critical Hit Chance</strong></li>
+</ol>
+
+<div class="priority-note">
+Bring all five Glyphs to <strong>Level 40</strong>
+before investing further, unless you are specifically
+pursuing Skill Class progression.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">ARTIFACTS</div>
+<h2 class="section-title">Artifact Priority.</h2>
+
+<p class="section-lead">
+Sebastian's Artifacts improve his own development
+and provide valuable support to physical compositions.
+<strong>Prioritize Ring, then Book, then Weapon.</strong>
+</p>
+
+<div class="artifact-grid">
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 01</div>
+<h3>Artifact Ring</h3>
+<p>
+Provides <strong>Agility</strong>,
+strengthening Sebastian's main stat
+and contributing to his physical survivability.
+</p>
+</article>
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 02</div>
+<h3>Artifact Book</h3>
+<p>
+Provides <strong>Physical Attack
+and Critical Hit Chance</strong>.
+Physical Attack strengthens his abilities,
+while Critical Hit Chance supports his offense.
+</p>
+</article>
+
+<article class="artifact-card">
+<div class="artifact-order">PRIORITY 03</div>
+<h3>Artifact Weapon</h3>
+<p>
+Grants <strong>Physical Attack to the entire team</strong>
+when Ballad of Tenacity activates.
+The Artifact bonus applies before the Ultimate
+effect resolves, allowing the shield itself
+to benefit from the increased Physical Attack.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">GIFT OF THE ELEMENTS</div>
+<h2 class="section-title">Keep the Bard Alive.</h2>
+
+<div class="max-box">
+<span>RECOMMENDED DEVELOPMENT</span>
+<strong>MAX IT</strong>
+
+<p>
+Focus on <strong>Agility and Physical Attack</strong>.
+Sebastian's middle-line position does not make him
+immune to damage. He needs enough durability
+to survive and enough Physical Attack
+to maximize the value of his support abilities.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">TALISMANS</div>
+<h2 class="section-title">Two Different Performances.</h2>
+
+<p class="section-lead">
+Sebastian has two Talismans that strengthen
+different aspects of his build.
+One supports survivability;
+the other emphasizes offensive potential.
+</p>
+
+<div class="talisman-grid">
+
+<article class="talisman-card">
+<div class="talisman-number">TALISMAN 01</div>
+<h3>Agility + Armor</h3>
+
+<div class="stats">
+<div class="stat">AGILITY</div>
+<div class="stat">ARMOR</div>
+</div>
+
+<p>
+Agility strengthens Sebastian's main stat,
+while Armor improves his resistance
+against physical attacks.
+</p>
+
+<div class="obtain">
+<strong>OBTAIN:</strong>
+Eternal Frontier Shop —
+700,000 Frontier Coins.
+</div>
+</article>
+
+<article class="talisman-card">
+<div class="talisman-number">TALISMAN 02</div>
+<h3>Physical Attack + Critical Hit Chance</h3>
+
+<div class="stats">
+<div class="stat">PHYSICAL ATTACK</div>
+<div class="stat">CRITICAL HIT CHANCE</div>
+</div>
+
+<p>
+Physical Attack improves Sebastian's abilities,
+while Critical Hit Chance supports
+the offensive side of his kit.
+</p>
+
+<div class="obtain">
+<strong>OBTAIN:</strong>
+Special events.
+</div>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">SYNERGIES</div>
+<h2 class="section-title">Heroes That Shine With Sebastian.</h2>
+
+<p class="section-lead">
+Sebastian is especially effective alongside
+heroes who benefit from <strong>Critical Hit Chance,
+additional Pure Damage and protection from control.</strong>
+</p>
+
+<div class="synergy-grid">
+
+<article class="synergy-card">
+<h3>Yasmine</h3>
+<p>
+Her high Critical Hit Chance after activating
+her Ultimate combines dangerously with
+Hunter's Tune and Rhythm of War.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Jet</h3>
+<p>
+Jet can grant Critical Hit Chance to allies,
+allowing more heroes to benefit
+from Sebastian's offensive support.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Isaac</h3>
+<p>
+Ballad of Tenacity helps protect Isaac
+from disruptive control effects,
+allowing him to deploy his drones.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Julius</h3>
+<p>
+Sebastian's anti-control shield can help Julius
+establish his defensive abilities
+without being interrupted.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Dante</h3>
+<p>
+When Dante possesses Critical Hit Chance,
+he can benefit from Hunter's Tune
+and the additional Pure Damage
+provided by Rhythm of War.
+</p>
+</article>
+
+<article class="synergy-card">
+<h3>Kayla</h3>
+<p>
+With Critical Hit Chance available
+through her development,
+Kayla can benefit from Sebastian's
+critical-focused support.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="section-kicker">COUNTERS</div>
+<h2 class="section-title">How Can Sebastian Be Countered?</h2>
+
+<p class="section-lead">
+Sebastian can protect and amplify powerful physical teams,
+but he has weaknesses.
+Effective counters can <strong>punish Critical Hits,
+delay his protection or reduce physical damage.</strong>
+</p>
+
+<div class="counter-grid">
+
+<article class="counter-card">
+<h3>Iris</h3>
+<p>
+Sebastian's buffs can give Iris opportunities
+to punish the enemy through her mechanics,
+making her dangerous against teams
+dependent on his support.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Helios</h3>
+<p>
+Flaming Retribution punishes enemies
+when they perform Critical Hits.
+Helios needs sufficient Magic Penetration
+to remain effective against strong Magic Defense.
+His first Talisman or support from Orion can help.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Jorgen</h3>
+<p>
+Jorgen can interfere with Sebastian's
+Energy generation before Ballad of Tenacity
+becomes active, delaying his protection
+and creating a window for control effects.
+</p>
+</article>
+
+<article class="counter-card">
+<h3>Somna</h3>
+<p>
+Somna can strongly reduce physical damage,
+making her useful against the physical
+Critical Hit compositions
+where Sebastian normally excels.
+</p>
+</article>
+
+</div>
+</section>
+
+<section class="section">
+<div class="verdict">
+<div class="section-kicker">FINAL ANALYSIS</div>
+<h2>Is Sebastian Worth Building?</h2>
+
+<p>
+<strong>Absolutely — especially for teams
+built around Critical Hits.</strong>
+</p>
+
+<p>
+Sebastian provides protection against Stuns and Curses,
+increases Critical Hit Chance,
+reduces enemy Armor and adds Pure Damage
+to successful Critical Hits.
+</p>
+
+<p>
+His abilities are strongest when combined.
+Hunter's Tune creates more opportunities
+for Critical Hits, while Rhythm of War
+turns those attacks into additional Pure Damage.
+</p>
+
+<p>
+He also provides defensive value.
+Ballad of Tenacity can prevent
+enemy control effects from disrupting
+the team's most important abilities.
+</p>
+
+<p>
+However, Sebastian is not automatically
+the best choice for every composition.
+His value depends on whether his teammates
+can take advantage of his mechanics
+and whether the enemy has effective counters.
+</p>
+
+<p>
+<strong>
+Gods of Alliance Verdict:
+Sebastian is an outstanding Support investment
+for well-designed Critical Hit compositions.
+He protects the team's timing,
+amplifies physical pressure and rewards
+players who understand the mechanics
+behind their team combinations.
+</strong>
+</p>
+</div>
+</section>
+
+<section class="section video-section">
+<div class="section-kicker">WATCH THE FULL GUIDE</div>
+<h2 class="section-title">Sebastian Video Guide.</h2>
+
+<p class="section-lead" style="margin-bottom:26px">
+Watch the complete Gods of Alliance Sebastian guide
+covering his four skills, Skins, Glyphs,
+Artifacts, Talismans, team synergies and counters.
+</p>
+
+<div class="video-frame">
+<iframe
+src="https://www.youtube.com/embed/fxQnVg4shIo"
+title="Sebastian Full Guide - Gods of Alliance"
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
+</div>
+</section>
+
+</main>
+
+<footer>
+© 2026 Gods of Alliance • Hero Wars Alliance Guides
+</footer>
+
+<script src="goa-global.js"></script>
+</body>
+</html>
