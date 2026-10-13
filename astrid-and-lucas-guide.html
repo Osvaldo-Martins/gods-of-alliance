@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Astrid and Lucas Guide | Gods of Alliance</title>
 
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="Astrid and Lucas — Complete Hero Guide">
 <meta property="og:description" content="Master Lucas's rage mechanics, builds, talismans and counters.">
-<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/hero-guides/astrid-and-lucas-guide.jpg">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/astrid-and-lucas-guide.jpg">
 
 <style>
 :root {
@@ -29,9 +29,13 @@
   --cyan: #5cdeed;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -40,7 +44,9 @@ body {
   font: 16px/1.75 system-ui, -apple-system, Segoe UI, Arial, sans-serif;
 }
 
-a { color: var(--cyan); }
+a {
+  color: var(--cyan);
+}
 
 header {
   position: sticky;
@@ -83,48 +89,23 @@ header {
 }
 
 .hero {
-  min-height: 570px;
-  position: relative;
-  display: flex;
-  align-items: end;
-  isolation: isolate;
+  width: 100%;
   background: #101b29;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background:
-    url("Images/hero-guides/astrid-and-lucas-guide.jpg")
-    center / cover no-repeat;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(
-      0deg,
-      #080e17 0%,
-      #080e17dd 20%,
-      #080e1730 65%
-    ),
-    linear-gradient(
-      90deg,
-      transparent 40%,
-      #080e1766
-    );
-}
-
-.hero-inner {
-  max-width: 1200px;
+.hero-cover {
+  display: block;
   width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.hero-details {
+  max-width: 1120px;
   margin: auto;
-  padding: 90px 24px 52px;
+  padding: 32px 24px 12px;
 }
 
 .eyebrow {
@@ -135,18 +116,16 @@ header {
   text-transform: uppercase;
 }
 
-.hero h1 {
-  font-size: clamp(38px, 6vw, 76px);
-  line-height: 1.06;
-  margin: 13px 0 14px;
-  text-shadow: 0 4px 22px #000;
+.hero-details h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.12;
+  margin: 12px 0;
 }
 
-.hero p {
-  max-width: 750px;
-  color: #edf5fb;
+.hero-details p {
+  max-width: 850px;
+  color: #d3dfec;
   font-size: 18px;
-  text-shadow: 0 2px 12px #000;
 }
 
 .chips {
@@ -157,7 +136,7 @@ header {
 }
 
 .chip {
-  background: #091625d9;
+  background: #091625;
   border: 1px solid #62728699;
   border-radius: 100px;
   padding: 6px 14px;
@@ -239,8 +218,13 @@ header {
   padding: 20px;
 }
 
-.card h3 { margin-top: 0; }
-.card p { margin-bottom: 0; }
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
 
 .note {
   border-left: 3px solid var(--cyan);
@@ -310,18 +294,6 @@ header {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: 470px;
-  }
-
-  .hero::before {
-    background-position: 35% center;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
   .nav {
     padding: 12px 15px;
   }
@@ -332,6 +304,14 @@ header {
 
   .links a {
     font-size: 11px;
+  }
+
+  .hero-details {
+    padding: 24px 17px 8px;
+  }
+
+  .hero-details h1 {
+    font-size: 34px;
   }
 
   .wrap {
@@ -356,7 +336,18 @@ header {
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
+
+  <img
+    class="hero-cover"
+    src="Images/Hero-Guides/astrid-and-lucas-guide.jpg"
+    alt="Astrid and Lucas — Marksman, Way of Progress, Back Line — Full Guide"
+    width="1920"
+    height="1080"
+    fetchpriority="high"
+  >
+
+  <div class="hero-details">
+
     <div class="eyebrow">
       Hero Wars Alliance · Complete Hero Guide
     </div>
@@ -374,6 +365,7 @@ header {
       <span class="chip">WAY OF PROGRESS</span>
       <span class="chip">BACK LINE</span>
     </div>
+
   </div>
 </section>
 
@@ -414,6 +406,7 @@ header {
 
     <article class="card">
       <h3>1. Go for It, Lucas!</h3>
+
       <p>
         Lucas starts the battle with
         <strong>25% rage</strong>.
@@ -434,6 +427,7 @@ header {
 
     <article class="card">
       <h3>2. Rampant Nature</h3>
+
       <p>
         Astrid increases her attack and skill speed
         for <strong>9 seconds</strong>.
@@ -447,6 +441,7 @@ header {
 
     <article class="card">
       <h3>3. Predator's Charge</h3>
+
       <p>
         While raging, Lucas deals progressively
         more damage with consecutive attacks.
@@ -461,6 +456,7 @@ header {
 
     <article class="card">
       <h3>4. Tracker's Mark</h3>
+
       <p>
         Each Astrid attack marks the enemy hit
         for <strong>4 seconds</strong>.
