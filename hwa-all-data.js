@@ -6,7 +6,7 @@ window.HWA_ALL_ARTICLES = [
     type: "GAME MECHANICS GUIDE",
     category: "guides",
     date: "2026-10-14",
-    image: "Images/HWA-ALL/guild-vs-explained.jpg",
+    image: "Images/HWA-All/guild-vs-explained.jpg",
     url: "guild-vs-explained.html",
     subtitle: "DAILY TASKS • VICTORY POINTS • REWARDS • LEAGUES",
     description:
