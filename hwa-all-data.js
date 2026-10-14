@@ -1,6 +1,20 @@
 
 window.HWA_ALL_ARTICLES = [
   {
+    id: "guild-vs-explained",
+    title: "GUILD VS EXPLAINED",
+    type: "GAME MECHANICS GUIDE",
+    category: "guides",
+    date: "2026-10-14",
+    image: "Images/HWA-ALL/guild-vs-explained.jpg",
+    url: "guild-vs-explained.html",
+    subtitle: "DAILY TASKS • VICTORY POINTS • REWARDS • LEAGUES",
+    description:
+      "The complete Guild Versus guide: Monday to Saturday scoring, personal chest milestones, Victory Points, weekly rewards, leagues, Season progression and strategies to help your guild win.",
+    button: "READ GUIDE →"
+  },
+
+  {
     id: "crow-talisman-analysis",
     title: "CROW TALISMAN ANALYSIS",
     type: "DETAILED TALISMAN ANALYSIS",
