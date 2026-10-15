@@ -1,0 +1,1161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Realm Forts — Complete Guide | Gods of Alliance</title>
+<meta name="description" content="Discover Realm Forts in Hero Wars Alliance. Learn Fort attack rules, the 30-minute preparation phase, Garrison combat, Fort Guards, Capture Points, rewards, Guild Bonuses and defensive strategy.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/realm-forts-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Realm Forts — Complete Guide">
+<meta property="og:description" content="Master Realm Fort warfare: declare war, prepare your guild, break the Garrison, earn Capture Points, conquer the Fort and defend your territory.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/realm-forts-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Realm/realm-forts-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+  --bg:#090b0e;
+  --panel:#14171c;
+  --panel2:#1b1d22;
+  --gold:#edbc65;
+  --gold2:#b67b31;
+  --cream:#f4e4c7;
+  --white:#f5f3ef;
+  --muted:#a8a7a6;
+  --line:rgba(237,188,101,.18);
+  --red:#c66e57;
+  --green:#99bd9c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 10% 5%,rgba(141,89,37,.12),transparent 40%),
+    linear-gradient(#0c1016,#090b0e 45%,#070809);
+  color:var(--white);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+strong{color:#fff}
+.hero{
+  position:relative;
+  min-height:760px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(6,8,12,.05) 0%,rgba(6,8,12,.13) 34%,rgba(6,8,12,.8) 65%,#080a0e 100%),
+    linear-gradient(180deg,rgba(5,7,10,.08),rgba(5,7,10,.18) 55%,#090b0e 100%),
+    url("Images/Realm/realm-forts-guide.jpg") center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1330px,calc(100% - 56px));
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:130px 0 90px;
+}
+.hero-copy{width:min(580px,100%)}
+.kicker{
+  display:inline-block;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.hero .kicker{
+  padding:9px 13px;
+  background:rgba(11,13,17,.82);
+  border:1px solid rgba(237,188,101,.38);
+  border-radius:4px;
+  margin-bottom:23px;
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(53px,6.4vw,88px);
+  line-height:1.03;
+  letter-spacing:-.055em;
+  text-shadow:0 5px 25px #000;
+  margin-bottom:23px;
+}
+.hero h1 em{
+  display:block;
+  color:var(--gold);
+  font-style:normal;
+}
+.hero p{
+  max-width:530px;
+  color:#d7d0c5;
+  font-size:15px;
+  line-height:1.9;
+  text-shadow:0 2px 10px #000;
+}
+.hero-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:29px;
+}
+.hero-facts span{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.07em;
+  padding:9px 12px;
+  border:1px solid rgba(237,188,101,.28);
+  border-radius:5px;
+  background:rgba(8,10,13,.85);
+}
+.layout{
+  width:min(1170px,calc(100% - 44px));
+  margin:auto;
+  padding:77px 0 105px;
+}
+.section{margin-bottom:88px;scroll-margin-top:25px}
+.section h2{
+  font-size:clamp(30px,4.4vw,49px);
+  letter-spacing:-.045em;
+  line-height:1.12;
+  margin:10px 0 20px;
+}
+.section h2 span{color:var(--gold)}
+.lead{
+  max-width:880px;
+  color:#b5b2ad;
+  font-size:14px;
+  line-height:1.95;
+}
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:30px;
+  align-items:start;
+}
+.intro-grid h2{
+  font-size:clamp(33px,4vw,49px);
+  line-height:1.12;
+  letter-spacing:-.045em;
+  margin:13px 0 21px;
+}
+.prose{
+  color:#b2b0ad;
+  font-size:13px;
+  line-height:1.95;
+}
+.prose p+p{margin-top:14px}
+.intel{
+  padding:28px;
+  border:1px solid rgba(237,188,101,.3);
+  border-radius:11px;
+  background:linear-gradient(145deg,rgba(112,75,32,.18),#13161b 65%);
+}
+.intel h3{
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:24px;
+  margin-bottom:16px;
+}
+.intel-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:13px 0;
+  border-top:1px solid rgba(255,255,255,.075);
+  color:#b5b0a7;
+  font-size:12px;
+}
+.intel-row strong{
+  text-align:right;
+  color:var(--cream);
+}
+.toc{
+  border:1px solid var(--line);
+  background:#12151a;
+  border-radius:11px;
+  padding:27px;
+  margin:72px 0 85px;
+}
+.toc-title{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.19em;
+  margin-bottom:17px;
+}
+.toc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.toc-grid a{
+  border:1px solid rgba(237,188,101,.13);
+  background:rgba(237,188,101,.035);
+  border-radius:6px;
+  padding:14px;
+  font-size:12px;
+  font-weight:800;
+  transition:.2s;
+}
+.toc-grid a:hover{
+  border-color:var(--gold);
+  background:rgba(237,188,101,.11);
+}
+.toc-grid small{
+  display:block;
+  color:var(--gold2);
+  font-size:9px;
+  margin-bottom:5px;
+}
+.phase-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+  margin-top:29px;
+}
+.phase{
+  padding:25px;
+  background:linear-gradient(150deg,#1a1c20,#111418);
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+.phase-num{
+  display:block;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:38px;
+  line-height:1;
+  margin-bottom:15px;
+}
+.phase h3{
+  font-size:16px;
+  margin-bottom:9px;
+}
+.phase p{
+  color:#a8a5a0;
+  font-size:12px;
+  line-height:1.8;
+}
+.phase.red{border-color:rgba(198,110,87,.35)}
+.phase.red .phase-num{color:var(--red)}
+.phase.green{border-color:rgba(153,189,156,.3)}
+.phase.green .phase-num{color:var(--green)}
+.steps{display:grid;gap:13px;margin-top:28px}
+.step{
+  display:grid;
+  grid-template-columns:54px 1fr;
+  gap:18px;
+  padding:22px;
+  background:#14171b;
+  border:1px solid var(--line);
+  border-radius:9px;
+}
+.step-num{
+  width:49px;
+  height:49px;
+  border:1px solid rgba(237,188,101,.42);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--gold);
+  font-weight:900;
+  font-size:13px;
+}
+.step h3{font-size:16px;margin-bottom:6px}
+.step p{
+  font-size:12px;
+  color:#b0aca6;
+  line-height:1.85;
+}
+.fort-diagram{
+  margin-top:30px;
+  padding:35px;
+  border:1px solid rgba(237,188,101,.28);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(184,117,44,.12),transparent 55%),
+    #111419;
+}
+.fort-diagram h3{
+  color:var(--gold);
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:24px;
+  margin-bottom:28px;
+}
+.siege-lane{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:12px;
+}
+.siege-node{
+  flex:1;
+  padding:23px 16px;
+  border:1px solid rgba(237,188,101,.3);
+  border-radius:8px;
+  text-align:center;
+  background:rgba(237,188,101,.055);
+}
+.siege-node span{
+  display:block;
+  color:var(--gold);
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.13em;
+  margin-bottom:10px;
+}
+.siege-node strong{
+  display:block;
+  font-size:17px;
+  line-height:1.25;
+}
+.siege-node p{
+  color:#a9a5a0;
+  font-size:11px;
+  margin-top:9px;
+  line-height:1.7;
+}
+.siege-arrow{
+  align-self:center;
+  color:var(--gold);
+  font-size:25px;
+}
+.note{
+  margin-top:23px;
+  padding:20px 23px;
+  border-left:3px solid var(--gold);
+  border-radius:0 7px 7px 0;
+  background:rgba(237,188,101,.07);
+  color:#d4c5ac;
+  font-size:12px;
+  line-height:1.9;
+}
+.note.red{
+  border-left-color:var(--red);
+  background:rgba(198,110,87,.075);
+  color:#d9b7ad;
+}
+.note.green{
+  border-left-color:var(--green);
+  background:rgba(153,189,156,.07);
+  color:#bed5c0;
+}
+.score-panel{
+  border:1px solid rgba(237,188,101,.25);
+  border-radius:12px;
+  background:linear-gradient(140deg,#1b1a1a,#111419);
+  padding:32px;
+  margin-top:28px;
+}
+.score-panel h3{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin-bottom:22px;
+}
+.score-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+}
+.score{
+  padding:23px;
+  border:1px solid rgba(237,188,101,.14);
+  background:rgba(0,0,0,.2);
+  border-radius:8px;
+}
+.score b{
+  display:block;
+  color:var(--gold);
+  font-size:20px;
+  margin-bottom:9px;
+}
+.score h4{font-size:13px;margin-bottom:7px}
+.score p{
+  color:#aaa5a0;
+  font-size:11px;
+  line-height:1.8;
+}
+.battle{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:29px;
+}
+.battle-card{
+  padding:30px;
+  border-radius:11px;
+  border:1px solid rgba(198,110,87,.32);
+  background:linear-gradient(145deg,rgba(113,44,36,.15),#14161a);
+}
+.battle-card.defense{
+  border-color:rgba(153,189,156,.33);
+  background:linear-gradient(145deg,rgba(54,95,64,.13),#14161a);
+}
+.battle-card small{
+  display:block;
+  color:var(--red);
+  font-size:10px;
+  letter-spacing:.17em;
+  font-weight:900;
+  margin-bottom:11px;
+}
+.battle-card.defense small{color:var(--green)}
+.battle-card h3{
+  font-size:23px;
+  margin-bottom:13px;
+}
+.battle-card p{
+  color:#b0aba5;
+  font-size:12px;
+  line-height:1.9;
+}
+.battle-card ul{
+  margin-top:15px;
+  padding-left:19px;
+  color:#c0b7ab;
+  font-size:12px;
+  line-height:2;
+}
+.reward-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:28px;
+}
+.reward{
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#14171b;
+}
+.reward .symbol{
+  display:block;
+  font-size:27px;
+  margin-bottom:13px;
+}
+.reward h3{
+  font-size:16px;
+  margin-bottom:10px;
+  color:var(--cream);
+}
+.reward p{
+  color:#ada9a4;
+  font-size:12px;
+  line-height:1.8;
+}
+.timeline{
+  margin-top:29px;
+  display:grid;
+  gap:0;
+}
+.timeline-item{
+  display:grid;
+  grid-template-columns:43px 1fr;
+  gap:19px;
+  position:relative;
+  padding-bottom:25px;
+}
+.timeline-item:not(:last-child)::before{
+  content:"";
+  position:absolute;
+  top:35px;
+  left:17px;
+  bottom:0;
+  width:1px;
+  background:rgba(237,188,101,.3);
+}
+.timeline-dot{
+  width:35px;
+  height:35px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#252016;
+  border:1px solid var(--gold2);
+  color:var(--gold);
+  font-size:11px;
+  font-weight:900;
+}
+.timeline-item h3{
+  font-size:15px;
+  margin:3px 0 5px;
+}
+.timeline-item p{
+  color:#b2aca4;
+  font-size:12px;
+  line-height:1.85;
+}
+.verdict{
+  padding:43px;
+  border:1px solid rgba(237,188,101,.4);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(185,112,38,.14),transparent 50%),
+    linear-gradient(145deg,#1c1a18,#101318);
+}
+.verdict h2{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:clamp(30px,4vw,46px);
+  line-height:1.15;
+  margin:14px 0 21px;
+}
+.verdict p{
+  color:#c5bdb1;
+  font-size:14px;
+  line-height:1.95;
+}
+.verdict p+p{margin-top:15px}
+.video{
+  position:relative;
+  padding-top:56.25%;
+  background:#000;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  margin-top:27px;
+}
+.video iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+footer{
+  border-top:1px solid var(--line);
+  background:#070809;
+  color:#817d76;
+  text-align:center;
+  padding:36px 20px;
+  font-size:11px;
+}
+@media(max-width:950px){
+  .intro-grid{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .phase-grid,.reward-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .hero{min-height:710px}
+  .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(6,8,12,.03),rgba(6,8,12,.6) 46%,#090b0e 100%),
+      url("Images/Realm/realm-forts-guide.jpg") 37% center/cover no-repeat;
+  }
+  .hero-inner{
+    width:calc(100% - 36px);
+    justify-content:center;
+    padding:350px 0 60px;
+  }
+  .hero-copy{text-align:center}
+  .hero-facts{justify-content:center}
+  .layout{width:calc(100% - 32px);padding:55px 0 80px}
+  .phase-grid,.reward-grid,.score-grid,.battle{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .siege-lane{flex-direction:column}
+  .siege-arrow{transform:rotate(90deg)}
+  .fort-diagram,.score-panel,.verdict{padding:23px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">GODS OF ALLIANCE • REALM WARFARE</span>
+      <h1>REALM <em>FORTS</em></h1>
+      <p>
+        The complete guide to Fort warfare.
+        Discover how guilds declare war, break through
+        Garrisons, earn Capture Points, conquer territory
+        and defend the bonuses that make their entire guild stronger.
+        <strong>Territory is earned. Control must be defended.</strong>
+      </p>
+      <div class="hero-facts">
+        <span>30-MINUTE PREPARATION</span>
+        <span>GARRISON → FORT GUARDS</span>
+        <span>CAPTURE POINTS DECIDE VICTORY</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+<section class="section" id="overview">
+  <div class="intro-grid">
+    <div>
+      <span class="kicker">01 / FORT WARFARE OVERVIEW</span>
+      <h2>A New Battle for Realm Territory.</h2>
+      <div class="prose">
+        <p>
+          Forts introduce a new guild-focused Realm mode
+          built around territory control, coordinated attacks,
+          player-controlled Garrisons and Guild-wide bonuses.
+        </p>
+        <p>
+          Unlike a simple boss encounter, capturing a Fort
+          requires preparation, multiple battles and
+          contributions from participating guild members.
+          A guild must first overcome the defending Garrison
+          before engaging the Fort Guards.
+        </p>
+        <p>
+          Multiple guilds can compete for the same Fort.
+          The winner is determined by total Capture Points
+          when the final Fort Guard is defeated.
+        </p>
+        <p>
+          <strong>
+            This guide covers the mechanics presented
+            in our first look at Forts.
+            Advanced tactics and optimal Garrison compositions
+            will be explored as further testing becomes available.
+          </strong>
+        </p>
+      </div>
+    </div>
+
+    <aside class="intel">
+      <h3>Fort Battle Intelligence</h3>
+      <div class="intel-row"><span>Game Mode</span><strong>Realm Forts</strong></div>
+      <div class="intel-row"><span>War Declaration</span><strong>Guild Master / General</strong></div>
+      <div class="intel-row"><span>Preparation</span><strong>30 Minutes</strong></div>
+      <div class="intel-row"><span>First Defense</span><strong>Player Garrison</strong></div>
+      <div class="intel-row"><span>Final Objective</span><strong>Fort Guards</strong></div>
+      <div class="intel-row"><span>Winner</span><strong>Highest Capture Points</strong></div>
+      <div class="intel-row"><span>Guild Bonus</span><strong>While Fort Is Held</strong></div>
+    </aside>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Realm Forts guide contents">
+  <div class="toc-title">FORT WARFARE FIELD MANUAL</div>
+  <div class="toc-grid">
+    <a href="#declaration"><small>02</small>Declare War</a>
+    <a href="#preparation"><small>03</small>Preparation</a>
+    <a href="#siege"><small>04</small>Siege Rules</a>
+    <a href="#capture"><small>05</small>Capture Points</a>
+    <a href="#competition"><small>06</small>Multiple Guilds</a>
+    <a href="#garrison"><small>07</small>Garrison Defense</a>
+    <a href="#rewards"><small>08</small>Rewards & Bonuses</a>
+    <a href="#cycle"><small>09</small>Full Battle Cycle</a>
+    <a href="#strategy"><small>10</small>Strategic Priorities</a>
+    <a href="#video"><small>11</small>Video Guide</a>
+  </div>
+</nav>
+
+<section class="section" id="declaration">
+  <span class="kicker">02 / SELECT YOUR TARGET</span>
+  <h2>Find a Fort. <span>Declare War.</span></h2>
+  <p class="lead">
+    Every siege begins on the Realm map.
+    The Guild Master or a General must find
+    an available Fort before declaring war.
+  </p>
+
+  <div class="phase-grid">
+    <div class="phase">
+      <span class="phase-num">01</span>
+      <h3>Locate a Fort</h3>
+      <p>Search the Realm map and identify a potential target for your guild.</p>
+    </div>
+    <div class="phase">
+      <span class="phase-num">02</span>
+      <h3>Check Availability</h3>
+      <p>Some Forts are occupied, protected or already under siege. Confirm that your target is eligible for an attack.</p>
+    </div>
+    <div class="phase">
+      <span class="phase-num">03</span>
+      <h3>Declare War</h3>
+      <p>The Guild Master or a General declares war, triggering the preparation countdown.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Important:</strong>
+    Not every Fort can be attacked at any moment.
+    Fort status must be checked before committing
+    your guild to an operation.
+  </div>
+</section>
+
+<section class="section" id="preparation">
+  <span class="kicker">03 / THE COUNTDOWN</span>
+  <h2>30 Minutes to <span>Prepare.</span></h2>
+  <p class="lead">
+    Declaring war does not begin combat immediately.
+    It activates a 30-minute preparation phase
+    designed for guild organization and coordination.
+  </p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <h3>Gather Your Guild</h3>
+        <p>Bring participating players together around the target Fort and make sure they know when the siege begins.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <h3>Assign Roles and Attack Orders</h3>
+        <p>Discuss who attacks first, how players coordinate and which squads will be used during the siege.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <h3>Prepare Squads</h3>
+        <p>Check that your participating members have suitable squads ready before the preparation timer expires.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div>
+        <h3>Confirm the Plan</h3>
+        <p>Use the remaining preparation time to coordinate participation and avoid confusion once the battle opens.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note red">
+    <strong>The key principle:</strong>
+    Preparation is part of the battle.
+    A guild that organizes during these 30 minutes
+    enters the siege with a clear plan.
+  </div>
+</section>
+
+<section class="section" id="siege">
+  <span class="kicker">04 / SIEGE MECHANICS</span>
+  <h2>Break the Garrison. <span>Conquer the Fort.</span></h2>
+  <p class="lead">
+    Fort battles have two distinct combat stages.
+    The attacking guild must first defeat the
+    defending players' squads before it can
+    engage the Fort Guards.
+  </p>
+
+  <div class="fort-diagram">
+    <h3>The Siege Route</h3>
+    <div class="siege-lane">
+      <div class="siege-node">
+        <span>STAGE 01</span>
+        <strong>ATTACKING GUILD</strong>
+        <p>Participating players enter the siege and launch their attacks.</p>
+      </div>
+      <div class="siege-arrow">→</div>
+      <div class="siege-node">
+        <span>STAGE 02</span>
+        <strong>GARRISON</strong>
+        <p>Defeat the real squads stationed by the defending guild.</p>
+      </div>
+      <div class="siege-arrow">→</div>
+      <div class="siege-node">
+        <span>STAGE 03</span>
+        <strong>FORT GUARDS</strong>
+        <p>Once all defending squads fall, engage the Guards and complete the siege.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="battle">
+    <div class="battle-card">
+      <small>OFFENSIVE STAGE ONE</small>
+      <h3>The Garrison</h3>
+      <p>
+        The Garrison contains real player squads
+        deployed by the guild currently controlling
+        the Fort. Attackers must overcome every
+        defending squad before reaching the Guards.
+      </p>
+      <ul>
+        <li>Player-controlled defensive squads</li>
+        <li>First obstacle during the siege</li>
+        <li>Must be cleared before the Guards</li>
+      </ul>
+    </div>
+
+    <div class="battle-card defense">
+      <small>OFFENSIVE STAGE TWO</small>
+      <h3>The Fort Guards</h3>
+      <p>
+        After the Garrison has been eliminated,
+        attacking guilds can engage the Fort Guards.
+        Defeating the final Guard triggers the
+        comparison of participating guilds'
+        Capture Point totals.
+      </p>
+      <ul>
+        <li>Accessible after Garrison elimination</li>
+        <li>Contributes to Capture Points</li>
+        <li>Final Guard defeat resolves ownership</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="capture">
+  <span class="kicker">05 / HOW VICTORY IS MEASURED</span>
+  <h2>Capture Points <span>Decide Everything.</span></h2>
+  <p class="lead">
+    Winning individual fights matters,
+    but the Fort is awarded according to
+    the total Capture Points accumulated
+    by each participating guild.
+  </p>
+
+  <div class="score-panel">
+    <h3>How Your Guild Earns Capture Points</h3>
+    <div class="score-grid">
+      <div class="score">
+        <b>01</b>
+        <h4>Defeating Garrison Squads</h4>
+        <p>Eliminating defending player squads contributes to the guild's total.</p>
+      </div>
+      <div class="score">
+        <b>02</b>
+        <h4>Defeating Fort Guards</h4>
+        <p>Eliminating Guards also contributes toward Capture Points.</p>
+      </div>
+      <div class="score">
+        <b>03</b>
+        <h4>Dealing Damage</h4>
+        <p>Damage inflicted during the siege contributes toward the guild's overall score.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Every contribution counts.</strong>
+    The system rewards guild-wide participation,
+    not just the player who finishes the final battle.
+  </div>
+</section>
+
+<section class="section" id="competition">
+  <span class="kicker">06 / COMPETING GUILDS</span>
+  <h2>One Fort. <span>Multiple Challengers.</span></h2>
+  <p class="lead">
+    Several guilds may declare war on the same Fort.
+    Each attacking guild has its own preparation
+    countdown and attack window.
+  </p>
+
+  <div class="phase-grid">
+    <div class="phase">
+      <span class="phase-num">A</span>
+      <h3>Guild Alpha</h3>
+      <p>Declares war, prepares and begins earning Capture Points.</p>
+    </div>
+    <div class="phase">
+      <span class="phase-num">B</span>
+      <h3>Guild Bravo</h3>
+      <p>May also challenge the same Fort with its own preparation and attack timing.</p>
+    </div>
+    <div class="phase green">
+      <span class="phase-num">★</span>
+      <h3>Highest Score Wins</h3>
+      <p>When the final Guard is defeated, the guild with the highest total Capture Points becomes the owner.</p>
+    </div>
+  </div>
+
+  <div class="note red">
+    <strong>Critical distinction:</strong>
+    The Fort does not automatically belong
+    to whichever guild lands the final attack.
+    Ownership is determined by the highest
+    total Capture Points when the siege concludes.
+  </div>
+</section>
+
+<section class="section" id="garrison">
+  <span class="kicker">07 / DEFENDING YOUR TERRITORY</span>
+  <h2>Capture the Fort. <span>Build the Garrison.</span></h2>
+  <p class="lead">
+    Once your guild captures a Fort,
+    it becomes responsible for defending it.
+    Guild members can place their own squads
+    inside the Garrison to protect the objective.
+  </p>
+
+  <div class="battle">
+    <div class="battle-card defense">
+      <small>THE DEFENDING GUILD</small>
+      <h3>Build Your Defensive Wall</h3>
+      <p>
+        Station member squads inside the Fort.
+        These squads become the first line
+        of defense that future attackers must
+        defeat before reaching the Fort Guards.
+      </p>
+      <ul>
+        <li>Organize guild member defenses</li>
+        <li>Prepare strong Garrison squads</li>
+        <li>Protect the route to the Guards</li>
+      </ul>
+    </div>
+
+    <div class="battle-card">
+      <small>THE ATTACKING GUILD</small>
+      <h3>Break Through the Defense</h3>
+      <p>
+        Rival guilds must overcome the Garrison
+        before attacking the Guards.
+        A well-organized defense can force
+        attackers to commit additional effort
+        and coordinate more carefully.
+      </p>
+      <ul>
+        <li>Fight through player squads</li>
+        <li>Clear the defensive line</li>
+        <li>Reach the Fort Guards</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note green">
+    <strong>Capturing a Fort wins the battle.
+    Defending it protects your guild's position.</strong>
+  </div>
+</section>
+
+<section class="section" id="rewards">
+  <span class="kicker">08 / WHY FORTS MATTER</span>
+  <h2>Rewards. Territory. <span>Guild Bonuses.</span></h2>
+  <p class="lead">
+    Forts are valuable because they provide
+    rewards and benefits to guilds that
+    participate in and control them.
+  </p>
+
+  <div class="reward-grid">
+    <div class="reward">
+      <span class="symbol">🏰</span>
+      <h3>Fort Rewards</h3>
+      <p>
+        Different Forts offer different rewards.
+        More powerful Forts provide more valuable
+        prizes and become attractive strategic targets.
+      </p>
+    </div>
+    <div class="reward">
+      <span class="symbol">⚔️</span>
+      <h3>Neutral Fort Participation</h3>
+      <p>
+        Capturing your first Neutral Fort can unlock
+        special participation rewards.
+        Players must actively contribute and earn
+        Capture Points to qualify.
+      </p>
+    </div>
+    <div class="reward">
+      <span class="symbol">👑</span>
+      <h3>Guild-wide Bonuses</h3>
+      <p>
+        A captured Fort provides a Guild Bonus
+        to every guild member while the guild
+        controls it. Lose the Fort,
+        and the bonus is lost.
+      </p>
+    </div>
+  </div>
+
+  <div class="note gold">
+    <strong>Participation matters:</strong>
+    Simply belonging to a guild is not enough
+    to qualify for the special participation rewards.
+    Players need to contribute Capture Points
+    during the siege.
+  </div>
+</section>
+
+<section class="section" id="cycle">
+  <span class="kicker">09 / COMPLETE BATTLE FLOW</span>
+  <h2>The Fort Warfare <span>Cycle.</span></h2>
+  <p class="lead">
+    From the first declaration of war
+    to the defense of a captured Fort,
+    the entire system follows a clear sequence.
+  </p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot">01</div>
+      <div><h3>Find an Available Fort</h3><p>Search the Realm map and select an eligible target.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">02</div>
+      <div><h3>Declare War</h3><p>The Guild Master or a General starts the preparation countdown.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">03</div>
+      <div><h3>Prepare for 30 Minutes</h3><p>Organize participants, attack orders and squad assignments.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">04</div>
+      <div><h3>Defeat the Garrison</h3><p>Clear the defending guild's stationed squads.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">05</div>
+      <div><h3>Attack the Fort Guards</h3><p>Once the Garrison falls, battle the Guards.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">06</div>
+      <div><h3>Accumulate Capture Points</h3><p>Earn points through combat contributions during the siege.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">07</div>
+      <div><h3>Determine the Winner</h3><p>The highest-scoring guild takes ownership when the final Guard falls.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">08</div>
+      <div><h3>Establish Your Garrison</h3><p>Station guild member squads to defend the captured Fort.</p></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">09</div>
+      <div><h3>Protect the Guild Bonus</h3><p>Maintain control to preserve the benefit for all guild members.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="strategy">
+  <span class="kicker">10 / STRATEGIC PRIORITIES</span>
+  <h2>Preparation Beats <span>Confusion.</span></h2>
+  <p class="lead">
+    Forts reward coordination as much as individual strength.
+    These are the key strategic principles
+    suggested by the mechanics covered in this first look.
+  </p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div>
+        <h3>Choose Your Targets Carefully</h3>
+        <p>Consider Fort availability, potential rewards and the likelihood of competing guilds before declaring war.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div>
+        <h3>Use the Preparation Window</h3>
+        <p>Coordinate participants and assign responsibilities before the siege begins.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div>
+        <h3>Focus on Guild-wide Contributions</h3>
+        <p>Capture Points determine ownership, so participation and overall guild performance are essential.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div>
+        <h3>Plan for Defense Before Victory</h3>
+        <p>Prepare a Garrison plan so your guild can defend the Fort once it becomes the owner.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">05</div>
+      <div>
+        <h3>Protect Valuable Guild Bonuses</h3>
+        <p>Territory control has ongoing value because Guild Bonuses remain active only while the Fort is held.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Future testing:</strong>
+    Optimal attack timing, Garrison compositions,
+    Fort priorities and counter strategies
+    still require further practical testing.
+    This first guide focuses on the mechanics
+    presented in the initial Forts overview.
+  </div>
+</section>
+
+<section class="section">
+  <div class="verdict">
+    <span class="kicker">GODS OF ALLIANCE • FINAL VERDICT</span>
+    <h2>Conquering Is Only the Beginning.</h2>
+    <p>
+      Realm Forts introduces a continuous cycle
+      of attack, defense and territorial competition.
+      Guilds must organize their members,
+      defeat Garrison squads, eliminate Fort Guards
+      and earn enough Capture Points
+      to secure ownership.
+    </p>
+    <p>
+      The rewards create a reason to fight,
+      but the Guild Bonuses create a reason
+      to defend. Every successful siege
+      becomes the beginning of another
+      strategic challenge.
+    </p>
+    <p>
+      <strong>
+        The strongest guilds are built through
+        preparation, coordination and strategy.
+        Master the mechanics. Lead your guild.
+        Conquer the Realm.
+      </strong>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="video">
+  <span class="kicker">11 / WATCH THE COMPLETE GUIDE</span>
+  <h2>Realm Forts — <span>Video Breakdown.</span></h2>
+  <p class="lead">
+    Watch the full Gods of Alliance first look
+    at Realm Forts, including the preparation phase,
+    Garrison mechanics, Capture Points,
+    rewards and Guild-wide bonuses.
+  </p>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/XjUNgHCw4A4"
+      title="Realm Forts Complete Guide — Gods of Alliance"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Gods of Alliance • Realm Guides • Hero Wars Alliance
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
