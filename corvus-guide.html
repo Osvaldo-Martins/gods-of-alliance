@@ -1,0 +1,1253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Corvus Hero Guide — Best Build, Skills, Skins, Teams & Counters | Gods of Alliance</title>
+<meta name="description" content="Complete Corvus Hero Wars Alliance guide. Learn his four skills, Altar of Souls mechanics, best skins, glyphs, artifacts, talismans, Eternity team synergies and counters.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/corvus-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Corvus — Complete Hero Guide">
+<meta property="og:description" content="Master the Undead King. Corvus skills, Altar of Souls, build priorities, talismans, Eternity synergies and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/corvus-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/corvus-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+  --bg:#050b0d;
+  --panel:#0c1719;
+  --panel2:#102124;
+  --emerald:#56e6c7;
+  --ghost:#9cf8ed;
+  --gold:#d8b36a;
+  --white:#f2f7f5;
+  --muted:#9eb7b5;
+  --line:rgba(86,230,199,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 10% 12%,rgba(22,124,113,.12),transparent 38%),
+    linear-gradient(#071113,#050b0d 55%,#040809);
+  color:var(--white);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+strong{color:#eafff9}
+.hero{
+  position:relative;
+  min-height:770px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(4,10,12,.04) 0%,rgba(4,10,12,.12) 36%,rgba(4,10,12,.81) 65%,#050b0d 100%),
+    linear-gradient(180deg,rgba(4,10,12,.05),rgba(4,10,12,.16) 57%,#050b0d 100%),
+    url("Images/Hero-Guides/corvus-guide.jpg") center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1330px,calc(100% - 56px));
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:125px 0 90px;
+}
+.hero-copy{width:min(590px,100%)}
+.kicker{
+  display:inline-block;
+  color:var(--emerald);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.hero .kicker{
+  padding:9px 13px;
+  background:rgba(5,15,17,.83);
+  border:1px solid rgba(86,230,199,.4);
+  border-radius:4px;
+  margin-bottom:24px;
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(64px,7vw,102px);
+  line-height:1.02;
+  letter-spacing:-.06em;
+  text-shadow:0 6px 28px #000;
+  margin-bottom:19px;
+}
+.hero h1 em{
+  display:block;
+  color:var(--ghost);
+  font-style:normal;
+  font-size:.46em;
+  letter-spacing:.02em;
+  margin-top:9px;
+}
+.hero p{
+  max-width:540px;
+  color:#d0e3df;
+  font-size:15px;
+  line-height:1.95;
+  text-shadow:0 2px 12px #000;
+}
+.hero-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:27px;
+}
+.hero-facts span{
+  color:var(--ghost);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+  padding:9px 12px;
+  border:1px solid rgba(86,230,199,.28);
+  border-radius:5px;
+  background:rgba(5,15,17,.84);
+}
+.layout{
+  width:min(1170px,calc(100% - 44px));
+  margin:auto;
+  padding:76px 0 105px;
+}
+.section{margin-bottom:90px;scroll-margin-top:28px}
+.section h2{
+  font-size:clamp(30px,4.4vw,48px);
+  letter-spacing:-.045em;
+  line-height:1.12;
+  margin:10px 0 20px;
+}
+.section h2 span{color:var(--emerald)}
+.lead{
+  max-width:890px;
+  color:#acc4c0;
+  font-size:14px;
+  line-height:1.95;
+}
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:30px;
+  align-items:start;
+}
+.intro-grid h2{
+  font-size:clamp(34px,4.5vw,51px);
+  line-height:1.1;
+  letter-spacing:-.045em;
+  margin:13px 0 21px;
+}
+.prose{
+  color:#adc3c0;
+  font-size:13px;
+  line-height:1.95;
+}
+.prose p+p{margin-top:14px}
+.intel{
+  padding:29px;
+  border:1px solid rgba(86,230,199,.28);
+  border-radius:11px;
+  background:linear-gradient(145deg,rgba(29,116,103,.16),#0b1719 68%);
+}
+.intel h3{
+  font-family:Georgia,serif;
+  color:var(--ghost);
+  font-size:25px;
+  margin-bottom:17px;
+}
+.intel-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  padding:13px 0;
+  border-top:1px solid rgba(255,255,255,.075);
+  color:#a8bcb8;
+  font-size:12px;
+}
+.intel-row strong{text-align:right}
+.toc{
+  border:1px solid var(--line);
+  background:#0d191b;
+  border-radius:11px;
+  padding:27px;
+  margin:72px 0 85px;
+}
+.toc-title{
+  color:var(--emerald);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.19em;
+  margin-bottom:17px;
+}
+.toc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.toc-grid a{
+  border:1px solid rgba(86,230,199,.14);
+  background:rgba(86,230,199,.035);
+  border-radius:6px;
+  padding:14px;
+  font-size:12px;
+  font-weight:800;
+  transition:.2s;
+}
+.toc-grid a:hover{
+  border-color:var(--emerald);
+  background:rgba(86,230,199,.1);
+}
+.toc-grid small{
+  display:block;
+  color:#4aa994;
+  font-size:9px;
+  margin-bottom:5px;
+}
+.skills{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+  margin-top:29px;
+}
+.skill{
+  padding:29px;
+  background:linear-gradient(145deg,#122326,#091315);
+  border:1px solid var(--line);
+  border-radius:11px;
+}
+.skill.featured{
+  border-color:rgba(86,230,199,.48);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(43,177,151,.17),transparent 55%),
+    linear-gradient(145deg,#122629,#091315);
+}
+.skill-number{
+  display:inline-block;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:35px;
+  margin-bottom:9px;
+}
+.skill-type{
+  display:block;
+  color:var(--emerald);
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.17em;
+  margin-bottom:8px;
+}
+.skill h3{
+  font-size:22px;
+  margin-bottom:13px;
+}
+.skill p{
+  color:#b1c4c0;
+  font-size:12px;
+  line-height:1.9;
+}
+.skill p+p{margin-top:12px}
+.skill-detail{
+  margin-top:19px;
+  padding:14px 16px;
+  border-left:2px solid var(--emerald);
+  background:rgba(86,230,199,.065);
+  color:#c9e8df;
+  font-size:11px;
+  line-height:1.8;
+}
+.altar{
+  margin-top:30px;
+  padding:36px;
+  border:1px solid rgba(86,230,199,.38);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(50,180,150,.14),transparent 55%),
+    #0d191b;
+}
+.altar h3{
+  color:var(--ghost);
+  font-family:Georgia,serif;
+  font-size:27px;
+  margin-bottom:24px;
+  text-align:center;
+}
+.altar-flow{
+  display:flex;
+  align-items:stretch;
+  gap:12px;
+}
+.altar-node{
+  flex:1;
+  padding:21px 15px;
+  border:1px solid rgba(86,230,199,.23);
+  border-radius:8px;
+  background:rgba(86,230,199,.045);
+  text-align:center;
+}
+.altar-node b{
+  display:block;
+  color:var(--emerald);
+  font-size:10px;
+  letter-spacing:.1em;
+  margin-bottom:8px;
+}
+.altar-node p{
+  color:#b4cbc6;
+  font-size:11px;
+  line-height:1.8;
+}
+.altar-arrow{
+  align-self:center;
+  color:var(--emerald);
+  font-size:25px;
+}
+.note{
+  margin-top:23px;
+  padding:20px 23px;
+  border-left:3px solid var(--emerald);
+  border-radius:0 7px 7px 0;
+  background:rgba(86,230,199,.065);
+  color:#c3ddd5;
+  font-size:12px;
+  line-height:1.9;
+}
+.note.gold{
+  border-left-color:var(--gold);
+  background:rgba(216,179,106,.07);
+  color:#dacdb2;
+}
+.priority-list{
+  display:grid;
+  gap:11px;
+  margin-top:29px;
+}
+.priority{
+  display:grid;
+  grid-template-columns:52px 1fr auto;
+  align-items:center;
+  gap:19px;
+  padding:19px 22px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#0e1a1c;
+}
+.priority-num{
+  width:46px;
+  height:46px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  border:1px solid rgba(86,230,199,.4);
+  color:var(--emerald);
+  font-weight:950;
+  font-size:14px;
+}
+.priority h3{
+  font-size:15px;
+  margin-bottom:5px;
+}
+.priority p{
+  color:#a8beba;
+  font-size:12px;
+  line-height:1.75;
+}
+.priority-tag{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:950;
+  white-space:nowrap;
+  letter-spacing:.06em;
+}
+.build-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:15px;
+  margin-top:28px;
+}
+.build-card{
+  padding:26px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#0e1a1c;
+}
+.build-card .rank{
+  display:block;
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:35px;
+  margin-bottom:12px;
+}
+.build-card h3{
+  font-size:17px;
+  margin-bottom:10px;
+}
+.build-card p{
+  color:#a8bfba;
+  font-size:12px;
+  line-height:1.85;
+}
+.talisman-grid,.team-grid,.counter-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+  margin-top:28px;
+}
+.panel{
+  padding:30px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:linear-gradient(145deg,#122326,#0a1517);
+}
+.panel.gold{
+  border-color:rgba(216,179,106,.34);
+  background:linear-gradient(145deg,rgba(117,91,39,.14),#0a1517);
+}
+.panel-label{
+  display:block;
+  color:var(--emerald);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.16em;
+  margin-bottom:12px;
+}
+.panel.gold .panel-label{color:var(--gold)}
+.panel h3{
+  font-size:22px;
+  margin-bottom:13px;
+}
+.panel p{
+  color:#afc4bf;
+  font-size:12px;
+  line-height:1.9;
+}
+.panel p+p{margin-top:12px}
+.panel ul{
+  padding-left:19px;
+  margin-top:13px;
+  color:#b7d0c8;
+  font-size:12px;
+  line-height:2;
+}
+.verdict{
+  padding:43px;
+  border:1px solid rgba(86,230,199,.43);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(37,155,129,.17),transparent 53%),
+    linear-gradient(145deg,#102427,#091315);
+}
+.verdict h2{
+  color:var(--ghost);
+  font-family:Georgia,serif;
+  font-size:clamp(31px,4.5vw,48px);
+  line-height:1.15;
+  margin:14px 0 21px;
+}
+.verdict p{
+  color:#c2d7d1;
+  font-size:14px;
+  line-height:1.95;
+}
+.verdict p+p{margin-top:15px}
+.video{
+  position:relative;
+  padding-top:56.25%;
+  background:#000;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:12px;
+  margin-top:27px;
+}
+.video iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+footer{
+  border-top:1px solid var(--line);
+  background:#040809;
+  color:#6f8983;
+  text-align:center;
+  padding:36px 20px;
+  font-size:11px;
+}
+@media(max-width:950px){
+  .intro-grid{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .build-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .hero{min-height:710px}
+  .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(4,10,12,.03),rgba(4,10,12,.63) 47%,#050b0d 100%),
+      url("Images/Hero-Guides/corvus-guide.jpg") 37% center/cover no-repeat;
+  }
+  .hero-inner{
+    width:calc(100% - 36px);
+    justify-content:center;
+    padding:355px 0 60px;
+  }
+  .hero-copy{text-align:center}
+  .hero-facts{justify-content:center}
+  .layout{width:calc(100% - 32px);padding:55px 0 80px}
+  .skills,.talisman-grid,.team-grid,.counter-grid,.build-grid{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .altar-flow{flex-direction:column}
+  .altar-arrow{transform:rotate(90deg)}
+  .altar,.verdict{padding:23px}
+  .priority{grid-template-columns:45px 1fr;gap:12px}
+  .priority-tag{grid-column:2}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">GODS OF ALLIANCE • HERO DATABASE</span>
+      <h1>CORVUS <em>THE UNDEAD KING</em></h1>
+      <p>
+        A frontline Tank who turns enemy aggression into retaliation.
+        Master <strong>Altar of Souls</strong>, weaken enemy defenses,
+        empower Undead allies and discover how to build
+        one of the most distinctive Tanks in Hero Wars Alliance.
+      </p>
+      <div class="hero-facts">
+        <span>TANK</span>
+        <span>WAY OF ETERNITY</span>
+        <span>FRONT LINE</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+<section class="section" id="overview">
+  <div class="intro-grid">
+    <div>
+      <span class="kicker">01 / HERO OVERVIEW</span>
+      <h2>A King Who <span>Punishes Every Attack.</span></h2>
+      <div class="prose">
+        <p>
+          Corvus is a frontline Tank belonging to the
+          <strong>Way of Eternity</strong>. Unlike conventional Tanks
+          that focus almost entirely on absorbing damage,
+          Corvus turns incoming enemy pressure into an
+          opportunity for retaliation.
+        </p>
+        <p>
+          His signature ability, <strong>Altar of Souls</strong>,
+          retaliates against attackers whenever they damage
+          allied heroes. This can be particularly dangerous
+          against opponents that strike repeatedly or
+          damage several targets at once.
+        </p>
+        <p>
+          But Corvus is more than his altar.
+          He reduces enemy defenses, strengthens Undead
+          allies and repositions teammates whose Health
+          falls dangerously low.
+        </p>
+        <p>
+          A well-built Corvus provides
+          <strong>protection, offensive support,
+          defensive disruption and retaliation</strong>.
+          Understanding how these mechanics interact
+          is the key to mastering the Undead King.
+        </p>
+      </div>
+    </div>
+
+    <aside class="intel">
+      <h3>Hero Intelligence</h3>
+      <div class="intel-row"><span>Hero</span><strong>Corvus</strong></div>
+      <div class="intel-row"><span>Role</span><strong>Tank</strong></div>
+      <div class="intel-row"><span>Faction</span><strong>Way of Eternity</strong></div>
+      <div class="intel-row"><span>Position</span><strong>Front Line</strong></div>
+      <div class="intel-row"><span>Signature Skill</span><strong>Altar of Souls</strong></div>
+      <div class="intel-row"><span>Primary Investment</span><strong>Strength &amp; Health</strong></div>
+      <div class="intel-row"><span>Core Identity</span><strong>Retaliation Tank</strong></div>
+    </aside>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Corvus hero guide contents">
+  <div class="toc-title">THE UNDEAD KING — COMPLETE FIELD GUIDE</div>
+  <div class="toc-grid">
+    <a href="#skills"><small>02</small>Four Skills</a>
+    <a href="#altar"><small>03</small>Altar of Souls</a>
+    <a href="#skins"><small>04</small>Skin Priorities</a>
+    <a href="#glyphs"><small>05</small>Glyphs</a>
+    <a href="#artifacts"><small>06</small>Artifacts</a>
+    <a href="#gift"><small>07</small>Gift of Elements</a>
+    <a href="#talismans"><small>08</small>Talismans</a>
+    <a href="#teams"><small>09</small>Team Synergies</a>
+    <a href="#counters"><small>10</small>Counters</a>
+    <a href="#verdict"><small>11</small>Final Verdict</a>
+    <a href="#video"><small>12</small>Video Guide</a>
+  </div>
+</nav>
+
+<section class="section" id="skills">
+  <span class="kicker">02 / SKILL BREAKDOWN</span>
+  <h2>Four Skills. <span>One Dangerous King.</span></h2>
+  <p class="lead">
+    Corvus combines enemy defense reduction,
+    offensive buffs for Undead allies,
+    retaliatory damage and emergency repositioning.
+    Each ability supports a different part of his role.
+  </p>
+
+  <div class="skills">
+
+    <article class="skill">
+      <span class="skill-number">I</span>
+      <span class="skill-type">FIRST SKILL / OFFENSIVE DEBUFF</span>
+      <h3>Strike of the Damned</h3>
+      <p>
+        Corvus attacks the enemy frontline,
+        dealing Physical Damage while reducing
+        <strong>Armor, Magic Defense and Dodge</strong>.
+      </p>
+      <p>
+        These reductions help different types of
+        attackers. Physical damage dealers benefit
+        from lower Armor, magical attackers from
+        lower Magic Defense, and Dodge reduction
+        helps eligible attacks connect more reliably.
+      </p>
+      <div class="skill-detail">
+        <strong>Eternity scaling:</strong>
+        Damage and defensive reductions increase
+        by <strong>10% for every allied Eternity hero</strong>.
+        More Eternity allies directly strengthen this skill.
+      </div>
+    </article>
+
+    <article class="skill">
+      <span class="skill-number">II</span>
+      <span class="skill-type">SECOND SKILL / TEAM BUFF</span>
+      <h3>Unity of the Damned</h3>
+      <p>
+        For <strong>10 seconds</strong>, Corvus increases
+        the Physical Attack and Magic Attack
+        of his Undead allies.
+      </p>
+      <p>
+        This buff scales with Corvus's
+        <strong>Physical Attack</strong>,
+        allowing him to support different
+        types of compatible damage dealers.
+      </p>
+      <div class="skill-detail">
+        <strong>Build interaction:</strong>
+        Increasing Physical Attack supports
+        the offensive value of this skill
+        alongside Strike of the Damned.
+      </div>
+    </article>
+
+    <article class="skill featured">
+      <span class="skill-number">III</span>
+      <span class="skill-type">THIRD SKILL / SIGNATURE RETALIATION</span>
+      <h3>Altar of Souls</h3>
+      <p>
+        Corvus summons an altar behind his team.
+        Whenever enemies damage allied heroes,
+        the altar retaliates against those attackers.
+      </p>
+      <p>
+        Repeated attacks and multi-target damage
+        can trigger multiple retaliations,
+        making certain aggressive strategies
+        particularly vulnerable.
+      </p>
+      <div class="skill-detail">
+        <strong>Critical scaling:</strong>
+        The altar scales with
+        <strong>Corvus's Health</strong>.
+        Its own Health decreases as allies
+        receive damage, so it cannot
+        retaliate indefinitely.
+      </div>
+    </article>
+
+    <article class="skill">
+      <span class="skill-number">IV</span>
+      <span class="skill-type">FOURTH SKILL / EMERGENCY PROTECTION</span>
+      <h3>Royal Defense</h3>
+      <p>
+        When an ally falls below
+        <strong>20% Health</strong>,
+        Corvus moves that hero toward
+        the center of the team.
+      </p>
+      <p>
+        This can change positioning and
+        potentially reduce immediate pressure
+        on a critically wounded teammate.
+      </p>
+      <div class="skill-detail">
+        <strong>Activation:</strong>
+        Once every <strong>8 seconds</strong>.
+        This skill depends on its level,
+        not Corvus's attributes.
+        Repositioning does not guarantee survival.
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="altar">
+  <span class="kicker">03 / SIGNATURE MECHANIC</span>
+  <h2>The True Power of <span>Altar of Souls.</span></h2>
+  <p class="lead">
+    The altar is the mechanic that makes Corvus
+    especially dangerous against certain
+    multi-hit and area-damage teams.
+  </p>
+
+  <div class="altar">
+    <h3>The Retaliation Cycle</h3>
+    <div class="altar-flow">
+      <div class="altar-node">
+        <b>01 / ENEMY ATTACK</b>
+        <p>An enemy damages one or more allied heroes.</p>
+      </div>
+      <div class="altar-arrow">→</div>
+      <div class="altar-node">
+        <b>02 / ALTAR ACTIVATES</b>
+        <p>Altar of Souls retaliates against the attacker.</p>
+      </div>
+      <div class="altar-arrow">→</div>
+      <div class="altar-node">
+        <b>03 / ALTAR LOSES HEALTH</b>
+        <p>The altar's Health decreases as allies receive damage.</p>
+      </div>
+      <div class="altar-arrow">→</div>
+      <div class="altar-node">
+        <b>04 / BUILD MATTERS</b>
+        <p>Corvus's Health strengthens the foundation of the altar.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Why Health is so valuable:</strong>
+    Investing in Corvus's Health supports both
+    his frontline survivability and the
+    effectiveness of his signature altar.
+    This is why Health is central to his build.
+  </div>
+
+  <div class="note gold">
+    <strong>Important limitation:</strong>
+    The altar retaliates against incoming damage;
+    it does not prevent that damage.
+    Corvus still needs healing, protection
+    and a team capable of surviving enemy pressure.
+  </div>
+</section>
+
+<section class="section" id="skins">
+  <span class="kicker">04 / SKIN INVESTMENT</span>
+  <h2>Best Skins. <span>Correct Priority.</span></h2>
+  <p class="lead">
+    Corvus's skin priorities focus on
+    Strength and Health first,
+    followed by the defensive attributes
+    that allow him to survive on the frontline.
+  </p>
+
+  <div class="priority-list">
+
+    <div class="priority">
+      <div class="priority-num">01</div>
+      <div>
+        <h3>Default Skin — Strength</h3>
+        <p>Improves Health and Physical Attack, supporting durability, Altar of Souls and his offensive utility.</p>
+      </div>
+      <span class="priority-tag">FOUNDATION</span>
+    </div>
+
+    <div class="priority">
+      <div class="priority-num">02</div>
+      <div>
+        <h3>Winter Skin — Health + Skin Plus</h3>
+        <p>One of his most valuable investments. Health improves survival and directly supports Altar of Souls.</p>
+      </div>
+      <span class="priority-tag">ALTAR SCALING</span>
+    </div>
+
+    <div class="priority">
+      <div class="priority-num">03</div>
+      <div>
+        <h3>Spring Skin — Armor</h3>
+        <p>Strengthens frontline protection against incoming physical damage.</p>
+      </div>
+      <span class="priority-tag">PHYSICAL DEFENSE</span>
+    </div>
+
+    <div class="priority">
+      <div class="priority-num">04</div>
+      <div>
+        <h3>Romantic Skin — Toughness</h3>
+        <p>Particularly useful when Corvus falls below half Health, helping reduce incoming damage in that condition.</p>
+      </div>
+      <span class="priority-tag">LOW-HEALTH DEFENSE</span>
+    </div>
+
+    <div class="priority">
+      <div class="priority-num">05</div>
+      <div>
+        <h3>Dark Depths Skin — Physical Attack</h3>
+        <p>Strengthens regular attacks and the scaling of Strike of the Damned and Unity of the Damned.</p>
+      </div>
+      <span class="priority-tag">OFFENSIVE UTILITY</span>
+    </div>
+
+    <div class="priority">
+      <div class="priority-num">06</div>
+      <div>
+        <h3>Lunar Skin — Magic Defense</h3>
+        <p>Improves protection against magical damage. Its priority may rise against especially dangerous magical teams.</p>
+      </div>
+      <span class="priority-tag">MAGICAL DEFENSE</span>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Build philosophy:</strong>
+    First establish a Tank who can survive.
+    Then strengthen the mechanics that make
+    Corvus valuable to his team.
+  </div>
+</section>
+
+<section class="section" id="glyphs">
+  <span class="kicker">05 / GLYPH DEVELOPMENT</span>
+  <h2>Glyphs — <span>Upgrade Order.</span></h2>
+  <p class="lead">
+    Corvus's glyph progression prioritizes
+    his primary attribute, survivability
+    and frontline defenses before offensive utility.
+  </p>
+
+  <div class="priority-list">
+    <div class="priority">
+      <div class="priority-num">01</div>
+      <div><h3>Strength</h3><p>Supports Health and Physical Attack, strengthening several parts of his kit.</p></div>
+      <span class="priority-tag">FIRST</span>
+    </div>
+    <div class="priority">
+      <div class="priority-num">02</div>
+      <div><h3>Health</h3><p>Improves survivability and Altar of Souls.</p></div>
+      <span class="priority-tag">HIGH PRIORITY</span>
+    </div>
+    <div class="priority">
+      <div class="priority-num">03</div>
+      <div><h3>Armor</h3><p>Protects against physical attacks.</p></div>
+      <span class="priority-tag">DEFENSE</span>
+    </div>
+    <div class="priority">
+      <div class="priority-num">04</div>
+      <div><h3>Magic Defense</h3><p>Helps Corvus survive magical damage.</p></div>
+      <span class="priority-tag">DEFENSE</span>
+    </div>
+    <div class="priority">
+      <div class="priority-num">05</div>
+      <div><h3>Physical Attack</h3><p>Improves his offensive contribution and skill scaling.</p></div>
+      <span class="priority-tag">UTILITY</span>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Initial progression recommendation:</strong>
+    Bring all five glyphs to
+    <strong>Level 40</strong> before investing
+    additional resources into more specialized development.
+  </div>
+</section>
+
+<section class="section" id="artifacts">
+  <span class="kicker">06 / ARTIFACT PRIORITIES</span>
+  <h2>Artifacts — <span>Defense First.</span></h2>
+  <p class="lead">
+    Corvus has three artifacts.
+    Our recommended order prioritizes his
+    personal survivability before
+    the team-wide Armor contribution.
+  </p>
+
+  <div class="build-grid">
+
+    <div class="build-card">
+      <span class="rank">01</span>
+      <h3>Artifact Book</h3>
+      <p>
+        Provides <strong>Armor and Magic Defense</strong>.
+        The first priority because Corvus needs
+        to survive both physical and magical pressure.
+      </p>
+    </div>
+
+    <div class="build-card">
+      <span class="rank">02</span>
+      <h3>Artifact Ring</h3>
+      <p>
+        Provides <strong>Strength</strong>,
+        increasing Health and Physical Attack
+        to support his defensive and offensive mechanics.
+      </p>
+    </div>
+
+    <div class="build-card">
+      <span class="rank">03</span>
+      <h3>Artifact Weapon</h3>
+      <p>
+        Provides a <strong>team-wide Armor bonus</strong>
+        when Strike of the Damned activates.
+        Valuable after establishing his defensive foundation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="gift">
+  <span class="kicker">07 / GIFT OF THE ELEMENTS</span>
+  <h2>Gift of the Elements — <span>Maximize It.</span></h2>
+  <p class="lead">
+    Gift of the Elements is an important
+    part of Corvus's overall development.
+    The additional stats strengthen his
+    durability and offensive foundation.
+  </p>
+
+  <div class="note">
+    <strong>Recommendation: MAXIMUM INVESTMENT.</strong>
+    A Tank who falls early cannot protect
+    allies or maintain his support value.
+    Do not overlook Gift of the Elements
+    while upgrading skins, glyphs and artifacts.
+  </div>
+</section>
+
+<section class="section" id="talismans">
+  <span class="kicker">08 / TALISMAN OPTIONS</span>
+  <h2>Talismans — <span>Choose Your Purpose.</span></h2>
+  <p class="lead">
+    Corvus has two Talisman options.
+    One provides a balanced Strength and
+    offensive foundation, while the other
+    focuses on additional defensive stats.
+  </p>
+
+  <div class="talisman-grid">
+
+    <div class="panel">
+      <span class="panel-label">TALISMAN OPTION 01</span>
+      <h3>Strength + Physical Attack</h3>
+      <p>
+        Strength increases Corvus's Health
+        and Physical Attack, while the
+        additional Physical Attack supports
+        his offensive abilities.
+      </p>
+      <p>
+        <strong>Source:</strong>
+        Eternal Frontier Shop.
+      </p>
+      <p>
+        <strong>Cost:</strong>
+        700,000 Frontier Coins.
+      </p>
+      <p>
+        <strong>Best purpose:</strong>
+        Balanced development with
+        offensive utility.
+      </p>
+    </div>
+
+    <div class="panel gold">
+      <span class="panel-label">TALISMAN OPTION 02</span>
+      <h3>Magic Defense + Armor</h3>
+      <p>
+        Focuses on additional defensive
+        protection against incoming
+        magical and physical damage.
+      </p>
+      <p>
+        <strong>Source:</strong>
+        Special events.
+      </p>
+      <p>
+        <strong>Best purpose:</strong>
+        Strengthening Corvus's
+        personal frontline survivability.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Which Talisman is better?</strong>
+    There is no universal answer.
+    Choose the defensive option when survival
+    is the main problem, or the
+    Strength and Physical Attack option
+    when you want more balanced
+    stats and offensive utility.
+  </div>
+</section>
+
+<section class="section" id="teams">
+  <span class="kicker">09 / TEAM SYNERGIES</span>
+  <h2>Build Around <span>Eternity Mechanics.</span></h2>
+  <p class="lead">
+    Corvus naturally benefits from
+    Way of Eternity allies because
+    Strike of the Damned grows stronger
+    with each allied Eternity hero.
+    The most effective teams also
+    combine compatible combat mechanics.
+  </p>
+
+  <div class="team-grid">
+
+    <div class="panel">
+      <span class="panel-label">WAY OF ETERNITY / FACTION SYNERGY</span>
+      <h3>Eternity Allies</h3>
+      <p>
+        Each allied Eternity hero strengthens
+        Strike of the Damned by increasing
+        its damage and defensive reductions.
+      </p>
+      <p>
+        A full Eternity composition can
+        maximize this particular interaction,
+        but team balance still matters.
+      </p>
+    </div>
+
+    <div class="panel">
+      <span class="panel-label">OFFENSIVE SYNERGY</span>
+      <h3>Iris</h3>
+      <p>
+        Corvus weakens enemy defenses
+        and provides offensive support,
+        creating opportunities for Iris
+        to apply greater pressure.
+      </p>
+    </div>
+
+    <div class="panel">
+      <span class="panel-label">EXECUTION SYNERGY</span>
+      <h3>Drayne</h3>
+      <p>
+        Drayne aims to pressure opponents
+        and execute vulnerable targets
+        through <strong>Final Verdict</strong>.
+      </p>
+      <p>
+        Corvus's defensive reductions
+        can help create more favorable
+        conditions for Drayne.
+      </p>
+    </div>
+
+    <div class="panel gold">
+      <span class="panel-label">TEAM BALANCE / SURVIVABILITY</span>
+      <h3>Healing &amp; Defensive Support</h3>
+      <p>
+        Altar of Souls retaliates but
+        does not prevent damage.
+        Royal Defense repositions a
+        critically wounded ally but
+        does not restore Health.
+      </p>
+      <p>
+        Corvus teams still need
+        suitable healing, protection
+        and recovery.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="counters">
+  <span class="kicker">10 / COUNTER STRATEGIES</span>
+  <h2>How to Fight <span>the Undead King.</span></h2>
+  <p class="lead">
+    The first step to countering Corvus
+    is understanding Altar of Souls.
+    Repeated attacks and area damage
+    can cause repeated retaliation,
+    so attackers need sufficient
+    survivability and recovery.
+  </p>
+
+  <div class="counter-grid">
+
+    <div class="panel">
+      <span class="panel-label">COUNTER OPTION 01 / SUSTAIN</span>
+      <h3>Dorian — Vampirism Aura</h3>
+      <p>
+        Dorian provides Vampirism to
+        allies within the range of his aura.
+        Qualifying attackers can recover
+        Health through the damage they deal,
+        helping them sustain their offense
+        against altar retaliation.
+      </p>
+      <p>
+        This is particularly interesting
+        for attackers who hit repeatedly.
+      </p>
+      <p>
+        <strong>Limitation:</strong>
+        Positioning, damage output and
+        survivability still matter.
+        Dorian is not an automatic victory.
+      </p>
+    </div>
+
+    <div class="panel gold">
+      <span class="panel-label">COUNTER OPTION 02 / ATTRIBUTE REDUCTION</span>
+      <h3>Dante — Main Stat Reduction</h3>
+      <p>
+        Dante can reduce an enemy's
+        main attribute.
+        Against Corvus, that means
+        <strong>Strength</strong>.
+      </p>
+      <p>
+        Strength contributes to Corvus's
+        Health and Physical Attack,
+        so reducing it can weaken
+        his fundamental stats and
+        abilities that depend on them.
+      </p>
+      <p>
+        <strong>Limitation:</strong>
+        The result still depends on
+        the complete team and
+        battle conditions.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Counter principle:</strong>
+    A hero being a possible counter
+    does not guarantee victory.
+    Team composition, positioning,
+    defensive support and
+    combat conditions remain essential.
+  </div>
+</section>
+
+<section class="section" id="verdict">
+  <div class="verdict">
+    <span class="kicker">11 / GODS OF ALLIANCE — FINAL VERDICT</span>
+    <h2>The Undead King Makes Every Attack Matter.</h2>
+    <p>
+      Corvus remains one of the most
+      distinctive Tanks in Hero Wars Alliance.
+      He weakens enemy defenses,
+      strengthens compatible allies,
+      punishes attackers through
+      Altar of Souls and can reposition
+      teammates in critical condition.
+    </p>
+    <p>
+      His development should reflect
+      these mechanics.
+      <strong>Strength and Health</strong>
+      form the foundation,
+      while Armor, Toughness
+      and Magic Defense strengthen
+      his survivability.
+      Physical Attack adds
+      offensive utility.
+    </p>
+    <p>
+      The secret to Corvus is not
+      simply making him difficult to kill.
+      It is understanding how enemy
+      attacks interact with his skills
+      and how his allies can exploit
+      the opportunities he creates.
+    </p>
+    <p>
+      <strong>
+        We don't build randomly.
+        We build with intention.
+        Master the mechanics.
+        Control the fight.
+        Let's break the game — together.
+      </strong>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="video">
+  <span class="kicker">12 / WATCH THE COMPLETE GUIDE</span>
+  <h2>Corvus — <span>Full Video Breakdown.</span></h2>
+  <p class="lead">
+    Watch the complete Gods of Alliance
+    Corvus guide covering all four skills,
+    Altar of Souls, skins, glyphs,
+    artifacts, Gift of the Elements,
+    talismans, team synergies and counters.
+  </p>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/-veObtxqadU"
+      title="Corvus Full Hero Guide — Gods of Alliance"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Gods of Alliance • Hero Guides • Hero Wars Alliance
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
