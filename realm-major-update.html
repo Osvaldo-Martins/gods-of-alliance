@@ -1,0 +1,1401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Realm Major Update — Complete Roadmap | Olympus Alliance</title>
+<meta name="description" content="The complete Hero Wars Alliance Realm roadmap: October makeover, new buildings, level 30 upgrades, expanded research, Realm PvP in Guild Versus and the Server Capital Presidency system. Olympus Alliance coverage.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/realm-major-update.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Realm Major Update — Complete Roadmap">
+<meta property="og:description" content="New Realm buildings, level 30 progression, inter-server Guild Versus PvP, Server Capital and Presidency. Complete Olympus Alliance breakdown.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/realm-major-update.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Realm/realm-major-update.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+  --bg:#060b12;
+  --bg2:#0b1521;
+  --panel:#101c2a;
+  --panel2:#142333;
+  --gold:#f2c76b;
+  --gold2:#c7953e;
+  --cyan:#65e4ef;
+  --white:#f5f7fc;
+  --muted:#a8b8c9;
+  --line:rgba(242,199,107,.19);
+  --blue-line:rgba(101,228,239,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 85% 5%,rgba(23,104,135,.16),transparent 35%),
+    linear-gradient(180deg,#08121d,#060b12 55%,#04070c);
+  color:var(--white);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+strong{color:#fff}
+.hero{
+  position:relative;
+  min-height:750px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(5,10,17,.05) 0%,rgba(5,10,17,.1) 37%,rgba(5,10,17,.78) 65%,#060b12 100%),
+    linear-gradient(180deg,rgba(5,10,17,.03),rgba(5,10,17,.14) 55%,#060b12 100%),
+    url("Images/Realm/realm-major-update.jpg") center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1330px,calc(100% - 56px));
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:125px 0 90px;
+}
+.hero-copy{width:min(595px,100%)}
+.kicker{
+  display:inline-block;
+  color:var(--cyan);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+.hero .kicker{
+  padding:9px 13px;
+  background:rgba(5,13,23,.85);
+  border:1px solid rgba(101,228,239,.38);
+  border-radius:4px;
+  margin-bottom:23px;
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(54px,6vw,88px);
+  line-height:1.05;
+  letter-spacing:-.055em;
+  text-shadow:0 6px 30px #000;
+  margin-bottom:21px;
+}
+.hero h1 em{
+  display:block;
+  color:var(--gold);
+  font-style:normal;
+}
+.hero p{
+  max-width:550px;
+  color:#d6e4ef;
+  font-size:14px;
+  line-height:1.95;
+  text-shadow:0 2px 12px #000;
+}
+.hero-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:27px;
+}
+.hero-facts span{
+  padding:9px 12px;
+  color:var(--gold);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.06em;
+  background:rgba(5,13,23,.88);
+  border:1px solid rgba(242,199,107,.29);
+  border-radius:5px;
+}
+.layout{
+  width:min(1170px,calc(100% - 44px));
+  margin:auto;
+  padding:76px 0 105px;
+}
+.section{margin-bottom:95px;scroll-margin-top:28px}
+.section h2{
+  font-size:clamp(30px,4.5vw,49px);
+  letter-spacing:-.045em;
+  line-height:1.15;
+  margin:12px 0 20px;
+}
+.section h2 span{color:var(--gold)}
+.lead{
+  max-width:900px;
+  color:#b0c2d2;
+  font-size:14px;
+  line-height:1.95;
+}
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:27px;
+}
+.intro-grid h2{
+  font-size:clamp(35px,4.5vw,51px);
+  line-height:1.12;
+  letter-spacing:-.045em;
+  margin:13px 0 21px;
+}
+.prose{
+  color:#b4c4d3;
+  font-size:13px;
+  line-height:1.95;
+}
+.prose p+p{margin-top:15px}
+.intel{
+  padding:29px;
+  border:1px solid rgba(242,199,107,.3);
+  border-radius:11px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(242,199,107,.1),transparent 60%),
+    #101b28;
+}
+.intel h3{
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:26px;
+  margin-bottom:16px;
+}
+.intel-row{
+  display:flex;
+  justify-content:space-between;
+  gap:13px;
+  padding:13px 0;
+  border-top:1px solid rgba(255,255,255,.075);
+  color:#a8b9c8;
+  font-size:12px;
+}
+.intel-row strong{text-align:right}
+.timeline{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+  margin-top:30px;
+}
+.timeline-card{
+  position:relative;
+  padding:28px;
+  border:1px solid var(--blue-line);
+  border-radius:11px;
+  background:linear-gradient(145deg,#132435,#0b1521);
+}
+.timeline-card.featured{
+  border-color:rgba(242,199,107,.48);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(242,199,107,.1),transparent 60%),
+    linear-gradient(145deg,#1b2632,#0b1521);
+}
+.timeline-date{
+  display:block;
+  color:var(--cyan);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.16em;
+  margin-bottom:14px;
+}
+.timeline-card.featured .timeline-date{color:var(--gold)}
+.timeline-card h3{
+  font-size:23px;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+.timeline-card p{
+  color:#aebfcf;
+  font-size:12px;
+  line-height:1.9;
+}
+.timeline-list{
+  margin-top:15px;
+  padding-left:18px;
+  color:#d1dfeb;
+  font-size:12px;
+  line-height:2.05;
+}
+.toc{
+  border:1px solid var(--line);
+  background:#0f1b29;
+  border-radius:11px;
+  padding:27px;
+  margin:73px 0 87px;
+}
+.toc-title{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.19em;
+  margin-bottom:17px;
+}
+.toc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.toc-grid a{
+  border:1px solid rgba(242,199,107,.13);
+  background:rgba(242,199,107,.035);
+  border-radius:6px;
+  padding:14px;
+  font-size:12px;
+  font-weight:800;
+  transition:.2s;
+}
+.toc-grid a:hover{
+  border-color:var(--gold);
+  background:rgba(242,199,107,.1);
+}
+.toc-grid small{
+  display:block;
+  color:var(--gold2);
+  font-size:9px;
+  margin-bottom:5px;
+}
+.feature-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+  margin-top:28px;
+}
+.feature{
+  padding:29px;
+  border:1px solid var(--blue-line);
+  border-radius:11px;
+  background:linear-gradient(145deg,#122334,#0b1521);
+}
+.feature-number{
+  display:block;
+  color:var(--cyan);
+  font-family:Georgia,serif;
+  font-size:33px;
+  margin-bottom:9px;
+}
+.feature h3{
+  font-size:21px;
+  margin-bottom:12px;
+}
+.feature p{
+  color:#b2c4d4;
+  font-size:12px;
+  line-height:1.9;
+}
+.feature ul{
+  margin-top:13px;
+  padding-left:19px;
+  color:#b8d1dd;
+  font-size:12px;
+  line-height:2;
+}
+.feature.gold{
+  border-color:rgba(242,199,107,.33);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(242,199,107,.085),transparent 60%),
+    linear-gradient(145deg,#1b2530,#0b1521);
+}
+.feature.gold .feature-number{color:var(--gold)}
+.note{
+  margin-top:25px;
+  padding:21px 24px;
+  border-left:3px solid var(--cyan);
+  border-radius:0 7px 7px 0;
+  background:rgba(101,228,239,.065);
+  color:#c5dfeb;
+  font-size:12px;
+  line-height:1.9;
+}
+.note.gold{
+  border-left-color:var(--gold);
+  background:rgba(242,199,107,.075);
+  color:#e2d4b7;
+}
+.battle-flow{
+  margin-top:30px;
+  padding:35px;
+  border:1px solid rgba(242,199,107,.33);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(28,133,171,.15),transparent 65%),
+    #101b29;
+}
+.battle-flow h3{
+  font-family:Georgia,serif;
+  font-size:27px;
+  color:var(--gold);
+  text-align:center;
+  margin-bottom:26px;
+}
+.flow-steps{
+  display:flex;
+  gap:12px;
+  align-items:stretch;
+}
+.flow-node{
+  flex:1;
+  padding:20px 13px;
+  border:1px solid rgba(101,228,239,.2);
+  border-radius:8px;
+  background:rgba(101,228,239,.04);
+  text-align:center;
+}
+.flow-node b{
+  display:block;
+  color:var(--cyan);
+  font-size:10px;
+  letter-spacing:.09em;
+  margin-bottom:9px;
+}
+.flow-node p{
+  color:#b7cad8;
+  font-size:11px;
+  line-height:1.8;
+}
+.flow-arrow{
+  align-self:center;
+  color:var(--gold);
+  font-size:25px;
+}
+.pvp-highlight{
+  padding:39px;
+  border:1px solid rgba(242,199,107,.45);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(242,199,107,.12),transparent 55%),
+    linear-gradient(145deg,#1a2735,#0a1520);
+}
+.pvp-highlight h3{
+  font-family:Georgia,serif;
+  font-size:clamp(26px,3.8vw,38px);
+  line-height:1.2;
+  margin-bottom:17px;
+  color:var(--gold);
+}
+.pvp-highlight p{
+  color:#c5d5e2;
+  font-size:13px;
+  line-height:1.95;
+}
+.pvp-highlight p+p{margin-top:14px}
+.item-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:13px;
+  margin-top:24px;
+}
+.item{
+  padding:21px 15px;
+  border:1px solid var(--blue-line);
+  border-radius:8px;
+  background:#111f2e;
+  text-align:center;
+}
+.item b{
+  display:block;
+  color:var(--cyan);
+  font-size:12px;
+  margin-bottom:8px;
+}
+.item p{
+  color:#aebfcd;
+  font-size:11px;
+  line-height:1.7;
+}
+.capital{
+  margin-top:28px;
+  padding:39px;
+  border:1px solid rgba(242,199,107,.4);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(242,199,107,.14),transparent 57%),
+    linear-gradient(145deg,#1b2632,#0b1520);
+}
+.capital-crown{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:48px;
+  text-align:center;
+  line-height:1;
+  margin-bottom:12px;
+}
+.capital h3{
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:clamp(27px,4vw,42px);
+  text-align:center;
+  line-height:1.2;
+  margin-bottom:20px;
+}
+.capital p{
+  max-width:850px;
+  margin:0 auto;
+  color:#c3d1dc;
+  font-size:13px;
+  line-height:1.95;
+  text-align:center;
+}
+.capital-benefits{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:13px;
+  margin-top:29px;
+}
+.capital-benefit{
+  padding:22px;
+  border:1px solid rgba(242,199,107,.21);
+  border-radius:8px;
+  background:rgba(242,199,107,.055);
+  text-align:center;
+}
+.capital-benefit b{
+  display:block;
+  color:var(--gold);
+  font-size:12px;
+  margin-bottom:9px;
+}
+.capital-benefit span{
+  display:block;
+  color:#b5c4cf;
+  font-size:11px;
+  line-height:1.75;
+}
+.unknown-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin-top:26px;
+}
+.unknown{
+  padding:23px;
+  border:1px solid rgba(242,199,107,.17);
+  border-radius:9px;
+  background:#111c29;
+}
+.unknown b{
+  display:block;
+  color:var(--gold);
+  font-size:13px;
+  margin-bottom:9px;
+}
+.unknown p{
+  color:#aabccc;
+  font-size:12px;
+  line-height:1.8;
+}
+.verdict{
+  padding:42px;
+  border:1px solid rgba(242,199,107,.42);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(242,199,107,.11),transparent 55%),
+    linear-gradient(145deg,#162435,#0a141e);
+}
+.verdict h2{
+  font-family:Georgia,serif;
+  color:var(--gold);
+  font-size:clamp(32px,4.5vw,48px);
+  margin:13px 0 20px;
+}
+.verdict p{
+  color:#c3d2de;
+  font-size:14px;
+  line-height:1.95;
+}
+.verdict p+p{margin-top:15px}
+.source-note{
+  margin-top:24px;
+  padding:18px 21px;
+  border:1px solid rgba(101,228,239,.17);
+  border-radius:7px;
+  background:rgba(101,228,239,.045);
+  color:#9eb8c7;
+  font-size:11px;
+  line-height:1.9;
+}
+footer{
+  padding:36px 20px;
+  border-top:1px solid var(--line);
+  background:#04070c;
+  color:#788b9c;
+  text-align:center;
+  font-size:11px;
+}
+@media(max-width:950px){
+  .intro-grid{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .item-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .hero{min-height:740px}
+  .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(5,10,17,.03),rgba(5,10,17,.58) 46%,#060b12 100%),
+      url("Images/Realm/realm-major-update.jpg") 35% center/cover no-repeat;
+  }
+  .hero-inner{
+    width:calc(100% - 36px);
+    justify-content:center;
+    padding:345px 0 65px;
+  }
+  .hero-copy{text-align:center}
+  .hero-facts{justify-content:center}
+  .layout{width:calc(100% - 32px);padding:56px 0 80px}
+  .feature-grid,.unknown-grid,.capital-benefits{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .flow-steps{flex-direction:column}
+  .flow-arrow{transform:rotate(90deg)}
+  .battle-flow,.capital,.pvp-highlight,.verdict{padding:24px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">OLYMPUS ALLIANCE • REALM NEWS</span>
+      <h1>REALM <em>MAJOR UPDATE</em></h1>
+      <p>
+        A major Realm roadmap is coming.
+        New buildings, Level 30 progression,
+        expanded research, inter-server
+        <strong>Guild Versus PvP</strong>
+        and a new <strong>Server Capital Presidency</strong>
+        system. Explore the announced features
+        and their expected release windows.
+      </p>
+      <div class="hero-facts">
+        <span>END OF OCTOBER</span>
+        <span>NOVEMBER</span>
+        <span>COMING AFTERWARD</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+<section class="section" id="overview">
+  <div class="intro-grid">
+    <div>
+      <span class="kicker">01 / THE OFFICIAL ROADMAP</span>
+      <h2>A New Era <span>for the Realm.</span></h2>
+      <div class="prose">
+        <p>
+          The developers have revealed a substantial
+          roadmap for the Realm in
+          <strong>Hero Wars: Alliance</strong>,
+          introducing changes planned for
+          the end of October, throughout November
+          and shortly afterward.
+        </p>
+        <p>
+          The roadmap goes beyond visual improvements.
+          It introduces new structures,
+          expanded building progression,
+          additional research,
+          Faction buildings,
+          inter-server Guild Versus battles
+          and a new competition for control
+          of the Server Capital.
+        </p>
+        <p>
+          Some details have already been announced.
+          Others, including exact upgrade requirements,
+          combat rules and certain rewards,
+          have not yet been revealed.
+        </p>
+        <p>
+          This Olympus Alliance breakdown separates
+          <strong>announced features</strong>
+          from <strong>details still awaiting confirmation</strong>,
+          so Guardians can understand
+          what is coming without treating
+          speculation as established mechanics.
+        </p>
+      </div>
+    </div>
+
+    <aside class="intel">
+      <h3>Roadmap Intelligence</h3>
+      <div class="intel-row"><span>Game</span><strong>Hero Wars: Alliance</strong></div>
+      <div class="intel-row"><span>Coverage</span><strong>Olympus Alliance</strong></div>
+      <div class="intel-row"><span>Update</span><strong>Realm Expansion</strong></div>
+      <div class="intel-row"><span>First Stage</span><strong>End of October</strong></div>
+      <div class="intel-row"><span>Second Stage</span><strong>November</strong></div>
+      <div class="intel-row"><span>Final Stage</span><strong>Date Not Confirmed</strong></div>
+      <div class="intel-row"><span>Major Feature</span><strong>Inter-server Realm PvP</strong></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="timeline">
+  <span class="kicker">02 / UPDATE SCHEDULE</span>
+  <h2>The Realm <span>Roadmap Timeline.</span></h2>
+  <p class="lead">
+    Three major stages are planned.
+    The first focuses on the Realm base,
+    the second on progression and Guild Versus,
+    and the final stage introduces the Server Capital.
+  </p>
+
+  <div class="timeline">
+
+    <article class="timeline-card">
+      <span class="timeline-date">STAGE 01 / END OF OCTOBER</span>
+      <h3>Realm Makeover</h3>
+      <p>
+        A redesigned Realm base,
+        improved navigation and
+        additional buildings.
+      </p>
+      <ul class="timeline-list">
+        <li>New visual appearance</li>
+        <li>More convenient game-mode access</li>
+        <li>Drill Grounds</li>
+        <li>Storages</li>
+        <li>Wall</li>
+        <li>Additional Infirmaries</li>
+      </ul>
+    </article>
+
+    <article class="timeline-card featured">
+      <span class="timeline-date">STAGE 02 / NOVEMBER</span>
+      <h3>Progression &amp; Realm PvP</h3>
+      <p>
+        Major development upgrades
+        and a new inter-server
+        Guild Versus battlefield.
+      </p>
+      <ul class="timeline-list">
+        <li>Realm buildings up to Level 30</li>
+        <li>Expanded Research Center</li>
+        <li>New Faction buildings</li>
+        <li>Realm PvP Day</li>
+        <li>Inter-server teleports</li>
+        <li>New Guild Versus quests</li>
+      </ul>
+    </article>
+
+    <article class="timeline-card">
+      <span class="timeline-date">STAGE 03 / SHORTLY AFTERWARD</span>
+      <h3>Server Capital</h3>
+      <p>
+        A new Fort becomes the
+        Server Capital, introducing
+        control, leadership and bonuses.
+      </p>
+      <ul class="timeline-list">
+        <li>Capital Fort competition</li>
+        <li>Server Presidency</li>
+        <li>President bonuses</li>
+        <li>Minister appointments</li>
+        <li>Cross-Guild cooperation</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <div class="note gold">
+    <strong>Release timing:</strong>
+    These are the expected windows
+    stated in the roadmap.
+    The Server Capital stage
+    does not yet have a confirmed release date.
+  </div>
+</section>
+
+<nav class="toc" aria-label="Realm major update article contents">
+  <div class="toc-title">REALM MAJOR UPDATE — COMPLETE COVERAGE</div>
+  <div class="toc-grid">
+    <a href="#october"><small>03</small>October Makeover</a>
+    <a href="#buildings"><small>04</small>Level 30 Buildings</a>
+    <a href="#research"><small>05</small>Research &amp; Factions</a>
+    <a href="#pvp"><small>06</small>Realm PvP Day</a>
+    <a href="#defense"><small>07</small>Defense &amp; Resources</a>
+    <a href="#coordination"><small>08</small>Teleports &amp; Guilds</a>
+    <a href="#capital"><small>09</small>Server Capital</a>
+    <a href="#unknown"><small>10</small>What Is Still Unknown</a>
+    <a href="#verdict"><small>11</small>Final Overview</a>
+  </div>
+</nav>
+
+<section class="section" id="october">
+  <span class="kicker">03 / END OF OCTOBER</span>
+  <h2>The Realm Gets <span>a Complete Makeover.</span></h2>
+  <p class="lead">
+    The first stage is designed
+    to make the Realm larger,
+    more lively and more convenient
+    to use while introducing
+    structures for future challenges.
+  </p>
+
+  <div class="feature-grid">
+
+    <article class="feature">
+      <span class="feature-number">01</span>
+      <h3>Redesigned Realm Base</h3>
+      <p>
+        The Realm receives a refreshed
+        visual appearance, creating
+        a bigger and more lively base.
+        This is a substantial presentation
+        update rather than a minor
+        cosmetic adjustment.
+      </p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">02</span>
+      <h3>Improved Game-Mode Access</h3>
+      <p>
+        More convenient access to
+        different game modes directly
+        from the Realm base is planned,
+        making navigation between
+        activities easier.
+      </p>
+    </article>
+
+    <article class="feature gold">
+      <span class="feature-number">03</span>
+      <h3>New Military Structures</h3>
+      <p>
+        New buildings are being introduced
+        to prepare the Realm for
+        future challenges and Guild battles.
+      </p>
+      <ul>
+        <li>Drill Grounds</li>
+        <li>Wall</li>
+        <li>Additional Infirmaries</li>
+      </ul>
+    </article>
+
+    <article class="feature gold">
+      <span class="feature-number">04</span>
+      <h3>New Storage Buildings</h3>
+      <p>
+        Storages are among the newly
+        announced Realm structures.
+        Their exact capacities,
+        upgrade requirements and
+        gameplay effects have not
+        been specified in the roadmap.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Why this matters:</strong>
+    The new structures prepare
+    the Realm for systems arriving
+    in subsequent stages,
+    particularly the introduction
+    of Guild battles.
+  </div>
+</section>
+
+<section class="section" id="buildings">
+  <span class="kicker">04 / NOVEMBER PROGRESSION</span>
+  <h2>Realm Buildings <span>Reach Level 30.</span></h2>
+  <p class="lead">
+    The developers have confirmed
+    that all Realm buildings
+    will be able to reach
+    <strong>Level 30</strong>.
+  </p>
+
+  <div class="feature-grid">
+
+    <article class="feature gold">
+      <span class="feature-number">30</span>
+      <h3>New Building Level Cap</h3>
+      <p>
+        All Realm buildings will
+        be able to progress to
+        Level 30, significantly
+        expanding the existing
+        building development system.
+      </p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">?</span>
+      <h3>Upgrade Requirements</h3>
+      <p>
+        The announcement has not
+        revealed the precise
+        resources, upgrade times
+        or other requirements
+        for these new levels.
+      </p>
+      <p>
+        Investment efficiency
+        cannot yet be assessed
+        accurately.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note gold">
+    <strong>Olympus Alliance assessment:</strong>
+    Level 30 progression creates
+    a new development objective,
+    but specific upgrade priorities
+    should wait until the actual
+    requirements and benefits
+    become available.
+  </div>
+</section>
+
+<section class="section" id="research">
+  <span class="kicker">05 / NOVEMBER RESEARCH EXPANSION</span>
+  <h2>More Research. <span>More Development.</span></h2>
+  <p class="lead">
+    The Research Center and
+    Faction buildings are receiving
+    additional progression systems,
+    opening new opportunities
+    for account development.
+  </p>
+
+  <div class="feature-grid">
+
+    <article class="feature">
+      <span class="feature-number">01</span>
+      <h3>Expanded Research Center</h3>
+      <p>
+        New research branches
+        will introduce additional
+        upgrades affecting
+        <strong>Heroes</strong>
+        and <strong>Realm development</strong>.
+      </p>
+      <p>
+        Exact technologies,
+        numerical bonuses and
+        research costs have
+        not yet been disclosed.
+      </p>
+    </article>
+
+    <article class="feature gold">
+      <span class="feature-number">02</span>
+      <h3>New Faction Buildings</h3>
+      <p>
+        New Faction buildings
+        will provide additional
+        bonuses for Guardians.
+      </p>
+      <p>
+        Their exact effects,
+        progression paths
+        and requirements
+        remain to be announced.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Important:</strong>
+    The roadmap confirms these
+    systems are coming, but
+    does not provide enough
+    numerical information
+    to establish an optimal
+    research or Faction
+    building strategy yet.
+  </div>
+</section>
+
+<section class="section" id="pvp">
+  <span class="kicker">06 / NOVEMBER — MAJOR GAMEPLAY FEATURE</span>
+  <h2>Realm PvP Comes <span>to Guild Versus.</span></h2>
+  <p class="lead">
+    One of the biggest announcements
+    is a new <strong>Realm PvP Day</strong>,
+    introducing direct competition
+    against rival Guilds
+    across different servers.
+  </p>
+
+  <div class="pvp-highlight">
+    <h3>Inter-Server Realm Warfare</h3>
+    <p>
+      Players will be able to
+      <strong>teleport to the opposing Guild's server</strong>
+      and attack enemy Realms.
+      This expands Guild Versus
+      beyond its current activities
+      into a new battlefield
+      involving attacking,
+      defending and coordination.
+    </p>
+    <p>
+      Guild organization becomes
+      central to this system.
+      Members will need to coordinate
+      movements and attacks
+      while also protecting
+      their own Realms.
+    </p>
+    <p>
+      The roadmap also confirms
+      new Guild Versus quests
+      with opportunities to earn
+      significantly more points
+      toward the highest rewards.
+    </p>
+  </div>
+
+  <div class="battle-flow">
+    <h3>The Announced PvP Concept</h3>
+    <div class="flow-steps">
+
+      <div class="flow-node">
+        <b>01 / TRAVEL</b>
+        <p>Teleport to the opposing Guild's server.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-node">
+        <b>02 / ATTACK</b>
+        <p>Engage enemy Realms during PvP competition.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-node">
+        <b>03 / DEFEND</b>
+        <p>Protect your Realm using announced defensive systems.</p>
+      </div>
+
+      <div class="flow-arrow">→</div>
+
+      <div class="flow-node">
+        <b>04 / COMPETE</b>
+        <p>Complete new Guild Versus quests and earn points.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="note gold">
+    <strong>Clarification:</strong>
+    This diagram summarizes
+    the announced gameplay concept.
+    It is not a confirmed
+    step-by-step combat sequence.
+    Detailed PvP rules
+    have not yet been published.
+  </div>
+</section>
+
+<section class="section" id="defense">
+  <span class="kicker">07 / REALM PVP DEFENSE</span>
+  <h2>Protect Your Realm. <span>Defend Your Resources.</span></h2>
+  <p class="lead">
+    The new Realm PvP system
+    includes defensive mechanics
+    as well as opportunities
+    to capture resources.
+  </p>
+
+  <div class="feature-grid">
+
+    <article class="feature">
+      <span class="feature-number">01</span>
+      <h3>Shields</h3>
+      <p>
+        Shields are confirmed
+        as part of the new
+        Realm PvP features.
+        They will contribute
+        to Realm defense,
+        although their exact
+        activation rules
+        and limitations
+        have not been detailed.
+      </p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">02</span>
+      <h3>Wall Garrison</h3>
+      <p>
+        Players will be able
+        to station troops
+        as a <strong>Garrison
+        on the Wall</strong>.
+      </p>
+      <p>
+        This introduces an
+        important defensive
+        component to Realm battles.
+      </p>
+    </article>
+
+    <article class="feature gold">
+      <span class="feature-number">03</span>
+      <h3>Resource Capture</h3>
+      <p>
+        Players will be able
+        to capture resources
+        during Realm PvP battles.
+      </p>
+      <p>
+        The exact capture
+        conditions, quantities
+        and restrictions
+        remain unannounced.
+      </p>
+    </article>
+
+    <article class="feature gold">
+      <span class="feature-number">04</span>
+      <h3>Guild Defense Coordination</h3>
+      <p>
+        Defending a Realm
+        becomes part of the
+        broader Guild Versus
+        competition.
+      </p>
+      <p>
+        Communication and
+        organized preparation
+        could become increasingly
+        valuable as the
+        new system develops.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="coordination">
+  <span class="kicker">08 / NEW MOVEMENT &amp; COORDINATION TOOLS</span>
+  <h2>Guild Mobility <span>Gets New Options.</span></h2>
+  <p class="lead">
+    Several new items
+    and coordination features
+    are planned to support
+    inter-server Guild battles.
+  </p>
+
+  <div class="item-grid">
+
+    <div class="item">
+      <b>Inter-Server Teleport</b>
+      <p>Supports travel between servers for the new competition.</p>
+    </div>
+
+    <div class="item">
+      <b>Random Teleport</b>
+      <p>Introduces another movement option for Realm PvP.</p>
+    </div>
+
+    <div class="item">
+      <b>Guild Teleport</b>
+      <p>Provides a movement tool intended to support Guild coordination.</p>
+    </div>
+
+    <div class="item">
+      <b>Guild Tag System</b>
+      <p>Adds a system designed to help Guild members organize their activities.</p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Details pending:</strong>
+    Exact item availability,
+    costs, cooldowns,
+    teleport restrictions
+    and Guild tag mechanics
+    have not been specified.
+  </div>
+</section>
+
+<section class="section" id="capital">
+  <span class="kicker">09 / COMING SHORTLY AFTERWARD</span>
+  <h2>The Server Capital. <span>A New Seat of Power.</span></h2>
+  <p class="lead">
+    A new Fort will become
+    the Capital of the server,
+    introducing a competition
+    for control and a
+    new Presidency system.
+  </p>
+
+  <div class="capital">
+
+    <div class="capital-crown">♛</div>
+
+    <h3>Who Will Rule the Server?</h3>
+
+    <p>
+      Players will be able
+      to compete for control
+      of the Server Capital
+      and the opportunity
+      to become
+      <strong>President of their server</strong>.
+      The position will offer
+      powerful bonuses
+      for the President
+      and their allies.
+    </p>
+
+    <div class="capital-benefits">
+
+      <div class="capital-benefit">
+        <b>SERVER PRESIDENCY</b>
+        <span>
+          Compete for the position
+          of President through
+          the new Capital system.
+        </span>
+      </div>
+
+      <div class="capital-benefit">
+        <b>PRESIDENT BONUSES</b>
+        <span>
+          Unlock bonuses
+          for the President
+          and their allies.
+        </span>
+      </div>
+
+      <div class="capital-benefit">
+        <b>MINISTER APPOINTMENTS</b>
+        <span>
+          Appoint Ministers
+          from any Guild
+          on the server.
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="feature-grid">
+
+    <article class="feature gold">
+      <span class="feature-number">01</span>
+      <h3>Ministers From Any Guild</h3>
+      <p>
+        The President will
+        be able to appoint
+        Ministers from
+        <strong>any Guild on the server</strong>.
+      </p>
+      <p>
+        These Ministers can
+        receive additional bonuses,
+        creating opportunities
+        for cooperation
+        between different Guilds.
+      </p>
+    </article>
+
+    <article class="feature">
+      <span class="feature-number">02</span>
+      <h3>A New Political Dimension</h3>
+      <p>
+        The Capital system
+        could encourage competition,
+        alliances and cooperation
+        across Guild boundaries.
+      </p>
+      <p>
+        How this develops
+        will depend on the
+        final rules and
+        the decisions made
+        by players.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note gold">
+    <strong>Not yet confirmed:</strong>
+    The developers have not
+    explained the exact
+    Fort capture rules,
+    how the President
+    will be determined,
+    the numerical bonuses
+    or the final release date.
+  </div>
+</section>
+
+<section class="section" id="unknown">
+  <span class="kicker">10 / INFORMATION STILL PENDING</span>
+  <h2>What We <span>Still Need to Know.</span></h2>
+  <p class="lead">
+    The roadmap confirms
+    several major features,
+    but some important details
+    are still missing.
+    These should not be treated
+    as established mechanics
+    until the developers
+    provide more information.
+  </p>
+
+  <div class="unknown-grid">
+
+    <div class="unknown">
+      <b>Level 30 Upgrade Costs</b>
+      <p>
+        Exact resource requirements,
+        upgrade times and
+        building benefits
+        have not been announced.
+      </p>
+    </div>
+
+    <div class="unknown">
+      <b>Research &amp; Faction Bonuses</b>
+      <p>
+        The exact statistics,
+        research branches,
+        progression requirements
+        and Faction building
+        effects remain unknown.
+      </p>
+    </div>
+
+    <div class="unknown">
+      <b>Realm PvP Combat Rules</b>
+      <p>
+        Detailed attack rules,
+        Shield restrictions,
+        Garrison interactions
+        and resource capture
+        conditions are pending.
+      </p>
+    </div>
+
+    <div class="unknown">
+      <b>Server Capital &amp; Presidency</b>
+      <p>
+        The exact Fort capture
+        mechanics, Presidency
+        selection rules,
+        bonus values and
+        release date
+        have not been confirmed.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="verdict">
+  <div class="verdict">
+
+    <span class="kicker">11 / OLYMPUS ALLIANCE — FINAL OVERVIEW</span>
+
+    <h2>The Realm Is Entering a New Chapter.</h2>
+
+    <p>
+      At the <strong>end of October</strong>,
+      the Realm is expected to receive
+      a visual makeover,
+      more convenient game-mode access
+      and new buildings.
+    </p>
+
+    <p>
+      During <strong>November</strong>,
+      building progression expands
+      to Level 30,
+      the Research Center
+      receives additional branches,
+      new Faction buildings arrive
+      and Guild Versus introduces
+      inter-server Realm PvP.
+    </p>
+
+    <p>
+      <strong>Shortly afterward</strong>,
+      the Server Capital
+      and Presidency system
+      are planned to introduce
+      another layer of competition
+      and cooperation.
+    </p>
+
+    <p>
+      This roadmap has the potential
+      to make Guild communication,
+      planning and teamwork
+      more important than ever.
+      But the final impact
+      will depend on the
+      mechanics and numerical
+      details that are still
+      awaiting confirmation.
+    </p>
+
+    <p>
+      <strong>
+        Olympus Alliance will continue
+        following these developments
+        as new official information
+        becomes available.
+      </strong>
+    </p>
+
+    <div class="source-note">
+      <strong>Editorial note:</strong>
+      This article is based on the
+      developer roadmap as presented
+      in the Olympus Alliance coverage.
+      Release windows refer to
+      the announced schedule
+      and may change.
+      Features without published
+      numerical details are
+      intentionally described
+      without invented values.
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Gods of Alliance • Original Coverage by Olympus Alliance • Hero Wars: Alliance
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
