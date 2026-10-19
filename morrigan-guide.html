@@ -1,0 +1,1196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Morrigan Complete Hero Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Morrigan guide for Hero Wars Alliance. Learn her skeleton mechanics, Eternity synergies, skill priorities, skins, glyphs, artifacts, talismans, best teammates and counters.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/morrigan-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Morrigan — Complete Hero Guide">
+<meta property="og:description" content="Master Morrigan's skeleton army, healing, damage sharing, Necromancy, builds, Eternity teams and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/morrigan-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/morrigan-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root{
+  --bg:#060c0e;
+  --panel:#101c20;
+  --panel2:#14262a;
+  --green:#75e5bb;
+  --green2:#34b98e;
+  --gold:#eac47a;
+  --white:#f3f8f7;
+  --muted:#a9c1bc;
+  --line:rgba(117,229,187,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(ellipse at 80% 0%,rgba(24,117,95,.15),transparent 34%),
+    linear-gradient(180deg,#0a1517,#060c0e 50%,#040809);
+  color:var(--white);
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  line-height:1.8;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+strong{color:#fff}
+.hero{
+  min-height:710px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero-bg{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(4,10,11,.04) 0%,rgba(4,10,11,.12) 38%,rgba(4,10,11,.79) 66%,#060c0e 100%),
+    linear-gradient(180deg,transparent 45%,#060c0e 100%),
+    url("Images/Hero-Guides/morrigan-guide.jpg") center/cover no-repeat;
+}
+.hero-inner{
+  position:relative;
+  z-index:1;
+  width:min(1280px,calc(100% - 50px));
+  margin:auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:110px 0 90px;
+}
+.hero-copy{width:min(560px,100%)}
+.kicker{
+  display:inline-block;
+  color:var(--green);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.19em;
+  text-transform:uppercase;
+}
+.hero .kicker{
+  padding:8px 12px;
+  background:rgba(4,14,15,.85);
+  border:1px solid rgba(117,229,187,.35);
+  border-radius:5px;
+  margin-bottom:20px;
+}
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(55px,7vw,100px);
+  line-height:1;
+  letter-spacing:-.055em;
+  text-shadow:0 6px 25px #000;
+  margin-bottom:21px;
+}
+.hero h1 em{
+  display:block;
+  font-style:normal;
+  color:var(--green);
+}
+.hero p{
+  color:#d2e8e2;
+  font-size:14px;
+  line-height:1.95;
+  text-shadow:0 2px 12px #000;
+}
+.hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:26px;
+}
+.hero-tags span{
+  padding:9px 12px;
+  border:1px solid rgba(117,229,187,.3);
+  border-radius:5px;
+  background:rgba(5,17,18,.85);
+  color:var(--green);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.06em;
+}
+.layout{
+  width:min(1160px,calc(100% - 40px));
+  margin:auto;
+  padding:70px 0 100px;
+}
+.section{
+  margin-bottom:85px;
+  scroll-margin-top:25px;
+}
+.section h2{
+  font-size:clamp(29px,4vw,46px);
+  line-height:1.2;
+  letter-spacing:-.04em;
+  margin:12px 0 19px;
+}
+.section h2 span{color:var(--green)}
+.lead{
+  color:#b5ccc6;
+  font-size:14px;
+  line-height:1.95;
+  max-width:940px;
+}
+.intro-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:25px;
+}
+.prose{
+  color:#b5cbc6;
+  font-size:13px;
+  line-height:1.95;
+}
+.prose p+p{margin-top:16px}
+.intel{
+  border:1px solid rgba(117,229,187,.3);
+  border-radius:11px;
+  padding:27px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(117,229,187,.09),transparent 60%),
+    #101d20;
+}
+.intel h3{
+  color:var(--green);
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin-bottom:15px;
+}
+.intel-row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:12px 0;
+  border-top:1px solid rgba(255,255,255,.075);
+  color:#a5bdb8;
+  font-size:12px;
+}
+.intel-row strong{text-align:right}
+.toc{
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:26px;
+  background:#101d20;
+  margin:55px 0 85px;
+}
+.toc-title{
+  color:var(--green);
+  font-size:10px;
+  font-weight:950;
+  letter-spacing:.18em;
+  margin-bottom:17px;
+}
+.toc-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.toc-grid a{
+  padding:13px;
+  background:rgba(117,229,187,.04);
+  border:1px solid rgba(117,229,187,.14);
+  border-radius:6px;
+  font-size:12px;
+  font-weight:800;
+  transition:.2s;
+}
+.toc-grid a:hover{
+  border-color:var(--green);
+  background:rgba(117,229,187,.1);
+}
+.toc-grid small{
+  display:block;
+  color:var(--green2);
+  font-size:9px;
+  margin-bottom:4px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+  margin-top:27px;
+}
+.card{
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:11px;
+  background:linear-gradient(145deg,#15262a,#0c171a);
+}
+.card.gold{
+  border-color:rgba(234,196,122,.3);
+  background:
+    radial-gradient(circle at 100% 0%,rgba(234,196,122,.07),transparent 60%),
+    linear-gradient(145deg,#202827,#0c171a);
+}
+.card-number{
+  display:block;
+  color:var(--green);
+  font-family:Georgia,serif;
+  font-size:32px;
+  margin-bottom:8px;
+}
+.card.gold .card-number{color:var(--gold)}
+.card h3{
+  font-size:21px;
+  line-height:1.3;
+  margin-bottom:12px;
+}
+.card p,.card li{
+  color:#b5c9c4;
+  font-size:12px;
+  line-height:1.95;
+}
+.card p+p{margin-top:12px}
+.card ul{
+  padding-left:18px;
+  margin-top:12px;
+}
+.note{
+  padding:21px 24px;
+  margin-top:24px;
+  border-left:3px solid var(--green);
+  border-radius:0 7px 7px 0;
+  background:rgba(117,229,187,.065);
+  color:#c8e2da;
+  font-size:12px;
+  line-height:1.95;
+}
+.note.gold{
+  border-left-color:var(--gold);
+  background:rgba(234,196,122,.075);
+  color:#e3d7bc;
+}
+.table-wrap{
+  margin-top:27px;
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:11px;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:610px;
+  background:#0e1a1d;
+}
+th{
+  padding:17px 19px;
+  background:#182c2d;
+  color:var(--green);
+  font-size:11px;
+  text-align:left;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+td{
+  padding:17px 19px;
+  border-top:1px solid rgba(117,229,187,.1);
+  color:#bbcfca;
+  font-size:12px;
+  vertical-align:top;
+  line-height:1.85;
+}
+td:first-child{
+  color:#fff;
+  font-weight:800;
+}
+.rank{
+  display:inline-block;
+  min-width:27px;
+  color:var(--gold);
+  font-weight:950;
+}
+.feature{
+  padding:34px;
+  margin-top:25px;
+  border:1px solid rgba(117,229,187,.28);
+  border-radius:11px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(117,229,187,.09),transparent 55%),
+    #101e20;
+}
+.feature h3{
+  font-family:Georgia,serif;
+  font-size:28px;
+  color:var(--green);
+  margin-bottom:15px;
+}
+.feature p{
+  color:#c2d6d0;
+  font-size:13px;
+  line-height:1.95;
+}
+.feature p+p{margin-top:14px}
+.video-box{
+  margin-top:28px;
+  border:1px solid rgba(117,229,187,.3);
+  border-radius:12px;
+  overflow:hidden;
+  background:#000;
+}
+.video-frame{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+}
+.video-frame iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+.video-caption{
+  padding:17px 20px;
+  color:#b5ccc6;
+  background:#101d20;
+  font-size:12px;
+}
+.video-caption a{
+  color:var(--green);
+  font-weight:800;
+}
+.verdict{
+  padding:38px;
+  border:1px solid rgba(234,196,122,.35);
+  border-radius:12px;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(234,196,122,.1),transparent 60%),
+    linear-gradient(145deg,#1b2827,#0b1719);
+}
+.verdict h2{
+  font-family:Georgia,serif;
+  font-size:clamp(30px,4vw,44px);
+  color:var(--gold);
+  margin:12px 0 20px;
+}
+.verdict p{
+  color:#c7d7d1;
+  font-size:13px;
+  line-height:1.95;
+}
+.verdict p+p{margin-top:14px}
+footer{
+  padding:35px 20px;
+  border-top:1px solid var(--line);
+  background:#040809;
+  color:#78938b;
+  text-align:center;
+  font-size:11px;
+}
+@media(max-width:950px){
+  .intro-grid{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .hero{min-height:710px}
+  .hero-bg{
+    background:
+      linear-gradient(180deg,rgba(4,10,11,.08),rgba(4,10,11,.55) 48%,#060c0e 100%),
+      url("Images/Hero-Guides/morrigan-guide.jpg") 32% center/cover no-repeat;
+  }
+  .hero-inner{
+    width:calc(100% - 34px);
+    justify-content:center;
+    padding:350px 0 55px;
+  }
+  .hero-copy{text-align:center}
+  .hero-tags{justify-content:center}
+  .layout{width:calc(100% - 30px);padding:50px 0 75px}
+  .grid{grid-template-columns:1fr}
+  .toc-grid{grid-template-columns:repeat(2,1fr)}
+  .card,.feature,.verdict{padding:23px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="kicker">GODS OF ALLIANCE • COMPLETE HERO GUIDE</span>
+      <h1>MORRIGAN <em>FULL GUIDE</em></h1>
+      <p>
+        The Undead Princess commands an army of skeletons,
+        protects her allies through damage sharing,
+        strengthens Way of Eternity teams and
+        disrupts resurrection mechanics.
+        Discover how to build Morrigan and
+        make every part of her kit work together.
+      </p>
+      <div class="hero-tags">
+        <span>HEALER</span>
+        <span>WAY OF ETERNITY</span>
+        <span>MIDDLE LINE</span>
+        <span>SUMMONS &amp; SUPPORT</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="layout">
+
+<section class="section" id="overview">
+  <div class="intro-grid">
+    <div>
+      <span class="kicker">01 / HERO OVERVIEW</span>
+      <h2>The Undead Princess. <span>An Army of Protection.</span></h2>
+      <div class="prose">
+        <p>
+          Morrigan is a middle-line Healer from the
+          <strong>Way of Eternity</strong>. Her abilities
+          combine skeleton summons, healing, defensive buffs,
+          damage sharing and resurrection control.
+        </p>
+        <p>
+          Unlike a conventional healer, Morrigan's value
+          depends heavily on the interaction between her
+          summoned skeletons and the heroes fighting alongside them.
+          Her army creates additional frontline targets while
+          helping important Eternity allies withstand incoming damage.
+        </p>
+        <p>
+          <strong>Magic Attack</strong> is central to her skill
+          scaling, while Health and defensive statistics help
+          her survive long enough to maintain that support.
+        </p>
+        <p>
+          This Gods of Alliance guide covers her four skills,
+          upgrade priorities, artifacts, talismans,
+          team compositions and practical counters.
+        </p>
+      </div>
+    </div>
+
+    <aside class="intel">
+      <h3>Hero Intelligence</h3>
+      <div class="intel-row"><span>Hero</span><strong>Morrigan</strong></div>
+      <div class="intel-row"><span>Game</span><strong>Hero Wars: Alliance</strong></div>
+      <div class="intel-row"><span>Faction</span><strong>Way of Eternity</strong></div>
+      <div class="intel-row"><span>Role</span><strong>Healer</strong></div>
+      <div class="intel-row"><span>Position</span><strong>Middle Line</strong></div>
+      <div class="intel-row"><span>Main Scaling</span><strong>Magic Attack</strong></div>
+      <div class="intel-row"><span>Specialty</span><strong>Skeleton Army</strong></div>
+      <div class="intel-row"><span>Guide</span><strong>Gods of Alliance</strong></div>
+    </aside>
+  </div>
+</section>
+
+<nav class="toc" aria-label="Morrigan guide contents">
+  <div class="toc-title">MORRIGAN — COMPLETE GUIDE CONTENTS</div>
+  <div class="toc-grid">
+    <a href="#skills"><small>02</small>Skills &amp; Mechanics</a>
+    <a href="#interaction"><small>03</small>How Her Kit Works</a>
+    <a href="#skins"><small>04</small>Skin Priority</a>
+    <a href="#glyphs"><small>05</small>Glyph Priority</a>
+    <a href="#artifacts"><small>06</small>Artifacts</a>
+    <a href="#talismans"><small>07</small>Talismans</a>
+    <a href="#teams"><small>08</small>Team Synergies</a>
+    <a href="#counters"><small>09</small>Counters</a>
+    <a href="#video"><small>10</small>Video Guide</a>
+    <a href="#verdict"><small>11</small>Final Strategy</a>
+  </div>
+</nav>
+
+<section class="section" id="skills">
+  <span class="kicker">02 / COMPLETE SKILL BREAKDOWN</span>
+  <h2>Four Skills. <span>One Defensive System.</span></h2>
+  <p class="lead">
+    Morrigan's abilities are interconnected.
+    Her skeleton army supports the healing,
+    protection and damage-sharing mechanics
+    that make her particularly valuable in Eternity teams.
+  </p>
+
+  <div class="grid">
+    <article class="card gold">
+      <span class="card-number">01</span>
+      <h3>Army of Graven</h3>
+      <p>
+        Summons <strong>six frontline skeletons</strong>.
+        Morrigan can control a maximum of
+        <strong>ten skeletons</strong> at once.
+      </p>
+      <p>
+        The summons are treated as
+        <strong>Eternity Heroes</strong>.
+        They inherit Morrigan's Armor and Magic Defense
+        when summoned, while Magic Attack determines
+        the skill's scaling.
+      </p>
+      <p>
+        The skeletons provide additional frontline targets,
+        helping redirect enemy pressure away from allies.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">02</span>
+      <h3>Bone Armor</h3>
+      <p>
+        Summons <strong>two skeletons</strong> and grants
+        Armor, Magic Defense and healing for
+        <strong>eight seconds</strong>.
+      </p>
+      <p>
+        Eternity allies receive the full effect.
+        Heroes from other factions receive
+        <strong>half the effect</strong>.
+      </p>
+      <p>
+        This creates a clear advantage for Eternity-based
+        compositions, although Morrigan can still
+        contribute to mixed teams.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">03</span>
+      <h3>Empathy of Eternity</h3>
+      <p>
+        Summons <strong>two skeletons</strong> and
+        applies Empathy to allied Eternity Heroes
+        for <strong>ten seconds</strong>.
+      </p>
+      <p>
+        During this period, part of the damage
+        those allies receive is distributed
+        evenly among Morrigan's skeletons.
+      </p>
+      <p>
+        Keeping the skeleton army alive is therefore
+        essential to maintaining her defensive value.
+      </p>
+    </article>
+
+    <article class="card gold">
+      <span class="card-number">04</span>
+      <h3>Necromancy</h3>
+      <p>
+        Whenever an enemy dies, Morrigan summons
+        a skeleton from their body.
+        She also <strong>prevents resurrection attempts</strong>
+        on the battlefield.
+      </p>
+      <p>
+        An enemy resurrection attempt grants her
+        a <strong>Soul Essence</strong> charge.
+        When an ally dies, Morrigan can spend
+        a charge to resurrect them.
+      </p>
+      <p>
+        Resurrection is conditional:
+        Morrigan needs Soul Essence and does not
+        automatically revive every fallen ally.
+      </p>
+    </article>
+  </div>
+
+  <div class="note gold">
+    <strong>Important mechanic:</strong>
+    Morrigan's resurrection control is especially valuable
+    against enemies that attempt to revive.
+    Without enemy resurrection attempts,
+    that part of her kit has fewer opportunities
+    to contribute.
+  </div>
+</section>
+
+<section class="section" id="interaction">
+  <span class="kicker">03 / UNDERSTANDING THE MECHANICS</span>
+  <h2>Why the Skeleton Army <span>Matters.</span></h2>
+
+  <div class="feature">
+    <h3>Summon. Sustain. Protect.</h3>
+    <p>
+      <strong>Army of Graven</strong> establishes Morrigan's
+      frontline skeleton presence.
+      <strong>Bone Armor</strong> adds defensive bonuses
+      and healing, while
+      <strong>Empathy of Eternity</strong> turns
+      her summons into a damage-sharing system
+      for allied Eternity Heroes.
+    </p>
+    <p>
+      The skeletons are not simply extra attackers.
+      They help distribute incoming pressure
+      that would otherwise remain on the team's
+      important heroes.
+    </p>
+    <p>
+      The summons can also receive certain shields
+      from allies such as
+      <strong>Julius, Judge and Isaac</strong>.
+      Those interactions may help the army
+      remain active for longer.
+    </p>
+  </div>
+
+  <div class="grid">
+    <article class="card">
+      <span class="card-number">MAGIC</span>
+      <h3>Magic Attack Scaling</h3>
+      <p>
+        Magic Attack supports the effectiveness
+        of Morrigan's abilities.
+        Improving this statistic strengthens
+        her contribution beyond ordinary damage.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">SURVIVAL</span>
+      <h3>Defensive Investment</h3>
+      <p>
+        Health and defensive statistics
+        help Morrigan remain active.
+        A support hero who falls too early
+        cannot maintain her army,
+        healing or protection.
+      </p>
+    </article>
+  </div>
+
+  <div class="note">
+    <strong>Faction consideration:</strong>
+    Morrigan naturally favors Way of Eternity teams
+    because Bone Armor gives those allies its full effect,
+    and Empathy specifically protects allied Eternity Heroes.
+  </div>
+</section>
+
+<section class="section" id="skins">
+  <span class="kicker">04 / UPGRADE PRIORITIES</span>
+  <h2>Morrigan <span>Skin Priority.</span></h2>
+  <p class="lead">
+    Our recommended order develops her Magic Attack first,
+    then reinforces her survivability.
+    Defensive priorities can be adjusted
+    according to the opponents your team faces.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Skin</th>
+          <th>Stat</th>
+          <th>Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="rank">01</span> Spring</td>
+          <td>Spring Skin</td>
+          <td>Magic Attack</td>
+          <td>Strengthens the statistic driving Morrigan's support abilities.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">02</span> Winter</td>
+          <td>Winter Skin</td>
+          <td>Magic Attack</td>
+          <td>Continues improving the scaling of her skills.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">03</span> Dark Depths</td>
+          <td>Dark Depths Skin</td>
+          <td>Health</td>
+          <td>Improves survival against pressure reaching the middle line or multiple targets.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">04</span> Romantic</td>
+          <td>Romantic Skin / Skin+</td>
+          <td>Magic Reflection</td>
+          <td>Provides a chance to negate incoming magical damage and reflect it to the attacker.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">05</span> Default</td>
+          <td>Default Skin</td>
+          <td>Intelligence</td>
+          <td>Contributes Magic Attack and Magic Defense.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">06</span> Lunar</td>
+          <td>Lunar Skin</td>
+          <td>Armor</td>
+          <td>Adds protection against physical damage.</td>
+        </tr>
+        <tr>
+          <td><span class="rank">07</span> Flames of Jade</td>
+          <td>Flames of Jade / Skin+</td>
+          <td>Toughness</td>
+          <td>Helps reduce incoming damage when Morrigan falls below half Health.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note gold">
+    <strong>Skin strategy:</strong>
+    Prioritize the Magic Attack skins first,
+    then develop survivability.
+    Magic Reflection is chance-based,
+    so its activation should not be treated
+    as guaranteed protection.
+  </div>
+</section>
+
+<section class="section" id="glyphs">
+  <span class="kicker">05 / GLYPH DEVELOPMENT</span>
+  <h2>Recommended <span>Glyph Order.</span></h2>
+  <p class="lead">
+    This starting priority gives Morrigan
+    enough durability to use her abilities,
+    then strengthens her Magic Attack
+    and remaining defensive statistics.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Priority</th>
+          <th>Glyph</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01</td>
+          <td>Health</td>
+          <td>Provides the survival foundation needed to maintain support.</td>
+        </tr>
+        <tr>
+          <td>02</td>
+          <td>Magic Attack</td>
+          <td>Improves the scaling of Morrigan's abilities.</td>
+        </tr>
+        <tr>
+          <td>03</td>
+          <td>Intelligence</td>
+          <td>Supports Magic Attack and Magic Defense.</td>
+        </tr>
+        <tr>
+          <td>04</td>
+          <td>Magic Defense</td>
+          <td>Strengthens protection against magical pressure.</td>
+        </tr>
+        <tr>
+          <td>05</td>
+          <td>Armor</td>
+          <td>Provides additional physical protection.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <strong>First checkpoint:</strong>
+    Bring all five glyphs to
+    <strong>Level 40</strong> as your initial
+    development target.
+  </div>
+</section>
+
+<section class="section" id="artifacts">
+  <span class="kicker">06 / ARTIFACT DEVELOPMENT</span>
+  <h2>Recommended <span>Artifact Priority.</span></h2>
+  <p class="lead">
+    Build Morrigan's personal support foundation
+    before prioritizing her team-wide offensive contribution.
+  </p>
+
+  <div class="grid">
+    <article class="card gold">
+      <span class="card-number">01</span>
+      <h3>Artifact Book</h3>
+      <p>
+        Provides <strong>Magic Attack and Health</strong>.
+        This combination directly supports
+        her abilities while improving survivability.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">02</span>
+      <h3>Artifact Ring</h3>
+      <p>
+        Adds <strong>Intelligence</strong>,
+        contributing Magic Attack
+        and Magic Defense.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">03</span>
+      <h3>Artifact Weapon</h3>
+      <p>
+        Grants team-wide
+        <strong>Armor Penetration</strong>
+        when Army of Graven activates.
+        This can benefit allied physical damage dealers.
+      </p>
+    </article>
+
+    <article class="card gold">
+      <span class="card-number">MAX</span>
+      <h3>Gift of the Elements</h3>
+      <p>
+        Maximize Gift of the Elements
+        to strengthen Morrigan's base statistics
+        and support her overall development.
+      </p>
+    </article>
+  </div>
+
+  <div class="note gold">
+    <strong>Recommended order:</strong>
+    Book → Ring → Weapon.
+    This establishes Morrigan's own support
+    and survival before focusing on the
+    offensive value of her Weapon.
+  </div>
+</section>
+
+<section class="section" id="talismans">
+  <span class="kicker">07 / TALISMAN OPTIONS</span>
+  <h2>Choosing Morrigan's <span>Talismans.</span></h2>
+  <p class="lead">
+    The two talisman options in this guide
+    support different defensive and scaling needs.
+    Choose according to the threats facing
+    your actual team composition.
+  </p>
+
+  <div class="grid">
+    <article class="card gold">
+      <span class="card-number">01</span>
+      <h3>Intelligence + Health</h3>
+      <p>
+        A balanced option combining
+        skill scaling, magical protection
+        and survivability.
+      </p>
+      <p>
+        <strong>Availability:</strong>
+        Eternal Frontier Shop.
+      </p>
+      <p>
+        <strong>Cost:</strong>
+        700,000 Frontier Coins.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">02</span>
+      <h3>Armor + Magic Attack</h3>
+      <p>
+        Strengthens physical protection
+        while directly improving
+        Morrigan's ability scaling.
+      </p>
+      <p>
+        <strong>Availability:</strong>
+        Special events.
+      </p>
+      <p>
+        This option is attractive when
+        physical damage creates a significant
+        survival problem.
+      </p>
+    </article>
+  </div>
+
+  <div class="note">
+    <strong>Decision rule:</strong>
+    Intelligence and Health offer a balanced foundation.
+    Armor and Magic Attack may be preferable
+    when physical pressure threatens Morrigan.
+    Test both approaches within your actual composition.
+  </div>
+</section>
+
+<section class="section" id="teams">
+  <span class="kicker">08 / TEAM BUILDING &amp; SYNERGIES</span>
+  <h2>Best Allies <span>for Morrigan.</span></h2>
+  <p class="lead">
+    Morrigan works best when her summons,
+    defensive support and faction interactions
+    contribute to the team's overall win condition.
+    Protection alone is not enough:
+    the composition must still defeat its opponent.
+  </p>
+
+  <div class="grid">
+    <article class="card gold">
+      <span class="card-number">CORVUS</span>
+      <h3>The Eternity Core</h3>
+      <p>
+        Corvus and Morrigan form a natural
+        Way of Eternity foundation.
+      </p>
+      <p>
+        Corvus holds the frontline,
+        applies pressure through Altar of Souls
+        and supports compatible allies
+        through Unity of the Damned.
+      </p>
+      <p>
+        Morrigan contributes healing,
+        defenses, skeleton summons
+        and damage sharing.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">IRIS</span>
+      <h3>Offensive Pressure</h3>
+      <p>
+        Iris adds damage to a composition
+        supported by the Corvus–Morrigan core.
+      </p>
+      <p>
+        The additional protection can give
+        the team more time to apply
+        offensive pressure.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">DRAYNE</span>
+      <h3>Execution Potential</h3>
+      <p>
+        Drayne is another offensive candidate.
+        Keeping him active creates more opportunities
+        to bring vulnerable enemies into
+        <strong>Final Verdict's</strong>
+        execution range.
+      </p>
+      <p>
+        Corvus contributes additional pressure
+        against enemy defenses.
+      </p>
+    </article>
+
+    <article class="card gold">
+      <span class="card-number">SHIELDS</span>
+      <h3>Julius, Judge &amp; Isaac</h3>
+      <p>
+        Mixed compositions can benefit
+        from shield interactions
+        involving Morrigan's skeletons.
+      </p>
+      <p>
+        Longer-lasting summons can continue
+        contributing to her defensive system.
+        However, Bone Armor is less effective
+        on allies outside Way of Eternity.
+      </p>
+    </article>
+  </div>
+
+  <div class="feature">
+    <h3>Build Around a Win Condition</h3>
+    <p>
+      Corvus and Morrigan provide a strong
+      Eternity-oriented defensive foundation,
+      but the remaining heroes must supply
+      sufficient damage and appropriate answers
+      to the opposing team.
+    </p>
+    <p>
+      Faction synergy matters, but it should
+      never replace an evaluation of
+      damage output, survival and enemy mechanics.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="counters">
+  <span class="kicker">09 / HOW TO COUNTER MORRIGAN</span>
+  <h2>Turn Her Strengths <span>Against Her.</span></h2>
+  <p class="lead">
+    Morrigan relies on defensive buffs,
+    healing and summoned units.
+    The most interesting counters target
+    those mechanics rather than simply
+    attempting to overpower her skeleton army.
+  </p>
+
+  <div class="grid">
+    <article class="card gold">
+      <span class="card-number">01</span>
+      <h3>Iris — Punishing Buffs</h3>
+      <p>
+        Morrigan's Bone Armor applies defensive buffs.
+        Those buffs can interact with
+        <strong>Iris's Inner Fire</strong> mechanic.
+      </p>
+      <p>
+        Iris can exploit the defensive support
+        Morrigan is trying to provide,
+        creating pressure through
+        an interaction within her own kit.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">02</span>
+      <h3>Celeste — Healing Interference</h3>
+      <p>
+        Celeste can interfere with Morrigan's healing.
+      </p>
+      <p>
+        When healing is blocked and converted
+        into magical damage, the recovery
+        Morrigan intends to provide
+        can become a liability.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="card-number">03</span>
+      <h3>Jet — Healing &amp; Armor Pressure</h3>
+      <p>
+        Jet can interfere with healing
+        while also reducing Armor
+        from a high-Armor target.
+      </p>
+      <p>
+        These effects can weaken
+        the defensive structure
+        Morrigan is trying to maintain.
+      </p>
+    </article>
+
+    <article class="card gold">
+      <span class="card-number">04</span>
+      <h3>Jhu — Sustained Activity</h3>
+      <p>
+        Jhu's increased attack speed
+        and ability to avoid death
+        while enraged may help him
+        withstand certain situations
+        involving Morrigan's skeletons.
+      </p>
+      <p>
+        Remaining active under pressure
+        can give his team additional time
+        to respond.
+      </p>
+    </article>
+  </div>
+
+  <div class="note gold">
+    <strong>Counter warning:</strong>
+    None of these heroes guarantees victory.
+    Morrigan's effectiveness depends on
+    her entire composition, including
+    her skeletons, healing, defensive buffs
+    and allied support.
+    Identify which part of that system
+    your team needs to disrupt.
+  </div>
+</section>
+
+<section class="section" id="video">
+  <span class="kicker">10 / GODS OF ALLIANCE VIDEO GUIDE</span>
+  <h2>Watch the <span>Complete Morrigan Guide.</span></h2>
+  <p class="lead">
+    Explore Morrigan's abilities, development priorities,
+    Eternity synergies and counters in the
+    Gods of Alliance video breakdown.
+  </p>
+
+  <div class="video-box">
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/PTxPf7Fb_d8"
+        title="Morrigan Complete Hero Guide — Gods of Alliance"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <div class="video-caption">
+      Video:
+      <a href="https://youtu.be/PTxPf7Fb_d8" target="_blank" rel="noopener noreferrer">
+        Morrigan — Complete Hero Guide | Gods of Alliance
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="verdict">
+  <div class="verdict">
+    <span class="kicker">11 / GODS OF ALLIANCE — FINAL STRATEGY</span>
+    <h2>Master the Army. Control the Fight.</h2>
+
+    <p>
+      Morrigan's strength comes from how
+      her abilities work together.
+      Her skeleton army creates frontline targets
+      and helps Eternity allies share incoming damage.
+      Bone Armor adds healing and defensive buffs,
+      while Necromancy provides powerful
+      resurrection control in the right matchup.
+    </p>
+
+    <p>
+      Develop <strong>Magic Attack</strong> to strengthen
+      her support abilities, but maintain enough
+      <strong>Health and defenses</strong>
+      to keep her active throughout the battle.
+    </p>
+
+    <p>
+      Corvus is a natural partner,
+      while heroes such as Iris and Drayne
+      can help convert that protection
+      into offensive results.
+      Shield interactions with Julius,
+      Judge and Isaac create additional possibilities,
+      with faction trade-offs to consider.
+    </p>
+
+    <p>
+      Use these upgrade priorities as a starting point.
+      Your battles should determine whether
+      the next investment needs to improve
+      her skill scaling, survivability
+      or the overall team's damage.
+    </p>
+
+    <p>
+      <strong>
+        We don't build randomly.
+        We build with intention.
+        Master the mechanics.
+        Control the fight.
+      </strong>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Gods of Alliance • Morrigan Complete Hero Guide • Hero Wars: Alliance
+</footer>
+
+<script src="goa-global.js"></script>
+</body>
+</html>
