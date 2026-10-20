@@ -1,6 +1,20 @@
 
 window.HWA_ALL_ARTICLES = [
   {
+    id: "luther-new-relics",
+    title: "LUTHER NEW RELICS",
+    type: "RELIC GUIDE",
+    category: "relics",
+    date: "2026-10-20",
+    image: "Images/HWA-All/luther-new-relics.jpg",
+    url: "luther-new-relics.html",
+    subtitle: "BUILD • UPGRADES • PRIORITY",
+    description:
+      "Discover all four of Luther's new Relics, from Righteous Retribution and recurring Gehenna to Armor Penetration and Magic Attack suppression. Explore Level 10 upgrade costs, skill interactions and six battle victories across two attacking teams.",
+    button: "READ GUIDE →"
+  },
+
+  {
     id: "guild-vs-explained",
     title: "GUILD VS EXPLAINED",
     type: "GAME MECHANICS GUIDE",
@@ -96,19 +110,5 @@ window.HWA_ALL_ARTICLES = [
     description:
       "Julius has entered the Relic system. Explore all four Legendary Relic stages, from his new emergency Shield to healing, negative-effect removal and Armor Penetration.",
     button: "READ GUIDE →"
-  },
-
-  {
-    id: "singularity-skins-analysis",
-    title: "SINGULARITY SKINS",
-    type: "SKIN ANALYSIS",
-    category: "skins",
-    date: "2026-07-01",
-    image: "Images/HWA-All/singularity-skins-analysis.png",
-    url: "singularity-skins-analysis.html",
-    subtitle: "STATS • VALUE • PRIORITY",
-    description:
-      "Eva, Nebula, Isaac, Peech, Ginger and Polaris received Singularity Skins. See what each new stat brings to the Hero and decide where your resources have the most value.",
-    button: "READ ANALYSIS →"
   }
 ];
