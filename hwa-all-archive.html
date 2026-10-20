@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,50 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>HWA All Archive | Gods of Alliance</title>
-  <meta
-    name="description"
-    content="Browse archived Gods of Alliance Hero Wars Alliance analysis, Relic Guides, Skin Analysis and battle testing."
-  >
+  <meta name="description" content="Browse archived Gods of Alliance Hero Wars Alliance analysis, Relic Guides, Skin Analysis and battle testing.">
   <meta name="robots" content="index, follow">
-
-  <link
-    rel="canonical"
-    href="https://www.godsofalliancehwa.com/hwa-all-archive.html"
-  >
+  <link rel="canonical" href="https://www.godsofalliancehwa.com/hwa-all-archive.html">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gods of Alliance">
   <meta property="og:title" content="HWA All Archive | Gods of Alliance">
-  <meta
-    property="og:description"
-    content="Browse older Hero Wars Alliance analysis from Gods of Alliance."
-  >
-  <meta
-    property="og:url"
-    content="https://www.godsofalliancehwa.com/hwa-all-archive.html"
-  >
-  <meta
-    property="og:image"
-    content="https://www.godsofalliancehwa.com/goa-banner.jpg"
-  >
-  <meta
-    property="og:image:alt"
-    content="Gods of Alliance"
-  >
+  <meta property="og:description" content="Browse older Hero Wars Alliance analysis from Gods of Alliance.">
+  <meta property="og:url" content="https://www.godsofalliancehwa.com/hwa-all-archive.html">
+  <meta property="og:image" content="https://www.godsofalliancehwa.com/goa-banner.jpg">
+  <meta property="og:image:alt" content="Gods of Alliance">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta
-    name="twitter:title"
-    content="HWA All Archive | Gods of Alliance"
-  >
-  <meta
-    name="twitter:description"
-    content="Browse older Hero Wars Alliance analysis from Gods of Alliance."
-  >
-  <meta
-    name="twitter:image"
-    content="https://www.godsofalliancehwa.com/goa-banner.jpg"
-  >
+  <meta name="twitter:title" content="HWA All Archive | Gods of Alliance">
+  <meta name="twitter:description" content="Browse older Hero Wars Alliance analysis from Gods of Alliance.">
+  <meta name="twitter:image" content="https://www.godsofalliancehwa.com/goa-banner.jpg">
 
   <style>
     * {
@@ -394,17 +367,13 @@
 
   <header>
     <div class="header-inner">
-
       <a class="brand" href="index.html">
         GODS <span>OF ALLIANCE</span>
       </a>
-
     </div>
   </header>
 
-
   <section class="hero">
-
     <div class="eyebrow">
       GODS OF ALLIANCE
     </div>
@@ -418,34 +387,20 @@
     </p>
 
     <div class="gold-line"></div>
-
   </section>
-
 
   <main>
 
     <div class="archive-top">
-
       <div class="section-heading">
-
         <h2>OLDER ANALYSIS</h2>
-
-        <p>
-          EXPLORE THE HWA ALL LIBRARY
-        </p>
-
+        <p>EXPLORE THE HWA ALL LIBRARY</p>
       </div>
 
-
-      <a
-        class="back-link"
-        href="hwa-all.html"
-      >
+      <a class="back-link" href="hwa-all.html">
         ← BACK TO HWA ALL
       </a>
-
     </div>
-
 
     <div class="filters">
 
@@ -479,38 +434,30 @@
 
     </div>
 
-
     <div
       class="article-grid"
       id="archiveArticles"
     ></div>
 
-
     <div
       class="empty-state"
       id="emptyState"
     >
-
       <h3>THE ARCHIVE IS CURRENTLY EMPTY</h3>
 
       <p>
-        HWA All currently has fewer than 11 articles.
-        Once the library grows beyond the 10 most recent articles,
-        older analysis will automatically appear here.
+        Archived Gods of Alliance articles
+        will appear here.
       </p>
-
     </div>
 
   </main>
-
 
   <footer>
     GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
   </footer>
 
-
   <script src="hwa-all-data.js"></script>
-
 
   <script>
     (function () {
@@ -525,6 +472,35 @@
         document.querySelectorAll(".filter-button");
 
 
+      /*
+        Articles kept permanently in the archive.
+
+        These articles do not appear in the
+        main HWA ALL list and do not depend
+        on the 10-article limit.
+      */
+
+      const permanentArchive = [
+        {
+          id: "singularity-skins-analysis",
+          title: "SINGULARITY SKINS",
+          type: "SKIN ANALYSIS",
+          category: "skins",
+          date: "2026-07-01",
+          image: "Images/HWA-All/singularity-skins-analysis.png",
+          url: "singularity-skins-analysis.html",
+          subtitle: "STATS • VALUE • PRIORITY",
+          description:
+            "Eva, Nebula, Isaac, Peech, Ginger and Polaris received Singularity Skins. See what each new stat brings to the Hero and decide where your resources have the most value.",
+          button: "READ ANALYSIS →"
+        }
+      ];
+
+
+      /*
+        Articles shared with the main HWA ALL page.
+      */
+
       const allArticles =
         Array.isArray(window.HWA_ALL_ARTICLES)
           ? [...window.HWA_ALL_ARTICLES]
@@ -538,11 +514,38 @@
 
       /*
         The first 10 articles belong to the main HWA ALL page.
-        Everything after article 10 belongs to the Archive.
+
+        Everything after article 10 automatically
+        belongs to the Archive.
+
+        Permanent archive articles are also included,
+        even when the main list has fewer than 11 articles.
       */
 
-      const archivedArticles =
+      const automaticArchive =
         allArticles.slice(10);
+
+
+      /*
+        Combine permanent and automatic archives.
+
+        Prevent duplicate cards if an article
+        accidentally exists in both collections.
+      */
+
+      const archivedArticles = [
+        ...permanentArchive,
+        ...automaticArchive
+      ].filter(function (article, index, articles) {
+        return articles.findIndex(function (item) {
+          return item.id === article.id;
+        }) === index;
+      });
+
+
+      archivedArticles.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
 
 
       function renderArticles(filter) {
@@ -562,16 +565,15 @@
 
           emptyState.style.display = "block";
 
+
           if (archivedArticles.length === 0) {
 
             emptyState.innerHTML = `
               <h3>THE ARCHIVE IS CURRENTLY EMPTY</h3>
 
               <p>
-                HWA All currently has fewer than 11 articles.
-                Once the library grows beyond the 10 most recent
-                articles, older analysis will automatically
-                appear here.
+                Archived Gods of Alliance articles
+                will appear here as the library grows.
               </p>
             `;
 
@@ -613,6 +615,7 @@
               <img
                 src="${article.image}"
                 alt="${article.title}"
+                loading="lazy"
               >
 
             </div>
@@ -675,7 +678,6 @@
 
     })();
   </script>
-
 
   <script src="goa-global.js"></script>
 
