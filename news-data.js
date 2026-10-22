@@ -1,4 +1,19 @@
+
 window.GOA_NEWS_ARTICLES = [
+  {
+    id: "wodryn-new-hero",
+    title: "WODRYN — NEW HERO",
+    label: "NEW HERO",
+    category: "heroes",
+    order: 3,
+    image: "Images/News/wodryn-new-hero.jpg",
+    url: "wodryn-new-hero.html",
+    subtitle: "NATURE TANK • OAK BARK • CRITICAL HIT CHANCE",
+    description:
+      "Meet Wodryn, the upcoming Strength-based Nature Tank. Discover his four revealed skills, cleansing and Oak Bark mechanics, Critical Hit Chance support, Magic Defense Artifacts and potential team synergies.",
+    button: "READ NEWS →"
+  },
+
   {
     id: "crow-new-talisman",
     title: "CROW — NEW TALISMAN",
