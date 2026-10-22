@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wodryn New Hero — Skills, Artifacts & First Analysis | Gods of Alliance</title>
+<meta name="description" content="Meet Wodryn, the upcoming Strength-based Nature Tank in Hero Wars Alliance. Explore Crown of Wrath, Bark Renewal, Deepwood Might, Unbowed Oak, Artifacts and potential team synergies.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/wodryn-new-hero.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="WODRYN — NEW NATURE TANK | Gods of Alliance">
+<meta property="og:description" content="Nature is awakening! Discover Wodryn's four revealed skills, Oak Bark mechanics, Critical Hit Chance support, Artifacts and potential team combinations.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/wodryn-new-hero.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/News/wodryn-new-hero.jpg">
+<meta property="og:image:alt" content="Wodryn New Hero — Gods of Alliance">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WODRYN — NEW NATURE TANK">
+<meta name="twitter:description" content="Explore the upcoming Nature Tank's skills, Oak Bark, Artifacts and team potential.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/News/wodryn-new-hero.jpg">
+
+<style>
+:root {
+  --bg: #050b08;
+  --panel: #0e1913;
+  --green: #63d98c;
+  --gold: #e8c478;
+  --text: #f2f5ee;
+  --muted: #a5b8a9;
+  --line: rgba(122, 198, 139, .19);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(29,108,65,.22), transparent 45%),
+    linear-gradient(180deg,#08130d,#050a07 50%,#030504);
+  line-height: 1.75;
+}
+a { color: var(--green); }
+.site-header {
+  background: rgba(2,9,5,.96);
+  border-bottom: 1px solid var(--line);
+  padding: 21px 6%;
+}
+.brand {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: white;
+}
+.brand span { color: var(--green); }
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(90deg,rgba(2,9,5,.78),rgba(2,9,5,.45)),
+    linear-gradient(0deg,#050b08,transparent 60%),
+    url("Images/News/wodryn-new-hero.jpg") center 35% / cover no-repeat;
+}
+.hero-inner {
+  width: min(1180px,90%);
+  margin: 0 auto;
+  padding: 100px 0 68px;
+}
+.eyebrow {
+  color: #a9f5b5;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+h1 {
+  max-width: 800px;
+  margin: 15px 0;
+  font-size: clamp(42px,7vw,82px);
+  line-height: 1.04;
+  letter-spacing: -2px;
+}
+.hero-sub {
+  color: var(--gold);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.hero-description {
+  max-width: 720px;
+  font-size: 18px;
+  color: #e0e9df;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 55px 24px 100px;
+}
+.section { margin-bottom: 65px; }
+.section-kicker {
+  font-size: 12px;
+  color: var(--green);
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+h2 {
+  font-size: clamp(27px,4vw,39px);
+  line-height: 1.2;
+  margin: 10px 0 23px;
+}
+p { color: var(--muted); }
+.lead { font-size: 18px; }
+.intro-panel, .info-card, .skill-card, .note {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(145deg,rgba(18,39,25,.88),rgba(8,17,12,.95));
+}
+.intro-panel { padding: 30px; }
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 14px;
+  margin-top: 26px;
+}
+.fact {
+  padding: 18px 12px;
+  background: rgba(0,0,0,.26);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  text-align: center;
+}
+.fact strong {
+  display: block;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.fact span { font-size: 14px; color: white; }
+.skills { display: grid; gap: 23px; }
+.skill-card {
+  padding: 32px;
+  border-left: 5px solid var(--green);
+}
+.skill-card:nth-child(2) { border-left-color: #56c9ba; }
+.skill-card:nth-child(3) { border-left-color: #c79bed; }
+.skill-card:nth-child(4) { border-left-color: var(--gold); }
+.skill-number {
+  font-size: 11px;
+  color: var(--green);
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+.skill-card:nth-child(2) .skill-number { color: #73e4d4; }
+.skill-card:nth-child(3) .skill-number { color: #c79bed; }
+.skill-card:nth-child(4) .skill-number { color: var(--gold); }
+.skill-card h3 {
+  font-size: 27px;
+  color: white;
+  margin: 7px 0 15px;
+}
+.mechanic {
+  background: rgba(0,0,0,.28);
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-top: 18px;
+}
+.mechanic strong { color: var(--gold); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.info-card { padding: 27px; }
+.info-card h3 {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 20px;
+}
+.info-card p { margin: 0; }
+.note {
+  padding: 24px 28px;
+  border-color: rgba(232,196,120,.35);
+}
+.note strong { color: var(--gold); }
+.team {
+  padding: 24px;
+  margin-bottom: 15px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(19,45,28,.45);
+}
+.team h3 { color: var(--green); margin: 0 0 8px; }
+.verdict {
+  padding: 35px;
+  border: 1px solid rgba(232,196,120,.4);
+  border-radius: 14px;
+  background: linear-gradient(140deg,rgba(37,64,34,.6),rgba(31,24,9,.65));
+}
+.verdict h2 { color: var(--gold); }
+.back {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 20px;
+  border: 1px solid var(--green);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.back:hover { background: var(--green); color: #041009; }
+footer {
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: 30px 15px;
+  color: #718e79;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+@media(max-width:700px) {
+  .hero { min-height: 480px; }
+  .hero-inner { padding: 80px 0 40px; }
+  .facts, .grid { grid-template-columns: repeat(2,1fr); }
+  .skill-card { padding: 23px; }
+}
+@media(max-width:420px) {
+  .facts, .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">GODS <span>OF ALLIANCE</span></a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">HERO WARS ALLIANCE • HERO REVEAL</div>
+    <h1>WODRYN<br>NEW HERO</h1>
+    <div class="hero-sub">THE GUARDIAN OF NATURE</div>
+    <p class="hero-description">
+      A new frontline Nature Tank combining cleansing,
+      Oak Bark, Critical Hit Chance support and defensive protection.
+    </p>
+  </div>
+</section>
+
+<main class="container">
+
+<section class="section">
+  <div class="section-kicker">NATURE IS AWAKENING</div>
+  <h2>Meet Wodryn</h2>
+
+  <div class="intro-panel">
+    <p class="lead">
+      The developers have revealed new details about Wodryn,
+      an upcoming Strength-based Tank from the Way of Nature.
+      His revealed abilities suggest a hero capable of doing
+      considerably more than simply absorbing incoming damage.
+    </p>
+
+    <p>
+      Wodryn combines damage against enemies, removal of negative effects,
+      self-healing, Energy generation, Critical Hit Chance bonuses and
+      damage reduction. These mechanics could make him an interesting
+      frontline option for both Nature compositions and teams built
+      around physical attackers.
+    </p>
+
+    <div class="facts">
+      <div class="fact"><strong>ROLE</strong><span>Tank</span></div>
+      <div class="fact"><strong>FACTION</strong><span>Way of Nature</span></div>
+      <div class="fact"><strong>MAIN STAT</strong><span>Strength</span></div>
+      <div class="fact"><strong>POSITION</strong><span>Front Line</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">OFFICIALLY REVEALED ABILITIES</div>
+  <h2>Wodryn's Four Skills Explained</h2>
+
+  <div class="skills">
+
+    <article class="skill-card">
+      <div class="skill-number">SKILL 01 • CROWN OF WRATH</div>
+      <h3>Crown of Wrath</h3>
+      <p>
+        Wodryn creates a powerful crown above the enemy team.
+        For six seconds, the crown deals damage every second.
+        The attacks generated by this ability cannot be evaded.
+      </p>
+      <div class="mechanic">
+        <strong>What makes it important?</strong>
+        <p>
+          This gives Wodryn an offensive contribution despite his
+          Tank role. The unavoidable attacks can apply repeated
+          pressure across the enemy team, including against
+          opponents that rely on evasion.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-number">SKILL 02 • BARK RENEWAL</div>
+      <h3>Bark Renewal</h3>
+      <p>
+        Wodryn removes Debuffs and Control effects from himself
+        and allies positioned behind him, then heals himself.
+      </p>
+      <p>
+        For every negative effect removed, he receives one layer
+        of Oak Bark. While Oak Bark is active, Wodryn gains
+        additional Energy whenever he takes damage.
+      </p>
+      <div class="mechanic">
+        <strong>What makes it important?</strong>
+        <p>
+          Bark Renewal combines cleansing and self-sustain with
+          a resource mechanic. Since Wodryn fights on the front line,
+          taking damage while Oak Bark is active may help him
+          generate Energy and potentially activate his Ultimate
+          more frequently.
+        </p>
+        <p>
+          The precise practical frequency of this interaction
+          remains to be established through battle testing.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-number">SKILL 03 • DEEPWOOD MIGHT</div>
+      <h3>Deepwood Might</h3>
+      <p>
+        Wodryn consumes two layers of Oak Bark to increase
+        the Critical Hit Chance of allies positioned behind him
+        for nine seconds.
+      </p>
+      <p>
+        Each consumed Oak Bark layer also permanently increases
+        Wodryn's own Critical Hit Chance for the remainder
+        of the battle.
+      </p>
+      <div class="mechanic">
+        <strong>What makes it important?</strong>
+        <p>
+          Oak Bark becomes more than an Energy-support mechanic.
+          It also fuels Critical Hit Chance bonuses for teammates
+          while improving Wodryn's own Critical Hit Chance
+          throughout the battle.
+        </p>
+        <p>
+          This could make him particularly interesting alongside
+          physical-damage heroes that benefit from Critical Hit Chance.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-number">SKILL 04 • UNBOWED OAK</div>
+      <h3>Unbowed Oak</h3>
+      <p>
+        Wodryn and the allies positioned behind him have a chance
+        to receive reduced incoming damage.
+      </p>
+      <p>
+        That chance depends on each hero's own
+        Critical Hit Chance.
+      </p>
+      <div class="mechanic">
+        <strong>What makes it important?</strong>
+        <p>
+          This creates a direct interaction with Deepwood Might.
+          Increasing Critical Hit Chance can contribute to offensive
+          potential while also influencing the chance to
+          receive reduced damage.
+        </p>
+        <p>
+          The exact damage-reduction values and practical reliability
+          have not been established by the information available
+          in this reveal.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">MECHANICS & INTERACTIONS</div>
+  <h2>Why Oak Bark Matters</h2>
+
+  <div class="grid">
+    <div class="info-card">
+      <h3>1. Cleansing Creates Oak Bark</h3>
+      <p>
+        Bark Renewal removes negative effects and grants an
+        Oak Bark layer for each effect removed.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>2. Oak Bark Supports Energy</h3>
+      <p>
+        While Oak Bark is active, damage received by Wodryn
+        generates additional Energy.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>3. Oak Bark Fuels Critical Support</h3>
+      <p>
+        Deepwood Might consumes two layers to grant
+        Critical Hit Chance to allies behind Wodryn
+        for nine seconds.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>4. Critical Chance Connects to Defense</h3>
+      <p>
+        Unbowed Oak uses each hero's Critical Hit Chance
+        to determine the chance of receiving reduced damage.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">HERO DEVELOPMENT</div>
+  <h2>Artifacts & Talisman</h2>
+
+  <div class="grid">
+
+    <div class="info-card">
+      <h3>Artifact Weapon</h3>
+      <p>
+        <strong>Magic Defense</strong>
+      </p>
+      <p>
+        An additional defensive attribute that may help
+        Wodryn and his team against magic-oriented compositions.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Grimoire of Thorns</h3>
+      <p>
+        <strong>Critical Hit Chance + Magic Defense</strong>
+      </p>
+      <p>
+        Wodryn's Artifact Book reinforces both
+        his Critical Hit Chance mechanics and Magic Defense.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Ring of Strength</h3>
+      <p>
+        <strong>Strength</strong>
+      </p>
+      <p>
+        His Artifact Ring increases his primary attribute.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Talisman of Two Forms</h3>
+      <p>
+        <strong>Strength + Toughness</strong>
+      </p>
+      <p>
+        His revealed Talisman attributes support
+        his development as a frontline Tank.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-kicker">POTENTIAL TEAM COMPOSITIONS</div>
+  <h2>Where Could Wodryn Fit?</h2>
+
+  <div class="team">
+    <h3>Nature-Oriented Teams</h3>
+    <p>
+      The developers have mentioned heroes such as
+      <strong>Oya, Alvanor, Leonel and Yasmine</strong>
+      as potential teammates.
+    </p>
+    <p>
+      Wodryn's cleansing, Magic Defense and Critical Hit Chance
+      mechanics could offer additional options for building
+      Nature compositions.
+    </p>
+  </div>
+
+  <div class="team">
+    <h3>Physical-Damage Compositions</h3>
+    <p>
+      Wodryn may also prove useful beyond the Way of Nature.
+      His Critical Hit Chance support and potential damage reduction
+      could benefit physical-damage heroes from other factions.
+    </p>
+    <p>
+      These possibilities are theoretical until actual battle
+      testing confirms which combinations perform consistently.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="note">
+    <strong>IMPORTANT — PRE-RELEASE ANALYSIS</strong>
+    <p>
+      This article is based on developer-revealed information.
+      Wodryn's real battle performance, skill activation frequency,
+      Oak Bark consistency, damage-reduction reliability and
+      strongest team combinations remain unverified.
+    </p>
+    <p>
+      No battle win rates or final build priorities are being
+      claimed at this stage.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="verdict">
+    <div class="section-kicker">GODS OF ALLIANCE • FIRST VERDICT</div>
+    <h2>A Promising New Nature Tank</h2>
+
+    <p>
+      Wodryn's revealed kit brings together several mechanics
+      that could make him much more than a conventional Tank.
+    </p>
+
+    <p>
+      Crown of Wrath introduces unavoidable offensive pressure.
+      Bark Renewal provides cleansing, healing and Oak Bark.
+      Deepwood Might converts Oak Bark into Critical Hit Chance
+      support, while Unbowed Oak links that same attribute
+      to defensive protection.
+    </p>
+
+    <p>
+      His Magic Defense Artifact Weapon and defensive
+      development attributes add further potential,
+      especially against certain magic-oriented teams.
+    </p>
+
+    <p>
+      However, the final judgment must come from real battles.
+      The effectiveness of his abilities, his strongest synergies
+      and his place in the current meta will depend on testing.
+    </p>
+
+    <p>
+      With Mushy and Shroom also receiving new Relics,
+      the Way of Nature is certainly a faction worth watching.
+    </p>
+
+    <p><strong>What do you think? Could Wodryn become a major frontline option for Nature teams?</strong></p>
+  </div>
+
+  <a class="back" href="news.html">← BACK TO NEWS</a>
+</section>
+
+</main>
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE NEWS & ANALYSIS
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
