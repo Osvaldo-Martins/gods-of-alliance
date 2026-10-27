@@ -1,0 +1,889 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Luther Full Hero Guide — Builds, Skills & Counters | Gods of Alliance</title>
+<meta name="description" content="Complete Luther guide for Hero Wars Alliance. Learn his four skills, eight skins, glyph priorities, artifacts, talismans, team synergies and positioning counters.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/luther-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="LUTHER — FULL HERO GUIDE | Gods of Alliance">
+<meta property="og:description" content="Master Luther's battlefield disruption, skills, defensive builds, artifacts, synergies and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/luther-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/luther-guide.jpg">
+<meta property="og:image:alt" content="Luther Full Hero Guide — Gods of Alliance">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LUTHER — FULL HERO GUIDE">
+<meta name="twitter:description" content="Luther skills, skins, glyphs, artifacts, talismans, team synergies and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/luther-guide.jpg">
+
+<style>
+:root {
+  --bg: #090807;
+  --panel: #17120e;
+  --gold: #efc66d;
+  --gold2: #b88b3d;
+  --red: #e5785b;
+  --text: #f5efe6;
+  --muted: #c0b5a8;
+  --line: rgba(232,184,91,.20);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(116,65,21,.20),transparent 40%),
+    linear-gradient(180deg,#100d09,#080706 50%,#050505);
+}
+a { color: var(--gold); }
+.site-header {
+  padding: 21px 6%;
+  background: rgba(6,5,4,.96);
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.brand span { color: var(--gold); }
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(90deg,rgba(8,6,4,.78),rgba(8,6,4,.35)),
+    linear-gradient(0deg,#090807,transparent 70%),
+    url("Images/Hero-Guides/luther-guide.jpg") center 35% / cover no-repeat;
+}
+.hero-inner {
+  width: min(1160px,90%);
+  margin: auto;
+  padding: 105px 0 65px;
+}
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+h1 {
+  font-size: clamp(48px,8vw,90px);
+  line-height: 1;
+  letter-spacing: -2px;
+  margin: 14px 0;
+}
+.hero-sub {
+  color: var(--gold);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.hero p {
+  max-width: 720px;
+  color: #eee2d1;
+  font-size: 18px;
+}
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 55px 24px 90px;
+}
+.section { margin-bottom: 65px; }
+.kicker {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+h2 {
+  font-size: clamp(27px,4vw,39px);
+  line-height: 1.2;
+  margin: 10px 0 22px;
+}
+h3 { line-height: 1.3; }
+p { color: var(--muted); }
+strong { color: #f6e4bf; }
+.lead { font-size: 18px; }
+.panel, .skill-card, .info-card, .priority-card, .note {
+  background: linear-gradient(145deg,rgba(34,25,16,.9),rgba(14,12,10,.96));
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+.panel { padding: 30px; }
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+.fact {
+  background: rgba(0,0,0,.3);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 17px;
+  text-align: center;
+}
+.fact strong {
+  display: block;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+.fact span { font-size: 15px; }
+.skill-grid { display: grid; gap: 20px; }
+.skill-card {
+  padding: 29px;
+  border-left: 5px solid var(--gold);
+}
+.skill-card:nth-child(2) { border-left-color: var(--red); }
+.skill-card:nth-child(3) { border-left-color: #aa8df1; }
+.skill-card:nth-child(4) { border-left-color: #7ebed5; }
+.skill-label {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.skill-card h3 {
+  color: #fff;
+  font-size: 26px;
+  margin: 8px 0 12px;
+}
+.explanation {
+  background: rgba(0,0,0,.27);
+  border-radius: 8px;
+  padding: 17px 20px;
+  margin-top: 18px;
+}
+.explanation strong { color: var(--gold); }
+.explanation p { margin-bottom: 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+}
+.info-card { padding: 25px; }
+.info-card h3 {
+  margin: 0 0 10px;
+  color: var(--gold);
+  font-size: 20px;
+}
+.info-card p { margin: 0 0 10px; }
+.info-card p:last-child { margin-bottom: 0; }
+.priority-list { display: grid; gap: 12px; }
+.priority-card {
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.rank {
+  flex: 0 0 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background: rgba(239,198,109,.12);
+  color: var(--gold);
+  border: 1px solid rgba(239,198,109,.3);
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 19px;
+}
+.priority-card h3 { margin: 0 0 5px; font-size: 18px; }
+.priority-card p { margin: 0; }
+.sequence {
+  padding: 20px 25px;
+  background: rgba(239,198,109,.08);
+  border: 1px solid rgba(239,198,109,.3);
+  border-radius: 10px;
+  color: var(--gold);
+  font-weight: 800;
+  line-height: 2;
+}
+.note {
+  padding: 24px 28px;
+  border-color: rgba(239,198,109,.35);
+}
+.video-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #000;
+}
+.video-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.verdict {
+  padding: 35px;
+  background: linear-gradient(140deg,rgba(75,47,17,.55),rgba(19,14,10,.95));
+  border: 1px solid rgba(239,198,109,.4);
+  border-radius: 14px;
+}
+.verdict h2 { color: var(--gold); }
+.back {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 28px;
+  border: 1px solid var(--gold);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.back:hover { background: var(--gold); color: #100c05; }
+footer {
+  padding: 30px 15px;
+  border-top: 1px solid var(--line);
+  color: #887968;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+@media(max-width:700px) {
+  .hero { min-height: 470px; }
+  .hero-inner { padding: 75px 0 40px; }
+  .facts, .grid { grid-template-columns: 1fr; }
+  .skill-card, .panel { padding: 22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">GODS <span>OF ALLIANCE</span></a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">HERO WARS ALLIANCE • COMPLETE HERO GUIDE</div>
+    <h1>LUTHER<br>FULL GUIDE</h1>
+    <div class="hero-sub">TANK • WAY OF HONOR • FRONT LINE</div>
+    <p>
+      Master battlefield disruption, enemy positioning,
+      defensive development and team synergy with
+      Dominion's legendary demon hunter.
+    </p>
+  </div>
+</section>
+
+<main class="container">
+
+<section class="section">
+  <div class="kicker">HERO OVERVIEW</div>
+  <h2>More Than a Frontline Tank</h2>
+  <div class="panel">
+    <p class="lead">
+      Luther is a frontline Tank from the Way of Honor.
+      His greatest strength is his ability to disrupt
+      enemy positioning and create opportunities for his allies.
+    </p>
+    <p>
+      Instead of remaining in his original frontline position,
+      Luther jumps deep into enemy territory, attracting
+      enemy attention and potentially redirecting attacks
+      and abilities away from their intended targets.
+    </p>
+    <p>
+      His stuns, positioning disruption and Magic Defense
+      allow him to interfere with opposing strategies.
+      However, his effectiveness depends heavily on
+      survivability, timing and team composition.
+    </p>
+    <div class="facts">
+      <div class="fact"><strong>ROLE</strong><span>Tank</span></div>
+      <div class="fact"><strong>FACTION</strong><span>Way of Honor</span></div>
+      <div class="fact"><strong>POSITION</strong><span>Front Line</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">SKILL BREAKDOWN</div>
+  <h2>Luther's Four Skills Explained</h2>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+      <div class="skill-label">SKILL 01 • SENTENCE</div>
+      <h3>Sentence</h3>
+      <p>
+        Luther deals Physical Damage to nearby enemies
+        and stuns them. The damage scales with Physical Attack,
+        and the skill's effectiveness depends on its level.
+        The chance to stun decreases against targets above
+        Level 120.
+      </p>
+      <p>
+        This ability cannot be copied.
+      </p>
+      <div class="explanation">
+        <strong>Why it matters</strong>
+        <p>
+          A successful stun interrupts enemy actions and
+          can delay important abilities, allowing Luther's
+          teammates to take advantage of the opening.
+        </p>
+        <p>
+          Artemis is a particularly interesting partner
+          because her Smart Arrow can react to stunned enemies,
+          converting Luther's control into offensive pressure.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">SKILL 02 • OMEN</div>
+      <h3>Omen</h3>
+      <p>
+        Luther jumps into the enemy formation and deals
+        Physical Damage to nearby opponents.
+        Although the damage scales with Physical Attack,
+        the main value of Omen is positioning disruption.
+      </p>
+      <div class="explanation">
+        <strong>Why it matters</strong>
+        <p>
+          When Luther lands behind the enemy frontline,
+          heroes in the second and third positions may turn
+          around to attack him. This can leave the opposing
+          frontline more exposed to heroes such as Qing Mao,
+          who can apply Armor reduction.
+        </p>
+        <p>
+          If Krista occupies the second position, or Jorgen
+          occupies the second or third, the jump can redirect
+          important abilities away from their intended targets.
+        </p>
+        <p>
+          If Dorian occupies the third position, the resulting
+          separation can move the two backmost heroes outside
+          his Vampirism aura, limiting their access to its support.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">SKILL 03 • GEHENNA</div>
+      <h3>Gehenna</h3>
+      <p>
+        After landing from Omen, Luther releases a wave
+        of fire that deals Physical Damage and stuns enemies
+        in front of him.
+      </p>
+      <p>
+        Damage scales with Physical Attack, while stun
+        effectiveness depends on the skill's level.
+        The chance to stun decreases against enemies
+        above Level 120.
+      </p>
+      <div class="explanation">
+        <strong>Why it matters</strong>
+        <p>
+          Omen and Gehenna create a sequence of positioning
+          disruption followed by control. This can interrupt
+          enemy actions, create opportunities for Artemis'
+          Smart Arrow and potentially interfere with
+          backline heroes such as Polaris.
+        </p>
+        <p>
+          Timing remains essential: Luther can create
+          a powerful opening, but a poorly timed jump
+          may leave him isolated.
+        </p>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">SKILL 04 • DOCTRINE OF FAITH</div>
+      <h3>Doctrine of Faith</h3>
+      <p>
+        This passive ability increases Luther's Magic Defense.
+        Whenever he receives Magic Damage, his Magic Defense
+        increases further for four seconds.
+      </p>
+      <p>
+        The additional effect scales with Physical Attack.
+        Repeated Magic Damage, including damage-over-time
+        effects, can refresh the defensive effect.
+      </p>
+      <div class="explanation">
+        <strong>Why it matters</strong>
+        <p>
+          Doctrine of Faith helps Luther withstand repeated
+          magical pressure, especially after entering
+          the opposing formation.
+        </p>
+        <p>
+          However, Magic Defense alone is not enough.
+          Luther still needs Health, Armor and overall
+          survivability to remain effective.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">SKINS & BUILD PRIORITY</div>
+  <h2>All Eight Skins — Recommended Order</h2>
+
+  <p>
+    Luther's primary responsibility is to survive while
+    disrupting enemy positioning. Our recommended progression
+    therefore prioritizes defensive attributes before
+    additional Physical Attack.
+  </p>
+
+  <div class="priority-list">
+
+    <div class="priority-card">
+      <div class="rank">01</div>
+      <div>
+        <h3>Angel Skin — Armor</h3>
+        <p>First priority. Strengthens Luther against physical attackers and helps him survive frontline pressure.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">02</div>
+      <div>
+        <h3>Casey Jones Skin — Armor</h3>
+        <p>Further improves his physical resistance, reinforcing the defensive foundation established by Angel.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">03</div>
+      <div>
+        <h3>Cybernetic Skin — Health</h3>
+        <p>Increases overall survivability against different damage types rather than protecting against only one.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">04</div>
+      <div>
+        <h3>Sport Skin — Toughness</h3>
+        <p>Supports damage reduction under relevant conditions, particularly when Luther falls below 50% Health.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">05</div>
+      <div>
+        <h3>Ocean Echo Skin — Toughness</h3>
+        <p>Reinforces the Toughness-based defensive approach when Luther faces dangerous incoming pressure.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">06</div>
+      <div>
+        <h3>Default Skin — Strength</h3>
+        <p>Improves Health and Physical Attack, contributing to both durability and skill scaling.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">07</div>
+      <div>
+        <h3>Winter Skin — Magic Defense</h3>
+        <p>Provides additional resistance to magical damage and may become more important against magic-heavy opponents.</p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">08</div>
+      <div>
+        <h3>Stellar Skin — Physical Attack</h3>
+        <p>Improves several ability calculations, but remains behind survivability in this Tank-focused progression.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note" style="margin-top:22px">
+    <strong>BUILD PHILOSOPHY</strong>
+    <p>
+      A Luther who cannot survive after jumping into the
+      enemy formation cannot maintain the disruption
+      that makes him valuable.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">GLYPH DEVELOPMENT</div>
+  <h2>Recommended Glyph Priority</h2>
+
+  <div class="sequence">
+    1. ARMOR → 2. HEALTH → 3. STRENGTH →
+    4. MAGIC DEFENSE → 5. PHYSICAL ATTACK
+  </div>
+
+  <div class="grid" style="margin-top:20px">
+    <div class="info-card">
+      <h3>Armor & Health</h3>
+      <p>
+        The two highest priorities. Armor protects against
+        physical damage, while Health increases Luther's
+        general ability to withstand attacks.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Strength</h3>
+      <p>
+        Supports Health and Physical Attack, reinforcing
+        durability and skills that scale with Physical Attack.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Magic Defense</h3>
+      <p>
+        Helps Luther survive magical pressure, complementing
+        Doctrine of Faith.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Physical Attack</h3>
+      <p>
+        Useful for skill scaling, but placed last because
+        Luther's primary job is control and survival.
+      </p>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:20px">
+    <strong>INITIAL DEVELOPMENT TARGET</strong>
+    <p>
+      Bring all five glyphs to Level 40 as an initial goal,
+      unless progressing further for skill-class requirements.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">ARTIFACT PROGRESSION</div>
+  <h2>Artifacts — Best Upgrade Order</h2>
+
+  <div class="priority-list">
+
+    <div class="priority-card">
+      <div class="rank">01</div>
+      <div>
+        <h3>Artifact Book — Armor & Magic Defense</h3>
+        <p>
+          First priority. Strengthens Luther's two major
+          defensive attributes, helping him withstand
+          both physical and magical pressure.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">02</div>
+      <div>
+        <h3>Artifact Weapon — Team Armor</h3>
+        <p>
+          When Sentence activates, Luther's Artifact Weapon
+          provides a team-wide Armor bonus.
+          This extends defensive value to his allies.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">03</div>
+      <div>
+        <h3>Artifact Ring — Strength</h3>
+        <p>
+          Increases Strength, contributing to Health
+          and Physical Attack. Useful, but placed after
+          the Book and Weapon in this progression.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">HERO DEVELOPMENT</div>
+  <h2>Gift of the Elements</h2>
+
+  <div class="panel">
+    <h3 style="color:var(--gold)">Recommended: Maximize When Committed</h3>
+    <p>
+      Gift of the Elements provides additional Strength
+      and related stats, supporting Luther's frontline
+      durability and ability scaling.
+    </p>
+    <p>
+      Because Luther frequently jumps away from his original
+      position into enemy territory, investing in his
+      survivability is especially important.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">TALISMAN ANALYSIS</div>
+  <h2>Luther's Two Talisman Options</h2>
+
+  <div class="grid">
+
+    <article class="info-card">
+      <h3>First Talisman — Strength & Health</h3>
+      <p><strong>Attributes:</strong> Strength and Health.</p>
+      <p><strong>Availability:</strong> Eternal Frontier Shop.</p>
+      <p><strong>Cost:</strong> 700,000 Frontier Coins.</p>
+      <p>
+        This is a strong defensive option for Luther,
+        reinforcing his Health pool and primary attribute.
+      </p>
+      <p>
+        Particularly attractive when the main goal
+        is to help him survive extended pressure
+        after entering the enemy formation.
+      </p>
+    </article>
+
+    <article class="info-card">
+      <h3>Second Talisman — Physical Attack & Toughness</h3>
+      <p><strong>Attributes:</strong> Physical Attack and Toughness.</p>
+      <p><strong>Availability:</strong> Special events.</p>
+      <p>
+        Physical Attack improves scaling for several
+        of Luther's skills, while Toughness adds
+        another defensive component.
+      </p>
+      <p>
+        This option may appeal to players looking
+        for a combination of ability scaling
+        and resilience.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note" style="margin-top:20px">
+    <strong>WHICH SHOULD YOU CHOOSE?</strong>
+    <p>
+      Prioritize the first Talisman for a Health-and-Strength
+      defensive foundation. Consider the second when
+      Physical Attack scaling and Toughness better match
+      your intended build.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">TEAM SYNERGIES</div>
+  <h2>Heroes Who Benefit from Luther</h2>
+
+  <div class="grid">
+
+    <div class="info-card">
+      <h3>Artemis — Stun Synergy</h3>
+      <p>
+        Sentence and Gehenna can stun enemies,
+        creating opportunities for Artemis'
+        Smart Arrow mechanic to contribute
+        additional offensive pressure.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Qing Mao — Exposed Frontline</h3>
+      <p>
+        Luther's jump can draw enemy attention
+        away from the opposing frontline,
+        allowing Qing Mao to exploit the exposed
+        frontmost target and apply Armor reduction.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note" style="margin-top:20px">
+    <strong>TEAM-BUILDING PRINCIPLE</strong>
+    <p>
+      Luther needs allies capable of taking advantage
+      of the disruption he creates. He also requires
+      enough durability to survive while separated
+      from his team's original frontline.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">POSITIONING & COUNTERPLAY</div>
+  <h2>How to Counter Luther</h2>
+
+  <p>
+    Luther's greatest advantage is his ability to remain
+    behind the enemy frontline, redirecting attention
+    and interfering with targeting.
+  </p>
+
+  <p>
+    A powerful counterstrategy is to push, throw
+    or otherwise force him back toward his own team.
+  </p>
+
+  <div class="grid">
+
+    <div class="info-card">
+      <h3>Faceless — Power Throw</h3>
+      <p>
+        Faceless can throw Luther toward the center
+        of his team and stun him, disrupting his
+        positioning-based strategy.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Cascade — Tidal Wave</h3>
+      <p>
+        When Cascade is positioned fourth or fifth,
+        Tidal Wave can push Luther back toward
+        his original formation.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Somna — Transformation</h3>
+      <p>
+        From the fourth or fifth position, Somna
+        can transform Luther into a sheep,
+        causing him to walk back toward his team.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Fox — Heavy Caliber</h3>
+      <p>
+        Fox can use displacement to push Luther
+        back toward his own side of the battlefield.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Maya — Poisonous Bonds</h3>
+      <p>
+        Maya's Poisonous Bonds can entangle enemies
+        and help return Luther toward his
+        original formation.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Counterplay Principle</h3>
+      <p>
+        The objective is not necessarily to eliminate
+        Luther immediately. Removing his positional
+        advantage can greatly reduce his ability
+        to distract and disrupt your heroes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="kicker">WATCH THE COMPLETE GUIDE</div>
+  <h2>Luther Full Guide — Video</h2>
+
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube.com/embed/UyHsq2XLClc"
+      title="Luther Full Hero Guide — Gods of Alliance"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section class="section">
+  <div class="verdict">
+    <div class="kicker">GODS OF ALLIANCE • FINAL VERDICT</div>
+    <h2>Luther — A Tank Built to Disrupt</h2>
+
+    <p>
+      Luther is not a conventional Tank.
+      His greatest strength is the ability to
+      interfere with enemy positioning, redirect
+      attacks and create control opportunities.
+    </p>
+
+    <p>
+      <strong>Sentence</strong> and
+      <strong>Gehenna</strong> provide stuns.
+      <strong>Omen</strong> disrupts enemy formations.
+      <strong>Doctrine of Faith</strong> strengthens
+      his resistance against magical pressure.
+    </p>
+
+    <p>
+      His recommended build emphasizes Armor,
+      Health, Toughness and appropriate magical
+      protection before prioritizing extra damage.
+    </p>
+
+    <p>
+      Against the right opponents, Luther can create
+      significant problems. Against teams capable
+      of immediately pushing him back, his
+      greatest advantage may disappear.
+    </p>
+
+    <p>
+      <strong>
+        The key to using Luther effectively is not
+        simply making him durable. It is building
+        a team capable of exploiting the disruption
+        he creates.
+      </strong>
+    </p>
+  </div>
+
+  <a class="back" href="heroes.html">← BACK TO HERO GUIDES</a>
+</section>
+
+</main>
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
