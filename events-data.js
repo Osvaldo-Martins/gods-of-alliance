@@ -1,10 +1,23 @@
 
 window.GOA_EVENTS = [
   {
+    id: "mighty-roots",
+    title: "Mighty Roots Season Calendar",
+    tag: "SEASON CALENDAR",
+    status: "current",
+    order: 8,
+    image: "Images/Events/mighty-roots-season-calendar.jpg",
+    url: "mighty-roots-season-calendar.html",
+    dateLabel: "OCTOBER 26 — NOVEMBER 22",
+    description:
+      "Explore the complete Mighty Roots Season calendar, including Bountiful Roads, Halloween Bingo, Balance of Power, Dominion Day, the special Seer's Game where every card wins, Ascendant Glory, rewards and resource-planning strategies.",
+    button: "OPEN SEASON CALENDAR →"
+  },
+  {
     id: "ascendant-glory",
     title: "Ascendant Glory Event Guide",
     tag: "EVENT GUIDE",
-    status: "current",
+    status: "archived",
     order: 7,
     image: "Images/Events/ascended-glory-event.jpg",
     url: "ascendant-glory-event-guide.html",
@@ -82,7 +95,7 @@ window.GOA_EVENTS = [
     id: "buried-truths",
     title: "Buried Truths Season Calendar",
     tag: "SEASON CALENDAR",
-    status: "current",
+    status: "archived",
     order: 1,
     image: "Images/Events/Buried-Truths-Season/buried-truths-season-calendar.png",
     url: "buried-truths-season-calendar.html",
