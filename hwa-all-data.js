@@ -1,6 +1,20 @@
 
 window.HWA_ALL_ARTICLES = [
   {
+    id: "mushy-shroom-relics",
+    title: "MUSHY & SHROOM LEGENDARY RELICS",
+    type: "RELIC GUIDE",
+    category: "relics",
+    date: "2026-10-30",
+    image: "Images/HWA-All/mushy-shroom-relics.jpg",
+    url: "mushy-shroom-relics.html",
+    subtitle: "LEVEL 1 • LEVEL 10 • LEVEL 20 • LEVEL 30",
+    description:
+      "Discover all four Legendary Relic upgrades for Mushy and Shroom: Voracious Spores, active Shroom enhancements, healing-based Magic Penetration and Mycelial Echo. Explore their interactions, Maximum Health steal and the potential of a growing mushroom army.",
+    button: "READ GUIDE →"
+  },
+
+  {
     id: "luther-new-relics",
     title: "LUTHER NEW RELICS",
     type: "RELIC GUIDE",
