@@ -1,0 +1,1526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mushy and Shroom Full Hero Guide — Skills, Builds & Counters | Gods of Alliance</title>
+<meta name="description" content="Complete Mushy and Shroom guide for Hero Wars Alliance. Learn all four skills, eight skins, glyph priorities, artifacts, Gift of the Elements, talismans, healing synergies and counters.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#071715">
+
+<link rel="canonical" href="https://www.godsofalliancehwa.com/mushy-and-shroom-guide.html">
+
+<!-- SOCIAL SHARING -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="MUSHY AND SHROOM — FULL HERO GUIDE | Gods of Alliance">
+<meta property="og:description" content="Master Mushy and Shroom's mushroom army, healing mechanics, eight skins, glyphs, artifacts, talismans and hero counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/mushy-and-shroom-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/mushy-and-shroom-guide.jpg">
+<meta property="og:image:secure_url" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/mushy-and-shroom-guide.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Mushy and Shroom Full Hero Guide — Gods of Alliance">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MUSHY AND SHROOM — FULL HERO GUIDE">
+<meta name="twitter:description" content="Mushy and Shroom skills, skins, glyphs, artifacts, talismans, healing synergies and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/mushy-and-shroom-guide.jpg">
+
+<style>
+:root {
+  --bg: #071311;
+  --panel: #10211d;
+  --mint: #75e8d0;
+  --green: #a5e8a5;
+  --purple: #bd9bea;
+  --gold: #e5d29a;
+  --text: #f1f8f3;
+  --muted: #bdcfc6;
+  --line: rgba(119,226,199,.22);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(25,116,108,.24),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 100% 45%,
+      rgba(90,47,126,.10),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #0b1c19,
+      #07100e 50%,
+      #050908
+    );
+}
+
+a { color: var(--mint); }
+
+.site-header {
+  padding: 21px 6%;
+  background: rgba(4,13,11,.96);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.brand span { color: var(--mint); }
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(3,17,14,.82),
+      rgba(3,17,14,.39)
+    ),
+    linear-gradient(
+      0deg,
+      #071311,
+      transparent 70%
+    ),
+    url("Images/Hero-Guides/mushy-and-shroom-guide.jpg")
+    center 35% / cover no-repeat;
+}
+
+.hero-inner {
+  width: min(1160px,90%);
+  margin: auto;
+  padding: 105px 0 65px;
+}
+
+.eyebrow {
+  color: var(--mint);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: clamp(45px,7vw,84px);
+  line-height: 1.04;
+  letter-spacing: -2px;
+  margin: 14px 0;
+  color: #fff;
+  text-shadow: 0 5px 25px rgba(0,0,0,.6);
+}
+
+.hero-sub {
+  color: var(--mint);
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  max-width: 720px;
+  color: #e6f4ed;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 55px 24px 90px;
+}
+
+.section { margin-bottom: 65px; }
+
+.kicker {
+  color: var(--mint);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: clamp(27px,4vw,39px);
+  line-height: 1.2;
+  margin: 10px 0 22px;
+  color: #fff;
+}
+
+h3 { line-height: 1.3; }
+
+p { color: var(--muted); }
+
+strong { color: #e2f6df; }
+
+.lead { font-size: 18px; }
+
+.panel,
+.skill-card,
+.info-card,
+.priority-card,
+.note,
+.hero-card {
+  background: linear-gradient(
+    145deg,
+    rgba(20,47,40,.92),
+    rgba(9,20,18,.97)
+  );
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+
+.panel { padding: 30px; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.fact {
+  background: rgba(0,0,0,.28);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 17px;
+  text-align: center;
+}
+
+.fact strong {
+  display: block;
+  color: var(--mint);
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.fact span { font-size: 15px; }
+
+.skill-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.skill-card {
+  padding: 29px;
+  border-left: 5px solid var(--mint);
+}
+
+.skill-card:nth-child(2) {
+  border-left-color: var(--purple);
+}
+
+.skill-card:nth-child(3) {
+  border-left-color: var(--green);
+}
+
+.skill-card:nth-child(4) {
+  border-left-color: var(--gold);
+}
+
+.skill-label {
+  color: var(--mint);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.skill-card h3 {
+  color: #fff;
+  font-size: 26px;
+  margin: 8px 0 12px;
+}
+
+.explanation {
+  background: rgba(0,0,0,.27);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-top: 18px;
+}
+
+.explanation strong { color: var(--mint); }
+
+.explanation p:last-child { margin-bottom: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 18px;
+}
+
+.info-card { padding: 25px; }
+
+.info-card h3 {
+  margin: 0 0 10px;
+  color: var(--mint);
+  font-size: 20px;
+}
+
+.info-card p { margin: 0 0 10px; }
+.info-card p:last-child { margin-bottom: 0; }
+
+.priority-list {
+  display: grid;
+  gap: 12px;
+}
+
+.priority-card {
+  padding: 18px 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.rank {
+  flex: 0 0 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background: rgba(117,232,208,.12);
+  color: var(--mint);
+  border: 1px solid rgba(117,232,208,.3);
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.priority-card h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #f4fff9;
+}
+
+.priority-card p { margin: 0; }
+
+.sequence {
+  padding: 20px 25px;
+  background: rgba(117,232,208,.07);
+  border: 1px solid rgba(117,232,208,.3);
+  border-radius: 10px;
+  color: var(--mint);
+  font-weight: 800;
+  line-height: 2;
+}
+
+.note {
+  padding: 24px 28px;
+  border-color: rgba(117,232,208,.35);
+  margin-top: 20px;
+}
+
+.note strong { color: var(--mint); }
+
+.hero-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.hero-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  min-width: 85px;
+  padding: 12px;
+  background: rgba(0,0,0,.24);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+}
+
+.hero-icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #193a30;
+}
+
+.hero-icon span {
+  font-size: 12px;
+  font-weight: 800;
+  color: #e4f6eb;
+  text-align: center;
+}
+
+.hero-card {
+  padding: 25px 28px;
+  margin: 18px 0;
+}
+
+.hero-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.hero-card-heading img {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: 1px solid rgba(117,232,208,.35);
+  background: #193a30;
+  border-radius: 12px;
+}
+
+.hero-card-heading h3 {
+  color: var(--mint);
+  font-size: 22px;
+  margin: 0;
+}
+
+.hero-card p:last-child { margin-bottom: 0; }
+
+.verdict {
+  padding: 35px;
+  background: linear-gradient(
+    140deg,
+    rgba(28,96,79,.53),
+    rgba(10,23,20,.97)
+  );
+  border: 1px solid rgba(117,232,208,.4);
+  border-radius: 14px;
+}
+
+.verdict h2 { color: var(--mint); }
+
+.back {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 28px;
+  border: 1px solid var(--mint);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.back:hover {
+  background: var(--mint);
+  color: #071311;
+}
+
+footer {
+  padding: 30px 15px;
+  border-top: 1px solid var(--line);
+  color: #829f94;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media(max-width:700px) {
+  .hero { min-height: 470px; }
+  .hero-inner { padding: 75px 0 40px; }
+  .facts, .grid { grid-template-columns: 1fr; }
+  .skill-card, .panel { padding: 22px; }
+  .hero-card { padding: 20px; }
+  .hero-card-heading img { width: 58px; height: 58px; }
+  .hero-card-heading h3 { font-size: 18px; }
+  .hero-icon img { width: 54px; height: 54px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    GODS <span>OF ALLIANCE</span>
+  </a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">
+      HERO WARS ALLIANCE • COMPLETE HERO GUIDE
+    </div>
+
+    <h1>MUSHY AND SHROOM<br>FULL GUIDE</h1>
+
+    <div class="hero-sub">
+      TANK • WAY OF NATURE • FRONT LINE
+    </div>
+
+    <p>
+      Master the mushroom army, healing-based
+      mechanics, magical damage, silence effects
+      and defensive development of one of
+      Dominion's most unusual Tanks.
+    </p>
+  </div>
+</section>
+
+<main class="container">
+
+<!-- HERO OVERVIEW -->
+
+<section class="section">
+  <div class="kicker">HERO OVERVIEW</div>
+  <h2>One Hero. An Entire Mushroom Army.</h2>
+
+  <div class="panel">
+    <p class="lead">
+      <strong>Mushy and Shroom</strong> are an
+      Intelligence-based Tank from the Way
+      of Nature, positioned on the front line.
+    </p>
+
+    <p>
+      Unlike traditional Tanks, Mushy and Shroom
+      combine summoning, healing, magical damage
+      and Silence to create battlefield pressure.
+    </p>
+
+    <p>
+      Their greatest strength comes from building
+      an army of Shrooms and Spore Mushrooms.
+      Healing helps activate these summons,
+      while their abilities create additional
+      offensive and defensive opportunities.
+    </p>
+
+    <p>
+      The longer Mushy survives, the more
+      opportunities the mushroom army has
+      to grow and influence the battle.
+    </p>
+
+    <div class="facts">
+      <div class="fact">
+        <strong>ROLE</strong>
+        <span>Tank</span>
+      </div>
+
+      <div class="fact">
+        <strong>FACTION</strong>
+        <span>Way of Nature</span>
+      </div>
+
+      <div class="fact">
+        <strong>POSITION</strong>
+        <span>Front Line</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+
+<section class="section" id="skills">
+  <div class="kicker">SKILL BREAKDOWN</div>
+  <h2>Mushy and Shroom's Four Skills Explained</h2>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+      <div class="skill-label">
+        FIRST SKILL • PERFECT COPY
+      </div>
+
+      <h3>Perfect Copy</h3>
+
+      <p>
+        Mushy summons an inactive Shroom
+        with missing Health.
+      </p>
+
+      <p>
+        The copy inherits Mushy's stats
+        from the beginning of battle and
+        can receive attacks, offensive
+        spells and healing.
+      </p>
+
+      <p>
+        Once fully healed for the first time,
+        the Shroom becomes active, attacking
+        enemies and using Mushy's learned skills.
+      </p>
+
+      <p>
+        However, an activated Shroom
+        cannot regenerate Energy.
+      </p>
+
+      <p>
+        Mushy can summon up to
+        <strong>five Shrooms</strong>,
+        and the skill scales with Health.
+      </p>
+
+      <div class="explanation">
+        <strong>Why it matters</strong>
+
+        <p>
+          Activated Shrooms can continue fighting
+          even after the original Mushy dies.
+          This makes the summoned army a
+          particularly dangerous part of
+          the hero's strategy.
+        </p>
+
+        <p>
+          Healing support can accelerate
+          the activation of inactive Shrooms.
+        </p>
+
+        <div class="hero-icons">
+          <div class="hero-icon">
+            <img src="Images/Heroes/Byrna.png"
+                 alt="Byrna" loading="lazy">
+            <span>Byrna</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Alvanor.png"
+                 alt="Alvanor" loading="lazy">
+            <span>Alvanor</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Mojo.png"
+                 alt="Mojo" loading="lazy">
+            <span>Mojo</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">
+        SECOND SKILL • BRANCHING MYCELIUM
+      </div>
+
+      <h3>Branching Mycelium</h3>
+
+      <p>
+        Mushy summons three inactive
+        Spore Mushrooms.
+      </p>
+
+      <p>
+        Each Spore Mushroom has Maximum Health
+        equal to <strong>30% of Mushy's
+        starting Health</strong>.
+      </p>
+
+      <p>
+        Once fully healed, they rush toward
+        enemies and explode, dealing damage
+        and releasing a spore cloud.
+      </p>
+
+      <p>
+        The cloud silences nearby opponents
+        for <strong>four seconds</strong>.
+      </p>
+
+      <p>
+        The mushrooms prioritize nearby
+        enemies not already affected by spores,
+        helping spread their control effects.
+      </p>
+
+      <p>
+        This skill scales with
+        <strong>Health and Magic Attack</strong>.
+      </p>
+
+      <div class="explanation">
+        <strong>Why it matters</strong>
+
+        <p>
+          Branching Mycelium combines damage
+          and battlefield control.
+          Multiple exploding mushrooms can
+          spread Silence across the
+          opposing formation.
+        </p>
+
+        <p>
+          Healing from Byrna, Alvanor
+          and Mojo can help activate
+          these Spore Mushrooms faster.
+        </p>
+
+        <div class="hero-icons">
+          <div class="hero-icon">
+            <img src="Images/Heroes/Byrna.png"
+                 alt="Byrna" loading="lazy">
+            <span>Byrna</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Alvanor.png"
+                 alt="Alvanor" loading="lazy">
+            <span>Alvanor</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Mojo.png"
+                 alt="Mojo" loading="lazy">
+            <span>Mojo</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">
+        THIRD SKILL • ROTTING SEEDS
+      </div>
+
+      <h3>Rotting Seeds</h3>
+
+      <p>
+        Rotting Seeds damages the
+        nearest enemy.
+      </p>
+
+      <p>
+        Its damage increases according
+        to the healing received by allies
+        since the previous activation.
+      </p>
+
+      <p>
+        The skill scales with
+        <strong>Health and Magic Attack</strong>.
+      </p>
+
+      <p>
+        In longer battles with consistent
+        healing, this ability can become
+        increasingly threatening.
+      </p>
+
+      <div class="explanation">
+        <strong>Why it matters</strong>
+
+        <p>
+          Healing does more than keep
+          Mushy's team alive.
+          It can also increase the damage
+          of the next Rotting Seeds activation.
+        </p>
+
+        <p>
+          <strong>Aidan</strong> is an
+          interesting potential partner
+          for supporting these healing
+          interactions.
+        </p>
+
+        <div class="hero-icons">
+          <div class="hero-icon">
+            <img src="Images/Heroes/Aidan.png"
+                 alt="Aidan" loading="lazy">
+            <span>Aidan</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-label">
+        FOURTH SKILL • WILD GROWTH
+      </div>
+
+      <h3>Wild Growth</h3>
+
+      <p>
+        This passive ability allows
+        inactive Shrooms and Spore Mushrooms
+        to recover Health automatically.
+      </p>
+
+      <p>
+        The effect stacks for every
+        active Shroom on the battlefield.
+      </p>
+
+      <p>
+        Wild Growth scales with
+        <strong>Health and Magic Attack</strong>.
+      </p>
+
+      <div class="explanation">
+        <strong>Why it matters</strong>
+
+        <p>
+          Active Shrooms strengthen the
+          healing that helps additional
+          mushrooms become active.
+        </p>
+
+        <p>
+          This creates a self-reinforcing
+          cycle that can make the summoned
+          army increasingly dangerous.
+        </p>
+
+        <p>
+          Additional healing from Byrna,
+          Alvanor or Mojo can accelerate
+          this process.
+        </p>
+
+        <div class="hero-icons">
+          <div class="hero-icon">
+            <img src="Images/Heroes/Byrna.png"
+                 alt="Byrna" loading="lazy">
+            <span>Byrna</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Alvanor.png"
+                 alt="Alvanor" loading="lazy">
+            <span>Alvanor</span>
+          </div>
+
+          <div class="hero-icon">
+            <img src="Images/Heroes/Mojo.png"
+                 alt="Mojo" loading="lazy">
+            <span>Mojo</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SKINS -->
+
+<section class="section" id="skins">
+  <div class="kicker">SKINS & BUILD PRIORITY</div>
+  <h2>All Eight Skins — Recommended Order</h2>
+
+  <p>
+    Mushy needs to survive long enough
+    to build and support the mushroom army.
+    Health therefore takes priority,
+    followed by the attributes that
+    strengthen the hero's abilities.
+  </p>
+
+  <div class="priority-list">
+
+    <div class="priority-card">
+      <div class="rank">01</div>
+      <div>
+        <h3>Crimson Grove Skin — Health</h3>
+        <p>
+          First priority. Improves survivability
+          and strengthens all four skills.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">02</div>
+      <div>
+        <h3>Lunar Skin — Magic Attack</h3>
+        <p>
+          Second priority, including the
+          Lunar Skin Plus version.
+          Strengthens the last three skills.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">03</div>
+      <div>
+        <h3>Angel Skin — Health</h3>
+        <p>
+          Adds more Health, reinforcing
+          both durability and skill scaling.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">04</div>
+      <div>
+        <h3>Devil Skin — Armor</h3>
+        <p>
+          Improves resistance against
+          incoming physical damage.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">05</div>
+      <div>
+        <h3>Default Skin — Intelligence</h3>
+        <p>
+          Increases Intelligence, contributing
+          to Magic Attack and Magic Defense.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">06</div>
+      <div>
+        <h3>Cybernetic Skin — Armor</h3>
+        <p>
+          Provides additional physical
+          protection for frontline survival.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">07</div>
+      <div>
+        <h3>Spring Skin — Magic Defense</h3>
+        <p>
+          Improves survivability against
+          magical attacks.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">08</div>
+      <div>
+        <h3>Tribal Skin — Magic Penetration</h3>
+        <p>
+          Helps Mushy's magical attacks
+          overcome enemy Magic Defense,
+          but remains behind the main
+          defensive priorities.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>BUILD PHILOSOPHY</strong>
+    <p>
+      Mushy needs time to summon and activate
+      the mushroom army. Health is the foundation
+      of this build because it improves
+      survivability and supports all four skills.
+    </p>
+  </div>
+</section>
+
+<!-- GLYPHS -->
+
+<section class="section" id="glyphs">
+  <div class="kicker">GLYPH DEVELOPMENT</div>
+  <h2>Recommended Glyph Priority</h2>
+
+  <div class="sequence">
+    HEALTH → ARMOR → MAGIC ATTACK →
+    INTELLIGENCE → MAGIC DEFENSE
+  </div>
+
+  <div class="grid" style="margin-top:20px">
+
+    <div class="info-card">
+      <h3>Health</h3>
+      <p>
+        Highest priority. Strengthens
+        survivability and all four skills.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Armor</h3>
+      <p>
+        Protects Mushy against physical
+        damage while occupying the frontline.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Magic Attack</h3>
+      <p>
+        Improves Branching Mycelium,
+        Rotting Seeds and Wild Growth.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Intelligence</h3>
+      <p>
+        Contributes to Magic Attack
+        and Magic Defense.
+      </p>
+    </div>
+
+    <div class="info-card">
+      <h3>Magic Defense</h3>
+      <p>
+        Adds protection against
+        magical damage.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>INITIAL DEVELOPMENT TARGET</strong>
+    <p>
+      For early and mid-game progression,
+      bring all five glyphs to Level 40
+      before investing further, unless
+      progressing specifically for
+      Skill Class requirements.
+    </p>
+  </div>
+</section>
+
+<!-- ARTIFACTS -->
+
+<section class="section" id="artifacts">
+  <div class="kicker">ARTIFACT PROGRESSION</div>
+  <h2>Artifacts — Best Upgrade Order</h2>
+
+  <div class="priority-list">
+
+    <div class="priority-card">
+      <div class="rank">01</div>
+      <div>
+        <h3>Artifact Book — Magic Attack & Health</h3>
+        <p>
+          First priority. Improves
+          survivability and the abilities
+          that scale with Health and
+          Magic Attack.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">02</div>
+      <div>
+        <h3>Artifact Weapon — Team Armor</h3>
+        <p>
+          Provides an Armor bonus to
+          the entire team when Mushy's
+          first skill activates.
+          Valuable defensive support
+          for the whole formation.
+        </p>
+      </div>
+    </div>
+
+    <div class="priority-card">
+      <div class="rank">03</div>
+      <div>
+        <h3>Artifact Ring — Intelligence</h3>
+        <p>
+          Increases Intelligence,
+          supporting Mushy's magical
+          development and defensive stats.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GIFT OF ELEMENTS -->
+
+<section class="section" id="gift">
+  <div class="kicker">HERO DEVELOPMENT</div>
+  <h2>Gift of the Elements</h2>
+
+  <div class="panel">
+    <h3 style="color:var(--mint)">
+      Recommended: Maximize
+    </h3>
+
+    <p>
+      Our recommendation is to maximize
+      Mushy and Shroom's Gift of the Elements
+      when committing to the hero.
+    </p>
+
+    <p>
+      Mushy is an Intelligence-based
+      frontline Tank who benefits from
+      a combination of survivability
+      and magical stats.
+    </p>
+
+    <p>
+      Additional development helps
+      Mushy survive longer, allowing
+      more opportunities to summon
+      and activate the mushroom army.
+    </p>
+  </div>
+</section>
+
+<!-- TALISMANS -->
+
+<section class="section" id="talismans">
+  <div class="kicker">TALISMAN ANALYSIS</div>
+  <h2>Mushy and Shroom's Two Talismans</h2>
+
+  <div class="grid">
+
+    <article class="info-card">
+      <h3>First Talisman — Intelligence & Armor</h3>
+
+      <p>
+        <strong>Attributes:</strong>
+        Intelligence and Armor.
+      </p>
+
+      <p>
+        <strong>Availability:</strong>
+        Eternal Frontier Shop.
+      </p>
+
+      <p>
+        <strong>Cost:</strong>
+        700,000 Frontier Coins.
+      </p>
+
+      <p>
+        This option combines magical
+        development with physical durability.
+      </p>
+
+      <p>
+        It is particularly attractive
+        for players who want a balanced
+        frontline foundation.
+      </p>
+    </article>
+
+    <article class="info-card">
+      <h3>Second Talisman — Magic Critical Hit Chance & Toughness</h3>
+
+      <p>
+        <strong>Attributes:</strong>
+        Magic Critical Hit Chance
+        and Toughness.
+      </p>
+
+      <p>
+        <strong>Availability:</strong>
+        Special events.
+      </p>
+
+      <p>
+        This option combines offensive
+        critical potential with
+        additional resistance to
+        critical damage.
+      </p>
+
+      <p>
+        It offers a different
+        development direction from
+        the first Talisman.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>WHICH SHOULD YOU CHOOSE?</strong>
+    <p>
+      The first Talisman provides
+      Intelligence and Armor,
+      making it a balanced option
+      for magical development and
+      frontline protection.
+    </p>
+
+    <p>
+      The second introduces Magic
+      Critical Hit Chance and Toughness.
+      Consider your resources,
+      availability and intended build
+      before investing.
+    </p>
+  </div>
+</section>
+
+<!-- HEALING SYNERGIES -->
+
+<section class="section" id="synergies">
+  <div class="kicker">HEALING SYNERGIES</div>
+  <h2>Heroes Who Help the Mushroom Army Grow</h2>
+
+  <p>
+    Mushy's summoning mechanics
+    make healing particularly important.
+    These heroes are highlighted
+    in the skill analysis because
+    they can support the activation
+    of inactive mushrooms or interact
+    with healing-based damage.
+  </p>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Byrna.png"
+           alt="Byrna" loading="lazy">
+      <h3>Byrna — Healing Support</h3>
+    </div>
+
+    <p>
+      Byrna can provide healing support
+      that helps inactive Shrooms and
+      Spore Mushrooms reach full Health
+      more quickly.
+    </p>
+
+    <p>
+      This supports Perfect Copy,
+      Branching Mycelium and
+      the growth cycle reinforced
+      by Wild Growth.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Alvanor.png"
+           alt="Alvanor" loading="lazy">
+      <h3>Alvanor — Nature Healing Support</h3>
+    </div>
+
+    <p>
+      Alvanor is another interesting
+      healing partner for Mushy.
+    </p>
+
+    <p>
+      Additional healing can help
+      activate the mushroom summons
+      sooner, allowing Mushy's
+      battlefield presence to grow.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Mojo.png"
+           alt="Mojo" loading="lazy">
+      <h3>Mojo — Mushroom Activation Support</h3>
+    </div>
+
+    <p>
+      Mojo can contribute healing
+      that accelerates the activation
+      of inactive mushrooms.
+    </p>
+
+    <p>
+      This creates an interesting
+      interaction with Mushy's
+      summoning and passive
+      recovery mechanics.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Aidan.png"
+           alt="Aidan" loading="lazy">
+      <h3>Aidan — Rotting Seeds Interaction</h3>
+    </div>
+
+    <p>
+      Aidan is an interesting
+      potential partner for
+      Rotting Seeds.
+    </p>
+
+    <p>
+      Because the skill's damage
+      increases with healing
+      received by allies since
+      its previous activation,
+      additional healing support
+      can contribute to stronger
+      subsequent attacks.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>TEAM-BUILDING NOTE</strong>
+    <p>
+      These are skill-based
+      interactions, not a final
+      ranking of Mushy's best teams.
+      Full team compositions and
+      Legendary Relic testing
+      will be covered separately.
+    </p>
+  </div>
+</section>
+
+<!-- COUNTERS -->
+
+<section class="section" id="counters">
+  <div class="kicker">COUNTERS & COUNTERPLAY</div>
+  <h2>How to Counter Mushy and Shroom</h2>
+
+  <p>
+    Mushy becomes dangerous when
+    the mushroom army has enough
+    time to grow.
+  </p>
+
+  <p>
+    These four heroes provide
+    interesting ways to challenge
+    Mushy's damage, summoning
+    or control mechanics.
+  </p>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Folio.png"
+           alt="Folio" loading="lazy">
+      <h3>Folio — Pressure Against the Mushroom Army</h3>
+    </div>
+
+    <p>
+      Folio's Ultimate can deliver
+      devastating pressure against
+      Mushy and the mushroom army.
+    </p>
+
+    <p>
+      This makes him an interesting
+      offensive counter option,
+      especially when the battlefield
+      contains multiple summons.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Phobos.png"
+           alt="Phobos" loading="lazy">
+      <h3>Phobos — Magic Attack Targeting</h3>
+    </div>
+
+    <p>
+      Phobos targets the enemy
+      with the highest Magic Attack.
+    </p>
+
+    <p>
+      He can deal heavy damage,
+      reduce Physical Attack,
+      Magic Attack and Magic Defense,
+      and interfere with Energy.
+    </p>
+
+    <p>
+      Against a magic-oriented
+      hero like Mushy, this can
+      be troublesome.
+    </p>
+
+    <p>
+      <strong>Important:</strong>
+      This interaction depends
+      on Mushy being the target
+      selected by Phobos.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Soleil.png"
+           alt="Soleil" loading="lazy">
+      <h3>Soleil — Reflecting Silence</h3>
+    </div>
+
+    <p>
+      Mushy's Branching Mycelium
+      releases a spore cloud
+      that silences nearby
+      opponents for four seconds.
+    </p>
+
+    <p>
+      Soleil's Halo can reflect
+      that Silence back toward
+      Mushy, potentially turning
+      the control effect against
+      its original source.
+    </p>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-heading">
+      <img src="Images/Heroes/Rufus.png"
+           alt="Rufus" loading="lazy">
+      <h3>Rufus — Protection Against Magic Damage</h3>
+    </div>
+
+    <p>
+      Rufus has a shield that
+      converts magical damage
+      into healing.
+    </p>
+
+    <p>
+      This can make him particularly
+      difficult for magic-damage
+      heroes to overcome.
+    </p>
+
+    <p>
+      Under his survival mechanic,
+      physical damage is required
+      to finish him off while
+      the relevant conditions
+      remain active.
+    </p>
+
+    <p>
+      Rufus is therefore an
+      interesting defensive option
+      against Mushy's magical pressure.
+    </p>
+  </div>
+
+  <div class="note">
+    <strong>COUNTERPLAY PRINCIPLE</strong>
+    <p>
+      No counter guarantees victory.
+      Team composition, hero development,
+      positioning and battle conditions
+      all influence the result.
+    </p>
+  </div>
+</section>
+
+<!-- FINAL VERDICT -->
+
+<section class="section" id="verdict">
+  <div class="verdict">
+    <div class="kicker">
+      GODS OF ALLIANCE • FINAL VERDICT
+    </div>
+
+    <h2>Mushy and Shroom — The Growing Threat</h2>
+
+    <p>
+      <strong>
+        Mushy and Shroom are much
+        more than a traditional Tank.
+      </strong>
+    </p>
+
+    <p>
+      They combine summoning,
+      healing, magical damage
+      and Silence into a unique
+      battlefield strategy.
+    </p>
+
+    <p>
+      <strong>Perfect Copy</strong>
+      creates the mushroom army.
+    </p>
+
+    <p>
+      <strong>Branching Mycelium</strong>
+      spreads damage and control.
+    </p>
+
+    <p>
+      <strong>Rotting Seeds</strong>
+      transforms allied healing
+      into offensive potential.
+    </p>
+
+    <p>
+      <strong>Wild Growth</strong>
+      helps the mushroom army
+      continue expanding.
+    </p>
+
+    <p>
+      Our recommended development
+      prioritizes Health, followed
+      by the defensive and magical
+      attributes that support
+      Mushy's skills.
+    </p>
+
+    <p>
+      Byrna, Alvanor and Mojo
+      offer interesting healing
+      interactions, while Aidan
+      can support Rotting Seeds.
+    </p>
+
+    <p>
+      Folio, Phobos, Soleil
+      and Rufus provide different
+      counterplay possibilities.
+    </p>
+
+    <p>
+      Future Legendary Relic testing,
+      team combinations and Hydra
+      battles will help determine
+      Mushy's wider competitive value.
+    </p>
+
+    <p>
+      <strong>
+        One mushroom can become
+        an army. The challenge
+        is keeping that army alive
+        long enough to take over
+        the battlefield.
+      </strong>
+    </p>
+  </div>
+
+  <a class="back" href="heroes.html">
+    ← BACK TO HERO GUIDES
+  </a>
+</section>
+
+</main>
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES &amp; ANALYSIS
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
