@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>K'arkh Full Hero Guide | Gods of Alliance</title>
+<meta name="description" content="Complete K'arkh guide for Hero Wars Alliance. Skills, seven skins, glyphs, artifacts, talismans, synergies, counters, best team strategies and final verdict.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#100d20">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/karkh-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="K'arkh — Full Hero Guide">
+<meta property="og:description" content="Master K'arkh's airborne mechanics, builds, team synergies and counters in Hero Wars Alliance.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/karkh-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/karkh-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+:root {
+  --bg:#080b15;
+  --panel:#131426;
+  --purple:#bb78ff;
+  --violet:#8450f5;
+  --cyan:#80d8ff;
+  --gold:#f3ce87;
+  --text:#f5f2ff;
+  --muted:#bdc0d5;
+  --border:rgba(174,123,255,.22);
+}
+
+* {box-sizing:border-box}
+html {scroll-behavior:smooth}
+
+body {
+  margin:0;
+  background:
+    radial-gradient(ellipse at 85% 10%,rgba(99,47,169,.15),transparent 35%),
+    radial-gradient(ellipse at 5% 55%,rgba(48,40,113,.14),transparent 40%),
+    var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.75;
+}
+
+a {color:var(--purple)}
+a:hover {color:var(--cyan)}
+
+.site-header {
+  background:#090b17;
+  border-bottom:1px solid var(--border);
+  padding:20px 5%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand {
+  color:var(--gold);
+  font-weight:900;
+  letter-spacing:2px;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:23px;
+}
+
+.nav a {
+  text-decoration:none;
+  font-size:12px;
+  font-weight:800;
+  color:#e7e2f6;
+}
+
+.nav a:hover {color:var(--purple)}
+
+.hero {
+  min-height:580px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(6,7,17,.9) 0%,rgba(8,7,20,.75) 43%,rgba(8,7,20,.32) 100%),
+    linear-gradient(0deg,#080b15 0%,transparent 40%),
+    url("Images/Hero-Guides/karkh-guide.jpg") center/cover no-repeat;
+}
+
+.hero-inner {
+  max-width:1160px;
+  width:90%;
+  margin:auto;
+  padding:85px 0;
+}
+
+.eyebrow {
+  font-size:12px;
+  letter-spacing:3px;
+  font-weight:900;
+  color:var(--purple);
+}
+
+.hero h1 {
+  font-size:clamp(52px,8vw,100px);
+  line-height:1.02;
+  margin:18px 0;
+  letter-spacing:-3px;
+  text-shadow:0 5px 25px #000;
+}
+
+.hero h1 span {color:var(--purple)}
+
+.hero p {
+  max-width:690px;
+  font-size:18px;
+  color:#e7e0f7;
+}
+
+.hero-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:25px;
+}
+
+.hero-tags span {
+  border:1px solid rgba(196,151,255,.5);
+  background:rgba(10,8,28,.7);
+  border-radius:25px;
+  padding:7px 15px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+main {
+  max-width:1120px;
+  margin:auto;
+  padding:65px 24px 95px;
+}
+
+.section {margin-bottom:70px}
+
+.kicker {
+  color:var(--purple);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
+}
+
+.section h2 {
+  font-size:clamp(29px,4vw,41px);
+  line-height:1.2;
+  margin:12px 0 23px;
+}
+
+.section p {color:var(--muted)}
+.section strong {color:#f5eaff}
+
+.panel,.skill,.build-card,.hero-card,.note,.verdict {
+  background:linear-gradient(135deg,rgba(25,24,49,.96),rgba(12,15,30,.97));
+  border:1px solid var(--border);
+  border-radius:14px;
+}
+
+.panel {padding:29px}
+
+.lead {
+  font-size:18px;
+  color:#e6dff4!important;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+}
+
+.skill {
+  padding:26px;
+  border-top:3px solid var(--violet);
+}
+
+.skill-label {
+  color:var(--purple);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+.skill h3 {
+  font-size:23px;
+  margin:10px 0;
+}
+
+.skill p {margin-bottom:0}
+
+.note {
+  padding:23px 26px;
+  border-left:4px solid var(--purple);
+  margin-top:23px;
+}
+
+.note strong {color:var(--purple)}
+
+.build-card {padding:26px}
+.build-card h3 {margin:0 0 15px;font-size:22px}
+
+.priority {
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:13px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.priority:last-child {border:0}
+
+.priority-number {
+  flex-shrink:0;
+  width:33px;
+  height:33px;
+  display:grid;
+  place-items:center;
+  background:rgba(141,79,247,.2);
+  border:1px solid rgba(183,127,255,.4);
+  border-radius:8px;
+  color:#d9b2ff;
+  font-weight:900;
+}
+
+.priority-text {font-weight:700}
+
+.small {
+  font-size:13px;
+  color:var(--muted);
+}
+
+.hero-card {
+  display:flex;
+  gap:19px;
+  padding:22px;
+  align-items:flex-start;
+}
+
+.portrait {
+  width:76px;
+  height:76px;
+  flex-shrink:0;
+  object-fit:cover;
+  border-radius:12px;
+  border:2px solid rgba(184,128,255,.5);
+  background:#1a1633;
+}
+
+.hero-card h3 {
+  margin:0 0 7px;
+  font-size:21px;
+}
+
+.hero-card p {
+  margin:0;
+  font-size:14px;
+}
+
+.hero-card.counter {
+  border-color:rgba(247,119,147,.3);
+}
+
+.hero-card.counter .portrait {
+  border-color:rgba(247,119,147,.6);
+}
+
+.hero-card.counter h3 {color:#ff9eaf}
+
+.talisman {
+  padding:27px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:rgba(23,21,47,.85);
+}
+
+.talisman h3 {margin:0 0 10px}
+.talisman p {margin:9px 0}
+
+.stat {
+  display:inline-block;
+  padding:5px 11px;
+  border-radius:6px;
+  background:rgba(140,88,229,.16);
+  border:1px solid rgba(180,131,255,.3);
+  color:#e0c7ff;
+  font-size:12px;
+  font-weight:800;
+  margin:4px 5px 4px 0;
+}
+
+.video {
+  border:1px solid var(--border);
+  padding:10px;
+  border-radius:14px;
+  background:#121326;
+}
+
+.video iframe {
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+  border-radius:9px;
+}
+
+.verdict {
+  padding:33px;
+  border-color:rgba(243,206,135,.4);
+  background:linear-gradient(135deg,rgba(54,37,76,.7),rgba(13,16,30,.97));
+}
+
+.verdict h2 {color:var(--gold)}
+
+.cta {
+  display:inline-block;
+  text-decoration:none;
+  border:1px solid var(--purple);
+  padding:12px 20px;
+  margin:20px 12px 0 0;
+  font-size:12px;
+  letter-spacing:1px;
+  font-weight:900;
+}
+
+.cta:hover {
+  background:var(--purple);
+  color:#090b15;
+}
+
+footer {
+  border-top:1px solid var(--border);
+  padding:30px 15px;
+  text-align:center;
+  font-size:12px;
+  color:#9393ad;
+}
+
+@media(max-width:760px) {
+  .site-header {padding:20px}
+  .brand {font-size:15px}
+  .nav {gap:12px}
+  .nav a {font-size:10px}
+  .hero {min-height:490px;background-position:43% center}
+  .hero-inner {padding:75px 0}
+  .hero p {font-size:16px}
+  .grid {grid-template-columns:1fr}
+  .panel,.skill,.build-card {padding:22px}
+  .hero-card {gap:14px;padding:17px}
+  .portrait {width:62px;height:62px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">GODS OF ALLIANCE</a>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="heroes.html">HERO GUIDES</a>
+    <a href="events.html">EVENTS</a>
+    <a href="hwa-all-archive.html">HWA ALL</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">HERO WARS ALLIANCE · COMPLETE HERO GUIDE</div>
+
+    <h1>K’ARKH<br><span>FULL GUIDE</span></h1>
+
+    <p>
+      The legendary airborne damage dealer of the Way of Eternity.
+      Discover his skills, optimal development, team combinations,
+      weaknesses and place in the modern battlefield.
+    </p>
+
+    <div class="hero-tags">
+      <span>WARRIOR</span>
+      <span>WAY OF ETERNITY</span>
+      <span>FRONT LINE</span>
+      <span>PHYSICAL DAMAGE</span>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section class="section" id="introduction">
+  <div class="kicker">HERO OVERVIEW</div>
+  <h2>The Monster Behind the Airborne Strategy</h2>
+
+  <div class="panel">
+    <p class="lead">
+      K'arkh once made entire teams fear being launched into the air.
+      His combinations with Faceless turned knock-ups into devastating
+      damage, making him one of the most recognizable combination-based
+      Warriors in Hero Wars Alliance.
+    </p>
+
+    <p>
+      But the battlefield has changed. His reliance on airborne targets
+      and his vulnerability as a frontline damage dealer make him
+      increasingly difficult to use consistently.
+    </p>
+
+    <p>
+      K'arkh is a <strong>frontline Warrior from the Way of Eternity</strong>.
+      His main purpose is to punish enemies launched into the air.
+      To succeed, he needs allies who enable his damage and protect
+      him long enough to execute the combination.
+    </p>
+
+    <p>
+      Our position is that K'arkh would benefit from a meaningful
+      rework and future Relics that preserve his unique identity.
+      No hypothetical Relic effects are included in this guide.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="kicker">COMBAT MECHANICS</div>
+  <h2>Skills Explained</h2>
+
+  <div class="grid">
+
+    <article class="skill">
+      <div class="skill-label">FIRST SKILL</div>
+      <h3>Nexus of Horror</h3>
+      <p>
+        K'arkh launches the three enemies with the lowest Health
+        into the air. When they land, they are stunned for
+        <strong>two seconds</strong>.
+      </p>
+      <p>
+        The stun chance is reduced against targets above Level 120.
+        Its effectiveness depends on skill level rather than
+        offensive attributes.
+      </p>
+      <p>
+        <strong>Analysis:</strong> disrupts vulnerable targets
+        and creates opportunities for Deadly Tendrils.
+      </p>
+    </article>
+
+    <article class="skill">
+      <div class="skill-label">SECOND SKILL</div>
+      <h3>Negator of Laws</h3>
+      <p>
+        Opens a rift for <strong>eight seconds</strong>,
+        providing a <strong>50% chance</strong> to block
+        incoming physical attacks.
+      </p>
+      <p>
+        Each successful block grants
+        <strong>15% additional Energy</strong>.
+        The skill's effectiveness depends on its level.
+      </p>
+      <p>
+        <strong>Analysis:</strong> connects physical defense
+        with faster Energy generation, but does not provide
+        equivalent protection against Magic or Pure Damage.
+      </p>
+    </article>
+
+    <article class="skill">
+      <div class="skill-label">THIRD SKILL</div>
+      <h3>Deadly Tendrils</h3>
+      <p>
+        While K'arkh is alive, he can strike enemies launched
+        into the air. Damage scales with
+        <strong>Physical Attack and skill level</strong>.
+      </p>
+      <p>
+        The damage doubles against enemies at or below
+        <strong>Level 120</strong>.
+      </p>
+      <p>
+        <strong>Analysis:</strong> the central mechanic of his
+        damage. Allied knock-ups, including Faceless's
+        Power Throw and Kai's whirlwind, can trigger it.
+      </p>
+    </article>
+
+    <article class="skill">
+      <div class="skill-label">FOURTH SKILL</div>
+      <h3>Survival Factor</h3>
+      <p>
+        Restores Health equal to
+        <strong>25% of the damage</strong> K'arkh deals
+        when attacking airborne enemies.
+      </p>
+      <p>
+        The healing effect depends on skill level.
+      </p>
+      <p>
+        <strong>Analysis:</strong> links damage to recovery.
+        When opponents prevent knock-ups, K'arkh loses
+        opportunities for both Deadly Tendrils damage
+        and Survival Factor healing.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Core mechanic</strong>
+    <p>
+      K'arkh needs successful knock-ups, enough Physical Damage
+      to punish airborne targets, and sufficient protection to
+      remain alive. Removing any one of these elements can
+      significantly weaken his performance.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="skins">
+  <div class="kicker">HERO DEVELOPMENT</div>
+  <h2>Skins &amp; Upgrade Priorities</h2>
+
+  <p>
+    This guide covers seven skins: Default Agility,
+    two Armor Penetration skins, Physical Attack,
+    Armor, Magic Defense, and Health, including
+    its Super Skin version.
+  </p>
+
+  <div class="build-card">
+    <h3>Recommended Offensive-First Order</h3>
+
+    <div class="priority">
+      <span class="priority-number">1</span>
+      <span class="priority-text">Physical Attack Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">2</span>
+      <span class="priority-text">Armor Penetration Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">3</span>
+      <span class="priority-text">Second Armor Penetration Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">4</span>
+      <span class="priority-text">Default Agility Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">5</span>
+      <span class="priority-text">Health Skin / Super Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">6</span>
+      <span class="priority-text">Armor Skin</span>
+    </div>
+
+    <div class="priority">
+      <span class="priority-number">7</span>
+      <span class="priority-text">Magic Defense Skin</span>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Important investment adjustment</strong>
+    <p>
+      Physical Attack strengthens regular attacks and
+      Deadly Tendrils. Armor Penetration helps that damage
+      overcome enemy Armor, potentially increasing
+      Survival Factor's healing.
+    </p>
+    <p>
+      If K'arkh dies before his first meaningful combination,
+      move Health, including the Super Skin, earlier in your
+      investment plan. Defensive skin order should follow
+      the threats encountered in real battles.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="glyphs">
+  <div class="kicker">STAT DEVELOPMENT</div>
+  <h2>Glyph Priorities</h2>
+
+  <div class="build-card">
+    <div class="priority">
+      <span class="priority-number">1</span>
+      <span class="priority-text">Armor Penetration</span>
+    </div>
+    <div class="priority">
+      <span class="priority-number">2</span>
+      <span class="priority-text">Agility</span>
+    </div>
+    <div class="priority">
+      <span class="priority-number">3</span>
+      <span class="priority-text">Physical Attack</span>
+    </div>
+    <div class="priority">
+      <span class="priority-number">4</span>
+      <span class="priority-text">Armor</span>
+    </div>
+    <div class="priority">
+      <span class="priority-number">5</span>
+      <span class="priority-text">Health</span>
+    </div>
+  </div>
+
+  <p>
+    The recommended initial checkpoint is
+    <strong>Level 40 for all five glyphs</strong>.
+    Armor Penetration and offensive attributes support
+    his main damage mechanic, while Armor and Health
+    improve his frontline survival.
+  </p>
+
+  <p>
+    If early deaths are preventing his contribution,
+    move Health forward. Further progression should
+    follow the build and class requirements.
+  </p>
+</section>
+
+<section class="section" id="artifacts">
+  <div class="kicker">ARTIFACT DEVELOPMENT</div>
+  <h2>Artifact Priorities</h2>
+
+  <div class="grid">
+
+    <div class="build-card">
+      <div class="skill-label">FIRST PRIORITY</div>
+      <h3>Artifact Book</h3>
+      <p>
+        Provides <strong>Armor Penetration</strong>
+        and <strong>Physical Attack</strong>.
+      </p>
+      <p>
+        Directly supports Deadly Tendrils and
+        K'arkh's main offensive role.
+      </p>
+    </div>
+
+    <div class="build-card">
+      <div class="skill-label">SECOND PRIORITY</div>
+      <h3>Artifact Ring</h3>
+      <p>
+        Provides <strong>Agility</strong>,
+        contributing Physical Attack and Armor.
+      </p>
+      <p>
+        Improves his offensive foundation
+        and physical durability.
+      </p>
+    </div>
+
+    <div class="build-card">
+      <div class="skill-label">THIRD PRIORITY</div>
+      <h3>Artifact Weapon</h3>
+      <p>
+        Grants <strong>team-wide Physical Attack</strong>
+        when Nexus of Horror activates.
+      </p>
+      <p>
+        Benefits K'arkh and compatible physical
+        damage dealers, but comes after the Book
+        and Ring in this development plan.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="gift">
+  <div class="kicker">ADDITIONAL DEVELOPMENT</div>
+  <h2>Gift of the Elements</h2>
+
+  <div class="panel">
+    <p>
+      Maximize Gift of the Elements when you are
+      committed to building K'arkh.
+    </p>
+    <p>
+      The additional base stats strengthen his
+      overall foundation, helping both damage
+      and survival.
+    </p>
+    <p>
+      However, players with limited resources
+      should carefully weigh this investment
+      against K'arkh's current limitations
+      and their other hero development priorities.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="talismans">
+  <div class="kicker">ADVANCED DEVELOPMENT</div>
+  <h2>Talismans</h2>
+
+  <div class="grid">
+
+    <article class="talisman">
+      <div class="skill-label">FIRST TALISMAN</div>
+      <h3>Agility &amp; Magic Defense</h3>
+
+      <span class="stat">AGILITY</span>
+      <span class="stat">MAGIC DEFENSE</span>
+
+      <p>
+        Provides offensive development and
+        physical durability through Agility,
+        while adding protection against
+        magical pressure.
+      </p>
+
+      <p>
+        This is particularly useful because
+        Negator of Laws focuses on blocking
+        physical attacks.
+      </p>
+
+      <p>
+        <strong>Acquisition:</strong> Eternal Frontier
+        Shop for <strong>700,000 Frontier Coins</strong>.
+      </p>
+    </article>
+
+    <article class="talisman">
+      <div class="skill-label">SECOND TALISMAN</div>
+      <h3>Physical Attack &amp; Vampirism</h3>
+
+      <span class="stat">PHYSICAL ATTACK</span>
+      <span class="stat">VAMPIRISM</span>
+
+      <p>
+        Strengthens offensive output while
+        introducing additional recovery
+        through qualifying damage.
+      </p>
+
+      <p>
+        Complements Survival Factor,
+        especially when K'arkh is protected
+        long enough to keep attacking.
+      </p>
+
+      <p>
+        <strong>Acquisition:</strong> special events.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Which talisman should you choose?</strong>
+    <p>
+      Prioritize the first when magical protection
+      is the main concern. Consider the second when
+      K'arkh has sufficient protection and needs
+      stronger offense and recovery.
+    </p>
+    <p>
+      Neither healing mechanic can save him if
+      he is eliminated before dealing damage.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="synergies">
+  <div class="kicker">TEAM BUILDING</div>
+  <h2>Best Synergies</h2>
+
+  <p>
+    K'arkh's ideal teammates must either create
+    airborne targets or help him survive until
+    his damage combination activates.
+  </p>
+
+  <div class="grid">
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Faceless.png"
+           alt="Faceless"
+           loading="lazy">
+      <div>
+        <h3>Faceless</h3>
+        <p>
+          One of K'arkh's most natural partners.
+          Power Throw launches enemies into the air,
+          creating opportunities for Deadly Tendrils.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Kai.png"
+           alt="Kai"
+           loading="lazy">
+      <div>
+        <h3>Kai</h3>
+        <p>
+          His whirlwind provides another source
+          of airborne targets, increasing
+          opportunities for K'arkh's signature damage.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Jet.png"
+           alt="Jet"
+           loading="lazy">
+      <div>
+        <h3>Jet</h3>
+        <p>
+          Provides offensive support through
+          critical-hit opportunities. Useful when
+          the team already has enough protection
+          to execute its combination.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Dante.png"
+           alt="Dante"
+           loading="lazy">
+      <div>
+        <h3>Dante</h3>
+        <p>
+          Supports a more defensive strategy
+          through Dodge and Foresight,
+          helping the team withstand pressure.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Octavia.png"
+           alt="Octavia"
+           loading="lazy">
+      <div>
+        <h3>Octavia</h3>
+        <p>
+          Strengthens Dodge-oriented defense.
+          Favorite of the Empress has an enhanced
+          interaction with Eternity allies,
+          including protection against qualifying
+          magical attacks under her mechanics.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card">
+      <img class="portrait"
+           src="Images/Heroes/Morrigan.png"
+           alt="Morrigan"
+           loading="lazy">
+      <div>
+        <h3>Morrigan</h3>
+        <p>
+          Bone Armor provides healing, Armor and
+          Magic Defense. Empathy of Eternity
+          distributes part of the damage received
+          by Eternity allies among her skeletons.
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section" id="teams">
+  <div class="kicker">TEAM STRATEGY</div>
+  <h2>Building Around K'arkh</h2>
+
+  <div class="grid">
+
+    <div class="build-card">
+      <h3>Airborne Combination</h3>
+      <p>
+        <strong>K'arkh + Faceless + Kai</strong>
+        form the offensive core.
+      </p>
+      <p>
+        Faceless and Kai provide additional
+        knock-up opportunities, allowing
+        K'arkh to trigger Deadly Tendrils
+        more frequently.
+      </p>
+      <p>
+        The remaining two positions must
+        provide enough protection and support
+        to keep the combination functioning.
+      </p>
+    </div>
+
+    <div class="build-card">
+      <h3>Defensive Eternity Support</h3>
+      <p>
+        <strong>Dante, Octavia and Morrigan</strong>
+        are options when protection is more
+        important than adding another knock-up source.
+      </p>
+      <p>
+        Their defensive mechanics can help
+        K'arkh survive long enough to attack,
+        although using more defensive slots
+        leaves less room for airborne enablers.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="note">
+    <strong>Team-building principle</strong>
+    <p>
+      These are strategic cores and support options,
+      not claims of universally optimal five-hero teams.
+      Against heavy early damage, prioritize survival.
+      Against opponents vulnerable to displacement,
+      additional knock-up support may be more valuable.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="counters">
+  <div class="kicker">MATCHUP ANALYSIS</div>
+  <h2>Major Counters &amp; Weaknesses</h2>
+
+  <div class="grid">
+
+    <article class="hero-card counter">
+      <img class="portrait"
+           src="Images/Heroes/Andvari.png"
+           alt="Andvari"
+           loading="lazy">
+      <div>
+        <h3>Andvari</h3>
+        <p>
+          One of K'arkh's most serious counters.
+          Protects allies behind him against
+          displacement and knock-ups, directly
+          interfering with Nexus of Horror
+          and Deadly Tendrils.
+        </p>
+        <p>
+          Fewer airborne targets also mean fewer
+          opportunities to heal through
+          Survival Factor.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card counter">
+      <img class="portrait"
+           src="Images/Heroes/Astrid and Lucas.png"
+           alt="Astrid and Lucas"
+           loading="lazy">
+      <div>
+        <h3>Astrid and Lucas</h3>
+        <p>
+          Can create dangerous pressure against
+          K'arkh's frontline position and
+          relatively low Health.
+        </p>
+        <p>
+          If he falls before establishing
+          his combination, his offensive
+          potential becomes irrelevant.
+        </p>
+      </div>
+    </article>
+
+    <article class="hero-card counter">
+      <img class="portrait"
+           src="Images/Heroes/Kendle.png"
+           alt="Kendle"
+           loading="lazy">
+      <div>
+        <h3>Kendle</h3>
+        <p>
+          Her extremely high Pure Damage can
+          be devastating when it connects
+          directly with K'arkh.
+        </p>
+        <p>
+          Negator of Laws blocks physical
+          attacks, not Pure Damage,
+          leaving him vulnerable to this
+          type of pressure.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>Why these counters matter</strong>
+    <p>
+      K'arkh needs to survive, launch enemies
+      into the air and deliver enough damage
+      to make the combination worthwhile.
+      Opponents who prevent displacement
+      or eliminate him early can dismantle
+      his entire strategy.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="verdict">
+  <div class="kicker">FINAL ANALYSIS</div>
+
+  <div class="verdict">
+    <h2>Final Verdict — A Hero Who Needs a Rework</h2>
+
+    <p>
+      K'arkh still has a recognizable and
+      potentially devastating identity:
+      turning airborne enemies into
+      opportunities for massive physical damage.
+    </p>
+
+    <p>
+      A developed K'arkh can still perform
+      in selected matchups when his team
+      enables the combination and the enemy
+      cannot easily prevent it.
+    </p>
+
+    <p>
+      However, building him from zero
+      requires caution. His frontline
+      vulnerability and dependence on
+      successful knock-ups make a major
+      investment difficult to justify
+      solely on the hope of future changes.
+    </p>
+
+    <p>
+      <strong>Our recommendation:</strong>
+      prioritize protection, build enough
+      Physical Attack and Armor Penetration
+      to make his airborne attacks count,
+      and choose matchups carefully.
+    </p>
+
+    <p>
+      In our view, K'arkh deserves a
+      meaningful rework that improves
+      his reliability and survival without
+      abandoning his identity.
+      Future Relics may offer another
+      opportunity, but their effects
+      must be evaluated only when confirmed.
+    </p>
+
+    <p>
+      <strong>
+        K'arkh is not without potential.
+        His greatest challenge is how many
+        conditions must align before
+        that potential becomes reality.
+      </strong>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="video">
+  <div class="kicker">FULL VIDEO GUIDE</div>
+  <h2>Watch the Complete K'arkh Analysis</h2>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/s5ytnnxKrA4"
+      title="K'arkh Full Hero Guide — Gods of Alliance"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>
+    <a href="https://youtu.be/s5ytnnxKrA4"
+       target="_blank"
+       rel="noopener noreferrer">
+      Watch the full K'arkh guide on YouTube
+    </a>
+  </p>
+</section>
+
+<section class="section">
+  <div class="panel">
+    <div class="kicker">GODS OF ALLIANCE</div>
+    <h2>Master the Mechanics. Control the Fight.</h2>
+
+    <p>
+      Are you still using K'arkh?
+      Which combinations work best for you,
+      and what would you change in his kit?
+    </p>
+
+    <p>
+      Join the discussion and explore
+      more Hero Wars Alliance guides
+      on Gods of Alliance.
+    </p>
+
+    <a class="cta" href="heroes.html">
+      ← ALL HERO GUIDES
+    </a>
+
+    <a class="cta" href="index.html">
+      WEBSITE HOME
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  GODS OF ALLIANCE · HERO WARS ALLIANCE
+  <p>Knowledge · Precision · Control</p>
+</footer>
+
+<script src="goa-global.js"></script>
+
+</body>
+</html>
