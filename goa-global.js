@@ -443,6 +443,10 @@
       href: "heroes.html"
     },
     {
+      label: "HERO CALCULATOR",
+      href: "hero-calculator.html"
+    },
+    {
       label: "HWA ALL",
       href: "hwa-all.html"
     },
