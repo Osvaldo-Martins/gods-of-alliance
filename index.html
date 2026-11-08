@@ -49,16 +49,16 @@ html {
     --gold-dark: #7b5107;
     --white: #ffffff;
     --muted: #9c978e;
-    --line: rgba(245, 169, 0, 0.13);
+    --line: rgba(245,169,0,.13);
 }
 
 body {
     min-height: 100vh;
     background:
-        radial-gradient(circle at 50% 0%, rgba(245,169,0,.08), transparent 30%),
+        radial-gradient(circle at 50% 0%,rgba(245,169,0,.08),transparent 30%),
         linear-gradient(180deg,#080704 0%,#050504 38%,#030303 100%);
     color: #ffffff;
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: Inter,Arial,Helvetica,sans-serif;
     overflow-x: hidden;
 }
 
@@ -584,7 +584,7 @@ a { color: inherit; }
 
 .card-titans .card-link { color: #65d7ff; }
 
-/* REALM — NEW CATEGORY */
+/* REALM */
 
 .card-realm::before {
     background:
@@ -649,6 +649,23 @@ a { color: inherit; }
 
 .card-events::after { background: #ff9e2b; }
 .card-events .card-link { color: #ffb85c; }
+
+/* HERO CALCULATOR — NEW CATEGORY */
+
+.card-calculator::before {
+    background:
+        radial-gradient(circle at 78% 18%,rgba(245,169,0,.25),transparent 38%),
+        radial-gradient(circle at 20% 100%,rgba(255,198,64,.09),transparent 45%),
+        linear-gradient(145deg,rgba(245,169,0,.06),transparent 65%);
+}
+
+.card-calculator::after {
+    background: linear-gradient(90deg,#c68a17,#ffd46b);
+}
+
+.card-calculator .card-link {
+    color: #ffd46b;
+}
 
 /* =========================================================
    MISSION / IDENTITY
@@ -1060,7 +1077,7 @@ footer {
                 </div>
             </a>
 
-            <!-- REALM — NEW CATEGORY -->
+            <!-- REALM -->
 
             <a class="explore-card card-realm" href="realm.html">
                 <div class="explore-card-content">
@@ -1195,6 +1212,30 @@ footer {
 
                     <div class="card-link">
                         EXPLORE EVENTS →
+                    </div>
+
+                </div>
+            </a>
+
+            <!-- HERO CALCULATOR — NEW CATEGORY -->
+
+            <a class="explore-card card-calculator" href="hero-calculator.html">
+                <div class="explore-card-content">
+
+                    <div class="card-number">
+                        10 / HERO CALCULATOR
+                    </div>
+
+                    <h3>Hero Calculator</h3>
+
+                    <p>
+                        Calculate hero stats, power, upgrade costs
+                        and resource requirements. Explore Skills,
+                        Skins, Glyphs, Artifacts and Talismans.
+                    </p>
+
+                    <div class="card-link">
+                        OPEN CALCULATOR →
                     </div>
 
                 </div>
