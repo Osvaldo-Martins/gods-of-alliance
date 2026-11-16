@@ -1,0 +1,956 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Phobos Full Hero Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Phobos guide for Hero Wars Alliance. Skills, skins, glyphs, artifacts, talismans, synergies, counters and best build priorities.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#07120f">
+
+<link rel="canonical" href="https://www.godsofalliancehwa.com/phobos-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="PHOBOS — Full Hero Guide">
+<meta property="og:description" content="Master Phobos: skills, builds, skins, artifacts, synergies and counters in Hero Wars Alliance.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/phobos-guide.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/phobos-guide.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PHOBOS — Full Hero Guide">
+<meta name="twitter:description" content="Complete Phobos build, strategy, synergies and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/phobos-guide.jpg">
+
+<style>
+:root{
+  --bg:#070b0c;
+  --panel:#101a1a;
+  --panel2:#122120;
+  --green:#39e5ad;
+  --mint:#a3ffda;
+  --purple:#a279ed;
+  --gold:#e9a923;
+  --text:#e9f0ed;
+  --muted:#a4b8b2;
+  --border:rgba(75,222,164,.19);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(ellipse at 8% 15%,rgba(25,130,94,.13),transparent 33%),
+    radial-gradient(ellipse at 90% 52%,rgba(89,36,144,.09),transparent 35%),
+    var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.75;
+}
+a{color:var(--mint)}
+.site-header{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  padding:15px 5%;
+  background:#050807;
+  border-bottom:1px solid var(--border);
+}
+.brand{
+  color:white;
+  font-size:19px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+.brand span{color:var(--gold)}
+.hero-banner{
+  min-height:490px;
+  display:flex;
+  align-items:flex-end;
+  background:
+    linear-gradient(0deg,#070b0c 0%,rgba(7,11,12,.83) 20%,rgba(7,11,12,.12) 75%),
+    url("Images/Hero-Guides/phobos-guide.jpg") center 35%/cover no-repeat;
+  padding:60px max(5%,calc((100vw - 1180px)/2));
+}
+.banner-content{max-width:800px}
+.eyebrow{
+  color:var(--green);
+  font-size:12px;
+  letter-spacing:3px;
+  font-weight:900;
+}
+h1{
+  font-size:clamp(40px,6vw,76px);
+  line-height:1.1;
+  margin:10px 0;
+  letter-spacing:-2px;
+  color:#fff;
+}
+.banner-subtitle{
+  font-size:17px;
+  color:#e5f6ed;
+  font-weight:700;
+  text-transform:uppercase;
+}
+.hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:20px;
+}
+.hero-tags span{
+  padding:7px 13px;
+  border:1px solid rgba(88,236,172,.4);
+  border-radius:30px;
+  background:rgba(4,20,16,.72);
+  color:var(--mint);
+  font-size:12px;
+  font-weight:bold;
+}
+.container{
+  max-width:1180px;
+  padding:20px 22px 80px;
+  margin:auto;
+}
+.quick-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:22px 0 30px;
+}
+.quick-nav a{
+  padding:9px 14px;
+  text-decoration:none;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:#0e1716;
+  font-size:12px;
+  font-weight:bold;
+}
+section{margin:35px 0 48px;scroll-margin-top:30px}
+h2{
+  font-size:clamp(25px,3vw,35px);
+  margin:0 0 21px;
+  padding-bottom:12px;
+  border-bottom:1px solid var(--border);
+  color:#fff;
+  line-height:1.3;
+}
+h2::first-letter{color:var(--green)}
+h3{color:var(--mint);margin:0 0 10px;font-size:20px}
+p{margin:10px 0;color:#c4d0ca}
+strong{color:#fff}
+.card{
+  background:linear-gradient(135deg,rgba(19,37,34,.97),rgba(11,18,20,.98));
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:25px;
+  margin-bottom:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+.card p:last-child{margin-bottom:0}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+}
+.grid .card{margin:0}
+.number{
+  display:inline-block;
+  color:var(--green);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.4px;
+  margin-bottom:10px;
+}
+.info{
+  border-left:3px solid var(--green);
+  background:rgba(49,219,157,.07);
+  padding:18px 22px;
+  border-radius:0 10px 10px 0;
+  margin:20px 0;
+}
+.info p{margin:0}
+.priority{
+  display:flex;
+  align-items:flex-start;
+  gap:17px;
+  padding:15px 0;
+  border-bottom:1px solid rgba(255,255,255,.07);
+}
+.priority:last-child{border-bottom:0}
+.rank{
+  display:grid;
+  place-items:center;
+  min-width:36px;
+  height:36px;
+  border-radius:9px;
+  background:rgba(49,219,157,.12);
+  border:1px solid rgba(49,219,157,.28);
+  color:var(--green);
+  font-weight:900;
+}
+.priority div p{margin:3px 0}
+.hero-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:17px 0;
+}
+.hero-portrait{
+  width:100px;
+  min-height:125px;
+  padding:10px 6px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(160deg,#1b3532,#111622);
+  border:1px solid rgba(91,225,177,.28);
+  border-radius:12px;
+  text-align:center;
+}
+.portrait-image{
+  width:73px;
+  height:73px;
+  object-fit:cover;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:9px;
+  background:rgba(0,0,0,.2);
+}
+.portrait-fallback{
+  width:73px;
+  height:73px;
+  display:grid;
+  place-items:center;
+  border-radius:9px;
+  color:var(--mint);
+  background:rgba(45,138,110,.17);
+  font-size:24px;
+  font-weight:900;
+}
+.portrait-name{
+  font-size:11px;
+  font-weight:bold;
+  margin-top:8px;
+  color:#ecfff4;
+  line-height:1.3;
+}
+.counter-card{
+  border-left:3px solid var(--purple);
+}
+.counter-card h3{color:#d0b4ff}
+.video{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:#000;
+}
+.video iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
+  border:0;
+  inset:0;
+}
+.verdict{
+  background:
+    radial-gradient(circle at 0 0,rgba(46,204,144,.16),transparent 55%),
+    linear-gradient(135deg,#142320,#100e1b);
+  border-color:rgba(69,236,170,.37);
+}
+.site-footer{
+  padding:30px 20px;
+  text-align:center;
+  color:#849b90;
+  font-size:13px;
+  border-top:1px solid var(--border);
+}
+@media(max-width:700px){
+  .hero-banner{min-height:350px;padding:35px 20px}
+  .grid{grid-template-columns:1fr}
+  .card{padding:19px}
+  .hero-portrait{width:91px}
+  .portrait-image,.portrait-fallback{width:65px;height:65px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">GODS OF <span>ALLIANCE</span></a>
+</header>
+
+<div class="hero-banner">
+  <div class="banner-content">
+    <div class="eyebrow">GODS OF ALLIANCE · HERO GUIDE</div>
+    <h1>PHOBOS</h1>
+    <div class="banner-subtitle">The Nightmare of Magic Attack Heroes</div>
+    <div class="hero-tags">
+      <span>CONTROL</span>
+      <span>WAY OF ETERNITY</span>
+      <span>BACK LINE</span>
+      <span>ANTI-MAGE</span>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+
+<nav class="quick-nav" aria-label="Guide sections">
+  <a href="#intro">Introduction</a>
+  <a href="#skills">Skills</a>
+  <a href="#skins">Skins</a>
+  <a href="#glyphs">Glyphs</a>
+  <a href="#artifacts">Artifacts</a>
+  <a href="#elements">Elements</a>
+  <a href="#talismans">Talismans</a>
+  <a href="#synergies">Synergies</a>
+  <a href="#counters">Counters</a>
+  <a href="#verdict">Verdict</a>
+  <a href="#video">Video</a>
+</nav>
+
+<section id="intro">
+  <h2>Introduction — Mastering Phobos</h2>
+  <div class="card">
+    <p>
+      Phobos is a back-line Control Hero from the Way of Eternity,
+      specializing in disrupting enemies with high Magic Attack.
+    </p>
+    <p>
+      His strengths include prolonged control, Energy manipulation,
+      reducing enemy offensive stats, and punishing cursed targets.
+      This gives him a valuable role against teams that rely heavily
+      on their magical damage dealers.
+    </p>
+    <p>
+      Building Phobos effectively requires understanding the difference
+      between his Magic Attack scaling and Skills that depend
+      on their level.
+    </p>
+  </div>
+  <div class="info">
+    <p><strong>Key concept:</strong> Phobos is not simply a damage dealer.
+    His value comes from controlling dangerous targets and weakening
+    the enemy formation while his allies apply pressure.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Phobos — All Four Skills</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="number">SKILL 01 · FIRST SKILL</div>
+      <h3>Paralysis</h3>
+      <p>
+        Phobos targets the enemy with the highest Magic Attack and
+        paralyzes them for <strong>6.5 seconds</strong>, dealing
+        damage every half-second.
+      </p>
+      <p>
+        The target cannot move or attack while paralyzed.
+        Phobos simultaneously reduces the Physical Attack
+        and Magic Attack of all enemies for 12 seconds.
+      </p>
+      <p>
+        Damage scales with Magic Attack. While maintaining
+        Paralysis, Phobos cannot use his other Skills.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="number">SKILL 02 · SECOND SKILL</div>
+      <h3>Dreaded Shadow</h3>
+      <p>
+        Targets the enemy with the highest Magic Attack,
+        reducing their Magic Defense for four seconds
+        while dealing Magic Damage.
+      </p>
+      <p>
+        Its damage scales with Phobos's Magic Attack.
+        The lowered Magic Defense creates an opportunity
+        for magical allies to increase their pressure.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="number">SKILL 03 · THIRD SKILL</div>
+      <h3>Bonds of Darkness</h3>
+      <p>
+        Phobos binds himself to the enemy with the
+        highest Magic Attack for ten seconds.
+      </p>
+      <p>
+        During the effect, Energy gained by that enemy
+        is transferred to Phobos, restricting the target's
+        ability to use its first Skill while accelerating
+        Phobos's Energy gain.
+      </p>
+      <p>
+        <strong>Important:</strong> this Skill depends
+        on Skill level, not Magic Attack.
+      </p>
+    </article>
+
+    <article class="card">
+      <div class="number">SKILL 04 · FOURTH SKILL</div>
+      <h3>Curse Master</h3>
+      <p>
+        When a cursed enemy uses a Skill, Phobos deals
+        damage to that enemy.
+      </p>
+      <p>
+        The more Curses affecting the target,
+        the more damage the effect can produce.
+        Damage scales with Phobos's Magic Attack.
+      </p>
+      <p>
+        This effect applies only to enemies
+        who were present at the beginning of battle.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="info">
+    <p>
+      <strong>Build implication:</strong> Paralysis,
+      Dreaded Shadow, and Curse Master benefit from
+      Magic Attack investment. Bonds of Darkness
+      follows Skill-level scaling.
+    </p>
+  </div>
+</section>
+
+<section id="skins">
+  <h2>Skins — Recommended Upgrade Priority</h2>
+
+  <div class="card">
+
+    <div class="priority">
+      <span class="rank">1</span>
+      <div>
+        <h3>Solar Skin + Skin+</h3>
+        <p><strong>Magic Attack</strong> — top priority
+        for strengthening Phobos's damage-scaling Skills.
+        Include the Skin+ upgrade when available.</p>
+      </div>
+    </div>
+
+    <div class="priority">
+      <span class="rank">2</span>
+      <div>
+        <h3>Illusionist Skin</h3>
+        <p><strong>Magic Attack</strong> — further
+        improves the damage of his offensive Skills.</p>
+      </div>
+    </div>
+
+    <div class="priority">
+      <span class="rank">3</span>
+      <div>
+        <h3>Stellar Skin</h3>
+        <p><strong>Magic Penetration</strong> — helps
+        his magical damage overcome enemy Magic Defense.</p>
+      </div>
+    </div>
+
+    <div class="priority">
+      <span class="rank">4</span>
+      <div>
+        <h3>Default Skin</h3>
+        <p><strong>Intelligence</strong> — supports
+        Magic Attack and Magic Defense.</p>
+      </div>
+    </div>
+
+    <div class="priority">
+      <span class="rank">5</span>
+      <div>
+        <h3>Winter Skin</h3>
+        <p><strong>Armor</strong> — improves durability
+        against Physical Damage.</p>
+      </div>
+    </div>
+
+    <div class="priority">
+      <span class="rank">6</span>
+      <div>
+        <h3>Dark Depths Skin</h3>
+        <p><strong>Magic Defense</strong> — provides
+        additional protection against magical attacks.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="glyphs">
+  <h2>Glyphs — Best Investment Order</h2>
+
+  <div class="card">
+    <div class="priority"><span class="rank">1</span>
+      <div><h3>Health</h3>
+        <p>Vital for surviving long enough to apply control.</p></div>
+    </div>
+    <div class="priority"><span class="rank">2</span>
+      <div><h3>Armor</h3>
+        <p>Reduces vulnerability to Physical Damage.</p></div>
+    </div>
+    <div class="priority"><span class="rank">3</span>
+      <div><h3>Magic Attack</h3>
+        <p>Improves damage from Magic Attack-scaling Skills.</p></div>
+    </div>
+    <div class="priority"><span class="rank">4</span>
+      <div><h3>Intelligence</h3>
+        <p>Supports Magic Attack and Magic Defense.</p></div>
+    </div>
+    <div class="priority"><span class="rank">5</span>
+      <div><h3>Magic Defense</h3>
+        <p>Improves survivability against magical threats.</p></div>
+    </div>
+  </div>
+
+  <div class="info">
+    <p><strong>Recommended stopping point:</strong>
+    Level 40 for these Glyphs, unless you are also
+    pursuing the Class Skill.</p>
+  </div>
+</section>
+
+<section id="artifacts">
+  <h2>Artifacts — Upgrade Priorities</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="number">PRIORITY 01</div>
+      <h3>Artifact Book</h3>
+      <p><strong>Magic Attack + Health</strong></p>
+      <p>
+        The most valuable first investment for
+        balancing offensive scaling and survivability.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">PRIORITY 02</div>
+      <h3>Artifact Ring</h3>
+      <p><strong>Intelligence</strong></p>
+      <p>
+        Strengthens his main stat, contributing to
+        his overall magical capabilities.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">PRIORITY 03</div>
+      <h3>Artifact Weapon</h3>
+      <p><strong>Team Magic Defense</strong></p>
+      <p>
+        Grants Magic Defense to the entire team
+        when Phobos uses his first Skill.
+        Lower priority for his personal build.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="elements">
+  <h2>Gift of the Elements</h2>
+  <div class="card">
+    <h3>Maximize the Investment</h3>
+    <p>
+      Fully develop Phobos's Gift of the Elements,
+      supporting both Health and Magic Attack.
+    </p>
+    <p>
+      Even as a back-line Control Hero,
+      Phobos needs sufficient survivability
+      to use his control abilities consistently.
+    </p>
+    <p>
+      Magic Attack improves his offensive contribution,
+      while Health helps him remain active longer.
+    </p>
+  </div>
+</section>
+
+<section id="talismans">
+  <h2>Talismans — Both Options</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="number">TALISMAN 01</div>
+      <h3>Intelligence + Magic Attack</h3>
+      <p>
+        Available from the Eternal Frontier shop
+        for <strong>700,000 Frontier Coins</strong>.
+      </p>
+      <p>
+        Focuses on Phobos's offensive and main-stat development.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="number">TALISMAN 02</div>
+      <h3>Armor + Health</h3>
+      <p>
+        Obtained through special events.
+      </p>
+      <p>
+        A defensive option that supports survival
+        against teams applying heavy physical pressure.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="synergies">
+  <h2>Phobos — Hero Synergies</h2>
+
+  <div class="card">
+    <h3>Curse and Control Support</h3>
+    <div class="hero-row" data-heroes="Phobos,Jorgen,Cornelius,Faceless"></div>
+    <p>
+      <strong>Jorgen and Cornelius</strong> are useful
+      sources of Curse effects that can support Curse Master.
+    </p>
+    <p>
+      <strong>Faceless</strong> contributes additional
+      debuffs and Magic Penetration, increasing pressure
+      on teams vulnerable to magical control.
+    </p>
+    <p>
+      These Heroes illustrate individual synergies.
+      They are not presented as a tested optimal
+      five-Hero team.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Debuff-Based Pressure</h3>
+    <div class="hero-row" data-heroes="Phobos,Faceless,Jorgen"></div>
+    <p>
+      Phobos can combine his debuffs and control
+      with support from Faceless and Jorgen,
+      reducing the enemy's opportunities to respond.
+    </p>
+    <p>
+      His main objective is to limit the strongest
+      Magic Attack target and create windows
+      for allied Heroes.
+    </p>
+  </div>
+</section>
+
+<section id="counters">
+  <h2>How to Counter Phobos</h2>
+
+  <article class="card counter-card">
+    <div class="number">COUNTER 01 · DEBUFF PUNISHMENT</div>
+    <h3>Iris — Soul Burning</h3>
+
+    <div class="hero-row"
+      data-heroes="Iris,Julius,Tempus,Octavia,Nebula"></div>
+
+    <p>
+      Iris can turn Phobos's debuffs into an opportunity
+      to increase her own pressure.
+    </p>
+    <p>
+      Soul Burning can punish teams carrying
+      multiple debuffs, making Iris a useful answer
+      against Phobos-based formations.
+    </p>
+    <p>
+      In the featured battle, Iris works alongside
+      Julius, Tempus, Octavia, and Nebula.
+      Watch how debuffs influence the fight
+      before and during Soul Burning.
+    </p>
+  </article>
+
+  <article class="card counter-card">
+    <div class="number">COUNTER 02 · INTELLIGENCE TARGETING</div>
+    <h3>Cornelius — Heavy Wisdom</h3>
+
+    <div class="hero-row"
+      data-heroes="Cornelius,Iris,Guus,Electra von Grave,Nebula"></div>
+
+    <p>
+      Heavy Wisdom targets the enemy with
+      the highest Intelligence.
+    </p>
+    <p>
+      When Phobos leads the opposing team's Intelligence
+      and has low or average Armor,
+      Cornelius may potentially defeat him
+      with a single powerful hit.
+    </p>
+    <p>
+      Always check the opposing team's Intelligence
+      order before relying on this counter.
+    </p>
+  </article>
+
+  <article class="card counter-card">
+    <div class="number">COUNTER 03 · BACK-LINE PRESSURE</div>
+    <h3>Jhu — Furthest Enemy</h3>
+
+    <div class="hero-row"
+      data-heroes="Jhu,Yasmine,Wodryn,Byrna,Guus"></div>
+
+    <p>
+      Jhu is a strong consideration when Phobos
+      occupies the furthest enemy position.
+    </p>
+    <p>
+      The featured battle shows Jhu supported
+      by Yasmine, Wodryn, Byrna, and Guus.
+      His ability to create pressure during
+      extended engagements threatens vulnerable
+      back-line Heroes.
+    </p>
+    <p>
+      Positioning is essential:
+      Phobos must be the relevant furthest target.
+    </p>
+  </article>
+
+  <article class="card counter-card">
+    <div class="number">COUNTER 04 · LOW-HEALTH TARGETING</div>
+    <h3>Kendle — Lava Kiss</h3>
+
+    <div class="hero-row"
+      data-heroes="Kendle,Crow,Kayla,Dorian,Aidan"></div>
+
+    <p>
+      Lava Kiss targets the enemy with
+      the lowest Health when activated.
+    </p>
+    <p>
+      It begins with Magic Damage and can continue
+      dealing Pure Damage while Kendle satisfies
+      the required Health condition.
+    </p>
+    <p>
+      The effect ends when its target is defeated.
+      If Phobos becomes the lowest-Health enemy,
+      Kendle gains a finishing opportunity.
+    </p>
+    <p>
+      This counter depends on Health targeting,
+      not simply on Phobos standing in the back line.
+    </p>
+  </article>
+
+  <article class="card counter-card">
+    <div class="number">COUNTER 05 · FURTHEST TARGET MARK</div>
+    <h3>Eva — Focusing Scope</h3>
+
+    <div class="hero-row"
+      data-heroes="Eva,Cascade,Julius,Judge,Nebula"></div>
+
+    <p>
+      Focusing Scope marks the furthest enemy,
+      allowing allied Marksmen to share
+      some of their damage with that target.
+    </p>
+    <p>
+      If Phobos is the furthest enemy,
+      Eva can make his position a liability.
+    </p>
+    <p>
+      The featured battle uses Eva,
+      Cascade, Julius, Judge, and Nebula,
+      demonstrating additional pressure
+      against the enemy formation.
+    </p>
+  </article>
+
+  <div class="info">
+    <p>
+      <strong>Counter summary:</strong>
+      Iris exploits debuff pressure;
+      Cornelius threatens high-Intelligence targets;
+      Jhu pressures the furthest enemy;
+      Kendle capitalizes on low-Health targets;
+      and Eva marks the furthest enemy
+      for shared Marksman damage.
+    </p>
+  </div>
+</section>
+
+<section id="verdict">
+  <h2>Final Verdict — Is Phobos Worth Building?</h2>
+
+  <div class="card verdict">
+    <h3>Control the Enemy's Strongest Mage</h3>
+
+    <p>
+      Phobos offers an effective set of tools
+      for controlling Magic Attack-focused enemies.
+      His paralysis, Energy transfer, Magic Defense
+      reduction, and Curse-based damage
+      can disrupt dangerous formations.
+    </p>
+
+    <p>
+      He works best when properly supported
+      and when the opposing team has
+      a valuable Magic Attack target.
+    </p>
+
+    <p>
+      Focus on his Magic Attack scaling,
+      invest in survivability,
+      and use Curse synergies where appropriate.
+    </p>
+
+    <p>
+      His main vulnerabilities include
+      debuff punishment, Intelligence-based targeting,
+      back-line pressure, and low-Health finishing effects.
+    </p>
+
+    <p>
+      <strong>GOA recommendation:</strong>
+      Phobos is a specialized Control Hero.
+      Evaluate the enemy composition and positioning
+      before choosing him rather than treating him
+      as a universal answer to every team.
+    </p>
+  </div>
+</section>
+
+<section id="video">
+  <h2>Watch — Phobos Full Hero Guide</h2>
+
+  <div class="video">
+    <iframe
+      src="https://www.youtube.com/embed/NKRFAXGdwZk"
+      title="Phobos Full Hero Guide — Gods of Alliance"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <p>
+    Watch the complete video for battle demonstrations,
+    build priorities, and explanations of
+    Phobos's strengths and counters.
+  </p>
+</section>
+
+<section>
+  <div class="card" style="text-align:center">
+    <h3>Master the Mechanics. Control the Fight.</h3>
+    <p>
+      Explore more Heroes, guides, team strategies,
+      and analysis on Gods of Alliance.
+    </p>
+    <p>
+      <a href="heroes.html">Explore All Hero Guides</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  GODS OF ALLIANCE · HERO WARS ALLIANCE
+  <p>Strategy · Knowledge · Precision · Control</p>
+  <p>© 2026 Gods of Alliance</p>
+</footer>
+
+<script>
+/*
+  HERO PORTRAIT SYSTEM
+
+  Attempts common portrait filenames in Images/Heroes/.
+  If no image is found, renders a clean initial avatar.
+  Existing website image paths must be verified before
+  treating these candidates as authoritative.
+*/
+(function(){
+  "use strict";
+
+  function slugify(name){
+    return name.toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g,"")
+      .replace(/[^a-z0-9]+/g,"-")
+      .replace(/^-|-$/g,"");
+  }
+
+  document.querySelectorAll("[data-heroes]").forEach(function(row){
+    const names=row.dataset.heroes.split(",");
+
+    names.forEach(function(raw){
+      const name=raw.trim();
+      const slug=slugify(name);
+
+      const card=document.createElement("div");
+      card.className="hero-portrait";
+
+      const image=document.createElement("img");
+      image.className="portrait-image";
+      image.alt=name+" portrait";
+      image.loading="lazy";
+
+      const label=document.createElement("div");
+      label.className="portrait-name";
+      label.textContent=name;
+
+      const candidates=[
+        "Images/Heroes/"+slug+".png",
+        "Images/Heroes/"+slug+".jpg",
+        "Images/Heroes/"+slug+".webp"
+      ];
+
+      let index=0;
+
+      function nextImage(){
+        if(index<candidates.length){
+          image.src=candidates[index++];
+        }else{
+          image.remove();
+
+          const fallback=document.createElement("div");
+          fallback.className="portrait-fallback";
+          fallback.textContent=name.substring(0,1).toUpperCase();
+
+          card.insertBefore(fallback,label);
+        }
+      }
+
+      image.onerror=nextImage;
+
+      card.appendChild(image);
+      card.appendChild(label);
+      row.appendChild(card);
+
+      nextImage();
+    });
+  });
+})();
+</script>
+
+<script src="goa-global.js" defer></script>
+
+</body>
+</html>
