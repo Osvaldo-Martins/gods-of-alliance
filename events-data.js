@@ -1,10 +1,23 @@
 
 window.GOA_EVENTS = [
   {
+    id: "ascended-glory-valdur",
+    title: "Ascended Glory — Valdur Event Guide",
+    tag: "EVENT GUIDE",
+    status: "current",
+    order: 9,
+    image: "Images/Events/ascended-glory-valdur.jpg",
+    url: "ascended-glory-valdur.html",
+    dateLabel: "NOVEMBER 23 — NOVEMBER 29",
+    description:
+      "Explore all three Ascended Glory subevents — Firstborn Force, Unstable Equilibrium and Ancient Awakening — with all 24 quest tabs, Eternal Marks calculations, Valdur's Primordial Skin and Skin Plus, Alecto's Primordial Skin and the complete Outland Emerald spending strategy.",
+    button: "OPEN EVENT GUIDE →"
+  },
+  {
     id: "mighty-roots",
     title: "Mighty Roots Season Calendar",
     tag: "SEASON CALENDAR",
-    status: "current",
+    status: "archived",
     order: 8,
     image: "Images/Events/mighty-roots-season-calendar.jpg",
     url: "mighty-roots-season-calendar.html",
