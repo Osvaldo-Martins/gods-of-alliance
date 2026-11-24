@@ -1,6 +1,19 @@
 
 window.GOA_EVENTS = [
   {
+    id: "winter-eye-season",
+    title: "Winter's Eye Season Calendar",
+    tag: "SEASON CALENDAR",
+    status: "current",
+    order: 10,
+    image: "Images/Events/winter-eye-season.jpg",
+    url: "winter-eye-season.html",
+    dateLabel: "NOVEMBER 23 — DECEMBER 20",
+    description:
+      "Explore the complete Winter's Eye Season calendar, including Valdur, Ancient Awakening, Bountiful Roads, Ascendant Glory, Balance of Power, Mama Chabba's Seer's Game, new Skins and Skin Plus upgrades, Talismans, Legendary Relics, discounts and F2P resource-planning strategies.",
+    button: "OPEN SEASON CALENDAR →"
+  },
+  {
     id: "ascended-glory-valdur",
     title: "Ascended Glory — Valdur Event Guide",
     tag: "EVENT GUIDE",
