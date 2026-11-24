@@ -5,29 +5,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ascended Glory – Full Event Guide | Gods of Alliance</title>
+<title>Ascended Glory – Valdur Full Event Guide | Gods of Alliance</title>
 
-<meta name="description" content="Complete Ascended Glory event guide for Hero Wars Alliance. Explore all three subevents, maximize Eternal Marks and plan your Valdur Primordial Skin and Skin Plus investment.">
+<meta name="description" content="Complete Ascended Glory event guide for Hero Wars Alliance. Explore all three subevents, maximize Eternal Marks and calculate Valdur's Primordial Skin and Skin Plus costs.">
 
-<meta property="og:title" content="Ascended Glory – Maximize Your Rewards">
-<meta property="og:description" content="Three subevents, complete reward analysis, Valdur Skin Plus costs and the best progression strategies.">
-<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Events/ascended-glory-valdur.jpg">
-<meta property="og:url" content="https://www.godsofalliancehwa.com/ascended-glory-valdur.html">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://www.godsofalliancehwa.com/ascended-glory-valdur.html">
+
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="ASCENDED GLORY — MAXIMIZE YOUR REWARDS | Gods of Alliance">
+<meta property="og:description" content="Complete event breakdown, all three subevents, Eternal Marks calculations and Valdur's Skin Plus investment strategy.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/ascended-glory-valdur.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Events/ascended-glory-valdur.jpg">
+
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASCENDED GLORY — FULL EVENT GUIDE">
+<meta name="twitter:description" content="Maximize your Eternal Marks and discover the cost of Valdur's Primordial Skin and Skin Plus.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Events/ascended-glory-valdur.jpg">
 
 <style>
+
 :root{
---bg:#090710;
---panel:#151023;
---purple:#ad55ff;
---violet:#d4a0ff;
---gold:#ffce73;
---pink:#ed65e9;
---green:#70e8b0;
---text:#eee8f8;
---muted:#bcb0d0;
---border:rgba(174,85,255,.35);
+  --bg:#080510;
+  --panel:#191027;
+  --purple:#b76bff;
+  --violet:#dfb5ff;
+  --gold:#f5cc78;
+  --green:#7ce9b4;
+  --text:#f6f1ff;
+  --muted:#c6b8d9;
+  --border:rgba(183,107,255,.30);
 }
 
 *{box-sizing:border-box}
@@ -35,1449 +44,1806 @@
 html{scroll-behavior:smooth}
 
 body{
-margin:0;
-font-family:Arial,Helvetica,sans-serif;
-color:var(--text);
-line-height:1.75;
-background:
-radial-gradient(ellipse at 15% 10%,#31134d 0%,transparent 35%),
-radial-gradient(ellipse at 90% 45%,#241044 0%,transparent 35%),
-#090710;
+  margin:0;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(112,35,175,.24),transparent 42%),
+    linear-gradient(180deg,#160b25,#090610 48%,#050309);
+  color:var(--text);
+  font:16px/1.75 Arial,Helvetica,sans-serif;
 }
 
-a{
-color:var(--gold);
-text-decoration:none;
-}
+a{color:var(--purple)}
 
-a:hover{color:#fff}
-
-.page{
-max-width:1220px;
-margin:30px auto;
-padding:22px;
-border:1px solid #b65dff;
-border-radius:25px;
-background:rgba(10,7,18,.94);
-box-shadow:
-0 0 12px rgba(180,75,255,.45),
-0 0 45px rgba(135,40,255,.18),
-inset 0 0 35px rgba(142,58,220,.06);
-}
-
-.topbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:15px;
-padding:8px 4px 22px;
-flex-wrap:wrap;
+header{
+  background:rgba(7,4,13,.96);
+  border-bottom:1px solid var(--border);
+  padding:20px 6%;
 }
 
 .brand{
-font-size:13px;
-font-weight:900;
-letter-spacing:2px;
-color:var(--gold);
+  text-decoration:none;
+  color:#fff;
+  font-size:21px;
+  font-weight:900;
+  letter-spacing:2px;
 }
 
-.back{
-font-size:13px;
-font-weight:700;
-color:var(--violet);
-}
+.brand span{color:var(--gold)}
+
+/* ORIGINAL GOA PANORAMIC GHOST COVER */
 
 .hero{
-position:relative;
-isolation:isolate;
-overflow:hidden;
-min-height:350px;
-display:flex;
-align-items:center;
-padding:42px;
-border:1px solid var(--border);
-border-radius:20px;
-background:#120c20;
+  min-height:560px;
+  display:flex;
+  align-items:flex-end;
+  background:
+    linear-gradient(90deg,rgba(8,4,17,.79),rgba(8,4,17,.32)),
+    linear-gradient(0deg,#080510,transparent 70%),
+    url("Images/Events/ascended-glory-valdur.jpg") center / cover no-repeat;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-z-index:-2;
-background:url('Images/Events/ascended-glory-valdur.jpg') center 35%/cover no-repeat;
-opacity:.24;
+.hero-inner{
+  width:min(1140px,90%);
+  margin:auto;
+  padding:110px 0 60px;
 }
 
-.hero::after{
-content:"";
-position:absolute;
-inset:0;
-z-index:-1;
-background:
-linear-gradient(90deg,rgba(15,9,26,.96),rgba(15,9,26,.65) 55%,rgba(15,9,26,.20)),
-linear-gradient(0deg,#120c20,transparent 70%);
-}
-
-.hero-content{max-width:850px}
-
-.eyebrow{
-display:inline-block;
-color:var(--violet);
-font-size:12px;
-font-weight:900;
-letter-spacing:2.5px;
-margin-bottom:15px;
+.eyebrow,.kicker{
+  color:var(--purple);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:3px;
 }
 
 h1{
-font-size:clamp(35px,6vw,70px);
-line-height:1.05;
-margin:0 0 15px;
-letter-spacing:-1px;
-background:linear-gradient(110deg,#fff1b8,#ffbf55,#db9bff);
--webkit-background-clip:text;
-background-clip:text;
-color:transparent;
+  font-size:clamp(44px,7vw,80px);
+  line-height:1.04;
+  letter-spacing:-2px;
+  margin:14px 0;
+  text-shadow:0 4px 25px rgba(0,0,0,.65);
 }
 
-.hero-subtitle{
-font-size:clamp(17px,2.5vw,25px);
-font-weight:700;
-color:#f2d7ff;
-margin-bottom:15px;
+.hero-sub{
+  color:var(--gold);
+  font-weight:900;
+  letter-spacing:2px;
 }
 
-.hero-description{
-max-width:690px;
-color:#ded2ef;
-font-size:15px;
+.hero p{
+  max-width:730px;
+  color:#eee3fa;
+  font-size:18px;
 }
 
-.event-date{
-display:inline-flex;
-align-items:center;
-gap:10px;
-padding:8px 15px;
-margin-top:14px;
-background:rgba(174,85,255,.13);
-border:1px solid #9853cf;
-border-radius:8px;
-font-size:13px;
-font-weight:800;
-color:#ead4ff;
+.hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:22px;
 }
 
-.meta{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:20px;
+.hero-tags span{
+  border:1px solid rgba(211,159,255,.35);
+  border-radius:5px;
+  background:rgba(40,19,65,.65);
+  color:#ead3ff;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1px;
+  padding:6px 12px;
 }
 
-.meta span{
-padding:6px 12px;
-border:1px solid rgba(255,206,115,.3);
-background:rgba(255,206,115,.06);
-border-radius:6px;
-color:var(--gold);
-font-size:11px;
-font-weight:800;
-letter-spacing:1px;
+/* PREMIUM ELARITE ARTICLE FRAME */
+
+.container{
+  max-width:1160px;
+  margin:20px auto 65px;
+  padding:35px 28px 45px;
+  border:1px solid #a85bf2;
+  border-radius:20px;
+  background:rgba(10,6,19,.92);
+  box-shadow:
+    0 0 15px rgba(174,76,255,.30),
+    0 0 55px rgba(136,43,230,.14),
+    inset 0 0 35px rgba(136,43,230,.05);
 }
+
+.section{
+  margin-bottom:55px;
+  scroll-margin-top:25px;
+}
+
+.section:last-child{margin-bottom:0}
+
+h2{
+  font-size:clamp(27px,4vw,39px);
+  line-height:1.2;
+  margin:10px 0 23px;
+}
+
+h3{line-height:1.3}
+
+p,li{color:var(--muted)}
+
+strong{color:#f8dda2}
+
+.panel,.event,.quest,.note,.highlight{
+  background:
+    radial-gradient(ellipse at top right,rgba(155,66,235,.10),transparent 65%),
+    linear-gradient(145deg,#211331,#110c1c);
+  border:1px solid var(--border);
+  border-radius:13px;
+}
+
+.panel{padding:29px}
+
+.lead{font-size:18px}
+
+/* QUICK NAVIGATION */
 
 .quick-nav{
-display:flex;
-flex-wrap:wrap;
-gap:9px;
-margin:22px 0;
-padding:15px;
-border:1px solid var(--border);
-border-radius:12px;
-background:#171024;
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  padding:17px;
+  margin:25px 0 45px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:#171023;
 }
 
 .quick-nav a{
-padding:8px 13px;
-border-radius:7px;
-background:#251638;
-color:#e7caff;
-font-size:12px;
-font-weight:700;
-transition:.2s;
+  padding:8px 13px;
+  background:#29183d;
+  border:1px solid rgba(183,107,255,.16);
+  border-radius:6px;
+  color:#ead4ff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:800;
+  transition:.2s;
 }
 
 .quick-nav a:hover{
-background:#7135a7;
-color:white;
+  background:#7135a7;
+  border-color:var(--purple);
+  color:#fff;
 }
 
+/* PREMIUM REWARD CARDS */
+
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-gap:15px;
-margin:20px 0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(185px,1fr));
+  gap:15px;
+  margin:22px 0;
 }
 
 .stat{
-position:relative;
-overflow:hidden;
-padding:24px 16px;
-text-align:center;
-background:
-radial-gradient(ellipse at top,rgba(180,65,255,.22),transparent 80%),
-linear-gradient(145deg,#211333,#130e20);
-border:1px solid #75439e;
-border-radius:14px;
+  position:relative;
+  overflow:hidden;
+  padding:24px 16px;
+  text-align:center;
+  border:1px solid #75449d;
+  border-radius:13px;
+  background:
+    radial-gradient(ellipse at top,rgba(183,107,255,.20),transparent 80%),
+    linear-gradient(145deg,#29173d,#140d22);
 }
 
 .stat::before{
-content:"";
-position:absolute;
-top:0;
-left:15%;
-right:15%;
-height:2px;
-background:linear-gradient(90deg,transparent,#d08aff,transparent);
+  content:"";
+  position:absolute;
+  top:0;
+  left:15%;
+  right:15%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#d69aff,transparent);
 }
 
 .stat-label{
-display:block;
-font-size:12px;
-font-weight:800;
-color:var(--muted);
-text-transform:uppercase;
-letter-spacing:1px;
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1px;
+  text-transform:uppercase;
 }
 
 .stat b{
-display:block;
-font-size:clamp(24px,3vw,34px);
-color:var(--gold);
-line-height:1.4;
-margin:7px 0;
+  display:block;
+  color:var(--gold);
+  font-size:clamp(25px,3vw,35px);
+  line-height:1.4;
+  margin:8px 0;
 }
 
-.stat small{color:var(--violet)}
-
-section{
-scroll-margin-top:20px;
-margin:25px 0;
-padding:28px;
-border:1px solid var(--border);
-border-radius:17px;
-background:
-radial-gradient(ellipse at top right,rgba(147,53,218,.09),transparent 60%),
-linear-gradient(145deg,#181024,#100c19);
-box-shadow:0 8px 25px rgba(0,0,0,.18);
+.stat small{
+  color:var(--violet);
+  font-size:12px;
 }
 
-.section-label{
-display:block;
-color:var(--purple);
-font-size:11px;
-font-weight:900;
-letter-spacing:2px;
-margin-bottom:7px;
+/* EVENT SECTIONS */
+
+.event{
+  padding:29px;
+  border-top:4px solid var(--purple);
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
 }
 
-h2{
-font-size:clamp(23px,3vw,31px);
-line-height:1.3;
-color:var(--gold);
-margin:0 0 17px;
-padding-bottom:14px;
-border-bottom:1px solid var(--border);
+.event-heading{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:10px;
+  align-items:center;
+  margin-bottom:18px;
 }
 
-h3{
-font-size:18px;
-color:#dfb6ff;
-line-height:1.4;
-margin:0 0 9px;
+.event-heading h2{margin:0}
+
+.date{
+  display:inline-block;
+  color:#160c21;
+  background:linear-gradient(135deg,#ffe4a1,#e8b756);
+  padding:7px 13px;
+  border-radius:5px;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
 }
-
-p{margin:10px 0 16px}
-
-strong{color:#ffdb91}
-
-.intro{color:#d8cce8}
 
 .quest-grid{
-display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:15px;
-margin-top:22px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:15px;
+  margin:25px 0;
 }
 
 .quest{
-position:relative;
-padding:20px;
-border:1px solid rgba(170,89,235,.22);
-border-left:3px solid #a854ee;
-border-radius:10px;
-background:linear-gradient(135deg,#241634,#191124);
+  padding:22px;
+  border-left:3px solid #ad5bf5;
+  background:linear-gradient(145deg,#2a193c,#1a1129);
+  transition:border-color .2s;
+}
+
+.quest:hover{
+  border-color:var(--purple);
+}
+
+.quest h3{
+  color:var(--violet);
+  font-size:19px;
+  margin:0 0 10px;
 }
 
 .quest p{
-font-size:14px;
-margin:8px 0;
-color:#ddd2eb;
+  font-size:14px;
+  margin:8px 0;
 }
 
-.quest .number{
-display:inline-block;
-font-size:11px;
-font-weight:900;
-letter-spacing:1px;
-color:#b58bdc;
-margin-bottom:9px;
+.number{
+  display:block;
+  color:#b995d9;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  margin-bottom:9px;
 }
 
 .reward{
-display:inline-block;
-padding:5px 10px;
-margin:8px 0 0;
-background:rgba(255,206,115,.08);
-border:1px solid rgba(255,206,115,.25);
-border-radius:6px;
-font-size:12px;
-font-weight:800;
-color:var(--gold);
+  display:inline-block;
+  padding:5px 10px;
+  margin-top:10px;
+  background:rgba(245,204,120,.08);
+  border:1px solid rgba(245,204,120,.30);
+  border-radius:5px;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:800;
 }
 
+/* STRATEGIC NOTES */
+
 .note{
-margin:20px 0;
-padding:18px 20px;
-background:linear-gradient(90deg,#2c1b42,#1c132c);
-border:1px solid #8250b2;
-border-left:4px solid #bc73ff;
-border-radius:10px;
+  padding:23px 25px;
+  margin:22px 0;
+  border-left:4px solid var(--purple);
+  background:linear-gradient(90deg,#2d1b43,#1b1229);
+}
+
+.note-title{
+  display:block;
+  color:var(--violet);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  margin-bottom:8px;
 }
 
 .note p:last-child{margin-bottom:0}
 
-.note-title{
-font-size:12px;
-font-weight:900;
-letter-spacing:1.5px;
-color:#d5a2ff;
-margin-bottom:6px;
-}
-
 .gold-note{
-background:linear-gradient(90deg,#30243a,#201627);
-border-color:#9c773e;
-border-left-color:#ffce73;
+  border-color:rgba(245,204,120,.40);
+  border-left:4px solid var(--gold);
+  background:linear-gradient(135deg,#35263c,#201629);
 }
 
 .gold-note .note-title{color:var(--gold)}
 
+.highlight{
+  border:1px solid rgba(245,204,120,.48);
+  padding:30px;
+  background:
+    radial-gradient(ellipse at top right,rgba(164,73,240,.18),transparent 65%),
+    linear-gradient(135deg,#30203e,#1a102a);
+}
+
+.highlight h3{
+  color:var(--gold);
+  font-size:26px;
+  margin:0 0 12px;
+}
+
+/* COMPARISON TABLES */
+
 .table-wrap{
-overflow-x:auto;
-border:1px solid #67408a;
-border-radius:12px;
-margin:20px 0;
+  overflow-x:auto;
+  border:1px solid #704394;
+  border-radius:12px;
+  margin:24px 0;
 }
 
 table{
-width:100%;
-border-collapse:collapse;
-min-width:540px;
-font-size:14px;
+  width:100%;
+  border-collapse:collapse;
+  min-width:530px;
+  font-size:14px;
 }
 
 th,td{
-padding:15px 17px;
-text-align:left;
-border-bottom:1px solid rgba(174,85,255,.18);
+  padding:15px 17px;
+  text-align:left;
+  border-bottom:1px solid rgba(183,107,255,.19);
 }
 
 th{
-background:#382052;
-color:#f0d8ff;
-font-size:12px;
-text-transform:uppercase;
-letter-spacing:.5px;
+  background:#382052;
+  color:#f1dbff;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
 }
 
-td{background:rgba(29,19,43,.65)}
+td{
+  background:rgba(29,19,43,.65);
+  color:var(--text);
+}
 
 tr:nth-child(even) td{
-background:rgba(41,25,59,.65);
+  background:rgba(43,26,61,.65);
 }
 
 tr:last-child td{border-bottom:none}
 
 .total td{
-background:#40255d!important;
-color:var(--gold);
-font-weight:900;
+  background:#42265e!important;
+  color:var(--gold);
+  font-weight:900;
 }
 
-.positive{color:var(--green)}
+/* PROGRESSION BARS */
 
 .progress-panel{
-padding:22px;
-margin:20px 0;
-background:#20142e;
-border:1px solid var(--border);
-border-radius:13px;
+  padding:24px;
+  margin:22px 0;
+  background:#21142f;
+  border:1px solid var(--border);
+  border-radius:12px;
+}
+
+.progress-panel h3{
+  color:var(--violet);
+  margin-top:0;
 }
 
 .progress-heading{
-display:flex;
-justify-content:space-between;
-gap:15px;
-font-size:13px;
-font-weight:700;
-margin:14px 0 8px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  font-size:13px;
+  font-weight:800;
+  margin:18px 0 8px;
 }
 
 .progress-track{
-height:15px;
-background:#0c0815;
-border:1px solid #51316e;
-border-radius:20px;
-overflow:hidden;
+  height:16px;
+  background:#0c0815;
+  border:1px solid #51316e;
+  border-radius:20px;
+  overflow:hidden;
 }
 
 .progress-fill{
-height:100%;
-border-radius:20px;
-background:linear-gradient(90deg,#7935d2,#ce65ff,#ffce73);
-box-shadow:0 0 12px rgba(195,80,255,.5);
+  height:100%;
+  border-radius:20px;
+  background:linear-gradient(90deg,#7935d2,#ce65ff,#ffce73);
+  box-shadow:0 0 12px rgba(195,80,255,.5);
 }
 
 .progress-caption{
-color:var(--muted);
-font-size:12px;
-margin-top:14px;
+  font-size:12px;
+  margin-bottom:0;
 }
 
+/* FINAL VERDICT */
+
 .verdict-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:16px;
-margin-top:22px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:24px 0;
 }
 
 .verdict-card{
-padding:24px;
-border:1px solid #8752b4;
-border-radius:14px;
-background:linear-gradient(145deg,#2c1b42,#191023);
+  padding:24px;
+  border:1px solid #8752b4;
+  border-radius:13px;
+  background:linear-gradient(145deg,#302046,#191023);
 }
 
-.verdict-card h3{color:var(--gold)}
+.verdict-card h3{
+  color:var(--gold);
+  margin-top:0;
+}
 
 .verdict-card.base{
-border-color:#3c9a79;
-background:linear-gradient(145deg,#15372f,#151823);
+  border-color:#428f76;
+  background:linear-gradient(145deg,#15352e,#151823);
 }
 
 .verdict-card.base h3{color:var(--green)}
 
-.video{
-aspect-ratio:16/9;
-border:1px solid #9b5bda;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 0 25px rgba(164,65,255,.12);
+/* ORIGINAL GOA VIDEO FORMAT */
+
+.video-wrap{
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  height:0;
+  background:#000;
+  overflow:hidden;
+  border-radius:12px;
+  border:1px solid var(--border);
+  box-shadow:0 0 25px rgba(164,65,255,.14);
 }
 
-.video iframe{
-width:100%;
-height:100%;
-border:0;
+.video-wrap iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
 }
 
-.button{
-display:inline-block;
-padding:13px 24px;
-margin-top:20px;
-border-radius:8px;
-font-weight:900;
-font-size:13px;
-color:#1b1023;
-background:linear-gradient(135deg,#ffe5a4,#eeb64c);
+.watch{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 23px;
+  border-radius:6px;
+  color:#160d20;
+  background:linear-gradient(135deg,#ffe4a1,#e8b756);
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
 }
 
-.button:hover{
-color:#1b1023;
-background:#ffe5a4;
+.watch:hover{background:#ffe8b2}
+
+/* ORIGINAL GOA BACK BUTTON AND FOOTER */
+
+.back{
+  display:inline-block;
+  border:1px solid var(--gold);
+  padding:12px 20px;
+  margin-top:28px;
+  color:var(--gold);
+  text-decoration:none;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+.back:hover{
+  background:var(--gold);
+  color:#080510;
 }
 
 footer{
-text-align:center;
-padding:25px 12px 10px;
-color:var(--muted);
-font-size:12px;
-border-top:1px solid var(--border);
+  border-top:1px solid var(--border);
+  padding:30px 15px;
+  text-align:center;
+  color:#a28cb7;
+  font-size:12px;
+  letter-spacing:1px;
 }
 
-footer strong{
-display:block;
-letter-spacing:1.5px;
-margin-bottom:7px;
+/* RESPONSIVE DESIGN */
+
+@media(max-width:1200px){
+  .container{margin:20px 18px 55px}
 }
 
-@media(max-width:760px){
-.page{
-margin:10px;
-padding:12px;
-border-radius:16px;
-}
-.hero{
-min-height:320px;
-padding:24px;
-}
-.hero::before{opacity:.19}
-.quest-grid,.verdict-grid{
-grid-template-columns:1fr;
-}
-section{padding:19px}
-.cards{
-grid-template-columns:repeat(2,minmax(0,1fr));
-gap:10px;
-}
-.stat{padding:17px 10px}
-.quick-nav{padding:10px}
+@media(max-width:700px){
+
+  .hero{min-height:470px}
+
+  .hero-inner{padding:85px 0 40px}
+
+  .container{
+    margin:12px 10px 40px;
+    padding:20px 13px;
+    border-radius:14px;
+  }
+
+  .event,.panel,.highlight{padding:20px}
+
+  .quest-grid,.verdict-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cards{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+  }
+
+  .stat{padding:17px 10px}
+
+  .quest{padding:19px}
+
+  .note{padding:18px}
+
+  .section{margin-bottom:40px}
+
+  .hero p{font-size:16px}
+
+  .hero-sub{font-size:13px}
+
 }
 
 @media(max-width:390px){
-.cards{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
 }
+
 </style>
 </head>
 
 <body>
 
-<main class="page">
-
-<div class="topbar">
-<a class="back" href="events.html">← BACK TO EVENTS</a>
-<div class="brand">GODS OF ALLIANCE</div>
-</div>
-
-<header class="hero">
-<div class="hero-content">
-
-<div class="eyebrow">
-HERO WARS ALLIANCE • ELARITE EVENT
-</div>
-
-<h1>ASCENDED GLORY</h1>
-
-<div class="hero-subtitle">
-Full Event Guide — Maximize Your Rewards
-</div>
-
-<p class="hero-description">
-Three interconnected subevents. Hundreds of quest milestones.
-One complete strategy to maximize your Eternal Marks,
-unlock Valdur's Primordial Skin and evaluate the true cost of Skin Plus.
-</p>
-
-<div class="event-date">
-EVENT PERIOD • NOVEMBER 23–29, 2026
-</div>
-
-<div class="meta">
-<span>7-DAY EVENT</span>
-<span>3 SUBEVENTS</span>
-<span>VALDUR</span>
-<span>ELARITE</span>
-<span>COMPLETE REWARD ANALYSIS</span>
-</div>
-
-</div>
+<header>
+  <a class="brand" href="index.html">GODS <span>OF ALLIANCE</span></a>
 </header>
 
-<div class="cards">
+<section class="hero">
 
-<div class="stat">
-<span class="stat-label">Primordial Skin</span>
-<b>100,000</b>
-<small>Eternal Marks</small>
-</div>
+  <div class="hero-inner">
 
-<div class="stat">
-<span class="stat-label">Skin Plus</span>
-<b>350,000</b>
-<small>Additional Eternal Marks</small>
-</div>
+    <div class="eyebrow">
+      HERO WARS ALLIANCE • COMPLETE EVENT GUIDE
+    </div>
 
-<div class="stat">
-<span class="stat-label">Total Skin Cost</span>
-<b>450,000</b>
-<small>Eternal Marks</small>
-</div>
+    <h1>ASCENDED<br>GLORY</h1>
 
-<div class="stat">
-<span class="stat-label">Projected Baseline</span>
-<b>273,950</b>
-<small>15 Tower Chests Route</small>
-</div>
+    <div class="hero-sub">
+      MAXIMIZE YOUR REWARDS • NOVEMBER 23 — NOVEMBER 29, 2026
+    </div>
 
-</div>
+    <p>
+      Valdur's Primordial Skin, Skin Plus, three interconnected
+      subevents and hundreds of quest milestones.
+      Discover how to maximize your Eternal Marks and make
+      the best investment for your account.
+    </p>
 
-<nav class="quick-nav">
-<a href="#shop">Event Shop</a>
-<a href="#firstborn">Firstborn Force</a>
-<a href="#equilibrium">Unstable Equilibrium</a>
-<a href="#awakening">Ancient Awakening</a>
-<a href="#calculation">Reward Calculation</a>
-<a href="#skinplus">Skin Plus Cost</a>
-<a href="#strategy">Best Strategy</a>
-<a href="#verdict">Final Verdict</a>
-<a href="#video">Video Guide</a>
-</nav>
+    <div class="hero-tags">
+      <span>7-DAY EVENT</span>
+      <span>3 SUBEVENTS</span>
+      <span>VALDUR</span>
+      <span>ELARITE</span>
+      <span>REWARD ANALYSIS</span>
+    </div>
 
-<section id="shop">
-
-<span class="section-label">EVENT OVERVIEW</span>
-
-<h2>Event Shop — Choose Your Rewards</h2>
-
-<p class="intro">
-This event offers an important opportunity to develop Valdur,
-collect Titan resources and obtain valuable rewards.
-However, understanding how the three subevents interact is
-essential before committing your Emeralds and saved resources.
-</p>
-
-<div class="quest-grid">
-
-<div class="quest">
-<h3>Valdur's Primordial Skin</h3>
-<p>The base skin requires 100,000 Eternal Marks.
-Both progression routes presented in this guide cover this cost.</p>
-<span class="reward">100,000 Eternal Marks</span>
-</div>
-
-<div class="quest">
-<h3>Valdur's Skin Plus</h3>
-<p>The Skin Plus upgrade requires an additional 350,000 Marks,
-bringing the combined investment to 450,000.</p>
-<span class="reward">350,000 Additional Marks</span>
-</div>
-
-<div class="quest">
-<h3>Titan Development</h3>
-<p>The Event Shop also offers Titan fragments,
-allowing players to invest in alternative development priorities.</p>
-</div>
-
-<div class="quest">
-<h3>Arachne Relics</h3>
-<p>Arachne Relic Shards provide another option for players
-who prefer to invest their remaining Marks in hero progression.</p>
-</div>
-
-</div>
-
-<div class="note gold-note">
-<div class="note-title">EVENT SHOP REMINDER</div>
-The shop remains open for 24 hours after the event ends.
-Review your final Eternal Marks balance before making your final purchases.
-</div>
-
-<div class="note">
-<div class="note-title">ADDITIONAL EVENT CURRENCY</div>
-Titan Brawls contributes another
-<strong>1,500 Eternal Marks</strong> to our baseline projections.
-</div>
+  </div>
 
 </section>
 
-<section id="firstborn">
+<main class="container">
 
-<span class="section-label">SUBEVENT 01 • DAILY PROGRESSION</span>
+<section class="section">
 
-<h2>Firstborn Force</h2>
+  <div class="kicker">EVENT OVERVIEW</div>
 
-<p class="intro">
-Firstborn Force is the foundation of our reward strategy.
-Most quests reset daily, making consistent progression across
-all seven days extremely important.
-</p>
+  <h2>Everything You Need to Know</h2>
 
-<div class="quest-grid">
+  <div class="panel">
 
-<div class="quest">
-<span class="number">QUEST 01</span>
-<h3>Game Login</h3>
-<p>Log in every day to collect Eternal Marks,
-Titan Skin Stones and Brawl Tokens.</p>
-<p>Seven logins provide 3,500 Titan Skin Stones
-and 90 Brawl Tokens.</p>
-<span class="reward">2,100 Eternal Marks</span>
-</div>
+    <p class="lead">
+      Ascended Glory offers players an opportunity to develop
+      Valdur, obtain his Primordial Skin and Skin Plus,
+      and collect valuable resources through three connected subevents.
+    </p>
 
-<div class="quest">
-<span class="number">QUEST 02</span>
-<h3>VIP</h3>
-<p>Daily VIP milestones range from 100 to 4,500 VIP Points.</p>
-<p>Rewards include Titan Skin Stones, Rune Spheres,
-Season Points, Adventure Coins and Elemental Spheres.</p>
-<p>VIP rewards are excluded from our baseline calculation.</p>
-</div>
+    <p>
+      This complete guide covers every quest category in
+      Firstborn Force, Unstable Equilibrium and Ancient Awakening,
+      alongside two progression scenarios and the estimated
+      Emerald investment required to obtain Skin Plus.
+    </p>
 
-<div class="quest">
-<span class="number">QUEST 03</span>
-<h3>Guilds' Activity</h3>
-<p>Daily milestones range from 250 to 4,500 activity points.</p>
-<p>Rewards include Pallant Fragments, Adventure Energy,
-Adventure Coins, Titan Potions, Season Points,
-Titan Skin Stones, Fairy Dust and Mastery Crystals.</p>
-<p>Elemental Spheres can also support
-Unstable Equilibrium progression.</p>
-</div>
+  </div>
 
-<div class="quest">
-<span class="number">QUEST 04</span>
-<h3>Fairy Dust</h3>
-<p>Spend Fairy Dust to complete daily milestones up to 10,000.</p>
-<p>Rewards include Metida Fragments, Sacred Guard Recipe Fragments,
-Titan Skin Stones, Adventure Coins, Adventure Energy,
-Season Points, Rune Spheres, Meta Cubes,
-Titan Potions and Large Skin Stone Chests.</p>
-<p>Some milestones also return Fairy Dust.</p>
-</div>
+  <div class="cards">
 
-<div class="quest">
-<span class="number">QUEST 05</span>
-<h3>Hero Skin Stones</h3>
-<p>Daily milestones range from 500 to 10,000
-Hero Skin Stones spent.</p>
-<p>Rewards include Season Points, Titan Skin Stones,
-Adventure Coins, Sacred Guard Recipe Fragments,
-Mastery Crystals and Rune Spheres.</p>
-<p>Check your inventory before committing to all seven days.</p>
-</div>
+    <div class="stat">
+      <span class="stat-label">Primordial Skin</span>
+      <b>100,000</b>
+      <small>Eternal Marks</small>
+    </div>
 
-<div class="quest">
-<span class="number">QUEST 06</span>
-<h3>Tower Chests</h3>
-<p>Opening Tower Chests unlocks milestones at
-2, 5, 8, 10 and 15 chests, with additional milestones beyond these.</p>
-<p>Rewards include Fairy Dust, Adventure Energy,
-Skin Stone Chests, Adventure Coins, Season Points,
-Titan Skin Stones, Sacred Guard Recipe Fragments and Meta Cubes.</p>
-<p>Opening 11 chests reaches the 10-chest milestone.
-Opening 15 reaches the next milestone.</p>
-<span class="reward">3,500 Marks Difference Over 7 Days</span>
-</div>
+    <div class="stat">
+      <span class="stat-label">Skin Plus</span>
+      <b>350,000</b>
+      <small>Additional Eternal Marks</small>
+    </div>
 
-<div class="quest">
-<span class="number">QUEST 07</span>
-<h3>Valkyrie's Chests</h3>
-<p>Our projection includes 40 Artifact Chests per day.</p>
-<p>Additional rewards include Adventure Energy,
-Adventure Coins, Pallant Fragments, Fairy Dust,
-Season Points and Meta Cubes.</p>
-</div>
+    <div class="stat">
+      <span class="stat-label">Total Skin Cost</span>
+      <b>450,000</b>
+      <small>Eternal Marks</small>
+    </div>
 
-<div class="quest">
-<span class="number">QUEST 08</span>
-<h3>Hold a Raid</h3>
-<p>Defeat bosses as Raid Leader.
-Our daily route includes 10 boss defeats.</p>
-<p>Rewards include Wood, Food, Stone, Iron,
-Elemental Spheres, Titan Skin Stones, Fairy Dust,
-Season Points, Titan Potions and five-minute General Speedups.</p>
-</div>
+    <div class="stat">
+      <span class="stat-label">Projected Baseline</span>
+      <b>273,950</b>
+      <small>15 Tower Chests Route</small>
+    </div>
 
-</div>
+  </div>
 
-<div class="cards">
-
-<div class="stat">
-<span class="stat-label">11 Tower Chests / Day</span>
-<b>205,450</b>
-<small>Eternal Marks</small>
-</div>
-
-<div class="stat">
-<span class="stat-label">15 Tower Chests / Day</span>
-<b>208,950</b>
-<small>Eternal Marks</small>
-</div>
-
-</div>
-
-<div class="note gold-note">
-<div class="note-title">RESOURCE MANAGEMENT</div>
-Guilds' Activity and Hero Skin Stones account for more than
-100,000 Eternal Marks between them.
-Make sure your account can support the required daily milestones.
-</div>
+  <nav class="quick-nav">
+    <a href="#shop">Event Shop</a>
+    <a href="#firstborn">Firstborn Force</a>
+    <a href="#equilibrium">Unstable Equilibrium</a>
+    <a href="#awakening">Ancient Awakening</a>
+    <a href="#calculation">Reward Calculation</a>
+    <a href="#skinplus">Skin Plus Cost</a>
+    <a href="#strategy">Best Strategy</a>
+    <a href="#video">Video Guide</a>
+    <a href="#verdict">Final Verdict</a>
+  </nav>
 
 </section>
 
-<section id="equilibrium">
+<section class="section" id="shop">
 
-<span class="section-label">SUBEVENT 02 • CUMULATIVE PROGRESSION</span>
+  <div class="kicker">EVENT SHOP • REWARD PRIORITIES</div>
 
-<h2>Unstable Equilibrium</h2>
+  <div class="event">
 
-<p class="intro">
-Unstable Equilibrium accumulates progression throughout the event.
-These quests also contribute to Elemental Tempest,
-creating additional opportunities to obtain valuable rewards.
-</p>
+    <div class="event-heading">
+      <h2>Choose Your Rewards</h2>
+      <span class="date">NOV 23 — NOV 29</span>
+    </div>
 
-<div class="quest-grid">
+    <p>
+      The Event Shop is the central destination for your Eternal Marks.
+      Understanding the total cost of Valdur's skins is essential
+      before deciding how much to invest in the event.
+    </p>
 
-<div class="quest">
-<span class="number">QUEST 01</span>
-<h3>Game Login</h3>
-<p>Collect 300 Eternal Marks per event day,
-alongside Titan Skin Stones.</p>
-<span class="reward">2,100 Marks Over 7 Days</span>
-</div>
+    <div class="quest-grid">
 
-<div class="quest">
-<span class="number">QUEST 02</span>
-<h3>VIP</h3>
-<p>The cumulative VIP track offers up to 47,000 Marks.</p>
-<p>Other rewards include Eva Soulstones, Red Gear Fragments,
-Titan Skin Stones, Season Points, Rune Spheres,
-Large Skin Stone Chests, Titan Potions and Adventure Coins.</p>
-<span class="reward">47,000 Marks — Full Track</span>
-</div>
+      <article class="quest">
+        <h3>Valdur's Primordial Skin</h3>
+        <p>
+          The base skin requires 100,000 Eternal Marks.
+          Both progression routes presented in this guide
+          cover this investment.
+        </p>
+        <span class="reward">100,000 Eternal Marks</span>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 03</span>
-<h3>Emeralds</h3>
-<p>Spend between 1,000 and 200,000 Emeralds
-to complete the available milestones.</p>
-<p>Rewards include Adventure Energy, Titan Potions,
-Season Points, Titan Skin Stones, Fairy Dust,
-Adventure Coins, Red Gear Fragments, Large Skin Stone Chests,
-Crow Soulstones, Rune Spheres and Elemental Spheres.</p>
-<span class="reward">36,650 Marks — Full Track</span>
-</div>
+      <article class="quest">
+        <h3>Valdur's Skin Plus</h3>
+        <p>
+          The Skin Plus upgrade requires another 350,000 Marks,
+          bringing the combined cost to 450,000 Eternal Marks.
+        </p>
+        <span class="reward">350,000 Additional Marks</span>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 04</span>
-<h3>Research Speedup</h3>
-<p>Use research speedups to complete milestones
-from 60 minutes to 41 hours.</p>
-<p>Rewards include Realm resources, Titan Skin Stones,
-Season Points, Red Gear Fragments, Adventure Energy,
-Elemental Spheres, Rune Spheres, Eva and Crow Soulstones,
-Mastery Crystals and General Speedups.</p>
-<span class="reward">8,100 Marks — Full Track</span>
-</div>
+      <article class="quest">
+        <h3>Titan Fragments</h3>
+        <p>
+          Players can also invest their Eternal Marks in
+          Titan fragments according to their development priorities.
+        </p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 05</span>
-<h3>Altar of the Elements</h3>
-<p>Open Elemental Spheres to advance through milestones
-up to 875 openings.</p>
-<p>Rewards include Adventure Energy, Adventure Coins,
-Season Points, Meta Cubes, Red Gear Fragments,
-Mastery Crystals and Large Skin Stone Chests.</p>
-<span class="reward">1,000 Marks — 35 Spheres</span>
-</div>
+      <article class="quest">
+        <h3>Arachne Relic Shards</h3>
+        <p>
+          Arachne Relic Shards offer an alternative reward
+          for players focusing on Hero progression.
+        </p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 06</span>
-<h3>Rune Stones</h3>
-<p>Spend Rune Stones to progress through the available milestones.</p>
-<p>Additional rewards include Titan Skin Stones, Season Points,
-Red Gear Fragments, Large Skin Stone Chests, Meta Cubes,
-Eva and Crow Soulstones, Adventure Energy, Mastery Crystals,
-Rune Spheres, Fairy Dust, Adventure Coins and Elemental Spheres.</p>
-<span class="reward">58,600 Marks — Full Track</span>
-</div>
+    </div>
 
-<div class="quest">
-<span class="number">QUEST 07</span>
-<h3>Arena</h3>
-<p>Use your five daily battles to reach 35 battles over seven days.
-The full track reaches 60 battles.</p>
-<p>Rewards include Titan Potions, Large Skin Stone Chests,
-Season Points, Titan Skin Stones, Adventure Energy,
-Elemental Spheres, Adventure Coins, Red Gear Fragments,
-Crow Soulstones and Meta Cubes.</p>
-<span class="reward">1,850 Marks — 35 Battles</span>
-</div>
+    <div class="note gold-note">
+      <span class="note-title">EVENT SHOP REMINDER</span>
+      <p>
+        The Event Shop remains available for 24 hours after
+        the event ends. Use this additional time to evaluate
+        your final Eternal Marks balance and select your rewards.
+      </p>
+    </div>
 
-<div class="quest">
-<span class="number">QUEST 08</span>
-<h3>Grand Arena</h3>
-<p>Complete 35 battles during the event for our baseline.
-The final milestone is at 60 battles.</p>
-<p>Rewards include Titan Skin Stones, Skin Stone Chests,
-Season Points, Titan Potions, Adventure Energy,
-Elemental Spheres, Red Gear Fragments,
-Adventure Coins and Meta Cubes.</p>
-<span class="reward">2,850 Marks — 35 Battles</span>
-</div>
+    <div class="note">
+      <span class="note-title">TITAN BRAWLS</span>
+      <p>
+        Titan Brawls contributes another
+        <strong>1,500 Eternal Marks</strong>
+        to our baseline projections.
+      </p>
+    </div>
 
-</div>
-
-<div class="cards">
-
-<div class="stat">
-<span class="stat-label">Baseline Rewards</span>
-<b>7,800</b>
-<small>Eternal Marks</small>
-</div>
-
-<div class="stat">
-<span class="stat-label">Completed Quests</span>
-<b>24</b>
-<small>Elemental Tempest Progress</small>
-</div>
-
-</div>
-
-<div class="note">
-<div class="note-title">COMBINE YOUR QUESTS</div>
-Elemental Spheres earned from Guilds' Activity, Outland and
-other milestones can contribute to Altar of the Elements.
-Emerald spending in Outland can also advance multiple quest tracks.
-</div>
+  </div>
 
 </section>
 
-<section id="awakening">
+<section class="section" id="firstborn">
 
-<span class="section-label">SUBEVENT 03 • REPEATABLE QUESTS & BONUS REWARDS</span>
+  <div class="kicker">SUBEVENT 01 • DAILY PROGRESSION</div>
 
-<h2>Ancient Awakening</h2>
+  <div class="event">
 
-<p class="intro">
-Ancient Awakening connects the other two subevents with
-repeatable quests and Event Shop spending.
-This is where completed quests become additional rewards.
-</p>
+    <div class="event-heading">
+      <h2>Firstborn Force</h2>
+      <span class="date">NOV 23 — NOV 29</span>
+    </div>
 
-<div class="quest-grid">
+    <p>
+      Firstborn Force is the foundation of our reward strategy.
+      Most of its quests reset daily, making consistent
+      progression across all seven days essential.
+    </p>
 
-<div class="quest">
-<span class="number">QUEST 01</span>
-<h3>Game Login</h3>
-<p>Seven daily logins provide another 2,100 Marks
-alongside Titan Skin Stones.</p>
-<span class="reward">2,100 Eternal Marks</span>
-</div>
+    <div class="quest-grid">
 
-<div class="quest">
-<span class="number">QUEST 02</span>
-<h3>Lose Troops</h3>
-<p>Lose level 6 or higher troops to advance this repeatable track.</p>
-<p>Rewards include Realm resources, Fairy Dust,
-Titan Skin Stones, Elemental Spheres and Construction Speedups.</p>
-<p>Compare the cost of rebuilding your troops
-before pursuing additional cycles.</p>
-<span class="reward">5,300 Marks Per Complete Cycle</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 01</span>
+        <h3>Game Login</h3>
+        <p>
+          Seven daily logins provide 2,100 Eternal Marks,
+          3,500 Titan Skin Stones and 90 Brawl Tokens
+          to use in Titan Brawls.
+        </p>
+        <span class="reward">2,100 Eternal Marks</span>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 03</span>
-<h3>Event Coins</h3>
-<p>Spend Eternal Marks in the Event Shop to unlock
-additional Titan Potions, Titan Skin Stones and Season Points.</p>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 02</span>
+        <h3>VIP</h3>
+        <p>
+          Daily milestones range from 100 to 4,500 VIP Points.
+        </p>
+        <p>
+          Rewards include Titan Skin Stones, Rune Spheres,
+          Season Points, Adventure Coins and Elemental Spheres.
+        </p>
+        <p>
+          VIP quest rewards are excluded from our baseline.
+        </p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 04</span>
-<h3>Heroic Chest</h3>
-<p>Open Heroic Chests to complete this repeatable quest.
-Additional rewards include Titan Potions and Elemental Spheres.</p>
-<span class="reward">8,500 Marks Per Complete Cycle</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 03</span>
+        <h3>Guilds' Activity</h3>
+        <p>
+          Daily milestones range from 250 to 4,500 activity points.
+        </p>
+        <p>
+          Rewards include Pallant Fragments, Adventure Energy,
+          Adventure Coins, Titan Potions, Season Points,
+          Titan Skin Stones, Fairy Dust and Mastery Crystals.
+        </p>
+        <p>
+          Elemental Spheres earned here can also help
+          progress through Unstable Equilibrium.
+        </p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 05</span>
-<h3>Outland</h3>
-<p>Each complete cycle requires 150 Outland Chest openings.</p>
-<p>Rewards include Titan Potions, Fairy Dust
-and Elemental Spheres.</p>
-<p>Additional openings carry forward into the next cycle.</p>
-<span class="reward">6,675 Marks Per Complete Cycle</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 04</span>
+        <h3>Fairy Dust</h3>
+        <p>
+          Spend Fairy Dust to complete daily milestones up to 10,000.
+        </p>
+        <p>
+          Rewards include Metida Fragments, Sacred Guard Recipe
+          Fragments, Titan Skin Stones, Adventure Coins,
+          Adventure Energy, Season Points, Rune Spheres,
+          Meta Cubes, Titan Potions and Large Skin Stone Chests.
+        </p>
+        <p>Some milestones also return Fairy Dust.</p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 06</span>
-<h3>Expeditions</h3>
-<p>Begin Expeditions to reach milestones up to 56.</p>
-<p>Additional rewards include Fairy Dust, Titan Potions,
-Adventure Coins, Adventure Energy and Season Points.</p>
-<span class="reward">7,600 Marks — Full Track</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 05</span>
+        <h3>Hero Skin Stones</h3>
+        <p>
+          Daily milestones range from 500 to 10,000
+          Hero Skin Stones spent.
+        </p>
+        <p>
+          Rewards include Season Points, Titan Skin Stones,
+          Adventure Coins, Sacred Guard Recipe Fragments,
+          Mastery Crystals and Rune Spheres.
+        </p>
+        <p>
+          Check how many days your available inventory can support.
+        </p>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 07</span>
-<h3>Titan's Roar</h3>
-<p>Complete Firstborn Force quests to earn Valdur Fragments,
-Season Points, Titan Skin Stones and Rune Spheres.</p>
-<p>Both baseline scenarios reach the 340-quest milestone.</p>
-<span class="reward">50,350 Eternal Marks</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 06</span>
+        <h3>Tower Chests</h3>
+        <p>
+          Daily milestones include 2, 5, 8, 10 and 15 chest openings,
+          with additional milestones beyond these.
+        </p>
+        <p>
+          Rewards include Fairy Dust, Adventure Energy,
+          Skin Stone Chests, Adventure Coins, Season Points,
+          Titan Skin Stones, Sacred Guard Recipe Fragments
+          and Meta Cubes.
+        </p>
+        <p>
+          Opening 11 chests reaches the 10-chest milestone.
+          Opening 15 reaches the next milestone.
+        </p>
+        <span class="reward">3,500 Marks Difference Over 7 Days</span>
+      </article>
 
-<div class="quest">
-<span class="number">QUEST 08</span>
-<h3>Elemental Tempest</h3>
-<p>Complete Unstable Equilibrium quests to earn
-Zorval's Call Fragments, Adventure Coins, Season Points,
-Rune Spheres and Skin Stone Chests.</p>
-<p>Zorval's Call Fragments support the awakening and
-evolution of Valdur's Artifact Weapon.</p>
-<span class="reward">3,250 Marks — Baseline</span>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 07</span>
+        <h3>Valkyrie's Chests</h3>
+        <p>
+          Our baseline projection includes opening
+          40 Artifact Chests per day.
+        </p>
+        <p>
+          Rewards include Eternal Marks, Adventure Energy,
+          Adventure Coins, Pallant Fragments, Fairy Dust,
+          Season Points and Meta Cubes.
+        </p>
+      </article>
 
-</div>
+      <article class="quest">
+        <span class="number">QUEST 08</span>
+        <h3>Hold a Raid</h3>
+        <p>
+          Defeat bosses as Raid Leader.
+          Our daily route includes 10 boss defeats.
+        </p>
+        <p>
+          Rewards include Wood, Food, Stone, Iron,
+          Elemental Spheres, Titan Skin Stones, Fairy Dust,
+          Season Points, Titan Potions and five-minute
+          General Speedups.
+        </p>
+      </article>
 
-<div class="note gold-note">
-<div class="note-title">SPECIAL REWARD — ALECTO</div>
-Reach 63 completed Unstable Equilibrium quests to obtain
-<strong>Alecto's Primordial Skin.</strong>
-Track your completed quests as well as your Eternal Marks
-if this skin is one of your objectives.
-</div>
+    </div>
 
-<div class="cards">
+    <div class="cards">
 
-<div class="stat">
-<span class="stat-label">Titan's Roar</span>
-<b>50,350</b>
-<small>Eternal Marks</small>
-</div>
+      <div class="stat">
+        <span class="stat-label">11 Tower Chests / Day</span>
+        <b>205,450</b>
+        <small>Eternal Marks</small>
+      </div>
 
-<div class="stat">
-<span class="stat-label">Elemental Tempest</span>
-<b>3,250</b>
-<small>Eternal Marks</small>
-</div>
+      <div class="stat">
+        <span class="stat-label">15 Tower Chests / Day</span>
+        <b>208,950</b>
+        <small>Eternal Marks</small>
+      </div>
 
-<div class="stat">
-<span class="stat-label">Total Baseline</span>
-<b>55,700</b>
-<small>Including Game Login</small>
-</div>
+    </div>
 
-</div>
+    <div class="note gold-note">
+      <span class="note-title">GODS OF ALLIANCE — RESOURCE STRATEGY</span>
+      <p>
+        Guilds' Activity and Hero Skin Stones account for
+        more than 100,000 Eternal Marks between them.
+        Make sure you can complete the required daily milestones
+        before relying on these projected totals.
+      </p>
+    </div>
 
-</section>
-
-<section id="calculation">
-
-<span class="section-label">COMPLETE REWARD ANALYSIS</span>
-
-<h2>How Many Eternal Marks Can You Earn?</h2>
-
-<p>
-Our two seven-day projections compare the difference between
-opening 11 and 15 Tower Chests per day.
-VIP rewards and optional additional quest investments
-are excluded from these baseline totals.
-</p>
-
-<div class="table-wrap">
-<table>
-
-<thead>
-<tr>
-<th>Reward Source</th>
-<th>11 Tower Chests / Day</th>
-<th>15 Tower Chests / Day</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>Firstborn Force</td>
-<td>205,450</td>
-<td>208,950</td>
-</tr>
-
-<tr>
-<td>Unstable Equilibrium</td>
-<td>7,800</td>
-<td>7,800</td>
-</tr>
-
-<tr>
-<td>Ancient Awakening</td>
-<td>55,700</td>
-<td>55,700</td>
-</tr>
-
-<tr>
-<td>Titan Brawls</td>
-<td>1,500</td>
-<td>1,500</td>
-</tr>
-
-<tr class="total">
-<td>Total Eternal Marks</td>
-<td>270,450</td>
-<td>273,950</td>
-</tr>
-
-<tr>
-<td>Primordial Skin</td>
-<td>−100,000</td>
-<td>−100,000</td>
-</tr>
-
-<tr class="total">
-<td>Remaining Eternal Marks</td>
-<td>170,450</td>
-<td>173,950</td>
-</tr>
-
-</tbody>
-</table>
-</div>
-
-<div class="progress-panel">
-
-<h3>Progress Towards the 450,000-Mark Target</h3>
-
-<div class="progress-heading">
-<span>11 Tower Chests Route</span>
-<span>60.1%</span>
-</div>
-
-<div class="progress-track">
-<div class="progress-fill" style="width:60.1%"></div>
-</div>
-
-<div class="progress-heading">
-<span>15 Tower Chests Route</span>
-<span>60.9%</span>
-</div>
-
-<div class="progress-track">
-<div class="progress-fill" style="width:60.9%"></div>
-</div>
-
-<p class="progress-caption">
-Both baseline routes cover the base skin but require additional
-Eternal Marks to reach the combined Skin Plus target.
-</p>
-
-</div>
-
-<div class="note gold-note">
-<div class="note-title">THE IMPORTANT TAKEAWAY</div>
-Both routes allow you to purchase Valdur's Primordial Skin
-and retain more than <strong>170,000 Eternal Marks</strong>
-for other Event Shop rewards, provided you complete
-the required baseline milestones.
-</div>
+  </div>
 
 </section>
 
-<section id="skinplus">
+<section class="section" id="equilibrium">
 
-<span class="section-label">EMERALD INVESTMENT • COST ANALYSIS</span>
+  <div class="kicker">SUBEVENT 02 • CUMULATIVE PROGRESSION</div>
 
-<h2>Valdur Skin Plus — How Much Does It Cost?</h2>
+  <div class="event">
 
-<p>
-Obtaining both Valdur's Primordial Skin and Skin Plus
-requires a combined total of 450,000 Eternal Marks.
-The following estimates use discounted Outland Chest purchases
-as the main additional source of progression.
-</p>
+    <div class="event-heading">
+      <h2>Unstable Equilibrium</h2>
+      <span class="date">NOV 23 — NOV 29</span>
+    </div>
 
-<div class="cards">
+    <p>
+      Unlike the daily Firstborn Force quests,
+      Unstable Equilibrium milestones accumulate throughout the event.
+      Completed quests also contribute to Elemental Tempest.
+    </p>
 
-<div class="stat">
-<span class="stat-label">Total Target</span>
-<b>450,000</b>
-<small>Eternal Marks</small>
-</div>
+    <div class="quest-grid">
 
-<div class="stat">
-<span class="stat-label">Base Skin</span>
-<b>100,000</b>
-<small>Eternal Marks</small>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 01</span>
+        <h3>Game Login</h3>
+        <p>
+          Collect 300 Eternal Marks per event day,
+          alongside Titan Skin Stones.
+        </p>
+        <p>
+          Claim these rewards to progress through Elemental Tempest.
+        </p>
+        <span class="reward">2,100 Marks Over 7 Days</span>
+      </article>
 
-<div class="stat">
-<span class="stat-label">Skin Plus Upgrade</span>
-<b>350,000</b>
-<small>Additional Marks</small>
-</div>
+      <article class="quest">
+        <span class="number">QUEST 02</span>
+        <h3>VIP</h3>
+        <p>
+          The cumulative VIP track offers up to 47,000 Eternal Marks.
+        </p>
+        <p>
+          Rewards include Eva Soulstones, Red Gear Fragments,
+          Titan Skin Stones, Season Points, Rune Spheres,
+          Large Skin Stone Chests, Titan Potions and Adventure Coins.
+        </p>
+        <p>
+          VIP milestones also increase the completed-quest
+          count for Elemental Tempest.
+        </p>
+        <span class="reward">47,000 Marks — Full Track</span>
+      </article>
 
-</div>
+      <article class="quest">
+        <span class="number">QUEST 03</span>
+        <h3>Emeralds</h3>
+        <p>
+          Milestones range from 1,000 to 200,000 Emeralds spent.
+        </p>
+        <p>
+          Rewards include Adventure Energy, Titan Potions,
+          Season Points, Titan Skin Stones, Fairy Dust,
+          Adventure Coins, Red Gear Fragments,
+          Large Skin Stone Chests, Crow Soulstones,
+          Rune Spheres and Elemental Spheres.
+        </p>
+        <p>
+          Emerald purchases in Outland can contribute
+          to multiple event objectives.
+        </p>
+        <span class="reward">36,650 Marks — Full Track</span>
+      </article>
 
-<div class="table-wrap">
-<table>
+      <article class="quest">
+        <span class="number">QUEST 04</span>
+        <h3>Research Speedup</h3>
+        <p>
+          Apply research speedups to complete milestones
+          ranging from 60 minutes to 41 hours.
+        </p>
+        <p>
+          Rewards include Realm resources, Titan Skin Stones,
+          Season Points, Red Gear Fragments, Adventure Energy,
+          Elemental Spheres, Rune Spheres, Eva Soulstones,
+          Mastery Crystals, Crow Soulstones and General Speedups.
+        </p>
+        <span class="reward">8,100 Marks — Full Track</span>
+      </article>
 
-<thead>
-<tr>
-<th>Investment</th>
-<th>11 Tower Chests / Day</th>
-<th>15 Tower Chests / Day</th>
-</tr>
-</thead>
+      <article class="quest">
+        <span class="number">QUEST 05</span>
+        <h3>Altar of the Elements</h3>
+        <p>
+          Open Elemental Spheres to advance through milestones
+          up to 875 openings.
+        </p>
+        <p>
+          Rewards include Adventure Energy, Adventure Coins,
+          Season Points, Meta Cubes, Red Gear Fragments,
+          Mastery Crystals and Large Skin Stone Chests.
+        </p>
+        <span class="reward">1,000 Marks — 35 Spheres</span>
+      </article>
 
-<tbody>
+      <article class="quest">
+        <span class="number">QUEST 06</span>
+        <h3>Rune Stones</h3>
+        <p>
+          Spend Rune Stones to progress through the available milestones.
+        </p>
+        <p>
+          Additional rewards include Titan Skin Stones,
+          Season Points, Red Gear Fragments, Large Skin Stone Chests,
+          Meta Cubes, Eva and Crow Soulstones, Adventure Energy,
+          Mastery Crystals, Rune Spheres, Fairy Dust,
+          Adventure Coins and Elemental Spheres.
+        </p>
+        <span class="reward">58,600 Marks — Full Track</span>
+      </article>
 
-<tr>
-<td>Baseline Eternal Marks</td>
-<td>270,450</td>
-<td>273,950</td>
-</tr>
+      <article class="quest">
+        <span class="number">QUEST 07</span>
+        <h3>Arena</h3>
+        <p>
+          Five daily attempts provide 35 battles over seven days.
+          The final milestone is at 60 battles.
+        </p>
+        <p>
+          Rewards include Titan Potions, Large Skin Stone Chests,
+          Season Points, Titan Skin Stones, Adventure Energy,
+          Elemental Spheres, Adventure Coins, Red Gear Fragments,
+          Crow Soulstones and Meta Cubes.
+        </p>
+        <p>
+          Additional attempts are required to exceed the baseline.
+        </p>
+        <span class="reward">1,850 Marks — 35 Battles</span>
+      </article>
 
-<tr>
-<td>Total Target</td>
-<td>450,000</td>
-<td>450,000</td>
-</tr>
+      <article class="quest">
+        <span class="number">QUEST 08</span>
+        <h3>Grand Arena</h3>
+        <p>
+          Complete 35 battles during the event for our baseline.
+          The final milestone is at 60 battles.
+        </p>
+        <p>
+          Rewards include Titan Skin Stones, Skin Stone Chests,
+          Season Points, Titan Potions, Adventure Energy,
+          Elemental Spheres, Red Gear Fragments,
+          Adventure Coins and Meta Cubes.
+        </p>
+        <p>
+          Evaluate later milestones before buying extra attempts.
+        </p>
+        <span class="reward">2,850 Marks — 35 Battles</span>
+      </article>
 
-<tr>
-<td>Additional Marks Required</td>
-<td>179,550</td>
-<td>176,050</td>
-</tr>
+    </div>
 
-<tr>
-<td>Estimated Outland Chests</td>
-<td>3,400</td>
-<td>3,300</td>
-</tr>
+    <div class="cards">
 
-<tr class="total">
-<td>Estimated Emerald Cost</td>
-<td>114,750</td>
-<td>111,375</td>
-</tr>
+      <div class="stat">
+        <span class="stat-label">Baseline Rewards</span>
+        <b>7,800</b>
+        <small>Eternal Marks</small>
+      </div>
 
-</tbody>
-</table>
-</div>
+      <div class="stat">
+        <span class="stat-label">Completed Quests</span>
+        <b>24</b>
+        <small>Elemental Tempest Progress</small>
+      </div>
 
-<div class="cards">
+    </div>
 
-<div class="stat">
-<span class="stat-label">11-Chest Route</span>
-<b>114,750</b>
-<small>Estimated Emerald Cost</small>
-</div>
+    <div class="note">
+      <span class="note-title">GODS OF ALLIANCE — COMBINE YOUR OBJECTIVES</span>
+      <p>
+        Elemental Spheres earned from Guilds' Activity,
+        Outland and other milestones can help you progress
+        through Altar of the Elements.
+        Emerald purchases in Outland can also advance
+        multiple quest tracks.
+      </p>
+    </div>
 
-<div class="stat">
-<span class="stat-label">15-Chest Route</span>
-<b>111,375</b>
-<small>Estimated Emerald Cost</small>
-</div>
-
-<div class="stat">
-<span class="stat-label">Estimated Savings</span>
-<b style="color:#70e8b0">3,375</b>
-<small>Emeralds</small>
-</div>
-
-</div>
-
-<div class="note gold-note">
-<div class="note-title">BEFORE YOU SPEND YOUR EMERALDS</div>
-These estimates are based on the discounted Outland route
-presented in our video. Additional VIP, Rune Stone,
-Research Speedup and other quest rewards may reduce the
-Emerald investment required.
-
-<p>
-Always check your actual Eternal Marks balance
-and remaining milestones before purchasing the final batch.
-</p>
-</div>
-
-</section>
-
-<section id="strategy">
-
-<span class="section-label">GODS OF ALLIANCE • STRATEGY</span>
-
-<h2>How to Maximize Your Rewards</h2>
-
-<div class="quest-grid">
-
-<div class="quest">
-<h3>01 — Prioritize Daily Progression</h3>
-<p>Complete your Firstborn Force objectives consistently.
-Daily milestones are essential to both direct rewards
-and Titan's Roar progression.</p>
-</div>
-
-<div class="quest">
-<h3>02 — Combine Quest Objectives</h3>
-<p>Use Elemental Spheres obtained from other quests
-to progress through Altar of the Elements.
-Avoid treating each event tab as an isolated objective.</p>
-</div>
-
-<div class="quest">
-<h3>03 — Plan Your Emerald Spending</h3>
-<p>If Skin Plus is your goal, evaluate the discounted Outland offer.
-These purchases can advance both Outland
-and Emerald spending milestones.</p>
-</div>
-
-<div class="quest">
-<h3>04 — Protect Your Resources</h3>
-<p>Do not sacrifice troops or spend valuable saved resources
-without evaluating the rewards and the cost of replacing them.</p>
-</div>
-
-<div class="quest">
-<h3>05 — Track Alecto's Skin</h3>
-<p>If Alecto's Primordial Skin is one of your objectives,
-monitor the 63-quest Elemental Tempest milestone.</p>
-</div>
-
-<div class="quest">
-<h3>06 — Make Your Final Purchases Carefully</h3>
-<p>Use the additional 24-hour Event Shop period
-to review your final balance and select rewards
-that support your account development.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="verdict">
-
-<span class="section-label">FINAL ANALYSIS</span>
-
-<h2>Is Valdur's Skin Plus Worth Your Emeralds?</h2>
-
-<p>
-The answer depends on your account, available resources
-and long-term Titan development strategy.
-Both baseline scenarios provide enough Eternal Marks
-for the Primordial Skin, but Skin Plus represents
-a significantly larger investment.
-</p>
-
-<div class="verdict-grid">
-
-<div class="verdict-card base">
-
-<h3>BASE SKIN ROUTE</h3>
-
-<p><strong>100,000 Eternal Marks</strong></p>
-
-<p>
-A practical option for players who can complete
-the baseline milestones but want to preserve their Emeralds.
-</p>
-
-<p>
-After purchasing the base skin, the projected remaining balance
-is between 170,450 and 173,950 Eternal Marks.
-</p>
-
-<p>
-Those Marks can be invested in other Event Shop rewards
-according to your account priorities.
-</p>
-
-</div>
-
-<div class="verdict-card">
-
-<h3>SKIN PLUS ROUTE</h3>
-
-<p><strong>450,000 Eternal Marks</strong></p>
-
-<p>
-An option for players committed to Valdur's development
-who have sufficient resources available.
-</p>
-
-<p>
-The projected discounted Outland investment is between
-111,375 and 114,750 Emeralds,
-before additional optional quest rewards.
-</p>
-
-<p>
-Evaluate the investment against your other Titan
-and account development priorities.
-</p>
-
-</div>
-
-</div>
-
-<div class="note gold-note">
-<div class="note-title">GODS OF ALLIANCE VERDICT</div>
-
-The base skin is achievable under both projected baseline routes.
-Skin Plus requires a much greater commitment.
-
-<p>
-Do not spend simply because a reward is available.
-Spend because that reward supports your long-term strategy.
-</p>
-
-<strong>
-We don't build randomly. We build with intention.
-</strong>
-
-</div>
+  </div>
 
 </section>
 
-<section id="video">
+<section class="section" id="awakening">
 
-<span class="section-label">OFFICIAL GODS OF ALLIANCE VIDEO</span>
+  <div class="kicker">SUBEVENT 03 • REPEATABLE QUESTS & BONUS REWARDS</div>
 
-<h2>Watch the Complete Event Breakdown</h2>
+  <div class="event">
 
-<p>
-Watch our complete analysis of all three subevents,
-the Event Shop, Eternal Marks calculations,
-Valdur's Primordial Skin and the cost of Skin Plus.
-</p>
+    <div class="event-heading">
+      <h2>Ancient Awakening</h2>
+      <span class="date">NOV 23 — NOV 29</span>
+    </div>
 
-<div class="video">
+    <p>
+      Ancient Awakening connects Firstborn Force and
+      Unstable Equilibrium with repeatable quests,
+      Event Shop spending and additional progression rewards.
+    </p>
 
-<iframe
-src="https://www.youtube.com/embed/apSAbYbuGig"
-title="Ascended Glory Full Event Guide - Gods of Alliance"
-loading="lazy"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+    <div class="quest-grid">
 
-</div>
+      <article class="quest">
+        <span class="number">QUEST 01</span>
+        <h3>Game Login</h3>
+        <p>
+          Seven daily logins provide another 2,100 Eternal Marks,
+          alongside Titan Skin Stones.
+        </p>
+        <p>
+          This is separate from the login rewards
+          in the other two subevents.
+        </p>
+        <span class="reward">2,100 Eternal Marks</span>
+      </article>
 
-<a class="button"
-href="https://youtu.be/apSAbYbuGig"
-target="_blank"
-rel="noopener noreferrer">
-WATCH ON YOUTUBE
-</a>
+      <article class="quest">
+        <span class="number">QUEST 02</span>
+        <h3>Lose Troops</h3>
+        <p>
+          Lose level 6 or higher troops to advance
+          through this repeatable quest.
+        </p>
+        <p>
+          Rewards include Wood, Food, Iron, Fairy Dust,
+          Titan Skin Stones, Elemental Spheres
+          and Construction Speedups.
+        </p>
+        <p>
+          Compare the rewards against the cost
+          of rebuilding your troops.
+        </p>
+        <span class="reward">5,300 Marks Per Complete Cycle</span>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 03</span>
+        <h3>Event Coins</h3>
+        <p>
+          Spend Eternal Marks in the Event Shop to unlock
+          additional Titan Potions, Titan Skin Stones
+          and Season Points.
+        </p>
+        <p>
+          Claim these milestones after choosing your shop rewards.
+        </p>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 04</span>
+        <h3>Heroic Chest</h3>
+        <p>
+          Open Heroic Chests to progress through this repeatable track.
+        </p>
+        <p>
+          Additional rewards include Titan Potions
+          and Elemental Spheres.
+        </p>
+        <span class="reward">8,500 Marks Per Complete Cycle</span>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 05</span>
+        <h3>Outland</h3>
+        <p>
+          Each complete cycle requires 150 Outland Chest openings.
+        </p>
+        <p>
+          Additional rewards include Titan Potions,
+          Fairy Dust and Elemental Spheres.
+        </p>
+        <p>
+          Openings beyond the current cycle carry into the next,
+          making discounted batches useful for Skin Plus progression.
+        </p>
+        <span class="reward">6,675 Marks Per Complete Cycle</span>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 06</span>
+        <h3>Expeditions</h3>
+        <p>
+          Begin Expeditions to advance through milestones up to 56.
+        </p>
+        <p>
+          Rewards include Fairy Dust, Titan Potions,
+          Adventure Coins, Adventure Energy and Season Points.
+        </p>
+        <span class="reward">7,600 Marks — Full Track</span>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 07</span>
+        <h3>Titan's Roar</h3>
+        <p>
+          Complete Firstborn Force quests to earn Valdur Fragments,
+          Season Points, Titan Skin Stones and Rune Spheres.
+        </p>
+        <p>
+          Both baseline scenarios reach the 340-quest milestone.
+        </p>
+        <span class="reward">50,350 Eternal Marks</span>
+      </article>
+
+      <article class="quest">
+        <span class="number">QUEST 08</span>
+        <h3>Elemental Tempest</h3>
+        <p>
+          Complete Unstable Equilibrium quests to obtain
+          Zorval's Call Fragments, Adventure Coins,
+          Season Points, Rune Spheres and Skin Stone Chests.
+        </p>
+        <p>
+          Zorval's Call Fragments help awaken and evolve
+          Valdur's Artifact Weapon.
+        </p>
+        <span class="reward">3,250 Marks — Baseline</span>
+      </article>
+
+    </div>
+
+    <div class="highlight">
+
+      <div class="kicker">SPECIAL TITAN REWARD</div>
+
+      <h3>Alecto's Primordial Skin</h3>
+
+      <p>
+        Reaching <strong>63 completed Unstable Equilibrium quests</strong>
+        unlocks Alecto's Primordial Skin through Elemental Tempest.
+      </p>
+
+      <p>
+        If this skin is one of your objectives,
+        monitor your completed-quest count as well as
+        the Eternal Marks you are earning for Valdur.
+      </p>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="stat">
+        <span class="stat-label">Titan's Roar</span>
+        <b>50,350</b>
+        <small>Eternal Marks</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Elemental Tempest</span>
+        <b>3,250</b>
+        <small>Eternal Marks</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Total Baseline</span>
+        <b>55,700</b>
+        <small>Including Game Login</small>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
-<footer>
+<section class="section" id="calculation">
 
-<strong>GODS OF ALLIANCE</strong>
+  <div class="kicker">COMPLETE REWARD ANALYSIS</div>
 
-<p>Hero Wars Alliance • Guides • Events • Strategies • Analysis</p>
+  <h2>How Many Eternal Marks Can You Earn?</h2>
 
-<p>Master the mechanics. Control the fight.</p>
+  <div class="panel">
 
-<a href="events.html">← Explore More Event Guides</a>
+    <p>
+      Our two seven-day projections compare the difference
+      between opening 11 and 15 Tower Chests per day.
+      VIP rewards and optional additional quest investments
+      are excluded from the baseline totals.
+    </p>
 
-</footer>
+    <div class="table-wrap">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Reward Source</th>
+            <th>11 Tower Chests / Day</th>
+            <th>15 Tower Chests / Day</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Firstborn Force</td>
+            <td>205,450</td>
+            <td>208,950</td>
+          </tr>
+
+          <tr>
+            <td>Unstable Equilibrium</td>
+            <td>7,800</td>
+            <td>7,800</td>
+          </tr>
+
+          <tr>
+            <td>Ancient Awakening</td>
+            <td>55,700</td>
+            <td>55,700</td>
+          </tr>
+
+          <tr>
+            <td>Titan Brawls</td>
+            <td>1,500</td>
+            <td>1,500</td>
+          </tr>
+
+          <tr class="total">
+            <td>Total Eternal Marks</td>
+            <td>270,450</td>
+            <td>273,950</td>
+          </tr>
+
+          <tr>
+            <td>Primordial Skin Cost</td>
+            <td>−100,000</td>
+            <td>−100,000</td>
+          </tr>
+
+          <tr class="total">
+            <td>Remaining Eternal Marks</td>
+            <td>170,450</td>
+            <td>173,950</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="progress-panel">
+
+      <h3>Progress Towards the 450,000-Mark Target</h3>
+
+      <div class="progress-heading">
+        <span>11 Tower Chests Route</span>
+        <span>60.1%</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" style="width:60.1%"></div>
+      </div>
+
+      <div class="progress-heading">
+        <span>15 Tower Chests Route</span>
+        <span>60.9%</span>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" style="width:60.9%"></div>
+      </div>
+
+      <p class="progress-caption">
+        Both baseline routes cover the base skin,
+        but additional Eternal Marks are required
+        to reach the combined Skin Plus target.
+      </p>
+
+    </div>
+
+    <div class="note gold-note">
+
+      <span class="note-title">THE IMPORTANT TAKEAWAY</span>
+
+      <p>
+        Both routes allow you to purchase Valdur's Primordial Skin
+        and retain more than <strong>170,000 Eternal Marks</strong>
+        for additional Event Shop rewards, provided you complete
+        the required baseline milestones.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section" id="skinplus">
+
+  <div class="kicker">EMERALD INVESTMENT • COST ANALYSIS</div>
+
+  <h2>Valdur Skin Plus — How Much Does It Cost?</h2>
+
+  <div class="panel">
+
+    <p>
+      Obtaining both Valdur's Primordial Skin and Skin Plus
+      requires a combined total of 450,000 Eternal Marks.
+    </p>
+
+    <p>
+      Our projections use discounted Outland Chest purchases
+      as the main additional source of progression.
+    </p>
+
+    <div class="cards">
+
+      <div class="stat">
+        <span class="stat-label">Base Skin</span>
+        <b>100,000</b>
+        <small>Eternal Marks</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Skin Plus Upgrade</span>
+        <b>350,000</b>
+        <small>Additional Marks</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Combined Target</span>
+        <b>450,000</b>
+        <small>Eternal Marks</small>
+      </div>
+
+    </div>
+
+    <div class="table-wrap">
+
+      <table>
+
+        <thead>
+          <tr>
+            <th>Investment</th>
+            <th>11 Tower Chests / Day</th>
+            <th>15 Tower Chests / Day</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>Baseline Eternal Marks</td>
+            <td>270,450</td>
+            <td>273,950</td>
+          </tr>
+
+          <tr>
+            <td>Total Target</td>
+            <td>450,000</td>
+            <td>450,000</td>
+          </tr>
+
+          <tr>
+            <td>Additional Marks Required</td>
+            <td>179,550</td>
+            <td>176,050</td>
+          </tr>
+
+          <tr>
+            <td>Estimated Outland Chests</td>
+            <td>3,400</td>
+            <td>3,300</td>
+          </tr>
+
+          <tr class="total">
+            <td>Estimated Emerald Cost</td>
+            <td>114,750</td>
+            <td>111,375</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+    <div class="cards">
+
+      <div class="stat">
+        <span class="stat-label">11-Chest Route</span>
+        <b>114,750</b>
+        <small>Estimated Emerald Cost</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">15-Chest Route</span>
+        <b>111,375</b>
+        <small>Estimated Emerald Cost</small>
+      </div>
+
+      <div class="stat">
+        <span class="stat-label">Estimated Savings</span>
+        <b style="color:#7ce9b4">3,375</b>
+        <small>Emeralds</small>
+      </div>
+
+    </div>
+
+    <div class="note gold-note">
+
+      <span class="note-title">BEFORE YOU SPEND YOUR EMERALDS</span>
+
+      <p>
+        These estimates are based on the discounted Outland
+        progression scenarios presented in our video.
+        Both scenarios are projected to exceed the combined skin target.
+      </p>
+
+      <p>
+        Additional VIP, Rune Stone, Research Speedup
+        and other quest rewards may reduce the Emerald investment.
+      </p>
+
+      <p>
+        Always check your actual Eternal Marks balance
+        and remaining milestones before purchasing the final batch.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section" id="strategy">
+
+  <div class="kicker">GODS OF ALLIANCE • RESOURCE STRATEGY</div>
+
+  <h2>How to Maximize Your Rewards</h2>
+
+  <div class="quest-grid">
+
+    <article class="quest">
+
+      <h3>01 — Prioritize Daily Progression</h3>
+
+      <p>
+        Complete Firstborn Force objectives consistently.
+        Daily milestones are essential to both direct rewards
+        and Titan's Roar progression.
+      </p>
+
+    </article>
+
+    <article class="quest">
+
+      <h3>02 — Combine Quest Objectives</h3>
+
+      <p>
+        Use Elemental Spheres earned through other quests
+        to progress through Altar of the Elements.
+        Avoid treating each event tab as an isolated objective.
+      </p>
+
+    </article>
+
+    <article class="quest">
+
+      <h3>03 — Plan Your Emerald Spending</h3>
+
+      <p>
+        If Skin Plus is your goal, evaluate the discounted
+        Outland Chest offer.
+        These purchases can advance both Outland
+        and Emerald spending milestones.
+      </p>
+
+    </article>
+
+    <article class="quest">
+
+      <h3>04 — Protect Your Resources</h3>
+
+      <p>
+        Do not sacrifice troops or spend valuable saved resources
+        without comparing the rewards against the cost
+        of replacing those resources.
+      </p>
+
+    </article>
+
+    <article class="quest">
+
+      <h3>05 — Track Alecto's Skin</h3>
+
+      <p>
+        If Alecto's Primordial Skin is one of your objectives,
+        monitor the 63-quest Elemental Tempest milestone.
+      </p>
+
+    </article>
+
+    <article class="quest">
+
+      <h3>06 — Make Your Final Purchases Carefully</h3>
+
+      <p>
+        Use the additional 24-hour Event Shop period
+        to review your final balance and select rewards
+        that support your account development.
+      </p>
+
+    </article>
+
+  </div>
+
+  <div class="note">
+
+    <span class="note-title">IMPORTANT RESOURCE DISTINCTION</span>
+
+    <p>
+      Rune Stones and Rune Spheres are different resources.
+      Unstable Equilibrium requires spending Rune Stones,
+      while Rune Spheres are available among the rewards.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="section" id="video">
+
+  <div class="kicker">WATCH THE COMPLETE EVENT BREAKDOWN</div>
+
+  <h2>Ascended Glory — Video Guide</h2>
+
+  <p>
+    Watch our complete Gods of Alliance analysis of all three
+    subevents, the Event Shop, Eternal Marks calculations
+    and Valdur's Skin Plus investment strategy.
+  </p>
+
+  <div class="video-wrap">
+
+    <iframe
+      src="https://www.youtube.com/embed/apSAbYbuGig"
+      title="Ascended Glory Full Event Guide — Gods of Alliance"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
+  <a class="watch"
+     href="https://youtu.be/apSAbYbuGig"
+     target="_blank"
+     rel="noopener noreferrer">
+     WATCH ON YOUTUBE
+  </a>
+
+</section>
+
+<section class="section" id="verdict">
+
+  <div class="highlight">
+
+    <div class="kicker">GODS OF ALLIANCE • FINAL VERDICT</div>
+
+    <h2>Is Valdur's Skin Plus Worth Your Emeralds?</h2>
+
+    <p>
+      The answer depends on your account, available resources
+      and long-term Titan development strategy.
+    </p>
+
+    <p>
+      Both baseline scenarios provide enough Eternal Marks
+      for Valdur's Primordial Skin.
+      Skin Plus, however, represents a significantly
+      larger investment.
+    </p>
+
+    <div class="verdict-grid">
+
+      <article class="verdict-card base">
+
+        <h3>BASE SKIN ROUTE</h3>
+
+        <p><strong>100,000 Eternal Marks</strong></p>
+
+        <p>
+          A practical option for players who can complete
+          the baseline milestones but want to preserve
+          their Emeralds.
+        </p>
+
+        <p>
+          After purchasing the base skin, the projected
+          remaining balance is between
+          <strong>170,450 and 173,950 Eternal Marks.</strong>
+        </p>
+
+        <p>
+          Those Marks can be invested in other Event Shop
+          rewards according to your account priorities.
+        </p>
+
+      </article>
+
+      <article class="verdict-card">
+
+        <h3>SKIN PLUS ROUTE</h3>
+
+        <p><strong>450,000 Eternal Marks</strong></p>
+
+        <p>
+          An option for players committed to Valdur's
+          development who have sufficient resources available.
+        </p>
+
+        <p>
+          Our projected discounted Outland investment
+          is between
+          <strong>111,375 and 114,750 Emeralds.</strong>
+        </p>
+
+        <p>
+          Additional optional quest rewards may reduce this cost.
+          Evaluate the investment against your other priorities.
+        </p>
+
+      </article>
+
+    </div>
+
+    <p>
+      The base skin is achievable under both projected baseline routes.
+      Skin Plus requires a much greater commitment.
+    </p>
+
+    <p>
+      Do not spend simply because a reward is available.
+      Spend because that reward supports your long-term strategy.
+    </p>
+
+    <p>
+      <strong>
+        We don't build randomly. We build with intention.
+        Master the mechanics. Control the fight.
+      </strong>
+    </p>
+
+  </div>
+
+  <a class="back" href="events.html">
+    ← BACK TO EVENTS & SEASONS
+  </a>
+
+</section>
 
 </main>
+
+<footer>
+  GODS OF ALLIANCE • HERO WARS ALLIANCE EVENTS & SEASONS
+</footer>
 
 <script src="goa-global.js"></script>
 
