@@ -7,35 +7,40 @@
 
 <title>Winter's Eye Season – Complete Event Calendar | Gods of Alliance</title>
 
-<meta name="description" content="Explore the complete Winter's Eye Season calendar in Hero Wars Alliance. Valdur, new skins, Talismans, Relics, event rewards, discounts and F2P strategies.">
+<meta name="description" content="Complete Winter's Eye Season calendar for Hero Wars Alliance. Valdur, Elarite Titans, Talismans, Legendary Relics, new Skins, event rewards, discounts and F2P strategies.">
 
 <link rel="canonical" href="https://www.godsofalliancehwa.com/winter-eye-season.html">
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="Winter's Eye Season – Complete Season Calendar">
-<meta property="og:description" content="Four major event groups, Valdur, new skins, Talismans, Relics and a complete seasonal strategy guide.">
+<meta property="og:description" content="Explore four major event groups, Valdur, new Skins, Talismans, Legendary Relics and the complete winter event strategy.">
 <meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Events/winter-eye-season.jpg">
 <meta property="og:url" content="https://www.godsofalliancehwa.com/winter-eye-season.html">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Winter's Eye Season – Complete Season Calendar">
+<meta name="twitter:title" content="Winter's Eye Season – Complete Calendar">
 <meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Events/winter-eye-season.jpg">
 
 <style>
+
 :root {
     --bg: #070b16;
-    --panel: #101827;
+    --panel: #111a2b;
     --ice: #a5dcff;
     --purple: #bb91ff;
     --gold: #e5c78d;
     --text: #edf2fc;
     --muted: #a4b2c9;
-    --border: rgba(166, 195, 255, .16);
+    --border: rgba(166,195,255,.16);
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -45,7 +50,10 @@ body {
     line-height: 1.75;
 }
 
-a { color: var(--ice); text-decoration: none; }
+a {
+    color: var(--ice);
+    text-decoration: none;
+}
 
 .goaw-header {
     display: flex;
@@ -75,7 +83,7 @@ a { color: var(--ice); text-decoration: none; }
 
 .season-hero {
     position: relative;
-    min-height: 520px;
+    min-height: 540px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -88,7 +96,8 @@ a { color: var(--ice); text-decoration: none; }
     position: absolute;
     inset: 0;
     z-index: -2;
-    background: url('Images/Events/winter-eye-season.jpg')
+    background:
+        url("Images/Events/winter-eye-season.jpg")
         center 38% / cover no-repeat;
     opacity: .83;
 }
@@ -107,35 +116,51 @@ a { color: var(--ice); text-decoration: none; }
 }
 
 .hero-content {
-    width: min(1160px, 92%);
+    width: min(1160px,92%);
     margin: auto auto 40px;
-    padding-top: 260px;
+    padding-top: 280px;
 }
 
 .eyebrow {
-    text-transform: uppercase;
     color: var(--ice);
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
-h1, h2, h3 {
+h1,h2,h3 {
     line-height: 1.25;
 }
 
 h1 {
-    font-family: Georgia, serif;
-    font-size: clamp(38px, 6vw, 76px);
-    color: #eff5ff;
+    font-family: Georgia,serif;
+    font-size: clamp(38px,6vw,76px);
     margin: 12px 0;
+    color: #eff5ff;
     text-shadow: 0 0 30px rgba(165,220,255,.3);
+}
+
+h2 {
+    font-family: Georgia,serif;
+    font-size: clamp(25px,4vw,36px);
+    color: var(--ice);
+    margin: 0 0 18px;
+}
+
+h3 {
+    color: var(--purple);
+    font-size: 21px;
+    margin-top: 0;
+}
+
+p {
+    margin: 12px 0;
 }
 
 .hero-content p {
     max-width: 760px;
     color: #d0dcec;
-    margin-bottom: 20px;
 }
 
 .date-pill {
@@ -150,7 +175,7 @@ h1 {
 }
 
 main {
-    width: min(1160px, 92%);
+    width: min(1160px,92%);
     margin: 0 auto;
     padding: 40px 0 70px;
 }
@@ -163,34 +188,17 @@ main {
 
 .intro {
     padding: 30px;
-    background: linear-gradient(135deg, #131d31, #101223);
+    background: linear-gradient(135deg,#131d31,#101223);
     border: 1px solid var(--border);
     border-radius: 16px;
     margin-bottom: 30px;
 }
 
-h2 {
-    font-family: Georgia, serif;
-    font-size: clamp(25px, 4vw, 36px);
-    color: var(--ice);
-    margin: 0 0 18px;
-}
-
-h3 {
-    color: var(--purple);
-    font-size: 21px;
-    margin-top: 0;
-}
-
-p { margin: 12px 0; }
-
-.muted { color: var(--muted); }
-
 .stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 12px;
-    margin: 30px 0;
+    margin: 30px 0 0;
 }
 
 .stat {
@@ -217,21 +225,20 @@ p { margin: 12px 0; }
 
 .calendar {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 13px;
     margin: 22px 0 45px;
 }
 
 .calendar-card {
-    position: relative;
     display: block;
     padding: 22px 18px;
     min-height: 165px;
     border: 1px solid var(--border);
     border-top: 3px solid var(--accent);
-    background: linear-gradient(145deg, #172033, #0e1423);
+    background: linear-gradient(145deg,#172033,#0e1423);
     border-radius: 10px;
-    transition: transform .2s, border-color .2s;
+    transition: transform .2s,border-color .2s;
 }
 
 .calendar-card:hover {
@@ -262,7 +269,7 @@ p { margin: 12px 0; }
     position: relative;
     margin: 35px 0;
     padding: 30px;
-    background: linear-gradient(145deg, #131a2c, #0c1120);
+    background: linear-gradient(145deg,#131a2c,#0c1120);
     border: 1px solid var(--border);
     border-left: 4px solid var(--accent);
     border-radius: 15px;
@@ -288,9 +295,14 @@ p { margin: 12px 0; }
     font-weight: 700;
 }
 
+.reward-heading {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
 .reward-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    grid-template-columns: repeat(2,minmax(0,1fr));
     gap: 12px;
     margin: 22px 0;
 }
@@ -303,15 +315,21 @@ p { margin: 12px 0; }
     background: rgba(255,255,255,.035);
     border: 1px solid var(--border);
     border-radius: 9px;
+    transition: background .2s,border-color .2s;
+}
+
+.reward-card:hover {
+    background: rgba(255,255,255,.065);
+    border-color: var(--accent,var(--purple));
 }
 
 .portrait {
-    width: 56px;
-    height: 56px;
-    flex: 0 0 56px;
+    width: 58px;
+    height: 58px;
+    flex: 0 0 58px;
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid var(--accent, #bb91ff);
+    border: 1px solid var(--accent,var(--purple));
     background: #20253b;
     display: flex;
     align-items: center;
@@ -320,6 +338,7 @@ p { margin: 12px 0; }
 }
 
 .portrait img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -327,9 +346,9 @@ p { margin: 12px 0; }
 
 .portrait.missing::after {
     content: attr(data-initial);
-    color: var(--accent, #bb91ff);
-    font-weight: 700;
+    color: var(--accent,var(--purple));
     font-size: 20px;
+    font-weight: 800;
 }
 
 .reward-card strong {
@@ -385,7 +404,9 @@ p { margin: 12px 0; }
     border-radius: 7px;
 }
 
-.notice strong { color: var(--gold); }
+.notice strong {
+    color: var(--gold);
+}
 
 .discount-panel {
     margin-top: 25px;
@@ -395,7 +416,9 @@ p { margin: 12px 0; }
     border-radius: 10px;
 }
 
-.discount-panel h3 { color: var(--ice); }
+.discount-panel h3 {
+    color: var(--ice);
+}
 
 .discount-row {
     display: grid;
@@ -405,7 +428,9 @@ p { margin: 12px 0; }
     padding: 12px 0;
 }
 
-.discount-row:last-child { border-bottom: none; }
+.discount-row:last-child {
+    border-bottom: none;
+}
 
 .discount-row strong {
     color: var(--ice);
@@ -423,14 +448,14 @@ p { margin: 12px 0; }
         ellipse at top right,
         rgba(126,77,165,.15),
         transparent 60%
-    ), #121523;
+    ),#121523;
 }
 
 .strategy {
     margin-top: 42px;
     padding: 30px;
     border: 1px solid var(--border);
-    background: linear-gradient(145deg, #102136, #121321);
+    background: linear-gradient(145deg,#102136,#121321);
     border-radius: 15px;
 }
 
@@ -439,7 +464,9 @@ p { margin: 12px 0; }
     border-bottom: 1px solid var(--border);
 }
 
-.strategy-item:last-child { border-bottom: none; }
+.strategy-item:last-child {
+    border-bottom: none;
+}
 
 .strategy-item strong {
     color: var(--ice);
@@ -466,7 +493,9 @@ p { margin: 12px 0; }
     color: var(--ice);
 }
 
-.table-wrap { overflow-x: auto; }
+.table-wrap {
+    overflow-x: auto;
+}
 
 .final-section {
     margin-top: 35px;
@@ -503,6 +532,10 @@ p { margin: 12px 0; }
     font-weight: 700;
 }
 
+.muted {
+    color: var(--muted);
+}
+
 footer {
     padding: 35px 20px;
     text-align: center;
@@ -512,20 +545,26 @@ footer {
     border-top: 1px solid var(--border);
 }
 
-@media(max-width: 800px) {
-    .calendar, .stats {
+@media(max-width:800px) {
+    .calendar,.stats {
         grid-template-columns: repeat(2,1fr);
     }
 
-    .season-hero { min-height: 430px; }
+    .season-hero {
+        min-height: 430px;
+    }
 
-    .hero-content { padding-top: 220px; }
+    .hero-content {
+        padding-top: 220px;
+    }
 }
 
-@media(max-width: 520px) {
-    .reward-grid { grid-template-columns: 1fr; }
+@media(max-width:520px) {
+    .reward-grid {
+        grid-template-columns: 1fr;
+    }
 
-    .week, .intro, .strategy, .final-section {
+    .week,.intro,.strategy,.final-section {
         padding: 20px;
     }
 
@@ -538,14 +577,18 @@ footer {
         background-position: 30% center;
     }
 
-    .goaw-nav { gap: 12px; }
+    .goaw-nav {
+        gap: 12px;
+    }
 }
+
 </style>
 </head>
 
 <body>
 
 <header class="goaw-header">
+
     <a class="goaw-brand" href="index.html">
         GODS OF ALLIANCE
     </a>
@@ -556,9 +599,11 @@ footer {
         <a href="events.html">EVENTS</a>
         <a href="tier-list.html">TIER LIST</a>
     </nav>
+
 </header>
 
 <section class="season-hero">
+
     <div class="hero-content">
 
         <div class="eyebrow">
@@ -578,6 +623,7 @@ footer {
         </span>
 
     </div>
+
 </section>
 
 <main>
@@ -617,6 +663,7 @@ footer {
     </p>
 
     <div class="stats">
+
         <div class="stat">
             <strong>4</strong>
             <span>Major event groups</span>
@@ -636,6 +683,7 @@ footer {
             <strong>1</strong>
             <span>New Elarite Titan</span>
         </div>
+
     </div>
 
 </section>
@@ -647,33 +695,41 @@ footer {
     <a class="calendar-card"
        style="--accent:#bb91ff"
        href="#ancient-awakening">
+
         <small>NOV 23 – NOV 29</small>
         <strong>Ancient Awakening</strong>
         <span>Valdur & Elarite Titans</span>
+
     </a>
 
     <a class="calendar-card"
        style="--accent:#e5c78d"
        href="#bountiful-roads">
+
         <small>NOV 30 – DEC 6</small>
         <strong>Bountiful Roads</strong>
         <span>Talismans & Relics</span>
+
     </a>
 
     <a class="calendar-card"
        style="--accent:#ffb18d"
        href="#ascendant-glory">
+
         <small>DEC 7 – DEC 13</small>
         <strong>Ascendant Glory</strong>
         <span>Eva & New Skins</span>
+
     </a>
 
     <a class="calendar-card"
        style="--accent:#80e1ed"
        href="#balance-of-power">
+
         <small>DEC 14 – DEC 20</small>
         <strong>Balance of Power</strong>
         <span>Progress Development</span>
+
     </a>
 
 </div>
@@ -684,7 +740,9 @@ footer {
          id="ancient-awakening"
          style="--accent:#bb91ff">
 
-    <div class="week-number">Week One • Elarite Awakening</div>
+    <div class="week-number">
+        Week One • Elarite Awakening
+    </div>
 
     <h2>Ancient Awakening</h2>
 
@@ -700,10 +758,90 @@ footer {
         and the shop.
     </p>
 
-    <h3>Featured Characters & Rewards</h3>
+    <h3 class="reward-heading">
+        Featured Characters & Rewards
+    </h3>
 
-    <div class="reward-grid"
-         data-rewards="Valdur|titan|Soul Stones, Artifact Fragments, Skin and Skin Plus;Metida|titan|Soul Stones and Artifact Fragments;Pallant|titan|Soul Stones and Artifact Fragments;Alecto|titan|Primordial Skin;Arachne|hero|Legendary Relic Shards;Alvanor|hero|Legendary Relic Shards">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="V">
+                <img src="Images/Titans/Valdur.png"
+                     alt="Valdur"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Valdur</strong>
+                <small>Soul Stones, Artifact Fragments, Skin and Skin Plus</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="M">
+                <img src="Images/Titans/Metida.png"
+                     alt="Metida"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Metida</strong>
+                <small>Soul Stones and Artifact Fragments</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="P">
+                <img src="Images/Titans/Pallant.png"
+                     alt="Pallant"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Pallant</strong>
+                <small>Soul Stones and Artifact Fragments</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Titans/Alecto.png"
+                     alt="Alecto"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Alecto</strong>
+                <small>Primordial Skin</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/arachne.png"
+                     alt="Arachne"
+                     loading="lazy"
+                     onerror="heroFallback(this,'Arachne.png')">
+            </div>
+            <div>
+                <strong>Arachne</strong>
+                <small>Legendary Relic Shards</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/Alvanor.png"
+                     alt="Alvanor"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Alvanor</strong>
+                <small>Legendary Relic Shards</small>
+            </div>
+        </div>
+
     </div>
 
     <div class="event-card">
@@ -752,19 +890,22 @@ footer {
         <h3>Ancient Awakening</h3>
 
         <p>
-            The flagship event of the opening week,
-            focusing on Valdur's development and
-            featuring his Soul Stones and Artifact
-            Fragments alongside Alecto's Primordial Skin.
+            The flagship event of the opening week
+            focuses on Valdur's development, featuring
+            his Soul Stones and Artifact Fragments
+            alongside Alecto's Primordial Skin.
         </p>
 
     </div>
 
     <div class="notice">
+
         <strong>Realm warning:</strong>
+
         Some announced quests involve losing troops.
         Evaluate the cost of replacing those troops
         before pursuing additional quest milestones.
+
     </div>
 
     <div class="discount-panel">
@@ -804,11 +945,20 @@ footer {
     </div>
 
     <div class="notice">
+
         <strong>GOA Strategy:</strong>
+
         Compare event quests with the discount schedule.
         Delaying certain purchases or chest openings
         may allow you to complete the same objectives
         using fewer Emeralds.
+
+    </div>
+
+    <div class="social-links">
+        <a href="ascended-glory-valdur.html">
+            OPEN COMPLETE VALDUR EVENT GUIDE →
+        </a>
     </div>
 
 </section>
@@ -819,7 +969,9 @@ footer {
          id="bountiful-roads"
          style="--accent:#e5c78d">
 
-    <div class="week-number">Week Two • Talisman Opportunities</div>
+    <div class="week-number">
+        Week Two • Talisman Opportunities
+    </div>
 
     <h2>Bountiful Roads</h2>
 
@@ -841,10 +993,116 @@ footer {
         potential investment opportunity.
     </p>
 
-    <h3>Featured Characters & Rewards</h3>
+    <h3 class="reward-heading">
+        Featured Characters & Rewards
+    </h3>
 
-    <div class="reward-grid"
-         data-rewards="Judge|hero|Talisman and Mechanical Skin;Polaris|hero|Talisman;Keros|titan|Biomechanical Skin;Tempus|hero|Relic Fragments;Wodryn|hero|Development resources;Eva|hero|Development resources;Metida|titan|Development resources;Pallant|titan|Development resources">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="J">
+                <img src="Images/Heroes/Judge.png"
+                     alt="Judge"
+                     loading="lazy"
+                     onerror="heroFallback(this,'judge.png')">
+            </div>
+            <div>
+                <strong>Judge</strong>
+                <small>Talisman and Mechanical Skin</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="P">
+                <img src="Images/Heroes/polaris.png"
+                     alt="Polaris"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Polaris</strong>
+                <small>Talisman</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="K">
+                <img src="Images/Titans/Keros.png"
+                     alt="Keros"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Keros</strong>
+                <small>Biomechanical Skin</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="T">
+                <img src="Images/Heroes/Tempus.png"
+                     alt="Tempus"
+                     loading="lazy"
+                     onerror="heroFallback(this,'tempus.png')">
+            </div>
+            <div>
+                <strong>Tempus</strong>
+                <small>Legendary Relic Fragments</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="W">
+                <img src="Images/Heroes/Wodryn.png"
+                     alt="Wodryn"
+                     loading="lazy"
+                     onerror="heroFallback(this,'wodryn.png')">
+            </div>
+            <div>
+                <strong>Wodryn</strong>
+                <small>Development resources</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="E">
+                <img src="Images/Heroes/Eva.png"
+                     alt="Eva"
+                     loading="lazy"
+                     onerror="heroFallback(this,'eva.png')">
+            </div>
+            <div>
+                <strong>Eva</strong>
+                <small>Development resources</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="M">
+                <img src="Images/Titans/Metida.png"
+                     alt="Metida"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Metida</strong>
+                <small>Development resources</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="P">
+                <img src="Images/Titans/Pallant.png"
+                     alt="Pallant"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Pallant</strong>
+                <small>Development resources</small>
+            </div>
+        </div>
+
     </div>
 
     <div class="event-card">
@@ -885,12 +1143,15 @@ footer {
     </div>
 
     <div class="notice">
+
         <strong>GOA Strategy:</strong>
+
         Unlocking a Talisman is only one part of
         its development. Attribute rerolls can
         require significant additional resources.
         Prioritize heroes that already belong
         to your main competitive teams.
+
     </div>
 
 </section>
@@ -900,7 +1161,9 @@ footer {
 <section class="week special-event"
          id="seers-game">
 
-    <div class="week-number">Special Event • Mama Chabba Returns</div>
+    <div class="week-number">
+        Special Event • Mama Chabba Returns
+    </div>
 
     <h2>Seer's Game</h2>
 
@@ -908,8 +1171,34 @@ footer {
         December 6 – December 8
     </div>
 
-    <div class="reward-grid"
-         data-rewards="Chabba|hero|Seer's Game host;Judge|hero|Plasma Skin">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="C">
+                <img src="Images/Heroes/Chabba.png"
+                     alt="Chabba"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Mama Chabba</strong>
+                <small>Seer's Game host</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="J">
+                <img src="Images/Heroes/Judge.png"
+                     alt="Judge"
+                     loading="lazy"
+                     onerror="heroFallback(this,'judge.png')">
+            </div>
+            <div>
+                <strong>Judge</strong>
+                <small>Plasma Skin</small>
+            </div>
+        </div>
+
     </div>
 
     <p>
@@ -926,12 +1215,15 @@ footer {
     </p>
 
     <div class="notice">
+
         <strong>Bad Luck Returns:</strong>
+
         Remember that the Seer's Game includes
         an element of chance. Establish a spending
         limit before chasing a specific reward
         and avoid spending resources reserved
         for later events.
+
     </div>
 
 </section>
@@ -942,7 +1234,9 @@ footer {
          id="ascendant-glory"
          style="--accent:#ffb18d">
 
-    <div class="week-number">Week Three • Eva Takes the Spotlight</div>
+    <div class="week-number">
+        Week Three • Eva Takes the Spotlight
+    </div>
 
     <h2>Ascendant Glory</h2>
 
@@ -958,10 +1252,77 @@ footer {
         additional Legendary Relic opportunities.
     </p>
 
-    <h3>Featured Characters & Rewards</h3>
+    <h3 class="reward-heading">
+        Featured Characters & Rewards
+    </h3>
 
-    <div class="reward-grid"
-         data-rewards="Eva|hero|Plasma Skin, Skin Plus and Soul Stones;Julius|hero|Winter Skin Plus;Satori|hero|Cybernetic Skin;Arachne|hero|Relic Fragments;Alvanor|hero|Relic Fragments">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="E">
+                <img src="Images/Heroes/Eva.png"
+                     alt="Eva"
+                     loading="lazy"
+                     onerror="heroFallback(this,'eva.png')">
+            </div>
+            <div>
+                <strong>Eva</strong>
+                <small>Plasma Skin, Skin Plus and Soul Stones</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="J">
+                <img src="Images/Heroes/Julius.png"
+                     alt="Julius"
+                     loading="lazy"
+                     onerror="heroFallback(this,'julius.png')">
+            </div>
+            <div>
+                <strong>Julius</strong>
+                <small>Winter Skin Plus</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="S">
+                <img src="Images/Heroes/Satori.png"
+                     alt="Satori"
+                     loading="lazy"
+                     onerror="heroFallback(this,'satori.png')">
+            </div>
+            <div>
+                <strong>Satori</strong>
+                <small>Cybernetic Skin</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/arachne.png"
+                     alt="Arachne"
+                     loading="lazy"
+                     onerror="heroFallback(this,'Arachne.png')">
+            </div>
+            <div>
+                <strong>Arachne</strong>
+                <small>Legendary Relic Fragments</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/Alvanor.png"
+                     alt="Alvanor"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Alvanor</strong>
+                <small>Legendary Relic Fragments</small>
+            </div>
+        </div>
+
     </div>
 
     <div class="event-card">
@@ -1044,12 +1405,15 @@ footer {
     </div>
 
     <div class="notice">
+
         <strong>GOA Strategy:</strong>
+
         Evaluate the actual stat bonuses and
         your existing hero investment before
         pursuing a new Skin Plus. A new release
         does not automatically make an upgrade
         essential for every account.
+
     </div>
 
 </section>
@@ -1060,7 +1424,9 @@ footer {
          id="balance-of-power"
          style="--accent:#80e1ed">
 
-    <div class="week-number">Week Four • Progress Development</div>
+    <div class="week-number">
+        Week Four • Progress Development
+    </div>
 
     <h2>Balance of Power</h2>
 
@@ -1075,10 +1441,90 @@ footer {
         skins, equipment and hero resources.
     </p>
 
-    <h3>Featured Characters & Rewards</h3>
+    <h3 class="reward-heading">
+        Featured Characters & Rewards
+    </h3>
 
-    <div class="reward-grid"
-         data-rewards="Arachne|hero|Plasma Skin, Skin Plus and Relic Shards;Alvanor|hero|Relic Shards;Aidan|hero|Cybernetic Skin Plus and red glove recipe;Orion|hero|Mechanical Skin;Wodryn|hero|Soul Stones and Artifacts;Eva|hero|Soul Stones and Artifacts">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/arachne.png"
+                     alt="Arachne"
+                     loading="lazy"
+                     onerror="heroFallback(this,'Arachne.png')">
+            </div>
+            <div>
+                <strong>Arachne</strong>
+                <small>Plasma Skin, Skin Plus and Relic Shards</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/Alvanor.png"
+                     alt="Alvanor"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Alvanor</strong>
+                <small>Legendary Relic Shards</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="A">
+                <img src="Images/Heroes/Aidan.png"
+                     alt="Aidan"
+                     loading="lazy"
+                     onerror="heroFallback(this,'aidan.png')">
+            </div>
+            <div>
+                <strong>Aidan</strong>
+                <small>Cybernetic Skin Plus and red glove recipe</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="O">
+                <img src="Images/Heroes/Orion.png"
+                     alt="Orion"
+                     loading="lazy"
+                     onerror="heroFallback(this,'orion.png')">
+            </div>
+            <div>
+                <strong>Orion</strong>
+                <small>Mechanical Skin</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="W">
+                <img src="Images/Heroes/Wodryn.png"
+                     alt="Wodryn"
+                     loading="lazy"
+                     onerror="heroFallback(this,'wodryn.png')">
+            </div>
+            <div>
+                <strong>Wodryn</strong>
+                <small>Soul Stones and Artifacts</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="E">
+                <img src="Images/Heroes/Eva.png"
+                     alt="Eva"
+                     loading="lazy"
+                     onerror="heroFallback(this,'eva.png')">
+            </div>
+            <div>
+                <strong>Eva</strong>
+                <small>Soul Stones and Artifacts</small>
+            </div>
+        </div>
+
     </div>
 
     <div class="event-card">
@@ -1134,12 +1580,15 @@ footer {
     </div>
 
     <div class="notice">
+
         <strong>GOA Strategy:</strong>
+
         Preserve enough resources for the final
         week if Progress development or Arachne's
         Legendary Relics are among your priorities.
         Spending everything during the opening
         events could limit your later options.
+
     </div>
 
 </section>
@@ -1236,13 +1685,16 @@ footer {
         <table class="priority-table">
 
             <thead>
+
                 <tr>
                     <th>Player Objective</th>
                     <th>Recommended Focus</th>
                 </tr>
+
             </thead>
 
             <tbody>
+
                 <tr>
                     <td>Elarite Titan development</td>
                     <td>Ancient Awakening</td>
@@ -1267,6 +1719,7 @@ footer {
                     <td>Legendary Relics</td>
                     <td>Compare shops across all four weeks</td>
                 </tr>
+
             </tbody>
 
         </table>
@@ -1275,16 +1728,57 @@ footer {
 
 </section>
 
-<!-- VALDUR -->
+<!-- ELARITE TITANS -->
 
 <section class="final-section">
 
-    <div class="eyebrow">The Final Elarite Titan</div>
+    <div class="eyebrow">
+        The Final Elarite Titan
+    </div>
 
     <h2>Valdur — Completing the Elarite Faction</h2>
 
-    <div class="reward-grid"
-         data-rewards="Valdur|titan|The final Elarite Titan;Pallant|titan|Elarite faction synergy;Metida|titan|Elarite faction synergy">
+    <div class="reward-grid">
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="V">
+                <img src="Images/Titans/Valdur.png"
+                     alt="Valdur"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Valdur</strong>
+                <small>The final Elarite Titan</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="P">
+                <img src="Images/Titans/Pallant.png"
+                     alt="Pallant"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Pallant</strong>
+                <small>Elarite faction synergy</small>
+            </div>
+        </div>
+
+        <div class="reward-card">
+            <div class="portrait" data-initial="M">
+                <img src="Images/Titans/Metida.png"
+                     alt="Metida"
+                     loading="lazy"
+                     onerror="missingPortrait(this)">
+            </div>
+            <div>
+                <strong>Metida</strong>
+                <small>Elarite faction synergy</small>
+            </div>
+        </div>
+
     </div>
 
     <p>
@@ -1314,7 +1808,9 @@ footer {
 
 <section class="final-section">
 
-    <div class="eyebrow">GOA Season Verdict</div>
+    <div class="eyebrow">
+        GOA Season Verdict
+    </div>
 
     <h2>A Winter Full of Opportunities</h2>
 
@@ -1347,6 +1843,7 @@ footer {
     <div class="notice">
 
         <strong>Important:</strong>
+
         This calendar is based on announced season
         information. Event dates, quests, rewards,
         shop contents and offers may change.
@@ -1401,104 +1898,27 @@ footer {
 
 <script>
 
-/*
-   Character portrait paths.
-   Confirm Titan filenames against GitHub.
-*/
+function missingPortrait(img) {
 
-const heroFiles = {
-    Arachne: ["arachne.png", "Arachne.png"],
-    Alvanor: ["Alvanor.png"],
-    Judge: ["Judge.png", "judge.png"],
-    Polaris: ["polaris.png"],
-    Tempus: ["Tempus.png", "tempus.png"],
-    Wodryn: ["Wodryn.png", "wodryn.png"],
-    Eva: ["Eva.png", "eva.png"],
-    Chabba: ["Chabba.png"],
-    Julius: ["Julius.png", "julius.png"],
-    Satori: ["Satori.png", "satori.png"],
-    Aidan: ["Aidan.png", "aidan.png"],
-    Orion: ["Orion.png", "orion.png"]
-};
+    img.onerror = null;
 
-const titanFiles = {
-    Valdur: ["Valdur.png", "valdur.png"],
-    Metida: ["Metida.png", "metida.png"],
-    Pallant: ["Pallant.png", "pallant.png"],
-    Alecto: ["Alecto.png", "alecto.png"],
-    Keros: ["Keros.png", "keros.png"]
-};
+    const portrait = img.parentElement;
 
-document.querySelectorAll("[data-rewards]").forEach(grid => {
+    portrait.classList.add("missing");
 
-    const entries = grid.dataset.rewards.split(";");
+    img.remove();
 
-    entries.forEach(entry => {
+}
 
-        const [name, type, description] = entry.split("|");
+function heroFallback(img, filename) {
 
-        const card = document.createElement("div");
-        card.className = "reward-card";
+    img.onerror = function() {
+        missingPortrait(img);
+    };
 
-        const portrait = document.createElement("div");
-        portrait.className = "portrait";
-        portrait.dataset.initial = name.charAt(0);
+    img.src = "Images/Heroes/" + filename;
 
-        const img = document.createElement("img");
-        img.alt = name;
-        img.loading = "lazy";
-
-        const folder = type === "titan"
-            ? "Images/Titans/"
-            : "Images/Heroes/";
-
-        const files = (
-            type === "titan"
-                ? titanFiles[name]
-                : heroFiles[name]
-        ) || [name + ".png"];
-
-        let attempt = 0;
-
-        img.onerror = function() {
-
-            attempt++;
-
-            if (attempt < files.length) {
-
-                img.src = folder + files[attempt];
-
-            } else {
-
-                img.remove();
-                portrait.classList.add("missing");
-
-            }
-        };
-
-        img.src = folder + files[0];
-
-        portrait.appendChild(img);
-
-        const info = document.createElement("div");
-
-        const title = document.createElement("strong");
-        title.textContent = name;
-
-        const details = document.createElement("small");
-        details.textContent = description;
-
-        info.appendChild(title);
-        info.appendChild(details);
-
-        card.appendChild(portrait);
-        card.appendChild(info);
-
-        grid.appendChild(card);
-
-    });
-
-});
+}
 
 </script>
 
