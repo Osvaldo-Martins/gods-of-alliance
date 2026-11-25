@@ -1,498 +1,260 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tempus Full Hero Guide — Skills, Build, Synergies & Counters | Gods of Alliance</title>
-<meta name="description" content="Complete Tempus guide for Hero Wars Alliance. All four time-control skills, skins, glyphs, artifacts, talismans, Iris and Eternity synergies, and how to counter him.">
+<title>Tempus Full Hero Guide — Skills, Relic, Build, Synergies & Counters | Gods of Alliance</title>
+<meta name="description" content="Complete Tempus guide for Hero Wars Alliance. Quick build, all four time-control skills, his Relic, skins, glyphs, artifacts, talismans, Iris and Eternity synergies, and how to counter him.">
 <meta name="robots" content="index,follow">
-<meta name="theme-color" content="#070b16">
 <link rel="canonical" href="https://www.godsofalliancehwa.com/tempus.html">
+<meta name="theme-color" content="#070b16">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="TEMPUS — PREMIUM FULL HERO GUIDE | Gods of Alliance">
-<meta property="og:description" content="The Master of Time: skills, build, Eternity synergies and counters.">
+<meta property="og:description" content="The Master of Time: skills, Relic, build, Eternity synergies and counters.">
 <meta property="og:url" content="https://www.godsofalliancehwa.com/tempus.html">
 <meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/tempus-guide.jpg">
 <meta property="og:image:secure_url" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/tempus-guide.jpg">
 <meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
 <meta property="og:image:alt" content="Tempus Premium Hero Guide — Gods of Alliance">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TEMPUS — PREMIUM HERO GUIDE">
-<meta name="twitter:description" content="Skills, build, synergies and counters.">
+<meta name="twitter:description" content="Skills, Relic, build, synergies and counters.">
 <meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/tempus-guide.jpg">
 
 <style>
 :root{
  --bg:#070b16;
- --panel:#121a30;
+ --surface:#0f1628;
+ --surface-2:#141d35;
+ --line:rgba(95,180,255,.18);
+ --line-strong:rgba(95,180,255,.38);
  --accent:#5fb4ff;
  --gold:#f0c477;
  --goldsoft:#ffe2aa;
  --purple:#d9a7f3;
+ --green:#7fe0a8;
  --text:#dde6f3;
- --muted:#a5b3c9;
- --border:rgba(95,180,255,.22);
+ --muted:#93a3bd;
+ --radius:16px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{
  margin:0;
  font-family:Arial,Helvetica,sans-serif;
  background:
- radial-gradient(ellipse at 8% 12%,rgba(46,110,214,.18),transparent 33%),
- radial-gradient(ellipse at 95% 55%,rgba(214,160,60,.09),transparent 38%),
- var(--bg);
+  radial-gradient(ellipse at 10% 0%,rgba(46,110,214,.16),transparent 40%),
+  radial-gradient(ellipse at 90% 40%,rgba(214,160,60,.07),transparent 40%),
+  var(--bg);
  color:var(--text);
- line-height:1.8;
+ line-height:1.75;
 }
-img{max-width:100%}
+img{max-width:100%;display:block}
 a{color:var(--gold)}
-strong{color:white}
-p{margin:12px 0}
+strong{color:#fff}
+h1,h2,h3{color:#fff;margin:0;line-height:1.25}
+p{margin:0 0 11px}
+p:last-child{margin-bottom:0}
+
 .site-header{
- display:flex;
- justify-content:space-between;
- align-items:center;
- gap:20px;
- min-height:78px;
- padding:15px max(20px,5%);
- background:var(--bg);
- border-bottom:1px solid var(--border);
+ display:flex;justify-content:space-between;align-items:center;gap:20px;
+ min-height:78px;padding:15px max(20px,5%);
+ background:var(--bg);border-bottom:1px solid var(--line);
 }
-.brand{
- font-size:22px;
- font-weight:900;
- letter-spacing:1px;
- color:white;
- text-decoration:none;
-}
+.brand{font-size:22px;font-weight:900;letter-spacing:1px;color:#fff;text-decoration:none}
 .brand span{color:var(--gold)}
-.back-link{
- color:var(--accent);
- font-size:12px;
- font-weight:900;
- text-decoration:none;
+.back-link{color:var(--accent);font-size:12px;font-weight:900;text-decoration:none}
+
+.wrap{width:min(100% - 32px,1120px);margin:0 auto}
+
+/* hero */
+.hero{padding:26px 0 0}
+.hero-art{
+ border-radius:20px;overflow:hidden;border:1px solid var(--line);
+ box-shadow:0 30px 80px rgba(0,0,0,.45);
+ aspect-ratio:16/9;max-height:520px;width:100%;
+ background:#0b1020 url('Images/Hero-Guides/tempus-guide.jpg') center/cover no-repeat;
 }
-.back-link:hover{color:white}
-.hero-banner{
- min-height:500px;
- display:flex;
- align-items:flex-end;
- background:
- linear-gradient(90deg,rgba(5,9,20,.91),rgba(5,9,20,.47),rgba(5,9,20,.11)),
- linear-gradient(0deg,var(--bg),transparent 67%),
- url('Images/Hero-Guides/tempus-guide.jpg') center/cover no-repeat;
+.identity{
+ display:grid;grid-template-columns:auto 1fr auto;gap:22px;align-items:center;
+ margin-top:-56px;position:relative;
+ padding:22px 26px;border-radius:var(--radius);
+ background:rgba(15,22,40,.92);backdrop-filter:blur(8px);
+ border:1px solid var(--line-strong);
+ width:calc(100% - 48px);margin-left:24px;
 }
-.banner-content{
- width:min(100% - 40px,1100px);
- margin:0 auto;
- padding:100px 0 55px;
+.identity img{width:84px;height:84px;border-radius:16px;border:2px solid var(--accent)}
+.identity h1{font-size:34px;letter-spacing:-.5px}
+.identity .sub{color:var(--goldsoft);font-weight:800;margin:2px 0 8px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{
+ display:inline-flex;align-items:center;gap:6px;
+ padding:4px 11px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.4px;
+ background:rgba(95,180,255,.1);border:1px solid var(--line-strong);color:#dcecff;
 }
-.kicker{
- color:var(--accent);
- font-weight:900;
- font-size:12px;
- letter-spacing:2px;
- text-transform:uppercase;
+.chip.gold{background:rgba(240,196,119,.1);border-color:rgba(240,196,119,.4);color:var(--goldsoft)}
+.btn{
+ display:inline-flex;align-items:center;gap:8px;white-space:nowrap;
+ padding:12px 18px;border-radius:10px;font-weight:900;font-size:13px;text-decoration:none;
+ background:var(--gold);color:#150f04;
 }
-h1{
- color:white;
- font-size:clamp(55px,9vw,108px);
- letter-spacing:-2px;
- line-height:1;
- margin:15px 0;
- text-shadow:0 5px 30px black;
+.btn.ghost{background:transparent;color:var(--goldsoft);border:1px solid rgba(240,196,119,.45)}
+.hero-actions{display:flex;flex-direction:column;gap:8px}
+
+/* sticky nav */
+.toc{
+ position:sticky;top:0;z-index:20;margin-top:26px;
+ background:rgba(7,11,22,.9);backdrop-filter:blur(10px);
+ border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
-.banner-subtitle{
- font-size:21px;
- color:var(--goldsoft);
- font-weight:800;
- text-shadow:0 3px 15px black;
+.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding:10px 0;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{flex:0 0 auto;padding:7px 12px;border-radius:8px;color:#c9d9f0;font-size:12px;font-weight:800;text-decoration:none}
+.toc a.active{background:rgba(95,180,255,.16);color:#fff}
+
+/* sections */
+section{padding:48px 0 8px}
+.eyebrow{color:var(--accent);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+.section-head{margin-bottom:18px}
+.section-head h2{font-size:clamp(24px,3vw,34px);margin-top:6px}
+.intro{max-width:860px;color:#cbd7ea;margin:12px 0 0}
+.card{
+ background:linear-gradient(160deg,var(--surface-2),var(--surface));
+ border:1px solid var(--line);border-radius:var(--radius);padding:24px;
 }
-.tags{
- display:flex;
- flex-wrap:wrap;
- gap:9px;
- margin-top:23px;
-}
-.tags span{
- border:1px solid var(--border);
- padding:7px 14px;
- border-radius:30px;
- background:rgba(10,18,40,.85);
- color:#dcecff;
- font-size:11px;
- font-weight:900;
-}
-.container{
- width:min(100% - 38px,1100px);
- margin:0 auto;
- padding:20px 0 80px;
-}
-.quick-nav{
- display:flex;
- flex-wrap:wrap;
- gap:9px;
- padding:20px 0 33px;
-}
-.quick-nav a{
- padding:9px 13px;
- border:1px solid var(--border);
- border-radius:8px;
- background:#141d35;
- text-decoration:none;
- color:#d6e8ff;
- font-size:12px;
- font-weight:800;
-}
-.quick-nav a:hover{
- background:#1e2c52;
- border-color:var(--accent);
-}
-.section{
- margin:36px 0 60px;
- scroll-margin-top:25px;
-}
-.section h2{
- margin:10px 0 22px;
- color:white;
- font-size:clamp(26px,3.3vw,36px);
- line-height:1.25;
-}
-.panel{
- background:linear-gradient(135deg,#17213b,#121420);
- border:1px solid var(--border);
- border-radius:14px;
- padding:28px 30px;
- margin-bottom:17px;
-}
-.panel h3{
- margin:0 0 12px;
- font-size:21px;
- color:var(--accent);
-}
-.panel p:last-child{margin-bottom:0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .note{
- margin:22px 0;
- padding:19px 23px;
- border-left:3px solid var(--accent);
- background:rgba(95,180,255,.075);
- border-radius:0 9px 9px 0;
+ margin-top:16px;padding:15px 20px;border-radius:12px;font-size:15px;
+ background:rgba(95,180,255,.07);border:1px solid var(--line);border-left:3px solid var(--accent);
 }
-.gold-note{
- border-left-color:var(--gold);
- background:rgba(240,196,119,.07);
-}
-.hero-overview{
- display:flex;
- align-items:flex-start;
- gap:24px;
-}
-.hero-portrait{
- width:112px;
- height:112px;
- flex-shrink:0;
- object-fit:cover;
- border:2px solid var(--accent);
- border-radius:15px;
- box-shadow:0 0 25px rgba(95,180,255,.16);
-}
-.stat-grid{
- display:grid;
- grid-template-columns:repeat(4,minmax(0,1fr));
- gap:12px;
- margin:25px 0;
-}
-.stat{
- background:#141d33;
- border:1px solid var(--border);
- border-radius:11px;
- padding:19px 12px;
- text-align:center;
-}
-.stat strong{
- display:block;
- font-size:23px;
- color:var(--gold);
- line-height:1.35;
-}
-.stat span{
- font-size:12px;
- color:var(--muted);
-}
-.skills-stack{
- display:flex;
- flex-direction:column;
- gap:18px;
-}
-.skill-card{
- padding:30px 32px;
- border-radius:14px;
- border:1px solid var(--border);
- background:linear-gradient(130deg,#1a2644,#13151f);
- box-shadow:0 12px 35px rgba(0,0,0,.13);
-}
-.skill-header{
- display:flex;
- align-items:center;
- gap:20px;
- margin-bottom:18px;
-}
-.skill-icon,.skill-badge{
- width:88px;
- height:88px;
- flex-shrink:0;
- border-radius:12px;
- border:1px solid rgba(95,180,255,.45);
- box-shadow:0 0 20px rgba(95,180,255,.12);
-}
-.skill-icon{object-fit:contain}
-.skill-badge{
- display:grid;
- place-items:center;
- background:radial-gradient(circle,#24375f,#121a30);
- color:var(--gold);
- font-size:34px;
- font-weight:900;
-}
-.skill-header h3{
- margin:0;
- color:var(--accent);
- font-size:26px;
-}
-.skill-card p{margin:11px 0}
+.note.gold{background:rgba(240,196,119,.07);border-color:rgba(240,196,119,.25);border-left-color:var(--gold)}
 .formula{
- margin:15px 0;
- padding:14px 17px;
- color:var(--goldsoft);
- font-weight:800;
- background:#111829;
- border:1px solid rgba(240,196,119,.25);
- border-radius:9px;
+ margin:14px 0;padding:12px 15px;font-size:14px;font-weight:800;color:var(--goldsoft);
+ background:rgba(0,0,0,.25);border:1px solid rgba(240,196,119,.25);border-radius:9px;
 }
-.priority{
- display:flex;
- align-items:flex-start;
- gap:17px;
- padding:20px 0;
- border-bottom:1px solid rgba(255,255,255,.08);
+
+/* quick build */
+.build-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.build-grid .card{display:flex;flex-direction:column;gap:12px;padding:20px}
+.span-2{grid-column:span 2}.span-3{grid-column:span 3}.span-4{grid-column:span 4}.span-6{grid-column:span 6}
+.tile-title{display:flex;justify-content:space-between;align-items:center}
+.tile-title h3{font-size:15px;color:var(--goldsoft);letter-spacing:.3px}
+.tile-title a{font-size:11px;font-weight:800;color:var(--accent);text-decoration:none}
+.order{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.step{padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:12px;font-weight:800;color:#e9f1ff}
+.arrow{color:var(--muted);font-size:12px}
+.skin-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.skin-row figure{margin:0;text-align:center}
+.skin-row img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+.skin-row figcaption{font-size:10px;font-weight:800;color:var(--muted);margin-top:4px;line-height:1.3}
+.skin-row figcaption b{display:block;color:#fff;font-size:11px}
+.rank-dot{position:relative;display:block}
+.rank-dot::after{
+ content:attr(data-rank);position:absolute;top:-6px;left:-6px;
+ width:22px;height:22px;border-radius:50%;display:grid;place-items:center;
+ background:var(--gold);color:#150f04;font-size:11px;font-weight:900;
 }
-.priority:last-child{border-bottom:0}
-.rank{
- display:grid;
- place-items:center;
- min-width:40px;
- height:40px;
- border:1px solid var(--border);
- border-radius:9px;
- background:rgba(95,180,255,.09);
- color:var(--accent);
- font-weight:900;
+.mini-row{display:flex;gap:10px;align-items:center}
+.mini-row img{width:52px;height:52px;border-radius:10px;border:1px solid var(--line)}
+.mini-row .txt{font-size:13px;color:#c9d6ea;line-height:1.5}
+.mini-row .txt b{color:#fff;display:block;font-size:14px}
+
+/* overview */
+.overview{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
+.overview img{width:120px;height:120px;border-radius:18px;border:2px solid var(--accent)}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.stat{text-align:center;padding:16px 10px}
+.stat b{display:block;font-size:23px;color:var(--gold)}
+.stat span{font-size:12px;color:var(--muted)}
+
+/* skill + relic cards */
+.ability-head{display:flex;gap:16px;align-items:center;margin-bottom:14px}
+.ability-head img{width:76px;height:76px;border-radius:14px;border:1px solid var(--line-strong);flex-shrink:0}
+.ability-head .num{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px}
+.ability-head h3{font-size:22px;color:var(--accent)}
+.relic .ability-head img{border:2px solid rgba(240,196,119,.55)}
+.relic .ability-head .num{color:var(--gold)}
+.relic .ability-head h3{color:var(--goldsoft)}
+.card p{font-size:15px;color:#d3def0}
+
+/* skins */
+.skin-card{display:grid;grid-template-columns:84px 1fr;gap:16px;align-items:start}
+.skin-card .pic{position:relative}
+.skin-card .pic img{width:84px;height:84px;border-radius:14px;border:1px solid var(--line)}
+.skin-card h3{font-size:18px;color:var(--goldsoft)}
+.skin-card p{font-size:14px;margin-top:6px}
+
+/* ranked lists */
+ol.ranked{margin:0;padding:0;list-style:none;counter-reset:r}
+ol.ranked li{
+ counter-increment:r;display:grid;grid-template-columns:34px 1fr;gap:12px;
+ padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06);
 }
-.priority h3{
- margin:0 0 4px;
- font-size:19px;
- color:var(--goldsoft);
+ol.ranked li:last-child{border-bottom:0}
+ol.ranked li::before{
+ content:counter(r);width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+ background:rgba(95,180,255,.12);color:var(--accent);font-weight:900;font-size:13px;
 }
-.priority p{margin:0}
-.skin-art{
- width:104px;
- height:104px;
- object-fit:cover;
- flex-shrink:0;
- border:1px solid var(--border);
- border-radius:14px;
- box-shadow:0 0 22px rgba(95,180,255,.12);
-}
-.relic-card{
- padding:27px 29px;
- margin-bottom:17px;
- border-radius:13px;
- border:1px solid rgba(240,196,119,.26);
- background:linear-gradient(135deg,#2a2418,#141520);
-}
-.relic-header{
- display:flex;
- align-items:center;
- gap:20px;
- margin-bottom:18px;
-}
-.relic-skill-icon{
- width:88px;
- height:88px;
- flex-shrink:0;
- object-fit:contain;
- border:1px solid rgba(240,196,119,.5);
- border-radius:12px;
- background:rgba(240,196,119,.055);
- box-shadow:0 0 20px rgba(240,196,119,.1);
-}
-.relic-level{
- display:block;
- color:var(--gold);
- font-size:11px;
- font-weight:900;
- letter-spacing:1.3px;
- margin-bottom:5px;
-}
-.relic-card h3{
- color:var(--goldsoft);
- font-size:23px;
- margin:0;
- line-height:1.4;
-}
-.relic-card p{margin:10px 0}
-.artifact-heading{
- display:flex;
- gap:17px;
- align-items:center;
- margin-bottom:14px;
-}
-.artifact-heading h3{margin:0}
-.artifact-icon{
- width:78px;
- height:78px;
- object-fit:contain;
- flex-shrink:0;
- border:1px solid var(--border);
- border-radius:10px;
-}
-.grid{
- display:grid;
- grid-template-columns:repeat(2,minmax(0,1fr));
- gap:16px;
-}
-.grid .panel{margin:0}
-.talisman-heading{
- display:flex;
- gap:17px;
- align-items:center;
- margin-bottom:14px;
-}
-.talisman-heading h3{margin:0}
-.talisman-icon{
- width:78px;
- height:78px;
- object-fit:contain;
- flex-shrink:0;
- border:1px solid var(--border);
- border-radius:10px;
-}
-.synergy,.counter{
- padding:25px 28px;
- border:1px solid var(--border);
- border-radius:13px;
- background:linear-gradient(135deg,#18233f,#121420);
- margin-bottom:17px;
-}
-.counter{
- background:linear-gradient(135deg,#251c33,#15131d);
- border-color:rgba(217,167,243,.23);
-}
-.hero-heading{
- display:flex;
- gap:16px;
- align-items:center;
- margin-bottom:14px;
-}
-.hero-heading img{
- width:66px;
- height:66px;
- object-fit:cover;
- border-radius:10px;
- border:1px solid var(--border);
- flex-shrink:0;
-}
-.hero-heading h3{
- margin:0;
- font-size:21px;
- line-height:1.35;
- color:var(--accent);
-}
-.counter .hero-heading h3{color:var(--purple)}
-.counter .hero-heading img{
- border-color:rgba(217,167,243,.3);
-}
-.counter-label{
- color:var(--purple);
- font-size:11px;
- font-weight:900;
- letter-spacing:1.5px;
- margin-bottom:10px;
-}
-.verdict-list{padding-left:22px}
-.verdict-list li{padding:6px 0}
-.video{
- position:relative;
- width:100%;
- aspect-ratio:16/9;
- overflow:hidden;
- border:1px solid var(--border);
- border-radius:15px;
- background:black;
-}
-.video iframe{
- position:absolute;
- inset:0;
- width:100%;
- height:100%;
- border:0;
-}
-.cta{
- padding:40px 25px;
- text-align:center;
- border:1px solid var(--border);
- border-radius:15px;
- background:linear-gradient(135deg,#1c2a4d,#131726);
-}
-.cta a{
- display:inline-block;
- margin-top:15px;
- padding:13px 25px;
- border-radius:8px;
- background:var(--gold);
- color:#140f05;
- font-size:13px;
- font-weight:900;
- text-decoration:none;
-}
-footer{
- background:var(--bg);
- border-top:1px solid var(--border);
- padding:35px 20px;
- text-align:center;
- color:var(--muted);
- font-size:13px;
-}
+ol.ranked h3{font-size:17px;color:var(--goldsoft);margin-bottom:2px}
+ol.ranked p{font-size:14px;margin:0}
+.head-with-icon{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.head-with-icon img{width:64px;height:64px;border-radius:12px;border:1px solid var(--line)}
+.head-with-icon h3{font-size:19px}
+
+/* people */
+.people{display:grid;gap:12px}
+.person-head{display:flex;gap:14px;align-items:center;margin-bottom:10px}
+.person-head .pics{display:flex}
+.person-head img{width:56px;height:56px;border-radius:12px;object-fit:cover;border:1px solid var(--line)}
+.person-head .pics img+img{margin-left:-12px}
+.person-head h3{font-size:17px}
+.label{font-size:10px;font-weight:900;letter-spacing:1.4px;color:var(--purple)}
+.counter-col .card{background:linear-gradient(160deg,#211a33,#15131f);border-color:rgba(217,167,243,.22)}
+.counter-col .person-head h3{color:var(--purple)}
+.col-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.col-title h3{font-size:19px}
+.dot{width:10px;height:10px;border-radius:50%}
+
+/* verdict */
+ul.verdict-list{margin:10px 0;padding-left:20px}
+ul.verdict-list li{padding:5px 0;font-size:15px;color:#d3def0}
+.summary p{font-size:14px;margin:0 0 6px}
+
+/* video */
+.video{position:relative;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.cta{text-align:center;padding:36px 20px;margin:44px 0 70px}
+.cta h2{font-size:26px;margin-bottom:8px}
+.cta p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 20px;text-align:center;color:var(--muted);font-size:13px}
 footer strong{color:var(--gold)}
-.portrait-fallback{
- display:grid;
- place-items:center;
- width:66px;
- height:66px;
- min-width:66px;
- border:1px solid var(--border);
- border-radius:10px;
- background:#18233f;
- color:var(--gold);
- font-weight:900;
+
+@media(max-width:900px){
+ .build-grid{grid-template-columns:1fr 1fr}
+ .span-2,.span-3,.span-4,.span-6{grid-column:span 2}
+ .grid-3{grid-template-columns:1fr}
 }
-@media(max-width:750px){
- .hero-banner{min-height:390px}
- .banner-content{padding:70px 0 40px}
- .panel,.skill-card,.synergy,.counter{padding:20px}
- .grid{grid-template-columns:1fr}
- .stat-grid{grid-template-columns:repeat(2,1fr)}
- .priority{flex-wrap:wrap;gap:12px}
- .priority>div{flex:1;min-width:135px}
- .skin-art{width:80px;height:80px}
- .relic-card{padding:20px}
- .skill-icon,.skill-badge,.relic-skill-icon{width:65px;height:65px;font-size:26px}
- .relic-card h3{font-size:21px}
- .skill-header h3{font-size:21px}
- .hero-overview{flex-direction:column}
+@media(max-width:700px){
+ .identity{grid-template-columns:auto 1fr;align-items:start;margin:-36px 12px 0;width:auto;padding:18px;gap:14px}
+ .identity img{width:60px;height:60px}
+ .identity h1{font-size:26px}
+ .identity .sub{margin-bottom:0}
+ .identity .chips{grid-column:1/-1;margin-left:-74px;margin-top:12px}
+ .identity .chip{font-size:10px;padding:3px 9px}
+ .hero-actions{grid-column:1/-1;flex-direction:row}
+ .hero-actions .btn{flex:1;justify-content:center}
+ .toc .wrap{padding-right:64px}
+ .grid-2{grid-template-columns:1fr}
+ .overview{grid-template-columns:1fr}
+ .overview img{width:84px;height:84px}
+ .stat-grid{grid-template-columns:1fr 1fr}
+ .skin-row{grid-template-columns:repeat(3,1fr)}
+ .card{padding:20px}
 }
 </style>
 </head>
@@ -504,49 +266,98 @@ footer strong{color:var(--gold)}
  <a class="back-link" href="heroes.html">← HERO GUIDES</a>
 </header>
 
-<div class="hero-banner">
- <div class="banner-content">
-  <div class="kicker">GODS OF ALLIANCE · PREMIUM HERO GUIDE</div>
-  <h1>TEMPUS</h1>
-  <div class="banner-subtitle">The Master of Time</div>
-  <div class="tags">
-   <span>SUPPORT</span>
-   <span>WAY OF ETERNITY</span>
-   <span>MIDDLE LINE</span>
-   <span>CONTROL</span>
-   <span>DEBUFF EXTENSION</span>
+<!-- HERO -->
+<div class="wrap hero">
+ <div class="hero-art" role="img" aria-label="Tempus — Support, Way of Eternity, Middle Line — Full Guide"></div>
+ <div class="identity">
+  <img src="Images/Tempus-Guide-Icons/avatar_65_Tempus_base.png" alt="Tempus portrait">
+  <div>
+   <h1>Tempus</h1>
+   <div class="sub">The Master of Time</div>
+   <div class="chips">
+    <span class="chip">SUPPORT</span>
+    <span class="chip">WAY OF ETERNITY</span>
+    <span class="chip">MIDDLE LINE</span>
+    <span class="chip gold">CONTROL · DEBUFF EXTENSION</span>
+   </div>
+  </div>
+  <div class="hero-actions">
+   <a class="btn" href="#build">Quick build ↓</a>
+   <a class="btn ghost" href="#video">▶ Watch the guide</a>
   </div>
  </div>
 </div>
 
-<main class="container">
-
-<nav class="quick-nav" aria-label="Guide sections">
- <a href="#overview">Overview</a>
- <a href="#skills">Skills</a>
- <a href="#relics">Relics</a>
- <a href="#skins">Skins</a>
- <a href="#glyphs">Glyphs</a>
- <a href="#artifacts">Artifacts</a>
- <a href="#elements">Elements</a>
- <a href="#talismans">Talismans</a>
- <a href="#synergies">Synergies</a>
- <a href="#counters">Counters</a>
- <a href="#verdict">Verdict</a>
- <a href="#video">Video</a>
+<nav class="toc" aria-label="Guide sections">
+ <div class="wrap">
+  <a href="#build">Quick build</a>
+  <a href="#overview">Overview</a>
+  <a href="#skills">Skills</a>
+  <a href="#relics">Relics</a>
+  <a href="#skins">Skins</a>
+  <a href="#glyphs">Glyphs &amp; artifacts</a>
+  <a href="#talismans">Talismans</a>
+  <a href="#synergies">Synergies &amp; counters</a>
+  <a href="#verdict">Verdict</a>
+  <a href="#video">Video</a>
+ </div>
 </nav>
 
-<!-- HERO OVERVIEW -->
+<main class="wrap">
 
-<section class="section" id="overview">
- <div class="kicker">HERO OVERVIEW</div>
- <h2>Tempus — The Hero Who Controls the Clock</h2>
+<!-- QUICK BUILD -->
+<section id="build">
+ <div class="section-head">
+  <div class="eyebrow">At a glance</div>
+  <h2>Quick build</h2>
+  <p class="intro">The whole build on one screen. Every recommendation is explained in full further down.</p>
+ </div>
 
- <div class="panel hero-overview">
-  <img class="hero-portrait"
-   src="Images/Tempus-Guide-Icons/avatar_65_Tempus_base.png"
-   alt="Tempus official portrait">
+ <div class="build-grid">
+  <div class="card span-4">
+   <div class="tile-title"><h3>Skins, in order</h3><a href="#skins">Why →</a></div>
+   <div class="skin-row">
+    <figure><span class="rank-dot" data-rank="1"><img src="Images/Tempus-Guide-Icons/Tempus_lunar.png" alt="Lunar skin"></span><figcaption><b>Lunar</b>Health</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="2"><img src="Images/Tempus-Guide-Icons/Tempus_stellar.png" alt="Stellar skin"></span><figcaption><b>Stellar</b>Magic Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="3"><img src="Images/Tempus-Guide-Icons/Tempus_cybernetic.png" alt="Cybernetic skin"></span><figcaption><b>Cybernetic</b>Magic Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="4"><img src="Images/Tempus-Guide-Icons/Tempus_default.png" alt="Default skin"></span><figcaption><b>Default</b>Intelligence</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="5"><img src="Images/Tempus-Guide-Icons/Tempus_angel.png" alt="Angel skin"></span><figcaption><b>Angel</b>Armor</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="6"><img src="Images/Tempus-Guide-Icons/Tempus_jade_flames.png" alt="Jade Flames skin"></span><figcaption><b>Jade Flames</b>Magic Def.</figcaption></figure>
+   </div>
+  </div>
+  <div class="card span-2">
+   <div class="tile-title"><h3>Talismans</h3><a href="#talismans">Compare →</a></div>
+   <div class="mini-row"><img src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_160x160.png" alt="First talisman"><div class="txt"><b>Intelligence + Armor</b>Frontier Shop · 700,000 coins</div></div>
+   <div class="mini-row"><img src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_2_160x160.png" alt="Second talisman"><div class="txt"><b>Toughness + Health</b>Special events</div></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Glyphs</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Magic Attack</span><span class="arrow">→</span><span class="step">Health</span><span class="arrow">→</span><span class="step">Intelligence</span><span class="arrow">→</span><span class="step">Magic Def.</span><span class="arrow">→</span><span class="step">Armor</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Artifacts &amp; Elements</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Book</span><span class="arrow">→</span><span class="step">Ring</span><span class="arrow">→</span><span class="step">Weapon</span><span class="arrow">·</span><span class="step">Gift of the Elements: max</span></div>
+  </div>
+  <div class="card span-6">
+   <div class="tile-title"><h3>Best partners &amp; biggest threats</h3><a href="#synergies">Details →</a></div>
+   <div class="order">
+    <span class="chip gold">Pair with</span><span class="step">Iris ★</span><span class="step">Corvus</span><span class="step">Phobos</span><span class="step">Xe'Sha</span><span class="step">Cascade</span>
+    <span class="arrow" style="margin:0 6px">|</span>
+    <span class="chip">Counters</span><span class="step">Iris</span><span class="step">Crow</span><span class="step">Mushy &amp; Shroom</span><span class="step">Thea</span><span class="step">Keira</span>
+   </div>
+  </div>
+ </div>
+</section>
 
+<!-- OVERVIEW -->
+<section id="overview">
+ <div class="section-head">
+  <div class="eyebrow">Hero overview</div>
+  <h2>Tempus — The Hero Who Controls the Clock</h2>
+ </div>
+
+ <div class="card overview">
+  <img src="Images/Tempus-Guide-Icons/avatar_65_Tempus_base.png" alt="Tempus official portrait">
   <div>
    <p>Tempus is a middle-line Support hero from the Way of Eternity, and the legendary time manipulator of Hero Wars Alliance.</p>
    <p>His greatest strength isn't dealing massive damage. It's controlling what happens on the battlefield: stopping enemies, disrupting their abilities, extending debuffs and completely changing the rhythm of battle.</p>
@@ -555,630 +366,293 @@ footer strong{color:var(--gold)}
  </div>
 
  <div class="stat-grid">
-  <div class="stat">
-   <strong>ETERNITY</strong>
-   <span>Hero faction</span>
-  </div>
-  <div class="stat">
-   <strong>SUPPORT</strong>
-   <span>Primary class</span>
-  </div>
-  <div class="stat">
-   <strong>MIDDLE</strong>
-   <span>Battle line</span>
-  </div>
-  <div class="stat">
-   <strong>2.5s</strong>
-   <span>Chronostasis time stop</span>
-  </div>
+  <div class="card stat"><b>ETERNITY</b><span>Hero faction</span></div>
+  <div class="card stat"><b>SUPPORT</b><span>Primary class</span></div>
+  <div class="card stat"><b>MIDDLE</b><span>Battle line</span></div>
+  <div class="card stat"><b>2.5s</b><span>Chronostasis time stop</span></div>
  </div>
 
- <div class="note gold-note">
-  <strong>Tempus identity:</strong> He doesn't need to be your strongest damage dealer. He gives your damage dealers the time and the openings they need to win.
- </div>
+ <div class="note gold"><strong>Tempus identity:</strong> He doesn't need to be your strongest damage dealer. He gives your damage dealers the time and the openings they need to win.</div>
 </section>
 
-<!-- FOUR SKILLS -->
+<!-- SKILLS -->
+<section id="skills">
+ <div class="section-head">
+  <div class="eyebrow">Hero kit</div>
+  <h2>Tempus — All Four Skills Explained</h2>
+  <p class="intro">Chronostasis stops the enemy team, Withering weakens their attackers, Temporal Anomaly traps their most dangerous physical hero, and Time Paradox bends the pace of the battle in his team's favour.</p>
+ </div>
 
-<section class="section" id="skills">
- <div class="kicker">HERO KIT</div>
- <h2>Tempus — All Four Skills Explained</h2>
-
- <p>Chronostasis stops the enemy team, Withering weakens their attackers, Temporal Anomaly traps their most dangerous physical hero, and Time Paradox bends the pace of the battle in his team's favour.</p>
-
- <div class="skills-stack">
-
-  <article class="skill-card">
-   <div class="skill-header">
-    <img class="skill-icon" data-badge="1"
-     src="Images/Tempus-Guide-Icons/tempus_skill_1.png"
-     alt="Chronostasis skill icon" loading="lazy">
-    <h3>Chronostasis</h3>
-   </div>
-
+ <div class="grid-2">
+  <article class="card">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_1.png" alt="Chronostasis skill icon"><div><div class="num">SKILL 1 · ULTIMATE</div><h3>Chronostasis</h3></div></div>
    <p>Tempus stops time for <strong>all enemy heroes for two and a half seconds.</strong></p>
    <p>During this period enemies cannot move, use skills or dodge attacks. Their <strong>Armor and Magic Defense are reduced</strong>, and their skill cooldowns are frozen.</p>
    <p>Chronostasis also <strong>extends the duration of all curses and debuffs</strong> affecting enemies.</p>
-
-   <div class="formula">
-    Core mechanic: 2.5s team-wide time stop + defense reduction + debuff extension
-   </div>
-
+   <div class="formula">Core mechanic: 2.5s team-wide time stop + defense reduction + debuff extension</div>
    <p>Two and a half seconds might sound insignificant, but think about what happens during that time. Dodge-based teams temporarily lose their ability to avoid attacks, creating openings for damage dealers like Xe'Sha and Cascade. Enemy abilities are delayed, disrupting their timing and potentially preventing important defensive reactions.</p>
    <p><strong>Strategic advantage:</strong> The Armor and Magic Defense reductions count as separate debuffs, so Iris can benefit enormously. Add the extension of existing negative effects, and Chronostasis becomes one of Tempus's most valuable tools.</p>
   </article>
 
-  <article class="skill-card">
-   <div class="skill-header">
-    <img class="skill-icon" data-badge="2"
-     src="Images/Tempus-Guide-Icons/tempus_skill_2.png"
-     alt="Withering skill icon" loading="lazy">
-    <h3>Withering</h3>
-   </div>
-
+  <article class="card">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_2.png" alt="Withering skill icon"><div><div class="num">SKILL 2</div><h3>Withering</h3></div></div>
    <p>Tempus weakens distant enemies in front of him for <strong>six seconds</strong>, reducing their <strong>Physical Attack</strong> and <strong>maximum Health</strong>.</p>
    <p>This ability is particularly troublesome for physical damage dealers. Lower Physical Attack directly weakens their offensive pressure, while lower maximum Health interferes with heroes who rely on large Health pools. Kayla is one example worth considering.</p>
-
-   <div class="formula">
-    Core mechanic: 6s Physical Attack + maximum Health reduction
-   </div>
-
+   <div class="formula">Core mechanic: 6s Physical Attack + maximum Health reduction</div>
    <p><strong>Strategic advantage:</strong> Because Withering applies negative effects, it also creates opportunities for teammates who benefit from debuffs.</p>
   </article>
 
-  <article class="skill-card">
-   <div class="skill-header">
-    <img class="skill-icon" data-badge="3"
-     src="Images/Tempus-Guide-Icons/tempus_skill_3.png"
-     alt="Temporal Anomaly skill icon" loading="lazy">
-    <h3>Temporal Anomaly</h3>
-   </div>
-
+  <article class="card">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_3.png" alt="Temporal Anomaly skill icon"><div><div class="num">SKILL 3</div><h3>Temporal Anomaly</h3></div></div>
    <p>Tempus targets the enemy hero with the <strong>highest Armor Penetration</strong>, trapping them in a Temporal Anomaly for <strong>five seconds.</strong></p>
    <p>During this period the target is <strong>slowed by 25%</strong>, <strong>loses 50 Energy</strong> and takes Magic Damage every second.</p>
-
-   <div class="formula">
-    Core mechanic: 5s trap · 25% slow · −50 Energy · Magic Damage every second
-   </div>
-
+   <div class="formula">Core mechanic: 5s trap · 25% slow · −50 Energy · Magic Damage every second</div>
    <p><strong>Strategic advantage:</strong> Especially useful against physical attackers who rely on Armor Penetration. Tempus doesn't simply damage them, he reduces their speed and Energy. When that target is an important damage dealer, those five seconds can make a real difference.</p>
   </article>
 
-  <article class="skill-card">
-   <div class="skill-header">
-    <img class="skill-icon" data-badge="4"
-     src="Images/Tempus-Guide-Icons/tempus_skill_4.png"
-     alt="Time Paradox skill icon" loading="lazy">
-    <h3>Time Paradox</h3>
-   </div>
-
+  <article class="card">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_4.png" alt="Time Paradox skill icon"><div><div class="num">SKILL 4</div><h3>Time Paradox</h3></div></div>
    <p>Tempus summons a massive <strong>Clock</strong> in the center of the battlefield for <strong>four seconds.</strong></p>
    <p>Enemies within its range are slowed, while allies receive a <strong>10% speed increase</strong>. Affected allies also gain additional <strong>maximum Health</strong>.</p>
-
-   <div class="formula">
-    Core mechanic: Enemy slow + 10% allied speed + allied maximum Health
-   </div>
-
+   <div class="formula">Core mechanic: Enemy slow + 10% allied speed + allied maximum Health</div>
    <p>This is where Tempus becomes more than a control specialist: he's manipulating both sides of the battlefield simultaneously. Enemies become slower while allies become faster and harder to eliminate.</p>
    <p><strong>Strategic advantage:</strong> The maximum Health increase can create interesting interactions with heroes like Aidan, Astaroth and Xe'Sha. Combined with Chronostasis, Time Paradox lets Tempus set the pace of an entire battle.</p>
   </article>
-
  </div>
 
- <div class="note">
-  <strong>Understanding Tempus:</strong> Chronostasis stops the enemy and extends debuffs, Withering weakens physical attackers, Temporal Anomaly shuts down their best Armor Penetration hero, and Time Paradox speeds up and strengthens his own team.
- </div>
+ <div class="note"><strong>Understanding Tempus:</strong> Chronostasis stops the enemy and extends debuffs, Withering weakens physical attackers, Temporal Anomaly shuts down their best Armor Penetration hero, and Time Paradox speeds up and strengthens his own team.</div>
 </section>
 
-<!-- RELICS (from the game's own skill descriptions; not covered by the video script) -->
-
-<section class="section" id="relics">
- <div class="kicker">TEMPUS RELIC SYSTEM</div>
- <h2>Way of Tempus' Relic — Four Upgrades</h2>
-
- <p>Tempus' Relic adds two brand-new abilities and strengthens two of his existing skills. It also raises his Magic Attack and Health at every level, making him both stronger and harder to remove.</p>
-
- <div class="stat-grid">
-  <div class="stat">
-   <strong>30</strong>
-   <span>Relic levels</span>
-  </div>
-  <div class="stat">
-   <strong>+57,005</strong>
-   <span>Magic Attack at max level</span>
-  </div>
-  <div class="stat">
-   <strong>+290,824</strong>
-   <span>Health at max level</span>
-  </div>
-  <div class="stat">
-   <strong>2,880</strong>
-   <span>Tempus Relic Shards to max</span>
-  </div>
+<!-- RELICS -->
+<section id="relics">
+ <div class="section-head">
+  <div class="eyebrow">Tempus relic system</div>
+  <h2>Way of Tempus' Relic — Four Upgrades</h2>
+  <p class="intro">Tempus' Relic adds two brand-new abilities and strengthens two of his existing skills. It also raises his Magic Attack and Health at every level, making him both stronger and harder to remove.</p>
  </div>
 
- <article class="relic-card">
-  <div class="relic-header">
-   <img class="relic-skill-icon"
-    src="Images/Tempus-Guide-Icons/relic_tempus_skill_8.png"
-    alt="Chrono Field relic skill icon" loading="lazy">
-   <div>
-    <div class="relic-level">RELIC UPGRADE 1 · NEW SKILL</div>
-    <h3>Chrono Field</h3>
-   </div>
-  </div>
-
-  <p>At regular intervals Tempus creates an aura around himself, increasing <strong>Magic Penetration</strong> for him and every ally standing inside it.</p>
-  <p>This turns Tempus from a pure controller into a damage amplifier for magical teams. Allies such as Iris benefit twice: from his debuffs, and from hitting through more of the enemy's Magic Defense.</p>
-
-  <div class="formula">
-   Core mechanic: Repeating aura · Magic Penetration for Tempus and nearby allies
-  </div>
- </article>
-
- <article class="relic-card">
-  <div class="relic-header">
-   <img class="relic-skill-icon"
-    src="Images/Tempus-Guide-Icons/tempus_skill_2.png"
-    alt="Withering skill icon" loading="lazy">
-   <div>
-    <div class="relic-level">RELIC UPGRADE 2</div>
-    <h3>Withering — Hits the Whole Front</h3>
-   </div>
-  </div>
-
-  <p>Withering now also debuffs <strong>all enemies in front of him</strong>, not only the distant targets.</p>
-  <p>More enemies lose Physical Attack and maximum Health at once, and every extra debuff gives Iris and other debuff-hungry partners more to work with.</p>
-
-  <div class="formula">
-   Upgrade: Physical Attack and maximum Health reduction on all enemies in front
-  </div>
- </article>
-
- <article class="relic-card">
-  <div class="relic-header">
-   <img class="relic-skill-icon"
-    src="Images/Tempus-Guide-Icons/tempus_skill_4.png"
-    alt="Time Paradox skill icon" loading="lazy">
-   <div>
-    <div class="relic-level">LEGENDARY RELIC · UPGRADE 3</div>
-    <h3>Time Paradox — Damaging Clock</h3>
-   </div>
-  </div>
-
-  <p>The Clock now <strong>deals Magic Damage</strong> to every enemy in the skill's area at regular intervals.</p>
-  <p>Time Paradox already slows enemies while speeding up and protecting allies. With this upgrade it also wears the enemy down for as long as they stand near the Clock.</p>
-
-  <div class="formula">
-   Upgrade: Repeated Magic Damage inside the Clock's area
-  </div>
- </article>
-
- <article class="relic-card">
-  <div class="relic-header">
-   <img class="relic-skill-icon"
-    src="Images/Tempus-Guide-Icons/relic_tempus_skill_9.png"
-    alt="Time Rebound relic skill icon" loading="lazy">
-   <div>
-    <div class="relic-level">LEGENDARY RELIC · UPGRADE 4 · NEW SKILL</div>
-    <h3>Time Rebound</h3>
-   </div>
-  </div>
-
-  <p>When an enemy hits Tempus with a <strong>Control effect</strong>, that enemy is put into Chronostasis.</p>
-  <p>This answers the main way to stop Tempus: Silence and other control. The hero who tries to shut him down is frozen in time for their trouble.</p>
-
-  <div class="formula">
-   Core mechanic: Control Tempus → get Chronostasis back
-  </div>
- </article>
-
- <div class="note gold-note">
-  <strong>Unlocking the Relic:</strong> The first Relic level needs Tempus at 4 stars and level 50. Level 10 needs 6 stars and a higher hero rank, and level 20 needs a higher rank again. The descriptions above come from the game itself; this section is not covered by the video.
+ <div class="stat-grid" style="margin:0 0 16px">
+  <div class="card stat"><b>30</b><span>Relic levels</span></div>
+  <div class="card stat"><b>+57,005</b><span>Magic Attack at max level</span></div>
+  <div class="card stat"><b>+290,824</b><span>Health at max level</span></div>
+  <div class="card stat"><b>2,880</b><span>Tempus Relic Shards to max</span></div>
  </div>
+
+ <div class="grid-2">
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/relic_tempus_skill_8.png" alt="Chrono Field relic skill icon"><div><div class="num">RELIC UPGRADE 1 · NEW SKILL</div><h3>Chrono Field</h3></div></div>
+   <p>At regular intervals Tempus creates an aura around himself, increasing <strong>Magic Penetration</strong> for him and every ally standing inside it.</p>
+   <p>This turns Tempus from a pure controller into a damage amplifier for magical teams. Allies such as Iris benefit twice: from his debuffs, and from hitting through more of the enemy's Magic Defense.</p>
+   <div class="formula">Core mechanic: Repeating aura · Magic Penetration for Tempus and nearby allies</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_2.png" alt="Withering skill icon"><div><div class="num">RELIC UPGRADE 2</div><h3>Withering — Hits the Whole Front</h3></div></div>
+   <p>Withering now also debuffs <strong>all enemies in front of him</strong>, not only the distant targets.</p>
+   <p>More enemies lose Physical Attack and maximum Health at once, and every extra debuff gives Iris and other debuff-hungry partners more to work with.</p>
+   <div class="formula">Upgrade: Physical Attack and maximum Health reduction on all enemies in front</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/tempus_skill_4.png" alt="Time Paradox skill icon"><div><div class="num">LEGENDARY RELIC · UPGRADE 3</div><h3>Time Paradox — Damaging Clock</h3></div></div>
+   <p>The Clock now <strong>deals Magic Damage</strong> to every enemy in the skill's area at regular intervals.</p>
+   <p>Time Paradox already slows enemies while speeding up and protecting allies. With this upgrade it also wears the enemy down for as long as they stand near the Clock.</p>
+   <div class="formula">Upgrade: Repeated Magic Damage inside the Clock's area</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Tempus-Guide-Icons/relic_tempus_skill_9.png" alt="Time Rebound relic skill icon"><div><div class="num">LEGENDARY RELIC · UPGRADE 4 · NEW SKILL</div><h3>Time Rebound</h3></div></div>
+   <p>When an enemy hits Tempus with a <strong>Control effect</strong>, that enemy is put into Chronostasis.</p>
+   <p>This answers the main way to stop Tempus: Silence and other control. The hero who tries to shut him down is frozen in time for their trouble.</p>
+   <div class="formula">Core mechanic: Control Tempus → get Chronostasis back</div>
+  </article>
+ </div>
+
+ <div class="note gold"><strong>Unlocking the Relic:</strong> The first Relic level needs Tempus at 4 stars and level 50. Level 10 needs 6 stars and a higher hero rank, and level 20 needs a higher rank again. The descriptions above come from the game itself; this section is not covered by the video.</div>
 </section>
 
 <!-- SKINS -->
-
-<section class="section" id="skins">
- <div class="kicker">SURVIVE FIRST, THEN SCALE</div>
- <h2>Tempus — Best Skin Priority</h2>
-
- <p>Tempus needs to survive long enough to activate his abilities again and again. Our priority is simple: keep Tempus alive, then strengthen the abilities that make him valuable.</p>
-
- <div class="panel">
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_lunar.png"
-    alt="Tempus Lunar Skin" loading="lazy">
-   <span class="rank">1</span>
-   <div>
-    <h3>Lunar Skin</h3>
-    <p><strong>Health.</strong> Our first priority. Tempus cannot control the battlefield if he's eliminated early, so additional Health is extremely important.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_stellar.png"
-    alt="Tempus Stellar Skin" loading="lazy">
-   <span class="rank">2</span>
-   <div>
-    <h3>Stellar Skin</h3>
-    <p><strong>Magic Attack.</strong> Strengthens every one of his skill effects, making his control and support abilities more effective.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_cybernetic.png"
-    alt="Tempus Cybernetic Skin" loading="lazy">
-   <span class="rank">3</span>
-   <div>
-    <h3>Cybernetic Skin</h3>
-    <p><strong>Magic Attack.</strong> A second Magic Attack skin for even stronger skill scaling.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_default.png"
-    alt="Tempus Default Skin" loading="lazy">
-   <span class="rank">4</span>
-   <div>
-    <h3>Default Skin</h3>
-    <p><strong>Intelligence.</strong> His primary attribute, improving both Magic Attack and Magic Defense.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_angel.png"
-    alt="Tempus Angel Skin" loading="lazy">
-   <span class="rank">5</span>
-   <div>
-    <h3>Angel Skin <span style="color:var(--muted);font-weight:400">(also Skin+)</span></h3>
-    <p><strong>Armor.</strong> Helps Tempus survive against physical attackers.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <img class="skin-art" data-optional
-    src="Images/Tempus-Guide-Icons/Tempus_jade_flames.png"
-    alt="Tempus Jade Flames Skin" loading="lazy">
-   <span class="rank">6</span>
-   <div>
-    <h3>Jade Flames Skin</h3>
-    <p><strong>Magic Defense.</strong> Additional protection against magical damage.</p>
-   </div>
-  </div>
+<section id="skins">
+ <div class="section-head">
+  <div class="eyebrow">Survive first, then scale</div>
+  <h2>Tempus — Best Skin Priority</h2>
+  <p class="intro">Tempus needs to survive long enough to activate his abilities again and again. Our priority is simple: keep Tempus alive, then strengthen the abilities that make him valuable.</p>
  </div>
 
- <div class="note">
-  <strong>GOA development priority:</strong> Health → Magic Attack → Magic Attack → Intelligence → Armor → Magic Defense.
+ <div class="grid-3">
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="1"><img src="Images/Tempus-Guide-Icons/Tempus_lunar.png" alt="Tempus Lunar Skin"></span><div><h3>Lunar Skin</h3><p><strong>Health.</strong> Our first priority. Tempus cannot control the battlefield if he's eliminated early, so additional Health is extremely important.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="2"><img src="Images/Tempus-Guide-Icons/Tempus_stellar.png" alt="Tempus Stellar Skin"></span><div><h3>Stellar Skin</h3><p><strong>Magic Attack.</strong> Strengthens every one of his skill effects, making his control and support abilities more effective.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="3"><img src="Images/Tempus-Guide-Icons/Tempus_cybernetic.png" alt="Tempus Cybernetic Skin"></span><div><h3>Cybernetic Skin</h3><p><strong>Magic Attack.</strong> A second Magic Attack skin for even stronger skill scaling.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="4"><img src="Images/Tempus-Guide-Icons/Tempus_default.png" alt="Tempus Default Skin"></span><div><h3>Default Skin</h3><p><strong>Intelligence.</strong> His primary attribute, improving both Magic Attack and Magic Defense.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="5"><img src="Images/Tempus-Guide-Icons/Tempus_angel.png" alt="Tempus Angel Skin"></span><div><h3>Angel Skin <span style="color:var(--muted);font-weight:400;font-size:13px">(also Skin+)</span></h3><p><strong>Armor.</strong> Helps Tempus survive against physical attackers.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="6"><img src="Images/Tempus-Guide-Icons/Tempus_jade_flames.png" alt="Tempus Jade Flames Skin"></span><div><h3>Jade Flames Skin</h3><p><strong>Magic Defense.</strong> Additional protection against magical damage.</p></div></div>
  </div>
+
+ <div class="note"><strong>GOA development priority:</strong> Health → Magic Attack → Magic Attack → Intelligence → Armor → Magic Defense.</div>
 </section>
 
-<!-- GLYPHS -->
-
-<section class="section" id="glyphs">
- <div class="kicker">STAT INVESTMENT</div>
- <h2>Glyphs — Recommended Upgrade Order</h2>
-
- <div class="panel">
-
-  <div class="priority">
-   <span class="rank">1</span>
-   <div>
-    <h3>Magic Attack</h3>
-    <p>Comes first because it strengthens the scaling of all four of his skills.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <span class="rank">2</span>
-   <div>
-    <h3>Health</h3>
-    <p>Tempus cannot control the battlefield if he's eliminated too early.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <span class="rank">3</span>
-   <div>
-    <h3>Intelligence</h3>
-    <p>Provides additional Magic Attack and Magic Defense.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <span class="rank">4</span>
-   <div>
-    <h3>Magic Defense</h3>
-    <p>Protection against Mages trying to remove him before his control lands.</p>
-   </div>
-  </div>
-
-  <div class="priority">
-   <span class="rank">5</span>
-   <div>
-    <h3>Armor</h3>
-    <p>Becomes particularly useful when facing dangerous physical teams.</p>
-   </div>
-  </div>
-
+<!-- GLYPHS, ARTIFACTS, ELEMENTS -->
+<section id="glyphs">
+ <div class="section-head">
+  <div class="eyebrow">Stat investment</div>
+  <h2>Glyphs, Artifacts &amp; Gift of the Elements</h2>
  </div>
 
- <div class="note">
-  <strong>Initial recommendation:</strong> Bring all five Glyphs to Level 40 before investing further, unless you're pursuing skill-class progression.
- </div>
-</section>
-
-<!-- ARTIFACTS -->
-
-<section class="section" id="artifacts">
- <div class="kicker">ARTIFACT DEVELOPMENT</div>
- <h2>Artifacts — Best Investment Priority</h2>
-
- <p>Develop Tempus himself first. His Weapon's team bonus is useful, but his own Magic Attack and survivability come before it.</p>
-
- <div class="panel">
-  <h3>1. Artifact Book</h3>
-  <p><strong>Magic Attack &amp; Health.</strong></p>
-  <p>Our first priority. The combination improves both his abilities and his survivability.</p>
- </div>
-
- <div class="panel">
-  <h3>2. Artifact Ring</h3>
-  <p><strong>Intelligence.</strong></p>
-  <p>Strengthens his main attribute.</p>
- </div>
-
- <div class="panel">
-  <div class="artifact-heading">
-   <img class="artifact-icon"
-    src="Images/Tempus-Guide-Icons/weapon_65_Tempus.png"
-    alt="Tempus official Artifact Weapon" loading="lazy">
-   <h3>3. Artifact Weapon</h3>
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><h3>Glyphs — Recommended Upgrade Order</h3></div>
+   <ol class="ranked">
+    <li><div><h3>Magic Attack</h3><p>Comes first because it strengthens the scaling of all four of his skills.</p></div></li>
+    <li><div><h3>Health</h3><p>Tempus cannot control the battlefield if he's eliminated too early.</p></div></li>
+    <li><div><h3>Intelligence</h3><p>Provides additional Magic Attack and Magic Defense.</p></div></li>
+    <li><div><h3>Magic Defense</h3><p>Protection against Mages trying to remove him before his control lands.</p></div></li>
+    <li><div><h3>Armor</h3><p>Becomes particularly useful when facing dangerous physical teams.</p></div></li>
+   </ol>
+   <div class="note"><strong>Initial recommendation:</strong> Bring all five Glyphs to Level 40 before investing further, unless you're pursuing skill-class progression.</div>
   </div>
-  <p><strong>Teamwide Magic Attack.</strong></p>
-  <p>When Tempus activates Chronostasis, his Weapon gives the whole team a Magic Attack bonus. It remains useful, especially in magical compositions.</p>
+
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Tempus-Guide-Icons/weapon_65_Tempus.png" alt="Tempus official Artifact Weapon"><h3>Artifacts — Best Investment Priority</h3></div>
+   <p>Develop Tempus himself first. His Weapon's team bonus is useful, but his own Magic Attack and survivability come before it.</p>
+   <ol class="ranked">
+    <li><div><h3>Artifact Book — Magic Attack &amp; Health</h3><p>Our first priority. The combination improves both his abilities and his survivability.</p></div></li>
+    <li><div><h3>Artifact Ring — Intelligence</h3><p>Strengthens his main attribute.</p></div></li>
+    <li><div><h3>Artifact Weapon — Teamwide Magic Attack</h3><p>When Tempus activates Chronostasis, his Weapon gives the whole team a Magic Attack bonus. It remains useful, especially in magical compositions.</p></div></li>
+   </ol>
+   <div class="note"><strong>Recommended order:</strong> Book → Ring → Weapon.</div>
+  </div>
  </div>
 
- <div class="note">
-  <strong>Recommended order:</strong> Book → Ring → Weapon.
- </div>
-</section>
-
-<!-- GIFT OF THE ELEMENTS -->
-
-<section class="section" id="elements">
- <div class="kicker">CORE ATTRIBUTES</div>
- <h2>Gift of the Elements</h2>
-
- <div class="panel">
-  <h3>Recommended Investment — Maximum</h3>
+ <div class="card" style="margin-top:16px">
+  <div class="head-with-icon"><h3>Gift of the Elements — Recommended Investment: Maximum</h3></div>
   <p>Maximize Gift of the Elements as your resources allow.</p>
   <p>Tempus is a middle-line Support hero, and his performance depends on surviving long enough to influence the battle. Every additional investment in his overall development helps him perform that role more consistently.</p>
  </div>
 </section>
 
 <!-- TALISMANS -->
+<section id="talismans">
+ <div class="section-head">
+  <div class="eyebrow">Advanced hero development</div>
+  <h2>Tempus — Talisman Comparison</h2>
+  <p class="intro">Both Talismans are excellent options. One combines offensive scaling with physical protection, the other focuses directly on survivability.</p>
+ </div>
 
-<section class="section" id="talismans">
- <div class="kicker">ADVANCED HERO DEVELOPMENT</div>
- <h2>Tempus — Talisman Comparison</h2>
-
- <p>Both Talismans are excellent options. One combines offensive scaling with physical protection, the other focuses directly on survivability.</p>
-
- <div class="grid">
-
-  <div class="panel">
-   <div class="talisman-heading">
-    <img class="talisman-icon"
-     src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_160x160.png"
-     alt="Tempus first official Talisman" loading="lazy">
-    <h3>First Talisman</h3>
-   </div>
-
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_160x160.png" alt="Tempus first official Talisman"><h3>First Talisman</h3></div>
    <p><strong>Main attribute:</strong> Intelligence.</p>
    <p><strong>Additional attribute:</strong> Armor.</p>
    <p>Combines stronger skill scaling with protection against physical attackers.</p>
-
    <div class="formula">Availability: Eternal Frontier Shop · 700,000 Frontier Coins</div>
   </div>
-
-  <div class="panel">
-   <div class="talisman-heading">
-    <img class="talisman-icon"
-     src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_2_160x160.png"
-     alt="Tempus second official Talisman" loading="lazy">
-    <h3>Second Talisman</h3>
-   </div>
-
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Tempus-Guide-Icons/Icon_Talisman_Tempus_2_160x160.png" alt="Tempus second official Talisman"><h3>Second Talisman</h3></div>
    <p><strong>Main attribute:</strong> Toughness.</p>
    <p><strong>Additional attribute:</strong> Health.</p>
    <p>Focuses directly on keeping Tempus alive.</p>
-
    <div class="formula">Availability: Special events</div>
   </div>
-
  </div>
 
- <div class="note">
-  <strong>GOA recommendation:</strong> If Tempus is frequently eliminated before he activates his important abilities, the Toughness and Health Talisman deserves particular attention.
+ <div class="note"><strong>GOA recommendation:</strong> If Tempus is frequently eliminated before he activates his important abilities, the Toughness and Health Talisman deserves particular attention.</div>
+</section>
+
+<!-- SYNERGIES & COUNTERS -->
+<section id="synergies">
+ <div class="section-head">
+  <div class="eyebrow">Eternity interactions &amp; counter strategy</div>
+  <h2>Synergies &amp; Counters</h2>
+ </div>
+
+ <div class="grid-2">
+  <div>
+   <div class="col-title"><span class="dot" style="background:var(--green)"></span><h3>Hero synergies</h3></div>
+   <p style="font-size:15px;color:#cbd7ea">Tempus applies debuffs, extends their duration and reduces enemy defenses. One hero stands out immediately.</p>
+   <div class="people">
+    <div class="card">
+     <div class="person-head"><img src="Images/Heroes/Iris.png" alt="Iris"><h3>Iris — The Standout Partner</h3></div>
+     <p>Chronostasis can help Iris accumulate Pure Soul charges, while extended debuffs allow Inner Fire to remain active for longer.</p>
+     <p>And because Tempus belongs to the Way of Eternity, his debuffs can trigger stronger Inner Fire charges.</p>
+     <p><strong>Key advantage:</strong> This makes their combination particularly dangerous.</p>
+    </div>
+    <div class="card"><div class="person-head"><img src="Images/Heroes/Corvus.png" alt="Corvus"><h3>Corvus — Eternity Frontline</h3></div><p>Provides frontline protection and contributes additional Eternity debuffs.</p></div>
+    <div class="card"><div class="person-head"><img src="Images/Heroes/Phobos.png" alt="Phobos"><h3>Phobos — More Control</h3></div><p>Adds control and further negative effects alongside Tempus's own.</p></div>
+    <div class="card"><div class="person-head"><span class="pics"><img src="Images/Heroes/Xesha.png" alt="Xe'Sha"><img src="Images/Heroes/Cascade.png" alt="Cascade"></span><h3>Xe'Sha &amp; Cascade — Punishing the Opening</h3></div><p>Both can exploit the moment enemies temporarily lose their ability to dodge during Chronostasis.</p></div>
+   </div>
+   <div class="note"><strong>Remember:</strong> The best Tempus team isn't necessarily the one with the most control heroes. You still need enough damage and survivability to finish the battle.</div>
+  </div>
+
+  <div class="counter-col">
+   <div class="col-title"><span class="dot" style="background:var(--purple)"></span><h3>How to counter Tempus</h3></div>
+   <p style="font-size:15px;color:#cbd7ea">The objective is to stop Tempus before Chronostasis changes the battle.</p>
+   <div class="people">
+    <div class="card"><div class="label">DEBUFF PUNISHMENT</div><div class="person-head"><img src="Images/Heroes/Iris.png" alt="Iris"><h3>Iris</h3></div><p>Tempus frequently applies buffs and debuffs, and Iris can punish enemy debuff applications through her abilities. That makes her an interesting option against him too.</p></div>
+    <div class="card"><div class="label">SILENCE</div><div class="person-head"><img src="Images/Heroes/Crow.png" alt="Crow"><h3>Crow</h3></div><p>Silence can prevent Tempus from using his active abilities, disrupting his control sequence.</p></div>
+    <div class="card"><div class="label">SILENCE</div><div class="person-head"><img src="Images/Heroes/Mushy.png" alt="Mushy and Shroom"><h3>Mushy &amp; Shroom</h3></div><p>Their Silence creates opportunities to attack before Tempus activates his most important skills.</p></div>
+    <div class="card"><div class="label">SILENCE</div><div class="person-head"><span class="pics"><img src="Images/Heroes/Thea.png" alt="Thea"><img src="Images/Heroes/Keira.png" alt="Keira"></span><h3>Thea &amp; Keira</h3></div><p>Additional options to consider when their Silence mechanics can interfere with his abilities.</p></div>
+   </div>
+   <div class="note"><strong>Timing is essential:</strong> If Tempus has already activated his control effects, applying Silence afterwards won't automatically reverse everything. And against a Tempus with the full Relic, <strong>Time Rebound</strong> puts any hero who controls him into Chronostasis, so Silence comes at a price.</div>
+  </div>
  </div>
 </section>
 
-<!-- SYNERGIES -->
-
-<section class="section" id="synergies">
- <div class="kicker">ETERNITY INTERACTIONS</div>
- <h2>Tempus — Hero Synergies</h2>
-
- <p>Tempus applies debuffs, extends their duration and reduces enemy defenses. One hero stands out immediately.</p>
-
- <article class="synergy">
-  <div class="hero-heading">
-   <img src="Images/Heroes/Iris.png" alt="Iris" loading="lazy">
-   <h3>Iris — The Standout Partner</h3>
-  </div>
-  <p>Chronostasis can help Iris accumulate Pure Soul charges, while extended debuffs allow Inner Fire to remain active for longer.</p>
-  <p>And because Tempus belongs to the Way of Eternity, his debuffs can trigger stronger Inner Fire charges.</p>
-  <p><strong>Key advantage:</strong> This makes their combination particularly dangerous.</p>
- </article>
-
- <article class="synergy">
-  <div class="hero-heading">
-   <img src="Images/Heroes/Corvus.png" alt="Corvus" loading="lazy">
-   <h3>Corvus — Eternity Frontline</h3>
-  </div>
-  <p>Provides frontline protection and contributes additional Eternity debuffs.</p>
- </article>
-
- <article class="synergy">
-  <div class="hero-heading">
-   <img src="Images/Heroes/Phobos.png" alt="Phobos" loading="lazy">
-   <h3>Phobos — More Control</h3>
-  </div>
-  <p>Adds control and further negative effects alongside Tempus's own.</p>
- </article>
-
- <article class="synergy">
-  <div class="hero-heading">
-   <img src="Images/Heroes/Xesha.png" alt="Xe'Sha" loading="lazy">
-   <img src="Images/Heroes/Cascade.png" alt="Cascade" loading="lazy">
-   <h3>Xe'Sha &amp; Cascade — Punishing the Opening</h3>
-  </div>
-  <p>Both can exploit the moment enemies temporarily lose their ability to dodge during Chronostasis.</p>
- </article>
-
- <div class="note">
-  <strong>Remember:</strong> The best Tempus team isn't necessarily the one with the most control heroes. You still need enough damage and survivability to finish the battle.
- </div>
-</section>
-
-<!-- COUNTERS -->
-
-<section class="section" id="counters">
- <div class="kicker">COUNTER STRATEGY</div>
- <h2>How to Counter Tempus</h2>
-
- <p>The objective is to stop Tempus before Chronostasis changes the battle.</p>
-
- <article class="counter">
-  <div class="counter-label">DEBUFF PUNISHMENT</div>
-  <div class="hero-heading">
-   <img src="Images/Heroes/Iris.png" alt="Iris" loading="lazy">
-   <h3>Iris</h3>
-  </div>
-  <p>Tempus frequently applies buffs and debuffs, and Iris can punish enemy debuff applications through her abilities. That makes her an interesting option against him too.</p>
- </article>
-
- <article class="counter">
-  <div class="counter-label">SILENCE</div>
-  <div class="hero-heading">
-   <img src="Images/Heroes/Crow.png" alt="Crow" loading="lazy">
-   <h3>Crow</h3>
-  </div>
-  <p>Silence can prevent Tempus from using his active abilities, disrupting his control sequence.</p>
- </article>
-
- <article class="counter">
-  <div class="counter-label">SILENCE</div>
-  <div class="hero-heading">
-   <img src="Images/Heroes/Mushy.png" alt="Mushy and Shroom" loading="lazy">
-   <h3>Mushy &amp; Shroom</h3>
-  </div>
-  <p>Their Silence creates opportunities to attack before Tempus activates his most important skills.</p>
- </article>
-
- <article class="counter">
-  <div class="counter-label">SILENCE</div>
-  <div class="hero-heading">
-   <img src="Images/Heroes/Thea.png" alt="Thea" loading="lazy">
-   <img src="Images/Heroes/Keira.png" alt="Keira" loading="lazy">
-   <h3>Thea &amp; Keira</h3>
-  </div>
-  <p>Additional options to consider when their Silence mechanics can interfere with his abilities.</p>
- </article>
-
- <div class="note">
-  <strong>Timing is essential:</strong> If Tempus has already activated his control effects, applying Silence afterwards won't automatically reverse everything. And against a Tempus with the full Relic, <strong>Time Rebound</strong> puts any hero who controls him into Chronostasis, so Silence comes at a price.
- </div>
-</section>
-
-<!-- FINAL VERDICT -->
-
-<section class="section" id="verdict">
- <div class="kicker">GODS OF ALLIANCE ANALYSIS</div>
- <h2>Final Verdict — The Master of Time</h2>
-
- <div class="panel">
-  <p>Tempus is one of the most interesting Support heroes in Hero Wars Alliance because he influences almost every aspect of combat.</p>
-
-  <ul class="verdict-list">
-   <li><strong>Chronostasis:</strong> Stops enemies and extends debuffs.</li>
-   <li><strong>Withering:</strong> Reduces Physical Attack and maximum Health.</li>
-   <li><strong>Temporal Anomaly:</strong> Disrupts an important physical attacker.</li>
-   <li><strong>Time Paradox:</strong> Changes movement speed while strengthening allied maximum Health.</li>
-   <li><strong>Relic:</strong> Adds team Magic Penetration (Chrono Field), wider Withering, a damaging Clock, and Time Rebound against control.</li>
-  </ul>
-
-  <p>For his build, prioritize survivability and Magic Attack. For team synergy, Iris is one of his most valuable partners. And when facing him, look for opportunities to interrupt his active abilities before his control effects take over.</p>
+<!-- VERDICT -->
+<section id="verdict">
+ <div class="section-head">
+  <div class="eyebrow">Gods of Alliance analysis</div>
+  <h2>Final Verdict — The Master of Time</h2>
  </div>
 
- <div class="panel">
-  <h3>Quick Investment Summary</h3>
-  <p><strong>Role:</strong> Support — Middle Line.</p>
-  <p><strong>Faction:</strong> Way of Eternity.</p>
-  <p><strong>Skins:</strong> Lunar → Stellar → Cybernetic → Default → Angel → Jade Flames.</p>
-  <p><strong>Glyphs:</strong> Magic Attack → Health → Intelligence → Magic Defense → Armor.</p>
-  <p><strong>Artifacts:</strong> Book → Ring → Weapon.</p>
-  <p><strong>Gift of the Elements:</strong> Maximum as resources allow.</p>
-  <p><strong>First Talisman:</strong> Intelligence + Armor.</p>
-  <p><strong>Second Talisman:</strong> Toughness + Health.</p>
-  <p><strong>Relic:</strong> Chrono Field → Withering upgrade → Time Paradox upgrade → Time Rebound.</p>
-  <p><strong>Key synergies:</strong> Iris, Corvus, Phobos, Xe'Sha and Cascade.</p>
-  <p><strong>Key counters:</strong> Iris and Silence — Crow, Mushy &amp; Shroom, Thea, Keira.</p>
+ <div class="grid-2">
+  <div class="card">
+   <p>Tempus is one of the most interesting Support heroes in Hero Wars Alliance because he influences almost every aspect of combat.</p>
+   <ul class="verdict-list">
+    <li><strong>Chronostasis:</strong> Stops enemies and extends debuffs.</li>
+    <li><strong>Withering:</strong> Reduces Physical Attack and maximum Health.</li>
+    <li><strong>Temporal Anomaly:</strong> Disrupts an important physical attacker.</li>
+    <li><strong>Time Paradox:</strong> Changes movement speed while strengthening allied maximum Health.</li>
+    <li><strong>Relic:</strong> Adds team Magic Penetration (Chrono Field), wider Withering, a damaging Clock, and Time Rebound against control.</li>
+   </ul>
+   <p>For his build, prioritize survivability and Magic Attack. For team synergy, Iris is one of his most valuable partners. And when facing him, look for opportunities to interrupt his active abilities before his control effects take over.</p>
+  </div>
+  <div class="card summary">
+   <div class="head-with-icon"><h3>Quick Investment Summary</h3></div>
+   <p><strong>Role:</strong> Support — Middle Line.</p>
+   <p><strong>Faction:</strong> Way of Eternity.</p>
+   <p><strong>Skins:</strong> Lunar → Stellar → Cybernetic → Default → Angel → Jade Flames.</p>
+   <p><strong>Glyphs:</strong> Magic Attack → Health → Intelligence → Magic Defense → Armor.</p>
+   <p><strong>Artifacts:</strong> Book → Ring → Weapon.</p>
+   <p><strong>Gift of the Elements:</strong> Maximum as resources allow.</p>
+   <p><strong>First Talisman:</strong> Intelligence + Armor.</p>
+   <p><strong>Second Talisman:</strong> Toughness + Health.</p>
+   <p><strong>Relic:</strong> Chrono Field → Withering upgrade → Time Paradox upgrade → Time Rebound.</p>
+   <p><strong>Key synergies:</strong> Iris, Corvus, Phobos, Xe'Sha and Cascade.</p>
+   <p><strong>Key counters:</strong> Iris and Silence — Crow, Mushy &amp; Shroom, Thea, Keira.</p>
+  </div>
  </div>
 
- <div class="note gold-note">
-  <strong>GOA recommendation:</strong> Tempus doesn't need to be your strongest damage dealer. He simply needs to give your damage dealers the time and opportunities they need to win.
- </div>
+ <div class="note gold"><strong>GOA recommendation:</strong> Tempus doesn't need to be your strongest damage dealer. He simply needs to give your damage dealers the time and opportunities they need to win.</div>
 </section>
 
 <!-- VIDEO -->
-
-<section class="section" id="video">
- <div class="kicker">VIDEO GUIDE &amp; BATTLE ANALYSIS</div>
- <h2>Watch — Tempus Complete Hero Guide</h2>
-
- <p>Watch the Gods of Alliance analysis covering Tempus's skills, Relic, development priorities, team examples and battle testing.</p>
-
+<section id="video">
+ <div class="section-head">
+  <div class="eyebrow">Video guide &amp; battle analysis</div>
+  <h2>Watch — Tempus Complete Hero Guide</h2>
+  <p class="intro">Watch the Gods of Alliance analysis covering Tempus's skills, Relic, development priorities, team examples and battle testing.</p>
+ </div>
  <div class="video">
-  <iframe
-   src="https://www.youtube.com/embed/I6QYdp1i2U0"
-   title="Tempus Full Hero Guide — Gods of Alliance"
-   loading="lazy"
-   referrerpolicy="strict-origin-when-cross-origin"
-   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-   allowfullscreen>
-  </iframe>
+  <iframe src="https://www.youtube.com/embed/I6QYdp1i2U0" title="Tempus Full Hero Guide — Gods of Alliance" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  </div>
 </section>
 
-<!-- WEBSITE NAVIGATION -->
-
-<section class="section">
- <div class="cta">
-  <h2>The Master of Time</h2>
-  <p>Knowledge. Precision. Control.</p>
-  <p>Master the mechanics. Control the fight.</p>
-  <a href="heroes.html">EXPLORE ALL HERO GUIDES</a>
- </div>
-</section>
+<div class="card cta">
+ <h2>The Master of Time</h2>
+ <p>Knowledge. Precision. Control.</p>
+ <p>Master the mechanics. Control the fight.</p>
+ <a class="btn" href="heroes.html">EXPLORE ALL HERO GUIDES</a>
+</div>
 
 </main>
 
@@ -1188,56 +662,27 @@ footer strong{color:var(--gold)}
  <p>© 2026 Gods of Alliance</p>
 </footer>
 
-<!-- IMAGE FALLBACKS: a missing skill icon becomes its number, a missing skin picture is hidden,
-     and a missing hero portrait tries the other spellings before showing the hero's initial.
-     Upload Tempus_skill_1-4.png and the skin pictures to Images/Tempus-Guide-Icons/ and they appear. -->
-
+<!-- Highlights the section you're reading in the sticky nav. -->
 <script>
 (function(){
  "use strict";
-
- function whenMissing(img, handle){
-  img.onerror=function(){ img.onerror=null; handle(); };
-  if(img.complete && img.naturalWidth===0){ img.onerror=null; handle(); }
- }
-
- document.querySelectorAll(".skill-icon[data-badge]").forEach(function(img){
-  whenMissing(img, function(){
-   const badge=document.createElement("span");
-   badge.className="skill-badge";
-   badge.textContent=img.dataset.badge;
-   badge.setAttribute("aria-label", img.alt);
-   img.replaceWith(badge);
+ const links=[...document.querySelectorAll(".toc a")];
+ const byId=new Map(links.map(function(a){ return [a.getAttribute("href").slice(1), a]; }));
+ const observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+   if(!entry.isIntersecting)return;
+   links.forEach(function(a){ a.classList.remove("active"); });
+   const link=byId.get(entry.target.id);
+   if(link){
+    link.classList.add("active");
+    const bar=link.parentElement;
+    bar.scrollLeft=link.offsetLeft-(bar.clientWidth-link.offsetWidth)/2;
+   }
   });
- });
-
- document.querySelectorAll("img[data-optional]").forEach(function(img){
-  whenMissing(img, function(){ img.remove(); });
- });
-
- document.querySelectorAll(".hero-heading img").forEach(function(img){
-  const original=img.getAttribute("src");
-  if(!original)return;
-  const folder="Images/Heroes/";
-  const stem=original.split("/").pop().replace(/\.[^.]+$/,"");
-  const candidates=[
-   original,
-   folder+stem.toLowerCase()+".png",
-   folder+stem+".jpg",
-   folder+stem+".webp"
-  ].filter(function(v,i,a){ return a.indexOf(v)===i; });
-  let index=0;
-  function fallback(){
-   index++;
-   if(index<candidates.length){ img.src=candidates[index]; return; }
-   img.onerror=null;
-   const replacement=document.createElement("span");
-   replacement.className="portrait-fallback";
-   replacement.textContent=(img.alt||"?").charAt(0).toUpperCase();
-   img.replaceWith(replacement);
-  }
-  img.onerror=fallback;
-  if(img.complete && img.naturalWidth===0){ fallback(); }
+ },{rootMargin:"-40% 0px -55% 0px"});
+ byId.forEach(function(_,id){
+  const section=document.getElementById(id);
+  if(section)observer.observe(section);
  });
 })();
 </script>
