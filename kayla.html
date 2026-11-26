@@ -1,1102 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Kayla Guide | Gods of Alliance</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background:
-        radial-gradient(circle at top, #171717 0%, #090909 38%, #000 75%);
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      min-height: 100vh;
-      line-height: 1.6;
-    }
-
-    header {
-      border-bottom: 1px solid #252525;
-      background: rgba(0, 0, 0, 0.94);
-    }
-
-    .header-inner {
-      max-width: 1400px;
-      margin: auto;
-      min-height: 82px;
-      padding: 0 35px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-    .brand {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .brand span {
-      color: #d8ad54;
-    }
-
-    .back-link {
-      color: #d8ad54;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .back-link:hover {
-      color: #ffffff;
-    }
-
-    main {
-      max-width: 1200px;
-      margin: auto;
-      padding: 55px 35px 100px;
-    }
-
-    .cover {
-      overflow: hidden;
-      border: 1px solid #282828;
-      background: #0b0b0b;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
-    }
-
-    .cover img {
-      display: block;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
-
-    .intro {
-      max-width: 900px;
-      margin: 55px auto 65px;
-      text-align: center;
-    }
-
-    .eyebrow {
-      color: #d8ad54;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 4px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 7vw, 76px);
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -2px;
-    }
-
-    .hero-role {
-      margin-top: 16px;
-      color: #d8ad54;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 3px;
-    }
-
-    .intro p {
-      max-width: 780px;
-      margin: 25px auto 0;
-      color: #aaa;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    .gold-line {
-      width: 70px;
-      height: 3px;
-      background: #d8ad54;
-      margin: 30px auto 0;
-    }
-
-    .section {
-      margin-top: 70px;
-    }
-
-    .section-title {
-      margin-bottom: 25px;
-    }
-
-    .section-title span {
-      color: #d8ad54;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 3px;
-    }
-
-    .section-title h2 {
-      margin-top: 7px;
-      font-size: 30px;
-      font-weight: 900;
-    }
-
-    /* SKILLS */
-
-    .skills {
-      display: grid;
-      gap: 18px;
-    }
-
-    .skill-card {
-      border: 1px solid #252525;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(216, 173, 84, 0.055),
-          rgba(255, 255, 255, 0.015)
-        );
-      padding: 30px;
-    }
-
-    .skill-number {
-      color: #d8ad54;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 6px;
-    }
-
-    .skill-card h3 {
-      font-size: 25px;
-      margin-bottom: 8px;
-    }
-
-    .skill-keyword {
-      display: inline-block;
-      margin-bottom: 17px;
-      padding: 6px 10px;
-      border: 1px solid #3b3120;
-      color: #d8ad54;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .skill-card p {
-      color: #aaa;
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    .skill-card p + p {
-      margin-top: 13px;
-    }
-
-    .key-point {
-      margin-top: 20px;
-      border-left: 3px solid #d8ad54;
-      padding: 12px 0 12px 17px;
-      color: #e5e5e5;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    /* BUILD */
-
-    .build-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .build-card {
-      border: 1px solid #252525;
-      background: #0d0d0d;
-      padding: 30px;
-    }
-
-    .build-card h3 {
-      font-size: 23px;
-      margin-bottom: 20px;
-    }
-
-    .priority-list {
-      list-style: none;
-      counter-reset: priority;
-    }
-
-    .priority-list li {
-      counter-increment: priority;
-      position: relative;
-      padding: 13px 0 13px 43px;
-      border-top: 1px solid #222;
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    .priority-list li:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .priority-list li::before {
-      content: counter(priority);
-      position: absolute;
-      left: 0;
-      top: 11px;
-      width: 26px;
-      height: 26px;
-      border: 1px solid #3b3120;
-      color: #d8ad54;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      font-weight: 900;
-    }
-
-    .priority-list li:first-child::before {
-      top: -2px;
-    }
-
-    .priority-list strong {
-      color: #fff;
-    }
-
-    .build-note {
-      margin-top: 20px;
-      color: #777;
-      font-size: 13px;
-      line-height: 1.7;
-    }
-
-    /* ARTIFACTS */
-
-    .artifact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .artifact-card {
-      border: 1px solid #252525;
-      background: #0d0d0d;
-      padding: 25px;
-    }
-
-    .artifact-rank {
-      color: #d8ad54;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 8px;
-    }
-
-    .artifact-card h3 {
-      font-size: 20px;
-      margin-bottom: 9px;
-    }
-
-    .artifact-card p {
-      color: #999;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    /* INFO */
-
-    .info-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-    }
-
-    .info-card {
-      border: 1px solid #252525;
-      background: #0d0d0d;
-      padding: 30px;
-    }
-
-    .info-card h3 {
-      font-size: 23px;
-      margin-bottom: 13px;
-    }
-
-    .info-card p {
-      color: #aaa;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .info-card p + p {
-      margin-top: 12px;
-    }
-
-    .gold {
-      color: #d8ad54;
-      font-weight: 800;
-    }
-
-    /* COUNTERS */
-
-    .counter-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .counter-card {
-      border: 1px solid #252525;
-      background: #0d0d0d;
-      padding: 27px;
-    }
-
-    .counter-card h3 {
-      color: #d8ad54;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .counter-card p {
-      color: #aaa;
-      font-size: 14px;
-      line-height: 1.75;
-    }
-
-    /* SUMMARY */
-
-    .summary {
-      margin-top: 70px;
-      padding: 40px;
-      border: 1px solid #3b3120;
-      background:
-        linear-gradient(
-          135deg,
-          rgba(216, 173, 84, 0.08),
-          rgba(0, 0, 0, 0.3)
-        );
-    }
-
-    .summary h2 {
-      font-size: 30px;
-      margin-bottom: 18px;
-    }
-
-    .summary p {
-      color: #b3b3b3;
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    /* VIDEO */
-
-    .video-section {
-      margin-top: 70px;
-      text-align: center;
-    }
-
-    .video-section h2 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-
-    .video-section > p {
-      color: #999;
-      max-width: 680px;
-      margin: 0 auto 30px;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-      border: 1px solid #2a2a2a;
-      background: #000;
-      box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5);
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    footer {
-      border-top: 1px solid #1d1d1d;
-      padding: 30px 20px;
-      text-align: center;
-      color: #555;
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 850px) {
-      .build-grid,
-      .info-grid,
-      .counter-grid,
-      .artifact-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .header-inner {
-        padding: 0 20px;
-        min-height: 70px;
-      }
-
-      .brand {
-        font-size: 17px;
-      }
-
-      main {
-        padding: 30px 20px 70px;
-      }
-
-      .skill-card,
-      .build-card,
-      .info-card,
-      .counter-card,
-      .summary {
-        padding: 24px 21px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kayla Full Hero Guide — Skills, Relic, Build &amp; Counters | Gods of Alliance</title>
+<meta name="description" content="Complete Kayla guide for Hero Wars Alliance. Quick build, all four skills, her Relic, skins, glyphs, artifacts, talismans and how to counter her.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/kayla.html">
+<meta name="theme-color" content="#0d0807">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="KAYLA — FULL HERO GUIDE | Gods of Alliance">
+<meta property="og:description" content="The explosive Chaos Warrior: skills, Relic, build and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/kayla.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Kayla/kayla-guide.png">
+<meta property="og:image:secure_url" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Kayla/kayla-guide.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="719">
+<meta property="og:image:alt" content="Kayla Hero Guide — Gods of Alliance">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KAYLA — HERO GUIDE">
+<meta name="twitter:description" content="Skills, Relic, build and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Kayla/kayla-guide.png">
+
+<style>
+:root{
+ --bg:#0d0807;
+ --surface:#1c110e;
+ --surface-2:#2a1712;
+ --line:rgba(255,122,69,.2);
+ --line-strong:rgba(255,122,69,.42);
+ --accent:#ff7a45;
+ --gold:#f0c477;
+ --goldsoft:#ffe2aa;
+ --purple:#d9a7f3;
+ --green:#7fe0a8;
+ --text:#f0e2db;
+ --muted:#b59d93;
+ --radius:16px;
+}
+</style>
+<link rel="stylesheet" href="goa-guide-v3.css">
 </head>
 
 <body>
 
-<header>
-  <div class="header-inner">
-    <a class="brand" href="index.html">
-      GODS <span>OF ALLIANCE</span>
-    </a>
-
-    <a class="back-link" href="heroes.html">
-      ← HERO GUIDES
-    </a>
-  </div>
+<header class="site-header">
+ <a class="brand" href="index.html">GODS OF <span>ALLIANCE</span></a>
+ <a class="back-link" href="heroes.html">← HERO GUIDES</a>
 </header>
 
-
-<main>
-
-  <!-- COVER -->
-
-  <section class="cover">
-    <img
-      src="Images/Hero-Guides/Kayla/kayla-guide.png"
-      alt="Kayla Hero Guide"
-    >
-  </section>
-
-
-  <!-- INTRO -->
-
-  <section class="intro">
-
-    <div class="eyebrow">HERO GUIDE</div>
-
-    <h1>KAYLA</h1>
-
-    <div class="hero-role">
-      WARRIOR • WAY OF CHAOS • FRONT LINE
-    </div>
-
-    <p>
-      Kayla is an explosive Chaos Warrior who dives directly into the
-      enemy formation, creates continuous pressure and becomes increasingly
-      difficult to stop when properly developed. Her build combines
-      Physical Attack, Health and offensive penetration with mechanics
-      that reward her for surviving inside the enemy team.
-    </p>
-
-    <div class="gold-line"></div>
-
-  </section>
-
-
-  <!-- SKILLS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>ABILITIES</span>
-      <h2>SKILLS</h2>
-    </div>
-
-    <div class="skills">
-
-      <!-- PHOENIX'S FURY -->
-
-      <article class="skill-card">
-
-        <div class="skill-number">SKILL 1</div>
-
-        <h3>Phoenix's Fury</h3>
-
-        <div class="skill-keyword">
-          PHYSICAL ATTACK • HEALTH STEAL • RESURRECTION
-        </div>
-
-        <p>
-          Kayla throws her chakram through the battlefield, dealing damage
-          to nearby enemies. Every enemy hit loses a portion of maximum
-          Health based on the damage dealt.
-        </p>
-
-        <p>
-          Kayla steals that value for herself, increasing both her current
-          and maximum Health. This allows her to become progressively harder
-          to eliminate as the battle continues.
-        </p>
-
-        <p>
-          If Aidan has already fallen, Phoenix's Fury immediately resurrects
-          him with the same amount of Health Kayla has just gained.
-        </p>
-
-        <div class="key-point">
-          Scales with Physical Attack. Increasing Physical Attack strengthens
-          both Kayla's damage and the value she gains from this skill.
-        </div>
-
-      </article>
-
-
-      <!-- ACROBATICS -->
-
-      <article class="skill-card">
-
-        <div class="skill-number">SKILL 2</div>
-
-        <h3>Acrobatics</h3>
-
-        <div class="skill-keyword">
-          DIVE • HEALING • CHAOS SYNERGY
-        </div>
-
-        <p>
-          If Kayla has more than 40% Health, she jumps directly into the
-          middle of the enemy formation, bypassing the frontline and
-          attacking from inside the opposing team.
-        </p>
-
-        <p>
-          When her Health falls below 25%, she begins regenerating Health
-          for several seconds. The healing increases for every allied Chaos
-          Hero fighting beside her.
-        </p>
-
-        <p>
-          Once the opportunity appears, Kayla can return to the fight.
-          However, if she was already below 25% Health when Acrobatics
-          activated, she remains in position and focuses on healing.
-        </p>
-
-        <div class="key-point">
-          Scales with Health. More Health improves both Kayla's survivability
-          and the value of one of the defining mechanics in her kit.
-        </div>
-
-      </article>
-
-
-      <!-- RETALIATORY STRIKE -->
-
-      <article class="skill-card">
-
-        <div class="skill-number">SKILL 3</div>
-
-        <h3>Retaliatory Strike</h3>
-
-        <div class="skill-keyword">
-          PHYSICAL DAMAGE • BLIND • RETALIATION
-        </div>
-
-        <p>
-          Retaliatory Strike deals Physical Damage to nearby enemies based
-          on the damage Kayla has received since the previous activation.
-        </p>
-
-        <p>
-          Every enemy caught by the attack is also Blinded, reducing their
-          ability to successfully land attacks while Kayla continues
-          applying pressure.
-        </p>
-
-        <div class="key-point">
-          Scales with Physical Attack. The combination of retaliatory damage
-          and Blind can punish enemies for focusing Kayla while she is
-          fighting inside their formation.
-        </div>
-
-      </article>
-
-
-      <!-- INNER FLAME -->
-
-      <article class="skill-card">
-
-        <div class="skill-number">SKILL 4</div>
-
-        <h3>Inner Flame</h3>
-
-        <div class="skill-keyword">
-          DAMAGE OVER TIME • HEALTH SCALING • SACRIFICE
-        </div>
-
-        <p>
-          After Acrobatics activates, Kayla ignites and continuously burns
-          both herself and every nearby enemy.
-        </p>
-
-        <p>
-          The effect continues until Kayla's Health falls below 25%.
-          This creates constant pressure while she remains inside the enemy
-          formation.
-        </p>
-
-        <div class="key-point">
-          Scales with Health. Health is therefore not only a defensive stat
-          for Kayla — it also strengthens one of her major offensive
-          mechanics.
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- SKINS + GLYPHS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>BUILD PRIORITIES</span>
-      <h2>SKINS & GLYPHS</h2>
-    </div>
-
-    <div class="build-grid">
-
-      <!-- SKINS -->
-
-      <div class="build-card">
-
-        <h3>Skins</h3>
-
-        <ol class="priority-list">
-
-          <li>
-            <strong>Physical Attack + Super Skin</strong>
-          </li>
-
-          <li>
-            <strong>Default Agility Skin</strong>
-          </li>
-
-          <li>
-            <strong>Armor Penetration</strong>
-          </li>
-
-          <li>
-            <strong>Crushing</strong>
-          </li>
-
-          <li>
-            <strong>Health</strong>
-          </li>
-
-          <li>
-            <strong>Armor</strong>
-          </li>
-
-        </ol>
-
-        <p class="build-note">
-          Physical Attack comes first because Phoenix's Fury and
-          Retaliatory Strike scale directly from it. Agility strengthens
-          Kayla's main stat and adds Armor, while Armor Penetration becomes
-          increasingly important against stronger defensive teams.
-        </p>
-
-      </div>
-
-
-      <!-- GLYPHS -->
-
-      <div class="build-card">
-
-        <h3>Glyphs</h3>
-
-        <ol class="priority-list">
-
-          <li>
-            <strong>Health</strong>
-          </li>
-
-          <li>
-            <strong>Physical Attack</strong>
-          </li>
-
-          <li>
-            <strong>Armor</strong>
-          </li>
-
-          <li>
-            <strong>Agility</strong>
-          </li>
-
-          <li>
-            <strong>Magic Defense</strong>
-          </li>
-
-        </ol>
-
-        <p class="build-note">
-          Health gives Kayla more time to activate her mechanics and also
-          strengthens her Health-scaling abilities. For most players,
-          bringing every Glyph to Level 40 first provides a strong
-          development foundation.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- ARTIFACTS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>BUILD PRIORITY</span>
-      <h2>ARTIFACTS</h2>
-    </div>
-
-    <div class="artifact-grid">
-
-      <div class="artifact-card">
-
-        <div class="artifact-rank">
-          PRIORITY 1
-        </div>
-
-        <h3>Book</h3>
-
-        <p>
-          Provides Physical Attack and Armor Penetration — two of Kayla's
-          most important offensive stats. It improves both her abilities
-          and her basic attacks.
-        </p>
-
-      </div>
-
-
-      <div class="artifact-card">
-
-        <div class="artifact-rank">
-          PRIORITY 2
-        </div>
-
-        <h3>Ring</h3>
-
-        <p>
-          Provides Agility, improving Kayla's main stat and strengthening
-          multiple areas of her overall development.
-        </p>
-
-      </div>
-
-
-      <div class="artifact-card">
-
-        <div class="artifact-rank">
-          PRIORITY 3
-        </div>
-
-        <h3>Weapon</h3>
-
-        <p>
-          Grants Physical Attack to the entire team whenever Kayla activates
-          Phoenix's Fury. Useful, but maximizing Kayla's personal offensive
-          development comes first.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- GIFT + TALISMANS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>ADDITIONAL DEVELOPMENT</span>
-      <h2>GIFT OF THE ELEMENTS & TALISMANS</h2>
-    </div>
-
-    <div class="info-grid">
-
-      <div class="info-card">
-
-        <h3>Gift of the Elements</h3>
-
-        <p>
-          <span class="gold">MAX IT.</span>
-        </p>
-
-        <p>
-          Kayla fights directly inside the enemy formation. More Health
-          gives her additional survivability, while Physical Attack
-          strengthens her damage and ability scaling.
-        </p>
-
-      </div>
-
-
-      <div class="info-card">
-
-        <h3>Talismans</h3>
-
-        <p>
-          <span class="gold">Talisman 1:</span>
-          Agility + Physical Attack.
-        </p>
-
-        <p>
-          This is the preferred option in most situations because it
-          strengthens multiple parts of Kayla's kit and provides excellent
-          overall consistency.
-        </p>
-
-        <p>
-          <span class="gold">Talisman 2:</span>
-          Armor Penetration + Critical Hit Chance.
-        </p>
-
-        <p>
-          A strong offensive alternative, particularly against more
-          defensive teams, although it is considerably harder to obtain.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COUNTERS -->
-
-  <section class="section">
-
-    <div class="section-title">
-      <span>HOW TO FIGHT HER</span>
-      <h2>KAYLA COUNTERS</h2>
-    </div>
-
-    <div class="counter-grid">
-
-      <div class="counter-card">
-
-        <h3>Somna</h3>
-
-        <p>
-          Somna can disrupt Kayla after she enters the enemy formation,
-          pushing her away from targets while reducing her Physical Attack
-          and Armor Penetration. This directly reduces Kayla's damage and
-          momentum.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Tempus</h3>
-
-        <p>
-          Tempus attacks Kayla's core strengths by reducing her Physical
-          Attack and maximum Health while also burning her Energy, making
-          her slower and less threatening.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Guus</h3>
-
-        <p>
-          Guus can provide enormous healing through his feathers, helping
-          allies survive Kayla's continuous burning pressure and reducing
-          the impact of longer fights.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Miu</h3>
-
-        <p>
-          Blind can severely disrupt Kayla because of her dependence on
-          Physical Damage. Preventing her from consistently hitting targets
-          limits her ability to do her job.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Drayne</h3>
-
-        <p>
-          Against a Kayla that has not yet reached very high Health values,
-          Drayne can provide enough damage pressure to eliminate her before
-          she has time to scale.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Corvus</h3>
-
-        <p>
-          Altar of Souls can punish Kayla's repeated area damage. Corvus
-          may be particularly uncomfortable for her during earlier and
-          mid-game development.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Morrigan</h3>
-
-        <p>
-          Necromancy prevents Kayla from being resurrected when she is
-          relying on Aidan or Astaroth. Removing resurrection significantly
-          weakens one of the most dangerous parts of the Fire siblings'
-          interaction.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Xe'Sha</h3>
-
-        <p>
-          If Kayla has the lowest Magic Defense on the battlefield, Xe'Sha
-          can exploit that weakness with massive Magic Damage and potentially
-          eliminate her before she takes control of the battle.
-        </p>
-
-      </div>
-
-
-      <div class="counter-card">
-
-        <h3>Burst Magic Damage</h3>
-
-        <p>
-          Kayla needs time to jump into the enemy formation and establish
-          pressure. Rapidly reducing her Health before Acrobatics can do its
-          job can force her into healing mode instead of allowing her to
-          begin her assault.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- SUMMARY -->
-
-  <section class="summary">
-
-    <div class="eyebrow">
-      QUICK SUMMARY
-    </div>
-
-    <h2>WHY KAYLA IS SO DANGEROUS</h2>
-
-    <p>
-      Kayla combines explosive Physical Damage, continuous pressure,
-      Health scaling, self-healing and exceptional Chaos synergy. She is
-      designed to enter the enemy formation and become more dangerous the
-      longer she survives. Building her correctly means developing both
-      the offensive stats that power her attacks and the survivability
-      required to keep her active inside enemy lines.
-    </p>
-
-  </section>
-
-
-  <!-- VIDEO -->
-
-  <section class="video-section">
-
-    <div class="eyebrow">
-      GODS OF ALLIANCE VIDEO
-    </div>
-
-    <h2>WATCH THE FULL KAYLA GUIDE</h2>
-
-    <p>
-      Watch the complete Gods of Alliance guide for the full breakdown of
-      Kayla's skills, build priorities, Talismans and counters.
-    </p>
-
-    <div class="video-wrapper">
-
-      <iframe
-        src="https://www.youtube.com/embed/NymEw1fDz0Q"
-        title="Gods of Alliance - Kayla Hero Guide"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-      </iframe>
-
-    </div>
-
-  </section>
+<!-- HERO -->
+<div class="wrap hero">
+ <div class="hero-art" role="img" aria-label="Kayla — Warrior, Way of Chaos, Front Line — Hero Guide" style="background-image:url('Images/Hero-Guides/Kayla/kayla-guide.png')"></div>
+ <div class="identity">
+  <img src="Images/Kayla-Guide-Icons/avatar_57_kayla.png" alt="Kayla portrait">
+  <div>
+   <h1>Kayla</h1>
+   <div class="sub">Hero Guide</div>
+   <div class="chips">
+    <span class="chip">WARRIOR</span>
+    <span class="chip">WAY OF CHAOS</span>
+    <span class="chip">FRONT LINE</span>
+   </div>
+  </div>
+  <div class="hero-actions">
+   <a class="btn" href="#build">Quick build ↓</a>
+   <a class="btn ghost" href="#video">▶ Watch the guide</a>
+  </div>
+ </div>
+</div>
+
+<nav class="toc" aria-label="Guide sections">
+ <div class="wrap">
+  <a href="#build">Quick build</a>
+  <a href="#overview">Overview</a>
+  <a href="#skills">Skills</a>
+  <a href="#relics">Relics</a>
+  <a href="#skins">Skins</a>
+  <a href="#glyphs">Glyphs &amp; artifacts</a>
+  <a href="#talismans">Talismans</a>
+  <a href="#counters">Counters</a>
+  <a href="#summary">Summary</a>
+  <a href="#video">Video</a>
+ </div>
+</nav>
+
+<main class="wrap">
+
+<!-- QUICK BUILD -->
+<section id="build">
+ <div class="section-head">
+  <div class="eyebrow">At a glance</div>
+  <h2>Quick build</h2>
+  <p class="intro">The whole build on one screen. Every recommendation is explained in full further down.</p>
+ </div>
+
+ <div class="build-grid">
+  <div class="card span-4">
+   <div class="tile-title"><h3>Skins, in order</h3><a href="#skins">Why →</a></div>
+   <div class="skin-row">
+    <figure><span class="rank-dot" data-rank="1"><img src="Images/Kayla-Guide-Icons/kayla_skin_286.png" alt="Solar Skin"></span><figcaption><b>Solar</b>Physical Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="2"><img src="Images/Kayla-Guide-Icons/kayla_skin_default.png" alt="Default skin"></span><figcaption><b>Default</b>Agility</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="3"><img src="Images/Kayla-Guide-Icons/kayla_skin_356.png" alt="Cybernetic Skin"></span><figcaption><b>Cybernetic</b>Armor Pen.</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="4"><img src="Images/Kayla-Guide-Icons/kayla_skin_384.png" alt="Masquerade Skin"></span><figcaption><b>Masquerade</b>Crushing</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="5"><img src="Images/Kayla-Guide-Icons/kayla_skin_462.png" alt="Blazing Skin"></span><figcaption><b>Blazing</b>Health</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="6"><img src="Images/Kayla-Guide-Icons/kayla_skin_334.png" alt="Celestial Skin"></span><figcaption><b>Celestial</b>Armor</figcaption></figure>
+   </div>
+  </div>
+  <div class="card span-2">
+   <div class="tile-title"><h3>Talismans</h3><a href="#talismans">Compare →</a></div>
+   <div class="mini-row"><img src="Images/Kayla-Guide-Icons/talisman_kayla_1.png" alt="First talisman"><div class="txt"><b>Agility + Physical Attack</b>Preferred in most situations</div></div>
+   <div class="mini-row"><img src="Images/Kayla-Guide-Icons/talisman_kayla_2.png" alt="Second talisman"><div class="txt"><b>Armor Pen. + Crit Chance</b>Offensive alternative</div></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Glyphs</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Health</span><span class="arrow">→</span><span class="step">Physical Attack</span><span class="arrow">→</span><span class="step">Armor</span><span class="arrow">→</span><span class="step">Agility</span><span class="arrow">→</span><span class="step">Magic Def.</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Artifacts &amp; Elements</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Book</span><span class="arrow">→</span><span class="step">Ring</span><span class="arrow">→</span><span class="step">Weapon</span><span class="arrow">·</span><span class="step">Gift of the Elements: max</span></div>
+  </div>
+  <div class="card span-6">
+   <div class="tile-title"><h3>Biggest threats</h3><a href="#counters">Details →</a></div>
+   <div class="order">
+    <span class="chip">Counters</span><span class="step">Somna</span><span class="step">Tempus</span><span class="step">Guus</span><span class="step">Miu</span><span class="step">Drayne</span><span class="step">Corvus</span><span class="step">Morrigan</span><span class="step">Xe'Sha</span><span class="step">Burst Magic Damage</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+ <div class="section-head">
+  <div class="eyebrow">Hero overview</div>
+  <h2>Kayla — The Explosive Chaos Warrior</h2>
+ </div>
+
+ <div class="card overview">
+  <img src="Images/Kayla-Guide-Icons/avatar_57_kayla.png" alt="Kayla official portrait">
+  <div>
+   <p>Kayla is an explosive Chaos Warrior who dives directly into the enemy formation, creates continuous pressure and becomes increasingly difficult to stop when properly developed. Her build combines Physical Attack, Health and offensive penetration with mechanics that reward her for surviving inside the enemy team.</p>
+  </div>
+ </div>
+
+ <div class="stat-grid">
+  <div class="card stat"><b>CHAOS</b><span>Hero faction</span></div>
+  <div class="card stat"><b>WARRIOR</b><span>Primary class</span></div>
+  <div class="card stat"><b>FRONT</b><span>Battle line</span></div>
+  <div class="card stat"><b>40%</b><span>Health needed to dive</span></div>
+ </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+ <div class="section-head">
+  <div class="eyebrow">Abilities</div>
+  <h2>Kayla — All Four Skills Explained</h2>
+ </div>
+
+ <div class="grid-2">
+  <article class="card">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_1.png" alt="Phoenix's Fury skill icon"><div><div class="num">SKILL 1</div><h3>Phoenix's Fury</h3></div></div>
+   <div class="chips" style="margin-bottom:12px"><span class="chip">PHYSICAL ATTACK</span><span class="chip">HEALTH STEAL</span><span class="chip">RESURRECTION</span></div>
+   <p>Kayla throws her chakram through the battlefield, dealing damage to nearby enemies. Every enemy hit loses a portion of maximum Health based on the damage dealt.</p>
+   <p>Kayla steals that value for herself, increasing both her current and maximum Health. This allows her to become progressively harder to eliminate as the battle continues.</p>
+   <p>If Aidan has already fallen, Phoenix's Fury immediately resurrects him with the same amount of Health Kayla has just gained.</p>
+   <div class="formula">Scales with Physical Attack. Increasing Physical Attack strengthens both Kayla's damage and the value she gains from this skill.</div>
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_2.png" alt="Acrobatics skill icon"><div><div class="num">SKILL 2</div><h3>Acrobatics</h3></div></div>
+   <div class="chips" style="margin-bottom:12px"><span class="chip">DIVE</span><span class="chip">HEALING</span><span class="chip">CHAOS SYNERGY</span></div>
+   <p>If Kayla has more than 40% Health, she jumps directly into the middle of the enemy formation, bypassing the frontline and attacking from inside the opposing team.</p>
+   <p>When her Health falls below 25%, she begins regenerating Health for several seconds. The healing increases for every allied Chaos Hero fighting beside her.</p>
+   <p>Once the opportunity appears, Kayla can return to the fight. However, if she was already below 25% Health when Acrobatics activated, she remains in position and focuses on healing.</p>
+   <div class="formula">Scales with Health. More Health improves both Kayla's survivability and the value of one of the defining mechanics in her kit.</div>
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_3.png" alt="Retaliatory Strike skill icon"><div><div class="num">SKILL 3</div><h3>Retaliatory Strike</h3></div></div>
+   <div class="chips" style="margin-bottom:12px"><span class="chip">PHYSICAL DAMAGE</span><span class="chip">BLIND</span><span class="chip">RETALIATION</span></div>
+   <p>Retaliatory Strike deals Physical Damage to nearby enemies based on the damage Kayla has received since the previous activation.</p>
+   <p>Every enemy caught by the attack is also Blinded, reducing their ability to successfully land attacks while Kayla continues applying pressure.</p>
+   <div class="formula">Scales with Physical Attack. The combination of retaliatory damage and Blind can punish enemies for focusing Kayla while she is fighting inside their formation.</div>
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_4.png" alt="Inner Flame skill icon"><div><div class="num">SKILL 4</div><h3>Inner Flame</h3></div></div>
+   <div class="chips" style="margin-bottom:12px"><span class="chip">DAMAGE OVER TIME</span><span class="chip">HEALTH SCALING</span><span class="chip">SACRIFICE</span></div>
+   <p>After Acrobatics activates, Kayla ignites and continuously burns both herself and every nearby enemy.</p>
+   <p>The effect continues until Kayla's Health falls below 25%. This creates constant pressure while she remains inside the enemy formation.</p>
+   <div class="formula">Scales with Health. Health is therefore not only a defensive stat for Kayla — it also strengthens one of her major offensive mechanics.</div>
+  </article>
+ </div>
+</section>
+
+<!-- RELICS (new: from the game's own descriptions) -->
+<section id="relics">
+ <div class="section-head">
+  <div class="eyebrow">Kayla relic system</div>
+  <h2>Kayla's Relic — Four Upgrades</h2>
+  <p class="intro">Kayla's Relic adds two new abilities and strengthens two of her existing skills. It also raises her Physical Attack and Health at every level, feeding both halves of her kit.</p>
+ </div>
+
+ <div class="stat-grid" style="margin:0 0 16px">
+  <div class="card stat"><b>30</b><span>Relic levels</span></div>
+  <div class="card stat"><b>+43,001</b><span>Physical Attack at max level</span></div>
+  <div class="card stat"><b>+215,429</b><span>Health at max level</span></div>
+  <div class="card stat"><b>2,880</b><span>Kayla Relic Shards to max</span></div>
+ </div>
+
+ <div class="grid-2">
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/relic_kayla_skill_8.png" alt="Chaotic Fracture relic skill icon"><div><div class="num">RELIC UPGRADE 1 · NEW SKILL</div><h3>Chaotic Fracture</h3></div></div>
+   <p>Kayla reduces the <strong>Armor</strong> of all nearby enemies for a while. If her Health drops <strong>below half</strong>, their Armor is reduced even further.</p>
+   <div class="formula">Core mechanic: Area Armor reduction · stronger below 50% Health</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_2.png" alt="Acrobatics skill icon"><div><div class="num">RELIC UPGRADE 2</div><h3>Acrobatics — A Parting Blow</h3></div></div>
+   <p>Before she leaps back to her allies, Kayla now <strong>deals damage to the enemies around her</strong>.</p>
+   <div class="formula">Upgrade: Damage on the way out of the enemy formation</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/kayla_skill_4.png" alt="Inner Flame skill icon"><div><div class="num">LEGENDARY RELIC · UPGRADE 3</div><h3>Inner Flame — Growing Fire</h3></div></div>
+   <p>The longer Kayla burns, the <strong>more damage</strong> Inner Flame deals: its damage keeps rising at regular intervals while the flame lasts.</p>
+   <div class="formula">Upgrade: Inner Flame damage ramps up over time</div>
+  </article>
+
+  <article class="card relic">
+   <div class="ability-head"><img src="Images/Kayla-Guide-Icons/relic_kayla_skill_9.png" alt="Frenzy relic skill icon"><div><div class="num">LEGENDARY RELIC · UPGRADE 4 · NEW SKILL</div><h3>Frenzy</h3></div></div>
+   <p>Every time Kayla has lost a total of <strong>50% of her initial Health</strong>, the damage she deals increases for the rest of the battle.</p>
+   <div class="formula">Core mechanic: Lose Health → permanent damage boost</div>
+  </article>
+ </div>
+
+ <div class="note gold"><strong>Unlocking the Relic:</strong> The first Relic level needs Kayla at 4 stars and level 50. Level 10 needs 6 stars and a higher hero rank, and level 20 needs a higher rank again. The descriptions above come from the game itself; this section is not covered by the video.</div>
+</section>
+
+<!-- SKINS -->
+<section id="skins">
+ <div class="section-head">
+  <div class="eyebrow">Build priorities</div>
+  <h2>Kayla — Best Skin Priority</h2>
+ </div>
+
+ <div class="grid-3">
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="1"><img src="Images/Kayla-Guide-Icons/kayla_skin_286.png" alt="Kayla Solar Skin"></span><div><h3>Solar Skin</h3><p><strong>Physical Attack + Super Skin</strong></p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="2"><img src="Images/Kayla-Guide-Icons/kayla_skin_default.png" alt="Kayla Default Skin"></span><div><h3>Default Skin</h3><p><strong>Default Agility Skin</strong></p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="3"><img src="Images/Kayla-Guide-Icons/kayla_skin_356.png" alt="Kayla Cybernetic Skin"></span><div><h3>Cybernetic Skin</h3><p><strong>Armor Penetration</strong></p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="4"><img src="Images/Kayla-Guide-Icons/kayla_skin_384.png" alt="Kayla Masquerade Skin"></span><div><h3>Masquerade Skin</h3><p><strong>Crushing</strong></p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="5"><img src="Images/Kayla-Guide-Icons/kayla_skin_462.png" alt="Kayla Blazing Skin"></span><div><h3>Blazing Skin</h3><p><strong>Health</strong></p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="6"><img src="Images/Kayla-Guide-Icons/kayla_skin_334.png" alt="Kayla Celestial Skin"></span><div><h3>Celestial Skin</h3><p><strong>Armor</strong></p></div></div>
+ </div>
+
+ <div class="note">Physical Attack comes first because Phoenix's Fury and Retaliatory Strike scale directly from it. Agility strengthens Kayla's main stat and adds Armor, while Armor Penetration becomes increasingly important against stronger defensive teams.</div>
+</section>
+
+<!-- GLYPHS, ARTIFACTS, ELEMENTS -->
+<section id="glyphs">
+ <div class="section-head">
+  <div class="eyebrow">Build priority</div>
+  <h2>Glyphs, Artifacts &amp; Gift of the Elements</h2>
+ </div>
+
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><h3>Glyphs</h3></div>
+   <ol class="ranked">
+    <li><div><h3>Health</h3></div></li>
+    <li><div><h3>Physical Attack</h3></div></li>
+    <li><div><h3>Armor</h3></div></li>
+    <li><div><h3>Agility</h3></div></li>
+    <li><div><h3>Magic Defense</h3></div></li>
+   </ol>
+   <div class="note">Health gives Kayla more time to activate her mechanics and also strengthens her Health-scaling abilities. For most players, bringing every Glyph to Level 40 first provides a strong development foundation.</div>
+  </div>
+
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Kayla-Guide-Icons/weapon_57_kayla.png" alt="Kayla official Artifact Weapon"><h3>Artifacts</h3></div>
+   <ol class="ranked">
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 1</div><h3>Book</h3><p>Provides Physical Attack and Armor Penetration — two of Kayla's most important offensive stats. It improves both her abilities and her basic attacks.</p></div></li>
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 2</div><h3>Ring</h3><p>Provides Agility, improving Kayla's main stat and strengthening multiple areas of her overall development.</p></div></li>
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 3</div><h3>Weapon</h3><p>Grants Physical Attack to the entire team whenever Kayla activates Phoenix's Fury. Useful, but maximizing Kayla's personal offensive development comes first.</p></div></li>
+   </ol>
+   <div class="note"><strong>Recommended order:</strong> Book → Ring → Weapon.</div>
+  </div>
+ </div>
+
+ <div class="card" style="margin-top:16px">
+  <div class="head-with-icon"><h3>Gift of the Elements — MAX IT.</h3></div>
+  <p>Kayla fights directly inside the enemy formation. More Health gives her additional survivability, while Physical Attack strengthens her damage and ability scaling.</p>
+ </div>
+</section>
+
+<!-- TALISMANS -->
+<section id="talismans">
+ <div class="section-head">
+  <div class="eyebrow">Additional development</div>
+  <h2>Kayla — Talismans</h2>
+ </div>
+
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Kayla-Guide-Icons/talisman_kayla_1.png" alt="Kayla first official Talisman"><h3>Talisman 1</h3></div>
+   <div class="formula">Agility + Physical Attack.</div>
+   <p>This is the preferred option in most situations because it strengthens multiple parts of Kayla's kit and provides excellent overall consistency.</p>
+  </div>
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Kayla-Guide-Icons/talisman_kayla_2.png" alt="Kayla second official Talisman"><h3>Talisman 2</h3></div>
+   <div class="formula">Armor Penetration + Critical Hit Chance.</div>
+   <p>A strong offensive alternative, particularly against more defensive teams, although it is considerably harder to obtain.</p>
+  </div>
+ </div>
+</section>
+
+<!-- COUNTERS -->
+<section id="counters">
+ <div class="section-head">
+  <div class="eyebrow">How to fight her</div>
+  <h2>Kayla Counters</h2>
+ </div>
+
+ <div class="counter-col">
+  <div class="grid-3">
+   <div class="card"><div class="person-head"><img src="Images/Heroes/somna.png" alt="Somna"><h3>Somna</h3></div><p>Somna can disrupt Kayla after she enters the enemy formation, pushing her away from targets while reducing her Physical Attack and Armor Penetration. This directly reduces Kayla's damage and momentum.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Tempus.png" alt="Tempus"><h3>Tempus</h3></div><p>Tempus attacks Kayla's core strengths by reducing her Physical Attack and maximum Health while also burning her Energy, making her slower and less threatening.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Guus.png" alt="Guus"><h3>Guus</h3></div><p>Guus can provide enormous healing through his feathers, helping allies survive Kayla's continuous burning pressure and reducing the impact of longer fights.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Miu.png" alt="Miu"><h3>Miu</h3></div><p>Blind can severely disrupt Kayla because of her dependence on Physical Damage. Preventing her from consistently hitting targets limits her ability to do her job.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Drayne.png" alt="Drayne"><h3>Drayne</h3></div><p>Against a Kayla that has not yet reached very high Health values, Drayne can provide enough damage pressure to eliminate her before she has time to scale.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Corvus.png" alt="Corvus"><h3>Corvus</h3></div><p>Altar of Souls can punish Kayla's repeated area damage. Corvus may be particularly uncomfortable for her during earlier and mid-game development.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Morrigan.png" alt="Morrigan"><h3>Morrigan</h3></div><p>Necromancy prevents Kayla from being resurrected when she is relying on Aidan or Astaroth. Removing resurrection significantly weakens one of the most dangerous parts of the Fire siblings' interaction.</p></div>
+   <div class="card"><div class="person-head"><img src="Images/Heroes/Xesha.png" alt="Xe'Sha"><h3>Xe'Sha</h3></div><p>If Kayla has the lowest Magic Defense on the battlefield, Xe'Sha can exploit that weakness with massive Magic Damage and potentially eliminate her before she takes control of the battle.</p></div>
+   <div class="card"><div class="label">GENERAL STRATEGY</div><div class="person-head"><h3>Burst Magic Damage</h3></div><p>Kayla needs time to jump into the enemy formation and establish pressure. Rapidly reducing her Health before Acrobatics can do its job can force her into healing mode instead of allowing her to begin her assault.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- SUMMARY -->
+<section id="summary">
+ <div class="section-head">
+  <div class="eyebrow">Quick summary</div>
+  <h2>Why Kayla Is So Dangerous</h2>
+ </div>
+
+ <div class="card">
+  <p>Kayla combines explosive Physical Damage, continuous pressure, Health scaling, self-healing and exceptional Chaos synergy. She is designed to enter the enemy formation and become more dangerous the longer she survives. Building her correctly means developing both the offensive stats that power her attacks and the survivability required to keep her active inside enemy lines.</p>
+ </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+ <div class="section-head">
+  <div class="eyebrow">Gods of Alliance video</div>
+  <h2>Watch the Full Kayla Guide</h2>
+  <p class="intro">Watch the complete Gods of Alliance guide for the full breakdown of Kayla's skills, build priorities, Talismans and counters.</p>
+ </div>
+ <div class="video">
+  <iframe src="https://www.youtube.com/embed/NymEw1fDz0Q" title="Kayla Hero Guide — Gods of Alliance" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+</section>
+
+<div class="card cta">
+ <h2>The Explosive Chaos Warrior</h2>
+ <a class="btn" href="heroes.html">EXPLORE ALL HERO GUIDES</a>
+</div>
 
 </main>
 
-
 <footer>
-  GODS OF ALLIANCE • HERO WARS ALLIANCE GUIDES & ANALYSIS
+ <strong>GODS OF ALLIANCE</strong>
+ <p>Hero Wars Alliance Guides &amp; Analysis</p>
+ <p>© 2026 Gods of Alliance</p>
 </footer>
 
+<!-- Highlights the section you're reading in the sticky nav. -->
+<script>
+(function(){
+ "use strict";
+ const links=[...document.querySelectorAll(".toc a")];
+ const byId=new Map(links.map(function(a){ return [a.getAttribute("href").slice(1), a]; }));
+ const observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+   if(!entry.isIntersecting)return;
+   links.forEach(function(a){ a.classList.remove("active"); });
+   const link=byId.get(entry.target.id);
+   if(link){
+    link.classList.add("active");
+    const bar=link.parentElement;
+    bar.scrollLeft=link.offsetLeft-(bar.clientWidth-link.offsetWidth)/2;
+   }
+  });
+ },{rootMargin:"-40% 0px -55% 0px"});
+ byId.forEach(function(_,id){
+  const section=document.getElementById(id);
+  if(section)observer.observe(section);
+ });
+})();
+</script>
+
+<script defer src="goa-global.js"></script>
 </body>
 </html>
