@@ -1,807 +1,310 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Astrid and Lucas Full Guide | Gods of Alliance</title>
 <meta name="description" content="Complete Astrid and Lucas guide for Hero Wars Alliance: skills, rage mechanics, skins, glyphs, artifacts, Gift of the Elements, talismans, synergies and counters.">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index,follow">
 <link rel="canonical" href="https://www.godsofalliancehwa.com/astrid-and-lucas-guide.html">
-
+<meta name="theme-color" content="#080f0b">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Gods of Alliance">
 <meta property="og:title" content="Astrid and Lucas Full Guide | Gods of Alliance">
 <meta property="og:description" content="Master Astrid and Lucas: rage mechanics, builds, team strategies and counters.">
 <meta property="og:url" content="https://www.godsofalliancehwa.com/astrid-and-lucas-guide.html">
 <meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/astrid-and-lucas-guide.jpg">
+<meta property="og:image:secure_url" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/astrid-and-lucas-guide.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="719">
+<meta property="og:image:alt" content="Astrid and Lucas Hero Guide — Gods of Alliance">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Astrid and Lucas Full Guide | Gods of Alliance">
+<meta name="twitter:description" content="Rage mechanics, builds, team strategies and counters.">
 <meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/astrid-and-lucas-guide.jpg">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;background:#02060c}
 :root{
---bg:#02060c;
---panel:rgba(7,15,27,.94);
---spectral:#20c9f4;
---spectral-bright:#8aeaff;
---fire:#517bff;
---fire-bright:#a6baff;
---muted:#a2b5c7;
-}
-body{
-min-height:100vh;color:#fff;
-background:
-radial-gradient(circle at 50% 0%,rgba(22,135,216,.09),transparent 30%),
-linear-gradient(180deg,#071321 0%,#02060c 46%,#010308 100%);
-font-family:Inter,Arial,Helvetica,sans-serif;
-overflow-x:hidden;
-}
-a{color:inherit}
-.hero-header{
-position:relative;min-height:740px;display:flex;
-align-items:flex-end;overflow:hidden;
-border-bottom:1px solid rgba(32,201,244,.12);
-background:#02060c;
-}
-.hero-background{
-position:absolute;inset:0;
-background-image:
-linear-gradient(90deg,rgba(1,5,12,.04) 0%,rgba(1,5,12,.10) 34%,rgba(1,5,12,.48) 57%,rgba(1,5,12,.92) 100%),
-linear-gradient(180deg,rgba(2,6,12,.02) 0%,rgba(2,6,12,.08) 48%,#02060c 100%),
-url("Images/Hero-Guides/astrid-and-lucas-guide.jpg");
-background-size:cover;
-background-position:center;
-transform:scale(1.015);
-}
-.hero-background::after{
-content:"";position:absolute;inset:0;
-background:
-radial-gradient(circle at 25% 40%,rgba(32,201,244,.09),transparent 27%),
-radial-gradient(circle at 31% 45%,rgba(81,123,255,.06),transparent 20%);
-}
-.hero-shell{
-position:relative;z-index:2;width:100%;max-width:1400px;
-margin:0 auto;padding:180px 32px 82px;
-display:flex;justify-content:flex-end;
-}
-.hero-content{width:min(650px,100%)}
-.hero-badge{
-display:inline-block;margin-bottom:17px;padding:8px 11px;
-border:1px solid rgba(138,234,255,.28);border-radius:4px;
-background:rgba(2,8,17,.7);color:var(--spectral-bright);
-font-size:9px;font-weight:950;letter-spacing:.18em;text-transform:uppercase;
-}
-.hero-header h1{
-margin-bottom:15px;color:var(--spectral-bright);
-font-size:clamp(49px,7vw,82px);line-height:.94;
-font-weight:950;letter-spacing:-.055em;
-text-shadow:0 8px 35px rgba(0,0,0,.95),0 0 28px rgba(32,201,244,.13);
-}
-.hero-role{
-margin-bottom:21px;color:#fff;font-size:11px;
-font-weight:950;letter-spacing:.13em;line-height:1.7;text-transform:uppercase;
-}
-.hero-role span{color:var(--spectral)}
-.hero-intro{
-max-width:620px;color:#b3c4d3;font-size:14px;
-line-height:1.8;text-shadow:0 2px 10px #000;
-}
-.hero-intro strong{color:#fff}
-.article{width:100%;max-width:1180px;margin:0 auto;padding:78px 28px 100px}
-.section{margin-bottom:82px}
-.section-kicker{
-margin-bottom:9px;color:var(--spectral);font-size:9px;
-font-weight:950;letter-spacing:.21em;text-transform:uppercase;
-}
-.section-title{
-margin-bottom:18px;font-size:clamp(30px,4.4vw,47px);
-line-height:1;font-weight:950;letter-spacing:-.035em;
-}
-.section-lead{max-width:870px;color:var(--muted);font-size:14px;line-height:1.8}
-.section-lead strong{color:var(--spectral-bright)}
-.identity-grid{
-margin-top:31px;display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
-}
-.identity-card{
-padding:24px;border:1px solid rgba(32,201,244,.14);
-border-radius:9px;
-background:radial-gradient(circle at 100% 0%,rgba(32,201,244,.07),transparent 45%),rgba(7,16,30,.9);
-}
-.identity-label{
-margin-bottom:9px;color:#73899f;font-size:8px;
-font-weight:950;letter-spacing:.15em;text-transform:uppercase;
-}
-.identity-value{color:var(--spectral-bright);font-size:20px;font-weight:950}
-.core-box{
-margin-top:31px;padding:31px;border:1px solid rgba(32,201,244,.22);
-border-radius:11px;
-background:radial-gradient(circle at 100% 0%,rgba(32,201,244,.1),transparent 40%),linear-gradient(145deg,rgba(10,25,43,.96),rgba(3,9,19,.98));
-}
-.core-box p{color:#a9bbcb;font-size:14px;line-height:1.85}
-.core-box strong{color:#fff}
-.core-line{
-margin-top:24px;display:grid;
-grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;
-}
-.core-word{
-padding:14px 8px;border:1px solid rgba(32,201,244,.1);
-border-radius:5px;color:var(--spectral-bright);
-background:rgba(32,201,244,.025);
-text-align:center;font-size:10px;font-weight:950;
-letter-spacing:.07em;text-transform:uppercase;
-}
-.skills-stack{margin-top:33px;display:grid;gap:16px}
-.skill-card{
-position:relative;overflow:hidden;padding:28px;
-border:1px solid rgba(32,201,244,.14);border-radius:10px;
-background:radial-gradient(circle at 100% 0%,rgba(32,201,244,.07),transparent 42%),rgba(7,16,30,.91);
-}
-.skill-card.primary{
-border-color:rgba(81,123,255,.28);
-background:radial-gradient(circle at 100% 0%,rgba(81,123,255,.1),transparent 40%),radial-gradient(circle at 0% 100%,rgba(32,201,244,.06),transparent 35%),rgba(8,16,31,.94);
-}
-.skill-number{
-margin-bottom:8px;color:var(--spectral);font-size:8px;
-font-weight:950;letter-spacing:.17em;text-transform:uppercase;
-}
-.skill-card.primary .skill-number{color:var(--fire-bright)}
-.skill-name{
-margin-bottom:13px;color:#fff;font-size:23px;
-font-weight:950;text-transform:uppercase;
-}
-.skill-card p{color:#a4b5c7;font-size:13px;line-height:1.78}
-.skill-card p+p{margin-top:12px}
-.skill-card p strong{color:#fff}
-.skill-highlight{
-margin-top:18px;padding:15px 17px;
-border-left:2px solid var(--spectral);
-background:rgba(32,201,244,.035);
-color:var(--spectral-bright);
-font-size:11px;font-weight:800;line-height:1.65;
-}
-.primary .skill-highlight{
-border-left-color:var(--fire);color:var(--fire-bright);
-background:rgba(81,123,255,.04);
-}
-.priority-grid{
-margin-top:32px;display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
-}
-.priority-card{
-padding:28px;border:1px solid rgba(32,201,244,.14);
-border-radius:10px;background:rgba(7,16,30,.91);
-}
-.priority-card h3{
-margin-bottom:20px;color:var(--spectral-bright);
-font-size:21px;font-weight:950;text-transform:uppercase;
-}
-.priority-list{list-style:none;counter-reset:priority}
-.priority-list li{
-counter-increment:priority;position:relative;min-height:47px;
-padding:13px 10px 13px 47px;
-border-bottom:1px solid rgba(255,255,255,.055);
-color:#aabacb;font-size:12px;line-height:1.6;
-}
-.priority-list li:last-child{border-bottom:0}
-.priority-list li::before{
-content:counter(priority);position:absolute;left:5px;top:12px;
-width:26px;height:26px;display:flex;align-items:center;
-justify-content:center;border:1px solid rgba(32,201,244,.19);
-border-radius:50%;color:var(--spectral-bright);
-font-size:9px;font-weight:950;
-}
-.priority-list strong{color:#fff}
-.priority-note{margin-top:17px;color:#8095a9;font-size:10px;line-height:1.65}
-.artifact-grid{
-margin-top:31px;display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
-}
-.artifact-card{
-padding:26px 22px;border:1px solid rgba(32,201,244,.14);
-border-radius:9px;background:rgba(7,16,30,.91);
-}
-.artifact-order{
-margin-bottom:11px;color:var(--fire-bright);
-font-size:8px;font-weight:950;letter-spacing:.15em;text-transform:uppercase;
-}
-.artifact-card h3{margin-bottom:10px;font-size:19px;font-weight:950}
-.artifact-card p{color:#94a8bb;font-size:11px;line-height:1.7}
-.max-box{
-margin-top:30px;padding:33px;
-border:1px solid rgba(81,123,255,.24);
-border-radius:11px;text-align:center;
-background:radial-gradient(circle at 50% 0%,rgba(81,123,255,.1),transparent 45%),rgba(9,16,31,.94);
-}
-.max-box span{
-display:block;margin-bottom:9px;color:#8197ac;
-font-size:8px;font-weight:950;letter-spacing:.16em;text-transform:uppercase;
-}
-.max-box strong{
-color:var(--fire-bright);
-font-size:clamp(35px,5vw,49px);font-weight:950;
-}
-.max-box p{
-max-width:690px;margin:15px auto 0;
-color:#97aabc;font-size:12px;line-height:1.7;
-}
-.talisman-grid{
-margin-top:31px;display:grid;
-grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;
-}
-.talisman-card{
-padding:28px;border:1px solid rgba(116,100,220,.22);
-border-radius:10px;
-background:radial-gradient(circle at 100% 0%,rgba(116,100,220,.1),transparent 43%),rgba(8,14,29,.94);
-}
-.talisman-number{
-margin-bottom:9px;color:#b1a1f5;font-size:8px;
-font-weight:950;letter-spacing:.16em;text-transform:uppercase;
-}
-.talisman-card h3{margin-bottom:16px;font-size:22px;font-weight:950}
-.stats{margin-bottom:18px;display:flex;flex-wrap:wrap;gap:7px}
-.stat{
-padding:7px 9px;border:1px solid rgba(177,161,245,.17);
-border-radius:4px;color:#ded5ff;background:rgba(116,100,220,.05);
-font-size:9px;font-weight:900;text-transform:uppercase;
-}
-.talisman-card p{color:#9aafc2;font-size:12px;line-height:1.72}
-.obtain{
-margin-top:17px;padding-top:15px;
-border-top:1px solid rgba(255,255,255,.055);
-color:#788da2;font-size:10px;line-height:1.6;
-}
-.obtain strong{color:var(--spectral-bright)}
-.synergy-grid{
-margin-top:31px;display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;
-}
-.synergy-card{
-padding:25px;border:1px solid rgba(32,201,244,.14);
-border-radius:9px;background:rgba(7,16,30,.9);
-}
-.synergy-card h3{
-margin-bottom:11px;color:var(--spectral-bright);
-font-size:19px;font-weight:950;
-}
-.synergy-card p{color:#97aabd;font-size:11px;line-height:1.72}
-.counter-grid{
-margin-top:31px;display:grid;
-grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
-}
-.counter-card{
-padding:23px;border:1px solid rgba(81,123,255,.14);
-border-radius:9px;
-background:radial-gradient(circle at 100% 0%,rgba(81,123,255,.055),transparent 45%),rgba(8,15,29,.92);
-}
-.counter-card h3{
-margin-bottom:10px;color:var(--fire-bright);
-font-size:18px;font-weight:950;
-}
-.counter-card p{color:#9cacc0;font-size:11px;line-height:1.72}
-.verdict{
-padding:34px;border:1px solid rgba(32,201,244,.25);
-border-radius:12px;
-background:radial-gradient(circle at 0% 0%,rgba(32,201,244,.1),transparent 40%),radial-gradient(circle at 100% 100%,rgba(81,123,255,.07),transparent 38%),rgba(7,16,30,.96);
-}
-.verdict h2{
-margin-bottom:17px;font-size:clamp(29px,4vw,43px);
-font-weight:950;letter-spacing:-.035em;
-}
-.verdict p{color:#a7b9cb;font-size:14px;line-height:1.85}
-.verdict p+p{margin-top:13px}
-.verdict strong{color:var(--spectral-bright)}
-.video-section{margin-top:20px}
-.video-frame{
-position:relative;width:100%;padding-top:56.25%;overflow:hidden;
-border:1px solid rgba(32,201,244,.23);border-radius:12px;
-background:#000;box-shadow:0 28px 70px rgba(0,0,0,.4);
-}
-.video-frame iframe{
-position:absolute;inset:0;width:100%;height:100%;border:0;
-}
-footer{
-padding:35px 20px;border-top:1px solid rgba(32,201,244,.08);
-background:#010308;color:#526779;text-align:center;
-font-size:10px;letter-spacing:.05em;
-}
-@media(max-width:900px){
-.identity-grid,.artifact-grid,.synergy-grid,.counter-grid{grid-template-columns:1fr}
-.priority-grid,.talisman-grid{grid-template-columns:1fr}
-.core-line{grid-template-columns:1fr}
-}
-@media(max-width:700px){
-.hero-header{min-height:650px}
-.hero-background{
-background-image:
-linear-gradient(180deg,rgba(2,6,12,.05) 0%,rgba(2,6,12,.3) 42%,#02060c 100%),
-url("Images/Hero-Guides/astrid-and-lucas-guide.jpg");
-background-position:30% center;
-}
-.hero-shell{justify-content:flex-start;padding:310px 20px 55px}
-.hero-content{text-align:center}
-.article{padding:64px 19px 80px}
-.skill-card,.priority-card,.talisman-card,.verdict{padding:22px}
+ --bg:#080f0b;
+ --surface:#10201a;
+ --surface-2:#17302a;
+ --line:rgba(96,214,150,.2);
+ --line-strong:rgba(96,214,150,.42);
+ --accent:#62d696;
+ --gold:#f0c477;
+ --goldsoft:#ffe2aa;
+ --purple:#d9a7f3;
+ --green:#7fe0a8;
+ --text:#e3f1e8;
+ --muted:#93b09f;
+ --radius:16px;
 }
 </style>
+<link rel="stylesheet" href="goa-guide-v3.css">
 </head>
 
 <body>
 
-<header class="hero-header">
-<div class="hero-background"></div>
-<div class="hero-shell">
-<div class="hero-content">
-<div class="hero-badge">HERO GUIDE</div>
-<h1>ASTRID AND LUCAS</h1>
-<div class="hero-role">
-MARKSMAN <span>•</span> WAY OF PROGRESS <span>•</span> BACK LINE
-</div>
-<p class="hero-intro">
-Astrid and Lucas are a unique physical damage duo.
-Astrid attacks from the back line while Lucas enters the front line
-in a powerful raging form. Together they combine
-<strong>physical damage, temporary frontline protection
-and crowd control.</strong>
-</p>
-</div>
-</div>
+<header class="site-header">
+ <a class="brand" href="index.html">GODS OF <span>ALLIANCE</span></a>
+ <a class="back-link" href="heroes.html">← HERO GUIDES</a>
 </header>
 
-<main class="article">
-
-<section class="section">
-<div class="section-kicker">HERO IDENTITY</div>
-<h2 class="section-title">What Are Astrid and Lucas?</h2>
-<p class="section-lead">
-Astrid and Lucas are a Way of Progress Marksman duo with an unusual
-battle mechanic. Instead of relying only on ranged physical damage,
-<strong>Astrid generates rage that allows Lucas to transform
-and fight on the front line.</strong>
-</p>
-
-<div class="identity-grid">
-<article class="identity-card">
-<div class="identity-label">CLASS</div>
-<div class="identity-value">Marksman</div>
-</article>
-<article class="identity-card">
-<div class="identity-label">FACTION</div>
-<div class="identity-value">Way of Progress</div>
-</article>
-<article class="identity-card">
-<div class="identity-label">POSITION</div>
-<div class="identity-value">Back Line</div>
-</article>
+<!-- HERO -->
+<div class="wrap hero">
+ <div class="hero-art" role="img" aria-label="Astrid and Lucas — Hero Guide" style="background-image:url('Images/Hero-Guides/astrid-and-lucas-guide.jpg')"></div>
+ <div class="identity">
+  <img src="Images/Astrid-and-Lucas-Guide-Icons/avatar_44_astrid.png" alt="Astrid and Lucas portrait">
+  <div>
+   <div class="eyebrow">HERO GUIDE</div>
+   <h1>Astrid and Lucas</h1>
+   <div class="sub">Hero Guide</div>
+   <div class="chips">
+    <span class="chip">MARKSMAN</span>
+    <span class="chip">WAY OF PROGRESS</span>
+    <span class="chip">BACK LINE</span>
+   </div>
+  </div>
+  <div class="hero-actions">
+   <a class="btn" href="#build">Quick build ↓</a>
+   <a class="btn ghost" href="#video">▶ Watch the guide</a>
+  </div>
+ </div>
 </div>
 
-<div class="core-box">
-<p>
-The defining mechanic is <strong>Lucas's rage meter</strong>.
-He enters the battle with 25% rage and gains more as Astrid attacks.
-Once the meter reaches 100%, Lucas can enter raging form.
-Unlike an ordinary tank, Lucas loses rage when attacked instead
-of taking conventional health damage.
-</p>
-<div class="core-line">
-<div class="core-word">RAGE</div>
-<div class="core-word">PHYSICAL DAMAGE</div>
-<div class="core-word">FRONTLINE</div>
-<div class="core-word">STUN</div>
-<div class="core-word">CONTROL</div>
-</div>
-</div>
+<nav class="toc" aria-label="Guide sections">
+ <div class="wrap">
+  <a href="#build">Quick build</a>
+  <a href="#overview">Overview</a>
+  <a href="#skills">Skills</a>
+  <a href="#skins">Skins</a>
+  <a href="#glyphs">Glyphs &amp; artifacts</a>
+  <a href="#talismans">Talismans</a>
+  <a href="#synergies">Synergies</a>
+  <a href="#counters">Counters</a>
+  <a href="#verdict">Verdict</a>
+  <a href="#video">Video</a>
+ </div>
+</nav>
+
+<main class="wrap">
+
+<section id="build">
+ <div class="section-head">
+  <div class="eyebrow">At a glance</div>
+  <h2>Quick build</h2>
+  <p class="intro">The whole build on one screen. Every recommendation is explained in full further down.</p>
+ </div>
+
+ <div class="build-grid">
+  <div class="card span-4">
+   <div class="tile-title"><h3>Skins, in order</h3><a href="#skins">Why →</a></div>
+   <div class="skin-row">
+    <figure><span class="rank-dot" data-rank="1"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_124.png" alt="Demonic Skin"></span><figcaption><b>Demonic</b>Physical Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="2"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_142.png" alt="Spring Skin"></span><figcaption><b>Spring</b>Physical Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="3"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_default.png" alt="Default Skin"></span><figcaption><b>Default</b>Agility</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="4"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_165.png" alt="Romantic Skin"></span><figcaption><b>Romantic</b>Armor Pen.</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="5"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_323.png" alt="Masquerade Skin"></span><figcaption><b>Masquerade</b>Health</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="6"><span style="display:block;aspect-ratio:1;border-radius:12px;border:1px dashed var(--line-strong)"></span></span><figcaption><b>Solar</b>Armor</figcaption></figure>
+   </div>
+  </div>
+  <div class="card span-2">
+   <div class="tile-title"><h3>Talismans</h3><a href="#talismans">Compare →</a></div>
+   <div class="mini-row"><img src="Images/Astrid-and-Lucas-Guide-Icons/talisman_astrid_1.png" alt="First talisman"><div class="txt"><b>Agility + Armor Penetration</b>Talisman 01</div></div><div class="mini-row"><img src="Images/Astrid-and-Lucas-Guide-Icons/talisman_astrid_2.png" alt="Second talisman"><div class="txt"><b>Physical Attack + Critical Hit Chance</b>Talisman 02</div></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Glyphs</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Armor Pen.</span><span class="arrow">→</span><span class="step">Health</span><span class="arrow">→</span><span class="step">Agility</span><span class="arrow">→</span><span class="step">Physical Attack</span><span class="arrow">→</span><span class="step">Armor</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Artifacts &amp; Elements</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Book</span><span class="arrow">→</span><span class="step">Ring</span><span class="arrow">→</span><span class="step">Weapon</span><span class="arrow">·</span><span class="step">Gift of the Elements: max</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Key synergies</h3><a href="#synergies">Details →</a></div>
+   <div class="order"><span class="step">Julius</span><span class="step">Judge</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Biggest threats</h3><a href="#counters">Details →</a></div>
+   <div class="order"><span class="chip">Counters</span><span class="step">Iris</span><span class="step">Somna</span><span class="step">Cleaver</span><span class="step">Chabba</span><span class="step">Soleil</span></div>
+  </div>
+ </div>
 </section>
 
-<section class="section">
-<div class="section-kicker">SKILLS</div>
-<h2 class="section-title">Astrid and Lucas's Skill Kit.</h2>
-<p class="section-lead">
-Understanding the interaction between Astrid's attacks
-and Lucas's transformation is essential.
-<strong>The number of attacks Lucas receives matters more
-than the raw damage of each individual hit.</strong>
-</p>
+<section id="overview">
+ <div class="section-head">
+  <div class="eyebrow">HERO IDENTITY</div>
+  <h2>What Are Astrid and Lucas?</h2>
+ </div>
 
-<div class="skills-stack">
-
-<article class="skill-card primary">
-<div class="skill-number">SKILL 01 • ULTIMATE</div>
-<h3 class="skill-name">Go for It, Lucas!</h3>
-<p>
-Lucas begins battle with <strong>25% rage</strong>.
-Every attack from Astrid generates another <strong>25% rage</strong>.
-At 100%, Astrid can activate her ultimate and send Lucas
-into raging form on the front line.
-</p>
-<p>
-While raging, Lucas uses his rage meter instead of
-conventional health. Each enemy hit removes
-<strong>7% rage</strong>, regardless of how much damage
-that individual hit would normally cause.
-</p>
-<p>
-When the rage meter reaches zero, Lucas returns
-to his passive form and the cycle begins again.
-Lucas does not use conventional energy,
-cannot be debuffed and has zero Armor and Magic Defense.
-</p>
-<div class="skill-highlight">
-SIGNATURE MECHANIC: Lucas can absorb powerful individual attacks
-without losing extra rage. Repeated hits are what deplete his meter.
-</div>
-</article>
-
-<article class="skill-card">
-<div class="skill-number">SKILL 02</div>
-<h3 class="skill-name">Rampant Nature</h3>
-<p>
-Astrid increases her attack and skill speed
-for <strong>nine seconds</strong>.
-This improves her offensive rhythm and supports
-faster rage generation.
-</p>
-<p>
-If Lucas is already in raging form,
-the benefit applies to Lucas instead.
-He also receives the effect when transforming.
-</p>
-<div class="skill-highlight">
-KEY MECHANIC: This ability helps accelerate attacks
-and strengthens the duo's battle rhythm.
-</div>
-</article>
-
-<article class="skill-card">
-<div class="skill-number">SKILL 03</div>
-<h3 class="skill-name">Predator's Charge</h3>
-<p>
-While in raging form, Lucas increases the damage
-of his consecutive attacks.
-</p>
-<p>
-Each consecutive attack increases damage by
-<strong>6.5%</strong>, rewarding sustained attacking
-and extended frontline activity.
-</p>
-<div class="skill-highlight">
-TIMING MATTERS: The longer Lucas remains active and attacking,
-the more valuable his consecutive damage becomes.
-</div>
-</article>
-
-<article class="skill-card">
-<div class="skill-number">SKILL 04 • PASSIVE</div>
-<h3 class="skill-name">Tracker's Mark</h3>
-<p>
-Astrid marks enemies she attacks for
-<strong>four seconds</strong>.
-</p>
-<p>
-When Lucas attacks a marked target,
-he briefly <strong>stuns that enemy</strong>.
-This adds a control mechanic to the duo's
-physical damage and frontline presence.
-</p>
-<div class="skill-highlight">
-CONTROL MECHANIC: Astrid marks the target;
-Lucas follows up with a stun.
-</div>
-</article>
-
-</div>
+ <div class="card overview">
+  <img src="Images/Astrid-and-Lucas-Guide-Icons/avatar_44_astrid.png" alt="Astrid portrait">
+  <div>
+   <p>Astrid and Lucas are a unique physical damage duo. Astrid attacks from the back line while Lucas enters the front line in a powerful raging form. Together they combine <strong>physical damage, temporary frontline protection and crowd control.</strong></p><p>Astrid and Lucas are a Way of Progress Marksman duo with an unusual battle mechanic. Instead of relying only on ranged physical damage, <strong>Astrid generates rage that allows Lucas to transform and fight on the front line.</strong></p>
+  </div>
+ </div>
+ <div class="stat-grid">
+  <div class="card stat"><b>Marksman</b><span>CLASS</span></div>
+  <div class="card stat"><b>Way of Progress</b><span>FACTION</span></div>
+  <div class="card stat"><b>Back Line</b><span>POSITION</span></div>
+ </div>
+ <div class="note">The defining mechanic is <strong>Lucas's rage meter</strong>. He enters the battle with 25% rage and gains more as Astrid attacks. Once the meter reaches 100%, Lucas can enter raging form. Unlike an ordinary tank, Lucas loses rage when attacked instead of taking conventional health damage.<div class="chips" style="margin-top:14px"><span class="chip">RAGE</span><span class="chip">PHYSICAL DAMAGE</span><span class="chip">FRONTLINE</span><span class="chip">STUN</span><span class="chip">CONTROL</span></div></div>
 </section>
 
-<section class="section">
-<div class="section-kicker">DEVELOPMENT</div>
-<h2 class="section-title">Skins &amp; Glyphs.</h2>
-<p class="section-lead">
-Astrid and Lucas need strong physical offense,
-especially Armor Penetration and Physical Attack.
-Survivability remains important because Astrid must
-stay alive to keep generating rage.
-</p>
+<section id="skills">
+ <div class="section-head">
+  <div class="eyebrow">SKILLS</div>
+  <h2>Astrid and Lucas's Skill Kit.</h2>
+  <p class="intro">Understanding the interaction between Astrid's attacks and Lucas's transformation is essential. <strong>The number of attacks Lucas receives matters more than the raw damage of each individual hit.</strong></p>
+ </div>
 
-<div class="priority-grid">
-
-<article class="priority-card">
-<h3>Skin Priority</h3>
-<ol class="priority-list">
-<li><strong>Physical Attack — First Skin</strong><br>
-Prioritize stronger physical damage.</li>
-<li><strong>Physical Attack — Second Skin</strong><br>
-Further improve offensive performance.</li>
-<li><strong>Default Skin — Agility</strong><br>
-Develop the main stat for Physical Attack and Armor.</li>
-<li><strong>Armor Penetration</strong><br>
-Improve damage against armored enemies.</li>
-<li><strong>Health / Health Plus</strong><br>
-Strengthen Astrid's survivability.</li>
-<li><strong>Armor</strong><br>
-Lower priority after offensive and Health development.</li>
-</ol>
-</article>
-
-<article class="priority-card">
-<h3>Glyph Priority</h3>
-<ol class="priority-list">
-<li><strong>Armor Penetration</strong></li>
-<li><strong>Health</strong></li>
-<li><strong>Agility</strong></li>
-<li><strong>Physical Attack</strong></li>
-<li><strong>Armor</strong></li>
-</ol>
-<div class="priority-note">
-Bring all five Glyphs to <strong>Level 40</strong>.
-Further investment depends on your objectives,
-including Skill Class progression.
-</div>
-</article>
-
-</div>
+ <div class="grid-2">
+  <article class="card">
+   <div class="ability-head"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skill_1.png" alt="Go for It, Lucas! skill icon"><div><div class="num">SKILL 01 • ULTIMATE</div><h3>Go for It, Lucas!</h3></div></div>
+   
+   <p>Lucas begins battle with <strong>25% rage</strong>. Every attack from Astrid generates another <strong>25% rage</strong>. At 100%, Astrid can activate her ultimate and send Lucas into raging form on the front line.</p><p>While raging, Lucas uses his rage meter instead of conventional health. Each enemy hit removes <strong>7% rage</strong>, regardless of how much damage that individual hit would normally cause.</p><p>When the rage meter reaches zero, Lucas returns to his passive form and the cycle begins again. Lucas does not use conventional energy, cannot be debuffed and has zero Armor and Magic Defense.</p><div class="formula">SIGNATURE MECHANIC: Lucas can absorb powerful individual attacks without losing extra rage. Repeated hits are what deplete his meter.</div>
+  </article>
+  <article class="card">
+   <div class="ability-head"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skill_2.png" alt="Rampant Nature skill icon"><div><div class="num">SKILL 02</div><h3>Rampant Nature</h3></div></div>
+   
+   <p>Astrid increases her attack and skill speed for <strong>nine seconds</strong>. This improves her offensive rhythm and supports faster rage generation.</p><p>If Lucas is already in raging form, the benefit applies to Lucas instead. He also receives the effect when transforming.</p><div class="formula">KEY MECHANIC: This ability helps accelerate attacks and strengthens the duo's battle rhythm.</div>
+  </article>
+  <article class="card">
+   <div class="ability-head"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skill_3.png" alt="Predator&#x27;s Charge skill icon"><div><div class="num">SKILL 03</div><h3>Predator's Charge</h3></div></div>
+   
+   <p>While in raging form, Lucas increases the damage of his consecutive attacks.</p><p>Each consecutive attack increases damage by <strong>6.5%</strong>, rewarding sustained attacking and extended frontline activity.</p><div class="formula">TIMING MATTERS: The longer Lucas remains active and attacking, the more valuable his consecutive damage becomes.</div>
+  </article>
+  <article class="card">
+   <div class="ability-head"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skill_4.png" alt="Tracker&#x27;s Mark skill icon"><div><div class="num">SKILL 04 • PASSIVE</div><h3>Tracker's Mark</h3></div></div>
+   
+   <p>Astrid marks enemies she attacks for <strong>four seconds</strong>.</p><p>When Lucas attacks a marked target, he briefly <strong>stuns that enemy</strong>. This adds a control mechanic to the duo's physical damage and frontline presence.</p><div class="formula">CONTROL MECHANIC: Astrid marks the target; Lucas follows up with a stun.</div>
+  </article>
+ </div>
 </section>
 
-<section class="section">
-<div class="section-kicker">ARTIFACTS</div>
-<h2 class="section-title">Artifact Priority.</h2>
-<p class="section-lead">
-Astrid benefits most from the artifacts
-that improve her personal physical damage.
-<strong>Armor Penetration and Physical Attack come first.</strong>
-</p>
+<section id="skins">
+ <div class="section-head">
+  <div class="eyebrow">DEVELOPMENT</div>
+  <h2>Skin Priority</h2>
+  <p class="intro">Astrid and Lucas need strong physical offense, especially Armor Penetration and Physical Attack. Survivability remains important because Astrid must stay alive to keep generating rage.</p>
+ </div>
 
-<div class="artifact-grid">
-
-<article class="artifact-card">
-<div class="artifact-order">PRIORITY 01</div>
-<h3>Artifact Book</h3>
-<p>
-Provides <strong>Armor Penetration and Physical Attack</strong>,
-supporting stronger attacks against armored enemies.
-</p>
-</article>
-
-<article class="artifact-card">
-<div class="artifact-order">PRIORITY 02</div>
-<h3>Artifact Ring</h3>
-<p>
-Provides <strong>Agility</strong>,
-strengthening Astrid's main stat and offensive development.
-</p>
-</article>
-
-<article class="artifact-card">
-<div class="artifact-order">PRIORITY 03</div>
-<h3>Artifact Weapon</h3>
-<p>
-Provides a <strong>team-wide Armor bonus</strong>
-when Astrid activates her ultimate,
-helping the team resist physical damage.
-</p>
-</article>
-
-</div>
+ <div class="grid-3"><div class="card skin-card"><span class="pic rank-dot" data-rank="1"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_124.png" alt="Astrid Demonic Skin"></span><div><h3>Demonic Skin</h3><p><strong>Physical Attack — First Skin</strong><br/> Prioritize stronger physical damage.</p></div></div><div class="card skin-card"><span class="pic rank-dot" data-rank="2"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_142.png" alt="Astrid Spring Skin"></span><div><h3>Spring Skin</h3><p><strong>Physical Attack — Second Skin</strong><br/> Further improve offensive performance.</p></div></div><div class="card skin-card"><span class="pic rank-dot" data-rank="3"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_default.png" alt="Astrid Default Skin"></span><div><h3>Default Skin</h3><p><strong>Default Skin — Agility</strong><br/> Develop the main stat for Physical Attack and Armor.</p></div></div><div class="card skin-card"><span class="pic rank-dot" data-rank="4"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_165.png" alt="Astrid Romantic Skin"></span><div><h3>Romantic Skin</h3><p><strong>Armor Penetration</strong><br/> Improve damage against armored enemies.</p></div></div><div class="card skin-card"><span class="pic rank-dot" data-rank="5"><img src="Images/Astrid-and-Lucas-Guide-Icons/astrid_skin_323.png" alt="Astrid Masquerade Skin"></span><div><h3>Masquerade Skin</h3><p><strong>Health / Health Plus</strong><br/> Strengthen Astrid's survivability.</p></div></div><div class="card skin-card"><span class="pic rank-dot" data-rank="6"><span style="display:block;width:84px;height:84px;border-radius:14px;border:1px dashed var(--line-strong)"></span></span><div><h3>Solar Skin</h3><p><strong>Armor</strong><br/> Lower priority after offensive and Health development.</p></div></div>
+ </div>
+ <div class="note">Two skins give Physical Attack (Demonic and Spring); the pictures follow the order they appear in the game’s skin list. The Solar Skin has no picture.</div>
 </section>
 
-<section class="section">
-<div class="section-kicker">GIFT OF THE ELEMENTS</div>
-<h2 class="section-title">No Compromise Here.</h2>
-<div class="max-box">
-<span>RECOMMENDED DEVELOPMENT</span>
-<strong>MAX IT</strong>
-<p>
-Astrid benefits from Physical Attack and Health.
-Maximizing Gift of the Elements improves her basic stats
-and helps her remain active long enough
-to repeatedly deploy Lucas.
-</p>
-</div>
+<section id="glyphs">
+ <div class="section-head">
+  <div class="eyebrow">Build priority</div>
+  <h2>Glyphs, Artifacts &amp; Gift of the Elements</h2>
+ </div>
+
+ <div class="grid-2"><div class="card"><div class="head-with-icon"><h3>Glyph Priority</h3></div><ol class="ranked">
+    <li><div><h3>Armor Penetration</h3></div></li>
+    <li><div><h3>Health</h3></div></li>
+    <li><div><h3>Agility</h3></div></li>
+    <li><div><h3>Physical Attack</h3></div></li>
+    <li><div><h3>Armor</h3></div></li>
+   </ol><div class="note">Bring all five Glyphs to <strong>Level 40</strong>. Further investment depends on your objectives, including Skill Class progression.</div></div><div class="card"><div class="head-with-icon"><img src="Images/Astrid-and-Lucas-Guide-Icons/weapon_44_astrid.png" alt="Astrid official Artifact Weapon"><h3>Artifact Priority</h3></div><p>Astrid benefits most from the artifacts that improve her personal physical damage. <strong>Armor Penetration and Physical Attack come first.</strong></p><ol class="ranked">
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 01</div><h3>Artifact Book</h3><p>Provides <strong>Armor Penetration and Physical Attack</strong>, supporting stronger attacks against armored enemies.</p></div></li>
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 02</div><h3>Artifact Ring</h3><p>Provides <strong>Agility</strong>, strengthening Astrid's main stat and offensive development.</p></div></li>
+    <li><div><div class="num" style="color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px">PRIORITY 03</div><h3>Artifact Weapon</h3><p>Provides a <strong>team-wide Armor bonus</strong> when Astrid activates her ultimate, helping the team resist physical damage.</p></div></li>
+   </ol><div class="note"><strong>Recommended order:</strong> Book → Ring → Weapon.</div></div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="eyebrow">GIFT OF THE ELEMENTS</div><h3 style="margin:6px 0 10px">No Compromise Here.</h3><div class="formula">RECOMMENDED DEVELOPMENT: MAX IT</div><p>Astrid benefits from Physical Attack and Health. Maximizing Gift of the Elements improves her basic stats and helps her remain active long enough to repeatedly deploy Lucas.</p></div>
 </section>
 
-<section class="section">
-<div class="section-kicker">TALISMANS</div>
-<h2 class="section-title">Two Offensive Development Paths.</h2>
-<p class="section-lead">
-Astrid has two Talismans with different offensive strengths.
-Both can be valuable depending on the team and matchup.
-</p>
+<section id="talismans">
+ <div class="section-head">
+  <div class="eyebrow">TALISMANS</div>
+  <h2>Two Offensive Development Paths.</h2>
+  <p class="intro">Astrid has two Talismans with different offensive strengths. Both can be valuable depending on the team and matchup.</p>
+ </div>
 
-<div class="talisman-grid">
-
-<article class="talisman-card">
-<div class="talisman-number">TALISMAN 01</div>
-<h3>Agility + Armor Penetration</h3>
-<div class="stats">
-<div class="stat">AGILITY</div>
-<div class="stat">ARMOR PENETRATION</div>
-</div>
-<p>
-Agility strengthens Astrid's primary stat,
-while Armor Penetration helps her deal
-more effective damage against armored opponents.
-</p>
-<div class="obtain">
-<strong>OBTAIN:</strong> Eternal Frontier Shop —
-<strong>700,000 Frontier Coins</strong>.
-</div>
-</article>
-
-<article class="talisman-card">
-<div class="talisman-number">TALISMAN 02</div>
-<h3>Physical Attack + Critical Hit Chance</h3>
-<div class="stats">
-<div class="stat">PHYSICAL ATTACK</div>
-<div class="stat">CRITICAL HIT CHANCE</div>
-</div>
-<p>
-A more aggressive offensive option.
-Physical Attack strengthens direct damage,
-while Critical Hit Chance creates opportunities
-for stronger critical physical hits.
-</p>
-<div class="obtain">
-<strong>BUILD FOCUS:</strong> Offensive pressure and critical damage potential.
-</div>
-</article>
-
-</div>
+ <div class="grid-2"><div class="card"><div class="eyebrow">TALISMAN 01</div><div class="head-with-icon"><img src="Images/Astrid-and-Lucas-Guide-Icons/talisman_astrid_1.png" alt="Astrid talisman 1"><h3>Agility + Armor Penetration</h3></div><div class="chips" style="margin-bottom:12px"><span class="chip">AGILITY</span><span class="chip">ARMOR PENETRATION</span></div><p>Agility strengthens Astrid's primary stat, while Armor Penetration helps her deal more effective damage against armored opponents.</p><div class="formula"><strong>OBTAIN:</strong> Eternal Frontier Shop — <strong>700,000 Frontier Coins</strong>.</div></div><div class="card"><div class="eyebrow">TALISMAN 02</div><div class="head-with-icon"><img src="Images/Astrid-and-Lucas-Guide-Icons/talisman_astrid_2.png" alt="Astrid talisman 2"><h3>Physical Attack + Critical Hit Chance</h3></div><div class="chips" style="margin-bottom:12px"><span class="chip">PHYSICAL ATTACK</span><span class="chip">CRITICAL HIT CHANCE</span></div><p>A more aggressive offensive option. Physical Attack strengthens direct damage, while Critical Hit Chance creates opportunities for stronger critical physical hits.</p><div class="formula"><strong>BUILD FOCUS:</strong> Offensive pressure and critical damage potential.</div></div>
+ </div>
 </section>
 
-<section class="section">
-<div class="section-kicker">SYNERGIES</div>
-<h2 class="section-title">Heroes That Work With Astrid and Lucas.</h2>
-<p class="section-lead">
-Astrid and Lucas offer a combination of backline damage,
-frontline presence and control.
-They can support teams that benefit from
-<strong>additional protection and more time to activate abilities.</strong>
-</p>
+<section id="synergies">
+ <div class="section-head">
+  <div class="eyebrow">SYNERGIES</div>
+  <h2>Heroes That Work With Astrid and Lucas.</h2>
+  <p class="intro">Astrid and Lucas offer a combination of backline damage, frontline presence and control. They can support teams that benefit from <strong>additional protection and more time to activate abilities.</strong></p>
+ </div>
 
-<div class="synergy-grid">
-
-<article class="synergy-card">
-<h3>Julius</h3>
-<p>
-Julius provides protection and team support.
-Lucas adds another temporary frontline presence,
-helping the formation maintain pressure.
-</p>
-</article>
-
-<article class="synergy-card">
-<h3>Judge</h3>
-<p>
-Judge contributes shields and crowd control.
-Lucas adds frontline disruption and stuns,
-giving the team more ways to interrupt enemies.
-</p>
-</article>
-
-</div>
+ <div class="grid-2"><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Julius.png" alt="Julius"></div><h3>Julius</h3></div><p>Julius provides protection and team support. Lucas adds another temporary frontline presence, helping the formation maintain pressure.</p></div><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Judge.png" alt="Judge"></div><h3>Judge</h3></div><p>Judge contributes shields and crowd control. Lucas adds frontline disruption and stuns, giving the team more ways to interrupt enemies.</p></div>
+ </div>
 </section>
 
-<section class="section">
-<div class="section-kicker">COUNTERS</div>
-<h2 class="section-title">How Can Astrid and Lucas Be Countered?</h2>
-<p class="section-lead">
-The most effective answers either target Astrid directly,
-disrupt Lucas's frontline activity or reduce the value
-of their physical damage and control.
-</p>
+<section id="counters">
+ <div class="section-head">
+  <div class="eyebrow">COUNTERS</div>
+  <h2>How Can Astrid and Lucas Be Countered?</h2>
+  <p class="intro">The most effective answers either target Astrid directly, disrupt Lucas's frontline activity or reduce the value of their physical damage and control.</p>
+ </div>
 
-<div class="counter-grid">
-
-<article class="counter-card">
-<h3>Iris</h3>
-<p>
-Inner Fire can punish Astrid and create
-dangerous interactions with Tracker's Mark,
-potentially eliminating her quickly.
-</p>
-</article>
-
-<article class="counter-card">
-<h3>Somna</h3>
-<p>
-Drowsiness can interfere with physical opponents
-and reduce Astrid's offensive effectiveness.
-</p>
-</article>
-
-<article class="counter-card">
-<h3>Cleaver</h3>
-<p>
-Rusty Hook can pull Astrid from the back line,
-exposing her to frontline damage.
-</p>
-</article>
-
-<article class="counter-card">
-<h3>Chabba</h3>
-<p>
-Chabba can swallow Lucas during raging form,
-interrupting his attacks and temporary frontline protection.
-</p>
-</article>
-
-<article class="counter-card">
-<h3>Soleil</h3>
-<p>
-Soleil can protect the frontmost ally
-against stuns and incoming damage,
-reducing the impact of Tracker's Mark.
-</p>
-</article>
-
-</div>
+ <div class="counter-col"><div class="grid-3"><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Iris.png" alt="Iris"></div><h3>Iris</h3></div><p>Inner Fire can punish Astrid and create dangerous interactions with Tracker's Mark, potentially eliminating her quickly.</p></div><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/somna.png" alt="Somna"></div><h3>Somna</h3></div><p>Drowsiness can interfere with physical opponents and reduce Astrid's offensive effectiveness.</p></div><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Cleaver.png" alt="Cleaver"></div><h3>Cleaver</h3></div><p>Rusty Hook can pull Astrid from the back line, exposing her to frontline damage.</p></div><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Chabba.png" alt="Chabba"></div><h3>Chabba</h3></div><p>Chabba can swallow Lucas during raging form, interrupting his attacks and temporary frontline protection.</p></div><div class="card"><div class="person-head"><div class="pics"><img src="Images/Heroes/Soleil.png" alt="Soleil"></div><h3>Soleil</h3></div><p>Soleil can protect the frontmost ally against stuns and incoming damage, reducing the impact of Tracker's Mark.</p></div>
+ </div></div>
 </section>
 
-<section class="section">
-<div class="verdict">
-<div class="section-kicker">FINAL ANALYSIS</div>
-<h2>Are Astrid and Lucas Worth Building?</h2>
-<p>
-<strong>Astrid and Lucas are a distinctive physical damage duo</strong>
-whose value comes from more than raw damage numbers.
-</p>
-<p>
-Astrid attacks from safety and generates rage.
-Lucas transforms into a frontline fighter,
-absorbs incoming attacks through his rage meter,
-builds consecutive damage and stuns marked enemies.
-</p>
-<p>
-Their greatest advantage is the ability to combine
-<strong>physical pressure, temporary frontline protection
-and additional control</strong> in one hero slot.
-</p>
-<p>
-However, protecting Astrid remains essential.
-If she is eliminated early, the team loses
-the mechanism that keeps Lucas active.
-</p>
-<p>
-<strong>
-Gods of Alliance Verdict: Astrid and Lucas can be a valuable
-investment in teams that benefit from sustained physical pressure,
-frontline disruption and control.
-Their effectiveness depends on understanding the rage mechanic
-and choosing the right matchups.
-</strong>
-</p>
-</div>
+<section id="verdict">
+ <div class="section-head">
+  <div class="eyebrow">FINAL ANALYSIS</div>
+  <h2>Are Astrid and Lucas Worth Building?</h2>
+ </div>
+<div class="card"><p><strong>Astrid and Lucas are a distinctive physical damage duo</strong> whose value comes from more than raw damage numbers.</p><p>Astrid attacks from safety and generates rage. Lucas transforms into a frontline fighter, absorbs incoming attacks through his rage meter, builds consecutive damage and stuns marked enemies.</p><p>Their greatest advantage is the ability to combine <strong>physical pressure, temporary frontline protection and additional control</strong> in one hero slot.</p><p>However, protecting Astrid remains essential. If she is eliminated early, the team loses the mechanism that keeps Lucas active.</p><p><strong> Gods of Alliance Verdict: Astrid and Lucas can be a valuable investment in teams that benefit from sustained physical pressure, frontline disruption and control. Their effectiveness depends on understanding the rage mechanic and choosing the right matchups. </strong></p></div>
 </section>
 
-<section class="section video-section">
-<div class="section-kicker">WATCH THE FULL GUIDE</div>
-<h2 class="section-title">Astrid and Lucas Video Guide.</h2>
-<p class="section-lead" style="margin-bottom:26px">
-Watch the complete Gods of Alliance Astrid and Lucas guide
-for Skills, rage mechanics, development priorities,
-Talismans, synergies and counters.
-</p>
-
-<div class="video-frame">
-<iframe
-src="https://www.youtube.com/embed/B5xuGbd4D0M"
-title="Astrid and Lucas Full Guide - Gods of Alliance"
-loading="lazy"
-referrerpolicy="strict-origin-when-cross-origin"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
-</div>
+<!-- VIDEO -->
+<section id="video">
+ <div class="section-head">
+  <div class="eyebrow">WATCH THE FULL GUIDE</div>
+  <h2>Astrid and Lucas Video Guide.</h2>
+  <p class="intro">Watch the complete Gods of Alliance Astrid and Lucas guide for Skills, rage mechanics, development priorities, Talismans, synergies and counters.</p>
+ </div>
+ <div class="video">
+  <iframe src="https://www.youtube.com/embed/B5xuGbd4D0M" title="Astrid and Lucas Full Guide - Gods of Alliance" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
 </section>
+
+<div class="card cta">
+ <h2>Discover More Hero Guides</h2>
+ <a class="btn" href="heroes.html">EXPLORE ALL HERO GUIDES</a>
+</div>
 
 </main>
 
 <footer>
-© 2026 Gods of Alliance • Hero Wars Alliance Guides
+ © 2026 Gods of Alliance • Hero Wars Alliance Guides
 </footer>
 
-<script src="goa-global.js"></script>
+<!-- Highlights the section you're reading in the sticky nav. -->
+<script>
+(function(){
+ "use strict";
+ const links=[...document.querySelectorAll(".toc a")];
+ const byId=new Map(links.map(function(a){ return [a.getAttribute("href").slice(1), a]; }));
+ const observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+   if(!entry.isIntersecting)return;
+   links.forEach(function(a){ a.classList.remove("active"); });
+   const link=byId.get(entry.target.id);
+   if(link){
+    link.classList.add("active");
+    const bar=link.parentElement;
+    bar.scrollLeft=link.offsetLeft-(bar.clientWidth-link.offsetWidth)/2;
+   }
+  });
+ },{rootMargin:"-40% 0px -55% 0px"});
+ byId.forEach(function(_,id){
+  const section=document.getElementById(id);
+  if(section)observer.observe(section);
+ });
+})();
+</script>
+
+<script defer src="goa-global.js"></script>
 </body>
 </html>

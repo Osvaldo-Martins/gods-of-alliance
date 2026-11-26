@@ -200,6 +200,8 @@ footer strong{color:var(--gold)}
  .build-grid{grid-template-columns:1fr 1fr}
  .span-2,.span-3,.span-4,.span-6{grid-column:span 2}
  .grid-3{grid-template-columns:1fr}
+ /* pages may set column counts inline for desktop; on small screens the stacked layout always wins */
+ .grid-3[style*="grid-template-columns"]{grid-template-columns:1fr!important}
 }
 @media(max-width:700px){
  .identity{grid-template-columns:auto 1fr;align-items:start;margin:-36px 12px 0;width:auto;padding:18px;gap:14px}
@@ -217,4 +219,8 @@ footer strong{color:var(--gold)}
  .stat-grid{grid-template-columns:1fr 1fr}
  .skin-row{grid-template-columns:repeat(3,1fr)}
  .card{padding:20px}
+ .grid-2[style*="grid-template-columns"]{grid-template-columns:1fr!important}
+ .stat-grid[style*="grid-template-columns"]{grid-template-columns:1fr 1fr!important}
+ .skin-row[style*="grid-template-columns"]{grid-template-columns:repeat(3,1fr)!important}
+ .grid-2>*,.grid-3>*,.stat-grid>*,.skin-row>*{min-width:0}
 }

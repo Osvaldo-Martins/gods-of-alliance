@@ -1,1304 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Xe'Sha Hero Guide | Gods of Alliance</title>
-
-  <meta
-    name="description"
-    content="Complete Xe'Sha Hero Wars Alliance guide covering skills, skins, glyphs, artifacts, Gift of the Elements, talismans and counters."
-  >
-
-  <meta name="robots" content="index, follow">
-
-  <link
-    rel="canonical"
-    href="https://www.godsofalliancehwa.com/xesha.html"
-  >
-
-  <!-- OPEN GRAPH -->
-
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Gods of Alliance">
-
-  <meta
-    property="og:title"
-    content="Xe'Sha Hero Guide | Gods of Alliance"
-  >
-
-  <meta
-    property="og:description"
-    content="Complete Xe'Sha Hero Wars Alliance guide covering skills, builds, talismans and counters."
-  >
-
-  <meta
-    property="og:url"
-    content="https://www.godsofalliancehwa.com/xesha.html"
-  >
-
-  <meta
-    property="og:image"
-    content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Xesha/xesha-guide.png"
-  >
-
-  <meta
-    property="og:image:alt"
-    content="Xe'Sha Hero Guide - Gods of Alliance"
-  >
-
-  <!-- TWITTER / X -->
-
-  <meta name="twitter:card" content="summary_large_image">
-
-  <meta
-    name="twitter:title"
-    content="Xe'Sha Hero Guide | Gods of Alliance"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Complete Xe'Sha Hero Wars Alliance guide covering skills, builds, talismans and counters."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Xesha/xesha-guide.png"
-  >
-
-  <style>
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      background: #090509;
-    }
-
-    body {
-      min-height: 100vh;
-      color: #ffffff;
-      font-family: Arial, Helvetica, sans-serif;
-      overflow-x: hidden;
-
-      background:
-        radial-gradient(
-          circle at 15% 18%,
-          rgba(223, 38, 121, 0.16),
-          transparent 32%
-        ),
-        radial-gradient(
-          circle at 88% 28%,
-          rgba(132, 49, 181, 0.15),
-          transparent 34%
-        ),
-        radial-gradient(
-          circle at 50% 78%,
-          rgba(137, 17, 70, 0.10),
-          transparent 40%
-        ),
-        linear-gradient(
-          180deg,
-          #170812 0%,
-          #10070f 28%,
-          #0b070c 62%,
-          #070707 100%
-        );
-    }
-
-    /* XE'SHA CHAOS ATMOSPHERE */
-
-    .chaos-background {
-      position: fixed;
-      inset: 0;
-      overflow: hidden;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .chaos-symbol {
-      position: absolute;
-      color: #ff5aa5;
-      line-height: 1;
-      user-select: none;
-      opacity: 0.045;
-
-      text-shadow:
-        0 0 22px rgba(255, 64, 148, 0.45),
-        0 0 55px rgba(157, 45, 180, 0.20);
-    }
-
-    .cs1 {
-      top: 14%;
-      left: 3%;
-      font-size: 105px;
-      transform: rotate(-18deg);
-    }
-
-    .cs2 {
-      top: 26%;
-      right: 4%;
-      font-size: 145px;
-      opacity: 0.035;
-      transform: rotate(20deg);
-    }
-
-    .cs3 {
-      top: 49%;
-      left: 5%;
-      font-size: 125px;
-      opacity: 0.032;
-    }
-
-    .cs4 {
-      top: 62%;
-      right: 3%;
-      font-size: 100px;
-      opacity: 0.045;
-      transform: rotate(-12deg);
-    }
-
-    .cs5 {
-      top: 80%;
-      left: 8%;
-      font-size: 155px;
-      opacity: 0.027;
-      transform: rotate(28deg);
-    }
-
-    .cs6 {
-      top: 88%;
-      right: 11%;
-      font-size: 85px;
-      opacity: 0.04;
-    }
-
-    .chaos-orb {
-      position: absolute;
-      border-radius: 50%;
-      background: #ff5b9f;
-      opacity: 0.10;
-
-      box-shadow:
-        0 0 18px rgba(255, 70, 150, 0.65),
-        0 0 42px rgba(164, 44, 178, 0.28);
-    }
-
-    .orb1 {
-      width: 5px;
-      height: 5px;
-      top: 18%;
-      left: 24%;
-    }
-
-    .orb2 {
-      width: 4px;
-      height: 4px;
-      top: 35%;
-      right: 21%;
-    }
-
-    .orb3 {
-      width: 6px;
-      height: 6px;
-      top: 54%;
-      left: 13%;
-    }
-
-    .orb4 {
-      width: 4px;
-      height: 4px;
-      top: 70%;
-      right: 17%;
-    }
-
-    .orb5 {
-      width: 5px;
-      height: 5px;
-      top: 86%;
-      left: 29%;
-    }
-
-    header,
-    main,
-    footer {
-      position: relative;
-      z-index: 2;
-    }
-
-    /* HEADER */
-
-    header {
-      border-bottom: 1px solid rgba(226, 72, 142, 0.18);
-      background: rgba(8, 4, 8, 0.93);
-    }
-
-    .header-inner {
-      max-width: 1400px;
-      min-height: 82px;
-      padding: 0 35px;
-      margin: auto;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .brand {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .brand span {
-      color: #d8ad54;
-    }
-
-    /* PAGE */
-
-    main {
-      max-width: 1250px;
-      margin: auto;
-      padding: 55px 35px 100px;
-    }
-
-    /* COVER */
-
-    .cover {
-      overflow: hidden;
-      border: 1px solid rgba(232, 76, 149, 0.24);
-      background: #0b070b;
-
-      box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        0 0 50px rgba(199, 40, 125, 0.06);
-    }
-
-    .cover img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
-
-    /* INTRO */
-
-    .hero-intro {
-      padding: 55px 0 48px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .eyebrow {
-      color: #ef70ac;
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(44px, 7vw, 76px);
-      line-height: 0.95;
-      font-weight: 900;
-      letter-spacing: -3px;
-    }
-
-    .hero-role {
-      margin-top: 19px;
-      color: #f187b7;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .intro-text {
-      max-width: 850px;
-      margin-top: 25px;
-      color: #b8aeb4;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    /* SECTIONS */
-
-    .guide-section {
-      padding: 52px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    }
-
-    .section-label {
-      color: #e961a0;
-      font-size: 11px;
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 11px;
-    }
-
-    .guide-section h2 {
-      font-size: 31px;
-      line-height: 1.1;
-      margin-bottom: 15px;
-    }
-
-    .section-intro {
-      max-width: 850px;
-      color: #9f969c;
-      font-size: 15px;
-      line-height: 1.75;
-      margin-bottom: 27px;
-    }
-
-    /* CARDS */
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      padding: 24px;
-
-      border: 1px solid rgba(230, 83, 151, 0.17);
-
-      background:
-        linear-gradient(
-          145deg,
-          rgba(34, 12, 26, 0.88),
-          rgba(13, 9, 13, 0.95)
-        );
-    }
-
-    .card-number {
-      color: #ec65a5;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 9px;
-    }
-
-    .card h3 {
-      font-size: 20px;
-      margin-bottom: 11px;
-    }
-
-    .card p {
-      color: #a99fa5;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    /* PRIORITIES */
-
-    .priority-list {
-      display: grid;
-      gap: 10px;
-      max-width: 900px;
-    }
-
-    .priority {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      align-items: center;
-      gap: 15px;
-
-      padding: 15px 18px;
-
-      border: 1px solid rgba(228, 76, 146, 0.15);
-      background: rgba(18, 10, 16, 0.76);
-    }
-
-    .priority-number {
-      color: #f075ad;
-      font-size: 18px;
-      font-weight: 900;
-      text-align: center;
-    }
-
-    .priority strong {
-      display: block;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .priority span {
-      color: #8f858b;
-      font-size: 12px;
-      line-height: 1.5;
-    }
-
-    /* TALISMANS */
-
-    .talisman-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .talisman {
-      padding: 25px;
-      border: 1px solid rgba(223, 73, 143, 0.18);
-      background: rgba(25, 10, 20, 0.78);
-    }
-
-    .talisman-label {
-      color: #e965a3;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    .talisman h3 {
-      font-size: 20px;
-      margin-bottom: 8px;
-    }
-
-    .talisman p {
-      color: #a89da4;
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    /* COUNTERS */
-
-    .counter-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-    }
-
-    .counter {
-      padding: 20px 16px;
-      text-align: center;
-
-      border: 1px solid rgba(230, 82, 151, 0.16);
-      background: rgba(19, 10, 16, 0.78);
-    }
-
-    .counter-name {
-      color: #ffffff;
-      font-size: 15px;
-      font-weight: 900;
-    }
-
-    /* SUMMARY */
-
-    .summary {
-      padding: 30px;
-
-      border: 1px solid rgba(239, 93, 161, 0.27);
-
-      background:
-        radial-gradient(
-          circle at 0% 0%,
-          rgba(219, 53, 130, 0.13),
-          transparent 45%
-        ),
-        rgba(18, 9, 15, 0.88);
-    }
-
-    .summary h2 {
-      margin-bottom: 22px;
-    }
-
-    .summary-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 13px 30px;
-    }
-
-    .summary-item {
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .summary-item span {
-      display: block;
-      color: #dd5c9a;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: 2px;
-      margin-bottom: 5px;
-    }
-
-    .summary-item strong {
-      font-size: 14px;
-      line-height: 1.5;
-    }
-
-    /* VIDEO GUIDE */
-
-    .video-section {
-      padding: 60px 0 15px;
-      text-align: center;
-    }
-
-    .video-section .section-label {
-      margin-bottom: 12px;
-    }
-
-    .video-section h2 {
-      font-size: 31px;
-      margin-bottom: 13px;
-    }
-
-    .video-description {
-      max-width: 760px;
-      margin: 0 auto 32px;
-
-      color: #a99da4;
-      font-size: 14px;
-      line-height: 1.75;
-    }
-
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-
-      overflow: hidden;
-
-      border: 1px solid rgba(238, 92, 159, 0.24);
-
-      background: #000000;
-
-      box-shadow:
-        0 25px 70px rgba(0, 0, 0, 0.45),
-        0 0 40px rgba(203, 48, 122, 0.06);
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      inset: 0;
-
-      width: 100%;
-      height: 100%;
-
-      border: 0;
-    }
-
-    /* FOOTER */
-
-    footer {
-      padding: 32px 20px;
-      border-top: 1px solid rgba(221, 65, 137, 0.14);
-      text-align: center;
-      color: #62565e;
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-
-    /* RESPONSIVE */
-
-    @media (max-width: 900px) {
-
-      .counter-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-    }
-
-    @media (max-width: 700px) {
-
-      main {
-        padding: 35px 20px 75px;
-      }
-
-      .header-inner {
-        min-height: 70px;
-        padding: 0 20px;
-      }
-
-      .brand {
-        font-size: 17px;
-        letter-spacing: 1px;
-      }
-
-      .cards,
-      .talisman-grid,
-      .summary-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-intro {
-        padding-top: 38px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
-      }
-
-      .video-section h2 {
-        font-size: 26px;
-      }
-
-    }
-
-    @media (max-width: 480px) {
-
-      .counter-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .guide-section h2 {
-        font-size: 26px;
-      }
-
-    }
-
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xe&#x27;Sha Hero Guide | Gods of Alliance</title>
+<meta name="description" content="Complete Xe&#x27;Sha Hero Wars Alliance guide covering skills, skins, glyphs, artifacts, Gift of the Elements, talismans and counters.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.godsofalliancehwa.com/xesha.html">
+<meta name="theme-color" content="#12060b">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Gods of Alliance">
+<meta property="og:title" content="Xe&#x27;Sha Hero Guide | Gods of Alliance">
+<meta property="og:description" content="Complete Xe&#x27;Sha Hero Wars Alliance guide covering skills, builds, talismans and counters.">
+<meta property="og:url" content="https://www.godsofalliancehwa.com/xesha.html">
+<meta property="og:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Xesha/xesha-guide.png">
+<meta property="og:image:secure_url" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Xesha/xesha-guide.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="719">
+<meta property="og:image:alt" content="Xe&#x27;Sha Hero Guide - Gods of Alliance">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Xe&#x27;Sha Hero Guide | Gods of Alliance">
+<meta name="twitter:description" content="Complete Xe&#x27;Sha Hero Wars Alliance guide covering skills, builds, talismans and counters.">
+<meta name="twitter:image" content="https://www.godsofalliancehwa.com/Images/Hero-Guides/Xesha/xesha-guide.png">
+
+<style>
+:root{
+ --bg:#12060b;
+ --surface:#240d16;
+ --surface-2:#3a1424;
+ --line:rgba(255,77,109,.2);
+ --line-strong:rgba(255,77,109,.42);
+ --accent:#ff4d6d;
+ --gold:#f0c477;
+ --goldsoft:#ffe2aa;
+ --purple:#d9a7f3;
+ --green:#7fe0a8;
+ --text:#f3e4e8;
+ --muted:#b89ca5;
+ --radius:16px;
+}
+</style>
+<link rel="stylesheet" href="goa-guide-v3.css">
 </head>
 
 <body>
 
-  <!-- CHAOS BACKGROUND -->
+<header class="site-header">
+ <a class="brand" href="index.html">GODS OF <span>ALLIANCE</span></a>
+ <a class="back-link" href="heroes.html">← HERO GUIDES</a>
+</header>
 
-  <div class="chaos-background" aria-hidden="true">
+<!-- HERO -->
+<div class="wrap hero">
+ <div class="hero-art" role="img" aria-label="Xe&#x27;Sha — Mage, Way of Chaos, Middle Line — Hero Guide" style="background-image:url('Images/Hero-Guides/Xesha/xesha-guide.png')"></div>
+ <div class="identity">
+  <img src="Images/Xe-Sha-Guide-Icons/avatar_51_xe_sha.png" alt="Xe&#x27;Sha portrait">
+  <div>
+   <div class="eyebrow">GODS OF ALLIANCE • HERO GUIDE</div>
+   <h1>Xe'Sha</h1>
+   <div class="sub">Hero Guide</div>
+   <div class="chips">
+    <span class="chip">MAGE</span><span class="chip">WAY OF CHAOS</span><span class="chip">MIDDLE LINE</span>
+   </div>
+  </div>
+  <div class="hero-actions">
+   <a class="btn" href="#build">Quick build ↓</a>
+   <a class="btn ghost" href="#video">▶ Watch the guide</a>
+  </div>
+ </div>
+</div>
 
-    <span class="chaos-symbol cs1">✦</span>
-    <span class="chaos-symbol cs2">◇</span>
-    <span class="chaos-symbol cs3">✧</span>
-    <span class="chaos-symbol cs4">◆</span>
-    <span class="chaos-symbol cs5">◇</span>
-    <span class="chaos-symbol cs6">✦</span>
+<nav class="toc" aria-label="Guide sections">
+ <div class="wrap">
+  <a href="#build">Quick build</a>
+  <a href="#overview">Overview</a>
+  <a href="#skills">Skills</a>
+  <a href="#synergy">Chaos synergy</a>
+  <a href="#skins">Skins</a>
+  <a href="#glyphs">Glyphs &amp; artifacts</a>
+  <a href="#talismans">Talismans</a>
+  <a href="#counters">Counters</a>
+  <a href="#summary">Summary</a>
+  <a href="#video">Video</a>
+ </div>
+</nav>
 
-    <span class="chaos-orb orb1"></span>
-    <span class="chaos-orb orb2"></span>
-    <span class="chaos-orb orb3"></span>
-    <span class="chaos-orb orb4"></span>
-    <span class="chaos-orb orb5"></span>
+<main class="wrap">
 
+<!-- QUICK BUILD -->
+<section id="build">
+ <div class="section-head">
+  <div class="eyebrow">At a glance</div>
+  <h2>Quick build</h2>
+  <p class="intro">The whole build on one screen. Every recommendation is explained in full further down.</p>
+ </div>
+
+ <div class="build-grid">
+  <div class="card span-4">
+   <div class="tile-title"><h3>Skins, in order</h3><a href="#skins">Why →</a></div>
+   <div class="skin-row">
+    <figure><span class="rank-dot" data-rank="1"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_276.png" alt="Beach Skin"></span><figcaption><b>Beach</b>Magic Attack</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="2"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_236.png" alt="Celestial Skin"></span><figcaption><b>Celestial / Inner Demons</b>Magic Penetration</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="3"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_403.png" alt="Solar Skin"></span><figcaption><b>Solar</b>Magic Crit Chance</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="4"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_default.png" alt="Default Skin"></span><figcaption><b>Default</b>Intelligence</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="5"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_341.png" alt="Dark Depths Skin"></span><figcaption><b>Dark Depths</b>Health</figcaption></figure>
+    <figure><span class="rank-dot" data-rank="6"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_299.png" alt="Cybernetic Skin"></span><figcaption><b>Cybernetic</b>Armor</figcaption></figure>
+   </div>
+  </div>
+  <div class="card span-2">
+   <div class="tile-title"><h3>Talismans</h3><a href="#talismans">Compare →</a></div>
+   <div class="mini-row"><img src="Images/Xe-Sha-Guide-Icons/talisman_xe_sha_1.png" alt="First talisman"><div class="txt"><b>Intelligence + Magic Attack</b>Talisman 01</div></div>
+   <div class="mini-row"><img src="Images/Xe-Sha-Guide-Icons/talisman_xe_sha_2.png" alt="Second talisman"><div class="txt"><b>Armor + Magic Penetration</b>Talisman 02</div></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Glyphs</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Magic Penetration</span><span class="arrow">→</span><span class="step">Health</span><span class="arrow">→</span><span class="step">Magic Attack</span><span class="arrow">→</span><span class="step">Intelligence</span><span class="arrow">→</span><span class="step">Magic Defense</span></div>
+  </div>
+  <div class="card span-3">
+   <div class="tile-title"><h3>Artifacts &amp; Elements</h3><a href="#glyphs">Why →</a></div>
+   <div class="order"><span class="step">Weapon</span><span class="arrow">→</span><span class="step">Book</span><span class="arrow">→</span><span class="step">Ring</span><span class="arrow">·</span><span class="step">Gift of the Elements: max</span></div>
+  </div>
+  <div class="card span-6">
+   <div class="tile-title"><h3>Counters</h3><a href="#counters">Details →</a></div>
+   <div class="order"><span class="chip">Counters</span><span class="step">Cornelius</span><span class="step">Guus</span><span class="step">Electra</span><span class="step">Morrigan</span><span class="step">Phobos</span><span class="step">Fafnir</span><span class="step">Rufus</span><span class="step">Jorgen</span></div>
+  </div>
+ </div>
+</section>
+<section id="overview">
+ <div class="section-head">
+  <div class="eyebrow">Gods of Alliance • Hero guide</div>
+  <h2>Xe'Sha — The Exiled Witch</h2>
+ </div>
+
+ <div class="card overview">
+  <img src="Images/Xe-Sha-Guide-Icons/avatar_51_xe_sha.png" alt="Xe'Sha official portrait">
+  <div>
+   <p>Xe'Sha is one of the most explosive Magic Damage dealers in Hero Wars Alliance. The Exiled Witch transforms allied Health sacrifice into overwhelming offensive power while becoming increasingly dangerous as the battle continues.</p>
+  </div>
+ </div>
+
+ <div class="stat-grid" style="grid-template-columns:repeat(3,1fr)">
+  <div class="card stat"><b>MAGE</b><span>Primary class</span></div>
+  <div class="card stat"><b>CHAOS</b><span>Hero faction</span></div>
+  <div class="card stat"><b>MIDDLE</b><span>Battle line</span></div>
+ </div>
+</section>
+<section id="skills">
+ <div class="section-head">
+  <div class="eyebrow">Abilities</div>
+  <h2>Skills</h2>
+  <p class="intro">Xe'Sha's abilities revolve around allied Health sacrifice, Magic Attack growth, priority-target burst and offensive support.</p>
+ </div>
+<div class="grid-2">
+  <article class="card">
+   <div class="ability-head"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skill_1.png" alt="Deadly Ray skill icon"><div><div class="num">SKILL 01 • ULTIMATE</div><h3>Deadly Ray</h3></div></div>
+   
+   <p>Xe'Sha sacrifices 3% of the Health of every ally above 25% Health before unleashing a devastating beam against the enemy with the lowest Magic Defense.</p>
+   <p>The damage scales with both her Magic Attack and the amount of Health sacrificed by her allies. If the target dies, every sacrificed ally immediately recovers twice the Health they lost.</p>
+   
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skill_2.png" alt="Spiritual Power skill icon"><div><div class="num">SKILL 02</div><h3>Spiritual Power</h3></div></div>
+   
+   <p>Xe'Sha sacrifices a small portion of her allies' Health. In return, every ally receives a powerful Magic Attack bonus for four seconds.</p>
+   <p>Chaos heroes receive double the bonus.</p>
+   
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skill_3.png" alt="Crimson Mist skill icon"><div><div class="num">SKILL 03</div><h3>Crimson Mist</h3></div></div>
+   
+   <p>Xe'Sha covers the battlefield in crimson fog for four seconds, causing enemy basic attacks to miss completely.</p>
+   <p>Crimson Mist does not scale with Magic Attack. Its strength comes from the skill itself.</p>
+   
+  </article>
+
+  <article class="card">
+   <div class="ability-head"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skill_4.png" alt="Soaring Might skill icon"><div><div class="num">SKILL 04 • PASSIVE</div><h3>Soaring Might</h3></div></div>
+   
+   <p>Whenever an allied skill causes one of Xe'Sha's teammates to lose Health, Xe'Sha permanently gains additional Magic Attack.</p>
+   <p>Repeated allied sacrifice allows her offensive power to continue growing throughout the battle.</p>
+   
+  </article>
+ </div>
+</section>
+<section id="synergy">
+ <div class="section-head">
+  <div class="eyebrow">Core interaction</div>
+  <h2>Chaos Sacrifice Synergy</h2>
+ </div>
+
+ <div class="card">
+  <div class="person-head"><div class="pics"><img src="Images/Heroes/aidan.png" alt="Aidan"><img src="Images/Xe-Sha-Guide-Icons/avatar_51_xe_sha.png" alt="Xe'Sha"></div></div>
+  <p>Xe'Sha becomes especially dangerous alongside heroes who cause allied Health loss. Aidan is a key example: Phoenix's Ritual and Bonds of Fire repeatedly sacrifice Health, triggering Soaring Might and permanently increasing Xe'Sha's Magic Attack. Xe'Sha can then share that increased Magic Attack back with the team through Spiritual Power.</p>
+ </div>
+</section>
+<section id="skins">
+ <div class="section-head">
+  <div class="eyebrow">Build priority</div>
+  <h2>Skins</h2>
+  <p class="intro">Xe'Sha currently has six available Skins. Offensive stats receive the highest priority, followed by survivability.</p>
+ </div>
+
+ <div class="grid-3">
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="1"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_276.png" alt="Xe&#x27;Sha Beach Skin"></span><div><div class="label">BEACH SKIN</div><h3>Magic Attack</h3><p>Highest priority. Directly strengthens Deadly Ray and Spiritual Power.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="2"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_236.png" alt="Xe&#x27;Sha Celestial Skin"></span><div><div class="label">CELESTIAL SKIN</div><h3>Magic Penetration</h3><p>Helps Xe'Sha break through enemy Magic Defense.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="2"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_475.png" alt="Xe&#x27;Sha Inner Demons Skin"></span><div><div class="label">INNER DEMONS SKIN</div><h3>Magic Penetration</h3></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="3"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_403.png" alt="Xe&#x27;Sha Solar Skin"></span><div><div class="label">SOLAR SKIN</div><h3>Magic Critical Hit Chance</h3><p>Strengthens her offensive burst potential.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="4"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_default.png" alt="Xe&#x27;Sha Default Skin"></span><div><h3>Default Skin — Intelligence</h3><p>Intelligence increases Magic Attack and Magic Defense.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="5"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_341.png" alt="Xe&#x27;Sha Dark Depths Skin"></span><div><div class="label">DARK DEPTHS SKIN</div><h3>Health</h3><p>Helps Xe'Sha survive and continue stacking Soaring Might.</p></div></div>
+  <div class="card skin-card"><span class="pic rank-dot" data-rank="6"><img src="Images/Xe-Sha-Guide-Icons/xe_sha_skin_299.png" alt="Xe&#x27;Sha Cybernetic Skin"></span><div><div class="label">CYBERNETIC SKIN</div><h3>Armor</h3><p>Additional protection against physical pressure.</p></div></div>
+ </div>
+</section>
+<section id="glyphs">
+ <div class="section-head">
+  <div class="eyebrow">Build priority</div>
+  <h2>Glyphs, Artifacts &amp; Gift of the Elements</h2>
+ </div>
+
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><h3>Glyphs</h3></div>
+   <p>Bring every Glyph to around Level 40 before pushing further, unless you are specifically progressing Hero Classes.</p>
+   <ol class="ranked">
+    <li><div><h3>Magic Penetration</h3><p>Primary offensive priority.</p></div></li>
+    <li><div><h3>Health</h3><p>Helps Xe'Sha survive long enough to benefit from Soaring Might.</p></div></li>
+    <li><div><h3>Magic Attack</h3><p>Improves Deadly Ray and Spiritual Power.</p></div></li>
+    <li><div><h3>Intelligence</h3><p>Adds offensive power and Magic Defense.</p></div></li>
+    <li><div><h3>Magic Defense</h3><p>Lowest immediate priority.</p></div></li>
+   </ol>
   </div>
 
-
-  <!-- HEADER -->
-
-  <header>
-
-    <div class="header-inner">
-
-      <a class="brand" href="index.html">
-        GODS <span>OF ALLIANCE</span>
-      </a>
-
-    </div>
-
-  </header>
-
-
-  <main>
-
-    <!-- COVER -->
-
-    <section class="cover">
-
-      <img
-        src="Images/Hero-Guides/Xesha/xesha-guide.png"
-        alt="Xe'Sha Hero Guide"
-      >
-
-    </section>
-
-
-    <!-- INTRO -->
-
-    <section class="hero-intro">
-
-      <div class="eyebrow">
-        GODS OF ALLIANCE • HERO GUIDE
-      </div>
-
-      <h1>XE'SHA</h1>
-
-      <div class="hero-role">
-        MAGE • WAY OF CHAOS • MIDDLE LINE
-      </div>
-
-      <p class="intro-text">
-        Xe'Sha is one of the most explosive Magic Damage dealers in
-        Hero Wars Alliance. The Exiled Witch transforms allied Health
-        sacrifice into overwhelming offensive power while becoming
-        increasingly dangerous as the battle continues.
-      </p>
-
-    </section>
-
-
-    <!-- SKILLS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">ABILITIES</div>
-
-      <h2>SKILLS</h2>
-
-      <p class="section-intro">
-        Xe'Sha's abilities revolve around allied Health sacrifice,
-        Magic Attack growth, priority-target burst and offensive support.
-      </p>
-
-      <div class="cards">
-
-
-        <article class="card">
-
-          <div class="card-number">
-            SKILL 01 • ULTIMATE
-          </div>
-
-          <h3>Deadly Ray</h3>
-
-          <p>
-            Xe'Sha sacrifices 3% of the Health of every ally above
-            25% Health before unleashing a devastating beam against
-            the enemy with the lowest Magic Defense.
-          </p>
-
-          <p style="margin-top:12px;">
-            The damage scales with both her Magic Attack and the amount
-            of Health sacrificed by her allies. If the target dies,
-            every sacrificed ally immediately recovers twice the
-            Health they lost.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="card-number">SKILL 02</div>
-
-          <h3>Spiritual Power</h3>
-
-          <p>
-            Xe'Sha sacrifices a small portion of her allies' Health.
-            In return, every ally receives a powerful Magic Attack
-            bonus for four seconds.
-          </p>
-
-          <p style="margin-top:12px;">
-            Chaos heroes receive double the bonus.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="card-number">SKILL 03</div>
-
-          <h3>Crimson Mist</h3>
-
-          <p>
-            Xe'Sha covers the battlefield in crimson fog for four
-            seconds, causing enemy basic attacks to miss completely.
-          </p>
-
-          <p style="margin-top:12px;">
-            Crimson Mist does not scale with Magic Attack. Its
-            strength comes from the skill itself.
-          </p>
-
-        </article>
-
-
-        <article class="card">
-
-          <div class="card-number">
-            SKILL 04 • PASSIVE
-          </div>
-
-          <h3>Soaring Might</h3>
-
-          <p>
-            Whenever an allied skill causes one of Xe'Sha's teammates
-            to lose Health, Xe'Sha permanently gains additional
-            Magic Attack.
-          </p>
-
-          <p style="margin-top:12px;">
-            Repeated allied sacrifice allows her offensive power to
-            continue growing throughout the battle.
-          </p>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- CORE SYNERGY -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        CORE INTERACTION
-      </div>
-
-      <h2>CHAOS SACRIFICE SYNERGY</h2>
-
-      <p class="section-intro">
-        Xe'Sha becomes especially dangerous alongside heroes who cause
-        allied Health loss. Aidan is a key example: Phoenix's Ritual
-        and Bonds of Fire repeatedly sacrifice Health, triggering
-        Soaring Might and permanently increasing Xe'Sha's Magic Attack.
-      </p>
-
-      <p class="section-intro">
-        Xe'Sha can then share that increased Magic Attack back with
-        the team through Spiritual Power.
-      </p>
-
-    </section>
-
-
-    <!-- SKINS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        BUILD PRIORITY
-      </div>
-
-      <h2>SKINS</h2>
-
-      <p class="section-intro">
-        Xe'Sha currently has six available Skins. Offensive stats
-        receive the highest priority, followed by survivability.
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority">
-          <div class="priority-number">1</div>
-          <div>
-            <strong>Magic Attack</strong>
-            <span>
-              Highest priority. Directly strengthens Deadly Ray
-              and Spiritual Power.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">2</div>
-          <div>
-            <strong>Magic Penetration</strong>
-            <span>
-              Helps Xe'Sha break through enemy Magic Defense.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">3</div>
-          <div>
-            <strong>Magic Critical Hit Chance</strong>
-            <span>
-              Strengthens her offensive burst potential.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">4</div>
-          <div>
-            <strong>Default Skin — Intelligence</strong>
-            <span>
-              Intelligence increases Magic Attack and Magic Defense.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">5</div>
-          <div>
-            <strong>Health</strong>
-            <span>
-              Helps Xe'Sha survive and continue stacking Soaring Might.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">6</div>
-          <div>
-            <strong>Armor</strong>
-            <span>
-              Additional protection against physical pressure.
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- GLYPHS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        BUILD PRIORITY
-      </div>
-
-      <h2>GLYPHS</h2>
-
-      <p class="section-intro">
-        Bring every Glyph to around Level 40 before pushing further,
-        unless you are specifically progressing Hero Classes.
-      </p>
-
-      <div class="priority-list">
-
-        <div class="priority">
-          <div class="priority-number">1</div>
-          <div>
-            <strong>Magic Penetration</strong>
-            <span>Primary offensive priority.</span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">2</div>
-          <div>
-            <strong>Health</strong>
-            <span>
-              Helps Xe'Sha survive long enough to benefit from
-              Soaring Might.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">3</div>
-          <div>
-            <strong>Magic Attack</strong>
-            <span>
-              Improves Deadly Ray and Spiritual Power.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">4</div>
-          <div>
-            <strong>Intelligence</strong>
-            <span>
-              Adds offensive power and Magic Defense.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">5</div>
-          <div>
-            <strong>Magic Defense</strong>
-            <span>
-              Lowest immediate priority.
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ARTIFACTS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        BUILD PRIORITY
-      </div>
-
-      <h2>ARTIFACTS</h2>
-
-      <div class="priority-list">
-
-        <div class="priority">
-          <div class="priority-number">1</div>
-          <div>
-            <strong>Weapon — Magic Attack</strong>
-            <span>
-              Grants the entire team a Magic Attack bonus whenever
-              Deadly Ray activates.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">2</div>
-          <div>
-            <strong>Book — Magic Penetration + Magic Attack</strong>
-            <span>
-              Provides two major offensive stats for Xe'Sha.
-            </span>
-          </div>
-        </div>
-
-        <div class="priority">
-          <div class="priority-number">3</div>
-          <div>
-            <strong>Ring — Intelligence</strong>
-            <span>
-              Valuable primary-stat development after Weapon and Book.
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- GIFT -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        GIFT OF THE ELEMENTS
-      </div>
-
-      <h2>MAX IT</h2>
-
-      <p class="section-intro">
-        Xe'Sha benefits from every possible stat increase to remain
-        alive while continuously scaling throughout the battle.
-      </p>
-
-    </section>
-
-
-    <!-- TALISMANS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        BUILD OPTIONS
-      </div>
-
-      <h2>TALISMANS</h2>
-
-      <div class="talisman-grid">
-
-        <article class="talisman">
-
-          <div class="talisman-label">
-            TALISMAN 01
-          </div>
-
-          <h3>Intelligence + Magic Attack</h3>
-
-          <p>
-            Easier to obtain through the Eternal Frontier Shop
-            and provides excellent offensive value.
-          </p>
-
-        </article>
-
-
-        <article class="talisman">
-
-          <div class="talisman-label">
-            TALISMAN 02
-          </div>
-
-          <h3>Armor + Magic Penetration</h3>
-
-          <p>
-            More difficult to acquire, but its Magic Penetration
-            is valuable against heavily protected enemies.
-          </p>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- COUNTERS -->
-
-    <section class="guide-section">
-
-      <div class="section-label">
-        MATCHUPS
-      </div>
-
-      <h2>HOW TO COUNTER XE'SHA</h2>
-
-      <p class="section-intro">
-        Xe'Sha can be disrupted through Intelligence targeting,
-        burst protection, target redirection, control, Energy
-        disruption and resistance to Magic Damage.
-      </p>
-
-      <div class="counter-grid">
-
-        <div class="counter">
-          <div class="counter-name">Cornelius</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Guus</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Electra</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Morrigan</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Phobos</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Fafnir</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Rufus</div>
-        </div>
-
-        <div class="counter">
-          <div class="counter-name">Jorgen</div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- BUILD SUMMARY -->
-
-    <section class="guide-section">
-
-      <div class="summary">
-
-        <div class="section-label">
-          QUICK REFERENCE
-        </div>
-
-        <h2>XE'SHA BUILD SUMMARY</h2>
-
-        <div class="summary-grid">
-
-          <div class="summary-item">
-            <span>ROLE</span>
-            <strong>Mage</strong>
-          </div>
-
-          <div class="summary-item">
-            <span>FACTION</span>
-            <strong>Way of Chaos</strong>
-          </div>
-
-          <div class="summary-item">
-            <span>POSITION</span>
-            <strong>Middle Line</strong>
-          </div>
-
-          <div class="summary-item">
-            <span>SKINS</span>
-            <strong>
-              Magic Attack → Magic Penetration →
-              Magic Critical Hit Chance →
-              Default Intelligence → Health → Armor
-            </strong>
-          </div>
-
-          <div class="summary-item">
-            <span>GLYPHS</span>
-            <strong>
-              Magic Penetration → Health → Magic Attack →
-              Intelligence → Magic Defense
-            </strong>
-          </div>
-
-          <div class="summary-item">
-            <span>ARTIFACTS</span>
-            <strong>Weapon → Book → Ring</strong>
-          </div>
-
-          <div class="summary-item">
-            <span>GIFT OF THE ELEMENTS</span>
-            <strong>MAX</strong>
-          </div>
-
-          <div class="summary-item">
-            <span>CORE MECHANIC</span>
-            <strong>
-              Allied Health Sacrifice → Permanent Magic Attack Growth
-            </strong>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FULL VIDEO GUIDE — AT THE END -->
-
-    <section class="video-section">
-
-      <div class="section-label">
-        FULL VIDEO GUIDE
-      </div>
-
-      <h2>
-        WATCH THE COMPLETE XE'SHA GUIDE
-      </h2>
-
-      <p class="video-description">
-        Watch the complete Gods of Alliance guide for the full
-        explanation of Xe'Sha's mechanics, build priorities,
-        synergies and counters.
-      </p>
-
-      <div class="video-wrapper">
-
-        <iframe
-          src="https://www.youtube.com/embed/F7_0lGu7Xr4"
-          title="Xe'Sha Complete Hero Guide - Gods of Alliance"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <footer>
-    GODS OF ALLIANCE • HERO WARS ALLIANCE HERO GUIDES
-  </footer>
-
-
-  <!-- GLOBAL GOA NAVIGATION -->
-
-  <script src="goa-global.js"></script>
-
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Xe-Sha-Guide-Icons/weapon_51_xe_sha.png" alt="Xe'Sha official Artifact Weapon"><h3>Artifacts</h3></div>
+   <ol class="ranked">
+    <li><div><h3>Weapon — Magic Attack</h3><p>Grants the entire team a Magic Attack bonus whenever Deadly Ray activates.</p></div></li>
+    <li><div><h3>Book — Magic Penetration + Magic Attack</h3><p>Provides two major offensive stats for Xe'Sha.</p></div></li>
+    <li><div><h3>Ring — Intelligence</h3><p>Valuable primary-stat development after Weapon and Book.</p></div></li>
+   </ol>
+  </div>
+ </div>
+
+ <div class="card" style="margin-top:16px">
+  <div class="eyebrow" style="margin-bottom:6px">GIFT OF THE ELEMENTS</div>
+  <div class="head-with-icon"><h3>MAX IT</h3></div>
+  <p>Xe'Sha benefits from every possible stat increase to remain alive while continuously scaling throughout the battle.</p>
+ </div>
+</section>
+<section id="talismans">
+ <div class="section-head">
+  <div class="eyebrow">Build options</div>
+  <h2>Talismans</h2>
+ </div>
+
+ <div class="grid-2">
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Xe-Sha-Guide-Icons/talisman_xe_sha_1.png" alt="Xe'Sha first Talisman"><div><div class="label">TALISMAN 01</div><h3>Intelligence + Magic Attack</h3></div></div>
+   <p>Easier to obtain through the Eternal Frontier Shop and provides excellent offensive value.</p>
+  </div>
+  <div class="card">
+   <div class="head-with-icon"><img src="Images/Xe-Sha-Guide-Icons/talisman_xe_sha_2.png" alt="Xe'Sha second Talisman"><div><div class="label">TALISMAN 02</div><h3>Armor + Magic Penetration</h3></div></div>
+   <p>More difficult to acquire, but its Magic Penetration is valuable against heavily protected enemies.</p>
+  </div>
+ </div>
+</section>
+<section id="counters">
+ <div class="section-head">
+  <div class="eyebrow">Matchups</div>
+  <h2>How to Counter Xe'Sha</h2>
+  <p class="intro">Xe'Sha can be disrupted through Intelligence targeting, burst protection, target redirection, control, Energy disruption and resistance to Magic Damage.</p>
+ </div>
+<div class="counter-col">
+ <div class="grid-3" style="grid-template-columns:repeat(4,1fr)">
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Cornelius.png" alt="Cornelius"><h3>Cornelius</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Guus.png" alt="Guus"><h3>Guus</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Electra Von Grave.png" alt="Electra"><h3>Electra</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Morrigan.png" alt="Morrigan"><h3>Morrigan</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Phobos.png" alt="Phobos"><h3>Phobos</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Fafnir.png" alt="Fafnir"><h3>Fafnir</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Rufus.png" alt="Rufus"><h3>Rufus</h3></div></div>
+<div class="card"><div class="person-head" style="margin:0"><img src="Images/Heroes/Jorgen.png" alt="Jorgen"><h3>Jorgen</h3></div></div>
+ </div>
+</div>
+</section>
+<section id="summary">
+ <div class="section-head">
+  <div class="eyebrow">Quick reference</div>
+  <h2>Xe'Sha Build Summary</h2>
+ </div>
+
+ <div class="stat-grid" style="grid-template-columns:repeat(3,1fr);margin:0 0 16px">
+  <div class="card stat"><span>ROLE</span><b>Mage</b></div>
+  <div class="card stat"><span>FACTION</span><b>Way of Chaos</b></div>
+  <div class="card stat"><span>POSITION</span><b>Middle Line</b></div>
+ </div>
+ <div class="grid-2">
+  <div class="card"><div class="label">SKINS</div><div class="order"><span class="step">Magic Attack</span><span class="arrow">→</span><span class="step">Magic Penetration</span><span class="arrow">→</span><span class="step">Magic Critical Hit Chance</span><span class="arrow">→</span><span class="step">Default Intelligence</span><span class="arrow">→</span><span class="step">Health</span><span class="arrow">→</span><span class="step">Armor</span></div></div>
+  <div class="card"><div class="label">GLYPHS</div><div class="order"><span class="step">Magic Penetration</span><span class="arrow">→</span><span class="step">Health</span><span class="arrow">→</span><span class="step">Magic Attack</span><span class="arrow">→</span><span class="step">Intelligence</span><span class="arrow">→</span><span class="step">Magic Defense</span></div></div>
+  <div class="card"><div class="label">ARTIFACTS</div><div class="order"><span class="step">Weapon</span><span class="arrow">→</span><span class="step">Book</span><span class="arrow">→</span><span class="step">Ring</span></div></div>
+  <div class="card"><div class="label">GIFT OF THE ELEMENTS</div><div class="order"><span class="step">MAX</span></div></div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="label">CORE MECHANIC</div><div class="order"><span class="step">Allied Health Sacrifice</span><span class="arrow">→</span><span class="step">Permanent Magic Attack Growth</span></div></div>
+</section>
+<section id="video">
+ <div class="section-head">
+  <div class="eyebrow">Full video guide</div>
+  <h2>Watch the Complete Xe'Sha Guide</h2>
+  <p class="intro">Watch the complete Gods of Alliance guide for the full explanation of Xe'Sha's mechanics, build priorities, synergies and counters.</p>
+ </div>
+ <div class="video">
+  <iframe src="https://www.youtube.com/embed/F7_0lGu7Xr4" title="Xe&#x27;Sha Complete Hero Guide - Gods of Alliance" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+</section>
+
+<div class="card cta">
+ <h2>The Exiled Witch</h2>
+ <a class="btn" href="heroes.html">EXPLORE ALL HERO GUIDES</a>
+</div>
+
+</main>
+
+<footer>
+ <strong>GODS OF ALLIANCE</strong>
+ <p>Hero Wars Alliance Hero Guides</p>
+</footer>
+
+<!-- Highlights the section you're reading in the sticky nav. -->
+<script>
+(function(){
+ "use strict";
+ const links=[...document.querySelectorAll(".toc a")];
+ const byId=new Map(links.map(function(a){ return [a.getAttribute("href").slice(1), a]; }));
+ const observer=new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+   if(!entry.isIntersecting)return;
+   links.forEach(function(a){ a.classList.remove("active"); });
+   const link=byId.get(entry.target.id);
+   if(link){
+    link.classList.add("active");
+    const bar=link.parentElement;
+    bar.scrollLeft=link.offsetLeft-(bar.clientWidth-link.offsetWidth)/2;
+   }
+  });
+ },{rootMargin:"-40% 0px -55% 0px"});
+ byId.forEach(function(_,id){
+  const section=document.getElementById(id);
+  if(section)observer.observe(section);
+ });
+})();
+</script>
+<script defer src="goa-global.js"></script>
 </body>
 </html>
